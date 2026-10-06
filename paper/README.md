@@ -5,7 +5,9 @@ author's abstract with the agreed terminal-condition qualification and
 collective experimental wording.
 The introduction now uses the author's proposed draft with a clearer literature
 sequence, affirmative wording, scoped continuation and experiment claims, and
-a shorter transition to the preserved contribution list.
+a shorter transition to the contribution list. The contributions, conclusion,
+and future-work paragraph now use the author-approved simpler language, with
+finite-set repair and conditional continuation guarantees stated explicitly.
 
 This revision updates the 1 October sequential-handover manuscript with
 consistent physical and normalized uncertainty notation, clearer system

@@ -187,26 +187,37 @@ can accept beneficial changes while rejecting requests that would violate
 boundary-storage or service constraints, including under computation delays
 and agent-context errors.
 
-Therefore, the paper makes four main contributions:
+The paper makes four main contributions:
 \begin{enumerate}
-\item We formulate an execution contract for agentic perimeter control that
-connects sequential operator instructions to numerical planning requests while
-preserving service requirements, task timing, and plan validity intervals.
+\item We define the requirements that agent-proposed perimeter-control plans
+must satisfy before execution. These requirements connect operator requests
+to numerical planning tools and ensure that each new plan accounts for the
+current traffic state, uncertainty, existing service obligations, and plan
+timing.
 
-\item We develop a structure-preserving nonlinear certification method that
-uses class--queue incidence, positivity, and signed uncertainty propagation to
-verify continuous physical constraints and scheduled service requirements.
-The method extends to networks with several exterior queues. A replacement
-theorem carries these guarantees through successive replanning and continued
-execution after rejection, while a terminal-backup result gives sufficient
-conditions for certified continuation beyond finite-plan expiry.
+\item We develop a traffic-specific method for checking physical constraints
+and service deadlines under uncertainty. The method uses vehicle
+conservation, nonnegative vehicle counts, and the links between boundary
+queues and regional traffic to obtain tighter bounds on future traffic
+states. It retains relationships between uncertain traffic quantities and
+extends to networks with several entry queues.
 
-\item We formulate a certification-aware predictive filter over a finite
-family of backup interpolations. We prove availability and minimum intervention
-relative to the tested grid, preserve certified execution on timeout, and
-give terminal conditions for certified continuation beyond finite-plan expiry.
+\item We prove guarantees for accepting, repairing, and rejecting proposed
+plans. Plans that pass certification can be executed unchanged. With a
+backup certified for the same traffic information and requirements, a
+completed repair search selects the certified plan closest to the proposed
+plan within a predefined finite set, measuring the difference through their
+planned control actions. If a proposal is rejected or computation runs out
+of time, the previously accepted plan remains in use through its certified
+validity interval. When the required terminal conditions are also certified,
+feasible operation can continue beyond plan expiry.
 
-\item We specify a reusable family of regional-regulation, queue-economic and deadline-constrained replanning tasks. Matched CLF, predictive and physical-CBF implementations separate controller performance from physical, service and family-certification outcomes. A complete deadline grid, checked reserve refresh, delayed-handover test, connected-network study and actual live agent-to-planner traces quantify the operational consequences of execution authority.
+\item We provide reusable test cases involving regional congestion, boundary
+queues, and service deadlines. Numerical studies examine the tightness of
+the certification bounds and how well repair recovers feasible plans.
+Further experiments test successive plan changes, networks with several
+regions, computation delays, and errors in the information given to the
+agent.
 \end{enumerate}
 
 Section~\ref{sec:new-problem} formulates the traffic-control problem. Section~\ref{sec:new-agent} defines the agent and planning interface, and Section~\ref{sec:new-certification} develops plan certification and execution. Section~\ref{sec:new-evidence} evaluates the method; Section~\ref{sec:new-discussion} discusses operational implications. Detailed proofs and numerical specifications appear in the appendices and supplement.
@@ -1788,31 +1799,43 @@ package provides commands, raw calls and per-realization outputs.
 \section{Conclusions}
 \label{sec:new-conclusion}
 
-Urban perimeter control combines economic planning, finite boundary storage
-and time-specific regional obligations. The proposed execution architecture
-connects successive agent requests to that inherited traffic contract.
-Destination conservation, independent positivity and queue bounds, and
-signed uncertainty propagation give computable continuous plan enclosures.
-Replacement, retention and ordered repair preserve their physical and service
-guarantees; terminal landing supplies sufficient conditions for continuation
-beyond finite-plan expiry.
+Urban perimeter control must manage regional congestion and boundary queues
+while meeting service deadlines. This paper develops a framework for
+checking agent-proposed plans before execution. Each check accounts for the
+current traffic state, uncertainty, and outstanding service obligations.
+Vehicle conservation and the links between regional traffic and boundary
+queues help obtain tighter bounds on future traffic states. The resulting
+certificate verifies nonnegative vehicle counts, boundary-storage limits,
+control limits, and service requirements within the stated model and
+uncertainty bounds.
 
-The benchmark separates controller benefit, uncertainty-family certification
-and regional-priority recovery. Certification preserves acceptable MPC
-commands. When a request is rejected, checked repair recovers priority at a
-measured delay cost, and same-contract reserve refresh supplies certified
-finite plans throughout the tested deadline grid. Future-dated checks account
-for traffic evolution during computation; paired live traces exercise the
-interpretation and planning interface.
-The sequential incident shows that execution authority remains continuous
-across accepted tool changes and later rejected requests, while an unchecked
-change can overfill exterior storage.
+Plans that pass certification can be executed unchanged. Checked repair
+searches for a certified alternative to a proposal that fails the check,
+using a backup certified for the same traffic information and requirements.
+If no replacement is accepted, or computation runs out of time, the
+previously accepted plan remains in use through its certified validity
+interval. When the required terminal conditions are also certified, the
+framework provides a feasible continuation beyond plan expiry.
 
-Certification attaches an explicit uncertainty contract and validity
-interval to an accepted economic traffic plan while preserving its commands. Conflicting requests expose a measurable operator
-choice among repair, another certified tool and retained execution. Calibrated
-destination-state estimation, model-error bounds and activation scheduling
-provide the next steps for evaluating that choice in operational networks.
+Numerical studies show that the traffic-specific construction reduces
+conservatism and that checked repair recovers feasible alternatives. The
+repair studies also quantify the traffic-delay cost of recovering requested
+regional priorities. Further experiments show that successive plan changes
+can improve traffic operation while requests that would violate
+boundary-storage or service constraints are rejected. Separate studies
+examine computation delays and errors in the information given to the agent,
+with certified execution maintained in the tested cases. The
+connected-network study also demonstrates the extension to several regions
+and entry queues.
+
+Future work will focus on estimating vehicle counts by region and
+destination from traffic measurements and calibrating the associated
+uncertainty bounds. Another direction is to establish uncertainty bounds
+that capture differences between the traffic model and observed network
+behavior. We will also study when new plans should take effect, accounting
+for sensing, computation, and actuation time, traffic uncertainty, and
+remaining service deadlines. These developments will support evaluation of
+the framework in operational traffic networks.
 
 \FloatBarrier
 \input{submission_declarations.tex}
