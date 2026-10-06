@@ -8,6 +8,8 @@ sequence, affirmative wording, scoped continuation and experiment claims, and
 a shorter transition to the contribution list. The contributions, conclusion,
 and future-work paragraph now use the author-approved simpler language, with
 finite-set repair and conditional continuation guarantees stated explicitly.
+The concluding findings are condensed to one paragraph; the separate future-work
+paragraph is preserved.
 
 This revision updates the 1 October sequential-handover manuscript with
 consistent physical and normalized uncertainty notation, clearer system

@@ -1790,34 +1790,20 @@ package provides commands, raw calls and per-realization outputs.
 \section{Conclusions}
 \label{sec:new-conclusion}
 
-Urban perimeter control must manage regional congestion and boundary queues
-while meeting service deadlines. This paper develops a framework for
-checking agent-proposed plans before execution. Each check accounts for the
-current traffic state, uncertainty, and outstanding service obligations.
-Vehicle conservation and the links between regional traffic and boundary
-queues help obtain tighter bounds on future traffic states. The resulting
-certificate verifies nonnegative vehicle counts, boundary-storage limits,
-control limits, and service requirements within the stated model and
-uncertainty bounds.
-
-Plans that pass certification can be executed unchanged. Checked repair
-searches for a certified alternative to a proposal that fails the check,
-using a backup certified for the same traffic information and requirements.
-If no replacement is accepted, or computation runs out of time, the
-previously accepted plan remains in use through its certified validity
-interval. When the required terminal conditions are also certified, the
-framework provides a feasible continuation beyond plan expiry.
-
-Numerical studies show that the traffic-specific construction reduces
-conservatism and that checked repair recovers feasible alternatives. The
-repair studies also quantify the traffic-delay cost of recovering requested
-regional priorities. Further experiments show that successive plan changes
-can improve traffic operation while requests that would violate
-boundary-storage or service constraints are rejected. Separate studies
-examine computation delays and errors in the information given to the agent,
-with certified execution maintained in the tested cases. The
-connected-network study also demonstrates the extension to several regions
-and entry queues.
+This paper develops a framework for checking agent-proposed urban
+perimeter-control plans before execution. It verifies physical constraints
+and service deadlines within the stated traffic model and uncertainty
+bounds, using vehicle conservation and the links between boundary queues and
+regional traffic to tighten bounds on future states. Plans that pass
+certification can be executed unchanged, and checked repair searches for
+certified alternatives. Rejected or late replacements leave the previously
+accepted plan in use through its certified validity interval. When the
+required terminal conditions are also certified, feasible operation can
+continue beyond plan expiry. Numerical studies show reduced conservatism and
+recovery of feasible plans through repair. Further experiments examine
+successive plan changes, connected networks, computation delays, and errors
+in the information given to the agent, with certified execution maintained
+in the tested cases.
 
 Future work will focus on estimating vehicle counts by region and
 destination from traffic measurements and calibrating the associated
