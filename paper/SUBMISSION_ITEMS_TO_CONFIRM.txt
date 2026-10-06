@@ -20,11 +20,12 @@ REMAINING AUTHOR CHECKS
    already described in the supplement.
 
 DATA AND CODE AVAILABILITY
-6. The user authorized a private GitHub repository for a later public release
-   and requested a public-link placeholder in the manuscript. The repository was created as private:
+6. The user authorized a private GitHub repository and requested its actual
+   URL in the manuscript, with public release before submission. The repository
+   was created as private:
    https://github.com/AlienEslami/agentic-perimeter-runtime-certification.
-   Complete the manuscript's public-link placeholder when public access is
-   available. Before submission, verify the actual reader/reviewer access route,
+   The manuscript now includes this URL. Before submission, verify public
+   access and the actual reader/reviewer access route,
    release version and license. Public access has not yet been established.
    The benchmark is a synthetic simulation study. Its scripts, parameters,
    stored schedules, certificates, sampled trajectories and recorded agent
@@ -48,7 +49,7 @@ UPLOAD PREPARATION
    journal's submission system requests that format.
 8. Check any journal-required declarations form, contribution fields, cover
    letter and reviewer suggestions using the authors' actual information.
-   Resolve manuscript declaration placeholders before submission.
+   Finalize manuscript declarations and author approval before submission.
 
 OFFICIAL GUIDANCE CONSULTED
 Publisher ethics (funding, interests, authorship, data access):

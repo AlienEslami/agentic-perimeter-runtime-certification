@@ -1,6 +1,6 @@
 # Public release checklist
 
-Current visibility: **private**. Public repository URL: **PUBLIC_REPOSITORY_URL_TO_BE_ADDED**.
+Current visibility: **private**. [Repository URL](https://github.com/AlienEslami/agentic-perimeter-runtime-certification) is included in the manuscript; public release is planned before submission.
 
 - [ ] Confirm final manuscript, supplement, authors, affiliations, and corresponding-author details.
 - [ ] Confirm author contributions and final author approval.
@@ -15,7 +15,7 @@ Current visibility: **private**. Public repository URL: **PUBLIC_REPOSITORY_URL_
 - [ ] Review historical API configurations and distinguish their recorded costs from current pricing.
 - [ ] Decide whether to create a versioned archival release and persistent identifier; add one only when it exists.
 - [ ] Approve changing GitHub visibility to public.
-- [ ] Replace public-link placeholders in the manuscript, repository, and submission form with the actual accessible link.
+- [ ] Verify public access to the repository link in the manuscript, repository documentation, and submission form before submission.
 - [ ] Check the journal's current submission files and declarations.
 
 No publication URL, DOI, public release date, or license has been assumed.

@@ -8,9 +8,9 @@ parameters, experiment records and numerical table values are preserved.
 The original 1 October source archive remains unchanged.
 
 `submission_declarations.tex` contains the funding, competing-interest,
-CRediT, data/code availability and AI-assistance statements. The public
-repository link is intentionally marked for completion before public release.
-The preparation repository is private:
+CRediT, data/code availability and AI-assistance statements. The data/code
+availability statement includes the repository link. The repository is private
+during manuscript preparation and will be made public before submission:
 https://github.com/AlienEslami/agentic-perimeter-runtime-certification
 
 `highlights.txt` supplies the five submission highlights.
