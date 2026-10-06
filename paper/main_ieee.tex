@@ -64,92 +64,119 @@ feasible traffic control.
 \section{Introduction}
 \label{sec:new-introduction}
 
-Urban perimeter control regulates flows into and between regions as congestion
-and external arrivals change. Regional accumulation influences traffic
-production through the macroscopic fundamental diagram (MFD), which provides a
-tractable network-scale description of gridlock and trip completion
-\cite{daganzo2007gridlock,geroliminis2008existence,daganzo2008analytical,
-geroliminis2011properties,leclercq2014cross}. For an operator, the central
-problem is to choose gate flows that protect receiving regions, manage waiting
-vehicles at their boundaries, and deliver regional service by specified times.
+Urban perimeter control regulates flows into and between regions as
+congestion and external arrivals change. Regional accumulation affects
+network traffic production through the macroscopic fundamental diagram
+(MFD), which provides a tractable network-scale description of congestion
+and trip completion
+\cite{daganzo2007gridlock,geroliminis2008existence,daganzo2008analytical,geroliminis2011properties,leclercq2014cross}.
+From an operator's perspective, the problem is to regulate regional
+accumulation, manage vehicles waiting at region boundaries, and satisfy
+time-specific service obligations. These requirements become more difficult
+to coordinate when incidents, demand conditions, or operating priorities
+change during execution.
 
-Early MFD perimeter controllers regulate accumulation with feedback gating and
-multivariable boundary-flow control
-\cite{keyvan2012gating,aboudolas2013perimeter}. Two-region stability analysis
-and the control-Lyapunov-function (CLF) design of Zhong et al. establish
-regulation properties for prescribed traffic laws
-\cite{haddad2012stability,zhong2018robust}. Robust feedback with partial state
-information, hybrid control, and adaptive perimeter regulation extend this
-line to uncertain observations, switching control actions, and changing
-operating conditions
-\cite{mohajerpoor2020hinf,hajiahmadi2015hybrid,haddad2020adaptive,
-kouvelas2017adaptive}. These works provide the most relevant feedback-control
-comparators for the present two-region setting.
+Classical MFD perimeter-control methods address regional congestion through
+feedback gating and multivariable boundary-flow control
+\cite{keyvan2012gating,aboudolas2013perimeter}. Stability analysis and
+control-Lyapunov-function designs establish regulation properties under
+prescribed traffic dynamics \cite{haddad2012stability,zhong2018robust},
+while robust, hybrid, and adaptive formulations extend perimeter regulation
+to uncertain observations, switching actions, and changing operating
+conditions
+\cite{mohajerpoor2020hinf,hajiahmadi2015hybrid,haddad2020adaptive,kouvelas2017adaptive}.
 
-Predictive perimeter control optimizes a sequence of gate commands over an MFD
-model \cite{geroliminis2013mpc}. Multi-region formulations account for spatial
-heterogeneity and route guidance
-\cite{ramezani2015heterogeneity,sirmatel2018economic}. Exterior queues and
-cordon storage add the waiting cost and spillback pressure created by metering
-\cite{haddad2017queues,ni2019cordon}. Demand and state estimation support
-predictive operation when the regional state must be reconstructed from traffic
-measurements \cite{sirmatel2019estimation}; recent MFD calibration work
-quantifies loading--recovery variation and uncertainty
-\cite{ma2025mfduq}. These extensions explain why a practical plan must be
-checked against the inherited queue, destination inventories, and uncertainty
-at the instant it is used.
+Predictive perimeter control optimizes sequences of gate commands over an
+MFD model \cite{geroliminis2013mpc}. Multi-region formulations account for
+spatial heterogeneity and route guidance
+\cite{ramezani2015heterogeneity,sirmatel2018economic}, while exterior queues
+and cordon storage capture the waiting cost and spillback created by
+metering \cite{haddad2017queues,ni2019cordon}. State and demand estimation
+further support predictive operation when traffic conditions must be
+reconstructed from measurements \cite{sirmatel2019estimation}, and recent
+MFD calibration work explicitly characterizes loading--recovery variation
+and uncertainty \cite{ma2025mfduq}.
 
-Data-driven perimeter control supplies another family of candidate decisions.
-Adaptive dynamic programming and data-efficient reinforcement learning learn
-perimeter policies from traffic experience
-\cite{chen2022dataefficient,chen2024iadp}. Multi-agent methods coordinate
-regional metering, heterogeneous cordon gates, and decentralized control
-\cite{zhou2023scalable,yu2025physicsperimeter,li2024beyond}. In the present
-study, the agent acts at a higher decision level: it interprets an operator's
-changing regional priority and invokes a numerical planner. Traffic-signal
-learning studies illustrate related action-generation settings
-\cite{wei2019presslight,wei2019colight}, while language-model traffic agents
-and tool-augmented transportation systems demonstrate semantic interpretation,
-coordination, and tool use
-\cite{llmlight2023,masri2025llmtraffic,collmlight2025,
-trafficgpt2024,openti2024,virtualpolice2026,yu2025statespace}.
+AI-based decision tools provide an additional way to adapt perimeter control
+as traffic conditions and operator objectives change. Data-driven
+perimeter-control methods have used adaptive dynamic programming and
+reinforcement learning to learn gating policies from traffic experience
+\cite{chen2022dataefficient,chen2024iadp}, while multi-agent approaches
+coordinate regional metering, heterogeneous cordon gates, and decentralized
+control \cite{zhou2023scalable,yu2025physicsperimeter,li2024beyond}. Related
+traffic-signal and language-model studies show how AI systems can generate
+actions, interpret contextual information, coordinate decisions, and invoke
+external tools
+\cite{wei2019presslight,wei2019colight,llmlight2023,masri2025llmtraffic,collmlight2025,trafficgpt2024,openti2024,virtualpolice2026,yu2025statespace}.
 
-Successive planning requests inherit the vehicles already in each
-destination class, the exterior queue and outstanding regional service
-deadlines. The decision is whether a proposed plan can replace the active
-schedule while satisfying these inherited requirements. A rejected request
-leaves the previously verified schedule in force through its original
-validity interval. A terminally certified plan additionally connects its
-endpoint to a verified controller for continued operation after expiry.
+These capabilities can support traffic operators when changing network
+conditions or service priorities require new control decisions. In this
+work, an AI agent serves this higher-level role: it interprets evolving
+operating priorities and invokes computational tools, such as numerical
+planners, to generate candidate perimeter-control plans.
 
-Runtime assurance and safety filtering supervise learning-enabled decisions.
-Simplex retains a verified fallback \cite{simplex,mehmood2022black}; control
-barrier functions and shielding constrain actions \cite{ames2017,alshiekh2018}.
-Predictive filters test future constraint satisfaction
-\cite{wabersich2021,hsu2023safety}, while runtime-assurance analyses and
-reference governors describe the transfer of control authority
+This added flexibility creates a certification requirement whenever a
+proposed plan replaces the plan currently in operation. Each agent-proposed
+plan must remain compatible with the traffic state at the time of
+activation, uncertainty in that state and future arrivals, available
+boundary storage, and any service obligations that are still active.
+Evaluation of a newly proposed plan therefore incorporates the traffic state
+and outstanding obligations inherited from the operation already under way.
+The operator needs a principled way to decide whether the new plan may
+replace the current one, whether it should be modified, or whether the
+previously accepted plan should remain in operation.
+
+Runtime assurance provides a natural foundation for this decision. Simplex
+architectures retain a verified fallback controller
+\cite{simplex,mehmood2022black}; control barrier functions and shielding
+restrict unsafe actions \cite{ames2017,alshiekh2018}; predictive safety
+filters evaluate future constraint satisfaction
+\cite{wabersich2021,hsu2023safety}; and runtime-assurance and
+reference-governor methods formalize the transfer of control authority
 \cite{fisac2019,hobbs2023runtime,gilbert2002generalized,garone2017reference}.
-Reachability methods propagate trajectory uncertainty
-\cite{coogan2020mixed,kochdumper2021sparse}.
+Reachability methods additionally provide tools for propagating uncertainty
+over future trajectories \cite{coogan2020mixed,kochdumper2021sparse}. These
+methods establish foundations for supervising learning-enabled decisions.
+Urban perimeter control also provides structure that can be exploited
+directly: vehicles wait at region boundaries for admission to particular
+destinations, regional inventories and boundary queues are physically
+coupled, and service requirements may remain active across successive
+planning requests.
 
-For perimeter control, admission couples a waiting vehicle to its receiving
-destination class. Our certification method uses this conservation
-relationship directly: combining the queue's destination shares with the
-receiving inventories cancels admission from their balances. Positivity and
-an independent queue comparison supply additional physical bounds, and
-signed uncertainty generators retain initial-state dependencies. These
-ingredients form a continuous enclosure for regional inventories, boundary
-storage, gate commands and scheduled service rows.
+We use this transportation structure to construct a runtime certificate for
+agent-proposed perimeter-control plans. The certificate checks whether a
+candidate plan satisfies vehicle conservation, nonnegative traffic states,
+boundary-storage limits, and time-specific service requirements for all
+states and arrivals represented by the uncertainty model. A key observation
+is that a vehicle waiting for admission to a destination and the
+corresponding destination inventory form a conserved quantity with respect
+to that admission flow. Combining these quantities therefore removes the
+admission decision from part of the uncertainty propagation. Positivity,
+independent queue bounds, and signed uncertainty representations further
+tighten the resulting bounds while preserving dependencies in the uncertain
+traffic state. Together, these ingredients provide a transportation-specific
+representation for checking regional inventories, queues, control inputs,
+and service constraints over the planning horizon.
 
-The methodological construction joins this transportation-specific enclosure
-to sequential planning and execution. A certificate refers to a particular
-command schedule, activation state set, model, uncertainty family, task and
-absolute interval. Replacement inherits the current state and pending
-deadlines; rejection preserves the previously certified schedule. An optional
-predictive repair tool searches toward a verified continuation and returns
-each candidate to the same checker. Future-dated certification accounts for
-traffic evolution during this computation, and terminal landing gives
-sufficient conditions for continued certified operation at plan expiry.
+The certificate is then integrated with sequential planning and execution.
+If a proposed plan satisfies the required conditions, it can replace the
+currently active plan with its commands preserved. A rejected plan enters a
+checked repair procedure that searches for a nearby feasible alternative,
+with every repaired candidate returned to the same certificate before
+execution. If no replacement is accepted, the previously accepted plan
+remains active through its certified validity interval. When the terminal
+conditions are certified, the framework ensures that accepted plans end in a
+state from which feasible operation can continue. It also accounts for
+traffic evolution while a new plan is being computed and certified.
+
+The resulting framework provides a formal interface between adaptive
+AI-based planning and physical traffic execution. The interface determines
+when plans produced by AI models and computational tools are admissible for
+the transportation system. The numerical evaluation examines certification
+conservatism and checked repair. Further experiments show that the framework
+can accept beneficial changes while rejecting requests that would violate
+boundary-storage or service constraints, including under computation delays
+and agent-context errors.
 
 Therefore, the paper makes four main contributions:
 \begin{enumerate}
