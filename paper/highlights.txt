@@ -1,0 +1,5 @@
+- Conservation-based bounds certify traffic inventories and service deadlines.
+- Certified handovers preserve guarantees across successive traffic plans.
+- Checked repairs and reserve plans cover all 80 tested deadline contracts.
+- Future-dated certificates account for traffic evolution during computation.
+- The checker retains a certified schedule after a queue-overflow request.

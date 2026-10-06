@@ -1,0 +1,182 @@
+{
+  "pair": [
+    "D027",
+    "D026"
+  ],
+  "commands": {
+    "static_original_plan": [
+      [
+        1.0,
+        1.0,
+        0.727042708,
+        1.0
+      ],
+      [
+        0.547968314,
+        1.0,
+        0.453892095,
+        1.0
+      ],
+      [
+        0.547968314,
+        1.0,
+        0.453892095,
+        1.0
+      ]
+    ],
+    "unchecked_tool_switching": [
+      [
+        1.0,
+        1.0,
+        0.727042708,
+        1.0
+      ],
+      [
+        1.0,
+        1.0,
+        0.56816782,
+        1.0
+      ],
+      [
+        0.397291085,
+        1.0,
+        0.382850901,
+        1.0
+      ]
+    ],
+    "certified_tool_switching": [
+      [
+        1.0,
+        1.0,
+        0.727042708,
+        1.0
+      ],
+      [
+        1.0,
+        1.0,
+        0.56816782,
+        1.0
+      ],
+      [
+        1.0,
+        1.0,
+        0.56816782,
+        1.0
+      ]
+    ]
+  },
+  "summaries": {
+    "static_original_plan": {
+      "runs": 640,
+      "physical_passes": 640,
+      "service_passes": 640,
+      "tts_veh_h": {
+        "minimum": 2975.72272649794,
+        "median": 3037.442328896147,
+        "maximum": 3098.1186896649006
+      },
+      "queue_veh_h": {
+        "minimum": 432.639877932501,
+        "median": 483.8411239463111,
+        "maximum": 541.2259981107512
+      },
+      "completed_trips": {
+        "minimum": 16727.610417644115,
+        "median": 16760.99779856023,
+        "maximum": 16769.701071416544
+      },
+      "priority_cost": {
+        "minimum": 5953.327376359136,
+        "median": 6029.65046286309,
+        "maximum": 6094.53499618303
+      },
+      "peak_queue_vehicles": {
+        "minimum": 1322.7425850619961,
+        "median": 1489.067690908589,
+        "maximum": 1682.6886794942077
+      },
+      "deadline_n1_vehicles": {
+        "minimum": 2306.3005650731343,
+        "median": 2309.525136226289,
+        "maximum": 2310.709215279158
+      },
+      "maximum_conservation_error_vehicles": 1.0913936421275139e-10,
+      "minimum_physical_margin": 1.2310781134202304
+    },
+    "unchecked_tool_switching": {
+      "runs": 640,
+      "physical_passes": 640,
+      "service_passes": 640,
+      "tts_veh_h": {
+        "minimum": 3019.2951176835204,
+        "median": 3081.1318757102135,
+        "maximum": 3141.7527868751636
+      },
+      "queue_veh_h": {
+        "minimum": 477.3023178908359,
+        "median": 528.5035639046447,
+        "maximum": 585.8884380690833
+      },
+      "completed_trips": {
+        "minimum": 16222.596405872131,
+        "median": 16255.833131079944,
+        "maximum": 16264.507735179599
+      },
+      "priority_cost": {
+        "minimum": 5817.133108238716,
+        "median": 5893.9888182115465,
+        "maximum": 5958.959921837105
+      },
+      "peak_queue_vehicles": {
+        "minimum": 1634.7140240620092,
+        "median": 1801.0391299085895,
+        "maximum": 1994.6601184942035
+      },
+      "deadline_n1_vehicles": {
+        "minimum": 2707.5837340343705,
+        "median": 2711.3121345989057,
+        "maximum": 2712.6807498948624
+      },
+      "maximum_conservation_error_vehicles": 1.0732037480920553e-10,
+      "minimum_physical_margin": 0.053398815057963844
+    },
+    "certified_tool_switching": {
+      "runs": 640,
+      "physical_passes": 640,
+      "service_passes": 640,
+      "tts_veh_h": {
+        "minimum": 2654.805906160757,
+        "median": 2716.70355394776,
+        "maximum": 2777.3325065731847
+      },
+      "queue_veh_h": {
+        "minimum": 199.32693939083447,
+        "median": 250.5281854046445,
+        "maximum": 307.91305956908343
+      },
+      "completed_trips": {
+        "minimum": 17923.74744836074,
+        "median": 17957.704351722714,
+        "maximum": 17966.505970114333
+      },
+      "priority_cost": {
+        "minimum": 6127.205176922636,
+        "median": 6206.6512377153795,
+        "maximum": 6272.325420534787
+      },
+      "peak_queue_vehicles": {
+        "minimum": 522.8125100620005,
+        "median": 689.1376159085889,
+        "maximum": 882.7586044942042
+      },
+      "deadline_n1_vehicles": {
+        "minimum": 1639.1851180830909,
+        "median": 1640.6688326250285,
+        "maximum": 1641.1161107319103
+      },
+      "maximum_conservation_error_vehicles": 1.1641532182693481e-10,
+      "minimum_physical_margin": 1.2310781134202304
+    }
+  },
+  "status": "sampled counterfactual only; certificates in original pilot record"
+}

@@ -1,0 +1,441 @@
+{
+  "protocol": "26 September 2026 fixed-grid reusable benchmark",
+  "counts": {
+    "regulation_cases": 24,
+    "queue_contracts": 12,
+    "deadline_development": 72,
+    "deadline_held_out": 8,
+    "all_constant_plan_realizations": 275200
+  },
+  "regulation": {
+    "cases": 24,
+    "all_completed": true,
+    "all_physically_feasible": true,
+    "tracking_mpc_regulation_error_reduction_percent": {
+      "minimum": 21.02935927643085,
+      "median": 73.46325555720063,
+      "maximum": 95.93511192358936
+    },
+    "maximum_conservation_error_vehicles": 8.003553375601768e-11
+  },
+  "queue": {
+    "contracts": 12,
+    "nominal_certified": 12,
+    "all_nominal_640_realizations_feasible": true,
+    "clf_completed": 960,
+    "clf_physically_feasible": 960,
+    "matched_feasible_runs": 960,
+    "mpc_tts_reduction_vs_clf_extension_percent": {
+      "minimum": 23.210378338278158,
+      "median": 24.02890691171134,
+      "maximum": 24.897161376526775
+    }
+  },
+  "deadline_all": {
+    "contracts": 80,
+    "backup_available": 68,
+    "nominal_certified": 36,
+    "nominal_all_sampled_feasible": 36,
+    "nominal_contracts_with_physical_violation": 44,
+    "nominal_contracts_with_service_violation": 36,
+    "certified_repair_available": 74,
+    "modified_proposals": 38,
+    "theta": {
+      "minimum": 0.05,
+      "median": 0.1,
+      "maximum": 0.95
+    },
+    "cbf_completed": 80,
+    "cbf_physical_pass": 80,
+    "cbf_service_pass": 44,
+    "five_scenario_certified": 40,
+    "five_scenario_all_sampled_feasible": 40,
+    "repair_priority_improvement_vs_retention_percent": {
+      "minimum": 0.023350908140492864,
+      "median": 5.677164010581141,
+      "maximum": 6.721457207918759
+    },
+    "repair_tts_change_vs_retention_percent": {
+      "minimum": 0.3295804723405222,
+      "median": 16.066260927833795,
+      "maximum": 21.63836957643746
+    },
+    "requested_priority_benefit_recovered_fraction": {
+      "minimum": 0.003968581146572912,
+      "median": 0.9165130094217624,
+      "maximum": 0.9633469519157741
+    },
+    "stronger_tool_priority_improvement_vs_original_certified_tool_percent": {
+      "minimum": -0.411638042584928,
+      "median": 0.0,
+      "maximum": 4.2967962116229135
+    },
+    "full_scenario": {
+      "contracts": 80,
+      "solver_available": 80,
+      "certified_directly": 44,
+      "all_sampled_feasible": 80,
+      "certified_with_repair": 74,
+      "theta": {
+        "minimum": 0.0,
+        "median": 0.0,
+        "maximum": 0.35
+      }
+    }
+  },
+  "deadline_development": {
+    "contracts": 72,
+    "backup_available": 60,
+    "nominal_certified": 36,
+    "nominal_all_sampled_feasible": 36,
+    "nominal_contracts_with_physical_violation": 36,
+    "nominal_contracts_with_service_violation": 36,
+    "certified_repair_available": 66,
+    "modified_proposals": 30,
+    "theta": {
+      "minimum": 0.05,
+      "median": 0.125,
+      "maximum": 0.95
+    },
+    "cbf_completed": 72,
+    "cbf_physical_pass": 72,
+    "cbf_service_pass": 36,
+    "five_scenario_certified": 36,
+    "five_scenario_all_sampled_feasible": 36,
+    "repair_priority_improvement_vs_retention_percent": {
+      "minimum": 0.023350908140492864,
+      "median": 5.897092790342304,
+      "maximum": 6.721457207918759
+    },
+    "repair_tts_change_vs_retention_percent": {
+      "minimum": 0.3295804723405222,
+      "median": 18.172034619753187,
+      "maximum": 21.63836957643746
+    },
+    "requested_priority_benefit_recovered_fraction": {
+      "minimum": 0.003968581146572912,
+      "median": 0.8958903837251009,
+      "maximum": 0.9601908902920628
+    },
+    "stronger_tool_priority_improvement_vs_original_certified_tool_percent": {
+      "minimum": -0.411638042584928,
+      "median": 0.0,
+      "maximum": 4.2967962116229135
+    },
+    "full_scenario": {
+      "contracts": 72,
+      "solver_available": 72,
+      "certified_directly": 36,
+      "all_sampled_feasible": 72,
+      "certified_with_repair": 66,
+      "theta": {
+        "minimum": 0.0,
+        "median": 0.0,
+        "maximum": 0.35
+      }
+    }
+  },
+  "deadline_held_out": {
+    "contracts": 8,
+    "backup_available": 8,
+    "nominal_certified": 0,
+    "nominal_all_sampled_feasible": 0,
+    "nominal_contracts_with_physical_violation": 8,
+    "nominal_contracts_with_service_violation": 0,
+    "certified_repair_available": 8,
+    "modified_proposals": 8,
+    "theta": {
+      "minimum": 0.05,
+      "median": 0.07500000000000001,
+      "maximum": 0.1
+    },
+    "cbf_completed": 8,
+    "cbf_physical_pass": 8,
+    "cbf_service_pass": 8,
+    "five_scenario_certified": 4,
+    "five_scenario_all_sampled_feasible": 4,
+    "repair_priority_improvement_vs_retention_percent": {
+      "minimum": 3.1983618566885577,
+      "median": 3.6824189572502735,
+      "maximum": 3.989983662367898
+    },
+    "repair_tts_change_vs_retention_percent": {
+      "minimum": 7.404058492918218,
+      "median": 8.382247516373493,
+      "maximum": 8.973820934826483
+    },
+    "requested_priority_benefit_recovered_fraction": {
+      "minimum": 0.9136807024125838,
+      "median": 0.9440968182423664,
+      "maximum": 0.9633469519157741
+    },
+    "stronger_tool_priority_improvement_vs_original_certified_tool_percent": {
+      "minimum": 0.059087918512288506,
+      "median": 0.08102382660898058,
+      "maximum": 0.10557847874867607
+    },
+    "full_scenario": {
+      "contracts": 8,
+      "solver_available": 8,
+      "certified_directly": 8,
+      "all_sampled_feasible": 8,
+      "certified_with_repair": 8,
+      "theta": {
+        "minimum": 0.0,
+        "median": 0.0,
+        "maximum": 0.0
+      }
+    }
+  },
+  "reserve_refresh": {
+    "contracts": 12,
+    "reserves_certified": 12,
+    "new_repaired_outputs": 6,
+    "all_contracts_certified_with_refresh": 80
+  },
+  "api_pilot": {
+    "model": "gpt-5.4-mini",
+    "completed_calls": 96,
+    "known_usage_usd": 0.07504049999999998,
+    "accounted_usd": 0.07504050000000004,
+    "budget_usd": 10.0,
+    "rows": [
+      {
+        "interface": "history_only",
+        "attack": false,
+        "calls": 24,
+        "successful_responses": 24,
+        "objective_correct": 19,
+        "tool_correct": 22,
+        "authorized_routes": 24,
+        "no_certified_execution": 0,
+        "physical_violations": 0,
+        "deadline_violations": 0
+      },
+      {
+        "interface": "history_only",
+        "attack": true,
+        "calls": 24,
+        "successful_responses": 24,
+        "objective_correct": 15,
+        "tool_correct": 24,
+        "authorized_routes": 24,
+        "no_certified_execution": 0,
+        "physical_violations": 0,
+        "deadline_violations": 0
+      },
+      {
+        "interface": "structured_task_record",
+        "attack": false,
+        "calls": 24,
+        "successful_responses": 24,
+        "objective_correct": 24,
+        "tool_correct": 24,
+        "authorized_routes": 24,
+        "no_certified_execution": 0,
+        "physical_violations": 0,
+        "deadline_violations": 0
+      },
+      {
+        "interface": "structured_task_record",
+        "attack": true,
+        "calls": 24,
+        "successful_responses": 24,
+        "objective_correct": 24,
+        "tool_correct": 24,
+        "authorized_routes": 24,
+        "no_certified_execution": 0,
+        "physical_violations": 0,
+        "deadline_violations": 0
+      }
+    ],
+    "scope": "96 semantic/tool-routing calls over precomputed certified benchmark plans; no model ranking or closed-loop agent optimization claim"
+  },
+  "live_tool_traces": {
+    "traces": 8,
+    "api_calls": 13,
+    "total_accounted_study_usd": 0.09002025000000002,
+    "rows": [
+      {
+        "interface": "history_only",
+        "traces": 4,
+        "objectives_correct": 1,
+        "certified_repairs": 1,
+        "all_physical_and_service_pass": true
+      },
+      {
+        "interface": "structured_task_record",
+        "traces": 4,
+        "objectives_correct": 4,
+        "certified_repairs": 4,
+        "all_physical_and_service_pass": true
+      }
+    ],
+    "scope": "live requests actually parameterize, solve, check and repair traffic plans; one common minute-20 contract"
+  },
+  "certified_tool_portfolio": {
+    "contracts": 80,
+    "available": 80,
+    "selection_rule": "minimum nominal center-forecast task cost among independently certified same-contract tool plans",
+    "selected_sources": {
+      "original": 61,
+      "full_scenario": 13,
+      "reserve_refresh": 6
+    }
+  },
+  "api_cost": {
+    "known_token_cost_usd": 0.09002024999999998,
+    "accounted_upper_usd": 0.09002025000000002,
+    "budget_usd": 10.0,
+    "all_attempts": 117,
+    "unknown_or_pending": 0
+  },
+  "timing": {
+    "contract_study_wall_seconds": {
+      "minimum": 21.932447999948636,
+      "median": 30.466558249958325,
+      "maximum": 213.6476329000434
+    },
+    "full_scenario_wall_seconds": {
+      "minimum": 10.040781699935906,
+      "median": 11.404129350034054,
+      "maximum": 78.07459380000364
+    },
+    "proof_seconds": {
+      "minimum": 7.881120799924247,
+      "median": 8.669945000030566,
+      "maximum": 11.824679300072603
+    },
+    "scope": "checkpointed studies executed in parallel processes; wall time reflects concurrent desktop load"
+  },
+  "primary_case": {
+    "contract": {
+      "task": "D",
+      "split": "development",
+      "amplitude": 0.3,
+      "duration_h": 1.0,
+      "width_vehicles": 1.0,
+      "residual_veh_h": 300.0,
+      "deadline_vehicles": 2850.0,
+      "weight": 4.0,
+      "id": "D027"
+    },
+    "rows": [
+      {
+        "policy": "nominal_mpc",
+        "certified": false,
+        "corner": "+++++++",
+        "profile": "constant_high",
+        "tts_veh_h": 3299.9671098043373,
+        "queue_veh_h": 686.26843586075,
+        "completed_trips": 15923.56196982158,
+        "priority_cost": 6328.20549350468,
+        "peak_queue_vehicles": 2179.9770374942036,
+        "deadline_n1_vehicles": 2852.1674064717217,
+        "physical_pass": false,
+        "minimum_state_margin": -1.7997703749420353,
+        "service_pass": false,
+        "conservation_residual_vehicles": 7.821654435247183e-11
+      },
+      {
+        "policy": "continuation",
+        "certified": true,
+        "corner": "+++++++",
+        "profile": "constant_high",
+        "tts_veh_h": 2694.8587779147483,
+        "queue_veh_h": 108.24024341382628,
+        "completed_trips": 18365.41778147792,
+        "priority_cost": 6813.806540430242,
+        "peak_queue_vehicles": 194.36586306874636,
+        "deadline_n1_vehicles": 1727.3487504754594,
+        "physical_pass": true,
+        "minimum_state_margin": 1.2510781134202305,
+        "service_pass": true,
+        "conservation_residual_vehicles": 1.1641532182693481e-10
+      },
+      {
+        "policy": "grid_repair",
+        "certified": true,
+        "corner": "+++++++",
+        "profile": "constant_high",
+        "tts_veh_h": 3096.947574585838,
+        "queue_veh_h": 541.2259981107512,
+        "completed_trips": 16769.701071416544,
+        "priority_cost": 6426.687946394182,
+        "peak_queue_vehicles": 1682.6886794942077,
+        "deadline_n1_vehicles": 2310.091177208652,
+        "physical_pass": true,
+        "minimum_state_margin": 1.2510781134202305,
+        "service_pass": true,
+        "conservation_residual_vehicles": 8.003553375601768e-11
+      },
+      {
+        "policy": "scenario_mpc",
+        "certified": false,
+        "corner": "+++++++",
+        "profile": "constant_high",
+        "tts_veh_h": 3267.770818084426,
+        "queue_veh_h": 633.7770878607492,
+        "completed_trips": 16064.911356662964,
+        "priority_cost": 6357.077190432504,
+        "peak_queue_vehicles": 2000.0067014942008,
+        "deadline_n1_vehicles": 2849.9991458401482,
+        "physical_pass": false,
+        "minimum_state_margin": -6.701494200811453e-05,
+        "service_pass": true,
+        "conservation_residual_vehicles": 8.549250196665525e-11
+      },
+      {
+        "policy": "physical_CBF",
+        "certified": null,
+        "completed": true,
+        "corner": "+++++++",
+        "profile": "constant_high",
+        "tts_veh_h": 3295.1714138908137,
+        "queue_veh_h": 659.5885257667142,
+        "completed_trips": 16004.012839873796,
+        "priority_cost": 6376.0551802430555,
+        "peak_queue_vehicles": 1843.7587472858852,
+        "deadline_n1_vehicles": 2917.417816351509,
+        "physical_pass": true,
+        "service_pass": false,
+        "conservation_residual_vehicles": 7.639755494892597e-11,
+        "minimum_state_margin": 0.0,
+        "interventions": 78,
+        "compute_seconds": 0.08341279823798686
+      },
+      {
+        "policy": "full_scenario_mpc",
+        "certified": false,
+        "corner": "+++++++",
+        "profile": "constant_high",
+        "tts_veh_h": 3267.188078660618,
+        "queue_veh_h": 633.485421485749,
+        "completed_trips": 16067.403568425194,
+        "priority_cost": 6357.285679791276,
+        "peak_queue_vehicles": 1999.0067024941998,
+        "deadline_n1_vehicles": 2847.9647857455443,
+        "physical_pass": true,
+        "minimum_state_margin": 0.00993297505800328,
+        "service_pass": true,
+        "conservation_residual_vehicles": 7.639755494892597e-11
+      },
+      {
+        "policy": "full_scenario_repair",
+        "certified": true,
+        "corner": "+++++++",
+        "profile": "constant_high",
+        "tts_veh_h": 3074.6157631339947,
+        "queue_veh_h": 501.63873681908484,
+        "completed_trips": 16868.423328722423,
+        "priority_cost": 6452.55490030287,
+        "peak_queue_vehicles": 1546.960926494214,
+        "deadline_n1_vehicles": 2314.4949810139524,
+        "physical_pass": true,
+        "minimum_state_margin": 1.2510781134202305,
+        "service_pass": true,
+        "conservation_residual_vehicles": 9.458744898438454e-11
+      }
+    ]
+  }
+}

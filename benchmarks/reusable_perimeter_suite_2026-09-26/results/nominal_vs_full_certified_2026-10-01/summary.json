@@ -1,0 +1,236 @@
+{
+  "comparison": "matched accepted actual plans under unchanged contracts",
+  "original_nominal_directly_certified": 36,
+  "full_scenario_directly_certified": 44,
+  "ordinary_with_certified_repair": 74,
+  "stronger_with_certified_repair": 74,
+  "common_certified_reserve_contracts": [
+    "D073",
+    "D075",
+    "D077",
+    "D079",
+    "D081",
+    "D083"
+  ],
+  "primary_certified_repair_comparison": {
+    "contracts": 74,
+    "priority_cost": {
+      "ordinary_better": 21,
+      "stronger_better": 17,
+      "ties": 36,
+      "ordinary_minus_stronger_median_percent": 0.0,
+      "ordinary_minus_stronger_range_percent": [
+        -0.4063390790441399,
+        4.341381035172492
+      ]
+    },
+    "tts_veh_h": {
+      "ordinary_better": 18,
+      "stronger_better": 20,
+      "ties": 36,
+      "ordinary_minus_stronger_median_percent": 0.0,
+      "ordinary_minus_stronger_range_percent": [
+        -9.473138938682443,
+        0.777131012496491
+      ]
+    },
+    "queue_veh_h": {
+      "ordinary_better": 17,
+      "stronger_better": 21,
+      "ties": 36,
+      "ordinary_minus_stronger_median_percent": 0.0,
+      "ordinary_minus_stronger_range_percent": [
+        -76.28895815560611,
+        8.914536151178085
+      ]
+    },
+    "same_compiled_commands": 36,
+    "by_sensing_half_width": {
+      "1.0": {
+        "contracts": 18,
+        "ordinary_priority_wins": 8
+      },
+      "5.0": {
+        "contracts": 4,
+        "ordinary_priority_wins": 0
+      },
+      "10.0": {
+        "contracts": 18,
+        "ordinary_priority_wins": 6
+      },
+      "20.0": {
+        "contracts": 4,
+        "ordinary_priority_wins": 0
+      },
+      "25.0": {
+        "contracts": 18,
+        "ordinary_priority_wins": 5
+      },
+      "50.0": {
+        "contracts": 12,
+        "ordinary_priority_wins": 2
+      }
+    },
+    "by_arrival_residual": {
+      "60.0": {
+        "contracts": 24,
+        "ordinary_priority_wins": 9
+      },
+      "100.0": {
+        "contracts": 4,
+        "ordinary_priority_wins": 0
+      },
+      "150.0": {
+        "contracts": 21,
+        "ordinary_priority_wins": 5
+      },
+      "225.0": {
+        "contracts": 4,
+        "ordinary_priority_wins": 0
+      },
+      "300.0": {
+        "contracts": 21,
+        "ordinary_priority_wins": 7
+      }
+    }
+  },
+  "separate_certified_retention_comparison": {
+    "contracts": 74,
+    "priority_cost": {
+      "ordinary_better": 0,
+      "stronger_better": 38,
+      "ties": 36,
+      "ordinary_minus_stronger_median_percent": 3.845596786736855,
+      "ordinary_minus_stronger_range_percent": [
+        0.0,
+        6.791745838561477
+      ]
+    },
+    "tts_veh_h": {
+      "ordinary_better": 38,
+      "stronger_better": 0,
+      "ties": 36,
+      "ordinary_minus_stronger_median_percent": -7.681539685164233,
+      "ordinary_minus_stronger_range_percent": [
+        -17.435186134897037,
+        0.0
+      ]
+    },
+    "queue_veh_h": {
+      "ordinary_better": 38,
+      "stronger_better": 0,
+      "ties": 36,
+      "ordinary_minus_stronger_median_percent": -77.9248750463449,
+      "ordinary_minus_stronger_range_percent": [
+        -85.88552108321144,
+        0.0
+      ]
+    },
+    "same_compiled_commands": 36,
+    "by_sensing_half_width": {
+      "1.0": {
+        "contracts": 18,
+        "ordinary_priority_wins": 0
+      },
+      "5.0": {
+        "contracts": 4,
+        "ordinary_priority_wins": 0
+      },
+      "10.0": {
+        "contracts": 18,
+        "ordinary_priority_wins": 0
+      },
+      "20.0": {
+        "contracts": 4,
+        "ordinary_priority_wins": 0
+      },
+      "25.0": {
+        "contracts": 18,
+        "ordinary_priority_wins": 0
+      },
+      "50.0": {
+        "contracts": 12,
+        "ordinary_priority_wins": 0
+      }
+    },
+    "by_arrival_residual": {
+      "60.0": {
+        "contracts": 24,
+        "ordinary_priority_wins": 0
+      },
+      "100.0": {
+        "contracts": 4,
+        "ordinary_priority_wins": 0
+      },
+      "150.0": {
+        "contracts": 21,
+        "ordinary_priority_wins": 0
+      },
+      "225.0": {
+        "contracts": 4,
+        "ordinary_priority_wins": 0
+      },
+      "300.0": {
+        "contracts": 21,
+        "ordinary_priority_wins": 0
+      }
+    }
+  },
+  "held_out_repair_comparison": {
+    "contracts": 8,
+    "priority_cost": {
+      "ordinary_better": 0,
+      "stronger_better": 8,
+      "ties": 0,
+      "ordinary_minus_stronger_median_percent": 0.08188655704798622,
+      "ordinary_minus_stronger_range_percent": [
+        0.06073264806789244,
+        0.10299713756404863
+      ]
+    },
+    "tts_veh_h": {
+      "ordinary_better": 8,
+      "stronger_better": 0,
+      "ties": 0,
+      "ordinary_minus_stronger_median_percent": -0.24318736614739528,
+      "ordinary_minus_stronger_range_percent": [
+        -0.30203102585063935,
+        -0.1845425721356747
+      ]
+    },
+    "queue_veh_h": {
+      "ordinary_better": 8,
+      "stronger_better": 0,
+      "ties": 0,
+      "ordinary_minus_stronger_median_percent": -2.464052342856296,
+      "ordinary_minus_stronger_range_percent": [
+        -3.109831735778513,
+        -1.8204529279511468
+      ]
+    },
+    "same_compiled_commands": 0,
+    "by_sensing_half_width": {
+      "5.0": {
+        "contracts": 4,
+        "ordinary_priority_wins": 0
+      },
+      "20.0": {
+        "contracts": 4,
+        "ordinary_priority_wins": 0
+      }
+    },
+    "by_arrival_residual": {
+      "100.0": {
+        "contracts": 4,
+        "ordinary_priority_wins": 0
+      },
+      "225.0": {
+        "contracts": 4,
+        "ordinary_priority_wins": 0
+      }
+    }
+  },
+  "all_80_available_after_same_reserve_refresh": true,
+  "unit_of_comparison": "contract, each with 640 matched realization replays",
+  "lower_is_better": true
+}

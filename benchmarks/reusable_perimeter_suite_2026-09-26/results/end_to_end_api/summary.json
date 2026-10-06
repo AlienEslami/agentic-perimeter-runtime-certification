@@ -1,0 +1,22 @@
+{
+  "traces": 8,
+  "api_calls": 13,
+  "total_accounted_study_usd": 0.09002025000000002,
+  "rows": [
+    {
+      "interface": "history_only",
+      "traces": 4,
+      "objectives_correct": 1,
+      "certified_repairs": 1,
+      "all_physical_and_service_pass": true
+    },
+    {
+      "interface": "structured_task_record",
+      "traces": 4,
+      "objectives_correct": 4,
+      "certified_repairs": 4,
+      "all_physical_and_service_pass": true
+    }
+  ],
+  "scope": "live requests actually parameterize, solve, check and repair traffic plans; one common minute-20 contract"
+}

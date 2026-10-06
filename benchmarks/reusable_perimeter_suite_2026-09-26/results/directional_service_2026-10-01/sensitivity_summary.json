@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-01",
+  "purpose": "diagnostic_sensitivity_only",
+  "case_count": 36,
+  "interior_samples_per_case": 20,
+  "sign_change_cases": [],
+  "observed_sign_vectors": {
+    "(1, 1, -1, -1, 0, -1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)": 36
+  },
+  "smallest_absolute_sampled_active_derivative_vehicles": 0.03687783656957205,
+  "original_deadline_upper_range_vehicles": [
+    2821.7932567188327,
+    4087.1269810924473
+  ],
+  "elapsed_seconds": 27.188740300014615,
+  "certified_new_cases": 0,
+  "warning": "Sampled derivatives are not a whole-family monotonicity proof."
+}

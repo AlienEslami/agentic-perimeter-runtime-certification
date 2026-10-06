@@ -1,0 +1,1132 @@
+[
+  {
+    "pair": [
+      "D013",
+      "D012"
+    ],
+    "matched_hard_contract": true,
+    "eligible": true,
+    "commands": [
+      [
+        1.0,
+        1.0,
+        0.652190894,
+        1.0
+      ],
+      [
+        1.0,
+        1.0,
+        0.56816782,
+        1.0
+      ],
+      [
+        0.416739072,
+        1.0,
+        0.382850901,
+        1.0
+      ]
+    ],
+    "physical_violations": 0,
+    "service_violations": 0,
+    "minimum_physical_margin": 1.2310781134202304,
+    "maximum_deadline_n1_vehicles": 2629.3357654233114,
+    "deadline_limit_vehicles": 2750.0,
+    "median_tts_veh_h": 3067.288210354681,
+    "median_priority_cost": 5893.216679102561
+  },
+  {
+    "pair": [
+      "D015",
+      "D014"
+    ],
+    "matched_hard_contract": true,
+    "eligible": true,
+    "commands": [
+      [
+        1.0,
+        1.0,
+        0.743049916,
+        1.0
+      ],
+      [
+        1.0,
+        1.0,
+        0.56816782,
+        1.0
+      ],
+      [
+        0.397291085,
+        1.0,
+        0.382850901,
+        1.0
+      ]
+    ],
+    "physical_violations": 0,
+    "service_violations": 0,
+    "minimum_physical_margin": 1.2310781134202304,
+    "maximum_deadline_n1_vehicles": 2711.2413812935474,
+    "deadline_limit_vehicles": 2850.0,
+    "median_tts_veh_h": 3080.633296983119,
+    "median_priority_cost": 5889.104917852415
+  },
+  {
+    "pair": [
+      "D017",
+      "D016"
+    ],
+    "matched_hard_contract": true,
+    "eligible": true,
+    "commands": [
+      [
+        1.0,
+        1.0,
+        0.744214314,
+        1.0
+      ],
+      [
+        1.0,
+        1.0,
+        0.56816782,
+        1.0
+      ],
+      [
+        0.37902394,
+        1.0,
+        0.382850901,
+        1.0
+      ]
+    ],
+    "physical_violations": 0,
+    "service_violations": 0,
+    "minimum_physical_margin": 1.2097557536034131,
+    "maximum_deadline_n1_vehicles": 2792.3156158419674,
+    "deadline_limit_vehicles": 2950.0,
+    "median_tts_veh_h": 3093.8041748224664,
+    "median_priority_cost": 5885.0830245723955
+  },
+  {
+    "pair": [
+      "D019",
+      "D018"
+    ],
+    "matched_hard_contract": true,
+    "eligible": true,
+    "commands": [
+      [
+        1.0,
+        1.0,
+        0.653751397,
+        1.0
+      ],
+      [
+        1.0,
+        1.0,
+        0.56816782,
+        1.0
+      ],
+      [
+        0.416739072,
+        1.0,
+        0.382850901,
+        1.0
+      ]
+    ],
+    "physical_violations": 0,
+    "service_violations": 0,
+    "minimum_physical_margin": 0.9079583418744335,
+    "maximum_deadline_n1_vehicles": 2629.5401052945845,
+    "deadline_limit_vehicles": 2750.0,
+    "median_tts_veh_h": 3068.093054463494,
+    "median_priority_cost": 5894.888511628761
+  },
+  {
+    "pair": [
+      "D021",
+      "D020"
+    ],
+    "matched_hard_contract": true,
+    "eligible": true,
+    "commands": [
+      [
+        1.0,
+        1.0,
+        0.739048114,
+        1.0
+      ],
+      [
+        1.0,
+        1.0,
+        0.56816782,
+        1.0
+      ],
+      [
+        0.397291085,
+        1.0,
+        0.382850901,
+        1.0
+      ]
+    ],
+    "physical_violations": 0,
+    "service_violations": 0,
+    "minimum_physical_margin": 0.9532303601585639,
+    "maximum_deadline_n1_vehicles": 2711.780178951445,
+    "deadline_limit_vehicles": 2850.0,
+    "median_tts_veh_h": 3080.8257402795625,
+    "median_priority_cost": 5890.894652531631
+  },
+  {
+    "pair": [
+      "D023",
+      "D022"
+    ],
+    "matched_hard_contract": true,
+    "eligible": true,
+    "commands": [
+      [
+        1.0,
+        1.0,
+        0.740151228,
+        1.0
+      ],
+      [
+        1.0,
+        1.0,
+        0.56816782,
+        1.0
+      ],
+      [
+        0.37902394,
+        1.0,
+        0.382850901,
+        1.0
+      ]
+    ],
+    "physical_violations": 0,
+    "service_violations": 0,
+    "minimum_physical_margin": 0.9532303601585639,
+    "maximum_deadline_n1_vehicles": 2792.873268952696,
+    "deadline_limit_vehicles": 2950.0,
+    "median_tts_veh_h": 3093.9971187911096,
+    "median_priority_cost": 5886.869845037356
+  },
+  {
+    "pair": [
+      "D025",
+      "D024"
+    ],
+    "matched_hard_contract": true,
+    "eligible": true,
+    "commands": [
+      [
+        1.0,
+        1.0,
+        0.656872404,
+        1.0
+      ],
+      [
+        1.0,
+        1.0,
+        0.56816782,
+        1.0
+      ],
+      [
+        0.416739072,
+        1.0,
+        0.382850901,
+        1.0
+      ]
+    ],
+    "physical_violations": 128,
+    "service_violations": 0,
+    "minimum_physical_margin": -0.05590069974444134,
+    "maximum_deadline_n1_vehicles": 2629.8449121985127,
+    "deadline_limit_vehicles": 2750.0,
+    "median_tts_veh_h": 3069.7469851539836,
+    "median_priority_cost": 5897.79174467243
+  },
+  {
+    "pair": [
+      "D027",
+      "D026"
+    ],
+    "matched_hard_contract": true,
+    "eligible": true,
+    "commands": [
+      [
+        1.0,
+        1.0,
+        0.727042708,
+        1.0
+      ],
+      [
+        1.0,
+        1.0,
+        0.56816782,
+        1.0
+      ],
+      [
+        0.397291085,
+        1.0,
+        0.382850901,
+        1.0
+      ]
+    ],
+    "physical_violations": 0,
+    "service_violations": 0,
+    "minimum_physical_margin": 0.053398815057963844,
+    "maximum_deadline_n1_vehicles": 2712.6807498948624,
+    "deadline_limit_vehicles": 2850.0,
+    "median_tts_veh_h": 3081.1318757102135,
+    "median_priority_cost": 5893.9888182115465
+  },
+  {
+    "pair": [
+      "D029",
+      "D028"
+    ],
+    "matched_hard_contract": true,
+    "eligible": true,
+    "commands": [
+      [
+        1.0,
+        1.0,
+        0.727961969,
+        1.0
+      ],
+      [
+        1.0,
+        1.0,
+        0.56816782,
+        1.0
+      ],
+      [
+        0.37902394,
+        1.0,
+        0.382850901,
+        1.0
+      ]
+    ],
+    "physical_violations": 0,
+    "service_violations": 0,
+    "minimum_physical_margin": 0.053398815057963844,
+    "maximum_deadline_n1_vehicles": 2793.8053243337677,
+    "deadline_limit_vehicles": 2950.0,
+    "median_tts_veh_h": 3094.3015731538353,
+    "median_priority_cost": 5889.955379760797
+  },
+  {
+    "pair": [
+      "D031",
+      "D030"
+    ],
+    "matched_hard_contract": true,
+    "eligible": true,
+    "commands": [
+      [
+        1.0,
+        1.0,
+        0.652971146,
+        1.0
+      ],
+      [
+        1.0,
+        1.0,
+        0.56816782,
+        1.0
+      ],
+      [
+        0.416739072,
+        1.0,
+        0.382850901,
+        1.0
+      ]
+    ],
+    "physical_violations": 0,
+    "service_violations": 0,
+    "minimum_physical_margin": 1.1410781134202304,
+    "maximum_deadline_n1_vehicles": 2635.57054516497,
+    "deadline_limit_vehicles": 2750.0,
+    "median_tts_veh_h": 3067.1135426935266,
+    "median_priority_cost": 5892.781391785004
+  },
+  {
+    "pair": [
+      "D033",
+      "D032"
+    ],
+    "matched_hard_contract": true,
+    "eligible": true,
+    "commands": [
+      [
+        1.0,
+        1.0,
+        0.743049916,
+        1.0
+      ],
+      [
+        1.0,
+        1.0,
+        0.56816782,
+        1.0
+      ],
+      [
+        0.397291085,
+        1.0,
+        0.382850901,
+        1.0
+      ]
+    ],
+    "physical_violations": 0,
+    "service_violations": 0,
+    "minimum_physical_margin": 1.1410781134202304,
+    "maximum_deadline_n1_vehicles": 2718.194862805154,
+    "deadline_limit_vehicles": 2850.0,
+    "median_tts_veh_h": 3080.5544297831034,
+    "median_priority_cost": 5888.636628105712
+  },
+  {
+    "pair": [
+      "D035",
+      "D034"
+    ],
+    "matched_hard_contract": true,
+    "eligible": true,
+    "commands": [
+      [
+        1.0,
+        1.0,
+        0.744214314,
+        1.0
+      ],
+      [
+        1.0,
+        1.0,
+        0.56816782,
+        1.0
+      ],
+      [
+        0.37902394,
+        1.0,
+        0.382850901,
+        1.0
+      ]
+    ],
+    "physical_violations": 0,
+    "service_violations": 0,
+    "minimum_physical_margin": 1.1410781134202304,
+    "maximum_deadline_n1_vehicles": 2799.6387426839137,
+    "deadline_limit_vehicles": 2950.0,
+    "median_tts_veh_h": 3093.7252403898397,
+    "median_priority_cost": 5884.5980334666365
+  },
+  {
+    "pair": [
+      "D037",
+      "D036"
+    ],
+    "matched_hard_contract": true,
+    "eligible": true,
+    "commands": [
+      [
+        1.0,
+        1.0,
+        0.653751397,
+        1.0
+      ],
+      [
+        1.0,
+        1.0,
+        0.56816782,
+        1.0
+      ],
+      [
+        0.416739072,
+        1.0,
+        0.382850901,
+        1.0
+      ]
+    ],
+    "physical_violations": 0,
+    "service_violations": 0,
+    "minimum_physical_margin": 0.8491681165797544,
+    "maximum_deadline_n1_vehicles": 2635.6381789758375,
+    "deadline_limit_vehicles": 2750.0,
+    "median_tts_veh_h": 3068.3762122614835,
+    "median_priority_cost": 5894.363740443085
+  },
+  {
+    "pair": [
+      "D039",
+      "D038"
+    ],
+    "matched_hard_contract": true,
+    "eligible": true,
+    "commands": [
+      [
+        1.0,
+        1.0,
+        0.739048114,
+        1.0
+      ],
+      [
+        1.0,
+        1.0,
+        0.56816782,
+        1.0
+      ],
+      [
+        0.397291085,
+        1.0,
+        0.382850901,
+        1.0
+      ]
+    ],
+    "physical_violations": 0,
+    "service_violations": 0,
+    "minimum_physical_margin": 0.9526239225208641,
+    "maximum_deadline_n1_vehicles": 2718.7453432392467,
+    "deadline_limit_vehicles": 2850.0,
+    "median_tts_veh_h": 3080.8295759634357,
+    "median_priority_cost": 5890.341993309519
+  },
+  {
+    "pair": [
+      "D041",
+      "D040"
+    ],
+    "matched_hard_contract": true,
+    "eligible": true,
+    "commands": [
+      [
+        1.0,
+        1.0,
+        0.740151228,
+        1.0
+      ],
+      [
+        1.0,
+        1.0,
+        0.56816782,
+        1.0
+      ],
+      [
+        0.37902394,
+        1.0,
+        0.382850901,
+        1.0
+      ]
+    ],
+    "physical_violations": 0,
+    "service_violations": 0,
+    "minimum_physical_margin": 0.9526239225208641,
+    "maximum_deadline_n1_vehicles": 2800.208457824685,
+    "deadline_limit_vehicles": 2950.0,
+    "median_tts_veh_h": 3094.00096636138,
+    "median_priority_cost": 5886.3176989158765
+  },
+  {
+    "pair": [
+      "D043",
+      "D042"
+    ],
+    "matched_hard_contract": true,
+    "eligible": true,
+    "commands": [
+      [
+        1.0,
+        1.0,
+        0.659213159,
+        1.0
+      ],
+      [
+        1.0,
+        1.0,
+        0.56816782,
+        1.0
+      ],
+      [
+        0.416739072,
+        1.0,
+        0.382850901,
+        1.0
+      ]
+    ],
+    "physical_violations": 128,
+    "service_violations": 0,
+    "minimum_physical_margin": -0.09621426342020101,
+    "maximum_deadline_n1_vehicles": 2636.1121515592495,
+    "deadline_limit_vehicles": 2750.0,
+    "median_tts_veh_h": 3069.5997794445707,
+    "median_priority_cost": 5897.339464522183
+  },
+  {
+    "pair": [
+      "D045",
+      "D044"
+    ],
+    "matched_hard_contract": true,
+    "eligible": true,
+    "commands": [
+      [
+        1.0,
+        1.0,
+        0.727042708,
+        1.0
+      ],
+      [
+        1.0,
+        1.0,
+        0.56816782,
+        1.0
+      ],
+      [
+        0.397291085,
+        1.0,
+        0.382850901,
+        1.0
+      ]
+    ],
+    "physical_violations": 0,
+    "service_violations": 0,
+    "minimum_physical_margin": 0.0527923774202641,
+    "maximum_deadline_n1_vehicles": 2719.6654490643896,
+    "deadline_limit_vehicles": 2850.0,
+    "median_tts_veh_h": 3081.15182176534,
+    "median_priority_cost": 5893.43402634055
+  },
+  {
+    "pair": [
+      "D047",
+      "D046"
+    ],
+    "matched_hard_contract": true,
+    "eligible": true,
+    "commands": [
+      [
+        1.0,
+        1.0,
+        0.727961969,
+        1.0
+      ],
+      [
+        1.0,
+        1.0,
+        0.56816782,
+        1.0
+      ],
+      [
+        0.37902394,
+        1.0,
+        0.382850901,
+        1.0
+      ]
+    ],
+    "physical_violations": 0,
+    "service_violations": 0,
+    "minimum_physical_margin": 0.0527923774202641,
+    "maximum_deadline_n1_vehicles": 2801.16068150665,
+    "deadline_limit_vehicles": 2950.0,
+    "median_tts_veh_h": 3094.3240441326025,
+    "median_priority_cost": 5889.390773413952
+  },
+  {
+    "pair": [
+      "D049",
+      "D048"
+    ],
+    "matched_hard_contract": true,
+    "eligible": true,
+    "commands": [
+      [
+        1.0,
+        1.0,
+        0.653751397,
+        1.0
+      ],
+      [
+        1.0,
+        1.0,
+        0.56816782,
+        1.0
+      ],
+      [
+        0.416739072,
+        1.0,
+        0.382850901,
+        1.0
+      ]
+    ],
+    "physical_violations": 0,
+    "service_violations": 0,
+    "minimum_physical_margin": 0.9910781134202304,
+    "maximum_deadline_n1_vehicles": 2645.6605605226646,
+    "deadline_limit_vehicles": 2750.0,
+    "median_tts_veh_h": 3070.6278213338624,
+    "median_priority_cost": 5892.167964290635
+  },
+  {
+    "pair": [
+      "D051",
+      "D050"
+    ],
+    "matched_hard_contract": true,
+    "eligible": true,
+    "commands": [
+      [
+        1.0,
+        1.0,
+        0.743049916,
+        1.0
+      ],
+      [
+        1.0,
+        1.0,
+        0.56816782,
+        1.0
+      ],
+      [
+        0.397291085,
+        1.0,
+        0.382850901,
+        1.0
+      ]
+    ],
+    "physical_violations": 0,
+    "service_violations": 0,
+    "minimum_physical_margin": 0.9910781134202304,
+    "maximum_deadline_n1_vehicles": 2730.1386887842777,
+    "deadline_limit_vehicles": 2850.0,
+    "median_tts_veh_h": 3080.589933732759,
+    "median_priority_cost": 5888.476732575418
+  },
+  {
+    "pair": [
+      "D053",
+      "D052"
+    ],
+    "matched_hard_contract": true,
+    "eligible": true,
+    "commands": [
+      [
+        1.0,
+        1.0,
+        0.744214314,
+        1.0
+      ],
+      [
+        1.0,
+        1.0,
+        0.56816782,
+        1.0
+      ],
+      [
+        0.37902394,
+        1.0,
+        0.382850901,
+        1.0
+      ]
+    ],
+    "physical_violations": 0,
+    "service_violations": 0,
+    "minimum_physical_margin": 0.9910781134202304,
+    "maximum_deadline_n1_vehicles": 2812.2149282967557,
+    "deadline_limit_vehicles": 2950.0,
+    "median_tts_veh_h": 3093.7603204945167,
+    "median_priority_cost": 5884.479510937336
+  },
+  {
+    "pair": [
+      "D055",
+      "D054"
+    ],
+    "matched_hard_contract": true,
+    "eligible": true,
+    "commands": [
+      [
+        1.0,
+        1.0,
+        0.655311901,
+        1.0
+      ],
+      [
+        1.0,
+        1.0,
+        0.56816782,
+        1.0
+      ],
+      [
+        0.416739072,
+        1.0,
+        0.382850901,
+        1.0
+      ]
+    ],
+    "physical_violations": 0,
+    "service_violations": 0,
+    "minimum_physical_margin": 0.7147731565797599,
+    "maximum_deadline_n1_vehicles": 2645.800220079349,
+    "deadline_limit_vehicles": 2750.0,
+    "median_tts_veh_h": 3070.027690359203,
+    "median_priority_cost": 5893.211865072374
+  },
+  {
+    "pair": [
+      "D057",
+      "D056"
+    ],
+    "matched_hard_contract": true,
+    "eligible": true,
+    "commands": [
+      [
+        1.0,
+        1.0,
+        0.735046312,
+        1.0
+      ],
+      [
+        1.0,
+        1.0,
+        0.56816782,
+        1.0
+      ],
+      [
+        0.397291085,
+        1.0,
+        0.382850901,
+        1.0
+      ]
+    ],
+    "physical_violations": 0,
+    "service_violations": 0,
+    "minimum_physical_margin": 0.9516020285607851,
+    "maximum_deadline_n1_vehicles": 2730.7097003778927,
+    "deadline_limit_vehicles": 2850.0,
+    "median_tts_veh_h": 3080.812405798711,
+    "median_priority_cost": 5889.667361197181
+  },
+  {
+    "pair": [
+      "D059",
+      "D058"
+    ],
+    "matched_hard_contract": true,
+    "eligible": true,
+    "commands": [
+      [
+        1.0,
+        1.0,
+        0.740151228,
+        1.0
+      ],
+      [
+        1.0,
+        1.0,
+        0.56816782,
+        1.0
+      ],
+      [
+        0.37902394,
+        1.0,
+        0.382850901,
+        1.0
+      ]
+    ],
+    "physical_violations": 0,
+    "service_violations": 0,
+    "minimum_physical_margin": 0.9516111772180089,
+    "maximum_deadline_n1_vehicles": 2812.805524882812,
+    "deadline_limit_vehicles": 2950.0,
+    "median_tts_veh_h": 3093.9840922180233,
+    "median_priority_cost": 5885.595103981467
+  },
+  {
+    "pair": [
+      "D061",
+      "D060"
+    ],
+    "matched_hard_contract": true,
+    "eligible": true,
+    "commands": [
+      [
+        1.0,
+        1.0,
+        0.666235425,
+        1.0
+      ],
+      [
+        1.0,
+        1.0,
+        0.56816782,
+        1.0
+      ],
+      [
+        0.416739072,
+        1.0,
+        0.382850901,
+        1.0
+      ]
+    ],
+    "physical_violations": 64,
+    "service_violations": 0,
+    "minimum_physical_margin": -0.17599160342020426,
+    "maximum_deadline_n1_vehicles": 2646.7800568357998,
+    "deadline_limit_vehicles": 2750.0,
+    "median_tts_veh_h": 3070.529230087604,
+    "median_priority_cost": 5896.424332539144
+  },
+  {
+    "pair": [
+      "D063",
+      "D062"
+    ],
+    "matched_hard_contract": true,
+    "eligible": true,
+    "commands": [
+      [
+        1.0,
+        1.0,
+        0.723040906,
+        1.0
+      ],
+      [
+        1.0,
+        1.0,
+        0.56816782,
+        1.0
+      ],
+      [
+        0.397291085,
+        1.0,
+        0.382850901,
+        1.0
+      ]
+    ],
+    "physical_violations": 0,
+    "service_violations": 0,
+    "minimum_physical_margin": 0.05169773606791139,
+    "maximum_deadline_n1_vehicles": 2731.6657278317966,
+    "deadline_limit_vehicles": 2850.0,
+    "median_tts_veh_h": 3081.178429240147,
+    "median_priority_cost": 5892.4042056137205
+  },
+  {
+    "pair": [
+      "D065",
+      "D064"
+    ],
+    "matched_hard_contract": true,
+    "eligible": true,
+    "commands": [
+      [
+        1.0,
+        1.0,
+        0.723898883,
+        1.0
+      ],
+      [
+        1.0,
+        1.0,
+        0.56816782,
+        1.0
+      ],
+      [
+        0.37902394,
+        1.0,
+        0.382850901,
+        1.0
+      ]
+    ],
+    "physical_violations": 0,
+    "service_violations": 0,
+    "minimum_physical_margin": 0.051706473350030535,
+    "maximum_deadline_n1_vehicles": 2813.794854537851,
+    "deadline_limit_vehicles": 2950.0,
+    "median_tts_veh_h": 3094.350302755626,
+    "median_priority_cost": 5888.3694253184485
+  },
+  {
+    "pair": [
+      "D067",
+      "D066"
+    ],
+    "matched_hard_contract": true,
+    "eligible": true,
+    "commands": [
+      [
+        1.0,
+        1.0,
+        0.657652656,
+        1.0
+      ],
+      [
+        1.0,
+        1.0,
+        0.56816782,
+        1.0
+      ],
+      [
+        0.416739072,
+        1.0,
+        0.382850901,
+        1.0
+      ]
+    ],
+    "physical_violations": 0,
+    "service_violations": 0,
+    "minimum_physical_margin": 0.7410781134202304,
+    "maximum_deadline_n1_vehicles": 2663.5024005316063,
+    "deadline_limit_vehicles": 2750.0,
+    "median_tts_veh_h": 3073.2059894320764,
+    "median_priority_cost": 5891.271450771568
+  },
+  {
+    "pair": [
+      "D069",
+      "D068"
+    ],
+    "matched_hard_contract": true,
+    "eligible": true,
+    "commands": [
+      [
+        1.0,
+        1.0,
+        0.739048114,
+        1.0
+      ],
+      [
+        1.0,
+        1.0,
+        0.56816782,
+        1.0
+      ],
+      [
+        0.397291085,
+        1.0,
+        0.382850901,
+        1.0
+      ]
+    ],
+    "physical_violations": 0,
+    "service_violations": 0,
+    "minimum_physical_margin": 0.7410781134202304,
+    "maximum_deadline_n1_vehicles": 2751.1204501276757,
+    "deadline_limit_vehicles": 2850.0,
+    "median_tts_veh_h": 3080.807842486708,
+    "median_priority_cost": 5888.062381537418
+  },
+  {
+    "pair": [
+      "D071",
+      "D070"
+    ],
+    "matched_hard_contract": true,
+    "eligible": true,
+    "commands": [
+      [
+        1.0,
+        1.0,
+        0.740151228,
+        1.0
+      ],
+      [
+        1.0,
+        1.0,
+        0.56816782,
+        1.0
+      ],
+      [
+        0.37902394,
+        1.0,
+        0.382850901,
+        1.0
+      ]
+    ],
+    "physical_violations": 0,
+    "service_violations": 0,
+    "minimum_physical_margin": 0.7410781134202304,
+    "maximum_deadline_n1_vehicles": 2834.2970389721077,
+    "deadline_limit_vehicles": 2950.0,
+    "median_tts_veh_h": 3093.9740090892806,
+    "median_priority_cost": 5884.046356997465
+  },
+  {
+    "pair": [
+      "D073",
+      "D072"
+    ],
+    "matched_hard_contract": true,
+    "eligible": false
+  },
+  {
+    "pair": [
+      "D075",
+      "D074"
+    ],
+    "matched_hard_contract": true,
+    "eligible": false
+  },
+  {
+    "pair": [
+      "D077",
+      "D076"
+    ],
+    "matched_hard_contract": true,
+    "eligible": false
+  },
+  {
+    "pair": [
+      "D079",
+      "D078"
+    ],
+    "matched_hard_contract": true,
+    "eligible": false
+  },
+  {
+    "pair": [
+      "D081",
+      "D080"
+    ],
+    "matched_hard_contract": true,
+    "eligible": false
+  },
+  {
+    "pair": [
+      "D083",
+      "D082"
+    ],
+    "matched_hard_contract": true,
+    "eligible": false
+  },
+  {
+    "pair": [
+      "D085",
+      "D084"
+    ],
+    "matched_hard_contract": false,
+    "eligible": false
+  },
+  {
+    "pair": [
+      "D087",
+      "D086"
+    ],
+    "matched_hard_contract": false,
+    "eligible": false
+  },
+  {
+    "pair": [
+      "D089",
+      "D088"
+    ],
+    "matched_hard_contract": false,
+    "eligible": false
+  },
+  {
+    "pair": [
+      "D091",
+      "D090"
+    ],
+    "matched_hard_contract": false,
+    "eligible": false
+  }
+]

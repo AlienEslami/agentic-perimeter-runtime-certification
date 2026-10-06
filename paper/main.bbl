@@ -1,0 +1,335 @@
+\begin{thebibliography}{10}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \def\href#1#2{#2} \def\path#1{#1}\fi
+
+\bibitem{daganzo2007gridlock}
+C.~F. Daganzo, Urban gridlock: Macroscopic modeling and mitigation approaches,
+  Transportation Research Part B: Methodological 41~(1) (2007) 49--62.
+\newblock \href {https://doi.org/10.1016/j.trb.2006.03.001}
+  {\path{doi:10.1016/j.trb.2006.03.001}}.
+
+\bibitem{geroliminis2008existence}
+N.~Geroliminis, C.~F. Daganzo, Existence of urban-scale macroscopic fundamental
+  diagrams: Some experimental findings, Transportation Research Part B:
+  Methodological 42~(9) (2008) 759--770.
+\newblock \href {https://doi.org/10.1016/j.trb.2008.02.002}
+  {\path{doi:10.1016/j.trb.2008.02.002}}.
+
+\bibitem{daganzo2008analytical}
+C.~F. Daganzo, N.~Geroliminis, An analytical approximation for the macroscopic
+  fundamental diagram of urban traffic, Transportation Research Part B:
+  Methodological 42~(9) (2008) 771--781.
+\newblock \href {https://doi.org/10.1016/j.trb.2008.06.008}
+  {\path{doi:10.1016/j.trb.2008.06.008}}.
+
+\bibitem{geroliminis2011properties}
+N.~Geroliminis, J.~Sun, Properties of a well-defined macroscopic fundamental
+  diagram for urban traffic, Transportation Research Part B: Methodological
+  45~(3) (2011) 605--617.
+\newblock \href {https://doi.org/10.1016/j.trb.2010.11.004}
+  {\path{doi:10.1016/j.trb.2010.11.004}}.
+
+\bibitem{leclercq2014cross}
+L.~Leclercq, N.~Chiabaut, B.~Trinquier, Macroscopic fundamental diagrams: A
+  cross-comparison of estimation methods, Transportation Research Part B:
+  Methodological 62 (2014) 1--12.
+\newblock \href {https://doi.org/10.1016/j.trb.2014.01.007}
+  {\path{doi:10.1016/j.trb.2014.01.007}}.
+
+\bibitem{keyvan2012gating}
+M.~Keyvan-Ekbatani, A.~Kouvelas, I.~Papamichail, M.~Papageorgiou, Exploiting
+  the fundamental diagram of urban networks for feedback-based gating,
+  Transportation Research Part B: Methodological 46~(10) (2012) 1393--1403.
+\newblock \href {https://doi.org/10.1016/j.trb.2012.06.008}
+  {\path{doi:10.1016/j.trb.2012.06.008}}.
+
+\bibitem{aboudolas2013perimeter}
+K.~Aboudolas, N.~Geroliminis, Perimeter and boundary flow control in
+  multi-reservoir heterogeneous networks, Transportation Research Part B:
+  Methodological 55 (2013) 265--281.
+\newblock \href {https://doi.org/10.1016/j.trb.2013.07.003}
+  {\path{doi:10.1016/j.trb.2013.07.003}}.
+
+\bibitem{haddad2012stability}
+J.~Haddad, N.~Geroliminis, On the stability of traffic perimeter control in
+  two-region urban cities, Transportation Research Part B: Methodological
+  46~(9) (2012) 1159--1176.
+\newblock \href {https://doi.org/10.1016/j.trb.2012.04.004}
+  {\path{doi:10.1016/j.trb.2012.04.004}}.
+
+\bibitem{zhong2018robust}
+R.~Zhong, C.~Chen, Y.~Huang, A.~Sumalee, W.~H.~K. Lam, D.~B. Xu, Robust
+  perimeter control for two urban regions with macroscopic fundamental
+  diagrams: A control-{L}yapunov function approach, Transportation Research
+  Part B: Methodological 117 (2018) 687--707.
+\newblock \href {https://doi.org/10.1016/j.trb.2017.09.008}
+  {\path{doi:10.1016/j.trb.2017.09.008}}.
+
+\bibitem{mohajerpoor2020hinf}
+R.~Mohajerpoor, M.~Saberi, H.~L. Vu, T.~M. Garoni, M.~Ramezani, {$H_\infty$}
+  robust perimeter flow control in urban networks with partial information
+  feedback, Transportation Research Part B: Methodological 137 (2020) 47--73.
+\newblock \href {https://doi.org/10.1016/j.trb.2019.03.010}
+  {\path{doi:10.1016/j.trb.2019.03.010}}.
+
+\bibitem{hajiahmadi2015hybrid}
+M.~Hajiahmadi, J.~Haddad, B.~{De Schutter}, N.~Geroliminis, Optimal hybrid
+  perimeter and switching plans control for urban traffic networks, IEEE
+  Transactions on Control Systems Technology 23~(2) (2015) 464--478.
+\newblock \href {https://doi.org/10.1109/TCST.2014.2330997}
+  {\path{doi:10.1109/TCST.2014.2330997}}.
+
+\bibitem{haddad2020adaptive}
+J.~Haddad, Z.~Zheng, Adaptive perimeter control for multi-region
+  accumulation-based models with state delays, Transportation Research Part B:
+  Methodological 137 (2020) 133--153.
+\newblock \href {https://doi.org/10.1016/j.trb.2018.05.019}
+  {\path{doi:10.1016/j.trb.2018.05.019}}.
+
+\bibitem{kouvelas2017adaptive}
+A.~Kouvelas, M.~Saeedmanesh, N.~Geroliminis, Enhancing model-based feedback
+  perimeter control with data-driven online adaptive optimization,
+  Transportation Research Part B: Methodological 96 (2017) 26--45.
+\newblock \href {https://doi.org/10.1016/j.trb.2016.10.011}
+  {\path{doi:10.1016/j.trb.2016.10.011}}.
+
+\bibitem{geroliminis2013mpc}
+N.~Geroliminis, J.~Haddad, M.~Ramezani, Optimal perimeter control for two urban
+  regions with macroscopic fundamental diagrams: A model predictive approach,
+  IEEE Transactions on Intelligent Transportation Systems 14~(1) (2013)
+  348--359.
+\newblock \href {https://doi.org/10.1109/TITS.2012.2216877}
+  {\path{doi:10.1109/TITS.2012.2216877}}.
+
+\bibitem{ramezani2015heterogeneity}
+M.~Ramezani, J.~Haddad, N.~Geroliminis, Dynamics of heterogeneity in urban
+  networks: Aggregated traffic modeling and hierarchical control,
+  Transportation Research Part B: Methodological 74 (2015) 1--19.
+\newblock \href {https://doi.org/10.1016/j.trb.2014.12.010}
+  {\path{doi:10.1016/j.trb.2014.12.010}}.
+
+\bibitem{sirmatel2018economic}
+I.~I. Sirmatel, N.~Geroliminis, Economic model predictive control of
+  large-scale urban road networks via perimeter control and regional route
+  guidance, IEEE Transactions on Intelligent Transportation Systems 19~(4)
+  (2018) 1112--1121.
+\newblock \href {https://doi.org/10.1109/TITS.2017.2716541}
+  {\path{doi:10.1109/TITS.2017.2716541}}.
+
+\bibitem{haddad2017queues}
+J.~Haddad, Optimal perimeter control synthesis for two urban regions with
+  aggregate boundary queue dynamics, Transportation Research Part B:
+  Methodological 96 (2017) 1--25.
+\newblock \href {https://doi.org/10.1016/j.trb.2016.10.016}
+  {\path{doi:10.1016/j.trb.2016.10.016}}.
+
+\bibitem{ni2019cordon}
+W.~Ni, M.~J. Cassidy, City-wide traffic control: Modeling impacts of cordon
+  queues, Transportation Research Part C: Emerging Technologies 113 (2020)
+  164--175.
+\newblock \href {https://doi.org/10.1016/j.trc.2019.04.024}
+  {\path{doi:10.1016/j.trc.2019.04.024}}.
+
+\bibitem{sirmatel2019estimation}
+I.~I. Sirmatel, N.~Geroliminis, Moving horizon demand and state estimation for
+  model predictive perimeter control of large-scale urban networks, in: 2019
+  18th European Control Conference, 2019, pp. 3650--3655.
+\newblock \href {https://doi.org/10.23919/ECC.2019.8795828}
+  {\path{doi:10.23919/ECC.2019.8795828}}.
+
+\bibitem{ma2025mfduq}
+W.~Ma, Y.~Huang, N.~Zheng, T.~Pan, R.~Zhong, Calibration and uncertainty
+  quantification of macroscopic fundamental diagrams, Transportation Research
+  Part A: Policy and Practice 211 (2026) 105127.
+\newblock \href {https://doi.org/10.1016/j.tra.2026.105127}
+  {\path{doi:10.1016/j.tra.2026.105127}}.
+
+\bibitem{chen2022dataefficient}
+C.~Chen, Y.~Huang, W.~H.~K. Lam, T.~Pan, S.-P. Hsu, A.~Sumalee, R.~Zhong, Data
+  efficient reinforcement learning and adaptive optimal perimeter control of
+  network traffic dynamics, Transportation Research Part C: Emerging
+  Technologies 142 (2022) 103759.
+\newblock \href {https://doi.org/10.1016/j.trc.2022.103759}
+  {\path{doi:10.1016/j.trc.2022.103759}}.
+
+\bibitem{chen2024iadp}
+C.~Chen, N.~Geroliminis, R.~Zhong, An iterative adaptive dynamic programming
+  approach for optimal perimeter control of network traffic dynamics,
+  Transportation Science 58~(4) (2024) 896--918.
+\newblock \href {https://doi.org/10.1287/trsc.2023.0091}
+  {\path{doi:10.1287/trsc.2023.0091}}.
+
+\bibitem{zhou2023scalable}
+D.~Zhou, V.~V. Gayah, Scalable multi-region perimeter metering control for
+  urban networks: A multi-agent deep reinforcement learning approach,
+  Transportation Research Part C: Emerging Technologies 148 (2023) 104033.
+\newblock \href {https://doi.org/10.1016/j.trc.2023.104033}
+  {\path{doi:10.1016/j.trc.2023.104033}}.
+
+\bibitem{yu2025physicsperimeter}
+J.~Yu, P.-A. Laharotte, Y.~Han, W.~Ma, L.~Leclercq, Perimeter control with
+  heterogeneous metering rates for cordon signals: A physics-regularized
+  multi-agent reinforcement learning approach, Transportation Research Part C:
+  Emerging Technologies 171 (2025) 104944.
+\newblock \href {https://doi.org/10.1016/j.trc.2024.104944}
+  {\path{doi:10.1016/j.trc.2024.104944}}.
+
+\bibitem{li2024beyond}
+X.~Li, X.~Zhang, X.~Qian, C.~Zhao, Y.~Guo, S.~Peeta, Beyond centralization:
+  Non-cooperative perimeter control with extended mean-field reinforcement
+  learning in urban road networks, Transportation Research Part B:
+  Methodological 186 (2024) 103016.
+\newblock \href {https://doi.org/10.1016/j.trb.2024.103016}
+  {\path{doi:10.1016/j.trb.2024.103016}}.
+
+\bibitem{wei2019presslight}
+H.~Wei, C.~Chen, G.~Zheng, K.~Wu, V.~Gayah, K.~Xu, Z.~Li, {PressLight}:
+  Learning max pressure control to coordinate traffic signals in arterial
+  network, in: Proceedings of the 25th ACM SIGKDD International Conference on
+  Knowledge Discovery and Data Mining, 2019, pp. 1290--1298.
+\newblock \href {https://doi.org/10.1145/3292500.3330949}
+  {\path{doi:10.1145/3292500.3330949}}.
+
+\bibitem{wei2019colight}
+H.~Wei, N.~Xu, H.~Zhang, G.~Zheng, X.~Zang, C.~Chen, W.~Zhang, Y.~Zhu, K.~Xu,
+  {CoLight}: Learning network-level cooperation for traffic signal control, in:
+  Proceedings of the 28th ACM International Conference on Information and
+  Knowledge Management, 2019, pp. 1913--1922.
+\newblock \href {https://doi.org/10.1145/3357384.3357902}
+  {\path{doi:10.1145/3357384.3357902}}.
+
+\bibitem{llmlight2023}
+S.~Lai, Z.~Xu, W.~Zhang, H.~Liu, H.~Xiong, {LLM}light: Large language models as
+  traffic signal control agents, arXiv preprint arXiv:2312.16044 (2023).
+\newblock \href {https://doi.org/10.48550/arXiv.2312.16044}
+  {\path{doi:10.48550/arXiv.2312.16044}}.
+
+\bibitem{masri2025llmtraffic}
+S.~Masri, H.~I. Ashqar, M.~Elhenawy, Large language models (llms) as traffic
+  control systems at urban intersections: A new paradigm, Vehicles 7~(1) (2025)
+  11.
+\newblock \href {https://doi.org/10.3390/vehicles7010011}
+  {\path{doi:10.3390/vehicles7010011}}.
+
+\bibitem{collmlight2025}
+Z.~Yuan, S.~Lai, H.~Liu, {CoLLMLight}: Cooperative large language model agents
+  for network-wide traffic signal control, arXiv preprint arXiv:2503.11739
+  (2025).
+\newblock \href {https://doi.org/10.48550/arXiv.2503.11739}
+  {\path{doi:10.48550/arXiv.2503.11739}}.
+
+\bibitem{trafficgpt2024}
+S.~Zhang, D.~Fu, Z.~Zhang, B.~Yu, P.~Cai, Trafficgpt: Viewing, processing and
+  interacting with traffic foundation models, Transport Policy 150 (2024)
+  95--105.
+\newblock \href {https://doi.org/10.1016/j.tranpol.2024.03.006}
+  {\path{doi:10.1016/j.tranpol.2024.03.006}}.
+
+\bibitem{openti2024}
+L.~Da, K.~Liou, T.~Chen, X.~Zhou, X.~Luo, Y.~Yang, H.~Wei, Open-{TI}: Open
+  traffic intelligence with augmented language model, arXiv preprint
+  arXiv:2401.00211 (2024).
+\newblock \href {https://doi.org/10.48550/arXiv.2401.00211}
+  {\path{doi:10.48550/arXiv.2401.00211}}.
+
+\bibitem{virtualpolice2026}
+S.~Wei, Q.~Wang, K.~Yang, Virtual traffic police: Large language
+  model-augmented traffic signal control for unforeseen incidents, arXiv
+  preprint arXiv:2601.15816 (2026).
+\newblock \href {https://doi.org/10.48550/arXiv.2601.15816}
+  {\path{doi:10.48550/arXiv.2601.15816}}.
+
+\bibitem{yu2025statespace}
+J.~Yu, M.~F. Hyland, Interpretable state-space model of urban dynamics for
+  human--machine collaborative transportation planning, Transportation Research
+  Part B: Methodological 192 (2025) 103134.
+\newblock \href {https://doi.org/10.1016/j.trb.2024.103134}
+  {\path{doi:10.1016/j.trb.2024.103134}}.
+
+\bibitem{simplex}
+L.~Sha, R.~Rajkumar, M.~Gagliardi, Evolving dependable real-time systems, in:
+  Proceedings of the 1996 IEEE Aerospace Applications Conference, 1996, pp.
+  335--346.
+\newblock \href {https://doi.org/10.1109/AERO.1996.495894}
+  {\path{doi:10.1109/AERO.1996.495894}}.
+
+\bibitem{mehmood2022black}
+U.~Mehmood, S.~Sheikhi, S.~Bak, S.~A. Smolka, S.~D. Stoller, The black-box
+  simplex architecture for runtime assurance of autonomous cps, in: NASA formal
+  methods symposium, Springer, 2022, pp. 231--250.
+
+\bibitem{ames2017}
+A.~D. Ames, X.~Xu, J.~W. Grizzle, P.~Tabuada, Control barrier function based
+  quadratic programs for safety critical systems, IEEE Transactions on
+  Automatic Control 62~(8) (2017) 3861--3876.
+\newblock \href {https://doi.org/10.1109/TAC.2016.2638961}
+  {\path{doi:10.1109/TAC.2016.2638961}}.
+
+\bibitem{alshiekh2018}
+M.~Alshiekh, R.~Bloem, R.~Ehlers, B.~K\"onighofer, S.~Niekum, U.~Topcu, Safe
+  reinforcement learning via shielding, in: Proceedings of the AAAI Conference
+  on Artificial Intelligence, Vol.~32, 2018, pp. 2669--2678.
+\newblock \href {https://doi.org/10.1609/aaai.v32i1.11797}
+  {\path{doi:10.1609/aaai.v32i1.11797}}.
+
+\bibitem{wabersich2021}
+K.~P. Wabersich, M.~N. Zeilinger, A predictive safety filter for learning-based
+  control of constrained nonlinear dynamical systems, Automatica 129 (2021)
+  109597.
+\newblock \href {https://doi.org/10.1016/j.automatica.2021.109597}
+  {\path{doi:10.1016/j.automatica.2021.109597}}.
+
+\bibitem{hsu2023safety}
+K.-C. Hsu, H.~Hu, J.~F. Fisac, The safety filter: A unified view of
+  safety-critical control in autonomous systems, Annual Review of Control,
+  Robotics, and Autonomous Systems 7 (2024) 47--72.
+\newblock \href {https://doi.org/10.1146/annurev-control-071723-102940}
+  {\path{doi:10.1146/annurev-control-071723-102940}}.
+
+\bibitem{fisac2019}
+J.~F. Fisac, A.~K. Akametalu, M.~N. Zeilinger, S.~Kaynama, J.~Gillula, C.~J.
+  Tomlin, A general safety framework for learning-based control in uncertain
+  robotic systems, IEEE Transactions on Automatic Control 64~(7) (2019)
+  2737--2752.
+\newblock \href {https://doi.org/10.1109/TAC.2018.2876389}
+  {\path{doi:10.1109/TAC.2018.2876389}}.
+
+\bibitem{hobbs2023runtime}
+K.~L. Hobbs, M.~L. Mote, M.~C.~L. Abate, S.~D. Coogan, E.~M. Feron, Runtime
+  assurance for safety-critical systems: An introduction to safety filtering
+  approaches for complex control systems, IEEE Control Systems Magazine 43~(2)
+  (2023) 28--65.
+\newblock \href {https://doi.org/10.1109/MCS.2023.3234380}
+  {\path{doi:10.1109/MCS.2023.3234380}}.
+
+\bibitem{gilbert2002generalized}
+E.~G. Gilbert, I.~Kolmanovsky, Nonlinear tracking control in the presence of
+  state and control constraints: A generalized reference governor, Automatica
+  38~(12) (2002) 2063--2073.
+\newblock \href {https://doi.org/10.1016/S0005-1098(02)00135-8}
+  {\path{doi:10.1016/S0005-1098(02)00135-8}}.
+
+\bibitem{garone2017reference}
+E.~Garone, S.~Di~Cairano, I.~V. Kolmanovsky, Reference and command governors
+  for systems with constraints: A survey on theory and applications, Automatica
+  75 (2017) 306--328.
+\newblock \href {https://doi.org/10.1016/j.automatica.2016.08.013}
+  {\path{doi:10.1016/j.automatica.2016.08.013}}.
+
+\bibitem{coogan2020mixed}
+S.~Coogan, Mixed monotonicity for reachability and safety in dynamical systems,
+  in: 59th IEEE Conference on Decision and Control, 2020, pp. 5074--5085.
+\newblock \href {https://doi.org/10.1109/CDC42340.2020.9304391}
+  {\path{doi:10.1109/CDC42340.2020.9304391}}.
+
+\bibitem{kochdumper2021sparse}
+N.~Kochdumper, M.~Althoff, Sparse polynomial zonotopes: A novel set
+  representation for reachability analysis, IEEE Transactions on Automatic
+  Control 66~(9) (2021) 4043--4058.
+\newblock \href {https://doi.org/10.1109/TAC.2020.3024348}
+  {\path{doi:10.1109/TAC.2020.3024348}}.
+
+\end{thebibliography}

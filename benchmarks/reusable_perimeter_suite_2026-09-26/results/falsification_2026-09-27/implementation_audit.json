@@ -1,0 +1,15 @@
+{
+  "field_maximum_error": 0.0,
+  "gradient_maximum_absolute_errors": {
+    "8": 1.1352431433797605e-07,
+    "40": 1.0042424025691332e-07
+  },
+  "source_hashes": {
+    "FALSIFICATION_PROTOCOL.md": "1062eb63eecc47b48bd6cdba1b2157b6bb5ca9a2398f1c3e4388de7a0dc39a29",
+    "run_falsification.py": "a746be86e047eddcad33cefcda2f961d03eda07d565840441c1f679b19e77980",
+    "common.py": "69d4a8fdb627071607d9c0e3324790f97c3c7d166cca22e3db9550677f5e76fb",
+    "anchor.json": "c143e9c29f9fb4bd5346819f66d1332dcfcacc05f8a6c3e96770558cbef1e307",
+    "vendor\\mfd_incident_model.py": "ceeb25478d491deb594214ed626845a4945bb234af92dac18bbe18259828d71c",
+    "vendor\\mfd_incident_mpc.py": "2f6c8e6710cc241f1ae001ffa694e888b99e361346306840c00d88188f333be0"
+  }
+}

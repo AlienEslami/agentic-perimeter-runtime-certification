@@ -1,0 +1,70 @@
+[
+  {
+    "pair": [
+      "D015",
+      "D014"
+    ],
+    "outcomes": [
+      "replace",
+      "replace"
+    ],
+    "reasons": [
+      [],
+      []
+    ],
+    "physical_passes": 640,
+    "service_passes": 640,
+    "median_tts_veh_h": 3080.633296983119,
+    "median_priority_cost": 5889.104917852415
+  },
+  {
+    "pair": [
+      "D027",
+      "D026"
+    ],
+    "outcomes": [
+      "replace",
+      "retain_verified_suffix"
+    ],
+    "reasons": [
+      [],
+      [
+        {
+          "kind": "scheduled_service_not_certified",
+          "checks": [
+            {
+              "time_h": 1.0,
+              "coordinate": 0,
+              "coordinate_name": "n1",
+              "upper": 33.957650101164226,
+              "limit": 28.5,
+              "passed": false
+            }
+          ]
+        }
+      ]
+    ],
+    "physical_passes": 640,
+    "service_passes": 640,
+    "median_tts_veh_h": 2716.70355394776,
+    "median_priority_cost": 6206.6512377153795
+  },
+  {
+    "pair": [
+      "D071",
+      "D070"
+    ],
+    "outcomes": [
+      "retain_verified_suffix",
+      "retain_verified_suffix"
+    ],
+    "reasons": [
+      "Entire explicit initial physical information box must be admissible",
+      "Entire explicit initial physical information box must be admissible"
+    ],
+    "physical_passes": 640,
+    "service_passes": 640,
+    "median_tts_veh_h": 3168.8475434068478,
+    "median_priority_cost": 5968.952669413124
+  }
+]

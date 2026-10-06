@@ -1,0 +1,19 @@
+{
+  "prepared_for": "https://github.com/AlienEslami/agentic-perimeter-runtime-certification",
+  "visibility_verified_private": true,
+  "copied_files_hash_verified": 749,
+  "python_sources_parsed": 186,
+  "certificate_records_verified": 994,
+  "certificate_bound_sources_verified": 14,
+  "portable_model_and_derivative_audit_passed": true,
+  "credential_signature_scan": {
+    "files_scanned": 783,
+    "matches": 0,
+    "compressed_payloads_inspected": true
+  },
+  "largest_file": {
+    "path": "benchmarks/reusable_perimeter_suite_2026-09-26/results/REALIZATION_RESULTS.csv",
+    "bytes": 59700405
+  },
+  "scope": "Copy integrity, archived certificate bindings, source parsing, model/derivative audit, and upload scan; no optimization sweeps or live API calls."
+}

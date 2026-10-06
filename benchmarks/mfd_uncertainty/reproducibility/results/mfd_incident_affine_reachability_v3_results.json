@@ -1,0 +1,222 @@
+{
+  "source_sha256": {
+    "reproducibility/mfd_incident_affine_reachability.py": "d4c003a0f773b7d2930e4a1bc79b2da5588ef6debde6e045e71fd1efe4974dd7",
+    "reproducibility/mfd_incident_model.py": "96816f509655d8431b10af94e623eb9a4c7cff8b97634c579a4bf908ae5f0663",
+    "reproducibility/mfd_cubic_pilot.py": "e4a2cff5c97608b4cb2efd03cb5172c4e46ac7ba8c58ee8d10d16662bc14ff77",
+    "reproducibility/mfd_incident_verifier.py": "ae861d44fad693866263923ac75f256af7e3d91d11a59d929a172f84fc6d90ce",
+    "reproducibility/mfd_incident_mpc_certification.py": "667f7044ca7b7eab9908d17267816cfc78e333ed66b1c44c7267d0fa22e3915f",
+    "reproducibility/mfd_deadline_certificates.py": "91edd9f707a315848f7e0368c10eaf41b003339c5879eaf40bcaf241670ad71b",
+    "reproducibility/mfd_incident_positive_reachability.py": "622ba5a31fefe01447fe6898268265db14b44e52c4f426e570df446d460bd55a",
+    "POSITIVE_REACHABILITY_PROTOCOL.md": "3ef42f19153205b9726f832e48b6efd8f29688b14105a16c7cf1fcd0217c7acb",
+    "reproducibility/mfd_incident_queue_bounds.py": "c537b695de8b9686fe426f71486689e2c92249205021b22dbff981e395a1594e",
+    "reproducibility/mfd_incident_uncertainty_frontier.py": "9509be815c5a2a82d1a9677c573de8510dd82bedfd0f7f1c3099f08fe41a070c",
+    "reproducibility/results/mfd_affine_v3_protocol.json": "fc8e263f64d47c7127676808a788603d8d83fd07fd6564632ae59466e5712010",
+    "reproducibility/results/mfd_incident_mpc_grid_results.json": "4cbbcaa348ba561606f7ad8cd70fe3a3e5f95de3da93bea180a578e2c98f34b3"
+  },
+  "source_snapshots": {
+    "reproducibility/mfd_incident_affine_reachability.py": "reproducibility/results/ars/d4c003a0f773b7d2/mfd_incident_affine_reachability.py",
+    "reproducibility/mfd_incident_model.py": "reproducibility/results/ars/96816f509655d843/mfd_incident_model.py",
+    "reproducibility/mfd_cubic_pilot.py": "reproducibility/results/ars/e4a2cff5c97608b4/mfd_cubic_pilot.py",
+    "reproducibility/mfd_incident_verifier.py": "reproducibility/results/ars/ae861d44fad69386/mfd_incident_verifier.py",
+    "reproducibility/mfd_incident_mpc_certification.py": "reproducibility/results/ars/667f7044ca7b7eab/mfd_incident_mpc_certification.py",
+    "reproducibility/mfd_deadline_certificates.py": "reproducibility/results/ars/91edd9f707a31584/mfd_deadline_certificates.py",
+    "reproducibility/mfd_incident_positive_reachability.py": "reproducibility/results/ars/622ba5a31fefe014/mfd_incident_positive_reachability.py",
+    "POSITIVE_REACHABILITY_PROTOCOL.md": "reproducibility/results/ars/3ef42f19153205b9/POSITIVE_REACHABILITY_PROTOCOL.md",
+    "reproducibility/mfd_incident_queue_bounds.py": "reproducibility/results/ars/c537b695de8b9686/mfd_incident_queue_bounds.py",
+    "reproducibility/mfd_incident_uncertainty_frontier.py": "reproducibility/results/ars/9509be815c5a2a82/mfd_incident_uncertainty_frontier.py",
+    "reproducibility/results/mfd_affine_v3_protocol.json": "reproducibility/results/ars/fc8e263f64d47c71/mfd_affine_v3_protocol.json",
+    "reproducibility/results/mfd_incident_mpc_grid_results.json": "reproducibility/results/ars/4cbbcaa348ba5616/mfd_incident_mpc_grid_results.json"
+  },
+  "protocol_path": "reproducibility/results/mfd_affine_v3_protocol.json",
+  "protocol_sha256": "fc8e263f64d47c7127676808a788603d8d83fd07fd6564632ae59466e5712010",
+  "protocol": {
+    "method": "signed-generator robust-variational enclosure with independent positive/queue supports v3",
+    "algorithm": "G'=A G; eta'=J eta+(J-A)G xi+defect+Le7w; robust Metzler comparison for eta",
+    "independent_physics": "verified initial positivity; scalar autonomous queue bounds; no G/rho contraction",
+    "mean_value_domain": "old corridor intersect convex hull of nominal predictor queue and all actual scalar queues",
+    "final_service": "minimum of inherited box-hull and signed-generator endpoint affine supports",
+    "checkpoints": "outer_hull_only; no restart or arbitrary suffix authorization",
+    "step_seconds": 15.0,
+    "series_order": 18,
+    "queue_width_rule": "min(state width,10) vehicles",
+    "first_tests": [
+      [
+        100.0,
+        60.0
+      ],
+      [
+        50.0,
+        300.0
+      ],
+      [
+        10.0,
+        600.0
+      ],
+      [
+        1.0,
+        1200.0
+      ]
+    ],
+    "followup_grid": [
+      [
+        1.0,
+        60.0
+      ],
+      [
+        10.0,
+        60.0
+      ],
+      [
+        25.0,
+        60.0
+      ],
+      [
+        50.0,
+        60.0
+      ],
+      [
+        100.0,
+        60.0
+      ],
+      [
+        1.0,
+        120.0
+      ],
+      [
+        10.0,
+        120.0
+      ],
+      [
+        25.0,
+        120.0
+      ],
+      [
+        50.0,
+        120.0
+      ],
+      [
+        100.0,
+        120.0
+      ],
+      [
+        1.0,
+        300.0
+      ],
+      [
+        10.0,
+        300.0
+      ],
+      [
+        25.0,
+        300.0
+      ],
+      [
+        50.0,
+        300.0
+      ],
+      [
+        100.0,
+        300.0
+      ]
+    ],
+    "horizon_h": 1.0,
+    "service_limit_vehicles": 2850.0,
+    "commands": "archived first primary MPC plan unchanged",
+    "source_record": "mfd_incident_mpc_grid_results.json",
+    "all_outcomes_retained": true,
+    "prior_versions": "v1 additive-diagonal failure and v2 complete15grid retained with executed source snapshots"
+  },
+  "execution_order": [
+    [
+      100.0,
+      60.0
+    ],
+    [
+      50.0,
+      300.0
+    ],
+    [
+      10.0,
+      600.0
+    ],
+    [
+      1.0,
+      1200.0
+    ],
+    [
+      1.0,
+      60.0
+    ],
+    [
+      10.0,
+      60.0
+    ],
+    [
+      25.0,
+      60.0
+    ],
+    [
+      50.0,
+      60.0
+    ],
+    [
+      1.0,
+      120.0
+    ],
+    [
+      10.0,
+      120.0
+    ],
+    [
+      25.0,
+      120.0
+    ],
+    [
+      50.0,
+      120.0
+    ],
+    [
+      100.0,
+      120.0
+    ],
+    [
+      1.0,
+      300.0
+    ],
+    [
+      10.0,
+      300.0
+    ],
+    [
+      25.0,
+      300.0
+    ],
+    [
+      100.0,
+      300.0
+    ]
+  ],
+  "rows": [
+    {
+      "row_id": "v100_r60",
+      "state_half_width_vehicles": 100.0,
+      "residual_vehicles_per_hour": 60.0,
+      "accepted": false,
+      "certified_until_h": 0.26666666666666666,
+      "first_failure": {
+        "kind": "continuous_physical_constraint_not_certified",
+        "segment": 1,
+        "time_h": 0.2708333333333333,
+        "mode": "constant_block_1",
+        "constraint": "n2_upper",
+        "margin_lower": -29.22562341158731,
+        "active_branch": "supply"
+      },
+      "service_upper_vehicles": null,
+      "wall_seconds": 4.34809210000094,
+      "maximum_box_hull_radius": 62.014498620095054,
+      "proof_file": "reproducibility/results/mfd_incident_affine_reachability_v3_v100_r60_proof.json",
+      "proof_sha256": "841c9b9a66d033f26d40ed704ee0d63a2150557a432714b3614121c2c016f89a"
+    }
+  ]
+}

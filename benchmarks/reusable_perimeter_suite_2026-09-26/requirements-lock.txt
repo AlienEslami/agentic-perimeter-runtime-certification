@@ -1,0 +1,8 @@
+# Numerical study environment. Python 3.12.
+numpy==2.4.6
+scipy==1.18.0
+mpmath==1.3.0
+matplotlib==3.11.0
+# PDF-report environment (separate bundled Python runtime).
+reportlab==4.4.9
+pypdf==6.10.0

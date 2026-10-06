@@ -1,0 +1,6 @@
+{
+  "tested_state_command_pairs": 1437,
+  "max_field_identity_error": 8.526512829121202e-14,
+  "max_jacobian_identity_error": 3.552713678800501e-15,
+  "algebraic_identity": "H f7(x,u)=f5(Hx,u) and H J7(x,u)=J5(Hx,u) H for u20=1"
+}

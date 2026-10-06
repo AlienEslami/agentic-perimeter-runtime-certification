@@ -1,0 +1,64 @@
+{
+  "source_checks": {
+    "matching_reading_layouts": true,
+    "numerical_tables_unchanged": true,
+    "consistent_uncertainty_units": true,
+    "citations_and_references_resolved": true
+  },
+  "documents": {
+    "main": {
+      "pages": 58,
+      "all_pages_rendered": true,
+      "text_outside_page": [],
+      "contact_sheets": [
+        "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\submission_revision_2026_10_05\\final\\main_contact_1.png",
+        "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\submission_revision_2026_10_05\\final\\main_contact_2.png",
+        "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\submission_revision_2026_10_05\\final\\main_contact_3.png"
+      ],
+      "detailed_pages": [
+        "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\submission_revision_2026_10_05\\final\\main\\detail-6-06.png",
+        "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\submission_revision_2026_10_05\\final\\main\\detail-7-07.png",
+        "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\submission_revision_2026_10_05\\final\\main\\detail-10-10.png",
+        "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\submission_revision_2026_10_05\\final\\main\\detail-33-33.png",
+        "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\submission_revision_2026_10_05\\final\\main\\detail-37-37.png",
+        "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\submission_revision_2026_10_05\\final\\main\\detail-38-38.png",
+        "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\submission_revision_2026_10_05\\final\\main\\detail-52-52.png"
+      ],
+      "sha256": "e80b9bd3e8804825fa426f90846c5bfa46d57483c17c537593e5bdefc09590fe"
+    },
+    "main_ieee": {
+      "pages": 24,
+      "all_pages_rendered": true,
+      "text_outside_page": [],
+      "contact_sheets": [
+        "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\submission_revision_2026_10_05\\final\\main_ieee_contact_1.png",
+        "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\submission_revision_2026_10_05\\final\\main_ieee_contact_2.png"
+      ],
+      "detailed_pages": [
+        "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\submission_revision_2026_10_05\\final\\main_ieee\\detail-4-04.png",
+        "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\submission_revision_2026_10_05\\final\\main_ieee\\detail-5-05.png",
+        "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\submission_revision_2026_10_05\\final\\main_ieee\\detail-14-14.png",
+        "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\submission_revision_2026_10_05\\final\\main_ieee\\detail-16-16.png"
+      ],
+      "sha256": "ee7aee21905481fdb8a745c91ffe349491e71a2095721f7aa435a61a18a40faf"
+    },
+    "supplement": {
+      "pages": 30,
+      "all_pages_rendered": true,
+      "text_outside_page": [],
+      "contact_sheets": [
+        "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\submission_revision_2026_10_05\\final\\supplement_contact_1.png",
+        "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\submission_revision_2026_10_05\\final\\supplement_contact_2.png"
+      ],
+      "detailed_pages": [
+        "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\submission_revision_2026_10_05\\final\\supplement\\detail-18-18.png"
+      ],
+      "sha256": "380a46344101ddbfda0a1eb725d89fec254bfdca38504e655f7578c066d74547"
+    }
+  },
+  "visual_inspection": {
+    "all_contact_sheets_reviewed": true,
+    "detailed_definition_uncertainty_declaration_and_network_table_pages_reviewed": true,
+    "overlap_clipping_or_unreadable_content_found": false
+  }
+}

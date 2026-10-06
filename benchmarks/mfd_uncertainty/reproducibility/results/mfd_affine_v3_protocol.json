@@ -1,0 +1,97 @@
+{
+  "method": "signed-generator robust-variational enclosure with independent positive/queue supports v3",
+  "algorithm": "G'=A G; eta'=J eta+(J-A)G xi+defect+Le7w; robust Metzler comparison for eta",
+  "independent_physics": "verified initial positivity; scalar autonomous queue bounds; no G/rho contraction",
+  "mean_value_domain": "old corridor intersect convex hull of nominal predictor queue and all actual scalar queues",
+  "final_service": "minimum of inherited box-hull and signed-generator endpoint affine supports",
+  "checkpoints": "outer_hull_only; no restart or arbitrary suffix authorization",
+  "step_seconds": 15.0,
+  "series_order": 18,
+  "queue_width_rule": "min(state width,10) vehicles",
+  "first_tests": [
+    [
+      100.0,
+      60.0
+    ],
+    [
+      50.0,
+      300.0
+    ],
+    [
+      10.0,
+      600.0
+    ],
+    [
+      1.0,
+      1200.0
+    ]
+  ],
+  "followup_grid": [
+    [
+      1.0,
+      60.0
+    ],
+    [
+      10.0,
+      60.0
+    ],
+    [
+      25.0,
+      60.0
+    ],
+    [
+      50.0,
+      60.0
+    ],
+    [
+      100.0,
+      60.0
+    ],
+    [
+      1.0,
+      120.0
+    ],
+    [
+      10.0,
+      120.0
+    ],
+    [
+      25.0,
+      120.0
+    ],
+    [
+      50.0,
+      120.0
+    ],
+    [
+      100.0,
+      120.0
+    ],
+    [
+      1.0,
+      300.0
+    ],
+    [
+      10.0,
+      300.0
+    ],
+    [
+      25.0,
+      300.0
+    ],
+    [
+      50.0,
+      300.0
+    ],
+    [
+      100.0,
+      300.0
+    ]
+  ],
+  "horizon_h": 1.0,
+  "service_limit_vehicles": 2850.0,
+  "commands": "archived first primary MPC plan unchanged",
+  "source_record": "mfd_incident_mpc_grid_results.json",
+  "all_outcomes_retained": true,
+  "prior_versions": "v1 additive-diagonal failure and v2 complete15grid retained with executed source snapshots"
+}

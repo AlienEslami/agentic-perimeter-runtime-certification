@@ -1,0 +1,230 @@
+{
+  "complete": true,
+  "scope": "global 0.05 grid plus local transition refinement",
+  "rows": [
+    {
+      "theta": 0.0,
+      "accepted": false,
+      "failure_kinds": [
+        "continuous_physical_constraint_not_certified"
+      ],
+      "proof_id": "2e9a80fd36c9cb5bafeed8e1445c8f9dc5b03e82c5a03d21c191cf22700ad080",
+      "wall_seconds": 7.765008199959993
+    },
+    {
+      "theta": 0.05,
+      "accepted": false,
+      "failure_kinds": [
+        "continuous_physical_constraint_not_certified"
+      ],
+      "proof_id": "aa8cc097b0b2bc4c42b0169f39e48af15f850f4c890311ea99f59d10c4f13688",
+      "wall_seconds": 8.181675800005905
+    },
+    {
+      "theta": 0.1,
+      "accepted": false,
+      "failure_kinds": [
+        "scheduled_service_not_certified"
+      ],
+      "proof_id": "517156db2fd06c99581cbbdc0520cde0d6e6c6f48e0a40c52e6dcd5204bb9f94",
+      "wall_seconds": 8.388399000046775
+    },
+    {
+      "theta": 0.15,
+      "accepted": false,
+      "failure_kinds": [
+        "scheduled_service_not_certified"
+      ],
+      "proof_id": "b2a784d2c3cdb65fa0ef6ded60b0f4f7cdfd5326529b32521d179a5895520bd1",
+      "wall_seconds": 8.422057799994946
+    },
+    {
+      "theta": 0.2,
+      "accepted": false,
+      "failure_kinds": [
+        "scheduled_service_not_certified"
+      ],
+      "proof_id": "623ece1cae5721b69c76add2d378de399ccad3aefe98d41361e34f9cd1b8bb50",
+      "wall_seconds": 8.404130600043572
+    },
+    {
+      "theta": 0.25,
+      "accepted": false,
+      "failure_kinds": [
+        "scheduled_service_not_certified"
+      ],
+      "proof_id": "09d38bfb9422471a542e9cac4b5bee0d9494cd128ba793eb40f04637964786b5",
+      "wall_seconds": 8.464694900088944
+    },
+    {
+      "theta": 0.27,
+      "accepted": false,
+      "failure_kinds": [
+        "scheduled_service_not_certified"
+      ],
+      "proof_id": "3bc1a8bb7f8f52f1a484944e806952b91e3bf5766bd5fe7fea165604bf71532d",
+      "wall_seconds": 8.406678900006227
+    },
+    {
+      "theta": 0.275,
+      "accepted": false,
+      "failure_kinds": [
+        "scheduled_service_not_certified"
+      ],
+      "proof_id": "76807dbda9dc6796b92aeb87fd90e60649e19a27d2f6aa00d7192d553adb9b9e",
+      "wall_seconds": 8.460294299991801
+    },
+    {
+      "theta": 0.28,
+      "accepted": false,
+      "failure_kinds": [
+        "scheduled_service_not_certified"
+      ],
+      "proof_id": "b17051678aaec26f74ac3b4a37953666e3444ed296f1f77b58a2989486c93c6a",
+      "wall_seconds": 8.420223099994473
+    },
+    {
+      "theta": 0.28125,
+      "accepted": false,
+      "failure_kinds": [
+        "scheduled_service_not_certified"
+      ],
+      "proof_id": "c980198db2945ef9276a0dbaa0e32bc205592997c74a31bd303d1b55628284ce",
+      "wall_seconds": 8.378387299948372
+    },
+    {
+      "theta": 0.2822265625,
+      "accepted": true,
+      "failure_kinds": [],
+      "proof_id": "cbe7bb0b388d500865531559130254dcc58b0931f0cc76c0d18f4e85eec74f25",
+      "wall_seconds": 8.453125200001523
+    },
+    {
+      "theta": 0.285,
+      "accepted": true,
+      "failure_kinds": [],
+      "proof_id": "a4300aeac72ee4570bf871d6cb9aa28e6e66e98690bed14e05a07ac3b01ef3e0",
+      "wall_seconds": 8.491347000002861
+    },
+    {
+      "theta": 0.29,
+      "accepted": true,
+      "failure_kinds": [],
+      "proof_id": "b927cd69d84aedb38241b1c981d489fb2824826e0483993e3900734f18639808",
+      "wall_seconds": 8.391359699890018
+    },
+    {
+      "theta": 0.3,
+      "accepted": true,
+      "failure_kinds": [],
+      "proof_id": "8da65fb803fd873bec2a5b0d7a14ddfbf7d9c2f4428d53ed34c8ad1f329a46ee",
+      "wall_seconds": 8.429005099926144
+    },
+    {
+      "theta": 0.35,
+      "accepted": true,
+      "failure_kinds": [],
+      "proof_id": "55d17520a3bff1a1b9cc92457be50ea1ec45ce2543390b6d146238ff87823977",
+      "wall_seconds": 8.448822899954394
+    },
+    {
+      "theta": 0.4,
+      "accepted": true,
+      "failure_kinds": [],
+      "proof_id": "594391e610362e98b971722f3a223876defbef999f563c7ded4ba995101faebf",
+      "wall_seconds": 8.443952100002207
+    },
+    {
+      "theta": 0.45,
+      "accepted": true,
+      "failure_kinds": [],
+      "proof_id": "ef0bc8cfd5710b5039327b9f31eface66f56da91cddac8839344883e0f0356a4",
+      "wall_seconds": 8.419659100007266
+    },
+    {
+      "theta": 0.5,
+      "accepted": true,
+      "failure_kinds": [],
+      "proof_id": "dba9093a59a492bcd92fe4412c50bc0ef97a455768dc2f1d2f9a30377e9ff37e",
+      "wall_seconds": 8.39393099991139
+    },
+    {
+      "theta": 0.55,
+      "accepted": true,
+      "failure_kinds": [],
+      "proof_id": "8cccce8e291e10ebccc94b3014b7e34b834ed50e7fe4ba8372aeb645956854e1",
+      "wall_seconds": 8.414165100082755
+    },
+    {
+      "theta": 0.6,
+      "accepted": true,
+      "failure_kinds": [],
+      "proof_id": "f35d60196ce1e88cd24ad753e2ae7cf3493106a01c93059819d853ed06bbc996",
+      "wall_seconds": 8.391133699915372
+    },
+    {
+      "theta": 0.65,
+      "accepted": true,
+      "failure_kinds": [],
+      "proof_id": "fe86ee3b795199e8a27c6bba4f3277b1f0a3a2d8bf3035b3ddc3b26289e34ecd",
+      "wall_seconds": 8.384594700066373
+    },
+    {
+      "theta": 0.7,
+      "accepted": true,
+      "failure_kinds": [],
+      "proof_id": "5425c625947067928da873f02cc9746b8d029594ff7c59000680cd1e55105e8c",
+      "wall_seconds": 8.38785379996989
+    },
+    {
+      "theta": 0.75,
+      "accepted": true,
+      "failure_kinds": [],
+      "proof_id": "24c12215586b42779b186b6fe13884cb8888ca366b32f4ac96a2cdd14671c7b5",
+      "wall_seconds": 8.37994700006675
+    },
+    {
+      "theta": 0.8,
+      "accepted": true,
+      "failure_kinds": [],
+      "proof_id": "ef3698191904d0a29ab08b4787073b9cec302b2b3b68a466d27c8195634925c5",
+      "wall_seconds": 8.374170999974012
+    },
+    {
+      "theta": 0.85,
+      "accepted": true,
+      "failure_kinds": [],
+      "proof_id": "47e2163b9695c288391fd302f812c54da4128bc4942a34e9ae0fe20c10b3715e",
+      "wall_seconds": 8.469767600065097
+    },
+    {
+      "theta": 0.9,
+      "accepted": true,
+      "failure_kinds": [],
+      "proof_id": "34cec581ec5bf032fc55946b5d8fbb460be5ba1bf7e91ad7118326d52cda4c38",
+      "wall_seconds": 9.941025199950673
+    },
+    {
+      "theta": 0.95,
+      "accepted": true,
+      "failure_kinds": [],
+      "proof_id": "4807544b5fc8a95041dec34a947bc254970ea3f9fbcd8b4e7321f19eb71027a9",
+      "wall_seconds": 10.272356800036505
+    },
+    {
+      "theta": 1.0,
+      "accepted": true,
+      "failure_kinds": [],
+      "proof_id": "637a78a8980b4d0d3e132339147251b2f865d6b3193dd3866d632dc656b09490",
+      "wall_seconds": 10.274831300019287
+    }
+  ],
+  "accepted_count": 18,
+  "rejected_count": 10,
+  "smallest_sampled_accepted_theta": 0.2822265625,
+  "largest_sampled_rejected_theta": 0.28125,
+  "backup_endpoint_accepted": true,
+  "sampled_acceptance_is_upward_closed": true,
+  "interpretation": "Upward closure on this finite grid is an empirical audit, not a general monotonicity theorem for nonlinear plan certification.",
+  "total_wall_seconds": 240.05259819992352
+}

@@ -1,0 +1,341 @@
+{
+  "cases": 36,
+  "confirmed_deadline_violations": 0,
+  "borderline_cases": 0,
+  "no_violation_found": 36,
+  "fixed_family_trajectories": 225792,
+  "local_searches": 288,
+  "local_objective_evaluations": 768,
+  "local_solver_non_successes": 0,
+  "fixed_family_physical_violations": 0,
+  "minimum_deadline_margin_vehicles": 0.9962857066375364,
+  "maximum_deadline_margin_vehicles": 1.0009025009658217,
+  "maximum_integration_disagreement_vehicles": 1.2918771972181275e-06,
+  "maximum_conservation_error_vehicles": 2.4920154828578234e-10,
+  "cases_detail": [
+    {
+      "id": "D013",
+      "width_vehicles": 1.0,
+      "residual_veh_h": 60.0,
+      "deadline_vehicles": 2750.0,
+      "status": "no_violation_found",
+      "deadline_margin_vehicles": 1.000500101340549,
+      "source": "local_8_random_interior_1min_levels"
+    },
+    {
+      "id": "D015",
+      "width_vehicles": 1.0,
+      "residual_veh_h": 60.0,
+      "deadline_vehicles": 2850.0,
+      "status": "no_violation_found",
+      "deadline_margin_vehicles": 1.0005267336105135,
+      "source": "local_8_random_interior_1min_levels"
+    },
+    {
+      "id": "D017",
+      "width_vehicles": 1.0,
+      "residual_veh_h": 60.0,
+      "deadline_vehicles": 2950.0,
+      "status": "no_violation_found",
+      "deadline_margin_vehicles": 1.0005561300281443,
+      "source": "constant_high_corners"
+    },
+    {
+      "id": "D019",
+      "width_vehicles": 1.0,
+      "residual_veh_h": 150.0,
+      "deadline_vehicles": 2750.0,
+      "status": "no_violation_found",
+      "deadline_margin_vehicles": 1.000615741058482,
+      "source": "constant_high_corners"
+    },
+    {
+      "id": "D021",
+      "width_vehicles": 1.0,
+      "residual_veh_h": 150.0,
+      "deadline_vehicles": 2850.0,
+      "status": "no_violation_found",
+      "deadline_margin_vehicles": 1.0006507611474262,
+      "source": "constant_high_corners"
+    },
+    {
+      "id": "D023",
+      "width_vehicles": 1.0,
+      "residual_veh_h": 150.0,
+      "deadline_vehicles": 2950.0,
+      "status": "no_violation_found",
+      "deadline_margin_vehicles": 1.000683635662881,
+      "source": "constant_high_corners"
+    },
+    {
+      "id": "D025",
+      "width_vehicles": 1.0,
+      "residual_veh_h": 300.0,
+      "deadline_vehicles": 2750.0,
+      "status": "no_violation_found",
+      "deadline_margin_vehicles": 1.000818571650143,
+      "source": "constant_high_corners"
+    },
+    {
+      "id": "D027",
+      "width_vehicles": 1.0,
+      "residual_veh_h": 300.0,
+      "deadline_vehicles": 2850.0,
+      "status": "no_violation_found",
+      "deadline_margin_vehicles": 1.000860574363287,
+      "source": "constant_high_corners"
+    },
+    {
+      "id": "D029",
+      "width_vehicles": 1.0,
+      "residual_veh_h": 300.0,
+      "deadline_vehicles": 2950.0,
+      "status": "no_violation_found",
+      "deadline_margin_vehicles": 1.0009025009658217,
+      "source": "constant_high_corners"
+    },
+    {
+      "id": "D031",
+      "width_vehicles": 10.0,
+      "residual_veh_h": 60.0,
+      "deadline_vehicles": 2750.0,
+      "status": "no_violation_found",
+      "deadline_margin_vehicles": 0.9998247523599275,
+      "source": "constant_high_corners"
+    },
+    {
+      "id": "D033",
+      "width_vehicles": 10.0,
+      "residual_veh_h": 60.0,
+      "deadline_vehicles": 2850.0,
+      "status": "no_violation_found",
+      "deadline_margin_vehicles": 0.9998205225833772,
+      "source": "constant_high_corners"
+    },
+    {
+      "id": "D035",
+      "width_vehicles": 10.0,
+      "residual_veh_h": 60.0,
+      "deadline_vehicles": 2950.0,
+      "status": "no_violation_found",
+      "deadline_margin_vehicles": 0.9998134646207291,
+      "source": "constant_high_corners"
+    },
+    {
+      "id": "D037",
+      "width_vehicles": 10.0,
+      "residual_veh_h": 150.0,
+      "deadline_vehicles": 2750.0,
+      "status": "no_violation_found",
+      "deadline_margin_vehicles": 0.9999318685936487,
+      "source": "constant_high_corners"
+    },
+    {
+      "id": "D039",
+      "width_vehicles": 10.0,
+      "residual_veh_h": 150.0,
+      "deadline_vehicles": 2850.0,
+      "status": "no_violation_found",
+      "deadline_margin_vehicles": 0.9999391585738522,
+      "source": "constant_high_corners"
+    },
+    {
+      "id": "D041",
+      "width_vehicles": 10.0,
+      "residual_veh_h": 150.0,
+      "deadline_vehicles": 2950.0,
+      "status": "no_violation_found",
+      "deadline_margin_vehicles": 0.9999335493002945,
+      "source": "local_8_random_interior_1min_levels"
+    },
+    {
+      "id": "D043",
+      "width_vehicles": 10.0,
+      "residual_veh_h": 300.0,
+      "deadline_vehicles": 2750.0,
+      "status": "no_violation_found",
+      "deadline_margin_vehicles": 1.0001339928967354,
+      "source": "constant_high_corners"
+    },
+    {
+      "id": "D045",
+      "width_vehicles": 10.0,
+      "residual_veh_h": 300.0,
+      "deadline_vehicles": 2850.0,
+      "status": "no_violation_found",
+      "deadline_margin_vehicles": 1.000143078785186,
+      "source": "constant_high_corners"
+    },
+    {
+      "id": "D047",
+      "width_vehicles": 10.0,
+      "residual_veh_h": 300.0,
+      "deadline_vehicles": 2950.0,
+      "status": "no_violation_found",
+      "deadline_margin_vehicles": 1.0001553427250656,
+      "source": "constant_high_corners"
+    },
+    {
+      "id": "D049",
+      "width_vehicles": 25.0,
+      "residual_veh_h": 60.0,
+      "deadline_vehicles": 2750.0,
+      "status": "no_violation_found",
+      "deadline_margin_vehicles": 0.998661693242866,
+      "source": "local_8_random_interior_1min_levels"
+    },
+    {
+      "id": "D051",
+      "width_vehicles": 25.0,
+      "residual_veh_h": 60.0,
+      "deadline_vehicles": 2850.0,
+      "status": "no_violation_found",
+      "deadline_margin_vehicles": 0.998604938950848,
+      "source": "local_8_random_interior_1min_levels"
+    },
+    {
+      "id": "D053",
+      "width_vehicles": 25.0,
+      "residual_veh_h": 60.0,
+      "deadline_vehicles": 2950.0,
+      "status": "no_violation_found",
+      "deadline_margin_vehicles": 0.998544047311043,
+      "source": "local_40_random_interior_1min_levels"
+    },
+    {
+      "id": "D055",
+      "width_vehicles": 25.0,
+      "residual_veh_h": 150.0,
+      "deadline_vehicles": 2750.0,
+      "status": "no_violation_found",
+      "deadline_margin_vehicles": 0.9987680733211164,
+      "source": "constant_high_corners"
+    },
+    {
+      "id": "D057",
+      "width_vehicles": 25.0,
+      "residual_veh_h": 150.0,
+      "deadline_vehicles": 2850.0,
+      "status": "no_violation_found",
+      "deadline_margin_vehicles": 0.9987130805052402,
+      "source": "constant_high_corners"
+    },
+    {
+      "id": "D059",
+      "width_vehicles": 25.0,
+      "residual_veh_h": 150.0,
+      "deadline_vehicles": 2950.0,
+      "status": "no_violation_found",
+      "deadline_margin_vehicles": 0.9986602335711723,
+      "source": "constant_high_corners"
+    },
+    {
+      "id": "D061",
+      "width_vehicles": 25.0,
+      "residual_veh_h": 300.0,
+      "deadline_vehicles": 2750.0,
+      "status": "no_violation_found",
+      "deadline_margin_vehicles": 0.9989554004646379,
+      "source": "constant_high_corners"
+    },
+    {
+      "id": "D063",
+      "width_vehicles": 25.0,
+      "residual_veh_h": 300.0,
+      "deadline_vehicles": 2850.0,
+      "status": "no_violation_found",
+      "deadline_margin_vehicles": 0.9989106913235446,
+      "source": "constant_high_corners"
+    },
+    {
+      "id": "D065",
+      "width_vehicles": 25.0,
+      "residual_veh_h": 300.0,
+      "deadline_vehicles": 2950.0,
+      "status": "no_violation_found",
+      "deadline_margin_vehicles": 0.9988646372771655,
+      "source": "constant_high_corners"
+    },
+    {
+      "id": "D067",
+      "width_vehicles": 50.0,
+      "residual_veh_h": 60.0,
+      "deadline_vehicles": 2750.0,
+      "status": "no_violation_found",
+      "deadline_margin_vehicles": 0.9965990014625277,
+      "source": "constant_high_corners"
+    },
+    {
+      "id": "D069",
+      "width_vehicles": 50.0,
+      "residual_veh_h": 60.0,
+      "deadline_vehicles": 2850.0,
+      "status": "no_violation_found",
+      "deadline_margin_vehicles": 0.9964394324997556,
+      "source": "constant_high_corners"
+    },
+    {
+      "id": "D071",
+      "width_vehicles": 50.0,
+      "residual_veh_h": 60.0,
+      "deadline_vehicles": 2950.0,
+      "status": "no_violation_found",
+      "deadline_margin_vehicles": 0.9962857066375364,
+      "source": "constant_high_corners"
+    },
+    {
+      "id": "D073",
+      "width_vehicles": 50.0,
+      "residual_veh_h": 150.0,
+      "deadline_vehicles": 2750.0,
+      "status": "no_violation_found",
+      "deadline_margin_vehicles": 0.996701449889315,
+      "source": "local_8_random_interior_1min_levels"
+    },
+    {
+      "id": "D075",
+      "width_vehicles": 50.0,
+      "residual_veh_h": 150.0,
+      "deadline_vehicles": 2850.0,
+      "status": "no_violation_found",
+      "deadline_margin_vehicles": 0.9965458027209024,
+      "source": "local_8_random_interior_1min_levels"
+    },
+    {
+      "id": "D077",
+      "width_vehicles": 50.0,
+      "residual_veh_h": 150.0,
+      "deadline_vehicles": 2950.0,
+      "status": "no_violation_found",
+      "deadline_margin_vehicles": 0.9963953209085048,
+      "source": "constant_high_corners"
+    },
+    {
+      "id": "D079",
+      "width_vehicles": 50.0,
+      "residual_veh_h": 300.0,
+      "deadline_vehicles": 2750.0,
+      "status": "no_violation_found",
+      "deadline_margin_vehicles": 0.9968682655594421,
+      "source": "constant_high_corners"
+    },
+    {
+      "id": "D081",
+      "width_vehicles": 50.0,
+      "residual_veh_h": 300.0,
+      "deadline_vehicles": 2850.0,
+      "status": "no_violation_found",
+      "deadline_margin_vehicles": 0.9967214298312683,
+      "source": "constant_high_corners"
+    },
+    {
+      "id": "D083",
+      "width_vehicles": 50.0,
+      "residual_veh_h": 300.0,
+      "deadline_vehicles": 2950.0,
+      "status": "no_violation_found",
+      "deadline_margin_vehicles": 0.9965801759799433,
+      "source": "constant_high_corners"
+    }
+  ]
+}

@@ -1,0 +1,3179 @@
+{
+  "passed": true,
+  "replays": [
+    {
+      "case": "D012",
+      "policy": "continuation",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 3.880359145114198e-09,
+        "queue_veh_h": 1.4210854715202004e-14,
+        "completed_trips": 2.61643435806036e-08,
+        "priority_cost": 4.2646206566132605e-09,
+        "deadline_n1_vehicles": 1.514968062110711e-08,
+        "peak_queue_vehicles": 0.0
+      },
+      "adaptive": {
+        "tts_veh_h": 2655.426889907569,
+        "queue_veh_h": 87.235130189034,
+        "completed_trips": 18306.76193192855,
+        "priority_cost": 4014.4811454910273,
+        "peak_queue_vehicles": 130.99999999999994,
+        "deadline_n1_vehicles": 1716.2119417892204,
+        "minimum_state_margin": 1.2510781134202305,
+        "conservation_residual_vehicles": 1.4551915228366852e-11
+      }
+    },
+    {
+      "case": "D012",
+      "policy": "continuation",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 5.488800525199622e-09,
+        "queue_veh_h": 8.188465017155977e-09,
+        "completed_trips": 1.153239281848073e-08,
+        "priority_cost": 1.5799287211848423e-08,
+        "deadline_n1_vehicles": 4.7345565690193325e-08,
+        "peak_queue_vehicles": 6.118154004752796e-06
+      },
+      "adaptive": {
+        "tts_veh_h": 2648.2685394130476,
+        "queue_veh_h": 86.6015737606696,
+        "completed_trips": 18285.660762206873,
+        "priority_cost": 4002.3763563273105,
+        "peak_queue_vehicles": 130.9866142981514,
+        "deadline_n1_vehicles": 1711.764387769067,
+        "minimum_state_margin": 1.2510781134202305,
+        "conservation_residual_vehicles": 3.637978807091713e-12
+      }
+    },
+    {
+      "case": "D012",
+      "policy": "nominal_mpc",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 4.493449523579329e-07,
+        "queue_veh_h": 8.313049306707399e-07,
+        "completed_trips": 1.2843556760344654e-06,
+        "priority_cost": 1.7605043467483483e-07,
+        "deadline_n1_vehicles": 8.387564776057843e-08,
+        "peak_queue_vehicles": 1.467008928557334e-06
+      },
+      "adaptive": {
+        "tts_veh_h": 2728.5156722952083,
+        "queue_veh_h": 264.4950003112642,
+        "completed_trips": 17951.738584032533,
+        "priority_cost": 4009.122580867988,
+        "peak_queue_vehicles": 738.7855587451107,
+        "deadline_n1_vehicles": 1640.3181092018333,
+        "minimum_state_margin": 1.2510781134202305,
+        "conservation_residual_vehicles": 1.0913936421275139e-11
+      }
+    },
+    {
+      "case": "D012",
+      "policy": "nominal_mpc",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 4.4934449761058204e-07,
+        "queue_veh_h": 8.313050443575776e-07,
+        "completed_trips": 1.2843556760344654e-06,
+        "priority_cost": 1.760481609380804e-07,
+        "deadline_n1_vehicles": 8.387564776057843e-08,
+        "peak_queue_vehicles": 1.4670094969915226e-06
+      },
+      "adaptive": {
+        "tts_veh_h": 2716.8490056285414,
+        "queue_veh_h": 252.8283336445981,
+        "completed_trips": 17951.738584032533,
+        "priority_cost": 3997.4559142013222,
+        "peak_queue_vehicles": 698.7855587451138,
+        "deadline_n1_vehicles": 1640.3181092018333,
+        "minimum_state_margin": 1.2510781134202305,
+        "conservation_residual_vehicles": 2.1827872842550278e-11
+      }
+    },
+    {
+      "case": "D012",
+      "policy": "scenario_mpc",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 4.493449523579329e-07,
+        "queue_veh_h": 8.313049306707399e-07,
+        "completed_trips": 1.2843556760344654e-06,
+        "priority_cost": 1.7605043467483483e-07,
+        "deadline_n1_vehicles": 8.387564776057843e-08,
+        "peak_queue_vehicles": 1.467008928557334e-06
+      },
+      "adaptive": {
+        "tts_veh_h": 2728.5156722952083,
+        "queue_veh_h": 264.4950003112642,
+        "completed_trips": 17951.738584032533,
+        "priority_cost": 4009.122580867988,
+        "peak_queue_vehicles": 738.7855587451107,
+        "deadline_n1_vehicles": 1640.3181092018333,
+        "minimum_state_margin": 1.2510781134202305,
+        "conservation_residual_vehicles": 1.0913936421275139e-11
+      }
+    },
+    {
+      "case": "D012",
+      "policy": "scenario_mpc",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 4.4934449761058204e-07,
+        "queue_veh_h": 8.313050443575776e-07,
+        "completed_trips": 1.2843556760344654e-06,
+        "priority_cost": 1.760481609380804e-07,
+        "deadline_n1_vehicles": 8.387564776057843e-08,
+        "peak_queue_vehicles": 1.4670094969915226e-06
+      },
+      "adaptive": {
+        "tts_veh_h": 2716.8490056285414,
+        "queue_veh_h": 252.8283336445981,
+        "completed_trips": 17951.738584032533,
+        "priority_cost": 3997.4559142013222,
+        "peak_queue_vehicles": 698.7855587451138,
+        "deadline_n1_vehicles": 1640.3181092018333,
+        "minimum_state_margin": 1.2510781134202305,
+        "conservation_residual_vehicles": 2.1827872842550278e-11
+      }
+    },
+    {
+      "case": "D020",
+      "policy": "continuation",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 5.353740561986342e-09,
+        "queue_veh_h": 4.263256414560601e-14,
+        "completed_trips": 2.5262124836444855e-08,
+        "priority_cost": 7.0835994847584516e-09,
+        "deadline_n1_vehicles": 1.5192881619441323e-08,
+        "peak_queue_vehicles": 0.0
+      },
+      "adaptive": {
+        "tts_veh_h": 2667.359915045037,
+        "queue_veh_h": 88.2101301890339,
+        "completed_trips": 18341.79075310099,
+        "priority_cost": 4034.705047091373,
+        "peak_queue_vehicles": 132.49999999999994,
+        "deadline_n1_vehicles": 1723.0848224941913,
+        "minimum_state_margin": 1.2510781134202305,
+        "conservation_residual_vehicles": 1.8189894035458565e-11
+      }
+    },
+    {
+      "case": "D020",
+      "policy": "continuation",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 1.3151293387636542e-08,
+        "queue_veh_h": 2.0471134121180512e-08,
+        "completed_trips": 2.3392203729599714e-09,
+        "priority_cost": 4.4093212636653334e-08,
+        "deadline_n1_vehicles": 9.579525794833899e-08,
+        "peak_queue_vehicles": 1.5295384969249426e-05
+      },
+      "adaptive": {
+        "tts_veh_h": 2649.418951687823,
+        "queue_veh_h": 86.62623911812335,
+        "completed_trips": 18289.20316846604,
+        "priority_cost": 4004.3507291138867,
+        "peak_queue_vehicles": 132.4665357453786,
+        "deadline_n1_vehicles": 1711.9551538086619,
+        "minimum_state_margin": 1.2510781134202305,
+        "conservation_residual_vehicles": 1.8189894035458565e-11
+      }
+    },
+    {
+      "case": "D020",
+      "policy": "nominal_mpc",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 5.62651166546857e-07,
+        "queue_veh_h": 1.0429340591144864e-06,
+        "completed_trips": 1.6216617950703949e-06,
+        "priority_cost": 2.1835103325429372e-07,
+        "deadline_n1_vehicles": 1.0129838301509153e-07,
+        "peak_queue_vehicles": 1.8404723505227594e-06
+      },
+      "adaptive": {
+        "tts_veh_h": 2746.438053355887,
+        "queue_veh_h": 280.7767730563156,
+        "completed_trips": 17957.277701798237,
+        "priority_cost": 4028.226285101179,
+        "peak_queue_vehicles": 792.7754518246165,
+        "deadline_n1_vehicles": 1640.5462501490906,
+        "minimum_state_margin": 1.2510781134202305,
+        "conservation_residual_vehicles": 4.001776687800884e-11
+      }
+    },
+    {
+      "case": "D020",
+      "policy": "nominal_mpc",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 5.626479833154008e-07,
+        "queue_veh_h": 1.0429338033191016e-06,
+        "completed_trips": 1.6216617950703949e-06,
+        "priority_cost": 2.1834466679138131e-07,
+        "deadline_n1_vehicles": 1.0129838301509153e-07,
+        "peak_queue_vehicles": 1.8404717820885708e-06
+      },
+      "adaptive": {
+        "tts_veh_h": 2717.2713866892195,
+        "queue_veh_h": 251.61010638964842,
+        "completed_trips": 17957.277701798237,
+        "priority_cost": 3999.059618434511,
+        "peak_queue_vehicles": 692.7754518246135,
+        "deadline_n1_vehicles": 1640.5462501490906,
+        "minimum_state_margin": 1.2510781134202305,
+        "conservation_residual_vehicles": 4.001776687800884e-11
+      }
+    },
+    {
+      "case": "D020",
+      "policy": "scenario_mpc",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 5.62651166546857e-07,
+        "queue_veh_h": 1.0429340591144864e-06,
+        "completed_trips": 1.6216617950703949e-06,
+        "priority_cost": 2.1835103325429372e-07,
+        "deadline_n1_vehicles": 1.0129838301509153e-07,
+        "peak_queue_vehicles": 1.8404723505227594e-06
+      },
+      "adaptive": {
+        "tts_veh_h": 2746.438053355887,
+        "queue_veh_h": 280.7767730563156,
+        "completed_trips": 17957.277701798237,
+        "priority_cost": 4028.226285101179,
+        "peak_queue_vehicles": 792.7754518246165,
+        "deadline_n1_vehicles": 1640.5462501490906,
+        "minimum_state_margin": 1.2510781134202305,
+        "conservation_residual_vehicles": 4.001776687800884e-11
+      }
+    },
+    {
+      "case": "D020",
+      "policy": "scenario_mpc",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 5.626479833154008e-07,
+        "queue_veh_h": 1.0429338033191016e-06,
+        "completed_trips": 1.6216617950703949e-06,
+        "priority_cost": 2.1834466679138131e-07,
+        "deadline_n1_vehicles": 1.0129838301509153e-07,
+        "peak_queue_vehicles": 1.8404717820885708e-06
+      },
+      "adaptive": {
+        "tts_veh_h": 2717.2713866892195,
+        "queue_veh_h": 251.61010638964842,
+        "completed_trips": 17957.277701798237,
+        "priority_cost": 3999.059618434511,
+        "peak_queue_vehicles": 692.7754518246135,
+        "deadline_n1_vehicles": 1640.5462501490906,
+        "minimum_state_margin": 1.2510781134202305,
+        "conservation_residual_vehicles": 4.001776687800884e-11
+      }
+    },
+    {
+      "case": "D028",
+      "policy": "continuation",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 0.00012172673541499535,
+        "queue_veh_h": 0.00022361770314205387,
+        "completed_trips": 0.0003180222411174327,
+        "priority_cost": 4.722425455838675e-05,
+        "deadline_n1_vehicles": 1.4244929843698628e-05,
+        "peak_queue_vehicles": 0.00035098352560680723
+      },
+      "adaptive": {
+        "tts_veh_h": 2694.858656188013,
+        "queue_veh_h": 108.24001979612314,
+        "completed_trips": 18365.418099500162,
+        "priority_cost": 4067.8413181956575,
+        "peak_queue_vehicles": 194.36551208522076,
+        "deadline_n1_vehicles": 1727.3487647203892,
+        "minimum_state_margin": 1.2510781134202305,
+        "conservation_residual_vehicles": 6.548361852765083e-11
+      }
+    },
+    {
+      "case": "D028",
+      "policy": "continuation",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 7.295880550373113e-06,
+        "queue_veh_h": 2.3300126997582993e-05,
+        "completed_trips": 4.580859967973083e-05,
+        "priority_cost": 5.874367161595728e-06,
+        "deadline_n1_vehicles": 2.303278847648471e-05,
+        "peak_queue_vehicles": 0.0003509835257489158
+      },
+      "adaptive": {
+        "tts_veh_h": 2651.696031450898,
+        "queue_veh_h": 87.30567631047182,
+        "completed_trips": 18294.19642268886,
+        "priority_cost": 4007.8019381195745,
+        "peak_queue_vehicles": 138.47525108521856,
+        "deadline_n1_vehicles": 1712.2800977335419,
+        "minimum_state_margin": 1.2510353150603895,
+        "conservation_residual_vehicles": 5.093170329928398e-11
+      }
+    },
+    {
+      "case": "D028",
+      "policy": "nominal_mpc",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 7.503931556129828e-07,
+        "queue_veh_h": 1.3956502584733244e-06,
+        "completed_trips": 2.1832856873515993e-06,
+        "priority_cost": 2.8664362616837025e-07,
+        "deadline_n1_vehicles": 1.3059093362244312e-07,
+        "peak_queue_vehicles": 2.4629133577036555e-06
+      },
+      "adaptive": {
+        "tts_veh_h": 2776.314510796775,
+        "queue_veh_h": 307.9130609647337,
+        "completed_trips": 17966.505967931047,
+        "priority_cost": 4060.077210597915,
+        "peak_queue_vehicles": 882.7586069571175,
+        "deadline_n1_vehicles": 1640.9279642711213,
+        "minimum_state_margin": 1.2510781134202305,
+        "conservation_residual_vehicles": 8.36735125631094e-11
+      }
+    },
+    {
+      "case": "D028",
+      "policy": "nominal_mpc",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 7.503931556129828e-07,
+        "queue_veh_h": 1.3956500879430678e-06,
+        "completed_trips": 2.1832856873515993e-06,
+        "priority_cost": 2.866490831365809e-07,
+        "deadline_n1_vehicles": 1.3059093362244312e-07,
+        "peak_queue_vehicles": 2.46291313032998e-06
+      },
+      "adaptive": {
+        "tts_veh_h": 2717.981177463443,
+        "queue_veh_h": 249.57972763140003,
+        "completed_trips": 17966.505967931047,
+        "priority_cost": 4001.7438772645846,
+        "peak_queue_vehicles": 682.7586069571176,
+        "deadline_n1_vehicles": 1640.9279642711213,
+        "minimum_state_margin": 1.2510781134202305,
+        "conservation_residual_vehicles": 7.275957614183426e-11
+      }
+    },
+    {
+      "case": "D028",
+      "policy": "scenario_mpc",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 7.503931556129828e-07,
+        "queue_veh_h": 1.3956502584733244e-06,
+        "completed_trips": 2.1832856873515993e-06,
+        "priority_cost": 2.8664362616837025e-07,
+        "deadline_n1_vehicles": 1.3059093362244312e-07,
+        "peak_queue_vehicles": 2.4629133577036555e-06
+      },
+      "adaptive": {
+        "tts_veh_h": 2776.314510796775,
+        "queue_veh_h": 307.9130609647337,
+        "completed_trips": 17966.505967931047,
+        "priority_cost": 4060.077210597915,
+        "peak_queue_vehicles": 882.7586069571175,
+        "deadline_n1_vehicles": 1640.9279642711213,
+        "minimum_state_margin": 1.2510781134202305,
+        "conservation_residual_vehicles": 8.36735125631094e-11
+      }
+    },
+    {
+      "case": "D028",
+      "policy": "scenario_mpc",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 7.503931556129828e-07,
+        "queue_veh_h": 1.3956500879430678e-06,
+        "completed_trips": 2.1832856873515993e-06,
+        "priority_cost": 2.866490831365809e-07,
+        "deadline_n1_vehicles": 1.3059093362244312e-07,
+        "peak_queue_vehicles": 2.46291313032998e-06
+      },
+      "adaptive": {
+        "tts_veh_h": 2717.981177463443,
+        "queue_veh_h": 249.57972763140003,
+        "completed_trips": 17966.505967931047,
+        "priority_cost": 4001.7438772645846,
+        "peak_queue_vehicles": 682.7586069571176,
+        "deadline_n1_vehicles": 1640.9279642711213,
+        "minimum_state_margin": 1.2510781134202305,
+        "conservation_residual_vehicles": 7.275957614183426e-11
+      }
+    },
+    {
+      "case": "D036",
+      "policy": "continuation",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 7.439684850396588e-07,
+        "queue_veh_h": 9.900531381390465e-07,
+        "completed_trips": 3.560198820196092e-07,
+        "priority_cost": 5.56078248337144e-07,
+        "deadline_n1_vehicles": 1.697401330602588e-07,
+        "peak_queue_vehicles": 0.0
+      },
+      "adaptive": {
+        "tts_veh_h": 2672.2256646382293,
+        "queue_veh_h": 88.36471207983806,
+        "completed_trips": 18367.726669207874,
+        "priority_cost": 4043.4866833623987,
+        "peak_queue_vehicles": 134.10781134202304,
+        "deadline_n1_vehicles": 1723.3165009649404,
+        "minimum_state_margin": 1.3250000000000004,
+        "conservation_residual_vehicles": 3.2741809263825417e-11
+      }
+    },
+    {
+      "case": "D036",
+      "policy": "continuation",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 7.453363650711253e-07,
+        "queue_veh_h": 9.695820324395754e-07,
+        "completed_trips": 3.1710806069895625e-07,
+        "priority_cost": 5.800479812023696e-07,
+        "deadline_n1_vehicles": 2.474532720952993e-07,
+        "peak_queue_vehicles": 0.0
+      },
+      "adaptive": {
+        "tts_veh_h": 2654.256925717312,
+        "queue_veh_h": 86.78082100892755,
+        "completed_trips": 18315.18458125732,
+        "priority_cost": 4013.0750373309065,
+        "peak_queue_vehicles": 134.10781134202304,
+        "deadline_n1_vehicles": 1712.1820847081085,
+        "minimum_state_margin": 1.2753346425462146,
+        "conservation_residual_vehicles": 1.8189894035458565e-11
+      }
+    },
+    {
+      "case": "D036",
+      "policy": "nominal_mpc",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 1.2511782188084908e-07,
+        "queue_veh_h": 2.2684025680064224e-07,
+        "completed_trips": 4.0757731767371297e-07,
+        "priority_cost": 5.0038579502142966e-08,
+        "deadline_n1_vehicles": 2.7380337996874005e-09,
+        "peak_queue_vehicles": 4.003059075330384e-07
+      },
+      "adaptive": {
+        "tts_veh_h": 2751.1490910821553,
+        "queue_veh_h": 280.9611365860109,
+        "completed_trips": 17983.438270924704,
+        "priority_cost": 4036.6626270662914,
+        "peak_queue_vehicles": 792.8360933476083,
+        "deadline_n1_vehicles": 1640.7420658076383,
+        "minimum_state_margin": 1.3251083334760705,
+        "conservation_residual_vehicles": 1.8189894035458565e-11
+      }
+    },
+    {
+      "case": "D036",
+      "policy": "nominal_mpc",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 1.251205503649544e-07,
+        "queue_veh_h": 2.2684045575260825e-07,
+        "completed_trips": 4.0757731767371297e-07,
+        "priority_cost": 5.003448677598499e-08,
+        "deadline_n1_vehicles": 2.7380337996874005e-09,
+        "peak_queue_vehicles": 4.0030658965406474e-07
+      },
+      "adaptive": {
+        "tts_veh_h": 2721.9824244154865,
+        "queue_veh_h": 251.79446991934378,
+        "completed_trips": 17983.438270924704,
+        "priority_cost": 4007.4959603996285,
+        "peak_queue_vehicles": 692.8360933476051,
+        "deadline_n1_vehicles": 1640.7420658076383,
+        "minimum_state_margin": 1.3251083334760705,
+        "conservation_residual_vehicles": 1.8189894035458565e-11
+      }
+    },
+    {
+      "case": "D036",
+      "policy": "scenario_mpc",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 1.2511782188084908e-07,
+        "queue_veh_h": 2.2684025680064224e-07,
+        "completed_trips": 4.0757731767371297e-07,
+        "priority_cost": 5.0038579502142966e-08,
+        "deadline_n1_vehicles": 2.7380337996874005e-09,
+        "peak_queue_vehicles": 4.003059075330384e-07
+      },
+      "adaptive": {
+        "tts_veh_h": 2751.1490910821553,
+        "queue_veh_h": 280.9611365860109,
+        "completed_trips": 17983.438270924704,
+        "priority_cost": 4036.6626270662914,
+        "peak_queue_vehicles": 792.8360933476083,
+        "deadline_n1_vehicles": 1640.7420658076383,
+        "minimum_state_margin": 1.3251083334760705,
+        "conservation_residual_vehicles": 1.8189894035458565e-11
+      }
+    },
+    {
+      "case": "D036",
+      "policy": "scenario_mpc",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 1.251205503649544e-07,
+        "queue_veh_h": 2.2684045575260825e-07,
+        "completed_trips": 4.0757731767371297e-07,
+        "priority_cost": 5.003448677598499e-08,
+        "deadline_n1_vehicles": 2.7380337996874005e-09,
+        "peak_queue_vehicles": 4.0030658965406474e-07
+      },
+      "adaptive": {
+        "tts_veh_h": 2721.9824244154865,
+        "queue_veh_h": 251.79446991934378,
+        "completed_trips": 17983.438270924704,
+        "priority_cost": 4007.4959603996285,
+        "peak_queue_vehicles": 692.8360933476051,
+        "deadline_n1_vehicles": 1640.7420658076383,
+        "minimum_state_margin": 1.3251083334760705,
+        "conservation_residual_vehicles": 1.8189894035458565e-11
+      }
+    },
+    {
+      "case": "D044",
+      "policy": "continuation",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 2.6020643417723477e-09,
+        "queue_veh_h": 9.947598300641403e-14,
+        "completed_trips": 2.4792825570330024e-08,
+        "priority_cost": 1.3642420526593924e-12,
+        "deadline_n1_vehicles": 1.5091927707544528e-08,
+        "peak_queue_vehicles": 1.7053025658242404e-13
+      },
+      "adaptive": {
+        "tts_veh_h": 2700.9900726107526,
+        "queue_veh_h": 110.69673556134957,
+        "completed_trips": 18388.060055273054,
+        "priority_cost": 4077.134983885895,
+        "peak_queue_vehicles": 197.98239534202557,
+        "deadline_n1_vehicles": 1727.4347893806867,
+        "minimum_state_margin": 1.3410781134202305,
+        "conservation_residual_vehicles": 5.4569682106375694e-11
+      }
+    },
+    {
+      "case": "D044",
+      "policy": "continuation",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 4.746845024783397e-05,
+        "queue_veh_h": 4.999920767545518e-05,
+        "completed_trips": 2.7713067538570613e-06,
+        "priority_cost": 4.7590866415703204e-05,
+        "deadline_n1_vehicles": 4.2243968209731975e-05,
+        "peak_queue_vehicles": 2.842170943040401e-14
+      },
+      "adaptive": {
+        "tts_veh_h": 2656.767933253395,
+        "queue_veh_h": 87.76275310786451,
+        "completed_trips": 18320.058113519237,
+        "priority_cost": 4016.71117201373,
+        "peak_queue_vehicles": 142.09213434202337,
+        "deadline_n1_vehicles": 1712.56238678274,
+        "minimum_state_margin": 1.2510353150658229,
+        "conservation_residual_vehicles": 5.820766091346741e-11
+      }
+    },
+    {
+      "case": "D044",
+      "policy": "nominal_mpc",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 6.585696610272862e-08,
+        "queue_veh_h": 1.2587571518452023e-07,
+        "completed_trips": 1.5541445463895798e-07,
+        "priority_cost": 2.4818291421979666e-08,
+        "deadline_n1_vehicles": 2.590968506410718e-08,
+        "peak_queue_vehicles": 2.2213521333469544e-07
+      },
+      "adaptive": {
+        "tts_veh_h": 2781.037641069629,
+        "queue_veh_h": 308.0974244944289,
+        "completed_trips": 17992.660504144354,
+        "priority_cost": 4068.537849031746,
+        "peak_queue_vehicles": 882.8192484801093,
+        "deadline_n1_vehicles": 1641.12542807047,
+        "minimum_state_margin": 1.3410781134202305,
+        "conservation_residual_vehicles": 5.820766091346741e-11
+      }
+    },
+    {
+      "case": "D044",
+      "policy": "nominal_mpc",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 6.585378287127241e-08,
+        "queue_veh_h": 1.2587588571477681e-07,
+        "completed_trips": 1.5541445463895798e-07,
+        "priority_cost": 2.4822384148137644e-08,
+        "deadline_n1_vehicles": 2.590968506410718e-08,
+        "peak_queue_vehicles": 2.2213498596102e-07
+      },
+      "adaptive": {
+        "tts_veh_h": 2722.7043077362932,
+        "queue_veh_h": 249.76409116109593,
+        "completed_trips": 17992.660504144354,
+        "priority_cost": 4010.204515698413,
+        "peak_queue_vehicles": 682.8192484801094,
+        "deadline_n1_vehicles": 1641.12542807047,
+        "minimum_state_margin": 1.3410781134202305,
+        "conservation_residual_vehicles": 5.093170329928398e-11
+      }
+    },
+    {
+      "case": "D044",
+      "policy": "scenario_mpc",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 6.585696610272862e-08,
+        "queue_veh_h": 1.2587571518452023e-07,
+        "completed_trips": 1.5541445463895798e-07,
+        "priority_cost": 2.4818291421979666e-08,
+        "deadline_n1_vehicles": 2.590968506410718e-08,
+        "peak_queue_vehicles": 2.2213521333469544e-07
+      },
+      "adaptive": {
+        "tts_veh_h": 2781.037641069629,
+        "queue_veh_h": 308.0974244944289,
+        "completed_trips": 17992.660504144354,
+        "priority_cost": 4068.537849031746,
+        "peak_queue_vehicles": 882.8192484801093,
+        "deadline_n1_vehicles": 1641.12542807047,
+        "minimum_state_margin": 1.3410781134202305,
+        "conservation_residual_vehicles": 5.820766091346741e-11
+      }
+    },
+    {
+      "case": "D044",
+      "policy": "scenario_mpc",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 6.585378287127241e-08,
+        "queue_veh_h": 1.2587588571477681e-07,
+        "completed_trips": 1.5541445463895798e-07,
+        "priority_cost": 2.4822384148137644e-08,
+        "deadline_n1_vehicles": 2.590968506410718e-08,
+        "peak_queue_vehicles": 2.2213498596102e-07
+      },
+      "adaptive": {
+        "tts_veh_h": 2722.7043077362932,
+        "queue_veh_h": 249.76409116109593,
+        "completed_trips": 17992.660504144354,
+        "priority_cost": 4010.204515698413,
+        "peak_queue_vehicles": 682.8192484801094,
+        "deadline_n1_vehicles": 1641.12542807047,
+        "minimum_state_margin": 1.3410781134202305,
+        "conservation_residual_vehicles": 5.093170329928398e-11
+      }
+    },
+    {
+      "case": "D052",
+      "policy": "continuation",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 1.0818814644153463e-05,
+        "queue_veh_h": 1.4385092626412188e-05,
+        "completed_trips": 7.070157153066248e-06,
+        "priority_cost": 8.227703347074566e-06,
+        "deadline_n1_vehicles": 3.26423582919233e-06,
+        "peak_queue_vehicles": 0.0
+      },
+      "adaptive": {
+        "tts_veh_h": 2669.0334958129733,
+        "queue_veh_h": 88.49039080142984,
+        "completed_trips": 18375.67660203435,
+        "priority_cost": 4038.3660960464013,
+        "peak_queue_vehicles": 149.10781134202304,
+        "deadline_n1_vehicles": 1716.9651754025303,
+        "minimum_state_margin": 1.3100000000000005,
+        "conservation_residual_vehicles": 3.2741809263825417e-11
+      }
+    },
+    {
+      "case": "D052",
+      "policy": "continuation",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 6.293279511737637e-06,
+        "queue_veh_h": 8.385423910794998e-06,
+        "completed_trips": 3.873890818795189e-06,
+        "priority_cost": 4.755338522954844e-06,
+        "deadline_n1_vehicles": 1.84864461516554e-06,
+        "peak_queue_vehicles": 0.0
+      },
+      "adaptive": {
+        "tts_veh_h": 2661.8271562494324,
+        "queue_veh_h": 87.83539927204184,
+        "completed_trips": 18354.63769364771,
+        "priority_cost": 4026.183350879702,
+        "peak_queue_vehicles": 149.10781134202304,
+        "deadline_n1_vehicles": 1712.506897687989,
+        "minimum_state_margin": 1.2901338570184862,
+        "conservation_residual_vehicles": 4.3655745685100555e-11
+      }
+    },
+    {
+      "case": "D052",
+      "policy": "nominal_mpc",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 1.4035749700269662e-06,
+        "queue_veh_h": 2.5547599875608284e-06,
+        "completed_trips": 4.129640728933737e-06,
+        "priority_cost": 5.785946086689364e-07,
+        "deadline_n1_vehicles": 1.9119056560157333e-07,
+        "peak_queue_vehicles": 4.508399570113397e-06
+      },
+      "adaptive": {
+        "tts_veh_h": 2741.1212215362866,
+        "queue_veh_h": 264.9866363904517,
+        "completed_trips": 18021.488113921107,
+        "priority_cost": 4031.700581279913,
+        "peak_queue_vehicles": 738.9472694730888,
+        "deadline_n1_vehicles": 1640.8410538214287,
+        "minimum_state_margin": 1.3112200947309198,
+        "conservation_residual_vehicles": 0.0
+      }
+    },
+    {
+      "case": "D052",
+      "policy": "nominal_mpc",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 1.403575424774317e-06,
+        "queue_veh_h": 2.5547597317654436e-06,
+        "completed_trips": 4.129640728933737e-06,
+        "priority_cost": 5.7859642765834e-07,
+        "deadline_n1_vehicles": 1.9119056560157333e-07,
+        "peak_queue_vehicles": 4.508399001679209e-06
+      },
+      "adaptive": {
+        "tts_veh_h": 2729.454554869619,
+        "queue_veh_h": 253.31996972378573,
+        "completed_trips": 18021.488113921107,
+        "priority_cost": 4020.033914613248,
+        "peak_queue_vehicles": 698.9472694730919,
+        "deadline_n1_vehicles": 1640.8410538214287,
+        "minimum_state_margin": 1.3112200947309198,
+        "conservation_residual_vehicles": 1.0913936421275139e-11
+      }
+    },
+    {
+      "case": "D052",
+      "policy": "scenario_mpc",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 1.4035749700269662e-06,
+        "queue_veh_h": 2.5547599875608284e-06,
+        "completed_trips": 4.129640728933737e-06,
+        "priority_cost": 5.785946086689364e-07,
+        "deadline_n1_vehicles": 1.9119056560157333e-07,
+        "peak_queue_vehicles": 4.508399570113397e-06
+      },
+      "adaptive": {
+        "tts_veh_h": 2741.1212215362866,
+        "queue_veh_h": 264.9866363904517,
+        "completed_trips": 18021.488113921107,
+        "priority_cost": 4031.700581279913,
+        "peak_queue_vehicles": 738.9472694730888,
+        "deadline_n1_vehicles": 1640.8410538214287,
+        "minimum_state_margin": 1.3112200947309198,
+        "conservation_residual_vehicles": 0.0
+      }
+    },
+    {
+      "case": "D052",
+      "policy": "scenario_mpc",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 1.403575424774317e-06,
+        "queue_veh_h": 2.5547597317654436e-06,
+        "completed_trips": 4.129640728933737e-06,
+        "priority_cost": 5.7859642765834e-07,
+        "deadline_n1_vehicles": 1.9119056560157333e-07,
+        "peak_queue_vehicles": 4.508399001679209e-06
+      },
+      "adaptive": {
+        "tts_veh_h": 2729.454554869619,
+        "queue_veh_h": 253.31996972378573,
+        "completed_trips": 18021.488113921107,
+        "priority_cost": 4020.033914613248,
+        "peak_queue_vehicles": 698.9472694730919,
+        "deadline_n1_vehicles": 1640.8410538214287,
+        "minimum_state_margin": 1.3112200947309198,
+        "conservation_residual_vehicles": 1.0913936421275139e-11
+      }
+    },
+    {
+      "case": "D060",
+      "policy": "continuation",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 4.7075445763766766e-09,
+        "queue_veh_h": 1.4210854715202004e-14,
+        "completed_trips": 2.5684130378067493e-08,
+        "priority_cost": 2.05773176276125e-09,
+        "deadline_n1_vehicles": 1.5750174497952685e-08,
+        "peak_queue_vehicles": 1.4210854715202004e-13
+      },
+      "adaptive": {
+        "tts_veh_h": 2714.4823714414197,
+        "queue_veh_h": 120.69673556134944,
+        "completed_trips": 18417.60355367363,
+        "priority_cost": 4093.9732446117905,
+        "peak_queue_vehicles": 212.98239534202446,
+        "deadline_n1_vehicles": 1727.2402407731843,
+        "minimum_state_margin": 1.4910781134202304,
+        "conservation_residual_vehicles": 5.093170329928398e-11
+      }
+    },
+    {
+      "case": "D060",
+      "policy": "continuation",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 1.553635729578673e-05,
+        "queue_veh_h": 8.670433246038556e-06,
+        "completed_trips": 2.0506071450654417e-05,
+        "priority_cost": 2.2426684608944925e-05,
+        "deadline_n1_vehicles": 3.302770824120671e-05,
+        "peak_queue_vehicles": 2.842170943040401e-14
+      },
+      "adaptive": {
+        "tts_veh_h": 2666.192610756211,
+        "queue_veh_h": 89.75294651924014,
+        "completed_trips": 18362.644097406403,
+        "priority_cost": 4032.3518361397314,
+        "peak_queue_vehicles": 157.09213434202331,
+        "deadline_n1_vehicles": 1713.2651352948365,
+        "minimum_state_margin": 1.2510353151332376,
+        "conservation_residual_vehicles": 5.093170329928398e-11
+      }
+    },
+    {
+      "case": "D060",
+      "policy": "nominal_mpc",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 1.0887265489145648e-06,
+        "queue_veh_h": 1.990414602914825e-06,
+        "completed_trips": 3.2247808121610433e-06,
+        "priority_cost": 4.399862518766895e-07,
+        "deadline_n1_vehicles": 1.4721194929734338e-07,
+        "peak_queue_vehicles": 3.5124949135934003e-06
+      },
+      "adaptive": {
+        "tts_veh_h": 2788.972075299441,
+        "queue_veh_h": 308.4046970439213,
+        "completed_trips": 18036.229466382443,
+        "priority_cost": 4082.759733351903,
+        "peak_queue_vehicles": 882.9203176850957,
+        "deadline_n1_vehicles": 1641.457986694351,
+        "minimum_state_margin": 1.3509505768509569,
+        "conservation_residual_vehicles": 5.093170329928398e-11
+      }
+    },
+    {
+      "case": "D060",
+      "policy": "nominal_mpc",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 1.0887310963880736e-06,
+        "queue_veh_h": 1.990414915553629e-06,
+        "completed_trips": 3.2247808121610433e-06,
+        "priority_cost": 4.399826138978824e-07,
+        "deadline_n1_vehicles": 1.4721194929734338e-07,
+        "peak_queue_vehicles": 3.512495368340751e-06
+      },
+      "adaptive": {
+        "tts_veh_h": 2730.6387419661073,
+        "queue_veh_h": 250.07136371058763,
+        "completed_trips": 18036.229466382443,
+        "priority_cost": 4024.4264000185717,
+        "peak_queue_vehicles": 682.9203176850957,
+        "deadline_n1_vehicles": 1641.457986694351,
+        "minimum_state_margin": 1.3509505768509569,
+        "conservation_residual_vehicles": 4.001776687800884e-11
+      }
+    },
+    {
+      "case": "D060",
+      "policy": "scenario_mpc",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 1.0887265489145648e-06,
+        "queue_veh_h": 1.990414602914825e-06,
+        "completed_trips": 3.2247808121610433e-06,
+        "priority_cost": 4.399862518766895e-07,
+        "deadline_n1_vehicles": 1.4721194929734338e-07,
+        "peak_queue_vehicles": 3.5124949135934003e-06
+      },
+      "adaptive": {
+        "tts_veh_h": 2788.972075299441,
+        "queue_veh_h": 308.4046970439213,
+        "completed_trips": 18036.229466382443,
+        "priority_cost": 4082.759733351903,
+        "peak_queue_vehicles": 882.9203176850957,
+        "deadline_n1_vehicles": 1641.457986694351,
+        "minimum_state_margin": 1.3509505768509569,
+        "conservation_residual_vehicles": 5.093170329928398e-11
+      }
+    },
+    {
+      "case": "D060",
+      "policy": "scenario_mpc",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 1.0887310963880736e-06,
+        "queue_veh_h": 1.990414915553629e-06,
+        "completed_trips": 3.2247808121610433e-06,
+        "priority_cost": 4.399826138978824e-07,
+        "deadline_n1_vehicles": 1.4721194929734338e-07,
+        "peak_queue_vehicles": 3.512495368340751e-06
+      },
+      "adaptive": {
+        "tts_veh_h": 2730.6387419661073,
+        "queue_veh_h": 250.07136371058763,
+        "completed_trips": 18036.229466382443,
+        "priority_cost": 4024.4264000185717,
+        "peak_queue_vehicles": 682.9203176850957,
+        "deadline_n1_vehicles": 1641.457986694351,
+        "minimum_state_margin": 1.3509505768509569,
+        "conservation_residual_vehicles": 4.001776687800884e-11
+      }
+    },
+    {
+      "case": "D068",
+      "policy": "continuation",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 5.340039479051484e-06,
+        "queue_veh_h": 7.791606506657445e-06,
+        "completed_trips": 8.306858944706619e-06,
+        "priority_cost": 3.7773652366013266e-06,
+        "deadline_n1_vehicles": 3.193448264937615e-06,
+        "peak_queue_vehicles": 0.0
+      },
+      "adaptive": {
+        "tts_veh_h": 2686.35859743285,
+        "queue_veh_h": 93.79731388414372,
+        "completed_trips": 18445.19606228682,
+        "priority_cost": 4065.832181171558,
+        "peak_queue_vehicles": 174.10781134202304,
+        "deadline_n1_vehicles": 1718.731661860962,
+        "minimum_state_margin": 1.3100000000023182,
+        "conservation_residual_vehicles": 1.4551915228366852e-11
+      }
+    },
+    {
+      "case": "D068",
+      "policy": "continuation",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 6.980608304729685e-07,
+        "queue_veh_h": 9.738480457599508e-07,
+        "completed_trips": 6.757800292689353e-07,
+        "priority_cost": 5.145002432982437e-07,
+        "deadline_n1_vehicles": 2.569447588030016e-07,
+        "peak_queue_vehicles": 0.0
+      },
+      "adaptive": {
+        "tts_veh_h": 2678.231351309024,
+        "queue_veh_h": 91.93750109373927,
+        "completed_trips": 18425.09481326167,
+        "priority_cost": 4052.908242843072,
+        "peak_queue_vehicles": 174.10781134202304,
+        "deadline_n1_vehicles": 1713.8907634153793,
+        "minimum_state_margin": 1.2901338570185237,
+        "conservation_residual_vehicles": 2.546585164964199e-11
+      }
+    },
+    {
+      "case": "D068",
+      "policy": "nominal_mpc",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 0.00015789342751304503,
+        "queue_veh_h": 0.00024972962904712404,
+        "completed_trips": 0.000172201147506712,
+        "priority_cost": 8.764952872297727e-05,
+        "deadline_n1_vehicles": 1.5235887303788331e-05,
+        "peak_queue_vehicles": 0.00014409330105991103
+      },
+      "adaptive": {
+        "tts_veh_h": 2754.541698131035,
+        "queue_veh_h": 265.6144762499189,
+        "completed_trips": 18094.005425012187,
+        "priority_cost": 4055.677653587359,
+        "peak_queue_vehicles": 739.1612558063516,
+        "deadline_n1_vehicles": 1641.4068282251992,
+        "minimum_state_margin": 1.3133599580635473,
+        "conservation_residual_vehicles": 1.4551915228366852e-11
+      }
+    },
+    {
+      "case": "D068",
+      "policy": "nominal_mpc",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 0.00015789342342031887,
+        "queue_veh_h": 0.00024972962876290694,
+        "completed_trips": 0.000172201147506712,
+        "priority_cost": 8.764953145146137e-05,
+        "deadline_n1_vehicles": 1.5235887303788331e-05,
+        "peak_queue_vehicles": 0.00014409330060516368
+      },
+      "adaptive": {
+        "tts_veh_h": 2742.875031464372,
+        "queue_veh_h": 253.9478095832529,
+        "completed_trips": 18094.005425012187,
+        "priority_cost": 4044.0109869206913,
+        "peak_queue_vehicles": 699.1612558063547,
+        "deadline_n1_vehicles": 1641.4068282251992,
+        "minimum_state_margin": 1.3133599580635473,
+        "conservation_residual_vehicles": 2.546585164964199e-11
+      }
+    },
+    {
+      "case": "D068",
+      "policy": "scenario_mpc",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 0.00015789342751304503,
+        "queue_veh_h": 0.00024972962904712404,
+        "completed_trips": 0.000172201147506712,
+        "priority_cost": 8.764952872297727e-05,
+        "deadline_n1_vehicles": 1.5235887303788331e-05,
+        "peak_queue_vehicles": 0.00014409330105991103
+      },
+      "adaptive": {
+        "tts_veh_h": 2754.541698131035,
+        "queue_veh_h": 265.6144762499189,
+        "completed_trips": 18094.005425012187,
+        "priority_cost": 4055.677653587359,
+        "peak_queue_vehicles": 739.1612558063516,
+        "deadline_n1_vehicles": 1641.4068282251992,
+        "minimum_state_margin": 1.3133599580635473,
+        "conservation_residual_vehicles": 1.4551915228366852e-11
+      }
+    },
+    {
+      "case": "D068",
+      "policy": "scenario_mpc",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 0.00015789342342031887,
+        "queue_veh_h": 0.00024972962876290694,
+        "completed_trips": 0.000172201147506712,
+        "priority_cost": 8.764953145146137e-05,
+        "deadline_n1_vehicles": 1.5235887303788331e-05,
+        "peak_queue_vehicles": 0.00014409330060516368
+      },
+      "adaptive": {
+        "tts_veh_h": 2742.875031464372,
+        "queue_veh_h": 253.9478095832529,
+        "completed_trips": 18094.005425012187,
+        "priority_cost": 4044.0109869206913,
+        "peak_queue_vehicles": 699.1612558063547,
+        "deadline_n1_vehicles": 1641.4068282251992,
+        "minimum_state_margin": 1.3133599580635473,
+        "conservation_residual_vehicles": 2.546585164964199e-11
+      }
+    },
+    {
+      "case": "D076",
+      "policy": "continuation",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 8.822098607197404e-09,
+        "queue_veh_h": 5.684341886080802e-14,
+        "completed_trips": 2.7281203074380755e-08,
+        "priority_cost": 6.150003173388541e-09,
+        "deadline_n1_vehicles": 1.6922058421187103e-08,
+        "peak_queue_vehicles": 0.0
+      },
+      "adaptive": {
+        "tts_veh_h": 2703.6966941169967,
+        "queue_veh_h": 104.03006889468288,
+        "completed_trips": 18466.82203751666,
+        "priority_cost": 4088.8116862383213,
+        "peak_queue_vehicles": 174.10781134202304,
+        "deadline_n1_vehicles": 1726.9154864921652,
+        "minimum_state_margin": 1.3798239534202554,
+        "conservation_residual_vehicles": 2.9103830456733704e-11
+      }
+    },
+    {
+      "case": "D076",
+      "policy": "continuation",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 2.5990099857153837e-05,
+        "queue_veh_h": 3.698616902170215e-05,
+        "completed_trips": 3.517283403198235e-05,
+        "priority_cost": 1.879376259239507e-05,
+        "deadline_n1_vehicles": 1.4325643633128493e-05,
+        "peak_queue_vehicles": 0.0
+      },
+      "adaptive": {
+        "tts_veh_h": 2680.03042681081,
+        "queue_veh_h": 92.80726787089844,
+        "completed_trips": 18428.167517261518,
+        "priority_cost": 4055.397184328232,
+        "peak_queue_vehicles": 174.10781134202304,
+        "deadline_n1_vehicles": 1714.2884441676638,
+        "minimum_state_margin": 1.275334642546706,
+        "conservation_residual_vehicles": 2.546585164964199e-11
+      }
+    },
+    {
+      "case": "D076",
+      "policy": "nominal_mpc",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 0.00010805241572597879,
+        "queue_veh_h": 0.00017102563174375973,
+        "completed_trips": 0.00011920930046471767,
+        "priority_cost": 5.993257582304068e-05,
+        "deadline_n1_vehicles": 1.0258449492539512e-05,
+        "peak_queue_vehicles": 0.00010029153486357245
+      },
+      "adaptive": {
+        "tts_veh_h": 2772.5092665696466,
+        "queue_veh_h": 281.90365360730937,
+        "completed_trips": 18099.519706274754,
+        "priority_cost": 4074.8653476900404,
+        "peak_queue_vehicles": 793.1546076914367,
+        "deadline_n1_vehicles": 1641.6410110425008,
+        "minimum_state_margin": 1.328293476914353,
+        "conservation_residual_vehicles": 3.2741809263825417e-11
+      }
+    },
+    {
+      "case": "D076",
+      "policy": "nominal_mpc",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 0.00010805241663547349,
+        "queue_veh_h": 0.00017102563188586828,
+        "completed_trips": 0.00011920930046471767,
+        "priority_cost": 5.993257263980922e-05,
+        "deadline_n1_vehicles": 1.0258449492539512e-05,
+        "peak_queue_vehicles": 0.00010029153565938032
+      },
+      "adaptive": {
+        "tts_veh_h": 2743.3425999029814,
+        "queue_veh_h": 252.73698694064214,
+        "completed_trips": 18099.519706274754,
+        "priority_cost": 4045.698681023376,
+        "peak_queue_vehicles": 693.1546076914334,
+        "deadline_n1_vehicles": 1641.6410110425008,
+        "minimum_state_margin": 1.328293476914353,
+        "conservation_residual_vehicles": 3.2741809263825417e-11
+      }
+    },
+    {
+      "case": "D076",
+      "policy": "scenario_mpc",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 0.00010805241572597879,
+        "queue_veh_h": 0.00017102563174375973,
+        "completed_trips": 0.00011920930046471767,
+        "priority_cost": 5.993257582304068e-05,
+        "deadline_n1_vehicles": 1.0258449492539512e-05,
+        "peak_queue_vehicles": 0.00010029153486357245
+      },
+      "adaptive": {
+        "tts_veh_h": 2772.5092665696466,
+        "queue_veh_h": 281.90365360730937,
+        "completed_trips": 18099.519706274754,
+        "priority_cost": 4074.8653476900404,
+        "peak_queue_vehicles": 793.1546076914367,
+        "deadline_n1_vehicles": 1641.6410110425008,
+        "minimum_state_margin": 1.328293476914353,
+        "conservation_residual_vehicles": 3.2741809263825417e-11
+      }
+    },
+    {
+      "case": "D076",
+      "policy": "scenario_mpc",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 0.00010805241663547349,
+        "queue_veh_h": 0.00017102563188586828,
+        "completed_trips": 0.00011920930046471767,
+        "priority_cost": 5.993257263980922e-05,
+        "deadline_n1_vehicles": 1.0258449492539512e-05,
+        "peak_queue_vehicles": 0.00010029153565938032
+      },
+      "adaptive": {
+        "tts_veh_h": 2743.3425999029814,
+        "queue_veh_h": 252.73698694064214,
+        "completed_trips": 18099.519706274754,
+        "priority_cost": 4045.698681023376,
+        "peak_queue_vehicles": 693.1546076914334,
+        "deadline_n1_vehicles": 1641.6410110425008,
+        "minimum_state_margin": 1.328293476914353,
+        "conservation_residual_vehicles": 3.2741809263825417e-11
+      }
+    },
+    {
+      "case": "D084",
+      "policy": "continuation",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 2.3333086573984474e-09,
+        "queue_veh_h": 6.394884621840902e-13,
+        "completed_trips": 2.5673216441646218e-08,
+        "priority_cost": 1.4761099009774625e-09,
+        "deadline_n1_vehicles": 1.5030991562525742e-08,
+        "peak_queue_vehicles": 0.0
+      },
+      "adaptive": {
+        "tts_veh_h": 2662.8752255826066,
+        "queue_veh_h": 87.73513018903336,
+        "completed_trips": 18333.892430862117,
+        "priority_cost": 5391.801594521916,
+        "peak_queue_vehicles": 131.66666666666663,
+        "deadline_n1_vehicles": 1719.3665239987106,
+        "minimum_state_margin": 1.2910781134202305,
+        "conservation_residual_vehicles": -4.001776687800884e-11
+      }
+    },
+    {
+      "case": "D084",
+      "policy": "continuation",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 6.154095899546519e-09,
+        "queue_veh_h": 1.364746538001782e-08,
+        "completed_trips": 4.005414666607976e-09,
+        "priority_cost": 3.808600013144314e-08,
+        "deadline_n1_vehicles": 6.87200554239098e-08,
+        "peak_queue_vehicles": 7.876216358226884e-06
+      },
+      "adaptive": {
+        "tts_veh_h": 2650.923173822246,
+        "queue_veh_h": 86.67920280842684,
+        "completed_trips": 18298.78587826456,
+        "priority_cost": 5363.316179154985,
+        "peak_queue_vehicles": 131.64942523511087,
+        "deadline_n1_vehicles": 1711.9493106530417,
+        "minimum_state_margin": 1.2835564283641427,
+        "conservation_residual_vehicles": 3.637978807091713e-12
+      }
+    },
+    {
+      "case": "D084",
+      "policy": "nominal_mpc",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 1.9882145352312364e-07,
+        "queue_veh_h": 3.610163048506365e-07,
+        "completed_trips": 5.001384124625474e-07,
+        "priority_cost": 4.026151145808399e-08,
+        "deadline_n1_vehicles": 5.3329586080508307e-08,
+        "peak_queue_vehicles": 6.370828486979008e-07
+      },
+      "adaptive": {
+        "tts_veh_h": 2910.06095891307,
+        "queue_veh_h": 650.1686593917063,
+        "completed_trips": 17147.3412595405,
+        "priority_cost": 5172.721028426762,
+        "peak_queue_vehicles": 2060.0264515684357,
+        "deadline_n1_vehicles": 1484.4354147697431,
+        "minimum_state_margin": -0.6002645156843585,
+        "conservation_residual_vehicles": -5.820766091346741e-11
+      }
+    },
+    {
+      "case": "D084",
+      "policy": "nominal_mpc",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 1.988191797863692e-07,
+        "queue_veh_h": 3.610182375268778e-07,
+        "completed_trips": 5.001384124625474e-07,
+        "priority_cost": 4.026151145808399e-08,
+        "deadline_n1_vehicles": 5.3329586080508307e-08,
+        "peak_queue_vehicles": 6.370794380927691e-07
+      },
+      "adaptive": {
+        "tts_veh_h": 2890.616514468625,
+        "queue_veh_h": 630.7242149472631,
+        "completed_trips": 17147.3412595405,
+        "priority_cost": 5153.276583982317,
+        "peak_queue_vehicles": 1993.3597849017708,
+        "deadline_n1_vehicles": 1484.4354147697431,
+        "minimum_state_margin": 0.06640215098229163,
+        "conservation_residual_vehicles": -2.1827872842550278e-11
+      }
+    },
+    {
+      "case": "D084",
+      "policy": "grid_repair",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 1.9915296434191987e-07,
+        "queue_veh_h": 3.610199428294436e-07,
+        "completed_trips": 5.033616616856307e-07,
+        "priority_cost": 3.8335201679728925e-08,
+        "deadline_n1_vehicles": 5.201218300499022e-08,
+        "peak_queue_vehicles": 6.370971732394537e-07
+      },
+      "adaptive": {
+        "tts_veh_h": 2896.244983520216,
+        "queue_veh_h": 621.1601714333755,
+        "completed_trips": 17212.549452975985,
+        "priority_cost": 5180.788614026646,
+        "peak_queue_vehicles": 1960.5687785684438,
+        "deadline_n1_vehicles": 1496.0649083047485,
+        "minimum_state_margin": 0.39431221431556196,
+        "conservation_residual_vehicles": -4.3655745685100555e-11
+      }
+    },
+    {
+      "case": "D084",
+      "policy": "grid_repair",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 1.991520548472181e-07,
+        "queue_veh_h": 3.6101971545576816e-07,
+        "completed_trips": 5.033616616856307e-07,
+        "priority_cost": 3.832974471151829e-08,
+        "deadline_n1_vehicles": 5.201218300499022e-08,
+        "peak_queue_vehicles": 6.370971732394537e-07
+      },
+      "adaptive": {
+        "tts_veh_h": 2876.8005390757726,
+        "queue_veh_h": 601.7157269889307,
+        "completed_trips": 17212.549452975985,
+        "priority_cost": 5161.344169582203,
+        "peak_queue_vehicles": 1893.9021119017827,
+        "deadline_n1_vehicles": 1496.0649083047485,
+        "minimum_state_margin": 1.060978880982173,
+        "conservation_residual_vehicles": -3.637978807091713e-12
+      }
+    },
+    {
+      "case": "D084",
+      "policy": "scenario_mpc",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 1.990347300306894e-07,
+        "queue_veh_h": 3.6101812384004006e-07,
+        "completed_trips": 5.020810931455344e-07,
+        "priority_cost": 3.906006895704195e-08,
+        "deadline_n1_vehicles": 5.252081791695673e-08,
+        "peak_queue_vehicles": 6.370935352606466e-07
+      },
+      "adaptive": {
+        "tts_veh_h": 2901.7105005421226,
+        "queue_veh_h": 632.6614493917067,
+        "completed_trips": 17186.739106835317,
+        "priority_cost": 5177.553649064606,
+        "peak_queue_vehicles": 2000.0017315684463,
+        "deadline_n1_vehicles": 1491.4470207708807,
+        "minimum_state_margin": -1.7315684463170555e-05,
+        "conservation_residual_vehicles": -4.001776687800884e-11
+      }
+    },
+    {
+      "case": "D084",
+      "policy": "scenario_mpc",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 1.9903336578863673e-07,
+        "queue_veh_h": 3.610189196479041e-07,
+        "completed_trips": 5.020810931455344e-07,
+        "priority_cost": 3.9055521483533084e-08,
+        "deadline_n1_vehicles": 5.252081791695673e-08,
+        "peak_queue_vehicles": 6.370942173816729e-07
+      },
+      "adaptive": {
+        "tts_veh_h": 2882.266056097679,
+        "queue_veh_h": 613.2170049472631,
+        "completed_trips": 17186.739106835317,
+        "priority_cost": 5158.109204620162,
+        "peak_queue_vehicles": 1933.3350649017798,
+        "deadline_n1_vehicles": 1491.4470207708807,
+        "minimum_state_margin": 0.6666493509822011,
+        "conservation_residual_vehicles": -3.637978807091713e-12
+      }
+    },
+    {
+      "case": "Q000",
+      "policy": "continuation",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 8.267306839115918e-10,
+        "queue_veh_h": 2.1884716261411086e-12,
+        "completed_trips": 8.669303497299552e-09,
+        "priority_cost": 8.267306839115918e-10,
+        "deadline_n1_vehicles": 4.734010872198269e-08,
+        "peak_queue_vehicles": 0.0
+      },
+      "adaptive": {
+        "tts_veh_h": 2567.516077057889,
+        "queue_veh_h": 77.83513016877761,
+        "completed_trips": 18049.293043751437,
+        "priority_cost": 2567.516077057889,
+        "peak_queue_vehicles": 125.10781134202304,
+        "deadline_n1_vehicles": 1634.570532827291,
+        "minimum_state_margin": 1.0500000121536466,
+        "conservation_residual_vehicles": 2.9103830456733704e-11
+      }
+    },
+    {
+      "case": "Q000",
+      "policy": "continuation",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 2.7413989300839603e-08,
+        "queue_veh_h": 4.0974285298034374e-08,
+        "completed_trips": 5.6970748119056225e-08,
+        "priority_cost": 2.7413989300839603e-08,
+        "deadline_n1_vehicles": 1.2797363524441607e-07,
+        "peak_queue_vehicles": 0.0
+      },
+      "adaptive": {
+        "tts_veh_h": 2532.943897321152,
+        "queue_veh_h": 74.6673480269867,
+        "completed_trips": 17937.352292833377,
+        "priority_cost": 2532.943897321152,
+        "peak_queue_vehicles": 125.10781134202304,
+        "deadline_n1_vehicles": 1612.3031560722936,
+        "minimum_state_margin": 0.9506692972460753,
+        "conservation_residual_vehicles": 1.4551915228366852e-11
+      }
+    },
+    {
+      "case": "Q000",
+      "policy": "nominal_mpc",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 8.891572224456468e-05,
+        "queue_veh_h": 0.00014984552827002062,
+        "completed_trips": 0.00023072407202562317,
+        "priority_cost": 8.891572224456468e-05,
+        "deadline_n1_vehicles": 7.476922587557056e-05,
+        "peak_queue_vehicles": 0.01270903462003048
+      },
+      "adaptive": {
+        "tts_veh_h": 2569.1892810197596,
+        "queue_veh_h": 80.22369459465845,
+        "completed_trips": 18047.003700005782,
+        "priority_cost": 2569.1892810197596,
+        "peak_queue_vehicles": 138.53898175821905,
+        "deadline_n1_vehicles": 1635.5253993116164,
+        "minimum_state_margin": 1.0500000147898942,
+        "conservation_residual_vehicles": 5.093170329928398e-11
+      }
+    },
+    {
+      "case": "Q000",
+      "policy": "nominal_mpc",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 0.00017149407267424976,
+        "queue_veh_h": 0.00023412213214157873,
+        "completed_trips": 0.00016070330093498342,
+        "priority_cost": 0.00017149407267424976,
+        "deadline_n1_vehicles": 7.612103786414082e-05,
+        "peak_queue_vehicles": 0.0005562741117017822
+      },
+      "adaptive": {
+        "tts_veh_h": 2532.9850120734104,
+        "queue_veh_h": 74.7232727185286,
+        "completed_trips": 17937.309503109915,
+        "priority_cost": 2532.9850120734104,
+        "peak_queue_vehicles": 126.42824803728922,
+        "deadline_n1_vehicles": 1612.3234018178741,
+        "minimum_state_margin": 0.9506692972463279,
+        "conservation_residual_vehicles": 1.4551915228366852e-11
+      }
+    },
+    {
+      "case": "Q008",
+      "policy": "continuation",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 0.0013635456430165505,
+        "queue_veh_h": 0.002475518351388928,
+        "completed_trips": 0.0034279528226761613,
+        "priority_cost": 0.0013635456430165505,
+        "deadline_n1_vehicles": 0.00014093314644014754,
+        "peak_queue_vehicles": 0.0037560852236993014
+      },
+      "adaptive": {
+        "tts_veh_h": 2826.98772653836,
+        "queue_veh_h": 239.38274070655726,
+        "completed_trips": 18368.467166127495,
+        "priority_cost": 2826.98772653836,
+        "peak_queue_vehicles": 591.020139897962,
+        "deadline_n1_vehicles": 1727.4762153771921,
+        "minimum_state_margin": 1.2510781134202305,
+        "conservation_residual_vehicles": -5.093170329928398e-11
+      }
+    },
+    {
+      "case": "Q008",
+      "policy": "continuation",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 0.001363545647564024,
+        "queue_veh_h": 0.002475518351673145,
+        "completed_trips": 0.0034279528226761613,
+        "priority_cost": 0.001363545647564024,
+        "deadline_n1_vehicles": 0.00014093314644014754,
+        "peak_queue_vehicles": 0.003756085224438266
+      },
+      "adaptive": {
+        "tts_veh_h": 2768.654393205023,
+        "queue_veh_h": 181.0494073732241,
+        "completed_trips": 18368.467166127495,
+        "priority_cost": 2768.654393205023,
+        "peak_queue_vehicles": 391.0201398979625,
+        "deadline_n1_vehicles": 1727.4762153771921,
+        "minimum_state_margin": 1.2510781134202305,
+        "conservation_residual_vehicles": 1.4551915228366852e-11
+      }
+    },
+    {
+      "case": "Q008",
+      "policy": "nominal_mpc",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 2.8451268008211628e-08,
+        "queue_veh_h": 7.105427357601002e-14,
+        "completed_trips": 2.4429027689620852e-08,
+        "priority_cost": 2.8451268008211628e-08,
+        "deadline_n1_vehicles": 1.818102646211628e-08,
+        "peak_queue_vehicles": 0.0
+      },
+      "adaptive": {
+        "tts_veh_h": 2769.109067736466,
+        "queue_veh_h": 96.33513018903348,
+        "completed_trips": 18625.259630546963,
+        "priority_cost": 2769.109067736466,
+        "peak_queue_vehicles": 144.99999999999994,
+        "deadline_n1_vehicles": 1780.7903177622443,
+        "minimum_state_margin": 1.2510781134202305,
+        "conservation_residual_vehicles": -5.820766091346741e-11
+      }
+    },
+    {
+      "case": "Q008",
+      "policy": "nominal_mpc",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 5.68238647247199e-08,
+        "queue_veh_h": 4.094228245321574e-08,
+        "completed_trips": 1.6807462088763714e-08,
+        "priority_cost": 5.68238647247199e-08,
+        "deadline_n1_vehicles": 1.7116076378442813e-07,
+        "peak_queue_vehicles": 3.059077002376398e-05
+      },
+      "adaptive": {
+        "tts_veh_h": 2731.8584947734753,
+        "queue_veh_h": 93.16734804721298,
+        "completed_trips": 18525.348793700796,
+        "priority_cost": 2731.8584947734753,
+        "peak_queue_vehicles": 144.93307149075713,
+        "deadline_n1_vehicles": 1758.3070850139834,
+        "minimum_state_margin": 1.2510781134202305,
+        "conservation_residual_vehicles": 7.275957614183426e-12
+      }
+    },
+    {
+      "case": "D027",
+      "policy": "continuation",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 0.0001217224794345384,
+        "queue_veh_h": 0.00022360987912861674,
+        "completed_trips": 0.0003180110979883466,
+        "priority_cost": 0.0001017771382976207,
+        "deadline_n1_vehicles": 1.42444282573706e-05,
+        "peak_queue_vehicles": 0.00035097122892580046
+      },
+      "adaptive": {
+        "tts_veh_h": 2694.858656192269,
+        "queue_veh_h": 108.24001980394715,
+        "completed_trips": 18365.41809948902,
+        "priority_cost": 6813.806642207381,
+        "peak_queue_vehicles": 194.36551209751744,
+        "deadline_n1_vehicles": 1727.3487647198876,
+        "minimum_state_margin": 1.2510781134202305,
+        "conservation_residual_vehicles": 6.184563972055912e-11
+      }
+    },
+    {
+      "case": "D027",
+      "policy": "continuation",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 7.296813691937132e-06,
+        "queue_veh_h": 2.3301360357663725e-05,
+        "completed_trips": 4.580905078910291e-05,
+        "priority_cost": 3.2214577004197054e-05,
+        "deadline_n1_vehicles": 2.30325524626096e-05,
+        "peak_queue_vehicles": 0.000350971229067909
+      },
+      "adaptive": {
+        "tts_veh_h": 2651.696031451831,
+        "queue_veh_h": 87.30567631170518,
+        "completed_trips": 18294.19642268841,
+        "priority_cost": 6720.013751457212,
+        "peak_queue_vehicles": 138.47525109751524,
+        "deadline_n1_vehicles": 1712.280097733778,
+        "minimum_state_margin": 1.2510353150603732,
+        "conservation_residual_vehicles": 4.729372449219227e-11
+      }
+    },
+    {
+      "case": "D027",
+      "policy": "nominal_mpc",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 6.972713890718296e-07,
+        "queue_veh_h": 1.3956513384982827e-06,
+        "completed_trips": 1.9989765860373154e-06,
+        "priority_cost": 6.393993317033164e-07,
+        "deadline_n1_vehicles": 3.2981324693537317e-07,
+        "peak_queue_vehicles": 2.462917564116651e-06
+      },
+      "adaptive": {
+        "tts_veh_h": 3299.9671105016087,
+        "queue_veh_h": 686.2684372564013,
+        "completed_trips": 15923.561967822603,
+        "priority_cost": 6328.205492865281,
+        "peak_queue_vehicles": 2179.977039957121,
+        "deadline_n1_vehicles": 2852.1674061419085,
+        "minimum_state_margin": -1.7997703995712122,
+        "conservation_residual_vehicles": 5.820766091346741e-11
+      }
+    },
+    {
+      "case": "D027",
+      "policy": "nominal_mpc",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 6.972682058403734e-07,
+        "queue_veh_h": 1.395649178448366e-06,
+        "completed_trips": 1.9989765860373154e-06,
+        "priority_cost": 6.394002411980182e-07,
+        "deadline_n1_vehicles": 3.2981324693537317e-07,
+        "peak_queue_vehicles": 2.4629100607853616e-06
+      },
+      "adaptive": {
+        "tts_veh_h": 3241.633777168274,
+        "queue_veh_h": 627.9351039230671,
+        "completed_trips": 15923.561967822603,
+        "priority_cost": 6269.872159531948,
+        "peak_queue_vehicles": 1979.9770399571203,
+        "deadline_n1_vehicles": 2852.1674061419085,
+        "minimum_state_margin": 0.20022960042879845,
+        "conservation_residual_vehicles": 4.547473508864641e-11
+      }
+    },
+    {
+      "case": "D027",
+      "policy": "grid_repair",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 7.203361747087911e-07,
+        "queue_veh_h": 1.3956503153167432e-06,
+        "completed_trips": 2.0785264496225864e-06,
+        "priority_cost": 6.028767529642209e-07,
+        "deadline_n1_vehicles": 2.3068196242093109e-07,
+        "peak_queue_vehicles": 2.462915517753572e-06
+      },
+      "adaptive": {
+        "tts_veh_h": 3096.9475753061743,
+        "queue_veh_h": 541.2259995064015,
+        "completed_trips": 16769.701069338018,
+        "priority_cost": 6426.6879457913055,
+        "peak_queue_vehicles": 1682.6886819571232,
+        "deadline_n1_vehicles": 2310.09117697797,
+        "minimum_state_margin": 1.2510781134202305,
+        "conservation_residual_vehicles": 4.3655745685100555e-11
+      }
+    },
+    {
+      "case": "D027",
+      "policy": "grid_repair",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 7.20332536729984e-07,
+        "queue_veh_h": 1.395650372160162e-06,
+        "completed_trips": 2.0785264496225864e-06,
+        "priority_cost": 6.028694770066068e-07,
+        "deadline_n1_vehicles": 2.3068196242093109e-07,
+        "peak_queue_vehicles": 2.462914380885195e-06
+      },
+      "adaptive": {
+        "tts_veh_h": 3038.614241972838,
+        "queue_veh_h": 482.8926661730676,
+        "completed_trips": 16769.701069338018,
+        "priority_cost": 6368.354612457977,
+        "peak_queue_vehicles": 1482.6886819571175,
+        "deadline_n1_vehicles": 2310.09117697797,
+        "minimum_state_margin": 1.2510781134202305,
+        "conservation_residual_vehicles": 2.546585164964199e-11
+      }
+    },
+    {
+      "case": "D027",
+      "policy": "scenario_mpc",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 6.992313501541503e-07,
+        "queue_veh_h": 1.395651224811445e-06,
+        "completed_trips": 1.9982635421911255e-06,
+        "priority_cost": 6.296377250691876e-07,
+        "deadline_n1_vehicles": 3.3151036404888146e-07,
+        "peak_queue_vehicles": 2.4629161998745985e-06
+      },
+      "adaptive": {
+        "tts_veh_h": 3267.7708187836574,
+        "queue_veh_h": 633.7770892564005,
+        "completed_trips": 16064.9113546647,
+        "priority_cost": 6357.077189802866,
+        "peak_queue_vehicles": 2000.006703957117,
+        "deadline_n1_vehicles": 2849.999145508638,
+        "minimum_state_margin": -6.703957117082382e-05,
+        "conservation_residual_vehicles": 4.729372449219227e-11
+      }
+    },
+    {
+      "case": "D027",
+      "policy": "scenario_mpc",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 6.992299859120976e-07,
+        "queue_veh_h": 1.395650770064094e-06,
+        "completed_trips": 1.9982635421911255e-06,
+        "priority_cost": 6.296395440585911e-07,
+        "deadline_n1_vehicles": 3.3151036404888146e-07,
+        "peak_queue_vehicles": 2.4629161998745985e-06
+      },
+      "adaptive": {
+        "tts_veh_h": 3209.4374854503267,
+        "queue_veh_h": 575.4437559230678,
+        "completed_trips": 16064.9113546647,
+        "priority_cost": 6298.743856469531,
+        "peak_queue_vehicles": 1800.0067039571231,
+        "deadline_n1_vehicles": 2849.999145508638,
+        "minimum_state_margin": 1.2510781134202305,
+        "conservation_residual_vehicles": 4.18367562815547e-11
+      }
+    },
+    {
+      "case": "D012",
+      "policy": "full_scenario_mpc",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 4.493449523579329e-07,
+        "queue_veh_h": 8.313049306707399e-07,
+        "completed_trips": 1.2843556760344654e-06,
+        "priority_cost": 1.7605043467483483e-07,
+        "deadline_n1_vehicles": 8.387564776057843e-08,
+        "peak_queue_vehicles": 1.467008928557334e-06
+      },
+      "adaptive": {
+        "tts_veh_h": 2728.5156722952083,
+        "queue_veh_h": 264.4950003112642,
+        "completed_trips": 17951.738584032533,
+        "priority_cost": 4009.122580867988,
+        "peak_queue_vehicles": 738.7855587451107,
+        "deadline_n1_vehicles": 1640.3181092018333,
+        "minimum_state_margin": 1.2510781134202305,
+        "conservation_residual_vehicles": 1.0913936421275139e-11
+      }
+    },
+    {
+      "case": "D012",
+      "policy": "full_scenario_mpc",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 4.4934449761058204e-07,
+        "queue_veh_h": 8.313050443575776e-07,
+        "completed_trips": 1.2843556760344654e-06,
+        "priority_cost": 1.760481609380804e-07,
+        "deadline_n1_vehicles": 8.387564776057843e-08,
+        "peak_queue_vehicles": 1.4670094969915226e-06
+      },
+      "adaptive": {
+        "tts_veh_h": 2716.8490056285414,
+        "queue_veh_h": 252.8283336445981,
+        "completed_trips": 17951.738584032533,
+        "priority_cost": 3997.4559142013222,
+        "peak_queue_vehicles": 698.7855587451138,
+        "deadline_n1_vehicles": 1640.3181092018333,
+        "minimum_state_margin": 1.2510781134202305,
+        "conservation_residual_vehicles": 2.1827872842550278e-11
+      }
+    },
+    {
+      "case": "D020",
+      "policy": "full_scenario_mpc",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 5.62651166546857e-07,
+        "queue_veh_h": 1.0429340591144864e-06,
+        "completed_trips": 1.6216617950703949e-06,
+        "priority_cost": 2.1835103325429372e-07,
+        "deadline_n1_vehicles": 1.0129838301509153e-07,
+        "peak_queue_vehicles": 1.8404723505227594e-06
+      },
+      "adaptive": {
+        "tts_veh_h": 2746.438053355887,
+        "queue_veh_h": 280.7767730563156,
+        "completed_trips": 17957.277701798237,
+        "priority_cost": 4028.226285101179,
+        "peak_queue_vehicles": 792.7754518246165,
+        "deadline_n1_vehicles": 1640.5462501490906,
+        "minimum_state_margin": 1.2510781134202305,
+        "conservation_residual_vehicles": 4.001776687800884e-11
+      }
+    },
+    {
+      "case": "D020",
+      "policy": "full_scenario_mpc",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 5.626479833154008e-07,
+        "queue_veh_h": 1.0429338033191016e-06,
+        "completed_trips": 1.6216617950703949e-06,
+        "priority_cost": 2.1834466679138131e-07,
+        "deadline_n1_vehicles": 1.0129838301509153e-07,
+        "peak_queue_vehicles": 1.8404717820885708e-06
+      },
+      "adaptive": {
+        "tts_veh_h": 2717.2713866892195,
+        "queue_veh_h": 251.61010638964842,
+        "completed_trips": 17957.277701798237,
+        "priority_cost": 3999.059618434511,
+        "peak_queue_vehicles": 692.7754518246135,
+        "deadline_n1_vehicles": 1640.5462501490906,
+        "minimum_state_margin": 1.2510781134202305,
+        "conservation_residual_vehicles": 4.001776687800884e-11
+      }
+    },
+    {
+      "case": "D028",
+      "policy": "full_scenario_mpc",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 7.503931556129828e-07,
+        "queue_veh_h": 1.3956502584733244e-06,
+        "completed_trips": 2.1832856873515993e-06,
+        "priority_cost": 2.8664362616837025e-07,
+        "deadline_n1_vehicles": 1.3059093362244312e-07,
+        "peak_queue_vehicles": 2.4629133577036555e-06
+      },
+      "adaptive": {
+        "tts_veh_h": 2776.314510796775,
+        "queue_veh_h": 307.9130609647337,
+        "completed_trips": 17966.505967931047,
+        "priority_cost": 4060.077210597915,
+        "peak_queue_vehicles": 882.7586069571175,
+        "deadline_n1_vehicles": 1640.9279642711213,
+        "minimum_state_margin": 1.2510781134202305,
+        "conservation_residual_vehicles": 8.36735125631094e-11
+      }
+    },
+    {
+      "case": "D028",
+      "policy": "full_scenario_mpc",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 7.503931556129828e-07,
+        "queue_veh_h": 1.3956500879430678e-06,
+        "completed_trips": 2.1832856873515993e-06,
+        "priority_cost": 2.866490831365809e-07,
+        "deadline_n1_vehicles": 1.3059093362244312e-07,
+        "peak_queue_vehicles": 2.46291313032998e-06
+      },
+      "adaptive": {
+        "tts_veh_h": 2717.981177463443,
+        "queue_veh_h": 249.57972763140003,
+        "completed_trips": 17966.505967931047,
+        "priority_cost": 4001.7438772645846,
+        "peak_queue_vehicles": 682.7586069571176,
+        "deadline_n1_vehicles": 1640.9279642711213,
+        "minimum_state_margin": 1.2510781134202305,
+        "conservation_residual_vehicles": 7.275957614183426e-11
+      }
+    },
+    {
+      "case": "D036",
+      "policy": "full_scenario_mpc",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 1.2511782188084908e-07,
+        "queue_veh_h": 2.2684025680064224e-07,
+        "completed_trips": 4.0757731767371297e-07,
+        "priority_cost": 5.0038579502142966e-08,
+        "deadline_n1_vehicles": 2.7380337996874005e-09,
+        "peak_queue_vehicles": 4.003059075330384e-07
+      },
+      "adaptive": {
+        "tts_veh_h": 2751.1490910821553,
+        "queue_veh_h": 280.9611365860109,
+        "completed_trips": 17983.438270924704,
+        "priority_cost": 4036.6626270662914,
+        "peak_queue_vehicles": 792.8360933476083,
+        "deadline_n1_vehicles": 1640.7420658076383,
+        "minimum_state_margin": 1.3251083334760705,
+        "conservation_residual_vehicles": 1.8189894035458565e-11
+      }
+    },
+    {
+      "case": "D036",
+      "policy": "full_scenario_mpc",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 1.251205503649544e-07,
+        "queue_veh_h": 2.2684045575260825e-07,
+        "completed_trips": 4.0757731767371297e-07,
+        "priority_cost": 5.003448677598499e-08,
+        "deadline_n1_vehicles": 2.7380337996874005e-09,
+        "peak_queue_vehicles": 4.0030658965406474e-07
+      },
+      "adaptive": {
+        "tts_veh_h": 2721.9824244154865,
+        "queue_veh_h": 251.79446991934378,
+        "completed_trips": 17983.438270924704,
+        "priority_cost": 4007.4959603996285,
+        "peak_queue_vehicles": 692.8360933476051,
+        "deadline_n1_vehicles": 1640.7420658076383,
+        "minimum_state_margin": 1.3251083334760705,
+        "conservation_residual_vehicles": 1.8189894035458565e-11
+      }
+    },
+    {
+      "case": "D044",
+      "policy": "full_scenario_mpc",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 6.585696610272862e-08,
+        "queue_veh_h": 1.2587571518452023e-07,
+        "completed_trips": 1.5541445463895798e-07,
+        "priority_cost": 2.4818291421979666e-08,
+        "deadline_n1_vehicles": 2.590968506410718e-08,
+        "peak_queue_vehicles": 2.2213521333469544e-07
+      },
+      "adaptive": {
+        "tts_veh_h": 2781.037641069629,
+        "queue_veh_h": 308.0974244944289,
+        "completed_trips": 17992.660504144354,
+        "priority_cost": 4068.537849031746,
+        "peak_queue_vehicles": 882.8192484801093,
+        "deadline_n1_vehicles": 1641.12542807047,
+        "minimum_state_margin": 1.3410781134202305,
+        "conservation_residual_vehicles": 5.820766091346741e-11
+      }
+    },
+    {
+      "case": "D044",
+      "policy": "full_scenario_mpc",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 6.585378287127241e-08,
+        "queue_veh_h": 1.2587588571477681e-07,
+        "completed_trips": 1.5541445463895798e-07,
+        "priority_cost": 2.4822384148137644e-08,
+        "deadline_n1_vehicles": 2.590968506410718e-08,
+        "peak_queue_vehicles": 2.2213498596102e-07
+      },
+      "adaptive": {
+        "tts_veh_h": 2722.7043077362932,
+        "queue_veh_h": 249.76409116109593,
+        "completed_trips": 17992.660504144354,
+        "priority_cost": 4010.204515698413,
+        "peak_queue_vehicles": 682.8192484801094,
+        "deadline_n1_vehicles": 1641.12542807047,
+        "minimum_state_margin": 1.3410781134202305,
+        "conservation_residual_vehicles": 5.093170329928398e-11
+      }
+    },
+    {
+      "case": "D052",
+      "policy": "full_scenario_mpc",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 1.4035749700269662e-06,
+        "queue_veh_h": 2.5547599875608284e-06,
+        "completed_trips": 4.129640728933737e-06,
+        "priority_cost": 5.785946086689364e-07,
+        "deadline_n1_vehicles": 1.9119056560157333e-07,
+        "peak_queue_vehicles": 4.508399570113397e-06
+      },
+      "adaptive": {
+        "tts_veh_h": 2741.1212215362866,
+        "queue_veh_h": 264.9866363904517,
+        "completed_trips": 18021.488113921107,
+        "priority_cost": 4031.700581279913,
+        "peak_queue_vehicles": 738.9472694730888,
+        "deadline_n1_vehicles": 1640.8410538214287,
+        "minimum_state_margin": 1.3112200947309198,
+        "conservation_residual_vehicles": 0.0
+      }
+    },
+    {
+      "case": "D052",
+      "policy": "full_scenario_mpc",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 1.403575424774317e-06,
+        "queue_veh_h": 2.5547597317654436e-06,
+        "completed_trips": 4.129640728933737e-06,
+        "priority_cost": 5.7859642765834e-07,
+        "deadline_n1_vehicles": 1.9119056560157333e-07,
+        "peak_queue_vehicles": 4.508399001679209e-06
+      },
+      "adaptive": {
+        "tts_veh_h": 2729.454554869619,
+        "queue_veh_h": 253.31996972378573,
+        "completed_trips": 18021.488113921107,
+        "priority_cost": 4020.033914613248,
+        "peak_queue_vehicles": 698.9472694730919,
+        "deadline_n1_vehicles": 1640.8410538214287,
+        "minimum_state_margin": 1.3112200947309198,
+        "conservation_residual_vehicles": 1.0913936421275139e-11
+      }
+    },
+    {
+      "case": "D060",
+      "policy": "full_scenario_mpc",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 1.0887265489145648e-06,
+        "queue_veh_h": 1.990414602914825e-06,
+        "completed_trips": 3.2247808121610433e-06,
+        "priority_cost": 4.399862518766895e-07,
+        "deadline_n1_vehicles": 1.4721194929734338e-07,
+        "peak_queue_vehicles": 3.5124949135934003e-06
+      },
+      "adaptive": {
+        "tts_veh_h": 2788.972075299441,
+        "queue_veh_h": 308.4046970439213,
+        "completed_trips": 18036.229466382443,
+        "priority_cost": 4082.759733351903,
+        "peak_queue_vehicles": 882.9203176850957,
+        "deadline_n1_vehicles": 1641.457986694351,
+        "minimum_state_margin": 1.3509505768509569,
+        "conservation_residual_vehicles": 5.093170329928398e-11
+      }
+    },
+    {
+      "case": "D060",
+      "policy": "full_scenario_mpc",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 1.0887310963880736e-06,
+        "queue_veh_h": 1.990414915553629e-06,
+        "completed_trips": 3.2247808121610433e-06,
+        "priority_cost": 4.399826138978824e-07,
+        "deadline_n1_vehicles": 1.4721194929734338e-07,
+        "peak_queue_vehicles": 3.512495368340751e-06
+      },
+      "adaptive": {
+        "tts_veh_h": 2730.6387419661073,
+        "queue_veh_h": 250.07136371058763,
+        "completed_trips": 18036.229466382443,
+        "priority_cost": 4024.4264000185717,
+        "peak_queue_vehicles": 682.9203176850957,
+        "deadline_n1_vehicles": 1641.457986694351,
+        "minimum_state_margin": 1.3509505768509569,
+        "conservation_residual_vehicles": 4.001776687800884e-11
+      }
+    },
+    {
+      "case": "D068",
+      "policy": "full_scenario_mpc",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 0.00015789342751304503,
+        "queue_veh_h": 0.00024972962904712404,
+        "completed_trips": 0.000172201147506712,
+        "priority_cost": 8.764952872297727e-05,
+        "deadline_n1_vehicles": 1.5235887303788331e-05,
+        "peak_queue_vehicles": 0.00014409330105991103
+      },
+      "adaptive": {
+        "tts_veh_h": 2754.541698131035,
+        "queue_veh_h": 265.6144762499189,
+        "completed_trips": 18094.005425012187,
+        "priority_cost": 4055.677653587359,
+        "peak_queue_vehicles": 739.1612558063516,
+        "deadline_n1_vehicles": 1641.4068282251992,
+        "minimum_state_margin": 1.3133599580635473,
+        "conservation_residual_vehicles": 1.4551915228366852e-11
+      }
+    },
+    {
+      "case": "D068",
+      "policy": "full_scenario_mpc",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 0.00015789342342031887,
+        "queue_veh_h": 0.00024972962876290694,
+        "completed_trips": 0.000172201147506712,
+        "priority_cost": 8.764953145146137e-05,
+        "deadline_n1_vehicles": 1.5235887303788331e-05,
+        "peak_queue_vehicles": 0.00014409330060516368
+      },
+      "adaptive": {
+        "tts_veh_h": 2742.875031464372,
+        "queue_veh_h": 253.9478095832529,
+        "completed_trips": 18094.005425012187,
+        "priority_cost": 4044.0109869206913,
+        "peak_queue_vehicles": 699.1612558063547,
+        "deadline_n1_vehicles": 1641.4068282251992,
+        "minimum_state_margin": 1.3133599580635473,
+        "conservation_residual_vehicles": 2.546585164964199e-11
+      }
+    },
+    {
+      "case": "D076",
+      "policy": "full_scenario_mpc",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 0.00010805241572597879,
+        "queue_veh_h": 0.00017102563174375973,
+        "completed_trips": 0.00011920930046471767,
+        "priority_cost": 5.993257582304068e-05,
+        "deadline_n1_vehicles": 1.0258449492539512e-05,
+        "peak_queue_vehicles": 0.00010029153486357245
+      },
+      "adaptive": {
+        "tts_veh_h": 2772.5092665696466,
+        "queue_veh_h": 281.90365360730937,
+        "completed_trips": 18099.519706274754,
+        "priority_cost": 4074.8653476900404,
+        "peak_queue_vehicles": 793.1546076914367,
+        "deadline_n1_vehicles": 1641.6410110425008,
+        "minimum_state_margin": 1.328293476914353,
+        "conservation_residual_vehicles": 3.2741809263825417e-11
+      }
+    },
+    {
+      "case": "D076",
+      "policy": "full_scenario_mpc",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 0.00010805241663547349,
+        "queue_veh_h": 0.00017102563188586828,
+        "completed_trips": 0.00011920930046471767,
+        "priority_cost": 5.993257263980922e-05,
+        "deadline_n1_vehicles": 1.0258449492539512e-05,
+        "peak_queue_vehicles": 0.00010029153565938032
+      },
+      "adaptive": {
+        "tts_veh_h": 2743.3425999029814,
+        "queue_veh_h": 252.73698694064214,
+        "completed_trips": 18099.519706274754,
+        "priority_cost": 4045.698681023376,
+        "peak_queue_vehicles": 693.1546076914334,
+        "deadline_n1_vehicles": 1641.6410110425008,
+        "minimum_state_margin": 1.328293476914353,
+        "conservation_residual_vehicles": 3.2741809263825417e-11
+      }
+    },
+    {
+      "case": "D084",
+      "policy": "full_scenario_mpc",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 1.990374585147947e-07,
+        "queue_veh_h": 3.6102005651628133e-07,
+        "completed_trips": 5.021283868700266e-07,
+        "priority_cost": 3.9040060073602945e-08,
+        "deadline_n1_vehicles": 5.250740287010558e-08,
+        "peak_queue_vehicles": 6.370976279868046e-07
+      },
+      "adaptive": {
+        "tts_veh_h": 2901.5716984495525,
+        "queue_veh_h": 632.3697830167082,
+        "completed_trips": 17187.394351850122,
+        "priority_cost": 5177.635093608469,
+        "peak_queue_vehicles": 1999.0017325684491,
+        "deadline_n1_vehicles": 1491.5640139954396,
+        "minimum_state_margin": 0.009982674315509144,
+        "conservation_residual_vehicles": -4.3655745685100555e-11
+      }
+    },
+    {
+      "case": "D084",
+      "policy": "full_scenario_mpc",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 1.9903654902009293e-07,
+        "queue_veh_h": 3.610203975767945e-07,
+        "completed_trips": 5.021283868700266e-07,
+        "priority_cost": 3.9037331589497626e-08,
+        "deadline_n1_vehicles": 5.250740287010558e-08,
+        "peak_queue_vehicles": 6.37095808997401e-07
+      },
+      "adaptive": {
+        "tts_veh_h": 2882.127254005109,
+        "queue_veh_h": 612.9253385722646,
+        "completed_trips": 17187.394351850122,
+        "priority_cost": 5158.190649164028,
+        "peak_queue_vehicles": 1932.3350659017813,
+        "deadline_n1_vehicles": 1491.5640139954396,
+        "minimum_state_margin": 0.6766493409821877,
+        "conservation_residual_vehicles": -1.0913936421275139e-11
+      }
+    },
+    {
+      "case": "D027",
+      "policy": "full_scenario_mpc",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 6.992995622567832e-07,
+        "queue_veh_h": 1.3956511111246073e-06,
+        "completed_trips": 1.9984836399089545e-06,
+        "priority_cost": 6.295258572208695e-07,
+        "deadline_n1_vehicles": 3.311861291876994e-07,
+        "peak_queue_vehicles": 2.462916427248274e-06
+      },
+      "adaptive": {
+        "tts_veh_h": 3267.1880793599175,
+        "queue_veh_h": 633.4854228814002,
+        "completed_trips": 16067.40356642671,
+        "priority_cost": 6357.2856791617505,
+        "peak_queue_vehicles": 1999.0067049571162,
+        "deadline_n1_vehicles": 2847.964785414358,
+        "minimum_state_margin": 0.009932950428837017,
+        "conservation_residual_vehicles": 5.4569682106375694e-11
+      }
+    },
+    {
+      "case": "D027",
+      "policy": "full_scenario_mpc",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 6.992909220571164e-07,
+        "queue_veh_h": 1.3956508837509318e-06,
+        "completed_trips": 1.9984836399089545e-06,
+        "priority_cost": 6.295167622738518e-07,
+        "deadline_n1_vehicles": 3.311861291876994e-07,
+        "peak_queue_vehicles": 2.4629157451272476e-06
+      },
+      "adaptive": {
+        "tts_veh_h": 3208.8547460265822,
+        "queue_veh_h": 575.1520895480678,
+        "completed_trips": 16067.40356642671,
+        "priority_cost": 6298.952345828423,
+        "peak_queue_vehicles": 1799.0067049571219,
+        "deadline_n1_vehicles": 2847.964785414358,
+        "minimum_state_margin": 1.2510781134202305,
+        "conservation_residual_vehicles": 4.9112713895738125e-11
+      }
+    },
+    {
+      "case": "D027",
+      "policy": "full_scenario_repair",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 7.200246727734338e-07,
+        "queue_veh_h": 1.395647927893151e-06,
+        "completed_trips": 2.0779807528015226e-06,
+        "priority_cost": 6.037262210156769e-07,
+        "deadline_n1_vehicles": 2.317697180842515e-07,
+        "peak_queue_vehicles": 2.462896418364835e-06
+      },
+      "adaptive": {
+        "tts_veh_h": 3074.6157638540194,
+        "queue_veh_h": 501.63873821473277,
+        "completed_trips": 16868.423326644443,
+        "priority_cost": 6452.554899699144,
+        "peak_queue_vehicles": 1546.9609289571104,
+        "deadline_n1_vehicles": 2314.4949807821827,
+        "minimum_state_margin": 1.2510781134202305,
+        "conservation_residual_vehicles": 3.637978807091713e-11
+      }
+    },
+    {
+      "case": "D027",
+      "policy": "full_scenario_repair",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 7.200287654995918e-07,
+        "queue_veh_h": 1.3956499174128112e-06,
+        "completed_trips": 2.0779807528015226e-06,
+        "priority_cost": 6.037244020262733e-07,
+        "deadline_n1_vehicles": 2.317697180842515e-07,
+        "peak_queue_vehicles": 2.46290915129066e-06
+      },
+      "adaptive": {
+        "tts_veh_h": 3016.2824305206905,
+        "queue_veh_h": 443.30540488140065,
+        "completed_trips": 16868.423326644443,
+        "priority_cost": 6394.221566365808,
+        "peak_queue_vehicles": 1346.9609289571172,
+        "deadline_n1_vehicles": 2314.4949807821827,
+        "minimum_state_margin": 1.2510781134202305,
+        "conservation_residual_vehicles": 3.2741809263825417e-11
+      }
+    },
+    {
+      "case": "D072",
+      "policy": "fresh_reserve",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 1.1990096027147956e-07,
+        "queue_veh_h": 5.684341886080802e-14,
+        "completed_trips": 7.235212251543999e-08,
+        "priority_cost": 2.3571237761643715e-07,
+        "deadline_n1_vehicles": 3.3122205422841944e-08,
+        "peak_queue_vehicles": 0.0
+      },
+      "adaptive": {
+        "tts_veh_h": 2694.204246745861,
+        "queue_veh_h": 89.02679685570048,
+        "completed_trips": 18482.83122481037,
+        "priority_cost": 4083.2248982125247,
+        "peak_queue_vehicles": 174.10781134202304,
+        "deadline_n1_vehicles": 1724.364387951283,
+        "minimum_state_margin": 1.3250000000000004,
+        "conservation_residual_vehicles": 1.4551915228366852e-11
+      }
+    },
+    {
+      "case": "D072",
+      "policy": "fresh_reserve",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 1.2706141205853783e-07,
+        "queue_veh_h": 2.0471219386308803e-08,
+        "completed_trips": 4.383036866784096e-08,
+        "priority_cost": 2.7151827453053556e-07,
+        "deadline_n1_vehicles": 1.1323982107569464e-07,
+        "peak_queue_vehicles": 0.0
+      },
+      "adaptive": {
+        "tts_veh_h": 2676.1076090102556,
+        "queue_veh_h": 87.44290578479009,
+        "completed_trips": 18430.499955844807,
+        "priority_cost": 4052.5490951105044,
+        "peak_queue_vehicles": 174.10781134202304,
+        "deadline_n1_vehicles": 1713.2085719716404,
+        "minimum_state_margin": 1.2753346425462146,
+        "conservation_residual_vehicles": 2.9103830456733704e-11
+      }
+    },
+    {
+      "case": "D073",
+      "policy": "fresh_reserve",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 1.1990141501883045e-07,
+        "queue_veh_h": 5.684341886080802e-14,
+        "completed_trips": 7.235576049424708e-08,
+        "priority_cost": 4.6734203351661563e-07,
+        "deadline_n1_vehicles": 3.3122205422841944e-08,
+        "peak_queue_vehicles": 0.0
+      },
+      "adaptive": {
+        "tts_veh_h": 2694.2042467458605,
+        "queue_veh_h": 89.02679685570048,
+        "completed_trips": 18482.831224810372,
+        "priority_cost": 6861.266201145854,
+        "peak_queue_vehicles": 174.10781134202304,
+        "deadline_n1_vehicles": 1724.364387951283,
+        "minimum_state_margin": 1.3250000000000004,
+        "conservation_residual_vehicles": 1.8189894035458565e-11
+      }
+    },
+    {
+      "case": "D073",
+      "policy": "fresh_reserve",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 1.2706141205853783e-07,
+        "queue_veh_h": 2.0471219386308803e-08,
+        "completed_trips": 4.383036866784096e-08,
+        "priority_cost": 5.604224497801624e-07,
+        "deadline_n1_vehicles": 1.132391389546683e-07,
+        "peak_queue_vehicles": 0.0
+      },
+      "adaptive": {
+        "tts_veh_h": 2676.1076090102556,
+        "queue_veh_h": 87.44290578479009,
+        "completed_trips": 18430.499955844807,
+        "priority_cost": 6805.432067311017,
+        "peak_queue_vehicles": 174.10781134202304,
+        "deadline_n1_vehicles": 1713.208571971641,
+        "minimum_state_margin": 1.2753346425462146,
+        "conservation_residual_vehicles": 2.9103830456733704e-11
+      }
+    },
+    {
+      "case": "D073",
+      "policy": "reserve_repair",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 0.0002540018726904236,
+        "queue_veh_h": 0.0004451633220696749,
+        "completed_trips": 0.000565161961276317,
+        "priority_cost": 0.00014194895084074233,
+        "deadline_n1_vehicles": 3.188503069395665e-05,
+        "peak_queue_vehicles": 0.0006060129901470646
+      },
+      "adaptive": {
+        "tts_veh_h": 3073.1284152024846,
+        "queue_veh_h": 497.6439211626861,
+        "completed_trips": 16981.973254197568,
+        "priority_cost": 6484.6887781074565,
+        "peak_queue_vehicles": 1529.949493939987,
+        "deadline_n1_vehicles": 2275.905107681297,
+        "minimum_state_margin": 1.33680003939993,
+        "conservation_residual_vehicles": 7.275957614183426e-12
+      }
+    },
+    {
+      "case": "D073",
+      "policy": "reserve_repair",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 0.0002540018749641604,
+        "queue_veh_h": 0.0004451633221265183,
+        "completed_trips": 0.000565161961276317,
+        "priority_cost": 0.00014194895447872113,
+        "deadline_n1_vehicles": 3.188503069395665e-05,
+        "peak_queue_vehicles": 0.0006060129990146379
+      },
+      "adaptive": {
+        "tts_veh_h": 3043.961748535819,
+        "queue_veh_h": 468.47725449601893,
+        "completed_trips": 16981.973254197568,
+        "priority_cost": 6455.522111440788,
+        "peak_queue_vehicles": 1429.9494939399888,
+        "deadline_n1_vehicles": 2275.905107681297,
+        "minimum_state_margin": 1.33680003939993,
+        "conservation_residual_vehicles": 1.0913936421275139e-11
+      }
+    },
+    {
+      "case": "D074",
+      "policy": "fresh_reserve",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 1.1990096027147956e-07,
+        "queue_veh_h": 5.684341886080802e-14,
+        "completed_trips": 7.235212251543999e-08,
+        "priority_cost": 2.3571237761643715e-07,
+        "deadline_n1_vehicles": 3.3122205422841944e-08,
+        "peak_queue_vehicles": 0.0
+      },
+      "adaptive": {
+        "tts_veh_h": 2694.204246745861,
+        "queue_veh_h": 89.02679685570048,
+        "completed_trips": 18482.83122481037,
+        "priority_cost": 4083.2248982125247,
+        "peak_queue_vehicles": 174.10781134202304,
+        "deadline_n1_vehicles": 1724.364387951283,
+        "minimum_state_margin": 1.3250000000000004,
+        "conservation_residual_vehicles": 1.4551915228366852e-11
+      }
+    },
+    {
+      "case": "D074",
+      "policy": "fresh_reserve",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 1.2706141205853783e-07,
+        "queue_veh_h": 2.0471219386308803e-08,
+        "completed_trips": 4.383036866784096e-08,
+        "priority_cost": 2.7151827453053556e-07,
+        "deadline_n1_vehicles": 1.1323982107569464e-07,
+        "peak_queue_vehicles": 0.0
+      },
+      "adaptive": {
+        "tts_veh_h": 2676.1076090102556,
+        "queue_veh_h": 87.44290578479009,
+        "completed_trips": 18430.499955844807,
+        "priority_cost": 4052.5490951105044,
+        "peak_queue_vehicles": 174.10781134202304,
+        "deadline_n1_vehicles": 1713.2085719716404,
+        "minimum_state_margin": 1.2753346425462146,
+        "conservation_residual_vehicles": 2.9103830456733704e-11
+      }
+    },
+    {
+      "case": "D075",
+      "policy": "fresh_reserve",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 1.1990141501883045e-07,
+        "queue_veh_h": 5.684341886080802e-14,
+        "completed_trips": 7.235576049424708e-08,
+        "priority_cost": 4.6734203351661563e-07,
+        "deadline_n1_vehicles": 3.3122205422841944e-08,
+        "peak_queue_vehicles": 0.0
+      },
+      "adaptive": {
+        "tts_veh_h": 2694.2042467458605,
+        "queue_veh_h": 89.02679685570048,
+        "completed_trips": 18482.831224810372,
+        "priority_cost": 6861.266201145854,
+        "peak_queue_vehicles": 174.10781134202304,
+        "deadline_n1_vehicles": 1724.364387951283,
+        "minimum_state_margin": 1.3250000000000004,
+        "conservation_residual_vehicles": 1.8189894035458565e-11
+      }
+    },
+    {
+      "case": "D075",
+      "policy": "fresh_reserve",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 1.2706141205853783e-07,
+        "queue_veh_h": 2.0471219386308803e-08,
+        "completed_trips": 4.383036866784096e-08,
+        "priority_cost": 5.604224497801624e-07,
+        "deadline_n1_vehicles": 1.132391389546683e-07,
+        "peak_queue_vehicles": 0.0
+      },
+      "adaptive": {
+        "tts_veh_h": 2676.1076090102556,
+        "queue_veh_h": 87.44290578479009,
+        "completed_trips": 18430.499955844807,
+        "priority_cost": 6805.432067311017,
+        "peak_queue_vehicles": 174.10781134202304,
+        "deadline_n1_vehicles": 1713.208571971641,
+        "minimum_state_margin": 1.2753346425462146,
+        "conservation_residual_vehicles": 2.9103830456733704e-11
+      }
+    },
+    {
+      "case": "D075",
+      "policy": "reserve_repair",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 0.0003031468172594032,
+        "queue_veh_h": 0.0005122137541775373,
+        "completed_trips": 0.0003341836927575059,
+        "priority_cost": 0.00019075402815360576,
+        "deadline_n1_vehicles": 4.1968351069954224e-05,
+        "peak_queue_vehicles": 0.00028634306636377005
+      },
+      "adaptive": {
+        "tts_veh_h": 3121.711866947043,
+        "queue_veh_h": 529.3183144463804,
+        "completed_trips": 16784.54137004916,
+        "priority_cost": 6459.3209241700015,
+        "peak_queue_vehicles": 1641.3642243641295,
+        "deadline_n1_vehicles": 2406.4704228177457,
+        "minimum_state_margin": 1.328398923641374,
+        "conservation_residual_vehicles": 0.0
+      }
+    },
+    {
+      "case": "D075",
+      "policy": "reserve_repair",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 0.0003031468199878873,
+        "queue_veh_h": 0.000512213754802815,
+        "completed_trips": 0.0003341836927575059,
+        "priority_cost": 0.00019075401542067993,
+        "deadline_n1_vehicles": 4.1968351069954224e-05,
+        "peak_queue_vehicles": 0.00028634307386710134
+      },
+      "adaptive": {
+        "tts_veh_h": 3092.5452002803763,
+        "queue_veh_h": 500.1516477797139,
+        "completed_trips": 16784.54137004916,
+        "priority_cost": 6430.1542575033345,
+        "peak_queue_vehicles": 1541.3642243641302,
+        "deadline_n1_vehicles": 2406.4704228177457,
+        "minimum_state_margin": 1.328398923641374,
+        "conservation_residual_vehicles": 3.637978807091713e-12
+      }
+    },
+    {
+      "case": "D076",
+      "policy": "fresh_reserve",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 1.1990096027147956e-07,
+        "queue_veh_h": 5.684341886080802e-14,
+        "completed_trips": 7.235212251543999e-08,
+        "priority_cost": 2.3571237761643715e-07,
+        "deadline_n1_vehicles": 3.3122205422841944e-08,
+        "peak_queue_vehicles": 0.0
+      },
+      "adaptive": {
+        "tts_veh_h": 2694.204246745861,
+        "queue_veh_h": 89.02679685570048,
+        "completed_trips": 18482.83122481037,
+        "priority_cost": 4083.2248982125247,
+        "peak_queue_vehicles": 174.10781134202304,
+        "deadline_n1_vehicles": 1724.364387951283,
+        "minimum_state_margin": 1.3250000000000004,
+        "conservation_residual_vehicles": 1.4551915228366852e-11
+      }
+    },
+    {
+      "case": "D076",
+      "policy": "fresh_reserve",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 1.2706141205853783e-07,
+        "queue_veh_h": 2.0471219386308803e-08,
+        "completed_trips": 4.383036866784096e-08,
+        "priority_cost": 2.7151827453053556e-07,
+        "deadline_n1_vehicles": 1.1323982107569464e-07,
+        "peak_queue_vehicles": 0.0
+      },
+      "adaptive": {
+        "tts_veh_h": 2676.1076090102556,
+        "queue_veh_h": 87.44290578479009,
+        "completed_trips": 18430.499955844807,
+        "priority_cost": 4052.5490951105044,
+        "peak_queue_vehicles": 174.10781134202304,
+        "deadline_n1_vehicles": 1713.2085719716404,
+        "minimum_state_margin": 1.2753346425462146,
+        "conservation_residual_vehicles": 2.9103830456733704e-11
+      }
+    },
+    {
+      "case": "D077",
+      "policy": "fresh_reserve",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 1.1990141501883045e-07,
+        "queue_veh_h": 5.684341886080802e-14,
+        "completed_trips": 7.235576049424708e-08,
+        "priority_cost": 4.6734203351661563e-07,
+        "deadline_n1_vehicles": 3.3122205422841944e-08,
+        "peak_queue_vehicles": 0.0
+      },
+      "adaptive": {
+        "tts_veh_h": 2694.2042467458605,
+        "queue_veh_h": 89.02679685570048,
+        "completed_trips": 18482.831224810372,
+        "priority_cost": 6861.266201145854,
+        "peak_queue_vehicles": 174.10781134202304,
+        "deadline_n1_vehicles": 1724.364387951283,
+        "minimum_state_margin": 1.3250000000000004,
+        "conservation_residual_vehicles": 1.8189894035458565e-11
+      }
+    },
+    {
+      "case": "D077",
+      "policy": "fresh_reserve",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 1.2706141205853783e-07,
+        "queue_veh_h": 2.0471219386308803e-08,
+        "completed_trips": 4.383036866784096e-08,
+        "priority_cost": 5.604224497801624e-07,
+        "deadline_n1_vehicles": 1.132391389546683e-07,
+        "peak_queue_vehicles": 0.0
+      },
+      "adaptive": {
+        "tts_veh_h": 2676.1076090102556,
+        "queue_veh_h": 87.44290578479009,
+        "completed_trips": 18430.499955844807,
+        "priority_cost": 6805.432067311017,
+        "peak_queue_vehicles": 174.10781134202304,
+        "deadline_n1_vehicles": 1713.208571971641,
+        "minimum_state_margin": 1.2753346425462146,
+        "conservation_residual_vehicles": 2.9103830456733704e-11
+      }
+    },
+    {
+      "case": "D077",
+      "policy": "reserve_repair",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 0.00023691404476267053,
+        "queue_veh_h": 0.0004011037011650842,
+        "completed_trips": 0.00026312714180676267,
+        "priority_cost": 0.00015080872981343418,
+        "deadline_n1_vehicles": 3.2897679830057314e-05,
+        "peak_queue_vehicles": 0.00022609744155488443
+      },
+      "adaptive": {
+        "tts_veh_h": 3133.726942699511,
+        "queue_veh_h": 529.3137726447251,
+        "completed_trips": 16737.899568881458,
+        "priority_cost": 6457.653781881155,
+        "peak_queue_vehicles": 1641.3621365173938,
+        "deadline_n1_vehicles": 2460.6062051316935,
+        "minimum_state_margin": 1.3283780451740186,
+        "conservation_residual_vehicles": 1.0913936421275139e-11
+      }
+    },
+    {
+      "case": "D077",
+      "policy": "reserve_repair",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 0.00023691404658165993,
+        "queue_veh_h": 0.0004011037017903618,
+        "completed_trips": 0.00026312714180676267,
+        "priority_cost": 0.00015080872799444478,
+        "deadline_n1_vehicles": 3.2897679830057314e-05,
+        "peak_queue_vehicles": 0.0002260974492855894
+      },
+      "adaptive": {
+        "tts_veh_h": 3104.560276032844,
+        "queue_veh_h": 500.14710597805845,
+        "completed_trips": 16737.899568881458,
+        "priority_cost": 6428.487115214491,
+        "peak_queue_vehicles": 1541.3621365173947,
+        "deadline_n1_vehicles": 2460.6062051316935,
+        "minimum_state_margin": 1.3283780451740186,
+        "conservation_residual_vehicles": 1.4551915228366852e-11
+      }
+    },
+    {
+      "case": "D078",
+      "policy": "fresh_reserve",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 1.0961502994177863e-07,
+        "queue_veh_h": 0.0,
+        "completed_trips": 6.730988388881087e-08,
+        "priority_cost": 2.1393952920334414e-07,
+        "deadline_n1_vehicles": 3.1642912290408276e-08,
+        "peak_queue_vehicles": 0.0
+      },
+      "adaptive": {
+        "tts_veh_h": 2714.434497141052,
+        "queue_veh_h": 90.65179685570038,
+        "completed_trips": 18540.45078727385,
+        "priority_cost": 4117.633330224477,
+        "peak_queue_vehicles": 174.10781134202304,
+        "deadline_n1_vehicles": 1735.8797108833137,
+        "minimum_state_margin": 1.3500000000000005,
+        "conservation_residual_vehicles": 6.184563972055912e-11
+      }
+    },
+    {
+      "case": "D078",
+      "policy": "fresh_reserve",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 1.3680937627214007e-07,
+        "queue_veh_h": 4.094228245321574e-08,
+        "completed_trips": 4.065441316924989e-08,
+        "priority_cost": 3.133714017167222e-07,
+        "deadline_n1_vehicles": 1.9232584236306138e-07,
+        "peak_queue_vehicles": 0.0
+      },
+      "adaptive": {
+        "tts_veh_h": 2678.083542194137,
+        "queue_veh_h": 87.48401471387963,
+        "completed_trips": 18436.366610894285,
+        "priority_cost": 4055.957747738883,
+        "peak_queue_vehicles": 174.10781134202304,
+        "deadline_n1_vehicles": 1713.5338917966326,
+        "minimum_state_margin": 1.2506692850924286,
+        "conservation_residual_vehicles": 3.2741809263825417e-11
+      }
+    },
+    {
+      "case": "D079",
+      "policy": "fresh_reserve",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 1.0961548468912952e-07,
+        "queue_veh_h": 0.0,
+        "completed_trips": 6.731352186761796e-08,
+        "priority_cost": 4.226030796417035e-07,
+        "deadline_n1_vehicles": 3.1642912290408276e-08,
+        "peak_queue_vehicles": 0.0
+      },
+      "adaptive": {
+        "tts_veh_h": 2714.4344971410515,
+        "queue_veh_h": 90.65179685570038,
+        "completed_trips": 18540.450787273854,
+        "priority_cost": 6924.030996391325,
+        "peak_queue_vehicles": 174.10781134202304,
+        "deadline_n1_vehicles": 1735.8797108833137,
+        "minimum_state_margin": 1.3500000000000005,
+        "conservation_residual_vehicles": 6.184563972055912e-11
+      }
+    },
+    {
+      "case": "D079",
+      "policy": "fresh_reserve",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 1.3681119526154362e-07,
+        "queue_veh_h": 4.0942296664070454e-08,
+        "completed_trips": 4.065441316924989e-08,
+        "priority_cost": 6.664877219009213e-07,
+        "deadline_n1_vehicles": 1.923265244840877e-07,
+        "peak_queue_vehicles": 0.0
+      },
+      "adaptive": {
+        "tts_veh_h": 2678.083542194135,
+        "queue_veh_h": 87.48401471387965,
+        "completed_trips": 18436.366610894285,
+        "priority_cost": 6811.70615882838,
+        "peak_queue_vehicles": 174.10781134202304,
+        "deadline_n1_vehicles": 1713.533891796632,
+        "minimum_state_margin": 1.2506692850924286,
+        "conservation_residual_vehicles": 2.9103830456733704e-11
+      }
+    },
+    {
+      "case": "D079",
+      "policy": "reserve_repair",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 2.937096269306494e-06,
+        "queue_veh_h": 5.517565710988492e-06,
+        "completed_trips": 8.585881005274132e-06,
+        "priority_cost": 2.5940234991139732e-06,
+        "deadline_n1_vehicles": 5.544588930206373e-07,
+        "peak_queue_vehicles": 9.736880656419089e-06
+      },
+      "adaptive": {
+        "tts_veh_h": 2757.5917145634785,
+        "queue_veh_h": 130.67527545974218,
+        "completed_trips": 18382.964038842973,
+        "priority_cost": 6874.982591444411,
+        "peak_queue_vehicles": 271.9749063600754,
+        "deadline_n1_vehicles": 1806.7465124884347,
+        "minimum_state_margin": 1.3526350636007285,
+        "conservation_residual_vehicles": 6.548361852765083e-11
+      }
+    },
+    {
+      "case": "D079",
+      "policy": "reserve_repair",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 5.587427494901931e-05,
+        "queue_veh_h": 6.899454152176077e-05,
+        "completed_trips": 0.00039238285171450116,
+        "priority_cost": 0.0003672649800137151,
+        "deadline_n1_vehicles": 0.0002425653892714763,
+        "peak_queue_vehicles": 0.0
+      },
+      "adaptive": {
+        "tts_veh_h": 2707.049813718822,
+        "queue_veh_h": 90.1950467650527,
+        "completed_trips": 18350.72633225654,
+        "priority_cost": 6802.028475434187,
+        "peak_queue_vehicles": 174.10781134202304,
+        "deadline_n1_vehicles": 1801.09801466151,
+        "minimum_state_margin": 1.250813908669225,
+        "conservation_residual_vehicles": 5.093170329928398e-11
+      }
+    },
+    {
+      "case": "D080",
+      "policy": "fresh_reserve",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 1.0961502994177863e-07,
+        "queue_veh_h": 0.0,
+        "completed_trips": 6.730988388881087e-08,
+        "priority_cost": 2.1393952920334414e-07,
+        "deadline_n1_vehicles": 3.1642912290408276e-08,
+        "peak_queue_vehicles": 0.0
+      },
+      "adaptive": {
+        "tts_veh_h": 2714.434497141052,
+        "queue_veh_h": 90.65179685570038,
+        "completed_trips": 18540.45078727385,
+        "priority_cost": 4117.633330224477,
+        "peak_queue_vehicles": 174.10781134202304,
+        "deadline_n1_vehicles": 1735.8797108833137,
+        "minimum_state_margin": 1.3500000000000005,
+        "conservation_residual_vehicles": 6.184563972055912e-11
+      }
+    },
+    {
+      "case": "D080",
+      "policy": "fresh_reserve",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 1.3680937627214007e-07,
+        "queue_veh_h": 4.094228245321574e-08,
+        "completed_trips": 4.065441316924989e-08,
+        "priority_cost": 3.133714017167222e-07,
+        "deadline_n1_vehicles": 1.9232584236306138e-07,
+        "peak_queue_vehicles": 0.0
+      },
+      "adaptive": {
+        "tts_veh_h": 2678.083542194137,
+        "queue_veh_h": 87.48401471387963,
+        "completed_trips": 18436.366610894285,
+        "priority_cost": 4055.957747738883,
+        "peak_queue_vehicles": 174.10781134202304,
+        "deadline_n1_vehicles": 1713.5338917966326,
+        "minimum_state_margin": 1.2506692850924286,
+        "conservation_residual_vehicles": 3.2741809263825417e-11
+      }
+    },
+    {
+      "case": "D081",
+      "policy": "fresh_reserve",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 1.0961548468912952e-07,
+        "queue_veh_h": 0.0,
+        "completed_trips": 6.731352186761796e-08,
+        "priority_cost": 4.226030796417035e-07,
+        "deadline_n1_vehicles": 3.1642912290408276e-08,
+        "peak_queue_vehicles": 0.0
+      },
+      "adaptive": {
+        "tts_veh_h": 2714.4344971410515,
+        "queue_veh_h": 90.65179685570038,
+        "completed_trips": 18540.450787273854,
+        "priority_cost": 6924.030996391325,
+        "peak_queue_vehicles": 174.10781134202304,
+        "deadline_n1_vehicles": 1735.8797108833137,
+        "minimum_state_margin": 1.3500000000000005,
+        "conservation_residual_vehicles": 6.184563972055912e-11
+      }
+    },
+    {
+      "case": "D081",
+      "policy": "fresh_reserve",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 1.3681119526154362e-07,
+        "queue_veh_h": 4.0942296664070454e-08,
+        "completed_trips": 4.065441316924989e-08,
+        "priority_cost": 6.664877219009213e-07,
+        "deadline_n1_vehicles": 1.923265244840877e-07,
+        "peak_queue_vehicles": 0.0
+      },
+      "adaptive": {
+        "tts_veh_h": 2678.083542194135,
+        "queue_veh_h": 87.48401471387965,
+        "completed_trips": 18436.366610894285,
+        "priority_cost": 6811.70615882838,
+        "peak_queue_vehicles": 174.10781134202304,
+        "deadline_n1_vehicles": 1713.533891796632,
+        "minimum_state_margin": 1.2506692850924286,
+        "conservation_residual_vehicles": 2.9103830456733704e-11
+      }
+    },
+    {
+      "case": "D081",
+      "policy": "reserve_repair",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 2.9375696612987667e-06,
+        "queue_veh_h": 5.517565710988492e-06,
+        "completed_trips": 8.584887837059796e-06,
+        "priority_cost": 2.5892122721415944e-06,
+        "deadline_n1_vehicles": 5.56897475689766e-07,
+        "peak_queue_vehicles": 9.736880656419089e-06
+      },
+      "adaptive": {
+        "tts_veh_h": 2758.5959308997913,
+        "queue_veh_h": 130.67527545974218,
+        "completed_trips": 18379.949371274783,
+        "priority_cost": 6874.679173687586,
+        "peak_queue_vehicles": 271.9749063600754,
+        "deadline_n1_vehicles": 1810.053461177883,
+        "minimum_state_margin": 1.3526350636007285,
+        "conservation_residual_vehicles": 6.912159733474255e-11
+      }
+    },
+    {
+      "case": "D081",
+      "policy": "reserve_repair",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 5.590970204139012e-05,
+        "queue_veh_h": 6.89945387790658e-05,
+        "completed_trips": 0.0003922946925740689,
+        "priority_cost": 0.00036742055362992687,
+        "deadline_n1_vehicles": 0.00024290780334013107,
+        "peak_queue_vehicles": 0.0
+      },
+      "adaptive": {
+        "tts_veh_h": 2708.055044109356,
+        "queue_veh_h": 90.19504676505544,
+        "completed_trips": 18347.71575232477,
+        "priority_cost": 6801.7389257664,
+        "peak_queue_vehicles": 174.10781134202304,
+        "deadline_n1_vehicles": 1804.3932919445551,
+        "minimum_state_margin": 1.250813908669225,
+        "conservation_residual_vehicles": 5.093170329928398e-11
+      }
+    },
+    {
+      "case": "D082",
+      "policy": "fresh_reserve",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 1.0961502994177863e-07,
+        "queue_veh_h": 0.0,
+        "completed_trips": 6.730988388881087e-08,
+        "priority_cost": 2.1393952920334414e-07,
+        "deadline_n1_vehicles": 3.1642912290408276e-08,
+        "peak_queue_vehicles": 0.0
+      },
+      "adaptive": {
+        "tts_veh_h": 2714.434497141052,
+        "queue_veh_h": 90.65179685570038,
+        "completed_trips": 18540.45078727385,
+        "priority_cost": 4117.633330224477,
+        "peak_queue_vehicles": 174.10781134202304,
+        "deadline_n1_vehicles": 1735.8797108833137,
+        "minimum_state_margin": 1.3500000000000005,
+        "conservation_residual_vehicles": 6.184563972055912e-11
+      }
+    },
+    {
+      "case": "D082",
+      "policy": "fresh_reserve",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 1.3680937627214007e-07,
+        "queue_veh_h": 4.094228245321574e-08,
+        "completed_trips": 4.065441316924989e-08,
+        "priority_cost": 3.133714017167222e-07,
+        "deadline_n1_vehicles": 1.9232584236306138e-07,
+        "peak_queue_vehicles": 0.0
+      },
+      "adaptive": {
+        "tts_veh_h": 2678.083542194137,
+        "queue_veh_h": 87.48401471387963,
+        "completed_trips": 18436.366610894285,
+        "priority_cost": 4055.957747738883,
+        "peak_queue_vehicles": 174.10781134202304,
+        "deadline_n1_vehicles": 1713.5338917966326,
+        "minimum_state_margin": 1.2506692850924286,
+        "conservation_residual_vehicles": 3.2741809263825417e-11
+      }
+    },
+    {
+      "case": "D083",
+      "policy": "fresh_reserve",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 1.0961548468912952e-07,
+        "queue_veh_h": 0.0,
+        "completed_trips": 6.731352186761796e-08,
+        "priority_cost": 4.226030796417035e-07,
+        "deadline_n1_vehicles": 3.1642912290408276e-08,
+        "peak_queue_vehicles": 0.0
+      },
+      "adaptive": {
+        "tts_veh_h": 2714.4344971410515,
+        "queue_veh_h": 90.65179685570038,
+        "completed_trips": 18540.450787273854,
+        "priority_cost": 6924.030996391325,
+        "peak_queue_vehicles": 174.10781134202304,
+        "deadline_n1_vehicles": 1735.8797108833137,
+        "minimum_state_margin": 1.3500000000000005,
+        "conservation_residual_vehicles": 6.184563972055912e-11
+      }
+    },
+    {
+      "case": "D083",
+      "policy": "fresh_reserve",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 1.3681119526154362e-07,
+        "queue_veh_h": 4.0942296664070454e-08,
+        "completed_trips": 4.065441316924989e-08,
+        "priority_cost": 6.664877219009213e-07,
+        "deadline_n1_vehicles": 1.923265244840877e-07,
+        "peak_queue_vehicles": 0.0
+      },
+      "adaptive": {
+        "tts_veh_h": 2678.083542194135,
+        "queue_veh_h": 87.48401471387965,
+        "completed_trips": 18436.366610894285,
+        "priority_cost": 6811.70615882838,
+        "peak_queue_vehicles": 174.10781134202304,
+        "deadline_n1_vehicles": 1713.533891796632,
+        "minimum_state_margin": 1.2506692850924286,
+        "conservation_residual_vehicles": 2.9103830456733704e-11
+      }
+    },
+    {
+      "case": "D083",
+      "policy": "reserve_repair",
+      "profile": "constant_high",
+      "errors": {
+        "tts_veh_h": 0.000226562071020453,
+        "queue_veh_h": 0.000350073502545456,
+        "completed_trips": 0.0001803083869162947,
+        "priority_cost": 6.352533455356024e-05,
+        "deadline_n1_vehicles": 3.8363277781172656e-05,
+        "peak_queue_vehicles": 0.00011857502636303252
+      },
+      "adaptive": {
+        "tts_veh_h": 2861.5719231887947,
+        "queue_veh_h": 261.64104764009875,
+        "completed_trips": 17967.6931954448,
+        "priority_cost": 6740.758423818923,
+        "peak_queue_vehicles": 720.9948679286156,
+        "deadline_n1_vehicles": 1919.6507444852134,
+        "minimum_state_margin": 1.352641069286127,
+        "conservation_residual_vehicles": 5.820766091346741e-11
+      }
+    },
+    {
+      "case": "D083",
+      "policy": "reserve_repair",
+      "profile": "alternating_5min",
+      "errors": {
+        "tts_veh_h": 0.000226562071020453,
+        "queue_veh_h": 0.00035007350240334745,
+        "completed_trips": 0.0001803083869162947,
+        "priority_cost": 6.352532636810793e-05,
+        "deadline_n1_vehicles": 3.8363277781172656e-05,
+        "peak_queue_vehicles": 0.00011857502556722466
+      },
+      "adaptive": {
+        "tts_veh_h": 2803.238589855464,
+        "queue_veh_h": 203.30771430676543,
+        "completed_trips": 17967.6931954448,
+        "priority_cost": 6682.425090485591,
+        "peak_queue_vehicles": 520.9948679286155,
+        "deadline_n1_vehicles": 1919.6507444852134,
+        "minimum_state_margin": 1.352641069286127,
+        "conservation_residual_vehicles": 4.729372449219227e-11
+      }
+    }
+  ]
+}

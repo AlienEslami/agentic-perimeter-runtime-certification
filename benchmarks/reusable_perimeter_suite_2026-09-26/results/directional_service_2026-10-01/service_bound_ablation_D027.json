@@ -1,0 +1,34 @@
+[
+  {
+    "name": "original",
+    "diagnostic_width_vehicles": 1.0,
+    "diagnostic_residual_veh_h": 300.0,
+    "service_upper_vehicles": 3436.9297158183003,
+    "physical_verified": true,
+    "wall_seconds": 8.425344499992207
+  },
+  {
+    "name": "initial_box_only",
+    "diagnostic_width_vehicles": 1.0,
+    "diagnostic_residual_veh_h": 0,
+    "service_upper_vehicles": 2847.092031196534,
+    "physical_verified": true,
+    "wall_seconds": 8.257339299889281
+  },
+  {
+    "name": "arrival_residual_only",
+    "diagnostic_width_vehicles": 0,
+    "diagnostic_residual_veh_h": 300.0,
+    "service_upper_vehicles": 3433.2241335739895,
+    "physical_verified": true,
+    "wall_seconds": 9.00694700004533
+  },
+  {
+    "name": "exact_initial_and_arrival",
+    "diagnostic_width_vehicles": 0,
+    "diagnostic_residual_veh_h": 0,
+    "service_upper_vehicles": 2845.9512792480054,
+    "physical_verified": true,
+    "wall_seconds": 8.645035500172526
+  }
+]

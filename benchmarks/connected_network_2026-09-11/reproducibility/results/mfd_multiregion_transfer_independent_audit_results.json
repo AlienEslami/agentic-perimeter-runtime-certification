@@ -1,0 +1,763 @@
+{
+  "status": "PASS",
+  "passed": true,
+  "audit_source_sha256": "63c36af98a52801b7978c198dd2434446410eaf17d9f34a70a0dd3bb1b2e1835",
+  "summary_sha256": "9cd807964bde79e757ec8aa011f317d0e9ecee8dc93ebaf5fd67a58aaf696051",
+  "scope": "Independent90digit receiver-ledger/Jacobian diagnostics; all saved interval-step chains/supports; selected matrix/defect reconstructions; shared interval backend.",
+  "source_audits": [
+    {
+      "path": "reproducibility/mfd_multiregion_transfer.py",
+      "sha256": "ecb7912fbb8f5fbafcbc955375ad3d4e7d705802aa7ce93dfb24b754d5cb9631",
+      "passed": true
+    },
+    {
+      "path": "MULTIREGION_TRANSFER_PROTOCOL.md",
+      "sha256": "2d26b868075c802619892eb9c9f3c88bafa3fef40eab60d7c36febaa1b1c737c",
+      "passed": true
+    },
+    {
+      "path": "reproducibility/mfd_deadline_certificates.py",
+      "sha256": "91edd9f707a315848f7e0368c10eaf41b003339c5879eaf40bcaf241670ad71b",
+      "passed": true
+    },
+    {
+      "path": "reproducibility/mfd_incident_queue_bounds.py",
+      "sha256": "c537b695de8b9686fe426f71486689e2c92249205021b22dbff981e395a1594e",
+      "passed": true
+    }
+  ],
+  "network_checks": {
+    "passed": true,
+    "reference_digits": 90,
+    "deterministic_cases": 12,
+    "interval_jacobian_entry_checks": 18576,
+    "exact_allocation_inverse_incidence": true,
+    "independent_receiver_equations": true,
+    "cases": [
+      {
+        "regions": 2,
+        "seed": 0,
+        "maximum_field_difference": 7.105427357601002e-15,
+        "mass_balance90digit": true,
+        "interval_point_box_corner_and_kink_checks": true
+      },
+      {
+        "regions": 2,
+        "seed": 1,
+        "maximum_field_difference": 1.4210854715202004e-14,
+        "mass_balance90digit": true,
+        "interval_point_box_corner_and_kink_checks": true
+      },
+      {
+        "regions": 2,
+        "seed": 2,
+        "maximum_field_difference": 7.105427357601002e-15,
+        "mass_balance90digit": true,
+        "interval_point_box_corner_and_kink_checks": true
+      },
+      {
+        "regions": 2,
+        "seed": 3,
+        "maximum_field_difference": 2.842170943040401e-14,
+        "mass_balance90digit": true,
+        "interval_point_box_corner_and_kink_checks": true
+      },
+      {
+        "regions": 2,
+        "seed": 4,
+        "maximum_field_difference": 2.842170943040401e-14,
+        "mass_balance90digit": true,
+        "interval_point_box_corner_and_kink_checks": true
+      },
+      {
+        "regions": 2,
+        "seed": 5,
+        "maximum_field_difference": 1.2434497875801753e-14,
+        "mass_balance90digit": true,
+        "interval_point_box_corner_and_kink_checks": true
+      },
+      {
+        "regions": 3,
+        "seed": 0,
+        "maximum_field_difference": 2.6645352591003757e-14,
+        "mass_balance90digit": true,
+        "interval_point_box_corner_and_kink_checks": true
+      },
+      {
+        "regions": 3,
+        "seed": 1,
+        "maximum_field_difference": 1.0658141036401503e-14,
+        "mass_balance90digit": true,
+        "interval_point_box_corner_and_kink_checks": true
+      },
+      {
+        "regions": 3,
+        "seed": 2,
+        "maximum_field_difference": 8.881784197001252e-15,
+        "mass_balance90digit": true,
+        "interval_point_box_corner_and_kink_checks": true
+      },
+      {
+        "regions": 3,
+        "seed": 3,
+        "maximum_field_difference": 7.105427357601002e-15,
+        "mass_balance90digit": true,
+        "interval_point_box_corner_and_kink_checks": true
+      },
+      {
+        "regions": 3,
+        "seed": 4,
+        "maximum_field_difference": 3.197442310920451e-14,
+        "mass_balance90digit": true,
+        "interval_point_box_corner_and_kink_checks": true
+      },
+      {
+        "regions": 3,
+        "seed": 5,
+        "maximum_field_difference": 2.930988785010413e-14,
+        "mass_balance90digit": true,
+        "interval_point_box_corner_and_kink_checks": true
+      }
+    ],
+    "scope": "finite-point numerical implementation diagnostics complement analytic block derivation"
+  },
+  "proofs": [
+    {
+      "case_id": "r2_class_d1_w60",
+      "passed": true,
+      "steps": 120,
+      "source_file": "reproducibility/results/mfd_multiregion_transfer_r2_class_d1_w60_proof.json",
+      "source_sha256": "50f80033c003983d2932c8357472c97a602ac28f9f3befacc7dc227db6d742f4",
+      "accepted": true,
+      "physical": true,
+      "reached_time": "1",
+      "verified_physical_prefix_exact_h": "1",
+      "exact_binary_regional_half_widths_vehicles": [
+        1.0,
+        1.0
+      ],
+      "selected_matrix_and_defect_diagnostics": [
+        {
+          "index": 0,
+          "left": "0",
+          "right": "1/120",
+          "reference_matrix_entries": 108,
+          "polynomial_defect_reassembled": true
+        },
+        {
+          "index": 60,
+          "left": "1/2",
+          "right": "61/120",
+          "reference_matrix_entries": 108,
+          "polynomial_defect_reassembled": true
+        },
+        {
+          "index": 119,
+          "left": "119/120",
+          "right": "1",
+          "reference_matrix_entries": 108,
+          "polynomial_defect_reassembled": true
+        }
+      ],
+      "actual_trial_attempts": 126
+    },
+    {
+      "case_id": "r2_inventory_d1_w60",
+      "passed": true,
+      "steps": 120,
+      "source_file": "reproducibility/results/mfd_multiregion_transfer_r2_inventory_d1_w60_proof.json",
+      "source_sha256": "e6ffbbc0d120aeb48b8356c4d77d4ef2431cef081cb03647a7d35aa77314013d",
+      "accepted": true,
+      "physical": true,
+      "reached_time": "1",
+      "verified_physical_prefix_exact_h": "1",
+      "exact_binary_regional_half_widths_vehicles": [
+        1.0,
+        1.0
+      ],
+      "selected_matrix_and_defect_diagnostics": [
+        {
+          "index": 0,
+          "left": "0",
+          "right": "1/120",
+          "reference_matrix_entries": 108,
+          "polynomial_defect_reassembled": true
+        },
+        {
+          "index": 60,
+          "left": "1/2",
+          "right": "61/120",
+          "reference_matrix_entries": 108,
+          "polynomial_defect_reassembled": true
+        },
+        {
+          "index": 119,
+          "left": "119/120",
+          "right": "1",
+          "reference_matrix_entries": 108,
+          "polynomial_defect_reassembled": true
+        }
+      ],
+      "actual_trial_attempts": 124
+    },
+    {
+      "case_id": "r2_class_d10_w60",
+      "passed": true,
+      "steps": 120,
+      "source_file": "reproducibility/results/mfd_multiregion_transfer_r2_class_d10_w60_proof.json",
+      "source_sha256": "6bb0d432585f0f448c221e792f7d99cefcf09258980a58c18a1c3eebb04e6777",
+      "accepted": true,
+      "physical": true,
+      "reached_time": "1",
+      "verified_physical_prefix_exact_h": "1",
+      "exact_binary_regional_half_widths_vehicles": [
+        10.0,
+        10.0
+      ],
+      "selected_matrix_and_defect_diagnostics": [
+        {
+          "index": 0,
+          "left": "0",
+          "right": "1/120",
+          "reference_matrix_entries": 108,
+          "polynomial_defect_reassembled": true
+        },
+        {
+          "index": 60,
+          "left": "1/2",
+          "right": "61/120",
+          "reference_matrix_entries": 108,
+          "polynomial_defect_reassembled": true
+        },
+        {
+          "index": 119,
+          "left": "119/120",
+          "right": "1",
+          "reference_matrix_entries": 108,
+          "polynomial_defect_reassembled": true
+        }
+      ],
+      "actual_trial_attempts": 127
+    },
+    {
+      "case_id": "r2_inventory_d10_w60",
+      "passed": true,
+      "steps": 120,
+      "source_file": "reproducibility/results/mfd_multiregion_transfer_r2_inventory_d10_w60_proof.json",
+      "source_sha256": "a8f38e9bf70fd57bf8e02e6b9535bcad8815284be9698c5316309d30f487837e",
+      "accepted": true,
+      "physical": true,
+      "reached_time": "1",
+      "verified_physical_prefix_exact_h": "1",
+      "exact_binary_regional_half_widths_vehicles": [
+        10.0,
+        10.0
+      ],
+      "selected_matrix_and_defect_diagnostics": [
+        {
+          "index": 0,
+          "left": "0",
+          "right": "1/120",
+          "reference_matrix_entries": 108,
+          "polynomial_defect_reassembled": true
+        },
+        {
+          "index": 60,
+          "left": "1/2",
+          "right": "61/120",
+          "reference_matrix_entries": 108,
+          "polynomial_defect_reassembled": true
+        },
+        {
+          "index": 119,
+          "left": "119/120",
+          "right": "1",
+          "reference_matrix_entries": 108,
+          "polynomial_defect_reassembled": true
+        }
+      ],
+      "actual_trial_attempts": 127
+    },
+    {
+      "case_id": "r2_class_d25_w60",
+      "passed": true,
+      "steps": 120,
+      "source_file": "reproducibility/results/mfd_multiregion_transfer_r2_class_d25_w60_proof.json",
+      "source_sha256": "1f0cbcd06fe2fa7b16f1daff9ced5bff132b5624ea1992c76d7f5fac618cf3f2",
+      "accepted": true,
+      "physical": true,
+      "reached_time": "1",
+      "verified_physical_prefix_exact_h": "1",
+      "exact_binary_regional_half_widths_vehicles": [
+        25.0,
+        25.0
+      ],
+      "selected_matrix_and_defect_diagnostics": [
+        {
+          "index": 0,
+          "left": "0",
+          "right": "1/120",
+          "reference_matrix_entries": 108,
+          "polynomial_defect_reassembled": true
+        },
+        {
+          "index": 60,
+          "left": "1/2",
+          "right": "61/120",
+          "reference_matrix_entries": 108,
+          "polynomial_defect_reassembled": true
+        },
+        {
+          "index": 119,
+          "left": "119/120",
+          "right": "1",
+          "reference_matrix_entries": 108,
+          "polynomial_defect_reassembled": true
+        }
+      ],
+      "actual_trial_attempts": 127
+    },
+    {
+      "case_id": "r2_inventory_d25_w60",
+      "passed": true,
+      "steps": 120,
+      "source_file": "reproducibility/results/mfd_multiregion_transfer_r2_inventory_d25_w60_proof.json",
+      "source_sha256": "1331b586c60bb361edfbcea65000cb4066273565f287791ee62602670cb761d9",
+      "accepted": true,
+      "physical": true,
+      "reached_time": "1",
+      "verified_physical_prefix_exact_h": "1",
+      "exact_binary_regional_half_widths_vehicles": [
+        25.0,
+        25.0
+      ],
+      "selected_matrix_and_defect_diagnostics": [
+        {
+          "index": 0,
+          "left": "0",
+          "right": "1/120",
+          "reference_matrix_entries": 108,
+          "polynomial_defect_reassembled": true
+        },
+        {
+          "index": 60,
+          "left": "1/2",
+          "right": "61/120",
+          "reference_matrix_entries": 108,
+          "polynomial_defect_reassembled": true
+        },
+        {
+          "index": 119,
+          "left": "119/120",
+          "right": "1",
+          "reference_matrix_entries": 108,
+          "polynomial_defect_reassembled": true
+        }
+      ],
+      "actual_trial_attempts": 127
+    },
+    {
+      "case_id": "r2_class_d25_w300",
+      "passed": true,
+      "steps": 80,
+      "source_file": "reproducibility/results/mfd_multiregion_transfer_r2_class_d25_w300_proof.json",
+      "source_sha256": "acbfdb61f12d26298e565ba7913098536afd658777b4629e997a22de43dde16c",
+      "accepted": false,
+      "physical": false,
+      "reached_time": "313/480",
+      "verified_physical_prefix_exact_h": "13/20",
+      "exact_binary_regional_half_widths_vehicles": [
+        25.0,
+        25.0
+      ],
+      "selected_matrix_and_defect_diagnostics": [
+        {
+          "index": 0,
+          "left": "0",
+          "right": "1/120",
+          "reference_matrix_entries": 108,
+          "polynomial_defect_reassembled": true
+        },
+        {
+          "index": 40,
+          "left": "1/3",
+          "right": "41/120",
+          "reference_matrix_entries": 108,
+          "polynomial_defect_reassembled": true
+        },
+        {
+          "index": 79,
+          "left": "13/20",
+          "right": "313/480",
+          "reference_matrix_entries": 108,
+          "polynomial_defect_reassembled": true
+        }
+      ],
+      "actual_trial_attempts": 96
+    },
+    {
+      "case_id": "r2_inventory_d25_w300",
+      "passed": true,
+      "steps": 120,
+      "source_file": "reproducibility/results/mfd_multiregion_transfer_r2_inventory_d25_w300_proof.json",
+      "source_sha256": "df96813ecf75738894fb5b081f19c2ea4089f78ffae57562cce0ef0b6fe4c9d4",
+      "accepted": true,
+      "physical": true,
+      "reached_time": "1",
+      "verified_physical_prefix_exact_h": "1",
+      "exact_binary_regional_half_widths_vehicles": [
+        25.0,
+        25.0
+      ],
+      "selected_matrix_and_defect_diagnostics": [
+        {
+          "index": 0,
+          "left": "0",
+          "right": "1/120",
+          "reference_matrix_entries": 108,
+          "polynomial_defect_reassembled": true
+        },
+        {
+          "index": 60,
+          "left": "1/2",
+          "right": "61/120",
+          "reference_matrix_entries": 108,
+          "polynomial_defect_reassembled": true
+        },
+        {
+          "index": 119,
+          "left": "119/120",
+          "right": "1",
+          "reference_matrix_entries": 108,
+          "polynomial_defect_reassembled": true
+        }
+      ],
+      "actual_trial_attempts": 125
+    },
+    {
+      "case_id": "r3_class_d1_w60",
+      "passed": true,
+      "steps": 119,
+      "source_file": "reproducibility/results/mfd_multiregion_transfer_r3_class_d1_w60_proof.json",
+      "source_sha256": "cd57a4838d82560ce56f781d4e44bbcbcb14352eddee76cf3457e8447c1192ae",
+      "accepted": false,
+      "physical": false,
+      "reached_time": "79/80",
+      "verified_physical_prefix_exact_h": "59/60",
+      "exact_binary_regional_half_widths_vehicles": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "selected_matrix_and_defect_diagnostics": [
+        {
+          "index": 0,
+          "left": "0",
+          "right": "1/120",
+          "reference_matrix_entries": 432,
+          "polynomial_defect_reassembled": true
+        },
+        {
+          "index": 59,
+          "left": "59/120",
+          "right": "1/2",
+          "reference_matrix_entries": 432,
+          "polynomial_defect_reassembled": true
+        },
+        {
+          "index": 118,
+          "left": "59/60",
+          "right": "79/80",
+          "reference_matrix_entries": 432,
+          "polynomial_defect_reassembled": true
+        }
+      ],
+      "actual_trial_attempts": 135
+    },
+    {
+      "case_id": "r3_inventory_d1_w60",
+      "passed": true,
+      "steps": 120,
+      "source_file": "reproducibility/results/mfd_multiregion_transfer_r3_inventory_d1_w60_proof.json",
+      "source_sha256": "00d20202c7c259be079bced9f71778738789b4da5f47141ab725bb5d8743a721",
+      "accepted": true,
+      "physical": true,
+      "reached_time": "1",
+      "verified_physical_prefix_exact_h": "1",
+      "exact_binary_regional_half_widths_vehicles": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "selected_matrix_and_defect_diagnostics": [
+        {
+          "index": 0,
+          "left": "0",
+          "right": "1/120",
+          "reference_matrix_entries": 432,
+          "polynomial_defect_reassembled": true
+        },
+        {
+          "index": 60,
+          "left": "1/2",
+          "right": "61/120",
+          "reference_matrix_entries": 432,
+          "polynomial_defect_reassembled": true
+        },
+        {
+          "index": 119,
+          "left": "119/120",
+          "right": "1",
+          "reference_matrix_entries": 432,
+          "polynomial_defect_reassembled": true
+        }
+      ],
+      "actual_trial_attempts": 124
+    },
+    {
+      "case_id": "r3_class_d10_w60",
+      "passed": true,
+      "steps": 85,
+      "source_file": "reproducibility/results/mfd_multiregion_transfer_r3_class_d10_w60_proof.json",
+      "source_sha256": "1214ec5151006a43c121f30ce6f067e6540dcc6329719d905fde2d4d6d13a7f1",
+      "accepted": false,
+      "physical": false,
+      "reached_time": "111/160",
+      "verified_physical_prefix_exact_h": "83/120",
+      "exact_binary_regional_half_widths_vehicles": [
+        10.0,
+        10.0,
+        10.0
+      ],
+      "selected_matrix_and_defect_diagnostics": [
+        {
+          "index": 0,
+          "left": "0",
+          "right": "1/120",
+          "reference_matrix_entries": 432,
+          "polynomial_defect_reassembled": true
+        },
+        {
+          "index": 42,
+          "left": "7/20",
+          "right": "43/120",
+          "reference_matrix_entries": 432,
+          "polynomial_defect_reassembled": true
+        },
+        {
+          "index": 84,
+          "left": "83/120",
+          "right": "111/160",
+          "reference_matrix_entries": 432,
+          "polynomial_defect_reassembled": true
+        }
+      ],
+      "actual_trial_attempts": 102
+    },
+    {
+      "case_id": "r3_inventory_d10_w60",
+      "passed": true,
+      "steps": 120,
+      "source_file": "reproducibility/results/mfd_multiregion_transfer_r3_inventory_d10_w60_proof.json",
+      "source_sha256": "42e85e6ca71bc5c9c746eadc821405667a64db52edef2e6fbf6a26d356403bf5",
+      "accepted": true,
+      "physical": true,
+      "reached_time": "1",
+      "verified_physical_prefix_exact_h": "1",
+      "exact_binary_regional_half_widths_vehicles": [
+        10.0,
+        10.0,
+        10.0
+      ],
+      "selected_matrix_and_defect_diagnostics": [
+        {
+          "index": 0,
+          "left": "0",
+          "right": "1/120",
+          "reference_matrix_entries": 432,
+          "polynomial_defect_reassembled": true
+        },
+        {
+          "index": 60,
+          "left": "1/2",
+          "right": "61/120",
+          "reference_matrix_entries": 432,
+          "polynomial_defect_reassembled": true
+        },
+        {
+          "index": 119,
+          "left": "119/120",
+          "right": "1",
+          "reference_matrix_entries": 432,
+          "polynomial_defect_reassembled": true
+        }
+      ],
+      "actual_trial_attempts": 127
+    },
+    {
+      "case_id": "r3_class_d25_w60",
+      "passed": true,
+      "steps": 77,
+      "source_file": "reproducibility/results/mfd_multiregion_transfer_r3_class_d25_w60_proof.json",
+      "source_sha256": "38fe305788b8c09474c50c9c30195aad40d9a40c1081ca3eff82b4451cf7e2e3",
+      "accepted": false,
+      "physical": false,
+      "reached_time": "51/80",
+      "verified_physical_prefix_exact_h": "19/30",
+      "exact_binary_regional_half_widths_vehicles": [
+        25.0,
+        25.0,
+        25.0
+      ],
+      "selected_matrix_and_defect_diagnostics": [
+        {
+          "index": 0,
+          "left": "0",
+          "right": "1/120",
+          "reference_matrix_entries": 432,
+          "polynomial_defect_reassembled": true
+        },
+        {
+          "index": 38,
+          "left": "19/60",
+          "right": "13/40",
+          "reference_matrix_entries": 432,
+          "polynomial_defect_reassembled": true
+        },
+        {
+          "index": 76,
+          "left": "19/30",
+          "right": "51/80",
+          "reference_matrix_entries": 432,
+          "polynomial_defect_reassembled": true
+        }
+      ],
+      "actual_trial_attempts": 95
+    },
+    {
+      "case_id": "r3_inventory_d25_w60",
+      "passed": true,
+      "steps": 120,
+      "source_file": "reproducibility/results/mfd_multiregion_transfer_r3_inventory_d25_w60_proof.json",
+      "source_sha256": "64a460c0808aaa6acf4f113a5adafeb7c41578f6fa63f61efff52a1e6ade58c3",
+      "accepted": true,
+      "physical": true,
+      "reached_time": "1",
+      "verified_physical_prefix_exact_h": "1",
+      "exact_binary_regional_half_widths_vehicles": [
+        25.0,
+        25.0,
+        25.0
+      ],
+      "selected_matrix_and_defect_diagnostics": [
+        {
+          "index": 0,
+          "left": "0",
+          "right": "1/120",
+          "reference_matrix_entries": 432,
+          "polynomial_defect_reassembled": true
+        },
+        {
+          "index": 60,
+          "left": "1/2",
+          "right": "61/120",
+          "reference_matrix_entries": 432,
+          "polynomial_defect_reassembled": true
+        },
+        {
+          "index": 119,
+          "left": "119/120",
+          "right": "1",
+          "reference_matrix_entries": 432,
+          "polynomial_defect_reassembled": true
+        }
+      ],
+      "actual_trial_attempts": 127
+    },
+    {
+      "case_id": "r3_class_d25_w300",
+      "passed": true,
+      "steps": 49,
+      "source_file": "reproducibility/results/mfd_multiregion_transfer_r3_class_d25_w300_proof.json",
+      "source_sha256": "a421ec7091ab9c931b37f6c59b2a710c855300ee51686dfe4d5feb991fcdac7b",
+      "accepted": false,
+      "physical": false,
+      "reached_time": "2/5",
+      "verified_physical_prefix_exact_h": "19/48",
+      "exact_binary_regional_half_widths_vehicles": [
+        25.0,
+        25.0,
+        25.0
+      ],
+      "selected_matrix_and_defect_diagnostics": [
+        {
+          "index": 0,
+          "left": "0",
+          "right": "1/120",
+          "reference_matrix_entries": 432,
+          "polynomial_defect_reassembled": true
+        },
+        {
+          "index": 24,
+          "left": "1/5",
+          "right": "5/24",
+          "reference_matrix_entries": 432,
+          "polynomial_defect_reassembled": true
+        },
+        {
+          "index": 48,
+          "left": "19/48",
+          "right": "2/5",
+          "reference_matrix_entries": 432,
+          "polynomial_defect_reassembled": true
+        }
+      ],
+      "actual_trial_attempts": 67
+    },
+    {
+      "case_id": "r3_inventory_d25_w300",
+      "passed": true,
+      "steps": 87,
+      "source_file": "reproducibility/results/mfd_multiregion_transfer_r3_inventory_d25_w300_proof.json",
+      "source_sha256": "868faf2bbb1c8383ac29fc998da1e5ba1ac772c9a685da456e0c9020e360ee67",
+      "accepted": false,
+      "physical": false,
+      "reached_time": "173/240",
+      "verified_physical_prefix_exact_h": "43/60",
+      "exact_binary_regional_half_widths_vehicles": [
+        25.0,
+        25.0,
+        25.0
+      ],
+      "selected_matrix_and_defect_diagnostics": [
+        {
+          "index": 0,
+          "left": "0",
+          "right": "1/120",
+          "reference_matrix_entries": 432,
+          "polynomial_defect_reassembled": true
+        },
+        {
+          "index": 43,
+          "left": "43/120",
+          "right": "11/30",
+          "reference_matrix_entries": 432,
+          "polynomial_defect_reassembled": true
+        },
+        {
+          "index": 86,
+          "left": "43/60",
+          "right": "173/240",
+          "reference_matrix_entries": 432,
+          "polynomial_defect_reassembled": true
+        }
+      ],
+      "actual_trial_attempts": 102
+    }
+  ],
+  "proof_count": 16,
+  "interval_step_count": 1697,
+  "selected_matrix_reference_entry_checks": 12960,
+  "matched_coordinate_ablation_contracts": 8,
+  "wall_seconds": 41.50046190000285
+}

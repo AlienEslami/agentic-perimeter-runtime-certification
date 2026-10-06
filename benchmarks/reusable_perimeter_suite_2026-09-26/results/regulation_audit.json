@@ -1,0 +1,6 @@
+{
+  "state_jacobian": 1.3846004343065488e-08,
+  "input_jacobian": 5.0308699428569525e-09,
+  "cost_gradient": 2.3020607642365576e-10,
+  "constraint_gradient": 1.3038430779488408e-08
+}

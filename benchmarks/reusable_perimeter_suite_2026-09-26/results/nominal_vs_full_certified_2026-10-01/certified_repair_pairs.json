@@ -1,0 +1,3406 @@
+[
+  {
+    "id": "D012",
+    "split": "development",
+    "sensing_half_width_vehicles": 1.0,
+    "arrival_residual_veh_h": 60.0,
+    "deadline_vehicles": 2750.0,
+    "weight": 2.0,
+    "ordinary_source": "nominal_mpc",
+    "stronger_source": "full_scenario_mpc",
+    "exact_same_commands": true,
+    "metrics": {
+      "priority_cost": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 3996.0121242316873,
+        "stronger_median": 3996.0121242316873,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "tts_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 2716.1882461223445,
+        "stronger_median": 2716.1882461223445,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "queue_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 253.00163666489652,
+        "stronger_median": 253.00163666489652,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      }
+    }
+  },
+  {
+    "id": "D013",
+    "split": "development",
+    "sensing_half_width_vehicles": 1.0,
+    "arrival_residual_veh_h": 60.0,
+    "deadline_vehicles": 2750.0,
+    "weight": 4.0,
+    "ordinary_source": "grid_repair",
+    "stronger_source": "full_scenario_repair",
+    "exact_same_commands": false,
+    "metrics": {
+      "priority_cost": {
+        "status": "ordinary_better",
+        "median_difference_ordinary_minus_stronger": -5.861594979219717,
+        "median_relative_difference_percent": -0.09326395424799765,
+        "minimum_relative_difference_percent": -0.09446968438911198,
+        "maximum_relative_difference_percent": -0.09243997723323602,
+        "ordinary_median": 6279.009490834824,
+        "stronger_median": 6284.869452952437,
+        "paired_realization_ordinary_better": 640,
+        "paired_realization_stronger_better": 0
+      },
+      "tts_veh_h": {
+        "status": "stronger_better",
+        "median_difference_ordinary_minus_stronger": 6.684032623813891,
+        "median_relative_difference_percent": 0.2107886929838506,
+        "minimum_relative_difference_percent": 0.20653930662825878,
+        "maximum_relative_difference_percent": 0.2172875798953022,
+        "ordinary_median": 3177.6890112482965,
+        "stronger_median": 3170.9684846255905,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 640
+      },
+      "queue_veh_h": {
+        "status": "stronger_better",
+        "median_difference_ordinary_minus_stronger": 10.47979125193558,
+        "median_relative_difference_percent": 1.7699464672603726,
+        "minimum_relative_difference_percent": 1.7296223674933808,
+        "maximum_relative_difference_percent": 1.8301030550662578,
+        "ordinary_median": 602.693554716564,
+        "stronger_median": 592.0964428315631,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 640
+      }
+    }
+  },
+  {
+    "id": "D014",
+    "split": "development",
+    "sensing_half_width_vehicles": 1.0,
+    "arrival_residual_veh_h": 60.0,
+    "deadline_vehicles": 2850.0,
+    "weight": 2.0,
+    "ordinary_source": "nominal_mpc",
+    "stronger_source": "full_scenario_mpc",
+    "exact_same_commands": true,
+    "metrics": {
+      "priority_cost": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 3996.0121242316873,
+        "stronger_median": 3996.0121242316873,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "tts_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 2716.1882461223445,
+        "stronger_median": 2716.1882461223445,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "queue_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 253.00163666489652,
+        "stronger_median": 253.00163666489652,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      }
+    }
+  },
+  {
+    "id": "D015",
+    "split": "development",
+    "sensing_half_width_vehicles": 1.0,
+    "arrival_residual_veh_h": 60.0,
+    "deadline_vehicles": 2850.0,
+    "weight": 4.0,
+    "ordinary_source": "grid_repair",
+    "stronger_source": "full_scenario_repair",
+    "exact_same_commands": false,
+    "metrics": {
+      "priority_cost": {
+        "status": "ordinary_better",
+        "median_difference_ordinary_minus_stronger": -5.759710939262277,
+        "median_relative_difference_percent": -0.09167694202107658,
+        "minimum_relative_difference_percent": -0.09179127608665487,
+        "maximum_relative_difference_percent": -0.09148954889670158,
+        "ordinary_median": 6277.268006390402,
+        "stronger_median": 6283.028492733418,
+        "paired_realization_ordinary_better": 640,
+        "paired_realization_stronger_better": 0
+      },
+      "tts_veh_h": {
+        "status": "stronger_better",
+        "median_difference_ordinary_minus_stronger": 6.562060974253654,
+        "median_relative_difference_percent": 0.2057743077378804,
+        "minimum_relative_difference_percent": 0.20486812682963684,
+        "maximum_relative_difference_percent": 0.20675561483121602,
+        "ordinary_median": 3195.5060714332567,
+        "stronger_median": 3188.9439708348837,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 640
+      },
+      "queue_veh_h": {
+        "status": "stronger_better",
+        "median_difference_ordinary_minus_stronger": 10.252082166666241,
+        "median_relative_difference_percent": 1.731488561206379,
+        "minimum_relative_difference_percent": 1.6985181112664651,
+        "maximum_relative_difference_percent": 1.7620111355690231,
+        "ordinary_median": 602.3485249982299,
+        "stronger_median": 592.0964428315631,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 640
+      }
+    }
+  },
+  {
+    "id": "D016",
+    "split": "development",
+    "sensing_half_width_vehicles": 1.0,
+    "arrival_residual_veh_h": 60.0,
+    "deadline_vehicles": 2950.0,
+    "weight": 2.0,
+    "ordinary_source": "nominal_mpc",
+    "stronger_source": "full_scenario_mpc",
+    "exact_same_commands": true,
+    "metrics": {
+      "priority_cost": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 3996.0121242316873,
+        "stronger_median": 3996.0121242316873,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "tts_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 2716.1882461223445,
+        "stronger_median": 2716.1882461223445,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "queue_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 253.00163666489652,
+        "stronger_median": 253.00163666489652,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      }
+    }
+  },
+  {
+    "id": "D017",
+    "split": "development",
+    "sensing_half_width_vehicles": 1.0,
+    "arrival_residual_veh_h": 60.0,
+    "deadline_vehicles": 2950.0,
+    "weight": 4.0,
+    "ordinary_source": "grid_repair",
+    "stronger_source": "full_scenario_repair",
+    "exact_same_commands": false,
+    "metrics": {
+      "priority_cost": {
+        "status": "ordinary_better",
+        "median_difference_ordinary_minus_stronger": -5.706578786523551,
+        "median_relative_difference_percent": -0.09085728941925902,
+        "minimum_relative_difference_percent": -0.09097027403755815,
+        "maximum_relative_difference_percent": -0.09067195897068403,
+        "ordinary_median": 6275.498199205479,
+        "stronger_median": 6281.2055123297105,
+        "paired_realization_ordinary_better": 640,
+        "paired_realization_stronger_better": 0
+      },
+      "tts_veh_h": {
+        "status": "stronger_better",
+        "median_difference_ordinary_minus_stronger": 6.573475674169913,
+        "median_relative_difference_percent": 0.20500136959325738,
+        "minimum_relative_difference_percent": 0.20410208965719095,
+        "maximum_relative_difference_percent": 0.20597520061715555,
+        "ordinary_median": 3213.1058724391496,
+        "stronger_median": 3206.5324442018596,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 640
+      },
+      "queue_veh_h": {
+        "status": "stronger_better",
+        "median_difference_ordinary_minus_stronger": 10.252082166666241,
+        "median_relative_difference_percent": 1.731488561206379,
+        "minimum_relative_difference_percent": 1.6985181112664651,
+        "maximum_relative_difference_percent": 1.7620111355690231,
+        "ordinary_median": 602.3485249982299,
+        "stronger_median": 592.0964428315631,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 640
+      }
+    }
+  },
+  {
+    "id": "D018",
+    "split": "development",
+    "sensing_half_width_vehicles": 1.0,
+    "arrival_residual_veh_h": 150.0,
+    "deadline_vehicles": 2750.0,
+    "weight": 2.0,
+    "ordinary_source": "nominal_mpc",
+    "stronger_source": "full_scenario_mpc",
+    "exact_same_commands": true,
+    "metrics": {
+      "priority_cost": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 3996.9432841148573,
+        "stronger_median": 3996.9432841148573,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "tts_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 2716.3864445541008,
+        "stronger_median": 2716.3864445541008,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "queue_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 252.07409244230195,
+        "stronger_median": 252.07409244230195,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      }
+    }
+  },
+  {
+    "id": "D019",
+    "split": "development",
+    "sensing_half_width_vehicles": 1.0,
+    "arrival_residual_veh_h": 150.0,
+    "deadline_vehicles": 2750.0,
+    "weight": 4.0,
+    "ordinary_source": "grid_repair",
+    "stronger_source": "full_scenario_repair",
+    "exact_same_commands": false,
+    "metrics": {
+      "priority_cost": {
+        "status": "stronger_better",
+        "median_difference_ordinary_minus_stronger": 5.055314013262887,
+        "median_relative_difference_percent": 0.08006186975795854,
+        "minimum_relative_difference_percent": 0.07545883286048011,
+        "maximum_relative_difference_percent": 0.0855884862924834,
+        "ordinary_median": 6319.191256058242,
+        "stronger_median": 6314.103119140693,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 640
+      },
+      "tts_veh_h": {
+        "status": "ordinary_better",
+        "median_difference_ordinary_minus_stronger": -23.272969821629204,
+        "median_relative_difference_percent": -0.7452707025974519,
+        "minimum_relative_difference_percent": -0.7819746920913885,
+        "maximum_relative_difference_percent": -0.7162981334785193,
+        "ordinary_median": 3099.4340651067378,
+        "stronger_median": 3122.797087529825,
+        "paired_realization_ordinary_better": 640,
+        "paired_realization_stronger_better": 0
+      },
+      "queue_veh_h": {
+        "status": "ordinary_better",
+        "median_difference_ordinary_minus_stronger": -3.5576235362543116,
+        "median_relative_difference_percent": -0.6485771022900921,
+        "minimum_relative_difference_percent": -0.9798700486027498,
+        "maximum_relative_difference_percent": -0.4112421413739174,
+        "ordinary_median": 545.0195684855596,
+        "stronger_median": 548.5279144423017,
+        "paired_realization_ordinary_better": 640,
+        "paired_realization_stronger_better": 0
+      }
+    }
+  },
+  {
+    "id": "D020",
+    "split": "development",
+    "sensing_half_width_vehicles": 1.0,
+    "arrival_residual_veh_h": 150.0,
+    "deadline_vehicles": 2850.0,
+    "weight": 2.0,
+    "ordinary_source": "nominal_mpc",
+    "stronger_source": "full_scenario_mpc",
+    "exact_same_commands": true,
+    "metrics": {
+      "priority_cost": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 3996.9432841148573,
+        "stronger_median": 3996.9432841148573,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "tts_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 2716.3864445541008,
+        "stronger_median": 2716.3864445541008,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "queue_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 252.07409244230195,
+        "stronger_median": 252.07409244230195,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      }
+    }
+  },
+  {
+    "id": "D021",
+    "split": "development",
+    "sensing_half_width_vehicles": 1.0,
+    "arrival_residual_veh_h": 150.0,
+    "deadline_vehicles": 2850.0,
+    "weight": 4.0,
+    "ordinary_source": "grid_repair",
+    "stronger_source": "full_scenario_repair",
+    "exact_same_commands": false,
+    "metrics": {
+      "priority_cost": {
+        "status": "ordinary_better",
+        "median_difference_ordinary_minus_stronger": -13.952122529552526,
+        "median_relative_difference_percent": -0.22103244715814224,
+        "minimum_relative_difference_percent": -0.22155052781820417,
+        "maximum_relative_difference_percent": -0.22001950729114597,
+        "ordinary_median": 6298.3432234491465,
+        "stronger_median": 6312.295903390342,
+        "paired_realization_ordinary_better": 640,
+        "paired_realization_stronger_better": 0
+      },
+      "tts_veh_h": {
+        "status": "stronger_better",
+        "median_difference_ordinary_minus_stronger": 14.461392155508292,
+        "median_relative_difference_percent": 0.46077974695442725,
+        "minimum_relative_difference_percent": 0.4560582538574936,
+        "maximum_relative_difference_percent": 0.46599662104213196,
+        "ordinary_median": 3153.1860807036146,
+        "stronger_median": 3138.718595892332,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 640
+      },
+      "queue_veh_h": {
+        "status": "stronger_better",
+        "median_difference_ordinary_minus_stronger": 23.88457837500073,
+        "median_relative_difference_percent": 4.354305000611628,
+        "minimum_relative_difference_percent": 4.13778802141024,
+        "maximum_relative_difference_percent": 4.567565433775268,
+        "ordinary_median": 572.4124928173023,
+        "stronger_median": 548.5279144423017,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 640
+      }
+    }
+  },
+  {
+    "id": "D022",
+    "split": "development",
+    "sensing_half_width_vehicles": 1.0,
+    "arrival_residual_veh_h": 150.0,
+    "deadline_vehicles": 2950.0,
+    "weight": 2.0,
+    "ordinary_source": "nominal_mpc",
+    "stronger_source": "full_scenario_mpc",
+    "exact_same_commands": true,
+    "metrics": {
+      "priority_cost": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 3996.9432841148573,
+        "stronger_median": 3996.9432841148573,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "tts_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 2716.3864445541008,
+        "stronger_median": 2716.3864445541008,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "queue_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 252.07409244230195,
+        "stronger_median": 252.07409244230195,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      }
+    }
+  },
+  {
+    "id": "D023",
+    "split": "development",
+    "sensing_half_width_vehicles": 1.0,
+    "arrival_residual_veh_h": 150.0,
+    "deadline_vehicles": 2950.0,
+    "weight": 4.0,
+    "ordinary_source": "grid_repair",
+    "stronger_source": "full_scenario_repair",
+    "exact_same_commands": false,
+    "metrics": {
+      "priority_cost": {
+        "status": "ordinary_better",
+        "median_difference_ordinary_minus_stronger": -13.835509094314602,
+        "median_relative_difference_percent": -0.2192469370425696,
+        "minimum_relative_difference_percent": -0.21976255182820514,
+        "maximum_relative_difference_percent": -0.21824286943867663,
+        "ordinary_median": 6296.6639498376135,
+        "stronger_median": 6310.499981651664,
+        "paired_realization_ordinary_better": 640,
+        "paired_realization_stronger_better": 0
+      },
+      "tts_veh_h": {
+        "status": "stronger_better",
+        "median_difference_ordinary_minus_stronger": 14.47310590672214,
+        "median_relative_difference_percent": 0.45888023310167986,
+        "minimum_relative_difference_percent": 0.4541978765690438,
+        "maximum_relative_difference_percent": 0.4640539681112238,
+        "ordinary_median": 3168.7440481398767,
+        "stronger_median": 3154.2648876628878,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 640
+      },
+      "queue_veh_h": {
+        "status": "stronger_better",
+        "median_difference_ordinary_minus_stronger": 23.88457837500073,
+        "median_relative_difference_percent": 4.354305000611628,
+        "minimum_relative_difference_percent": 4.13778802141024,
+        "maximum_relative_difference_percent": 4.567565433775268,
+        "ordinary_median": 572.4124928173023,
+        "stronger_median": 548.5279144423017,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 640
+      }
+    }
+  },
+  {
+    "id": "D024",
+    "split": "development",
+    "sensing_half_width_vehicles": 1.0,
+    "arrival_residual_veh_h": 300.0,
+    "deadline_vehicles": 2750.0,
+    "weight": 2.0,
+    "ordinary_source": "nominal_mpc",
+    "stronger_source": "full_scenario_mpc",
+    "exact_same_commands": true,
+    "metrics": {
+      "priority_cost": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 3998.6600303242803,
+        "stronger_median": 3998.6600303242803,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "tts_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 2716.70355394776,
+        "stronger_median": 2716.70355394776,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "queue_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 250.5281854046445,
+        "stronger_median": 250.5281854046445,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      }
+    }
+  },
+  {
+    "id": "D025",
+    "split": "development",
+    "sensing_half_width_vehicles": 1.0,
+    "arrival_residual_veh_h": 300.0,
+    "deadline_vehicles": 2750.0,
+    "weight": 4.0,
+    "ordinary_source": "grid_repair",
+    "stronger_source": "full_scenario_repair",
+    "exact_same_commands": false,
+    "metrics": {
+      "priority_cost": {
+        "status": "ordinary_better",
+        "median_difference_ordinary_minus_stronger": -4.369529997811242,
+        "median_relative_difference_percent": -0.06816694272328236,
+        "minimum_relative_difference_percent": -0.08031535433299135,
+        "maximum_relative_difference_percent": -0.051239379625268706,
+        "ordinary_median": 6405.802957777344,
+        "stronger_median": 6410.2145511510635,
+        "paired_realization_ordinary_better": 640,
+        "paired_realization_stronger_better": 0
+      },
+      "tts_veh_h": {
+        "status": "ordinary_better",
+        "median_difference_ordinary_minus_stronger": -9.695756404967142,
+        "median_relative_difference_percent": -0.32621405208194554,
+        "minimum_relative_difference_percent": -0.4091627223584948,
+        "maximum_relative_difference_percent": -0.2676487013433623,
+        "ordinary_median": 2962.519396908665,
+        "stronger_median": 2972.2762397368438,
+        "paired_realization_ordinary_better": 640,
+        "paired_realization_stronger_better": 0
+      },
+      "queue_veh_h": {
+        "status": "stronger_better",
+        "median_difference_ordinary_minus_stronger": 11.852128954173935,
+        "median_relative_difference_percent": 2.836219752915392,
+        "minimum_relative_difference_percent": 1.8859099625001852,
+        "maximum_relative_difference_percent": 3.5055218657555898,
+        "ordinary_median": 429.7366559004851,
+        "stronger_median": 417.8845269463112,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 640
+      }
+    }
+  },
+  {
+    "id": "D026",
+    "split": "development",
+    "sensing_half_width_vehicles": 1.0,
+    "arrival_residual_veh_h": 300.0,
+    "deadline_vehicles": 2850.0,
+    "weight": 2.0,
+    "ordinary_source": "nominal_mpc",
+    "stronger_source": "full_scenario_mpc",
+    "exact_same_commands": true,
+    "metrics": {
+      "priority_cost": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 3998.6600303242803,
+        "stronger_median": 3998.6600303242803,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "tts_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 2716.70355394776,
+        "stronger_median": 2716.70355394776,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "queue_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 250.5281854046445,
+        "stronger_median": 250.5281854046445,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      }
+    }
+  },
+  {
+    "id": "D027",
+    "split": "development",
+    "sensing_half_width_vehicles": 1.0,
+    "arrival_residual_veh_h": 300.0,
+    "deadline_vehicles": 2850.0,
+    "weight": 4.0,
+    "ordinary_source": "grid_repair",
+    "stronger_source": "full_scenario_repair",
+    "exact_same_commands": false,
+    "metrics": {
+      "priority_cost": {
+        "status": "ordinary_better",
+        "median_difference_ordinary_minus_stronger": -25.815943537492785,
+        "median_relative_difference_percent": -0.40409939394625327,
+        "minimum_relative_difference_percent": -0.4058371331858662,
+        "maximum_relative_difference_percent": -0.40062163037093795,
+        "ordinary_median": 6362.69739628994,
+        "stronger_median": 6388.513339987085,
+        "paired_realization_ordinary_better": 640,
+        "paired_realization_stronger_better": 0
+      },
+      "tts_veh_h": {
+        "status": "stronger_better",
+        "median_difference_ordinary_minus_stronger": 22.34453575548264,
+        "median_relative_difference_percent": 0.7411313149389728,
+        "minimum_relative_difference_percent": 0.7259913732991929,
+        "maximum_relative_difference_percent": 0.7585853708038716,
+        "ordinary_median": 3037.442328896147,
+        "stronger_median": 3015.0911729838363,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 640
+      },
+      "queue_veh_h": {
+        "status": "stronger_better",
+        "median_difference_ordinary_minus_stronger": 39.58726129166649,
+        "median_relative_difference_percent": 8.910954907467437,
+        "minimum_relative_difference_percent": 7.891587787396782,
+        "maximum_relative_difference_percent": 10.071746024741701,
+        "ordinary_median": 483.8411239463111,
+        "stronger_median": 444.25386265464465,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 640
+      }
+    }
+  },
+  {
+    "id": "D028",
+    "split": "development",
+    "sensing_half_width_vehicles": 1.0,
+    "arrival_residual_veh_h": 300.0,
+    "deadline_vehicles": 2950.0,
+    "weight": 2.0,
+    "ordinary_source": "nominal_mpc",
+    "stronger_source": "full_scenario_mpc",
+    "exact_same_commands": true,
+    "metrics": {
+      "priority_cost": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 3998.6600303242803,
+        "stronger_median": 3998.6600303242803,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "tts_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 2716.70355394776,
+        "stronger_median": 2716.70355394776,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "queue_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 250.5281854046445,
+        "stronger_median": 250.5281854046445,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      }
+    }
+  },
+  {
+    "id": "D029",
+    "split": "development",
+    "sensing_half_width_vehicles": 1.0,
+    "arrival_residual_veh_h": 300.0,
+    "deadline_vehicles": 2950.0,
+    "weight": 4.0,
+    "ordinary_source": "grid_repair",
+    "stronger_source": "full_scenario_repair",
+    "exact_same_commands": false,
+    "metrics": {
+      "priority_cost": {
+        "status": "ordinary_better",
+        "median_difference_ordinary_minus_stronger": -25.660788766424048,
+        "median_relative_difference_percent": -0.4017630829752392,
+        "minimum_relative_difference_percent": -0.40350101053200527,
+        "maximum_relative_difference_percent": -0.39830465954593897,
+        "ordinary_median": 6361.3842129232235,
+        "stronger_median": 6387.0450018425745,
+        "paired_realization_ordinary_better": 640,
+        "paired_realization_stronger_better": 0
+      },
+      "tts_veh_h": {
+        "status": "stronger_better",
+        "median_difference_ordinary_minus_stronger": 22.33411745035619,
+        "median_relative_difference_percent": 0.7382087600299104,
+        "minimum_relative_difference_percent": 0.7231762103341869,
+        "maximum_relative_difference_percent": 0.7555373500008044,
+        "ordinary_median": 3047.960286150873,
+        "stronger_median": 3025.612107317085,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 640
+      },
+      "queue_veh_h": {
+        "status": "stronger_better",
+        "median_difference_ordinary_minus_stronger": 39.58726129166649,
+        "median_relative_difference_percent": 8.910954907467437,
+        "minimum_relative_difference_percent": 7.891587787396782,
+        "maximum_relative_difference_percent": 10.071746024741701,
+        "ordinary_median": 483.8411239463111,
+        "stronger_median": 444.25386265464465,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 640
+      }
+    }
+  },
+  {
+    "id": "D030",
+    "split": "development",
+    "sensing_half_width_vehicles": 10.0,
+    "arrival_residual_veh_h": 60.0,
+    "deadline_vehicles": 2750.0,
+    "weight": 2.0,
+    "ordinary_source": "nominal_mpc",
+    "stronger_source": "full_scenario_mpc",
+    "exact_same_commands": true,
+    "metrics": {
+      "priority_cost": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 3995.7542394433785,
+        "stronger_median": 3995.7542394433785,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "tts_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 2716.0919642380336,
+        "stronger_median": 2716.0919642380336,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "queue_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 253.10959202742384,
+        "stronger_median": 253.10959202742384,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      }
+    }
+  },
+  {
+    "id": "D031",
+    "split": "development",
+    "sensing_half_width_vehicles": 10.0,
+    "arrival_residual_veh_h": 60.0,
+    "deadline_vehicles": 2750.0,
+    "weight": 4.0,
+    "ordinary_source": "grid_repair",
+    "stronger_source": "full_scenario_repair",
+    "exact_same_commands": false,
+    "metrics": {
+      "priority_cost": {
+        "status": "stronger_better",
+        "median_difference_ordinary_minus_stronger": 12.80006131632399,
+        "median_relative_difference_percent": 0.20409330065828324,
+        "minimum_relative_difference_percent": 0.19265003292352423,
+        "maximum_relative_difference_percent": 0.2068482671993865,
+        "ordinary_median": 6297.297160353715,
+        "stronger_median": 6284.5536956678625,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 640
+      },
+      "tts_veh_h": {
+        "status": "ordinary_better",
+        "median_difference_ordinary_minus_stronger": -32.067935820970206,
+        "median_relative_difference_percent": -1.012553498051245,
+        "minimum_relative_difference_percent": -1.0233754557511296,
+        "maximum_relative_difference_percent": -0.94878561881866,
+        "ordinary_median": 3137.3740911982577,
+        "stronger_median": 3169.299087682258,
+        "paired_realization_ordinary_better": 640,
+        "paired_realization_stronger_better": 0
+      },
+      "queue_veh_h": {
+        "status": "ordinary_better",
+        "median_difference_ordinary_minus_stronger": -18.605647310147447,
+        "median_relative_difference_percent": -3.114146783270413,
+        "minimum_relative_difference_percent": -3.2215822013680215,
+        "maximum_relative_difference_percent": -2.5609146930356474,
+        "ordinary_median": 574.3571129653944,
+        "stronger_median": 592.1859047774246,
+        "paired_realization_ordinary_better": 640,
+        "paired_realization_stronger_better": 0
+      }
+    }
+  },
+  {
+    "id": "D032",
+    "split": "development",
+    "sensing_half_width_vehicles": 10.0,
+    "arrival_residual_veh_h": 60.0,
+    "deadline_vehicles": 2850.0,
+    "weight": 2.0,
+    "ordinary_source": "nominal_mpc",
+    "stronger_source": "full_scenario_mpc",
+    "exact_same_commands": true,
+    "metrics": {
+      "priority_cost": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 3995.7542394433785,
+        "stronger_median": 3995.7542394433785,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "tts_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 2716.0919642380336,
+        "stronger_median": 2716.0919642380336,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "queue_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 253.10959202742384,
+        "stronger_median": 253.10959202742384,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      }
+    }
+  },
+  {
+    "id": "D033",
+    "split": "development",
+    "sensing_half_width_vehicles": 10.0,
+    "arrival_residual_veh_h": 60.0,
+    "deadline_vehicles": 2850.0,
+    "weight": 4.0,
+    "ordinary_source": "grid_repair",
+    "stronger_source": "full_scenario_repair",
+    "exact_same_commands": false,
+    "metrics": {
+      "priority_cost": {
+        "status": "ordinary_better",
+        "median_difference_ordinary_minus_stronger": -5.951799074993232,
+        "median_relative_difference_percent": -0.09472094300294814,
+        "minimum_relative_difference_percent": -0.09530174508590916,
+        "maximum_relative_difference_percent": -0.0940963199002372,
+        "ordinary_median": 6276.787349576704,
+        "stronger_median": 6282.736419509761,
+        "paired_realization_ordinary_better": 640,
+        "paired_realization_stronger_better": 0
+      },
+      "tts_veh_h": {
+        "status": "stronger_better",
+        "median_difference_ordinary_minus_stronger": 8.339550069257484,
+        "median_relative_difference_percent": 0.26164645978309475,
+        "minimum_relative_difference_percent": 0.25954282048299876,
+        "maximum_relative_difference_percent": 0.2638514534136722,
+        "ordinary_median": 3195.4967056892892,
+        "stronger_median": 3187.1575937407097,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 640
+      },
+      "queue_veh_h": {
+        "status": "stronger_better",
+        "median_difference_ordinary_minus_stronger": 10.270575583331322,
+        "median_relative_difference_percent": 1.7343499356264926,
+        "minimum_relative_difference_percent": 1.7011145359102953,
+        "maximum_relative_difference_percent": 1.765805220714363,
+        "ordinary_median": 602.4564803607569,
+        "stronger_median": 592.1859047774246,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 640
+      }
+    }
+  },
+  {
+    "id": "D034",
+    "split": "development",
+    "sensing_half_width_vehicles": 10.0,
+    "arrival_residual_veh_h": 60.0,
+    "deadline_vehicles": 2950.0,
+    "weight": 2.0,
+    "ordinary_source": "nominal_mpc",
+    "stronger_source": "full_scenario_mpc",
+    "exact_same_commands": true,
+    "metrics": {
+      "priority_cost": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 3995.7542394433785,
+        "stronger_median": 3995.7542394433785,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "tts_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 2716.0919642380336,
+        "stronger_median": 2716.0919642380336,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "queue_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 253.10959202742384,
+        "stronger_median": 253.10959202742384,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      }
+    }
+  },
+  {
+    "id": "D035",
+    "split": "development",
+    "sensing_half_width_vehicles": 10.0,
+    "arrival_residual_veh_h": 60.0,
+    "deadline_vehicles": 2950.0,
+    "weight": 4.0,
+    "ordinary_source": "grid_repair",
+    "stronger_source": "full_scenario_repair",
+    "exact_same_commands": false,
+    "metrics": {
+      "priority_cost": {
+        "status": "ordinary_better",
+        "median_difference_ordinary_minus_stronger": -5.909381347264571,
+        "median_relative_difference_percent": -0.09406859564449219,
+        "minimum_relative_difference_percent": -0.09464199335237594,
+        "maximum_relative_difference_percent": -0.09345820886105057,
+        "ordinary_median": 6275.023425123196,
+        "stronger_median": 6280.9300140702235,
+        "paired_realization_ordinary_better": 640,
+        "paired_realization_stronger_better": 0
+      },
+      "tts_veh_h": {
+        "status": "stronger_better",
+        "median_difference_ordinary_minus_stronger": 8.440756497966959,
+        "median_relative_difference_percent": 0.2633808368160586,
+        "minimum_relative_difference_percent": 0.26127308560781337,
+        "maximum_relative_difference_percent": 0.26557859168548775,
+        "ordinary_median": 3213.1241465947796,
+        "stronger_median": 3204.6835798481993,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 640
+      },
+      "queue_veh_h": {
+        "status": "stronger_better",
+        "median_difference_ordinary_minus_stronger": 10.270575583331322,
+        "median_relative_difference_percent": 1.7343499356264926,
+        "minimum_relative_difference_percent": 1.7011145359102953,
+        "maximum_relative_difference_percent": 1.765805220714363,
+        "ordinary_median": 602.4564803607569,
+        "stronger_median": 592.1859047774246,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 640
+      }
+    }
+  },
+  {
+    "id": "D036",
+    "split": "development",
+    "sensing_half_width_vehicles": 10.0,
+    "arrival_residual_veh_h": 150.0,
+    "deadline_vehicles": 2750.0,
+    "weight": 2.0,
+    "ordinary_source": "nominal_mpc",
+    "stronger_source": "full_scenario_mpc",
+    "exact_same_commands": true,
+    "metrics": {
+      "priority_cost": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 3996.8071838942087,
+        "stronger_median": 3996.8071838942087,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "tts_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 2716.4005345430905,
+        "stronger_median": 2716.4005345430905,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "queue_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 252.07409244230192,
+        "stronger_median": 252.07409244230192,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      }
+    }
+  },
+  {
+    "id": "D037",
+    "split": "development",
+    "sensing_half_width_vehicles": 10.0,
+    "arrival_residual_veh_h": 150.0,
+    "deadline_vehicles": 2750.0,
+    "weight": 4.0,
+    "ordinary_source": "grid_repair",
+    "stronger_source": "full_scenario_repair",
+    "exact_same_commands": false,
+    "metrics": {
+      "priority_cost": {
+        "status": "stronger_better",
+        "median_difference_ordinary_minus_stronger": 4.896738226650541,
+        "median_relative_difference_percent": 0.07763711752113577,
+        "minimum_relative_difference_percent": 0.05822017222516585,
+        "maximum_relative_difference_percent": 0.08384802225250639,
+        "ordinary_median": 6318.469332708661,
+        "stronger_median": 6313.693357354479,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 640
+      },
+      "tts_veh_h": {
+        "status": "ordinary_better",
+        "median_difference_ordinary_minus_stronger": -21.869492489826143,
+        "median_relative_difference_percent": -0.7012387007921195,
+        "minimum_relative_difference_percent": -0.7370110364634326,
+        "maximum_relative_difference_percent": -0.5968253797679269,
+        "ordinary_median": 3099.667013482314,
+        "stronger_median": 3121.3240011189246,
+        "paired_realization_ordinary_better": 640,
+        "paired_realization_stronger_better": 0
+      },
+      "queue_veh_h": {
+        "status": "ordinary_better",
+        "median_difference_ordinary_minus_stronger": -3.7020466370676672,
+        "median_relative_difference_percent": -0.6754456321448943,
+        "minimum_relative_difference_percent": -0.976896854303633,
+        "maximum_relative_difference_percent": 0.2554448224138948,
+        "ordinary_median": 545.1304861190085,
+        "stronger_median": 548.5103949006352,
+        "paired_realization_ordinary_better": 512,
+        "paired_realization_stronger_better": 128
+      }
+    }
+  },
+  {
+    "id": "D038",
+    "split": "development",
+    "sensing_half_width_vehicles": 10.0,
+    "arrival_residual_veh_h": 150.0,
+    "deadline_vehicles": 2850.0,
+    "weight": 2.0,
+    "ordinary_source": "nominal_mpc",
+    "stronger_source": "full_scenario_mpc",
+    "exact_same_commands": true,
+    "metrics": {
+      "priority_cost": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 3996.8071838942087,
+        "stronger_median": 3996.8071838942087,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "tts_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 2716.4005345430905,
+        "stronger_median": 2716.4005345430905,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "queue_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 252.07409244230192,
+        "stronger_median": 252.07409244230192,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      }
+    }
+  },
+  {
+    "id": "D039",
+    "split": "development",
+    "sensing_half_width_vehicles": 10.0,
+    "arrival_residual_veh_h": 150.0,
+    "deadline_vehicles": 2850.0,
+    "weight": 4.0,
+    "ordinary_source": "grid_repair",
+    "stronger_source": "full_scenario_repair",
+    "exact_same_commands": false,
+    "metrics": {
+      "priority_cost": {
+        "status": "ordinary_better",
+        "median_difference_ordinary_minus_stronger": -14.140376848706182,
+        "median_relative_difference_percent": -0.22393569020452178,
+        "minimum_relative_difference_percent": -0.2254854341903898,
+        "maximum_relative_difference_percent": -0.22205184688091242,
+        "ordinary_median": 6297.791973944615,
+        "stronger_median": 6311.912081522104,
+        "paired_realization_ordinary_better": 640,
+        "paired_realization_stronger_better": 0
+      },
+      "tts_veh_h": {
+        "status": "stronger_better",
+        "median_difference_ordinary_minus_stronger": 16.039462192421524,
+        "median_relative_difference_percent": 0.5112145989339794,
+        "minimum_relative_difference_percent": 0.5033843172667861,
+        "maximum_relative_difference_percent": 0.5196084896791344,
+        "ordinary_median": 3153.14904589868,
+        "stronger_median": 3137.131412028828,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 640
+      },
+      "queue_veh_h": {
+        "status": "stronger_better",
+        "median_difference_ordinary_minus_stronger": 23.90209791666655,
+        "median_relative_difference_percent": 4.357638701592865,
+        "minimum_relative_difference_percent": 4.139626588374973,
+        "maximum_relative_difference_percent": 4.572681172299591,
+        "ordinary_median": 572.412492817302,
+        "stronger_median": 548.5103949006352,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 640
+      }
+    }
+  },
+  {
+    "id": "D040",
+    "split": "development",
+    "sensing_half_width_vehicles": 10.0,
+    "arrival_residual_veh_h": 150.0,
+    "deadline_vehicles": 2950.0,
+    "weight": 2.0,
+    "ordinary_source": "nominal_mpc",
+    "stronger_source": "full_scenario_mpc",
+    "exact_same_commands": true,
+    "metrics": {
+      "priority_cost": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 3996.8071838942087,
+        "stronger_median": 3996.8071838942087,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "tts_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 2716.4005345430905,
+        "stronger_median": 2716.4005345430905,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "queue_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 252.07409244230192,
+        "stronger_median": 252.07409244230192,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      }
+    }
+  },
+  {
+    "id": "D041",
+    "split": "development",
+    "sensing_half_width_vehicles": 10.0,
+    "arrival_residual_veh_h": 150.0,
+    "deadline_vehicles": 2950.0,
+    "weight": 4.0,
+    "ordinary_source": "grid_repair",
+    "stronger_source": "full_scenario_repair",
+    "exact_same_commands": false,
+    "metrics": {
+      "priority_cost": {
+        "status": "ordinary_better",
+        "median_difference_ordinary_minus_stronger": -14.03513171195982,
+        "median_relative_difference_percent": -0.22232850037896593,
+        "minimum_relative_difference_percent": -0.2238599082302106,
+        "maximum_relative_difference_percent": -0.22047627243835832,
+        "ordinary_median": 6296.101297227093,
+        "stronger_median": 6310.137102329332,
+        "paired_realization_ordinary_better": 640,
+        "paired_realization_stronger_better": 0
+      },
+      "tts_veh_h": {
+        "status": "stronger_better",
+        "median_difference_ordinary_minus_stronger": 16.127765144813793,
+        "median_relative_difference_percent": 0.5115101997838785,
+        "minimum_relative_difference_percent": 0.5037056782110257,
+        "maximum_relative_difference_percent": 0.5198747646374331,
+        "ordinary_median": 3168.697323973427,
+        "stronger_median": 3152.572933857592,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 640
+      },
+      "queue_veh_h": {
+        "status": "stronger_better",
+        "median_difference_ordinary_minus_stronger": 23.90209791666655,
+        "median_relative_difference_percent": 4.357638701592865,
+        "minimum_relative_difference_percent": 4.139626588374973,
+        "maximum_relative_difference_percent": 4.572681172299591,
+        "ordinary_median": 572.412492817302,
+        "stronger_median": 548.5103949006352,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 640
+      }
+    }
+  },
+  {
+    "id": "D042",
+    "split": "development",
+    "sensing_half_width_vehicles": 10.0,
+    "arrival_residual_veh_h": 300.0,
+    "deadline_vehicles": 2750.0,
+    "weight": 2.0,
+    "ordinary_source": "nominal_mpc",
+    "stronger_source": "full_scenario_mpc",
+    "exact_same_commands": true,
+    "metrics": {
+      "priority_cost": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 3998.219280093723,
+        "stronger_median": 3998.219280093723,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "tts_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 2716.7543077016094,
+        "stronger_median": 2716.7543077016094,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "queue_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 250.52818540464455,
+        "stronger_median": 250.52818540464455,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      }
+    }
+  },
+  {
+    "id": "D043",
+    "split": "development",
+    "sensing_half_width_vehicles": 10.0,
+    "arrival_residual_veh_h": 300.0,
+    "deadline_vehicles": 2750.0,
+    "weight": 4.0,
+    "ordinary_source": "grid_repair",
+    "stronger_source": "full_scenario_repair",
+    "exact_same_commands": false,
+    "metrics": {
+      "priority_cost": {
+        "status": "stronger_better",
+        "median_difference_ordinary_minus_stronger": 64.21091454812313,
+        "median_relative_difference_percent": 1.003204678600826,
+        "minimum_relative_difference_percent": 0.9622911095579081,
+        "maximum_relative_difference_percent": 1.0292427643349111,
+        "ordinary_median": 6474.171419915108,
+        "stronger_median": 6409.5703321173405,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 640
+      },
+      "tts_veh_h": {
+        "status": "ordinary_better",
+        "median_difference_ordinary_minus_stronger": -98.95626191706151,
+        "median_relative_difference_percent": -3.333170513642634,
+        "minimum_relative_difference_percent": -3.47313688072705,
+        "maximum_relative_difference_percent": -3.1401938458748764,
+        "ordinary_median": 2872.5973994887922,
+        "stronger_median": 2971.4334675493483,
+        "paired_realization_ordinary_better": 640,
+        "paired_realization_stronger_better": 0
+      },
+      "queue_veh_h": {
+        "status": "ordinary_better",
+        "median_difference_ordinary_minus_stronger": -75.88853366665154,
+        "median_relative_difference_percent": -18.190534855491535,
+        "minimum_relative_difference_percent": -21.575821789404447,
+        "maximum_relative_difference_percent": -14.677337361322046,
+        "ordinary_median": 341.93094740526044,
+        "stronger_median": 417.870898821311,
+        "paired_realization_ordinary_better": 640,
+        "paired_realization_stronger_better": 0
+      }
+    }
+  },
+  {
+    "id": "D044",
+    "split": "development",
+    "sensing_half_width_vehicles": 10.0,
+    "arrival_residual_veh_h": 300.0,
+    "deadline_vehicles": 2850.0,
+    "weight": 2.0,
+    "ordinary_source": "nominal_mpc",
+    "stronger_source": "full_scenario_mpc",
+    "exact_same_commands": true,
+    "metrics": {
+      "priority_cost": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 3998.219280093723,
+        "stronger_median": 3998.219280093723,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "tts_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 2716.7543077016094,
+        "stronger_median": 2716.7543077016094,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "queue_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 250.52818540464455,
+        "stronger_median": 250.52818540464455,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      }
+    }
+  },
+  {
+    "id": "D045",
+    "split": "development",
+    "sensing_half_width_vehicles": 10.0,
+    "arrival_residual_veh_h": 300.0,
+    "deadline_vehicles": 2850.0,
+    "weight": 4.0,
+    "ordinary_source": "grid_repair",
+    "stronger_source": "full_scenario_repair",
+    "exact_same_commands": false,
+    "metrics": {
+      "priority_cost": {
+        "status": "ordinary_better",
+        "median_difference_ordinary_minus_stronger": -25.90548724481596,
+        "median_relative_difference_percent": -0.4063390790441399,
+        "minimum_relative_difference_percent": -0.4099505302466541,
+        "maximum_relative_difference_percent": -0.40132803015583796,
+        "ordinary_median": 6361.918549630275,
+        "stronger_median": 6387.882848337225,
+        "paired_realization_ordinary_better": 640,
+        "paired_realization_stronger_better": 0
+      },
+      "tts_veh_h": {
+        "status": "stronger_better",
+        "median_difference_ordinary_minus_stronger": 23.42656377359731,
+        "median_relative_difference_percent": 0.777131012496491,
+        "minimum_relative_difference_percent": 0.7564157078978533,
+        "maximum_relative_difference_percent": 0.8002073838754544,
+        "ordinary_median": 3037.5135804860197,
+        "stronger_median": 3014.090032792216,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 640
+      },
+      "queue_veh_h": {
+        "status": "stronger_better",
+        "median_difference_ordinary_minus_stronger": 39.6018612500003,
+        "median_relative_difference_percent": 8.914536151178085,
+        "minimum_relative_difference_percent": 7.891827483786745,
+        "maximum_relative_difference_percent": 10.08056334978182,
+        "ordinary_median": 483.84112394631137,
+        "stronger_median": 444.2392626963111,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 640
+      }
+    }
+  },
+  {
+    "id": "D046",
+    "split": "development",
+    "sensing_half_width_vehicles": 10.0,
+    "arrival_residual_veh_h": 300.0,
+    "deadline_vehicles": 2950.0,
+    "weight": 2.0,
+    "ordinary_source": "nominal_mpc",
+    "stronger_source": "full_scenario_mpc",
+    "exact_same_commands": true,
+    "metrics": {
+      "priority_cost": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 3998.219280093723,
+        "stronger_median": 3998.219280093723,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "tts_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 2716.7543077016094,
+        "stronger_median": 2716.7543077016094,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "queue_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 250.52818540464455,
+        "stronger_median": 250.52818540464455,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      }
+    }
+  },
+  {
+    "id": "D047",
+    "split": "development",
+    "sensing_half_width_vehicles": 10.0,
+    "arrival_residual_veh_h": 300.0,
+    "deadline_vehicles": 2950.0,
+    "weight": 4.0,
+    "ordinary_source": "grid_repair",
+    "stronger_source": "full_scenario_repair",
+    "exact_same_commands": false,
+    "metrics": {
+      "priority_cost": {
+        "status": "ordinary_better",
+        "median_difference_ordinary_minus_stronger": -25.76008802782644,
+        "median_relative_difference_percent": -0.40414975627990357,
+        "minimum_relative_difference_percent": -0.407733197408254,
+        "maximum_relative_difference_percent": -0.3991844121945338,
+        "ordinary_median": 6360.599157055707,
+        "stronger_median": 6386.418055572094,
+        "paired_realization_ordinary_better": 640,
+        "paired_realization_stronger_better": 0
+      },
+      "tts_veh_h": {
+        "status": "stronger_better",
+        "median_difference_ordinary_minus_stronger": 23.461311396834162,
+        "median_relative_difference_percent": 0.7755898694768273,
+        "minimum_relative_difference_percent": 0.7549672279796313,
+        "maximum_relative_difference_percent": 0.7985525821466275,
+        "ordinary_median": 3048.0282073197395,
+        "stronger_median": 3024.5699015759637,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 640
+      },
+      "queue_veh_h": {
+        "status": "stronger_better",
+        "median_difference_ordinary_minus_stronger": 39.6018612500003,
+        "median_relative_difference_percent": 8.914536151178085,
+        "minimum_relative_difference_percent": 7.891827483786745,
+        "maximum_relative_difference_percent": 10.08056334978182,
+        "ordinary_median": 483.84112394631137,
+        "stronger_median": 444.2392626963111,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 640
+      }
+    }
+  },
+  {
+    "id": "D048",
+    "split": "development",
+    "sensing_half_width_vehicles": 25.0,
+    "arrival_residual_veh_h": 60.0,
+    "deadline_vehicles": 2750.0,
+    "weight": 2.0,
+    "ordinary_source": "nominal_mpc",
+    "stronger_source": "full_scenario_mpc",
+    "exact_same_commands": true,
+    "metrics": {
+      "priority_cost": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 3995.6128792948666,
+        "stronger_median": 3995.6128792948666,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "tts_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 2716.106707457254,
+        "stronger_median": 2716.106707457254,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "queue_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 253.21392365776688,
+        "stronger_median": 253.21392365776688,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      }
+    }
+  },
+  {
+    "id": "D049",
+    "split": "development",
+    "sensing_half_width_vehicles": 25.0,
+    "arrival_residual_veh_h": 60.0,
+    "deadline_vehicles": 2750.0,
+    "weight": 4.0,
+    "ordinary_source": "grid_repair",
+    "stronger_source": "full_scenario_repair",
+    "exact_same_commands": false,
+    "metrics": {
+      "priority_cost": {
+        "status": "stronger_better",
+        "median_difference_ordinary_minus_stronger": 31.018112908801413,
+        "median_relative_difference_percent": 0.4944375781671766,
+        "minimum_relative_difference_percent": 0.45896720525515994,
+        "maximum_relative_difference_percent": 0.5165206317603465,
+        "ordinary_median": 6315.994369660135,
+        "stronger_median": 6284.530260119523,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 640
+      },
+      "tts_veh_h": {
+        "status": "ordinary_better",
+        "median_difference_ordinary_minus_stronger": -65.83884354408269,
+        "median_relative_difference_percent": -2.0775587658146746,
+        "minimum_relative_difference_percent": -2.1727541643565598,
+        "maximum_relative_difference_percent": -1.8940715658529037,
+        "ordinary_median": 3101.15085017412,
+        "stronger_median": 3166.4718818394986,
+        "paired_realization_ordinary_better": 640,
+        "paired_realization_stronger_better": 0
+      },
+      "queue_veh_h": {
+        "status": "ordinary_better",
+        "median_difference_ordinary_minus_stronger": -43.95293226361167,
+        "median_relative_difference_percent": -7.407326621687586,
+        "minimum_relative_difference_percent": -8.208441689986328,
+        "maximum_relative_difference_percent": -5.833177162277178,
+        "ordinary_median": 549.865853850001,
+        "stronger_median": 592.2594154077664,
+        "paired_realization_ordinary_better": 640,
+        "paired_realization_stronger_better": 0
+      }
+    }
+  },
+  {
+    "id": "D050",
+    "split": "development",
+    "sensing_half_width_vehicles": 25.0,
+    "arrival_residual_veh_h": 60.0,
+    "deadline_vehicles": 2850.0,
+    "weight": 2.0,
+    "ordinary_source": "nominal_mpc",
+    "stronger_source": "full_scenario_mpc",
+    "exact_same_commands": true,
+    "metrics": {
+      "priority_cost": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 3995.6128792948666,
+        "stronger_median": 3995.6128792948666,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "tts_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 2716.106707457254,
+        "stronger_median": 2716.106707457254,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "queue_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 253.21392365776688,
+        "stronger_median": 253.21392365776688,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      }
+    }
+  },
+  {
+    "id": "D051",
+    "split": "development",
+    "sensing_half_width_vehicles": 25.0,
+    "arrival_residual_veh_h": 60.0,
+    "deadline_vehicles": 2850.0,
+    "weight": 4.0,
+    "ordinary_source": "grid_repair",
+    "stronger_source": "full_scenario_repair",
+    "exact_same_commands": false,
+    "metrics": {
+      "priority_cost": {
+        "status": "ordinary_better",
+        "median_difference_ordinary_minus_stronger": -6.276720264947926,
+        "median_relative_difference_percent": -0.09987642551080958,
+        "minimum_relative_difference_percent": -0.10163328335350054,
+        "maximum_relative_difference_percent": -0.09818240925975703,
+        "ordinary_median": 6276.467749145684,
+        "stronger_median": 6282.734504501965,
+        "paired_realization_ordinary_better": 640,
+        "paired_realization_stronger_better": 0
+      },
+      "tts_veh_h": {
+        "status": "stronger_better",
+        "median_difference_ordinary_minus_stronger": 11.34794464956758,
+        "median_relative_difference_percent": 0.3563850877765727,
+        "minimum_relative_difference_percent": 0.35213444710534225,
+        "maximum_relative_difference_percent": 0.36068056576571506,
+        "ordinary_median": 3195.526086599589,
+        "stronger_median": 3184.1787994363076,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 640
+      },
+      "queue_veh_h": {
+        "status": "stronger_better",
+        "median_difference_ordinary_minus_stronger": 10.301538209164391,
+        "median_relative_difference_percent": 1.7393625573679907,
+        "minimum_relative_difference_percent": 1.7054854057412248,
+        "maximum_relative_difference_percent": 1.7721343422684097,
+        "ordinary_median": 602.5609536169303,
+        "stronger_median": 592.2594154077664,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 640
+      }
+    }
+  },
+  {
+    "id": "D052",
+    "split": "development",
+    "sensing_half_width_vehicles": 25.0,
+    "arrival_residual_veh_h": 60.0,
+    "deadline_vehicles": 2950.0,
+    "weight": 2.0,
+    "ordinary_source": "nominal_mpc",
+    "stronger_source": "full_scenario_mpc",
+    "exact_same_commands": true,
+    "metrics": {
+      "priority_cost": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 3995.6128792948666,
+        "stronger_median": 3995.6128792948666,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "tts_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 2716.106707457254,
+        "stronger_median": 2716.106707457254,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "queue_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 253.21392365776688,
+        "stronger_median": 253.21392365776688,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      }
+    }
+  },
+  {
+    "id": "D053",
+    "split": "development",
+    "sensing_half_width_vehicles": 25.0,
+    "arrival_residual_veh_h": 60.0,
+    "deadline_vehicles": 2950.0,
+    "weight": 4.0,
+    "ordinary_source": "grid_repair",
+    "stronger_source": "full_scenario_repair",
+    "exact_same_commands": false,
+    "metrics": {
+      "priority_cost": {
+        "status": "ordinary_better",
+        "median_difference_ordinary_minus_stronger": -6.252528368902404,
+        "median_relative_difference_percent": -0.09952011465598828,
+        "minimum_relative_difference_percent": -0.10125024880600995,
+        "maximum_relative_difference_percent": -0.09785041055757907,
+        "ordinary_median": 6274.710638026147,
+        "stronger_median": 6280.953397416236,
+        "paired_realization_ordinary_better": 640,
+        "paired_realization_stronger_better": 0
+      },
+      "tts_veh_h": {
+        "status": "stronger_better",
+        "median_difference_ordinary_minus_stronger": 11.600317210305548,
+        "median_relative_difference_percent": 0.3623351117593349,
+        "minimum_relative_difference_percent": 0.357949760747088,
+        "maximum_relative_difference_percent": 0.3667705154350162,
+        "ordinary_median": 3213.1392202373763,
+        "stronger_median": 3201.55490886163,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 640
+      },
+      "queue_veh_h": {
+        "status": "stronger_better",
+        "median_difference_ordinary_minus_stronger": 10.30147195785355,
+        "median_relative_difference_percent": 1.7393513731726045,
+        "minimum_relative_difference_percent": 1.7054634693879975,
+        "maximum_relative_difference_percent": 1.7721343422684097,
+        "ordinary_median": 602.5608873656195,
+        "stronger_median": 592.2594154077664,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 640
+      }
+    }
+  },
+  {
+    "id": "D054",
+    "split": "development",
+    "sensing_half_width_vehicles": 25.0,
+    "arrival_residual_veh_h": 150.0,
+    "deadline_vehicles": 2750.0,
+    "weight": 2.0,
+    "ordinary_source": "nominal_mpc",
+    "stronger_source": "full_scenario_mpc",
+    "exact_same_commands": true,
+    "metrics": {
+      "priority_cost": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 3996.276356017297,
+        "stronger_median": 3996.276356017297,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "tts_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 2716.3204200846667,
+        "stronger_median": 2716.3204200846667,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "queue_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 252.34398084862005,
+        "stronger_median": 252.34398084862005,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      }
+    }
+  },
+  {
+    "id": "D055",
+    "split": "development",
+    "sensing_half_width_vehicles": 25.0,
+    "arrival_residual_veh_h": 150.0,
+    "deadline_vehicles": 2750.0,
+    "weight": 4.0,
+    "ordinary_source": "grid_repair",
+    "stronger_source": "full_scenario_repair",
+    "exact_same_commands": false,
+    "metrics": {
+      "priority_cost": {
+        "status": "stronger_better",
+        "median_difference_ordinary_minus_stronger": 25.613950164913604,
+        "median_relative_difference_percent": 0.40739625512246336,
+        "minimum_relative_difference_percent": 0.3509395625851438,
+        "maximum_relative_difference_percent": 0.42270983910447185,
+        "ordinary_median": 6357.40643020248,
+        "stronger_median": 6332.313416851465,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 640
+      },
+      "tts_veh_h": {
+        "status": "ordinary_better",
+        "median_difference_ordinary_minus_stronger": -54.205384676342874,
+        "median_relative_difference_percent": -1.7600701228782305,
+        "minimum_relative_difference_percent": -1.827909668864941,
+        "maximum_relative_difference_percent": -1.4798448960952457,
+        "ordinary_median": 3029.1513820776236,
+        "stronger_median": 3081.7140565817263,
+        "paired_realization_ordinary_better": 640,
+        "paired_realization_stronger_better": 0
+      },
+      "queue_veh_h": {
+        "status": "ordinary_better",
+        "median_difference_ordinary_minus_stronger": -33.56821088584792,
+        "median_relative_difference_percent": -6.433530949302581,
+        "minimum_relative_difference_percent": -7.158927259677468,
+        "maximum_relative_difference_percent": -3.6715300723968554,
+        "ordinary_median": 491.44652786166864,
+        "stronger_median": 521.0742871438047,
+        "paired_realization_ordinary_better": 640,
+        "paired_realization_stronger_better": 0
+      }
+    }
+  },
+  {
+    "id": "D056",
+    "split": "development",
+    "sensing_half_width_vehicles": 25.0,
+    "arrival_residual_veh_h": 150.0,
+    "deadline_vehicles": 2850.0,
+    "weight": 2.0,
+    "ordinary_source": "nominal_mpc",
+    "stronger_source": "full_scenario_mpc",
+    "exact_same_commands": true,
+    "metrics": {
+      "priority_cost": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 3996.276356017297,
+        "stronger_median": 3996.276356017297,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "tts_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 2716.3204200846667,
+        "stronger_median": 2716.3204200846667,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "queue_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 252.34398084862005,
+        "stronger_median": 252.34398084862005,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      }
+    }
+  },
+  {
+    "id": "D057",
+    "split": "development",
+    "sensing_half_width_vehicles": 25.0,
+    "arrival_residual_veh_h": 150.0,
+    "deadline_vehicles": 2850.0,
+    "weight": 4.0,
+    "ordinary_source": "grid_repair",
+    "stronger_source": "full_scenario_repair",
+    "exact_same_commands": false,
+    "metrics": {
+      "priority_cost": {
+        "status": "stronger_better",
+        "median_difference_ordinary_minus_stronger": 5.142061527158148,
+        "median_relative_difference_percent": 0.08133822914194347,
+        "minimum_relative_difference_percent": 0.07813011662229818,
+        "maximum_relative_difference_percent": 0.08512751480417792,
+        "ordinary_median": 6316.606722386452,
+        "stronger_median": 6311.49621371941,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 640
+      },
+      "tts_veh_h": {
+        "status": "ordinary_better",
+        "median_difference_ordinary_minus_stronger": -21.794725917971164,
+        "median_relative_difference_percent": -0.6953563675291714,
+        "minimum_relative_difference_percent": -0.7102700202448259,
+        "maximum_relative_difference_percent": -0.6808640054537495,
+        "ordinary_median": 3112.7314360136006,
+        "stronger_median": 3134.52788708187,
+        "paired_realization_ordinary_better": 640,
+        "paired_realization_stronger_better": 0
+      },
+      "queue_veh_h": {
+        "status": "ordinary_better",
+        "median_difference_ordinary_minus_stronger": -5.076073419317652,
+        "median_relative_difference_percent": -0.9246870092951951,
+        "minimum_relative_difference_percent": -0.9719362945506491,
+        "maximum_relative_difference_percent": -0.8783468158481719,
+        "ordinary_median": 543.6769119941144,
+        "stronger_median": 548.7511416289201,
+        "paired_realization_ordinary_better": 640,
+        "paired_realization_stronger_better": 0
+      }
+    }
+  },
+  {
+    "id": "D058",
+    "split": "development",
+    "sensing_half_width_vehicles": 25.0,
+    "arrival_residual_veh_h": 150.0,
+    "deadline_vehicles": 2950.0,
+    "weight": 2.0,
+    "ordinary_source": "nominal_mpc",
+    "stronger_source": "full_scenario_mpc",
+    "exact_same_commands": true,
+    "metrics": {
+      "priority_cost": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 3996.276356017297,
+        "stronger_median": 3996.276356017297,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "tts_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 2716.3204200846667,
+        "stronger_median": 2716.3204200846667,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "queue_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 252.34398084862005,
+        "stronger_median": 252.34398084862005,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      }
+    }
+  },
+  {
+    "id": "D059",
+    "split": "development",
+    "sensing_half_width_vehicles": 25.0,
+    "arrival_residual_veh_h": 150.0,
+    "deadline_vehicles": 2950.0,
+    "weight": 4.0,
+    "ordinary_source": "grid_repair",
+    "stronger_source": "full_scenario_repair",
+    "exact_same_commands": false,
+    "metrics": {
+      "priority_cost": {
+        "status": "ordinary_better",
+        "median_difference_ordinary_minus_stronger": -14.370675075934287,
+        "median_relative_difference_percent": -0.22765922723926335,
+        "minimum_relative_difference_percent": -0.2311927034252238,
+        "maximum_relative_difference_percent": -0.2239658599565557,
+        "ordinary_median": 6295.391944465365,
+        "stronger_median": 6309.7445862562645,
+        "paired_realization_ordinary_better": 640,
+        "paired_realization_stronger_better": 0
+      },
+      "tts_veh_h": {
+        "status": "stronger_better",
+        "median_difference_ordinary_minus_stronger": 18.92146886790033,
+        "median_relative_difference_percent": 0.6006730442488034,
+        "minimum_relative_difference_percent": 0.5883128560946448,
+        "maximum_relative_difference_percent": 0.613817684963224,
+        "ordinary_median": 3168.7300836579607,
+        "stronger_median": 3149.8680064514037,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 640
+      },
+      "queue_veh_h": {
+        "status": "stronger_better",
+        "median_difference_ordinary_minus_stronger": 23.931297833332962,
+        "median_relative_difference_percent": 4.3610439201085685,
+        "minimum_relative_difference_percent": 4.142684232479761,
+        "maximum_relative_difference_percent": 4.581216326470258,
+        "ordinary_median": 572.6829943313614,
+        "stronger_median": 548.751696498028,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 640
+      }
+    }
+  },
+  {
+    "id": "D060",
+    "split": "development",
+    "sensing_half_width_vehicles": 25.0,
+    "arrival_residual_veh_h": 300.0,
+    "deadline_vehicles": 2750.0,
+    "weight": 2.0,
+    "ordinary_source": "nominal_mpc",
+    "stronger_source": "full_scenario_mpc",
+    "exact_same_commands": true,
+    "metrics": {
+      "priority_cost": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 3998.145572644569,
+        "stronger_median": 3998.145572644569,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "tts_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 2716.7631192679555,
+        "stronger_median": 2716.7631192679555,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "queue_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 250.55583777430917,
+        "stronger_median": 250.55583777430917,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      }
+    }
+  },
+  {
+    "id": "D061",
+    "split": "development",
+    "sensing_half_width_vehicles": 25.0,
+    "arrival_residual_veh_h": 300.0,
+    "deadline_vehicles": 2750.0,
+    "weight": 4.0,
+    "ordinary_source": "grid_repair",
+    "stronger_source": "full_scenario_repair",
+    "exact_same_commands": false,
+    "metrics": {
+      "priority_cost": {
+        "status": "stronger_better",
+        "median_difference_ordinary_minus_stronger": 279.225442532585,
+        "median_relative_difference_percent": 4.341381035172492,
+        "minimum_relative_difference_percent": 3.551119754298411,
+        "maximum_relative_difference_percent": 4.489709896362684,
+        "ordinary_median": 6708.764539012382,
+        "stronger_median": 6429.536550442938,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 640
+      },
+      "tts_veh_h": {
+        "status": "ordinary_better",
+        "median_difference_ordinary_minus_stronger": -278.656404266226,
+        "median_relative_difference_percent": -9.473138938682443,
+        "minimum_relative_difference_percent": -9.727146716528797,
+        "maximum_relative_difference_percent": -9.043093092051672,
+        "ordinary_median": 2658.8477907482456,
+        "stronger_median": 2939.609416020444,
+        "paired_realization_ordinary_better": 640,
+        "paired_realization_stronger_better": 0
+      },
+      "queue_veh_h": {
+        "status": "ordinary_better",
+        "median_difference_ordinary_minus_stronger": -300.17007618104924,
+        "median_relative_difference_percent": -76.28895815560611,
+        "minimum_relative_difference_percent": -78.13745419319505,
+        "maximum_relative_difference_percent": -66.57611667319841,
+        "ordinary_median": 89.33164957647844,
+        "stronger_median": 391.5091009826425,
+        "paired_realization_ordinary_better": 640,
+        "paired_realization_stronger_better": 0
+      }
+    }
+  },
+  {
+    "id": "D062",
+    "split": "development",
+    "sensing_half_width_vehicles": 25.0,
+    "arrival_residual_veh_h": 300.0,
+    "deadline_vehicles": 2850.0,
+    "weight": 2.0,
+    "ordinary_source": "nominal_mpc",
+    "stronger_source": "full_scenario_mpc",
+    "exact_same_commands": true,
+    "metrics": {
+      "priority_cost": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 3998.145572644569,
+        "stronger_median": 3998.145572644569,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "tts_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 2716.7631192679555,
+        "stronger_median": 2716.7631192679555,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "queue_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 250.55583777430917,
+        "stronger_median": 250.55583777430917,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      }
+    }
+  },
+  {
+    "id": "D063",
+    "split": "development",
+    "sensing_half_width_vehicles": 25.0,
+    "arrival_residual_veh_h": 300.0,
+    "deadline_vehicles": 2850.0,
+    "weight": 4.0,
+    "ordinary_source": "grid_repair",
+    "stronger_source": "full_scenario_repair",
+    "exact_same_commands": false,
+    "metrics": {
+      "priority_cost": {
+        "status": "ordinary_better",
+        "median_difference_ordinary_minus_stronger": -25.25114536742558,
+        "median_relative_difference_percent": -0.39373821208455884,
+        "minimum_relative_difference_percent": -0.4005140471172326,
+        "maximum_relative_difference_percent": -0.3860496651907056,
+        "ordinary_median": 6382.352427029285,
+        "stronger_median": 6407.608189208234,
+        "paired_realization_ordinary_better": 640,
+        "paired_realization_stronger_better": 0
+      },
+      "tts_veh_h": {
+        "status": "stronger_better",
+        "median_difference_ordinary_minus_stronger": 23.009501983557584,
+        "median_relative_difference_percent": 0.7723057252611082,
+        "minimum_relative_difference_percent": 0.7448263967512284,
+        "maximum_relative_difference_percent": 0.8027761344886345,
+        "ordinary_median": 3002.3244576785064,
+        "stronger_median": 2979.313677558383,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 640
+      },
+      "queue_veh_h": {
+        "status": "stronger_better",
+        "median_difference_ordinary_minus_stronger": 36.98728996844116,
+        "median_relative_difference_percent": 8.852116030242644,
+        "minimum_relative_difference_percent": 7.7769359024513856,
+        "maximum_relative_difference_percent": 10.10075403324637,
+        "ordinary_median": 454.87893833951273,
+        "stronger_median": 417.8837532144057,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 640
+      }
+    }
+  },
+  {
+    "id": "D064",
+    "split": "development",
+    "sensing_half_width_vehicles": 25.0,
+    "arrival_residual_veh_h": 300.0,
+    "deadline_vehicles": 2950.0,
+    "weight": 2.0,
+    "ordinary_source": "nominal_mpc",
+    "stronger_source": "full_scenario_mpc",
+    "exact_same_commands": true,
+    "metrics": {
+      "priority_cost": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 3998.145572644569,
+        "stronger_median": 3998.145572644569,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "tts_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 2716.7631192679555,
+        "stronger_median": 2716.7631192679555,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "queue_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 250.55583777430917,
+        "stronger_median": 250.55583777430917,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      }
+    }
+  },
+  {
+    "id": "D065",
+    "split": "development",
+    "sensing_half_width_vehicles": 25.0,
+    "arrival_residual_veh_h": 300.0,
+    "deadline_vehicles": 2950.0,
+    "weight": 4.0,
+    "ordinary_source": "grid_repair",
+    "stronger_source": "full_scenario_repair",
+    "exact_same_commands": false,
+    "metrics": {
+      "priority_cost": {
+        "status": "ordinary_better",
+        "median_difference_ordinary_minus_stronger": -25.140213523749026,
+        "median_relative_difference_percent": -0.3920970782199317,
+        "minimum_relative_difference_percent": -0.3988124746326828,
+        "maximum_relative_difference_percent": -0.38446362033313836,
+        "ordinary_median": 6381.139755483546,
+        "stronger_median": 6406.30362805601,
+        "paired_realization_ordinary_better": 640,
+        "paired_realization_stronger_better": 0
+      },
+      "tts_veh_h": {
+        "status": "stronger_better",
+        "median_difference_ordinary_minus_stronger": 23.094784067103774,
+        "median_relative_difference_percent": 0.7727572697394308,
+        "minimum_relative_difference_percent": 0.745500238789859,
+        "maximum_relative_difference_percent": 0.8031241224721707,
+        "ordinary_median": 3011.4781338233033,
+        "stronger_median": 2988.3823600208216,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 640
+      },
+      "queue_veh_h": {
+        "status": "stronger_better",
+        "median_difference_ordinary_minus_stronger": 36.989383731624145,
+        "median_relative_difference_percent": 8.852812631523758,
+        "minimum_relative_difference_percent": 7.778586823303389,
+        "maximum_relative_difference_percent": 10.10075403324637,
+        "ordinary_median": 454.87721803615386,
+        "stronger_median": 417.8758417326428,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 640
+      }
+    }
+  },
+  {
+    "id": "D066",
+    "split": "development",
+    "sensing_half_width_vehicles": 50.0,
+    "arrival_residual_veh_h": 60.0,
+    "deadline_vehicles": 2750.0,
+    "weight": 2.0,
+    "ordinary_source": "nominal_mpc",
+    "stronger_source": "full_scenario_mpc",
+    "exact_same_commands": true,
+    "metrics": {
+      "priority_cost": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 3995.6453051582293,
+        "stronger_median": 3995.6453051582293,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "tts_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 2716.2445736881705,
+        "stronger_median": 2716.2445736881705,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "queue_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 253.2719049534494,
+        "stronger_median": 253.2719049534494,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      }
+    }
+  },
+  {
+    "id": "D067",
+    "split": "development",
+    "sensing_half_width_vehicles": 50.0,
+    "arrival_residual_veh_h": 60.0,
+    "deadline_vehicles": 2750.0,
+    "weight": 4.0,
+    "ordinary_source": "grid_repair",
+    "stronger_source": "full_scenario_repair",
+    "exact_same_commands": false,
+    "metrics": {
+      "priority_cost": {
+        "status": "stronger_better",
+        "median_difference_ordinary_minus_stronger": 114.65197671721262,
+        "median_relative_difference_percent": 1.8190108277189954,
+        "minimum_relative_difference_percent": 1.726921422885661,
+        "maximum_relative_difference_percent": 1.924711783516788,
+        "ordinary_median": 6419.308530256231,
+        "stronger_median": 6303.436009496967,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 640
+      },
+      "tts_veh_h": {
+        "status": "ordinary_better",
+        "median_difference_ordinary_minus_stronger": -188.12311948888782,
+        "median_relative_difference_percent": -6.013368388324153,
+        "minimum_relative_difference_percent": -6.319429710928783,
+        "maximum_relative_difference_percent": -5.623760465459765,
+        "ordinary_median": 2934.86670466394,
+        "stronger_median": 3122.766464317733,
+        "paired_realization_ordinary_better": 640,
+        "paired_realization_stronger_better": 0
+      },
+      "queue_veh_h": {
+        "status": "ordinary_better",
+        "median_difference_ordinary_minus_stronger": -153.624022847971,
+        "median_relative_difference_percent": -27.206452252303116,
+        "minimum_relative_difference_percent": -29.73953309727447,
+        "maximum_relative_difference_percent": -23.96526514443901,
+        "ordinary_median": 410.5274420471569,
+        "stronger_median": 563.7454091512941,
+        "paired_realization_ordinary_better": 640,
+        "paired_realization_stronger_better": 0
+      }
+    }
+  },
+  {
+    "id": "D068",
+    "split": "development",
+    "sensing_half_width_vehicles": 50.0,
+    "arrival_residual_veh_h": 60.0,
+    "deadline_vehicles": 2850.0,
+    "weight": 2.0,
+    "ordinary_source": "nominal_mpc",
+    "stronger_source": "full_scenario_mpc",
+    "exact_same_commands": true,
+    "metrics": {
+      "priority_cost": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 3995.6453051582293,
+        "stronger_median": 3995.6453051582293,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "tts_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 2716.2445736881705,
+        "stronger_median": 2716.2445736881705,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "queue_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 253.2719049534494,
+        "stronger_median": 253.2719049534494,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      }
+    }
+  },
+  {
+    "id": "D069",
+    "split": "development",
+    "sensing_half_width_vehicles": 50.0,
+    "arrival_residual_veh_h": 60.0,
+    "deadline_vehicles": 2850.0,
+    "weight": 4.0,
+    "ordinary_source": "grid_repair",
+    "stronger_source": "full_scenario_repair",
+    "exact_same_commands": false,
+    "metrics": {
+      "priority_cost": {
+        "status": "ordinary_better",
+        "median_difference_ordinary_minus_stronger": -6.718341021493416,
+        "median_relative_difference_percent": -0.10681489544706961,
+        "minimum_relative_difference_percent": -0.11360529014363674,
+        "maximum_relative_difference_percent": -0.10140128505937275,
+        "ordinary_median": 6295.062140096804,
+        "stronger_median": 6301.7828570595875,
+        "paired_realization_ordinary_better": 640,
+        "paired_realization_stronger_better": 0
+      },
+      "tts_veh_h": {
+        "status": "stronger_better",
+        "median_difference_ordinary_minus_stronger": 15.023430216391034,
+        "median_relative_difference_percent": 0.47846625584830715,
+        "minimum_relative_difference_percent": 0.46884875814847127,
+        "maximum_relative_difference_percent": 0.48735520257043274,
+        "ordinary_median": 3153.2940159821164,
+        "stronger_median": 3138.282962885525,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 640
+      },
+      "queue_veh_h": {
+        "status": "stronger_better",
+        "median_difference_ordinary_minus_stronger": 10.018878095628622,
+        "median_relative_difference_percent": 1.781110934819953,
+        "minimum_relative_difference_percent": 1.7087476033168438,
+        "maximum_relative_difference_percent": 1.8454717680234045,
+        "ordinary_median": 573.7947683362686,
+        "stronger_median": 563.7459772655209,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 640
+      }
+    }
+  },
+  {
+    "id": "D070",
+    "split": "development",
+    "sensing_half_width_vehicles": 50.0,
+    "arrival_residual_veh_h": 60.0,
+    "deadline_vehicles": 2950.0,
+    "weight": 2.0,
+    "ordinary_source": "nominal_mpc",
+    "stronger_source": "full_scenario_mpc",
+    "exact_same_commands": true,
+    "metrics": {
+      "priority_cost": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 3995.6453051582293,
+        "stronger_median": 3995.6453051582293,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "tts_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 2716.2445736881705,
+        "stronger_median": 2716.2445736881705,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "queue_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 253.2719049534494,
+        "stronger_median": 253.2719049534494,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      }
+    }
+  },
+  {
+    "id": "D071",
+    "split": "development",
+    "sensing_half_width_vehicles": 50.0,
+    "arrival_residual_veh_h": 60.0,
+    "deadline_vehicles": 2950.0,
+    "weight": 4.0,
+    "ordinary_source": "grid_repair",
+    "stronger_source": "full_scenario_repair",
+    "exact_same_commands": false,
+    "metrics": {
+      "priority_cost": {
+        "status": "ordinary_better",
+        "median_difference_ordinary_minus_stronger": -6.736056002724581,
+        "median_relative_difference_percent": -0.10713488717055933,
+        "minimum_relative_difference_percent": -0.11380773788580877,
+        "maximum_relative_difference_percent": -0.10171785734733234,
+        "ordinary_median": 6293.397318094161,
+        "stronger_median": 6300.1334271750875,
+        "paired_realization_ordinary_better": 640,
+        "paired_realization_stronger_better": 0
+      },
+      "tts_veh_h": {
+        "status": "stronger_better",
+        "median_difference_ordinary_minus_stronger": 15.453167537996023,
+        "median_relative_difference_percent": 0.4896371723526278,
+        "minimum_relative_difference_percent": 0.4798772938521133,
+        "maximum_relative_difference_percent": 0.4988574452821267,
+        "ordinary_median": 3168.8475434068478,
+        "stronger_median": 3153.409205239086,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 640
+      },
+      "queue_veh_h": {
+        "status": "stronger_better",
+        "median_difference_ordinary_minus_stronger": 10.013331110784748,
+        "median_relative_difference_percent": 1.7799282888586225,
+        "minimum_relative_difference_percent": 1.7087476033168438,
+        "maximum_relative_difference_percent": 1.843476344793708,
+        "ordinary_median": 573.78685199152,
+        "stronger_median": 563.7448926922737,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 640
+      }
+    }
+  },
+  {
+    "id": "D072",
+    "split": "development",
+    "sensing_half_width_vehicles": 50.0,
+    "arrival_residual_veh_h": 150.0,
+    "deadline_vehicles": 2750.0,
+    "weight": 2.0,
+    "ordinary_source": "nominal_mpc",
+    "stronger_source": "full_scenario_mpc",
+    "exact_same_commands": true,
+    "metrics": {
+      "priority_cost": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 3996.12931924275,
+        "stronger_median": 3996.12931924275,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "tts_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 2716.3687957872526,
+        "stronger_median": 2716.3687957872526,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "queue_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 252.66645428014556,
+        "stronger_median": 252.66645428014556,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      }
+    }
+  },
+  {
+    "id": "D074",
+    "split": "development",
+    "sensing_half_width_vehicles": 50.0,
+    "arrival_residual_veh_h": 150.0,
+    "deadline_vehicles": 2850.0,
+    "weight": 2.0,
+    "ordinary_source": "nominal_mpc",
+    "stronger_source": "full_scenario_mpc",
+    "exact_same_commands": true,
+    "metrics": {
+      "priority_cost": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 3996.12931924275,
+        "stronger_median": 3996.12931924275,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "tts_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 2716.3687957872526,
+        "stronger_median": 2716.3687957872526,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "queue_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 252.66645428014556,
+        "stronger_median": 252.66645428014556,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      }
+    }
+  },
+  {
+    "id": "D076",
+    "split": "development",
+    "sensing_half_width_vehicles": 50.0,
+    "arrival_residual_veh_h": 150.0,
+    "deadline_vehicles": 2950.0,
+    "weight": 2.0,
+    "ordinary_source": "nominal_mpc",
+    "stronger_source": "full_scenario_mpc",
+    "exact_same_commands": true,
+    "metrics": {
+      "priority_cost": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 3996.12931924275,
+        "stronger_median": 3996.12931924275,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "tts_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 2716.3687957872526,
+        "stronger_median": 2716.3687957872526,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "queue_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 252.66645428014556,
+        "stronger_median": 252.66645428014556,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      }
+    }
+  },
+  {
+    "id": "D078",
+    "split": "development",
+    "sensing_half_width_vehicles": 50.0,
+    "arrival_residual_veh_h": 300.0,
+    "deadline_vehicles": 2750.0,
+    "weight": 2.0,
+    "ordinary_source": "nominal_mpc",
+    "stronger_source": "full_scenario_mpc",
+    "exact_same_commands": true,
+    "metrics": {
+      "priority_cost": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 3997.2850986322946,
+        "stronger_median": 3997.2850986322946,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "tts_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 2717.1673955532797,
+        "stronger_median": 2717.1673955532797,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "queue_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 251.19387255178182,
+        "stronger_median": 251.19387255178182,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      }
+    }
+  },
+  {
+    "id": "D080",
+    "split": "development",
+    "sensing_half_width_vehicles": 50.0,
+    "arrival_residual_veh_h": 300.0,
+    "deadline_vehicles": 2850.0,
+    "weight": 2.0,
+    "ordinary_source": "nominal_mpc",
+    "stronger_source": "full_scenario_mpc",
+    "exact_same_commands": true,
+    "metrics": {
+      "priority_cost": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 3997.2850986322946,
+        "stronger_median": 3997.2850986322946,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "tts_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 2717.1673955532797,
+        "stronger_median": 2717.1673955532797,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "queue_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 251.19387255178182,
+        "stronger_median": 251.19387255178182,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      }
+    }
+  },
+  {
+    "id": "D082",
+    "split": "development",
+    "sensing_half_width_vehicles": 50.0,
+    "arrival_residual_veh_h": 300.0,
+    "deadline_vehicles": 2950.0,
+    "weight": 2.0,
+    "ordinary_source": "nominal_mpc",
+    "stronger_source": "full_scenario_mpc",
+    "exact_same_commands": true,
+    "metrics": {
+      "priority_cost": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 3997.2850986322946,
+        "stronger_median": 3997.2850986322946,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "tts_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 2717.1673955532797,
+        "stronger_median": 2717.1673955532797,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      },
+      "queue_veh_h": {
+        "status": "tie",
+        "median_difference_ordinary_minus_stronger": 0.0,
+        "median_relative_difference_percent": 0.0,
+        "minimum_relative_difference_percent": 0.0,
+        "maximum_relative_difference_percent": 0.0,
+        "ordinary_median": 251.19387255178182,
+        "stronger_median": 251.19387255178182,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 0
+      }
+    }
+  },
+  {
+    "id": "D084",
+    "split": "held_out",
+    "sensing_half_width_vehicles": 5.0,
+    "arrival_residual_veh_h": 100.0,
+    "deadline_vehicles": 2800.0,
+    "weight": 3.0,
+    "ordinary_source": "grid_repair",
+    "stronger_source": "full_scenario_mpc",
+    "exact_same_commands": false,
+    "metrics": {
+      "priority_cost": {
+        "status": "stronger_better",
+        "median_difference_ordinary_minus_stronger": 3.137189958781164,
+        "median_relative_difference_percent": 0.06090891951365905,
+        "minimum_relative_difference_percent": 0.06038527211409976,
+        "maximum_relative_difference_percent": 0.0613595246953781,
+        "ordinary_median": 5153.7843588707765,
+        "stronger_median": 5150.644244883622,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 640
+      },
+      "tts_veh_h": {
+        "status": "ordinary_better",
+        "median_difference_ordinary_minus_stronger": -5.332195336997302,
+        "median_relative_difference_percent": -0.1851678066951984,
+        "minimum_relative_difference_percent": -0.18748816319387074,
+        "maximum_relative_difference_percent": -0.1830370182755917,
+        "ordinary_median": 2874.151816634051,
+        "stronger_median": 2879.4839947275127,
+        "paired_realization_ordinary_better": 640,
+        "paired_realization_stronger_better": 0
+      },
+      "queue_veh_h": {
+        "status": "ordinary_better",
+        "median_difference_ordinary_minus_stronger": -11.209611583334038,
+        "median_relative_difference_percent": -1.828212827150232,
+        "minimum_relative_difference_percent": -1.8808602792513056,
+        "maximum_relative_difference_percent": -1.7726355513473373,
+        "ordinary_median": 601.9362831215208,
+        "stronger_median": 613.1458947048548,
+        "paired_realization_ordinary_better": 640,
+        "paired_realization_stronger_better": 0
+      }
+    }
+  },
+  {
+    "id": "D085",
+    "split": "held_out",
+    "sensing_half_width_vehicles": 5.0,
+    "arrival_residual_veh_h": 100.0,
+    "deadline_vehicles": 2900.0,
+    "weight": 3.0,
+    "ordinary_source": "grid_repair",
+    "stronger_source": "full_scenario_mpc",
+    "exact_same_commands": false,
+    "metrics": {
+      "priority_cost": {
+        "status": "stronger_better",
+        "median_difference_ordinary_minus_stronger": 3.137189958781164,
+        "median_relative_difference_percent": 0.06090891951365905,
+        "minimum_relative_difference_percent": 0.06038527211409976,
+        "maximum_relative_difference_percent": 0.0613595246953781,
+        "ordinary_median": 5153.7843588707765,
+        "stronger_median": 5150.644244883622,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 640
+      },
+      "tts_veh_h": {
+        "status": "ordinary_better",
+        "median_difference_ordinary_minus_stronger": -5.332195336997302,
+        "median_relative_difference_percent": -0.1851678066951984,
+        "minimum_relative_difference_percent": -0.18748816319387074,
+        "maximum_relative_difference_percent": -0.1830370182755917,
+        "ordinary_median": 2874.151816634051,
+        "stronger_median": 2879.4839947275127,
+        "paired_realization_ordinary_better": 640,
+        "paired_realization_stronger_better": 0
+      },
+      "queue_veh_h": {
+        "status": "ordinary_better",
+        "median_difference_ordinary_minus_stronger": -11.209611583334038,
+        "median_relative_difference_percent": -1.828212827150232,
+        "minimum_relative_difference_percent": -1.8808602792513056,
+        "maximum_relative_difference_percent": -1.7726355513473373,
+        "ordinary_median": 601.9362831215208,
+        "stronger_median": 613.1458947048548,
+        "paired_realization_ordinary_better": 640,
+        "paired_realization_stronger_better": 0
+      }
+    }
+  },
+  {
+    "id": "D086",
+    "split": "held_out",
+    "sensing_half_width_vehicles": 5.0,
+    "arrival_residual_veh_h": 225.0,
+    "deadline_vehicles": 2800.0,
+    "weight": 3.0,
+    "ordinary_source": "grid_repair",
+    "stronger_source": "full_scenario_mpc",
+    "exact_same_commands": false,
+    "metrics": {
+      "priority_cost": {
+        "status": "stronger_better",
+        "median_difference_ordinary_minus_stronger": 5.3124621892611685,
+        "median_relative_difference_percent": 0.10299713756404863,
+        "minimum_relative_difference_percent": 0.10182730686448124,
+        "maximum_relative_difference_percent": 0.10393298818272617,
+        "ordinary_median": 5164.236039381387,
+        "stronger_median": 5158.91011599877,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 640
+      },
+      "tts_veh_h": {
+        "status": "ordinary_better",
+        "median_difference_ordinary_minus_stronger": -8.667525414223746,
+        "median_relative_difference_percent": -0.30203102585063935,
+        "minimum_relative_difference_percent": -0.3089205502174121,
+        "maximum_relative_difference_percent": -0.2959037827797263,
+        "ordinary_median": 2860.6514985789413,
+        "stronger_median": 2869.3183148237367,
+        "paired_realization_ordinary_better": 640,
+        "paired_realization_stronger_better": 0
+      },
+      "queue_veh_h": {
+        "status": "ordinary_better",
+        "median_difference_ordinary_minus_stronger": -18.3476069583333,
+        "median_relative_difference_percent": -3.109831735778513,
+        "minimum_relative_difference_percent": -3.3268604201236522,
+        "maximum_relative_difference_percent": -2.8979993978268346,
+        "ordinary_median": 571.6395392984732,
+        "stronger_median": 589.9871462568065,
+        "paired_realization_ordinary_better": 640,
+        "paired_realization_stronger_better": 0
+      }
+    }
+  },
+  {
+    "id": "D087",
+    "split": "held_out",
+    "sensing_half_width_vehicles": 5.0,
+    "arrival_residual_veh_h": 225.0,
+    "deadline_vehicles": 2900.0,
+    "weight": 3.0,
+    "ordinary_source": "grid_repair",
+    "stronger_source": "full_scenario_mpc",
+    "exact_same_commands": false,
+    "metrics": {
+      "priority_cost": {
+        "status": "stronger_better",
+        "median_difference_ordinary_minus_stronger": 5.3124621892611685,
+        "median_relative_difference_percent": 0.10299713756404863,
+        "minimum_relative_difference_percent": 0.10182730686448124,
+        "maximum_relative_difference_percent": 0.10393298818272617,
+        "ordinary_median": 5164.236039381387,
+        "stronger_median": 5158.91011599877,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 640
+      },
+      "tts_veh_h": {
+        "status": "ordinary_better",
+        "median_difference_ordinary_minus_stronger": -8.667525414223746,
+        "median_relative_difference_percent": -0.30203102585063935,
+        "minimum_relative_difference_percent": -0.3089205502174121,
+        "maximum_relative_difference_percent": -0.2959037827797263,
+        "ordinary_median": 2860.6514985789413,
+        "stronger_median": 2869.3183148237367,
+        "paired_realization_ordinary_better": 640,
+        "paired_realization_stronger_better": 0
+      },
+      "queue_veh_h": {
+        "status": "ordinary_better",
+        "median_difference_ordinary_minus_stronger": -18.3476069583333,
+        "median_relative_difference_percent": -3.109831735778513,
+        "minimum_relative_difference_percent": -3.3268604201236522,
+        "maximum_relative_difference_percent": -2.8979993978268346,
+        "ordinary_median": 571.6395392984732,
+        "stronger_median": 589.9871462568065,
+        "paired_realization_ordinary_better": 640,
+        "paired_realization_stronger_better": 0
+      }
+    }
+  },
+  {
+    "id": "D088",
+    "split": "held_out",
+    "sensing_half_width_vehicles": 20.0,
+    "arrival_residual_veh_h": 100.0,
+    "deadline_vehicles": 2800.0,
+    "weight": 3.0,
+    "ordinary_source": "grid_repair",
+    "stronger_source": "full_scenario_mpc",
+    "exact_same_commands": false,
+    "metrics": {
+      "priority_cost": {
+        "status": "stronger_better",
+        "median_difference_ordinary_minus_stronger": 3.1281625103270017,
+        "median_relative_difference_percent": 0.06073264806789244,
+        "minimum_relative_difference_percent": 0.0591228529754768,
+        "maximum_relative_difference_percent": 0.0623442178349941,
+        "ordinary_median": 5153.330094776594,
+        "stronger_median": 5150.204996232858,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 640
+      },
+      "tts_veh_h": {
+        "status": "ordinary_better",
+        "median_difference_ordinary_minus_stronger": -5.312569291437285,
+        "median_relative_difference_percent": -0.1845425721356747,
+        "minimum_relative_difference_percent": -0.1894677165714761,
+        "maximum_relative_difference_percent": -0.1796107895188355,
+        "ordinary_median": 2874.1634094982155,
+        "stronger_median": 2879.475118127868,
+        "paired_realization_ordinary_better": 640,
+        "paired_realization_stronger_better": 0
+      },
+      "queue_veh_h": {
+        "status": "ordinary_better",
+        "median_difference_ordinary_minus_stronger": -11.170537084496118,
+        "median_relative_difference_percent": -1.8204529279511468,
+        "minimum_relative_difference_percent": -1.8764861042087124,
+        "maximum_relative_difference_percent": -1.7638025572118297,
+        "ordinary_median": 602.2015997108733,
+        "stronger_median": 613.3616594431292,
+        "paired_realization_ordinary_better": 640,
+        "paired_realization_stronger_better": 0
+      }
+    }
+  },
+  {
+    "id": "D089",
+    "split": "held_out",
+    "sensing_half_width_vehicles": 20.0,
+    "arrival_residual_veh_h": 100.0,
+    "deadline_vehicles": 2900.0,
+    "weight": 3.0,
+    "ordinary_source": "grid_repair",
+    "stronger_source": "full_scenario_mpc",
+    "exact_same_commands": false,
+    "metrics": {
+      "priority_cost": {
+        "status": "stronger_better",
+        "median_difference_ordinary_minus_stronger": 3.1281625103270017,
+        "median_relative_difference_percent": 0.06073264806789244,
+        "minimum_relative_difference_percent": 0.0591228529754768,
+        "maximum_relative_difference_percent": 0.0623442178349941,
+        "ordinary_median": 5153.330094776594,
+        "stronger_median": 5150.204996232858,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 640
+      },
+      "tts_veh_h": {
+        "status": "ordinary_better",
+        "median_difference_ordinary_minus_stronger": -5.312569291437285,
+        "median_relative_difference_percent": -0.1845425721356747,
+        "minimum_relative_difference_percent": -0.1894677165714761,
+        "maximum_relative_difference_percent": -0.1796107895188355,
+        "ordinary_median": 2874.1634094982155,
+        "stronger_median": 2879.475118127868,
+        "paired_realization_ordinary_better": 640,
+        "paired_realization_stronger_better": 0
+      },
+      "queue_veh_h": {
+        "status": "ordinary_better",
+        "median_difference_ordinary_minus_stronger": -11.170537084496118,
+        "median_relative_difference_percent": -1.8204529279511468,
+        "minimum_relative_difference_percent": -1.8764861042087124,
+        "maximum_relative_difference_percent": -1.7638025572118297,
+        "ordinary_median": 602.2015997108733,
+        "stronger_median": 613.3616594431292,
+        "paired_realization_ordinary_better": 640,
+        "paired_realization_stronger_better": 0
+      }
+    }
+  },
+  {
+    "id": "D090",
+    "split": "held_out",
+    "sensing_half_width_vehicles": 20.0,
+    "arrival_residual_veh_h": 225.0,
+    "deadline_vehicles": 2800.0,
+    "weight": 3.0,
+    "ordinary_source": "grid_repair",
+    "stronger_source": "full_scenario_mpc",
+    "exact_same_commands": false,
+    "metrics": {
+      "priority_cost": {
+        "status": "stronger_better",
+        "median_difference_ordinary_minus_stronger": 5.309015852604716,
+        "median_relative_difference_percent": 0.10286419458231338,
+        "minimum_relative_difference_percent": 0.09984186373154223,
+        "maximum_relative_difference_percent": 0.10569006471118662,
+        "ordinary_median": 5162.864980584851,
+        "stronger_median": 5157.565725292172,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 640
+      },
+      "tts_veh_h": {
+        "status": "ordinary_better",
+        "median_difference_ordinary_minus_stronger": -8.645947939264943,
+        "median_relative_difference_percent": -0.30120692559959217,
+        "minimum_relative_difference_percent": -0.31259784330429013,
+        "maximum_relative_difference_percent": -0.2906150176958879,
+        "ordinary_median": 2860.6637454763677,
+        "stronger_median": 2869.3090064012245,
+        "paired_realization_ordinary_better": 640,
+        "paired_realization_stronger_better": 0
+      },
+      "queue_veh_h": {
+        "status": "ordinary_better",
+        "median_difference_ordinary_minus_stronger": -18.30822398046314,
+        "median_relative_difference_percent": -3.0998918585623594,
+        "minimum_relative_difference_percent": -3.3230244783268073,
+        "maximum_relative_difference_percent": -2.8866298606083562,
+        "ordinary_median": 571.7116565348169,
+        "stronger_median": 590.0010476312043,
+        "paired_realization_ordinary_better": 640,
+        "paired_realization_stronger_better": 0
+      }
+    }
+  },
+  {
+    "id": "D091",
+    "split": "held_out",
+    "sensing_half_width_vehicles": 20.0,
+    "arrival_residual_veh_h": 225.0,
+    "deadline_vehicles": 2900.0,
+    "weight": 3.0,
+    "ordinary_source": "grid_repair",
+    "stronger_source": "full_scenario_mpc",
+    "exact_same_commands": false,
+    "metrics": {
+      "priority_cost": {
+        "status": "stronger_better",
+        "median_difference_ordinary_minus_stronger": 5.309015852604716,
+        "median_relative_difference_percent": 0.10286419458231338,
+        "minimum_relative_difference_percent": 0.09984186373154223,
+        "maximum_relative_difference_percent": 0.10569006471118662,
+        "ordinary_median": 5162.864980584851,
+        "stronger_median": 5157.565725292172,
+        "paired_realization_ordinary_better": 0,
+        "paired_realization_stronger_better": 640
+      },
+      "tts_veh_h": {
+        "status": "ordinary_better",
+        "median_difference_ordinary_minus_stronger": -8.645947939264943,
+        "median_relative_difference_percent": -0.30120692559959217,
+        "minimum_relative_difference_percent": -0.31259784330429013,
+        "maximum_relative_difference_percent": -0.2906150176958879,
+        "ordinary_median": 2860.6637454763677,
+        "stronger_median": 2869.3090064012245,
+        "paired_realization_ordinary_better": 640,
+        "paired_realization_stronger_better": 0
+      },
+      "queue_veh_h": {
+        "status": "ordinary_better",
+        "median_difference_ordinary_minus_stronger": -18.30822398046314,
+        "median_relative_difference_percent": -3.0998918585623594,
+        "minimum_relative_difference_percent": -3.3230244783268073,
+        "maximum_relative_difference_percent": -2.8866298606083562,
+        "ordinary_median": 571.7116565348169,
+        "stronger_median": 590.0010476312043,
+        "paired_realization_ordinary_better": 640,
+        "paired_realization_stronger_better": 0
+      }
+    }
+  }
+]

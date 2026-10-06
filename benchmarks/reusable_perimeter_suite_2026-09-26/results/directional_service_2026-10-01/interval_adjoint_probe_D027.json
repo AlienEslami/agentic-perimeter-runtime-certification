@@ -1,0 +1,53 @@
+{
+  "id": "D027",
+  "original_sha256": "4000b6c555029359fc7296193aa1be22ac1423cc67305a5de448083122c097ed",
+  "whole_physical_corridor_verified": true,
+  "interval_adjoint_initial_lower": [
+    -694.5537688195878,
+    -730.553308082497,
+    -530.0153866414807,
+    -513.7828277533611,
+    -426.287494847152,
+    -513.7828351744483,
+    -804.5036221498038
+  ],
+  "interval_adjoint_initial_upper": [
+    695.5001715642628,
+    731.0052971105945,
+    529.2919248080995,
+    513.5458218118945,
+    426.28828497833524,
+    513.5458535565017,
+    804.8472301896232
+  ],
+  "first_block_arrival_kernel_lower": -1033.202402442484,
+  "first_block_arrival_kernel_upper": 1033.6448405351014,
+  "second_block_arrival_kernel_lower": -7.003754376938644e-27,
+  "second_block_arrival_kernel_upper": 7.003754376938644e-27,
+  "branch_step_counts": {
+    "mixed": 0,
+    "gate": 140,
+    "supply": 20
+  },
+  "max_adjoint_interval_width": 1609.350852339427,
+  "expected_initial_signs": [
+    1,
+    1,
+    -1,
+    -1,
+    0,
+    -1,
+    1
+  ],
+  "initial_signs_resolved": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+  ],
+  "elapsed_seconds": 10.475565099855885,
+  "new_certificate": false
+}

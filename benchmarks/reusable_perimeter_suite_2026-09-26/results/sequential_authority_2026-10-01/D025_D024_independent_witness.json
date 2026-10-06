@@ -1,0 +1,17 @@
+{
+  "pair": [
+    "D025",
+    "D024"
+  ],
+  "corner": "------+",
+  "profile": "constant_high",
+  "integration": "DOP853, rtol=1e-12, atol=1e-13, maximum step 5 s; 1 s dense grid",
+  "peak_queue_vehicles": 2005.5897434604049,
+  "queue_limit_vehicles": 2000.0,
+  "peak_time_minutes": 60.0,
+  "minimum_physical_margin_units": -0.05589743460404861,
+  "sampled_RK4_peak_queue_vehicles": 2005.590069974444,
+  "absolute_replay_difference_vehicles": 0.00032651403921590827,
+  "deadline_n1_vehicles": 2629.2311525694586,
+  "deadline_limit_vehicles": 2750.0
+}

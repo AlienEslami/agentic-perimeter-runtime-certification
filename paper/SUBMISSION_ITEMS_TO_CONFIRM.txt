@@ -1,0 +1,61 @@
+Submission facts to complete before upload
+Prepared 5 October 2026 for Transportation Research Part B: Methodological
+
+AUTHOR FACTS SUPPLIED
+1. Funding: the user confirmed that the study received no specific funding.
+2. Competing interests: the user confirmed that there are no competing interests.
+3. Author contributions: the user confirmed that Ali Eslami conducted the
+   research and writing, and Jiangbo Yu provided supervision and guidance.
+   These facts support the manuscript's CRediT contribution statement.
+
+REMAINING AUTHOR CHECKS
+4. Final approval: all authors must approve the revised manuscript and its
+   submission. Verify the existing names, affiliations and contact information.
+5. AI disclosure: confirm the complete history of tools used and their purposes,
+   and complete human review before using the final responsibility statement.
+   This revision uses OpenAI Codex for clarity, organization and notation review.
+   Confirm any earlier AI assistance with research code, analysis or figures;
+   describe research uses in Methods and explanatory-image uses in captions
+   where applicable. The live-agent experiments are a separate research use
+   already described in the supplement.
+
+DATA AND CODE AVAILABILITY
+6. The user authorized a private GitHub repository for a later public release
+   and requested a public-link placeholder in the manuscript. The repository was created as private:
+   https://github.com/AlienEslami/agentic-perimeter-runtime-certification.
+   Complete the manuscript's public-link placeholder when public access is
+   available. Before submission, verify the actual reader/reviewer access route,
+   release version and license. Public access has not yet been established.
+   The benchmark is a synthetic simulation study. Its scripts, parameters,
+   stored schedules, certificates, sampled trajectories and recorded agent
+   responses are in this workspace:
+   C:/Users/alien/Documents/Mathematical foundation/benchmarks/reusable_perimeter_suite_2026-09-26/
+   The sequential experiment is in:
+   C:/Users/alien/Documents/Mathematical foundation/benchmarks/reusable_perimeter_suite_2026-09-26/results/sequential_authority_2026-10-01/
+   PERIMETER_SUBMISSION_REVISION_2026-10-05_SOURCE.zip contains
+   manuscript LaTeX, bibliography, cross-reference inputs and figure assets;
+   it is a manuscript source package. The private repository additionally contains the benchmark code and
+   supporting results; its reproduction manifest records the included material
+   and any limitations on replaying earlier studies.
+
+UPLOAD PREPARATION
+7. Verify the current journal guide and submission-system file requirements.
+   The official guide was inaccessible during this check. Publisher-wide
+   guidance was checked, so journal-specific rules remain to be verified.
+   highlights.txt supplies five draft bullets, each within 85 characters
+   including spaces. Elsevier's general highlights guidance specifies a
+   separate Word document at the final-files stage; convert the draft if the
+   journal's submission system requests that format.
+8. Check any journal-required declarations form, contribution fields, cover
+   letter and reviewer suggestions using the authors' actual information.
+   Resolve manuscript declaration placeholders before submission.
+
+OFFICIAL GUIDANCE CONSULTED
+Publisher ethics (funding, interests, authorship, data access):
+https://www.elsevier.com/about/policies-and-standards/publishing-ethics
+AI disclosure and research/figure assistance:
+https://www.elsevier.com/about/policies-and-standards/generative-ai-policies-for-journals
+Highlights:
+https://www.elsevier.com/researcher/author/tools-and-resources/highlights
+Journal guide (access unsuccessful during this check):
+https://www.sciencedirect.com/journal/transportation-research-part-b-methodological/publish/guide-for-authors

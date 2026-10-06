@@ -1,0 +1,108 @@
+{
+  "selection_rule": "minimum nominal center-forecast task cost among independently certified same-contract tool plans",
+  "portfolio_sources": {
+    "original": 61,
+    "full_scenario": 13,
+    "reserve_refresh": 6
+  },
+  "against_ordinary": {
+    "contracts": 80,
+    "priority_cost": {
+      "portfolio_better": 17,
+      "fixed_tool_better": 0,
+      "ties": 63,
+      "median_relative_percent": 0.0,
+      "range_relative_percent": [
+        -4.160747147585726,
+        0.0
+      ]
+    },
+    "tts_veh_h": {
+      "portfolio_better": 0,
+      "fixed_tool_better": 17,
+      "ties": 63,
+      "median_relative_percent": 0.0,
+      "range_relative_percent": [
+        0.0,
+        10.464451000164562
+      ]
+    },
+    "queue_veh_h": {
+      "portfolio_better": 0,
+      "fixed_tool_better": 17,
+      "ties": 63,
+      "median_relative_percent": 0.0,
+      "range_relative_percent": [
+        0.0,
+        321.82213004256016
+      ]
+    }
+  },
+  "against_stronger": {
+    "contracts": 80,
+    "priority_cost": {
+      "portfolio_better": 25,
+      "fixed_tool_better": 0,
+      "ties": 55,
+      "median_relative_percent": 0.0,
+      "range_relative_percent": [
+        -0.4063390790441399,
+        0.0
+      ]
+    },
+    "tts_veh_h": {
+      "portfolio_better": 1,
+      "fixed_tool_better": 24,
+      "ties": 55,
+      "median_relative_percent": 0.0,
+      "range_relative_percent": [
+        -0.32621405208194554,
+        0.777131012496491
+      ]
+    },
+    "queue_veh_h": {
+      "portfolio_better": 0,
+      "fixed_tool_better": 25,
+      "ties": 55,
+      "median_relative_percent": 0.0,
+      "range_relative_percent": [
+        0.0,
+        8.914536151178085
+      ]
+    }
+  },
+  "held_out_against_stronger": {
+    "contracts": 8,
+    "priority_cost": {
+      "portfolio_better": 4,
+      "fixed_tool_better": 0,
+      "ties": 4,
+      "median_relative_percent": -0.0007864993121682584,
+      "range_relative_percent": [
+        -0.0016187171981184366,
+        0.0
+      ]
+    },
+    "tts_veh_h": {
+      "portfolio_better": 0,
+      "fixed_tool_better": 4,
+      "ties": 4,
+      "median_relative_percent": 0.0024066529273796527,
+      "range_relative_percent": [
+        0.0,
+        0.004825416251995833
+      ]
+    },
+    "queue_veh_h": {
+      "portfolio_better": 0,
+      "fixed_tool_better": 4,
+      "ties": 4,
+      "median_relative_percent": 0.02377605371382714,
+      "range_relative_percent": [
+        0.0,
+        0.0494349097840518
+      ]
+    }
+  },
+  "selection_uses_replay_outcomes": false
+}

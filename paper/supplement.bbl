@@ -1,0 +1,28 @@
+\begin{thebibliography}{1}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \def\href#1#2{#2} \def\path#1{#1}\fi
+
+\bibitem{ames2017}
+A.~D. Ames, X.~Xu, J.~W. Grizzle, P.~Tabuada, Control barrier function based
+  quadratic programs for safety critical systems, IEEE Transactions on
+  Automatic Control 62~(8) (2017) 3861--3876.
+\newblock \href {https://doi.org/10.1109/TAC.2016.2638961}
+  {\path{doi:10.1109/TAC.2016.2638961}}.
+
+\bibitem{qwen3technical}
+{Qwen Team}, {Qwen3 Technical Report}, arXiv preprint arXiv:2505.09388 (2025).
+\newblock \href {https://doi.org/10.48550/arXiv.2505.09388}
+  {\path{doi:10.48550/arXiv.2505.09388}}.
+
+\bibitem{zhong2018robust}
+R.~Zhong, C.~Chen, Y.~Huang, A.~Sumalee, W.~H.~K. Lam, D.~B. Xu, Robust
+  perimeter control for two urban regions with macroscopic fundamental
+  diagrams: A control-{L}yapunov function approach, Transportation Research
+  Part B: Methodological 117 (2018) 687--707.
+\newblock \href {https://doi.org/10.1016/j.trb.2017.09.008}
+  {\path{doi:10.1016/j.trb.2017.09.008}}.
+
+\end{thebibliography}

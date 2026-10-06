@@ -1,0 +1,49 @@
+{
+  "id": "D027",
+  "quotient_states": [
+    "n1",
+    "n2",
+    "n11",
+    "n22_plus_n20",
+    "queue"
+  ],
+  "initial_gradient_lower": [
+    -343.8755243911309,
+    -379.84738111186056,
+    -275.6142489781055,
+    -260.39991752497804,
+    -417.7836579606018
+  ],
+  "initial_gradient_upper": [
+    344.883705391239,
+    380.4180829473327,
+    274.8901249256791,
+    260.01776745547573,
+    418.17639178199335
+  ],
+  "expected_signs": [
+    1,
+    1,
+    -1,
+    -1,
+    1
+  ],
+  "initial_signs_resolved": [
+    false,
+    false,
+    false,
+    false,
+    false
+  ],
+  "first_arrival_kernel_lower": -536.5808279381996,
+  "first_arrival_kernel_upper": 537.086479563875,
+  "second_arrival_kernel_lower": -1.5650227805985687e-29,
+  "second_arrival_kernel_upper": 1.5650227805985687e-29,
+  "branch_counts": {
+    "gate": 140,
+    "supply": 20,
+    "both": 0
+  },
+  "elapsed_seconds": 10.189767200034112,
+  "full_service_certificate": false
+}

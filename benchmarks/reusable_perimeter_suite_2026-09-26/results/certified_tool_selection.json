@@ -1,0 +1,6979 @@
+{
+  "selection_rule": "minimum nominal center-forecast task cost among independently certified same-contract tool plans",
+  "contracts": 80,
+  "available": 80,
+  "rows": [
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 1.0,
+        "residual_veh_h": 60.0,
+        "deadline_vehicles": 2750.0,
+        "weight": 2.0,
+        "id": "D012"
+      },
+      "available": true,
+      "source": "original",
+      "policy": "nominal_mpc",
+      "nominal_priority_cost": 3995.4577324388842,
+      "proof_id": "ff67b9d94f2593f955a808a1dc999f38212ecff72e2031602049b26517231495",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.786357438,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          0.56816782,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 2702.5704483814793,
+          "median": 2716.1882461223445,
+          "maximum": 2729.531321269653
+        },
+        "queue_veh_h": {
+          "minimum": 242.74499947995994,
+          "median": 253.00163666489652,
+          "maximum": 264.4949994799593
+        },
+        "completed_trips": {
+          "minimum": 17938.533996988663,
+          "median": 17946.789135336112,
+          "maximum": 17951.738585316896
+        },
+        "priority_cost": {
+          "minimum": 3980.43159781108,
+          "median": 3996.0121242316873,
+          "maximum": 4010.4934503555787
+        },
+        "peak_queue_vehicles": {
+          "minimum": 666.7855572781059,
+          "median": 700.055969004201,
+          "maximum": 738.7855572781018
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 1639.7862268208012,
+          "median": 1640.2120614065027,
+          "maximum": 1640.5051076613156
+        },
+        "maximum_conservation_error_vehicles": 1.1641532182693481e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 4000.099377983728,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "nominal_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "scenario_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "full_scenario",
+          "policy": "full_scenario_mpc"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 1.0,
+        "residual_veh_h": 60.0,
+        "deadline_vehicles": 2750.0,
+        "weight": 4.0,
+        "id": "D013"
+      },
+      "available": true,
+      "source": "original",
+      "policy": "grid_repair",
+      "nominal_priority_cost": 6277.729466201527,
+      "proof_id": "8d928e61a980283ca857cfad370ee1104078dfb64ba564603825e3eb6de101e8",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.652190894,
+          1.0
+        ],
+        [
+          0.445902118,
+          1.0,
+          0.39705914,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 3163.817088934426,
+          "median": 3177.6890112482965,
+          "maximum": 3191.3612087320257
+        },
+        "queue_veh_h": {
+          "minimum": 592.0918878132918,
+          "median": 602.693554716564,
+          "maximum": 614.4226090967435
+        },
+        "completed_trips": {
+          "minimum": 16159.996254560678,
+          "median": 16167.931346991241,
+          "maximum": 16172.14331664467
+        },
+        "priority_cost": {
+          "minimum": 6260.403209081481,
+          "median": 6279.009490834824,
+          "maximum": 6294.947173344398
+        },
+        "peak_queue_vehicles": {
+          "minimum": 1864.546317278103,
+          "median": 1898.1942052380382,
+          "maximum": 1937.5130886009679
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 2629.3413324240723,
+          "median": 2630.7465502631676,
+          "maximum": 2631.838692792372
+        },
+        "maximum_conservation_error_vehicles": 1.0732037480920553e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 6706.360894124532,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 6277.729466201527,
+          "source": "original",
+          "policy": "grid_repair"
+        },
+        {
+          "nominal_priority_cost": 6283.540596614175,
+          "source": "full_scenario",
+          "policy": "full_scenario_repair"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 1.0,
+        "residual_veh_h": 60.0,
+        "deadline_vehicles": 2850.0,
+        "weight": 2.0,
+        "id": "D014"
+      },
+      "available": true,
+      "source": "original",
+      "policy": "nominal_mpc",
+      "nominal_priority_cost": 3995.4577324388842,
+      "proof_id": "0f1b666834e2c2fe0091948283c48ac264f2eadaa3b61f6640cc2d30f7017b56",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.786357438,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          0.56816782,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 2702.5704483814793,
+          "median": 2716.1882461223445,
+          "maximum": 2729.531321269653
+        },
+        "queue_veh_h": {
+          "minimum": 242.74499947995994,
+          "median": 253.00163666489652,
+          "maximum": 264.4949994799593
+        },
+        "completed_trips": {
+          "minimum": 17938.533996988663,
+          "median": 17946.789135336112,
+          "maximum": 17951.738585316896
+        },
+        "priority_cost": {
+          "minimum": 3980.43159781108,
+          "median": 3996.0121242316873,
+          "maximum": 4010.4934503555787
+        },
+        "peak_queue_vehicles": {
+          "minimum": 666.7855572781059,
+          "median": 700.055969004201,
+          "maximum": 738.7855572781018
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 1639.7862268208012,
+          "median": 1640.2120614065027,
+          "maximum": 1640.5051076613156
+        },
+        "maximum_conservation_error_vehicles": 1.1641532182693481e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 4000.099377983728,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "nominal_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "scenario_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "full_scenario",
+          "policy": "full_scenario_mpc"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 1.0,
+        "residual_veh_h": 60.0,
+        "deadline_vehicles": 2850.0,
+        "weight": 4.0,
+        "id": "D015"
+      },
+      "available": true,
+      "source": "original",
+      "policy": "grid_repair",
+      "nominal_priority_cost": 6275.9483019085155,
+      "proof_id": "f40cc24dbe88f809337c2ecdce05e2f88fef90fd91df41de46274b82f447fbc4",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.743049916,
+          1.0
+        ],
+        [
+          0.427426531,
+          1.0,
+          0.39705914,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 3181.785526228998,
+          "median": 3195.5060714332567,
+          "maximum": 3209.025940054608
+        },
+        "queue_veh_h": {
+          "minimum": 592.0918878132918,
+          "median": 602.3485249982299,
+          "maximum": 613.8418878132928
+        },
+        "completed_trips": {
+          "minimum": 16086.381367839978,
+          "median": 16094.69881803382,
+          "maximum": 16099.356933132041
+        },
+        "priority_cost": {
+          "minimum": 6258.632487169021,
+          "median": 6277.268006390402,
+          "maximum": 6293.274040514079
+        },
+        "peak_queue_vehicles": {
+          "minimum": 1864.546317278103,
+          "median": 1897.8167290042024,
+          "maximum": 1936.5463172781094
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 2715.6473166248384,
+          "median": 2717.1764350433805,
+          "maximum": 2718.4153642640963
+        },
+        "maximum_conservation_error_vehicles": 1.0913936421275139e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 6706.360894124532,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 6275.9483019085155,
+          "source": "original",
+          "policy": "grid_repair"
+        },
+        {
+          "nominal_priority_cost": 6281.704863353774,
+          "source": "full_scenario",
+          "policy": "full_scenario_repair"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 1.0,
+        "residual_veh_h": 60.0,
+        "deadline_vehicles": 2950.0,
+        "weight": 2.0,
+        "id": "D016"
+      },
+      "available": true,
+      "source": "original",
+      "policy": "nominal_mpc",
+      "nominal_priority_cost": 3995.4577324388842,
+      "proof_id": "292d58751c330df0804d9bd091a90fd7f2fb8ecc56de4c623eba40c5e10e03f6",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.786357438,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          0.56816782,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 2702.5704483814793,
+          "median": 2716.1882461223445,
+          "maximum": 2729.531321269653
+        },
+        "queue_veh_h": {
+          "minimum": 242.74499947995994,
+          "median": 253.00163666489652,
+          "maximum": 264.4949994799593
+        },
+        "completed_trips": {
+          "minimum": 17938.533996988663,
+          "median": 17946.789135336112,
+          "maximum": 17951.738585316896
+        },
+        "priority_cost": {
+          "minimum": 3980.43159781108,
+          "median": 3996.0121242316873,
+          "maximum": 4010.4934503555787
+        },
+        "peak_queue_vehicles": {
+          "minimum": 666.7855572781059,
+          "median": 700.055969004201,
+          "maximum": 738.7855572781018
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 1639.7862268208012,
+          "median": 1640.2120614065027,
+          "maximum": 1640.5051076613156
+        },
+        "maximum_conservation_error_vehicles": 1.1641532182693481e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 4000.099377983728,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "nominal_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "scenario_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "full_scenario",
+          "policy": "full_scenario_mpc"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 1.0,
+        "residual_veh_h": 60.0,
+        "deadline_vehicles": 2950.0,
+        "weight": 4.0,
+        "id": "D017"
+      },
+      "available": true,
+      "source": "original",
+      "policy": "grid_repair",
+      "nominal_priority_cost": 6274.18392335128,
+      "proof_id": "d965512d944f4ba31630d2f4c9047a2f032461673b4add87ae212f98e91d38ff",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.744214314,
+          1.0
+        ],
+        [
+          0.410072743,
+          1.0,
+          0.39705914,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 3199.369005653305,
+          "median": 3213.1058724391496,
+          "maximum": 3226.6407603700995
+        },
+        "queue_veh_h": {
+          "minimum": 592.0918878132918,
+          "median": 602.3485249982299,
+          "maximum": 613.8418878132928
+        },
+        "completed_trips": {
+          "minimum": 16013.17581085925,
+          "median": 16021.46802365878,
+          "maximum": 16026.119194232731
+        },
+        "priority_cost": {
+          "minimum": 6256.87768711016,
+          "median": 6275.498199205479,
+          "maximum": 6291.5000202509555
+        },
+        "peak_queue_vehicles": {
+          "minimum": 1864.546317278103,
+          "median": 1897.8167290042024,
+          "maximum": 1936.5463172781094
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 2801.8108805456086,
+          "median": 2803.4334476055055,
+          "maximum": 2804.753298272418
+        },
+        "maximum_conservation_error_vehicles": 1.0913936421275139e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 6706.360894124532,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 6274.18392335128,
+          "source": "original",
+          "policy": "grid_repair"
+        },
+        {
+          "nominal_priority_cost": 6279.8873684132095,
+          "source": "full_scenario",
+          "policy": "full_scenario_repair"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 1.0,
+        "residual_veh_h": 150.0,
+        "deadline_vehicles": 2750.0,
+        "weight": 2.0,
+        "id": "D018"
+      },
+      "available": true,
+      "source": "original",
+      "policy": "nominal_mpc",
+      "nominal_priority_cost": 3995.4577324388842,
+      "proof_id": "eb371ef653dc79d929f980408d9cdfbe5aeaedb8acb68c7566be2a53b1c66bea",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.786357438,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          0.56816782,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 2684.6565950342997,
+          "median": 2716.3864445541008,
+          "maximum": 2747.454580710001
+        },
+        "queue_veh_h": {
+          "minimum": 226.46322694653762,
+          "median": 252.07409244230195,
+          "maximum": 280.77677201338156
+        },
+        "completed_trips": {
+          "minimum": 17932.990360093874,
+          "median": 17951.081671098516,
+          "maximum": 17957.2777034199
+        },
+        "priority_cost": {
+          "minimum": 3961.3444275444367,
+          "median": 3996.9432841148573,
+          "maximum": 4029.598619891824
+        },
+        "peak_queue_vehicles": {
+          "minimum": 612.7956645720639,
+          "median": 695.9615865933465,
+          "maximum": 792.7754499841442
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 1639.5602665810845,
+          "median": 1640.3827295555514,
+          "maximum": 1640.7336780009996
+        },
+        "maximum_conservation_error_vehicles": 1.127773430198431e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 4000.099377983728,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "nominal_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "scenario_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "full_scenario",
+          "policy": "full_scenario_mpc"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 1.0,
+        "residual_veh_h": 150.0,
+        "deadline_vehicles": 2750.0,
+        "weight": 4.0,
+        "id": "D019"
+      },
+      "available": true,
+      "source": "full_scenario",
+      "policy": "full_scenario_repair",
+      "nominal_priority_cost": 6310.668156806419,
+      "proof_id": "0ac875e049ad0f8d68e789e390a6b5d18cfc24619ca17eefd4d107c49294a862",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.736437181,
+          1.0
+        ],
+        [
+          0.478853023,
+          1.0,
+          0.422965948,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 3091.081781861452,
+          "median": 3122.797087529825,
+          "maximum": 3153.976165745777
+        },
+        "queue_veh_h": {
+          "minimum": 522.9170489465366,
+          "median": 548.5279144423017,
+          "maximum": 577.2305940133807
+        },
+        "completed_trips": {
+          "minimum": 16386.696672197406,
+          "median": 16404.589211559338,
+          "maximum": 16410.519109141846
+        },
+        "priority_cost": {
+          "minimum": 6272.449845534256,
+          "median": 6314.103119140693,
+          "maximum": 6348.923177605769
+        },
+        "peak_queue_vehicles": {
+          "minimum": 1629.2087685720628,
+          "median": 1712.3746905933447,
+          "maximum": 1809.1885539841403
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 2520.905732837929,
+          "median": 2523.105483532943,
+          "maximum": 2524.350239125728
+        },
+        "maximum_conservation_error_vehicles": 1.0186340659856796e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 6706.360894124532,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 6316.0598691015775,
+          "source": "original",
+          "policy": "grid_repair"
+        },
+        {
+          "nominal_priority_cost": 6310.668156806419,
+          "source": "full_scenario",
+          "policy": "full_scenario_repair"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 1.0,
+        "residual_veh_h": 150.0,
+        "deadline_vehicles": 2850.0,
+        "weight": 2.0,
+        "id": "D020"
+      },
+      "available": true,
+      "source": "original",
+      "policy": "nominal_mpc",
+      "nominal_priority_cost": 3995.4577324388842,
+      "proof_id": "5c2d44156ac7535f7119be231262f94178a01fc356b7b93c4b64fdc984f73a75",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.786357438,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          0.56816782,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 2684.6565950342997,
+          "median": 2716.3864445541008,
+          "maximum": 2747.454580710001
+        },
+        "queue_veh_h": {
+          "minimum": 226.46322694653762,
+          "median": 252.07409244230195,
+          "maximum": 280.77677201338156
+        },
+        "completed_trips": {
+          "minimum": 17932.990360093874,
+          "median": 17951.081671098516,
+          "maximum": 17957.2777034199
+        },
+        "priority_cost": {
+          "minimum": 3961.3444275444367,
+          "median": 3996.9432841148573,
+          "maximum": 4029.598619891824
+        },
+        "peak_queue_vehicles": {
+          "minimum": 612.7956645720639,
+          "median": 695.9615865933465,
+          "maximum": 792.7754499841442
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 1639.5602665810845,
+          "median": 1640.3827295555514,
+          "maximum": 1640.7336780009996
+        },
+        "maximum_conservation_error_vehicles": 1.127773430198431e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 4000.099377983728,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "nominal_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "scenario_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "full_scenario",
+          "policy": "full_scenario_mpc"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 1.0,
+        "residual_veh_h": 150.0,
+        "deadline_vehicles": 2850.0,
+        "weight": 4.0,
+        "id": "D021"
+      },
+      "available": true,
+      "source": "original",
+      "policy": "grid_repair",
+      "nominal_priority_cost": 6294.945732943137,
+      "proof_id": "630ae1b5640b65bf600a05b461c09d15acee7fb17c9186cdb4149b706cb7e79d",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.739048114,
+          1.0
+        ],
+        [
+          0.457561976,
+          1.0,
+          0.411267379,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 3121.4633986253807,
+          "median": 3153.1860807036146,
+          "maximum": 3184.3680297162073
+        },
+        "queue_veh_h": {
+          "minimum": 546.8016273215363,
+          "median": 572.4124928173023,
+          "maximum": 601.1151723883816
+        },
+        "completed_trips": {
+          "minimum": 16259.694809010927,
+          "median": 16277.570262736273,
+          "maximum": 16283.47181024595
+        },
+        "priority_cost": {
+          "minimum": 6256.79566342356,
+          "median": 6298.3432234491465,
+          "maximum": 6333.131938596609
+        },
+        "peak_queue_vehicles": {
+          "minimum": 1711.0987515720574,
+          "median": 1794.2646735933479,
+          "maximum": 1891.0785369841417
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 2595.6498438842696,
+          "median": 2597.9587393544352,
+          "maximum": 2599.2923405873544
+        },
+        "maximum_conservation_error_vehicles": 1.0186340659856796e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 6706.360894124532,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 6294.945732943137,
+          "source": "original",
+          "policy": "grid_repair"
+        },
+        {
+          "nominal_priority_cost": 6308.874503951804,
+          "source": "full_scenario",
+          "policy": "full_scenario_repair"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 1.0,
+        "residual_veh_h": 150.0,
+        "deadline_vehicles": 2950.0,
+        "weight": 2.0,
+        "id": "D022"
+      },
+      "available": true,
+      "source": "original",
+      "policy": "nominal_mpc",
+      "nominal_priority_cost": 3995.4577324388842,
+      "proof_id": "39e3978c46c7832227d28191c59cefd45bd5de4111c4fa2fabaee7bbd4306cac",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.786357438,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          0.56816782,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 2684.6565950342997,
+          "median": 2716.3864445541008,
+          "maximum": 2747.454580710001
+        },
+        "queue_veh_h": {
+          "minimum": 226.46322694653762,
+          "median": 252.07409244230195,
+          "maximum": 280.77677201338156
+        },
+        "completed_trips": {
+          "minimum": 17932.990360093874,
+          "median": 17951.081671098516,
+          "maximum": 17957.2777034199
+        },
+        "priority_cost": {
+          "minimum": 3961.3444275444367,
+          "median": 3996.9432841148573,
+          "maximum": 4029.598619891824
+        },
+        "peak_queue_vehicles": {
+          "minimum": 612.7956645720639,
+          "median": 695.9615865933465,
+          "maximum": 792.7754499841442
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 1639.5602665810845,
+          "median": 1640.3827295555514,
+          "maximum": 1640.7336780009996
+        },
+        "maximum_conservation_error_vehicles": 1.127773430198431e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 4000.099377983728,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "nominal_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "scenario_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "full_scenario",
+          "policy": "full_scenario_mpc"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 1.0,
+        "residual_veh_h": 150.0,
+        "deadline_vehicles": 2950.0,
+        "weight": 4.0,
+        "id": "D023"
+      },
+      "available": true,
+      "source": "original",
+      "policy": "grid_repair",
+      "nominal_priority_cost": 6293.2789079065315,
+      "proof_id": "26a29be16eb37d8a6e00eecbcebfd81f2de9315ee76eb972a405f257eb902d26",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.740151228,
+          1.0
+        ],
+        [
+          0.441121546,
+          1.0,
+          0.411267379,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 3137.0036493370526,
+          "median": 3168.7440481398767,
+          "maximum": 3199.9393778199665
+        },
+        "queue_veh_h": {
+          "minimum": 546.8016273215363,
+          "median": 572.4124928173023,
+          "maximum": 601.1151723883816
+        },
+        "completed_trips": {
+          "minimum": 16196.574825071479,
+          "median": 16214.416010801622,
+          "maximum": 16220.286485092336
+        },
+        "priority_cost": {
+          "minimum": 6255.148639684631,
+          "median": 6296.6639498376135,
+          "maximum": 6331.445110804013
+        },
+        "peak_queue_vehicles": {
+          "minimum": 1711.0987515720574,
+          "median": 1794.2646735933479,
+          "maximum": 1891.0785369841417
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 2669.5750022457646,
+          "median": 2671.988453722819,
+          "maximum": 2673.4180964888374
+        },
+        "maximum_conservation_error_vehicles": 9.822542779147625e-11
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 6706.360894124532,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 6293.2789079065315,
+          "source": "original",
+          "policy": "grid_repair"
+        },
+        {
+          "nominal_priority_cost": 6307.091332115485,
+          "source": "full_scenario",
+          "policy": "full_scenario_repair"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 1.0,
+        "residual_veh_h": 300.0,
+        "deadline_vehicles": 2750.0,
+        "weight": 2.0,
+        "id": "D024"
+      },
+      "available": true,
+      "source": "original",
+      "policy": "nominal_mpc",
+      "nominal_priority_cost": 3995.4577324388842,
+      "proof_id": "bc81cc5b23f2460c4cc79e2bee0696e98de33496b5350859f0635f8d19e26678",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.786357438,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          0.56816782,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 2654.805906160757,
+          "median": 2716.70355394776,
+          "maximum": 2777.3325065731847
+        },
+        "queue_veh_h": {
+          "minimum": 199.32693939083447,
+          "median": 250.5281854046445,
+          "maximum": 307.91305956908343
+        },
+        "completed_trips": {
+          "minimum": 17923.74744836074,
+          "median": 17957.704351722714,
+          "maximum": 17966.505970114333
+        },
+        "priority_cost": {
+          "minimum": 3929.543708441986,
+          "median": 3998.6600303242803,
+          "maximum": 4061.4519971081604
+        },
+        "peak_queue_vehicles": {
+          "minimum": 522.8125100620005,
+          "median": 689.1376159085889,
+          "maximum": 882.7586044942042
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 1639.1851180830909,
+          "median": 1640.6688326250285,
+          "maximum": 1641.1161107319103
+        },
+        "maximum_conservation_error_vehicles": 1.1641532182693481e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 4000.099377983728,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "nominal_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "scenario_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "full_scenario",
+          "policy": "full_scenario_mpc"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 1.0,
+        "residual_veh_h": 300.0,
+        "deadline_vehicles": 2750.0,
+        "weight": 4.0,
+        "id": "D025"
+      },
+      "available": true,
+      "source": "original",
+      "policy": "grid_repair",
+      "nominal_priority_cost": 6399.293826780147,
+      "proof_id": "f8da606be38a4af26ab40799830012e23eb59c23ab59b94d0c408765f22c461a",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.656872404,
+          1.0
+        ],
+        [
+          0.620880397,
+          1.0,
+          0.482308573,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 2898.597489755743,
+          "median": 2962.519396908665,
+          "maximum": 3024.8013806456615
+        },
+        "queue_veh_h": {
+          "minimum": 374.622902015834,
+          "median": 429.7366559004851,
+          "maximum": 489.8851861329096
+        },
+        "completed_trips": {
+          "minimum": 17033.587407447987,
+          "median": 17060.79932920353,
+          "maximum": 17065.98367591173
+        },
+        "priority_cost": {
+          "minimum": 6325.6478079170565,
+          "median": 6405.802957777344,
+          "maximum": 6471.168555864563
+        },
+        "peak_queue_vehicles": {
+          "minimum": 1123.8272390619975,
+          "median": 1296.5761389592533,
+          "maximum": 1494.70328497445
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 2128.7182602221583,
+          "median": 2130.9304410893983,
+          "maximum": 2131.6725967481634
+        },
+        "maximum_conservation_error_vehicles": 1.0913936421275139e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 6706.360894124532,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 6399.293826780147,
+          "source": "original",
+          "policy": "grid_repair"
+        },
+        {
+          "nominal_priority_cost": 6402.580652079544,
+          "source": "full_scenario",
+          "policy": "full_scenario_repair"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 1.0,
+        "residual_veh_h": 300.0,
+        "deadline_vehicles": 2850.0,
+        "weight": 2.0,
+        "id": "D026"
+      },
+      "available": true,
+      "source": "original",
+      "policy": "nominal_mpc",
+      "nominal_priority_cost": 3995.4577324388842,
+      "proof_id": "d4aaaab67a616e0debfc452302f040c2b992c9fdea1035416d44944b9a84ea94",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.786357438,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          0.56816782,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 2654.805906160757,
+          "median": 2716.70355394776,
+          "maximum": 2777.3325065731847
+        },
+        "queue_veh_h": {
+          "minimum": 199.32693939083447,
+          "median": 250.5281854046445,
+          "maximum": 307.91305956908343
+        },
+        "completed_trips": {
+          "minimum": 17923.74744836074,
+          "median": 17957.704351722714,
+          "maximum": 17966.505970114333
+        },
+        "priority_cost": {
+          "minimum": 3929.543708441986,
+          "median": 3998.6600303242803,
+          "maximum": 4061.4519971081604
+        },
+        "peak_queue_vehicles": {
+          "minimum": 522.8125100620005,
+          "median": 689.1376159085889,
+          "maximum": 882.7586044942042
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 1639.1851180830909,
+          "median": 1640.6688326250285,
+          "maximum": 1641.1161107319103
+        },
+        "maximum_conservation_error_vehicles": 1.1641532182693481e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 4000.099377983728,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "nominal_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "scenario_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "full_scenario",
+          "policy": "full_scenario_mpc"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 1.0,
+        "residual_veh_h": 300.0,
+        "deadline_vehicles": 2850.0,
+        "weight": 4.0,
+        "id": "D027"
+      },
+      "available": true,
+      "source": "original",
+      "policy": "grid_repair",
+      "nominal_priority_cost": 6355.273759183389,
+      "proof_id": "ddf61654d89b4a95d59945c22efbd923a664c76bb91cf200a4f76a5b9edce930",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.727042708,
+          1.0
+        ],
+        [
+          0.547968314,
+          1.0,
+          0.453892095,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 2975.72272649794,
+          "median": 3037.442328896147,
+          "maximum": 3098.1186896649006
+        },
+        "queue_veh_h": {
+          "minimum": 432.639877932501,
+          "median": 483.8411239463111,
+          "maximum": 541.2259981107512
+        },
+        "completed_trips": {
+          "minimum": 16727.610417644115,
+          "median": 16760.99779856023,
+          "maximum": 16769.701071416544
+        },
+        "priority_cost": {
+          "minimum": 6282.006616483731,
+          "median": 6362.69739628994,
+          "maximum": 6428.660996831061
+        },
+        "peak_queue_vehicles": {
+          "minimum": 1322.7425850619961,
+          "median": 1489.067690908589,
+          "maximum": 1682.6886794942077
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 2306.3005650731343,
+          "median": 2309.525136226289,
+          "maximum": 2310.709215279158
+        },
+        "maximum_conservation_error_vehicles": 1.0913936421275139e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 6706.360894124532,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 6355.273759183389,
+          "source": "original",
+          "policy": "grid_repair"
+        },
+        {
+          "nominal_priority_cost": 6381.001700096559,
+          "source": "full_scenario",
+          "policy": "full_scenario_repair"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 1.0,
+        "residual_veh_h": 300.0,
+        "deadline_vehicles": 2950.0,
+        "weight": 2.0,
+        "id": "D028"
+      },
+      "available": true,
+      "source": "original",
+      "policy": "nominal_mpc",
+      "nominal_priority_cost": 3995.4577324388842,
+      "proof_id": "ce3dd5828586de5fb043c921c4cda96607eb04c7611e94357416e918afc021b3",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.786357438,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          0.56816782,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 2654.805906160757,
+          "median": 2716.70355394776,
+          "maximum": 2777.3325065731847
+        },
+        "queue_veh_h": {
+          "minimum": 199.32693939083447,
+          "median": 250.5281854046445,
+          "maximum": 307.91305956908343
+        },
+        "completed_trips": {
+          "minimum": 17923.74744836074,
+          "median": 17957.704351722714,
+          "maximum": 17966.505970114333
+        },
+        "priority_cost": {
+          "minimum": 3929.543708441986,
+          "median": 3998.6600303242803,
+          "maximum": 4061.4519971081604
+        },
+        "peak_queue_vehicles": {
+          "minimum": 522.8125100620005,
+          "median": 689.1376159085889,
+          "maximum": 882.7586044942042
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 1639.1851180830909,
+          "median": 1640.6688326250285,
+          "maximum": 1641.1161107319103
+        },
+        "maximum_conservation_error_vehicles": 1.1641532182693481e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 4000.099377983728,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "nominal_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "scenario_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "full_scenario",
+          "policy": "full_scenario_mpc"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 1.0,
+        "residual_veh_h": 300.0,
+        "deadline_vehicles": 2950.0,
+        "weight": 4.0,
+        "id": "D029"
+      },
+      "available": true,
+      "source": "original",
+      "policy": "grid_repair",
+      "nominal_priority_cost": 6353.981224609038,
+      "proof_id": "e940c530b2bb91f15d548be5ffb359139248fe015233fdb4841227288592a42b",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.727961969,
+          1.0
+        ],
+        [
+          0.534267955,
+          1.0,
+          0.453892095,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 2986.223261626543,
+          "median": 3047.960286150873,
+          "maximum": 3108.6439055257965
+        },
+        "queue_veh_h": {
+          "minimum": 432.639877932501,
+          "median": 483.8411239463111,
+          "maximum": 541.2259981107512
+        },
+        "completed_trips": {
+          "minimum": 16688.031214494058,
+          "median": 16721.34756479062,
+          "maximum": 16730.036466684447
+        },
+        "priority_cost": {
+          "minimum": 6280.746837689877,
+          "median": 6361.3842129232235,
+          "maximum": 6427.335147633633
+        },
+        "peak_queue_vehicles": {
+          "minimum": 1322.7425850619961,
+          "median": 1489.067690908589,
+          "maximum": 1682.6886794942077
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 2351.8173843071663,
+          "median": 2355.164940952267,
+          "maximum": 2356.4095328980334
+        },
+        "maximum_conservation_error_vehicles": 1.0913936421275139e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 6706.360894124532,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 6353.981224609038,
+          "source": "original",
+          "policy": "grid_repair"
+        },
+        {
+          "nominal_priority_cost": 6379.554919640111,
+          "source": "full_scenario",
+          "policy": "full_scenario_repair"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 10.0,
+        "residual_veh_h": 60.0,
+        "deadline_vehicles": 2750.0,
+        "weight": 2.0,
+        "id": "D030"
+      },
+      "available": true,
+      "source": "original",
+      "policy": "nominal_mpc",
+      "nominal_priority_cost": 3995.4577324388842,
+      "proof_id": "6b8395b8a50e4a5dde1b3a96d99dc8e96d38f2312e3db08763703799b7849058",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.786357438,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          0.56816782,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 2688.8403344392273,
+          "median": 2716.0919642380336,
+          "maximum": 2743.4274565767873
+        },
+        "queue_veh_h": {
+          "minimum": 242.5606346804903,
+          "median": 253.10959202742384,
+          "maximum": 264.67936427942897
+        },
+        "completed_trips": {
+          "minimum": 17912.35361560956,
+          "median": 17945.118634149512,
+          "maximum": 17977.90274344579
+        },
+        "priority_cost": {
+          "minimum": 3959.8604330041608,
+          "median": 3995.7542394433785,
+          "maximum": 4031.326800244586
+        },
+        "peak_queue_vehicles": {
+          "minimum": 666.724913514336,
+          "median": 700.0559690042007,
+          "maximum": 738.8462010418718
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 1637.9438249814098,
+          "median": 1640.2077020261058,
+          "maximum": 1642.4061351228086
+        },
+        "maximum_conservation_error_vehicles": 1.2005330063402653e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 4000.099377983728,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "nominal_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "scenario_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "full_scenario",
+          "policy": "full_scenario_mpc"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 10.0,
+        "residual_veh_h": 60.0,
+        "deadline_vehicles": 2750.0,
+        "weight": 4.0,
+        "id": "D031"
+      },
+      "available": true,
+      "source": "full_scenario",
+      "policy": "full_scenario_repair",
+      "nominal_priority_cost": 6283.720492319168,
+      "proof_id": "1aaf483805e264b3fa33769b543c9f0fd4f2dc31916f5df8ab5c6cf853739f44",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.7398865,
+          1.0
+        ],
+        [
+          0.449522156,
+          1.0,
+          0.402089626,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 3140.295190469355,
+          "median": 3169.299087682258,
+          "maximum": 3198.258880372086
+        },
+        "queue_veh_h": {
+          "minimum": 581.636947430491,
+          "median": 592.1859047774246,
+          "maximum": 603.7556770294309
+        },
+        "completed_trips": {
+          "minimum": 16169.20559693533,
+          "median": 16202.795703534026,
+          "maximum": 16234.693167769654
+        },
+        "priority_cost": {
+          "minimum": 6235.159739228014,
+          "median": 6284.5536956678625,
+          "maximum": 6332.631630288057
+        },
+        "peak_queue_vehicles": {
+          "minimum": 1829.2722715143395,
+          "median": 1862.6033270042028,
+          "maximum": 1901.3935590418846
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 2611.623807937291,
+          "median": 2621.0496587503226,
+          "maximum": 2630.605422314136
+        },
+        "maximum_conservation_error_vehicles": 1.2187229003757238e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 6706.360894124532,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 6296.619204669966,
+          "source": "original",
+          "policy": "grid_repair"
+        },
+        {
+          "nominal_priority_cost": 6283.720492319168,
+          "source": "full_scenario",
+          "policy": "full_scenario_repair"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 10.0,
+        "residual_veh_h": 60.0,
+        "deadline_vehicles": 2850.0,
+        "weight": 2.0,
+        "id": "D032"
+      },
+      "available": true,
+      "source": "original",
+      "policy": "nominal_mpc",
+      "nominal_priority_cost": 3995.4577324388842,
+      "proof_id": "a6aa61e51d9cf4d9564eb54b7cdaf68d5593fd591a3c1005528bbec1120bca8e",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.786357438,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          0.56816782,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 2688.8403344392273,
+          "median": 2716.0919642380336,
+          "maximum": 2743.4274565767873
+        },
+        "queue_veh_h": {
+          "minimum": 242.5606346804903,
+          "median": 253.10959202742384,
+          "maximum": 264.67936427942897
+        },
+        "completed_trips": {
+          "minimum": 17912.35361560956,
+          "median": 17945.118634149512,
+          "maximum": 17977.90274344579
+        },
+        "priority_cost": {
+          "minimum": 3959.8604330041608,
+          "median": 3995.7542394433785,
+          "maximum": 4031.326800244586
+        },
+        "peak_queue_vehicles": {
+          "minimum": 666.724913514336,
+          "median": 700.0559690042007,
+          "maximum": 738.8462010418718
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 1637.9438249814098,
+          "median": 1640.2077020261058,
+          "maximum": 1642.4061351228086
+        },
+        "maximum_conservation_error_vehicles": 1.2005330063402653e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 4000.099377983728,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "nominal_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "scenario_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "full_scenario",
+          "policy": "full_scenario_mpc"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 10.0,
+        "residual_veh_h": 60.0,
+        "deadline_vehicles": 2850.0,
+        "weight": 4.0,
+        "id": "D033"
+      },
+      "available": true,
+      "source": "original",
+      "policy": "grid_repair",
+      "nominal_priority_cost": 6275.9483019085155,
+      "proof_id": "7f5039eaeb89793542fe83e0cd878a786ef7451ad7c1c32c86a4b39c245734a2",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.743049916,
+          1.0
+        ],
+        [
+          0.427426531,
+          1.0,
+          0.39705914,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 3166.362606742264,
+          "median": 3195.4967056892892,
+          "maximum": 3224.642298582696
+        },
+        "queue_veh_h": {
+          "minimum": 591.9075230138222,
+          "median": 602.4564803607569,
+          "maximum": 614.0262526127622
+        },
+        "completed_trips": {
+          "minimum": 16060.159287770608,
+          "median": 16093.84973126187,
+          "maximum": 16125.570816359095
+        },
+        "priority_cost": {
+          "minimum": 6227.484537324431,
+          "median": 6276.787349576704,
+          "maximum": 6324.759802069338
+        },
+        "peak_queue_vehicles": {
+          "minimum": 1864.4856735143333,
+          "median": 1897.8167290042024,
+          "maximum": 1936.6069610418795
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 2706.8860132607897,
+          "median": 2717.0810931909464,
+          "maximum": 2727.4575708573952
+        },
+        "maximum_conservation_error_vehicles": 1.0550138540565968e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 6706.360894124532,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 6275.9483019085155,
+          "source": "original",
+          "policy": "grid_repair"
+        },
+        {
+          "nominal_priority_cost": 6281.896812925588,
+          "source": "full_scenario",
+          "policy": "full_scenario_repair"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 10.0,
+        "residual_veh_h": 60.0,
+        "deadline_vehicles": 2950.0,
+        "weight": 2.0,
+        "id": "D034"
+      },
+      "available": true,
+      "source": "original",
+      "policy": "nominal_mpc",
+      "nominal_priority_cost": 3995.4577324388842,
+      "proof_id": "79b4ce2cc7e009b918ec2fdb103378f2ec871274a70954ee817c814c3152a40e",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.786357438,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          0.56816782,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 2688.8403344392273,
+          "median": 2716.0919642380336,
+          "maximum": 2743.4274565767873
+        },
+        "queue_veh_h": {
+          "minimum": 242.5606346804903,
+          "median": 253.10959202742384,
+          "maximum": 264.67936427942897
+        },
+        "completed_trips": {
+          "minimum": 17912.35361560956,
+          "median": 17945.118634149512,
+          "maximum": 17977.90274344579
+        },
+        "priority_cost": {
+          "minimum": 3959.8604330041608,
+          "median": 3995.7542394433785,
+          "maximum": 4031.326800244586
+        },
+        "peak_queue_vehicles": {
+          "minimum": 666.724913514336,
+          "median": 700.0559690042007,
+          "maximum": 738.8462010418718
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 1637.9438249814098,
+          "median": 1640.2077020261058,
+          "maximum": 1642.4061351228086
+        },
+        "maximum_conservation_error_vehicles": 1.2005330063402653e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 4000.099377983728,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "nominal_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "scenario_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "full_scenario",
+          "policy": "full_scenario_mpc"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 10.0,
+        "residual_veh_h": 60.0,
+        "deadline_vehicles": 2950.0,
+        "weight": 4.0,
+        "id": "D035"
+      },
+      "available": true,
+      "source": "original",
+      "policy": "grid_repair",
+      "nominal_priority_cost": 6274.18392335128,
+      "proof_id": "1b8b2add676b97b52accec832d702b52cdf9222d70ae4322cb2e39307e6ab216",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.744214314,
+          1.0
+        ],
+        [
+          0.410072743,
+          1.0,
+          0.39705914,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 3183.8160464063903,
+          "median": 3213.1241465947796,
+          "maximum": 3242.3895285540543
+        },
+        "queue_veh_h": {
+          "minimum": 591.9075230138222,
+          "median": 602.4564803607569,
+          "maximum": 614.0262526127622
+        },
+        "completed_trips": {
+          "minimum": 15986.977032135303,
+          "median": 16020.575351446227,
+          "maximum": 16052.309721903015
+        },
+        "priority_cost": {
+          "minimum": 6225.753360561015,
+          "median": 6275.023425123196,
+          "maximum": 6322.961004978231
+        },
+        "peak_queue_vehicles": {
+          "minimum": 1864.4856735143333,
+          "median": 1897.8167290042024,
+          "maximum": 1936.6069610418795
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 2792.434668215338,
+          "median": 2803.3186711528365,
+          "maximum": 2814.428198919358
+        },
+        "maximum_conservation_error_vehicles": 1.1095835361629725e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 6706.360894124532,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 6274.18392335128,
+          "source": "original",
+          "policy": "grid_repair"
+        },
+        {
+          "nominal_priority_cost": 6280.089976974522,
+          "source": "full_scenario",
+          "policy": "full_scenario_repair"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 10.0,
+        "residual_veh_h": 150.0,
+        "deadline_vehicles": 2750.0,
+        "weight": 2.0,
+        "id": "D036"
+      },
+      "available": true,
+      "source": "original",
+      "policy": "nominal_mpc",
+      "nominal_priority_cost": 3995.4577324388842,
+      "proof_id": "262082ca3b27ccf2316ba52da118d8828e267ad82182ae7d19dd25f730becb05",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.786357438,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          0.56816782,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 2670.941309496072,
+          "median": 2716.4005345430905,
+          "maximum": 2761.3659268447773
+        },
+        "queue_veh_h": {
+          "minimum": 226.2788621470679,
+          "median": 252.07409244230192,
+          "maximum": 280.9611368128512
+        },
+        "completed_trips": {
+          "minimum": 17906.80650891221,
+          "median": 17945.745585462217,
+          "maximum": 17983.43827051713
+        },
+        "priority_cost": {
+          "minimum": 3940.80034519209,
+          "median": 3996.8071838942087,
+          "maximum": 4050.4598292050478
+        },
+        "peak_queue_vehicles": {
+          "minimum": 612.7350208082939,
+          "median": 695.9615865933465,
+          "maximum": 792.8360937479142
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 1637.7225830661039,
+          "median": 1640.2729757633692,
+          "maximum": 1642.639617758813
+        },
+        "maximum_conservation_error_vehicles": 1.1641532182693481e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 4000.099377983728,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "nominal_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "scenario_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "full_scenario",
+          "policy": "full_scenario_mpc"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 10.0,
+        "residual_veh_h": 150.0,
+        "deadline_vehicles": 2750.0,
+        "weight": 4.0,
+        "id": "D037"
+      },
+      "available": true,
+      "source": "full_scenario",
+      "policy": "full_scenario_repair",
+      "nominal_priority_cost": 6310.84397518984,
+      "proof_id": "cc79bd076c9d5c6c69905d1a244c88427a83ccf6371c25cd6cd67fb49a704a39",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.738999001,
+          1.0
+        ],
+        [
+          0.48053956,
+          1.0,
+          0.422974529,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 3074.4545421047333,
+          "median": 3121.3240011189246,
+          "maximum": 3167.825265020424
+        },
+        "queue_veh_h": {
+          "minimum": 522.7151646054009,
+          "median": 548.5103949006352,
+          "maximum": 577.3974392711848
+        },
+        "completed_trips": {
+          "minimum": 16366.36779605039,
+          "median": 16406.69534330772,
+          "maximum": 16442.696022238495
+        },
+        "priority_cost": {
+          "minimum": 6241.206797884694,
+          "median": 6313.693357354479,
+          "maximum": 6380.941615300138
+        },
+        "peak_queue_vehicles": {
+          "minimum": 1629.0880578082902,
+          "median": 1712.3146235933466,
+          "maximum": 1809.1891307479152
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 2506.7665960811914,
+          "median": 2516.1104321100347,
+          "maximum": 2525.040258253503
+        },
+        "maximum_conservation_error_vehicles": 1.0550138540565968e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 6706.360894124532,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 6316.0598691015775,
+          "source": "original",
+          "policy": "grid_repair"
+        },
+        {
+          "nominal_priority_cost": 6310.84397518984,
+          "source": "full_scenario",
+          "policy": "full_scenario_repair"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 10.0,
+        "residual_veh_h": 150.0,
+        "deadline_vehicles": 2850.0,
+        "weight": 2.0,
+        "id": "D038"
+      },
+      "available": true,
+      "source": "original",
+      "policy": "nominal_mpc",
+      "nominal_priority_cost": 3995.4577324388842,
+      "proof_id": "5481c7db56af712ed5f74d6350c7eecdd6e496100c2d247348f8eba79ca2d11e",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.786357438,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          0.56816782,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 2670.941309496072,
+          "median": 2716.4005345430905,
+          "maximum": 2761.3659268447773
+        },
+        "queue_veh_h": {
+          "minimum": 226.2788621470679,
+          "median": 252.07409244230192,
+          "maximum": 280.9611368128512
+        },
+        "completed_trips": {
+          "minimum": 17906.80650891221,
+          "median": 17945.745585462217,
+          "maximum": 17983.43827051713
+        },
+        "priority_cost": {
+          "minimum": 3940.80034519209,
+          "median": 3996.8071838942087,
+          "maximum": 4050.4598292050478
+        },
+        "peak_queue_vehicles": {
+          "minimum": 612.7350208082939,
+          "median": 695.9615865933465,
+          "maximum": 792.8360937479142
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 1637.7225830661039,
+          "median": 1640.2729757633692,
+          "maximum": 1642.639617758813
+        },
+        "maximum_conservation_error_vehicles": 1.1641532182693481e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 4000.099377983728,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "nominal_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "scenario_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "full_scenario",
+          "policy": "full_scenario_mpc"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 10.0,
+        "residual_veh_h": 150.0,
+        "deadline_vehicles": 2850.0,
+        "weight": 4.0,
+        "id": "D039"
+      },
+      "available": true,
+      "source": "original",
+      "policy": "grid_repair",
+      "nominal_priority_cost": 6294.945732943137,
+      "proof_id": "b7763d693f2511a138457d9c4ec8021bb9cb53cfaa2694595fe727226fccb8a7",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.739048114,
+          1.0
+        ],
+        [
+          0.457561976,
+          1.0,
+          0.411267379,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 3106.218081050398,
+          "median": 3153.14904589868,
+          "maximum": 3199.830968775841
+        },
+        "queue_veh_h": {
+          "minimum": 546.6172625220669,
+          "median": 572.412492817302,
+          "maximum": 601.299537187851
+        },
+        "completed_trips": {
+          "minimum": 16233.45009477945,
+          "median": 16273.842415084944,
+          "maximum": 16309.703966575667
+        },
+        "priority_cost": {
+          "minimum": 6225.519686176263,
+          "median": 6297.791973944615,
+          "maximum": 6364.826237533767
+        },
+        "peak_queue_vehicles": {
+          "minimum": 1711.0381078082874,
+          "median": 1794.2646735933477,
+          "maximum": 1891.1391807479117
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 2587.764998137827,
+          "median": 2597.845993549057,
+          "maximum": 2607.4601032299524
+        },
+        "maximum_conservation_error_vehicles": 9.276845958083868e-11
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 6706.360894124532,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 6294.945732943137,
+          "source": "original",
+          "policy": "grid_repair"
+        },
+        {
+          "nominal_priority_cost": 6309.062667606424,
+          "source": "full_scenario",
+          "policy": "full_scenario_repair"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 10.0,
+        "residual_veh_h": 150.0,
+        "deadline_vehicles": 2950.0,
+        "weight": 2.0,
+        "id": "D040"
+      },
+      "available": true,
+      "source": "original",
+      "policy": "nominal_mpc",
+      "nominal_priority_cost": 3995.4577324388842,
+      "proof_id": "e5409f0c20dfe8c239df96137398ba6bb52ca6e14385ee70304db1f6097bd86d",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.786357438,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          0.56816782,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 2670.941309496072,
+          "median": 2716.4005345430905,
+          "maximum": 2761.3659268447773
+        },
+        "queue_veh_h": {
+          "minimum": 226.2788621470679,
+          "median": 252.07409244230192,
+          "maximum": 280.9611368128512
+        },
+        "completed_trips": {
+          "minimum": 17906.80650891221,
+          "median": 17945.745585462217,
+          "maximum": 17983.43827051713
+        },
+        "priority_cost": {
+          "minimum": 3940.80034519209,
+          "median": 3996.8071838942087,
+          "maximum": 4050.4598292050478
+        },
+        "peak_queue_vehicles": {
+          "minimum": 612.7350208082939,
+          "median": 695.9615865933465,
+          "maximum": 792.8360937479142
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 1637.7225830661039,
+          "median": 1640.2729757633692,
+          "maximum": 1642.639617758813
+        },
+        "maximum_conservation_error_vehicles": 1.1641532182693481e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 4000.099377983728,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "nominal_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "scenario_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "full_scenario",
+          "policy": "full_scenario_mpc"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 10.0,
+        "residual_veh_h": 150.0,
+        "deadline_vehicles": 2950.0,
+        "weight": 4.0,
+        "id": "D041"
+      },
+      "available": true,
+      "source": "original",
+      "policy": "grid_repair",
+      "nominal_priority_cost": 6293.2789079065315,
+      "proof_id": "78fe951f96d472b63b0d0b7c40a6b8cec20fae72802ebf84ae6b834495190df9",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.740151228,
+          1.0
+        ],
+        [
+          0.441121546,
+          1.0,
+          0.411267379,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 3121.6421893898278,
+          "median": 3168.697323973427,
+          "maximum": 3215.5207007317304
+        },
+        "queue_veh_h": {
+          "minimum": 546.6172625220669,
+          "median": 572.412492817302,
+          "maximum": 601.299537187851
+        },
+        "completed_trips": {
+          "minimum": 16170.349803525982,
+          "median": 16210.780660922144,
+          "maximum": 16246.498886911637
+        },
+        "priority_cost": {
+          "minimum": 6223.898856291273,
+          "median": 6296.101297227093,
+          "maximum": 6363.111453370337
+        },
+        "peak_queue_vehicles": {
+          "minimum": 1711.0381078082874,
+          "median": 1794.2646735933477,
+          "maximum": 1891.1391807479117
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 2661.161979156334,
+          "median": 2671.86222796024,
+          "maximum": 2682.1311408403053
+        },
+        "maximum_conservation_error_vehicles": 9.822542779147625e-11
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 6706.360894124532,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 6293.2789079065315,
+          "source": "original",
+          "policy": "grid_repair"
+        },
+        {
+          "nominal_priority_cost": 6307.290942632691,
+          "source": "full_scenario",
+          "policy": "full_scenario_repair"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 10.0,
+        "residual_veh_h": 300.0,
+        "deadline_vehicles": 2750.0,
+        "weight": 2.0,
+        "id": "D042"
+      },
+      "available": true,
+      "source": "original",
+      "policy": "nominal_mpc",
+      "nominal_priority_cost": 3995.4577324388842,
+      "proof_id": "9766c25b7012399769cd0af29bf36e6ce65a7766f3b23cc185f3239d782c0ec3",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.786357438,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          0.56816782,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 2641.115241411519,
+          "median": 2716.7543077016094,
+          "maximum": 2791.2693018958594
+        },
+        "queue_veh_h": {
+          "minimum": 199.14257459136468,
+          "median": 250.52818540464455,
+          "maximum": 308.09742436855316
+        },
+        "completed_trips": {
+          "minimum": 17897.55785946058,
+          "median": 17953.744600286293,
+          "maximum": 17992.66050429977
+        },
+        "priority_cost": {
+          "minimum": 3909.0445671603516,
+          "median": 3998.219280093723,
+          "maximum": 4082.35984548456
+        },
+        "peak_queue_vehicles": {
+          "minimum": 522.7518662982305,
+          "median": 689.1376159085889,
+          "maximum": 882.8192482579741
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 1637.3552621480017,
+          "median": 1640.452793294383,
+          "maximum": 1643.030275888113
+        },
+        "maximum_conservation_error_vehicles": 1.0550138540565968e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 4000.099377983728,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "nominal_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "scenario_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "full_scenario",
+          "policy": "full_scenario_mpc"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 10.0,
+        "residual_veh_h": 300.0,
+        "deadline_vehicles": 2750.0,
+        "weight": 4.0,
+        "id": "D043"
+      },
+      "available": true,
+      "source": "full_scenario",
+      "policy": "full_scenario_repair",
+      "nominal_priority_cost": 6402.7118912828455,
+      "proof_id": "ac01e0e78f1628a788ca287dc25ab88d2bef3639a0528add2458fd8237bbecba",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.711181179,
+          1.0
+        ],
+        [
+          0.598646964,
+          1.0,
+          0.486204042,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 2894.938476338746,
+          "median": 2971.4334675493483,
+          "maximum": 3046.9524539409954
+        },
+        "queue_veh_h": {
+          "minimum": 366.48528800803064,
+          "median": 417.870898821311,
+          "maximum": 475.4401377852208
+        },
+        "completed_trips": {
+          "minimum": 16971.816916348896,
+          "median": 17026.90095044858,
+          "maximum": 17066.518233783278
+        },
+        "priority_cost": {
+          "minimum": 6296.890568676653,
+          "median": 6409.5703321173405,
+          "maximum": 6509.256695475745
+        },
+        "peak_queue_vehicles": {
+          "minimum": 1096.4983122982278,
+          "median": 1262.884061908589,
+          "maximum": 1456.5656942579815
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 2187.134428467392,
+          "median": 2194.5604854483245,
+          "maximum": 2201.2258819808712
+        },
+        "maximum_conservation_error_vehicles": 1.1641532182693481e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 6706.360894124532,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 6467.770635797178,
+          "source": "original",
+          "policy": "grid_repair"
+        },
+        {
+          "nominal_priority_cost": 6402.7118912828455,
+          "source": "full_scenario",
+          "policy": "full_scenario_repair"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 10.0,
+        "residual_veh_h": 300.0,
+        "deadline_vehicles": 2850.0,
+        "weight": 2.0,
+        "id": "D044"
+      },
+      "available": true,
+      "source": "original",
+      "policy": "nominal_mpc",
+      "nominal_priority_cost": 3995.4577324388842,
+      "proof_id": "6637ca807477144c97f8d1e67db56935816c6b50356cfe7953d07ed420879310",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.786357438,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          0.56816782,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 2641.115241411519,
+          "median": 2716.7543077016094,
+          "maximum": 2791.2693018958594
+        },
+        "queue_veh_h": {
+          "minimum": 199.14257459136468,
+          "median": 250.52818540464455,
+          "maximum": 308.09742436855316
+        },
+        "completed_trips": {
+          "minimum": 17897.55785946058,
+          "median": 17953.744600286293,
+          "maximum": 17992.66050429977
+        },
+        "priority_cost": {
+          "minimum": 3909.0445671603516,
+          "median": 3998.219280093723,
+          "maximum": 4082.35984548456
+        },
+        "peak_queue_vehicles": {
+          "minimum": 522.7518662982305,
+          "median": 689.1376159085889,
+          "maximum": 882.8192482579741
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 1637.3552621480017,
+          "median": 1640.452793294383,
+          "maximum": 1643.030275888113
+        },
+        "maximum_conservation_error_vehicles": 1.0550138540565968e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 4000.099377983728,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "nominal_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "scenario_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "full_scenario",
+          "policy": "full_scenario_mpc"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 10.0,
+        "residual_veh_h": 300.0,
+        "deadline_vehicles": 2850.0,
+        "weight": 4.0,
+        "id": "D045"
+      },
+      "available": true,
+      "source": "original",
+      "policy": "grid_repair",
+      "nominal_priority_cost": 6355.273759183389,
+      "proof_id": "cfa4f015e0e1f2640388490a9b62bf65ccd640968951251f85cf011f112490ed",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.727042708,
+          1.0
+        ],
+        [
+          0.547968314,
+          1.0,
+          0.453892095,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 2960.916279767766,
+          "median": 3037.5135804860197,
+          "maximum": 3113.1813094953327
+        },
+        "queue_veh_h": {
+          "minimum": 432.4555131330315,
+          "median": 483.84112394631137,
+          "maximum": 541.4103629102208
+        },
+        "completed_trips": {
+          "minimum": 16701.328376483933,
+          "median": 16756.67626507122,
+          "maximum": 16795.961792885235
+        },
+        "priority_cost": {
+          "minimum": 6250.239779097176,
+          "median": 6361.918549630275,
+          "maximum": 6461.002832959339
+        },
+        "peak_queue_vehicles": {
+          "minimum": 1322.6819412982263,
+          "median": 1489.0676909085892,
+          "maximum": 1682.7493232579777
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 2300.5201531384255,
+          "median": 2309.0152701004795,
+          "maximum": 2316.7403251884584
+        },
+        "maximum_conservation_error_vehicles": 1.0913936421275139e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 6706.360894124532,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 6355.273759183389,
+          "source": "original",
+          "policy": "grid_repair"
+        },
+        {
+          "nominal_priority_cost": 6381.155952483304,
+          "source": "full_scenario",
+          "policy": "full_scenario_repair"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 10.0,
+        "residual_veh_h": 300.0,
+        "deadline_vehicles": 2950.0,
+        "weight": 2.0,
+        "id": "D046"
+      },
+      "available": true,
+      "source": "original",
+      "policy": "nominal_mpc",
+      "nominal_priority_cost": 3995.4577324388842,
+      "proof_id": "82f108d9c127dc38b35e1a405299b1b3732c1dad87eae32abfe94f449b6de804",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.786357438,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          0.56816782,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 2641.115241411519,
+          "median": 2716.7543077016094,
+          "maximum": 2791.2693018958594
+        },
+        "queue_veh_h": {
+          "minimum": 199.14257459136468,
+          "median": 250.52818540464455,
+          "maximum": 308.09742436855316
+        },
+        "completed_trips": {
+          "minimum": 17897.55785946058,
+          "median": 17953.744600286293,
+          "maximum": 17992.66050429977
+        },
+        "priority_cost": {
+          "minimum": 3909.0445671603516,
+          "median": 3998.219280093723,
+          "maximum": 4082.35984548456
+        },
+        "peak_queue_vehicles": {
+          "minimum": 522.7518662982305,
+          "median": 689.1376159085889,
+          "maximum": 882.8192482579741
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 1637.3552621480017,
+          "median": 1640.452793294383,
+          "maximum": 1643.030275888113
+        },
+        "maximum_conservation_error_vehicles": 1.0550138540565968e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 4000.099377983728,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "nominal_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "scenario_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "full_scenario",
+          "policy": "full_scenario_mpc"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 10.0,
+        "residual_veh_h": 300.0,
+        "deadline_vehicles": 2950.0,
+        "weight": 4.0,
+        "id": "D047"
+      },
+      "available": true,
+      "source": "original",
+      "policy": "grid_repair",
+      "nominal_priority_cost": 6353.981224609038,
+      "proof_id": "a7d83e7b5a957fcbd07e777c61679ff1219d2acc409c130c15792582bd536155",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.727961969,
+          1.0
+        ],
+        [
+          0.534267955,
+          1.0,
+          0.453892095,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 2971.3374010120383,
+          "median": 3048.0282073197395,
+          "maximum": 3123.7875796282888
+        },
+        "queue_veh_h": {
+          "minimum": 432.4555131330315,
+          "median": 483.84112394631137,
+          "maximum": 541.4103629102208
+        },
+        "completed_trips": {
+          "minimum": 16661.760097641843,
+          "median": 16717.144490457576,
+          "maximum": 16756.286267115072
+        },
+        "priority_cost": {
+          "minimum": 6249.007949608111,
+          "median": 6360.599157055707,
+          "maximum": 6459.646363734606
+        },
+        "peak_queue_vehicles": {
+          "minimum": 1322.6819412982263,
+          "median": 1489.0676909085892,
+          "maximum": 1682.7493232579777
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 2345.7223754308848,
+          "median": 2354.634605417411,
+          "maximum": 2362.767754707874
+        },
+        "maximum_conservation_error_vehicles": 1.0550138540565968e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 6706.360894124532,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 6353.981224609038,
+          "source": "original",
+          "policy": "grid_repair"
+        },
+        {
+          "nominal_priority_cost": 6379.718504045196,
+          "source": "full_scenario",
+          "policy": "full_scenario_repair"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 25.0,
+        "residual_veh_h": 60.0,
+        "deadline_vehicles": 2750.0,
+        "weight": 2.0,
+        "id": "D048"
+      },
+      "available": true,
+      "source": "original",
+      "policy": "nominal_mpc",
+      "nominal_priority_cost": 3995.4577324388842,
+      "proof_id": "9d0d617e9a8fed541ece230313f393d6230053e5326fc5662e4fea3982bc7bdc",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.786357438,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          0.56816782,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 2666.217095201788,
+          "median": 2716.106707457254,
+          "maximum": 2766.8584463111774
+        },
+        "queue_veh_h": {
+          "minimum": 242.2533600147076,
+          "median": 253.21392365776688,
+          "maximum": 264.98663894521167
+        },
+        "completed_trips": {
+          "minimum": 17868.699308539948,
+          "median": 17945.007836277087,
+          "maximum": 18021.48810979147
+        },
+        "priority_cost": {
+          "minimum": 3925.976722835087,
+          "median": 3995.6128792948666,
+          "maximum": 4066.467986682617
+        },
+        "peak_queue_vehicles": {
+          "minimum": 666.6238405747193,
+          "median": 700.055969004201,
+          "maximum": 738.9472739814884
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 1634.9644672249403,
+          "median": 1640.2514221812753,
+          "maximum": 1645.6732157589918
+        },
+        "maximum_conservation_error_vehicles": 1.127773430198431e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 4000.099377983728,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "nominal_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "scenario_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "full_scenario",
+          "policy": "full_scenario_mpc"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 25.0,
+        "residual_veh_h": 60.0,
+        "deadline_vehicles": 2750.0,
+        "weight": 4.0,
+        "id": "D049"
+      },
+      "available": true,
+      "source": "full_scenario",
+      "policy": "full_scenario_repair",
+      "nominal_priority_cost": 6284.0240650072865,
+      "proof_id": "c15df424a8890e28085a6ac944a100170aeb5444c660b7504310cc664b42624e",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.983350784,
+          1.0
+        ],
+        [
+          0.452537527,
+          1.0,
+          0.402104722,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 3112.3369236597036,
+          "median": 3166.4718818394986,
+          "maximum": 3221.452180899969
+        },
+        "queue_veh_h": {
+          "minimum": 581.2988517647054,
+          "median": 592.2594154077664,
+          "maximum": 604.0321306952128
+        },
+        "completed_trips": {
+          "minimum": 16136.99913603354,
+          "median": 16213.034060776321,
+          "maximum": 16289.976517548646
+        },
+        "priority_cost": {
+          "minimum": 6183.930496774955,
+          "median": 6284.530260119523,
+          "maximum": 6386.092561442499
+        },
+        "peak_queue_vehicles": {
+          "minimum": 1829.0655265747112,
+          "median": 1862.4976550042015,
+          "maximum": 1901.3889599814934
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 2585.4286689030864,
+          "median": 2607.5617941249175,
+          "maximum": 2631.2502493729453
+        },
+        "maximum_conservation_error_vehicles": 1.000444171950221e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 6706.360894124532,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 6316.0598691015775,
+          "source": "original",
+          "policy": "grid_repair"
+        },
+        {
+          "nominal_priority_cost": 6284.0240650072865,
+          "source": "full_scenario",
+          "policy": "full_scenario_repair"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 25.0,
+        "residual_veh_h": 60.0,
+        "deadline_vehicles": 2850.0,
+        "weight": 2.0,
+        "id": "D050"
+      },
+      "available": true,
+      "source": "original",
+      "policy": "nominal_mpc",
+      "nominal_priority_cost": 3995.4577324388842,
+      "proof_id": "b44f9dacac9a02635e34b2bc30897765dec650fee907a84005e93f32a2cce1c8",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.786357438,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          0.56816782,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 2666.217095201788,
+          "median": 2716.106707457254,
+          "maximum": 2766.8584463111774
+        },
+        "queue_veh_h": {
+          "minimum": 242.2533600147076,
+          "median": 253.21392365776688,
+          "maximum": 264.98663894521167
+        },
+        "completed_trips": {
+          "minimum": 17868.699308539948,
+          "median": 17945.007836277087,
+          "maximum": 18021.48810979147
+        },
+        "priority_cost": {
+          "minimum": 3925.976722835087,
+          "median": 3995.6128792948666,
+          "maximum": 4066.467986682617
+        },
+        "peak_queue_vehicles": {
+          "minimum": 666.6238405747193,
+          "median": 700.055969004201,
+          "maximum": 738.9472739814884
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 1634.9644672249403,
+          "median": 1640.2514221812753,
+          "maximum": 1645.6732157589918
+        },
+        "maximum_conservation_error_vehicles": 1.127773430198431e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 4000.099377983728,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "nominal_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "scenario_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "full_scenario",
+          "policy": "full_scenario_mpc"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 25.0,
+        "residual_veh_h": 60.0,
+        "deadline_vehicles": 2850.0,
+        "weight": 4.0,
+        "id": "D051"
+      },
+      "available": true,
+      "source": "original",
+      "policy": "grid_repair",
+      "nominal_priority_cost": 6275.9483019085155,
+      "proof_id": "9016864522ab22299b28930280558f748f084fa747e224557ffabc3d8263332e",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.743049916,
+          1.0
+        ],
+        [
+          0.427426531,
+          1.0,
+          0.39705914,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 3140.9702270544053,
+          "median": 3195.526086599589,
+          "maximum": 3250.995605002397
+        },
+        "queue_veh_h": {
+          "minimum": 591.6002483480397,
+          "median": 602.5609536169303,
+          "maximum": 614.3338105302074
+        },
+        "completed_trips": {
+          "minimum": 16016.446068538975,
+          "median": 16092.943611773304,
+          "maximum": 16169.250342022982
+        },
+        "priority_cost": {
+          "minimum": 6176.086779172317,
+          "median": 6276.467749145684,
+          "maximum": 6377.769196410549
+        },
+        "peak_queue_vehicles": {
+          "minimum": 1864.3846005747164,
+          "median": 1897.8167755709703,
+          "maximum": 1936.7081271150323
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 2692.7399893332326,
+          "median": 2717.0377727417363,
+          "maximum": 2743.025140936757
+        },
+        "maximum_conservation_error_vehicles": 1.0550138540565968e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 6706.360894124532,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 6275.9483019085155,
+          "source": "original",
+          "policy": "grid_repair"
+        },
+        {
+          "nominal_priority_cost": 6282.220970688469,
+          "source": "full_scenario",
+          "policy": "full_scenario_repair"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 25.0,
+        "residual_veh_h": 60.0,
+        "deadline_vehicles": 2950.0,
+        "weight": 2.0,
+        "id": "D052"
+      },
+      "available": true,
+      "source": "original",
+      "policy": "nominal_mpc",
+      "nominal_priority_cost": 3995.4577324388842,
+      "proof_id": "018468d8d4e19cb2e7684842da6116ff95a4127b56d29d06f7b271c3f1627ab9",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.786357438,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          0.56816782,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 2666.217095201788,
+          "median": 2716.106707457254,
+          "maximum": 2766.8584463111774
+        },
+        "queue_veh_h": {
+          "minimum": 242.2533600147076,
+          "median": 253.21392365776688,
+          "maximum": 264.98663894521167
+        },
+        "completed_trips": {
+          "minimum": 17868.699308539948,
+          "median": 17945.007836277087,
+          "maximum": 18021.48810979147
+        },
+        "priority_cost": {
+          "minimum": 3925.976722835087,
+          "median": 3995.6128792948666,
+          "maximum": 4066.467986682617
+        },
+        "peak_queue_vehicles": {
+          "minimum": 666.6238405747193,
+          "median": 700.055969004201,
+          "maximum": 738.9472739814884
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 1634.9644672249403,
+          "median": 1640.2514221812753,
+          "maximum": 1645.6732157589918
+        },
+        "maximum_conservation_error_vehicles": 1.127773430198431e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 4000.099377983728,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "nominal_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "scenario_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "full_scenario",
+          "policy": "full_scenario_mpc"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 25.0,
+        "residual_veh_h": 60.0,
+        "deadline_vehicles": 2950.0,
+        "weight": 4.0,
+        "id": "D053"
+      },
+      "available": true,
+      "source": "original",
+      "policy": "grid_repair",
+      "nominal_priority_cost": 6274.18392335128,
+      "proof_id": "2dbc278cbe42cad48f329deb2e624807c826d1ffdee66a1b9c0329365139a8a0",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.744214314,
+          1.0
+        ],
+        [
+          0.410072743,
+          1.0,
+          0.39705914,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 3158.2110141257344,
+          "median": 3213.1392202373763,
+          "maximum": 3268.967777563527
+        },
+        "queue_veh_h": {
+          "minimum": 591.6002483480397,
+          "median": 602.5608873656195,
+          "maximum": 614.3336780275856
+        },
+        "completed_trips": {
+          "minimum": 15943.30259368659,
+          "median": 16020.831527519578,
+          "maximum": 16095.950334716617
+        },
+        "priority_cost": {
+          "minimum": 6174.393401825391,
+          "median": 6274.710638026147,
+          "maximum": 6375.9275651765865
+        },
+        "peak_queue_vehicles": {
+          "minimum": 1864.3846005747164,
+          "median": 1897.8167537874483,
+          "maximum": 1936.7080835479878
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 2777.2932041959066,
+          "median": 2803.2888701992297,
+          "maximum": 2831.0821745885137
+        },
+        "maximum_conservation_error_vehicles": 1.1459633242338896e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 6706.360894124532,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 6274.18392335128,
+          "source": "original",
+          "policy": "grid_repair"
+        },
+        {
+          "nominal_priority_cost": 6280.432410467528,
+          "source": "full_scenario",
+          "policy": "full_scenario_repair"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 25.0,
+        "residual_veh_h": 150.0,
+        "deadline_vehicles": 2750.0,
+        "weight": 2.0,
+        "id": "D054"
+      },
+      "available": true,
+      "source": "original",
+      "policy": "nominal_mpc",
+      "nominal_priority_cost": 3995.4577324388842,
+      "proof_id": "c8390c8093c516a9209918b9e3afd1741f7996ba33451c19d602d278e2a86464",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.786357438,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          0.56816782,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 2648.3422880379903,
+          "median": 2716.3204200846667,
+          "maximum": 2784.822798573542
+        },
+        "queue_veh_h": {
+          "minimum": 225.97158748128524,
+          "median": 252.34398084862005,
+          "maximum": 281.2684114786339
+        },
+        "completed_trips": {
+          "minimum": 17863.146545221556,
+          "median": 17945.02236254265,
+          "maximum": 18027.01751486254
+        },
+        "priority_cost": {
+          "minimum": 3906.9607822925277,
+          "median": 3996.276356017297,
+          "maximum": 4085.648516009389
+        },
+        "peak_queue_vehicles": {
+          "minimum": 612.6339478686773,
+          "median": 695.9615865933465,
+          "maximum": 792.9371666875309
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 1634.75081971311,
+          "median": 1640.303156913746,
+          "maximum": 1645.915179746331
+        },
+        "maximum_conservation_error_vehicles": 1.0913936421275139e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 4000.099377983728,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "nominal_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "scenario_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "full_scenario",
+          "policy": "full_scenario_mpc"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 25.0,
+        "residual_veh_h": 150.0,
+        "deadline_vehicles": 2750.0,
+        "weight": 4.0,
+        "id": "D055"
+      },
+      "available": true,
+      "source": "full_scenario",
+      "policy": "full_scenario_repair",
+      "nominal_priority_cost": 6330.219764262387,
+      "proof_id": "1ee9e02c1da67174e4775357842d6687eaedc73e408109d02a1d3e1af2c02dc4",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.736415488,
+          1.0
+        ],
+        [
+          0.51211025,
+          1.0,
+          0.436545878,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 3010.3121754030294,
+          "median": 3081.7140565817263,
+          "maximum": 3153.6529726036024
+        },
+        "queue_veh_h": {
+          "minimum": 494.69971906461717,
+          "median": 521.0742871438047,
+          "maximum": 549.998952413755
+        },
+        "completed_trips": {
+          "minimum": 16485.29331932919,
+          "median": 16568.22750597264,
+          "maximum": 16649.266058949055
+        },
+        "priority_cost": {
+          "minimum": 6208.184232684604,
+          "median": 6332.313416851465,
+          "maximum": 6454.533505914966
+        },
+        "peak_queue_vehicles": {
+          "minimum": 1533.9875418686731,
+          "median": 1617.3155099285214,
+          "maximum": 1714.2915844868292
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 2392.4812490362447,
+          "median": 2411.400866308961,
+          "maximum": 2431.156710964772
+        },
+        "maximum_conservation_error_vehicles": 1.0550138540565968e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 6706.360894124532,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 6356.571426696653,
+          "source": "original",
+          "policy": "grid_repair"
+        },
+        {
+          "nominal_priority_cost": 6330.219764262387,
+          "source": "full_scenario",
+          "policy": "full_scenario_repair"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 25.0,
+        "residual_veh_h": 150.0,
+        "deadline_vehicles": 2850.0,
+        "weight": 2.0,
+        "id": "D056"
+      },
+      "available": true,
+      "source": "original",
+      "policy": "nominal_mpc",
+      "nominal_priority_cost": 3995.4577324388842,
+      "proof_id": "bb58aada4059375df705a5bf960e301f24a8bb286586612c6844507c7ce46673",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.786357438,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          0.56816782,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 2648.3422880379903,
+          "median": 2716.3204200846667,
+          "maximum": 2784.822798573542
+        },
+        "queue_veh_h": {
+          "minimum": 225.97158748128524,
+          "median": 252.34398084862005,
+          "maximum": 281.2684114786339
+        },
+        "completed_trips": {
+          "minimum": 17863.146545221556,
+          "median": 17945.02236254265,
+          "maximum": 18027.01751486254
+        },
+        "priority_cost": {
+          "minimum": 3906.9607822925277,
+          "median": 3996.276356017297,
+          "maximum": 4085.648516009389
+        },
+        "peak_queue_vehicles": {
+          "minimum": 612.6339478686773,
+          "median": 695.9615865933465,
+          "maximum": 792.9371666875309
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 1634.75081971311,
+          "median": 1640.303156913746,
+          "maximum": 1645.915179746331
+        },
+        "maximum_conservation_error_vehicles": 1.0913936421275139e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 4000.099377983728,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "nominal_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "scenario_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "full_scenario",
+          "policy": "full_scenario_mpc"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 25.0,
+        "residual_veh_h": 150.0,
+        "deadline_vehicles": 2850.0,
+        "weight": 4.0,
+        "id": "D057"
+      },
+      "available": true,
+      "source": "full_scenario",
+      "policy": "full_scenario_repair",
+      "nominal_priority_cost": 6309.380267827696,
+      "proof_id": "75681e6b8ff7124b25735c452fa59242b5087407d652677b9f8f09e62efe824d",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.745027271,
+          1.0
+        ],
+        [
+          0.465821638,
+          1.0,
+          0.422988831,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 3062.440258295546,
+          "median": 3134.52788708187,
+          "maximum": 3207.1841283718163
+        },
+        "queue_veh_h": {
+          "minimum": 522.3786900229512,
+          "median": 548.7511416289201,
+          "maximum": 577.6755722589342
+        },
+        "completed_trips": {
+          "minimum": 16270.199095415011,
+          "median": 16353.932058756378,
+          "maximum": 16433.88456202252
+        },
+        "priority_cost": {
+          "minimum": 6187.993887954595,
+          "median": 6311.49621371941,
+          "maximum": 6432.999646200497
+        },
+        "peak_queue_vehicles": {
+          "minimum": 1628.8868708686728,
+          "median": 1712.2145191678183,
+          "maximum": 1809.1901088364737
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 2555.105493051774,
+          "median": 2577.3308870745473,
+          "maximum": 2600.6989146367614
+        },
+        "maximum_conservation_error_vehicles": 9.640643838793039e-11
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 6706.360894124532,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 6314.508568474355,
+          "source": "original",
+          "policy": "grid_repair"
+        },
+        {
+          "nominal_priority_cost": 6309.380267827696,
+          "source": "full_scenario",
+          "policy": "full_scenario_repair"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 25.0,
+        "residual_veh_h": 150.0,
+        "deadline_vehicles": 2950.0,
+        "weight": 2.0,
+        "id": "D058"
+      },
+      "available": true,
+      "source": "original",
+      "policy": "nominal_mpc",
+      "nominal_priority_cost": 3995.4577324388842,
+      "proof_id": "1364461ac8dbb2847e8938026a6809ba4f9d22cb0bf2591a85005621daeffb3a",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.786357438,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          0.56816782,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 2648.3422880379903,
+          "median": 2716.3204200846667,
+          "maximum": 2784.822798573542
+        },
+        "queue_veh_h": {
+          "minimum": 225.97158748128524,
+          "median": 252.34398084862005,
+          "maximum": 281.2684114786339
+        },
+        "completed_trips": {
+          "minimum": 17863.146545221556,
+          "median": 17945.02236254265,
+          "maximum": 18027.01751486254
+        },
+        "priority_cost": {
+          "minimum": 3906.9607822925277,
+          "median": 3996.276356017297,
+          "maximum": 4085.648516009389
+        },
+        "peak_queue_vehicles": {
+          "minimum": 612.6339478686773,
+          "median": 695.9615865933465,
+          "maximum": 792.9371666875309
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 1634.75081971311,
+          "median": 1640.303156913746,
+          "maximum": 1645.915179746331
+        },
+        "maximum_conservation_error_vehicles": 1.0913936421275139e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 4000.099377983728,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "nominal_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "scenario_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "full_scenario",
+          "policy": "full_scenario_mpc"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 25.0,
+        "residual_veh_h": 150.0,
+        "deadline_vehicles": 2950.0,
+        "weight": 4.0,
+        "id": "D059"
+      },
+      "available": true,
+      "source": "original",
+      "policy": "grid_repair",
+      "nominal_priority_cost": 6293.2789079065315,
+      "proof_id": "29fc873d3f7cf242fe6d577557af1b1fb0ba22878a86c220330fe8d51aed5cb7",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.740151228,
+          1.0
+        ],
+        [
+          0.441121546,
+          1.0,
+          0.411267379,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 3096.3505316393675,
+          "median": 3168.7300836579607,
+          "maximum": 3241.8148339976105
+        },
+        "queue_veh_h": {
+          "minimum": 546.3099878562841,
+          "median": 572.6829943313614,
+          "maximum": 601.6074249613752
+        },
+        "completed_trips": {
+          "minimum": 16126.631421447837,
+          "median": 16210.456549377494,
+          "maximum": 16290.17541009298
+        },
+        "priority_cost": {
+          "minimum": 6172.3352574975,
+          "median": 6295.391944465365,
+          "maximum": 6416.428081441262
+        },
+        "peak_queue_vehicles": {
+          "minimum": 1710.9370348686707,
+          "median": 1794.2647743886823,
+          "maximum": 1891.2404552781973
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 2647.5806273165845,
+          "median": 2671.6574673273944,
+          "maximum": 2697.1350410614946
+        },
+        "maximum_conservation_error_vehicles": 1.0186340659856796e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 6706.360894124532,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 6293.2789079065315,
+          "source": "original",
+          "policy": "grid_repair"
+        },
+        {
+          "nominal_priority_cost": 6307.628030194157,
+          "source": "full_scenario",
+          "policy": "full_scenario_repair"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 25.0,
+        "residual_veh_h": 300.0,
+        "deadline_vehicles": 2750.0,
+        "weight": 2.0,
+        "id": "D060"
+      },
+      "available": true,
+      "source": "original",
+      "policy": "nominal_mpc",
+      "nominal_priority_cost": 3995.4577324388842,
+      "proof_id": "dc89166fa5c0ffce45024b1abf08a35dd130c1eb118730979c9be259e567b31e",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.786357438,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          0.56816782,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 2618.5564323310737,
+          "median": 2716.7631192679555,
+          "maximum": 2814.7694786350035
+        },
+        "queue_veh_h": {
+          "minimum": 198.83529992558232,
+          "median": 250.55583777430917,
+          "maximum": 308.4046990343359
+        },
+        "completed_trips": {
+          "minimum": 17853.888541406006,
+          "median": 17945.467051300933,
+          "maximum": 18036.229463157662
+        },
+        "priority_cost": {
+          "minimum": 3875.2782666357475,
+          "median": 3998.145572644569,
+          "maximum": 4117.628056253037
+        },
+        "peak_queue_vehicles": {
+          "minimum": 522.6507933586139,
+          "median": 689.1376159085889,
+          "maximum": 882.9203211975906
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 1634.3960979105173,
+          "median": 1640.3673273761133,
+          "maximum": 1646.3200396807363
+        },
+        "maximum_conservation_error_vehicles": 1.0913936421275139e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 4000.099377983728,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "nominal_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "scenario_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "full_scenario",
+          "policy": "full_scenario_mpc"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 25.0,
+        "residual_veh_h": 300.0,
+        "deadline_vehicles": 2750.0,
+        "weight": 4.0,
+        "id": "D061"
+      },
+      "available": true,
+      "source": "full_scenario",
+      "policy": "full_scenario_repair",
+      "nominal_priority_cost": 6423.485176500263,
+      "proof_id": "648f2fa36f6769862417e4c9ec86b877a546ef6ed491902ab397a7e21777b2e8",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.784055694,
+          1.0
+        ],
+        [
+          0.62940654,
+          1.0,
+          0.499129487,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 2839.209955874024,
+          "median": 2939.609416020444,
+          "maximum": 3039.974056006522
+        },
+        "queue_veh_h": {
+          "minimum": 339.78856313391555,
+          "median": 391.5091009826425,
+          "maximum": 449.357962242669
+        },
+        "completed_trips": {
+          "minimum": 17054.14883229461,
+          "median": 17146.364730807163,
+          "maximum": 17236.434494130102
+        },
+        "priority_cost": {
+          "minimum": 6263.839327258492,
+          "median": 6429.536550442938,
+          "maximum": 6586.063136298312
+        },
+        "peak_queue_vehicles": {
+          "minimum": 1005.9191243586179,
+          "median": 1172.405946908589,
+          "maximum": 1366.1886521975903
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 2114.025691209035,
+          "median": 2128.2457731095283,
+          "maximum": 2142.2716903522582
+        },
+        "maximum_conservation_error_vehicles": 1.0186340659856796e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 6706.360894124532,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 6704.2300135922005,
+          "source": "original",
+          "policy": "grid_repair"
+        },
+        {
+          "nominal_priority_cost": 6423.485176500263,
+          "source": "full_scenario",
+          "policy": "full_scenario_repair"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 25.0,
+        "residual_veh_h": 300.0,
+        "deadline_vehicles": 2850.0,
+        "weight": 2.0,
+        "id": "D062"
+      },
+      "available": true,
+      "source": "original",
+      "policy": "nominal_mpc",
+      "nominal_priority_cost": 3995.4577324388842,
+      "proof_id": "755030cbab644563c7d4fc92587a820b5d63fa0226a8ddae6c55bbee2c172915",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.786357438,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          0.56816782,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 2618.5564323310737,
+          "median": 2716.7631192679555,
+          "maximum": 2814.7694786350035
+        },
+        "queue_veh_h": {
+          "minimum": 198.83529992558232,
+          "median": 250.55583777430917,
+          "maximum": 308.4046990343359
+        },
+        "completed_trips": {
+          "minimum": 17853.888541406006,
+          "median": 17945.467051300933,
+          "maximum": 18036.229463157662
+        },
+        "priority_cost": {
+          "minimum": 3875.2782666357475,
+          "median": 3998.145572644569,
+          "maximum": 4117.628056253037
+        },
+        "peak_queue_vehicles": {
+          "minimum": 522.6507933586139,
+          "median": 689.1376159085889,
+          "maximum": 882.9203211975906
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 1634.3960979105173,
+          "median": 1640.3673273761133,
+          "maximum": 1646.3200396807363
+        },
+        "maximum_conservation_error_vehicles": 1.0913936421275139e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 4000.099377983728,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "nominal_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "scenario_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "full_scenario",
+          "policy": "full_scenario_mpc"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 25.0,
+        "residual_veh_h": 300.0,
+        "deadline_vehicles": 2850.0,
+        "weight": 4.0,
+        "id": "D063"
+      },
+      "available": true,
+      "source": "original",
+      "policy": "grid_repair",
+      "nominal_priority_cost": 6376.474560552312,
+      "proof_id": "d750751b6ec246fe2b76941e777744b13f73e6633452799fe0589a31b08063eb",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.723040906,
+          1.0
+        ],
+        [
+          0.57810376,
+          1.0,
+          0.468100334,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 2901.6017675101234,
+          "median": 3002.3244576785064,
+          "maximum": 3103.0745896305098
+        },
+        "queue_veh_h": {
+          "minimum": 403.13975050891673,
+          "median": 454.87893833951273,
+          "maximum": 512.7315254561191
+        },
+        "completed_trips": {
+          "minimum": 16799.531992427495,
+          "median": 16892.657409942265,
+          "maximum": 16981.825378258396
+        },
+        "priority_cost": {
+          "minimum": 6218.336625660036,
+          "median": 6382.352427029285,
+          "maximum": 6537.426949863059
+        },
+        "peak_queue_vehicles": {
+          "minimum": 1223.1231953586203,
+          "median": 1389.6126994793253,
+          "maximum": 1583.4011143932064
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 2216.185289681288,
+          "median": 2232.473701657869,
+          "maximum": 2248.8709748378346
+        },
+        "maximum_conservation_error_vehicles": 1.0913936421275139e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 6706.360894124532,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 6376.474560552312,
+          "source": "original",
+          "policy": "grid_repair"
+        },
+        {
+          "nominal_priority_cost": 6401.641313352789,
+          "source": "full_scenario",
+          "policy": "full_scenario_repair"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 25.0,
+        "residual_veh_h": 300.0,
+        "deadline_vehicles": 2950.0,
+        "weight": 2.0,
+        "id": "D064"
+      },
+      "available": true,
+      "source": "original",
+      "policy": "nominal_mpc",
+      "nominal_priority_cost": 3995.4577324388842,
+      "proof_id": "62d1815f4d95bae40ccb105cb14dba2dde05d03ab4098cf96671e0dddf5027d2",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.786357438,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          0.56816782,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 2618.5564323310737,
+          "median": 2716.7631192679555,
+          "maximum": 2814.7694786350035
+        },
+        "queue_veh_h": {
+          "minimum": 198.83529992558232,
+          "median": 250.55583777430917,
+          "maximum": 308.4046990343359
+        },
+        "completed_trips": {
+          "minimum": 17853.888541406006,
+          "median": 17945.467051300933,
+          "maximum": 18036.229463157662
+        },
+        "priority_cost": {
+          "minimum": 3875.2782666357475,
+          "median": 3998.145572644569,
+          "maximum": 4117.628056253037
+        },
+        "peak_queue_vehicles": {
+          "minimum": 522.6507933586139,
+          "median": 689.1376159085889,
+          "maximum": 882.9203211975906
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 1634.3960979105173,
+          "median": 1640.3673273761133,
+          "maximum": 1646.3200396807363
+        },
+        "maximum_conservation_error_vehicles": 1.0913936421275139e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 4000.099377983728,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "nominal_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "scenario_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "full_scenario",
+          "policy": "full_scenario_mpc"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 25.0,
+        "residual_veh_h": 300.0,
+        "deadline_vehicles": 2950.0,
+        "weight": 4.0,
+        "id": "D065"
+      },
+      "available": true,
+      "source": "original",
+      "policy": "grid_repair",
+      "nominal_priority_cost": 6375.306842648578,
+      "proof_id": "aa6c5f448b979d0a03a79a9f98a980692aee0ea6d1abace532654741124e6fdb",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.723898883,
+          1.0
+        ],
+        [
+          0.565316758,
+          1.0,
+          0.468100334,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 2910.5618605566688,
+          "median": 3011.4781338233033,
+          "maximum": 3112.4266630172924
+        },
+        "queue_veh_h": {
+          "minimum": 403.13975050891673,
+          "median": 454.87721803615386,
+          "maximum": 512.7293620548544
+        },
+        "completed_trips": {
+          "minimum": 16765.925815496896,
+          "median": 16859.34775213596,
+          "maximum": 16948.10078001631
+        },
+        "priority_cost": {
+          "minimum": 6217.270638065442,
+          "median": 6381.139755483546,
+          "maximum": 6536.145918741634
+        },
+        "peak_queue_vehicles": {
+          "minimum": 1223.1231953586203,
+          "median": 1389.6124604180322,
+          "maximum": 1583.4002406649943
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 2253.9264361297182,
+          "median": 2271.026123354072,
+          "maximum": 2288.1844449680493
+        },
+        "maximum_conservation_error_vehicles": 1.0186340659856796e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 6706.360894124532,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 6375.306842648578,
+          "source": "original",
+          "policy": "grid_repair"
+        },
+        {
+          "nominal_priority_cost": 6400.36289848133,
+          "source": "full_scenario",
+          "policy": "full_scenario_repair"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 50.0,
+        "residual_veh_h": 60.0,
+        "deadline_vehicles": 2750.0,
+        "weight": 2.0,
+        "id": "D066"
+      },
+      "available": true,
+      "source": "original",
+      "policy": "nominal_mpc",
+      "nominal_priority_cost": 3995.4577324388842,
+      "proof_id": "efd8fbc0c4e0ecf5dd964ad0459c05718f4b350ad9821681435fccbbbd3c4bdb",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.786357438,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          0.56816782,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 2629.21705399503,
+          "median": 2716.2445736881705,
+          "maximum": 2806.757047833371
+        },
+        "queue_veh_h": {
+          "minimum": 241.7412355717364,
+          "median": 253.2719049534494,
+          "maximum": 265.6147259795479
+        },
+        "completed_trips": {
+          "minimum": 17795.88749956496,
+          "median": 17944.56749189074,
+          "maximum": 18094.00525281104
+        },
+        "priority_cost": {
+          "minimum": 3870.590650153064,
+          "median": 3995.6453051582293,
+          "maximum": 4126.276760491361
+        },
+        "peak_queue_vehicles": {
+          "minimum": 666.4553856753583,
+          "median": 700.0778913403137,
+          "maximum": 739.1613998996527
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 1630.2402668349412,
+          "median": 1640.2620554320793,
+          "maximum": 1651.4158952704026
+        },
+        "maximum_conservation_error_vehicles": 1.1641532182693481e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 4000.099377983728,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "nominal_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "scenario_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "full_scenario",
+          "policy": "full_scenario_mpc"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 50.0,
+        "residual_veh_h": 60.0,
+        "deadline_vehicles": 2750.0,
+        "weight": 4.0,
+        "id": "D067"
+      },
+      "available": true,
+      "source": "full_scenario",
+      "policy": "full_scenario_repair",
+      "nominal_priority_cost": 6303.255970917817,
+      "proof_id": "0c2eebac018415788967796a3e58a2ed88bfaf7a4ad5610cd0c48ca30b071942",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.853879001,
+          1.0
+        ],
+        [
+          0.486285575,
+          1.0,
+          0.41607124,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 3028.462875830922,
+          "median": 3122.766464317733,
+          "maximum": 3220.998874072113
+        },
+        "queue_veh_h": {
+          "minimum": 552.271753071737,
+          "median": 563.7454091512941,
+          "maximum": 576.0312168752386
+        },
+        "completed_trips": {
+          "minimum": 16245.234386251119,
+          "median": 16393.07779950248,
+          "maximum": 16544.267759000002
+        },
+        "priority_cost": {
+          "minimum": 6117.731280590007,
+          "median": 6303.436009496967,
+          "maximum": 6496.51690480424
+        },
+        "peak_queue_vehicles": {
+          "minimum": 1731.1314456753648,
+          "median": 1764.7323406800147,
+          "maximum": 1803.7924263615682
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 2446.1691186697817,
+          "median": 2483.9940346358476,
+          "maximum": 2527.2038029264213
+        },
+        "maximum_conservation_error_vehicles": 1.1641532182693481e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 6706.360894124532,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 6421.516141184596,
+          "source": "original",
+          "policy": "grid_repair"
+        },
+        {
+          "nominal_priority_cost": 6303.255970917817,
+          "source": "full_scenario",
+          "policy": "full_scenario_repair"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 50.0,
+        "residual_veh_h": 60.0,
+        "deadline_vehicles": 2850.0,
+        "weight": 2.0,
+        "id": "D068"
+      },
+      "available": true,
+      "source": "original",
+      "policy": "nominal_mpc",
+      "nominal_priority_cost": 3995.4577324388842,
+      "proof_id": "5959d0315f1867d74ac6c7f5b651f9fc7d1ba385405efcee1f47cc2a4fa602ee",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.786357438,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          0.56816782,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 2629.21705399503,
+          "median": 2716.2445736881705,
+          "maximum": 2806.757047833371
+        },
+        "queue_veh_h": {
+          "minimum": 241.7412355717364,
+          "median": 253.2719049534494,
+          "maximum": 265.6147259795479
+        },
+        "completed_trips": {
+          "minimum": 17795.88749956496,
+          "median": 17944.56749189074,
+          "maximum": 18094.00525281104
+        },
+        "priority_cost": {
+          "minimum": 3870.590650153064,
+          "median": 3995.6453051582293,
+          "maximum": 4126.276760491361
+        },
+        "peak_queue_vehicles": {
+          "minimum": 666.4553856753583,
+          "median": 700.0778913403137,
+          "maximum": 739.1613998996527
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 1630.2402668349412,
+          "median": 1640.2620554320793,
+          "maximum": 1651.4158952704026
+        },
+        "maximum_conservation_error_vehicles": 1.1641532182693481e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 4000.099377983728,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "nominal_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "scenario_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "full_scenario",
+          "policy": "full_scenario_mpc"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 50.0,
+        "residual_veh_h": 60.0,
+        "deadline_vehicles": 2850.0,
+        "weight": 4.0,
+        "id": "D069"
+      },
+      "available": true,
+      "source": "original",
+      "policy": "grid_repair",
+      "nominal_priority_cost": 6294.945732943137,
+      "proof_id": "9a91da398fe637cc393c0715ca1bb7e07e6e344816861dffa198c5b95f820b52",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.739048114,
+          1.0
+        ],
+        [
+          0.457561976,
+          1.0,
+          0.411267379,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 3057.883664955405,
+          "median": 3153.2940159821164,
+          "maximum": 3252.6806021299235
+        },
+        "queue_veh_h": {
+          "minimum": 562.0796359467361,
+          "median": 573.7947683362686,
+          "maximum": 586.3220523701854
+        },
+        "completed_trips": {
+          "minimum": 16122.149853270204,
+          "median": 16269.508876128086,
+          "maximum": 16420.56579602105
+        },
+        "priority_cost": {
+          "minimum": 6109.914636151257,
+          "median": 6295.062140096804,
+          "maximum": 6487.4456503354795
+        },
+        "peak_queue_vehicles": {
+          "minimum": 1764.7584726753607,
+          "median": 1798.4768053111197,
+          "maximum": 1837.6696027917274
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 2555.4024888449053,
+          "median": 2597.507218119735,
+          "maximum": 2645.704149979876
+        },
+        "maximum_conservation_error_vehicles": 1.1823431123048067e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 6706.360894124532,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 6294.945732943137,
+          "source": "original",
+          "policy": "grid_repair"
+        },
+        {
+          "nominal_priority_cost": 6301.6022810955565,
+          "source": "full_scenario",
+          "policy": "full_scenario_repair"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 50.0,
+        "residual_veh_h": 60.0,
+        "deadline_vehicles": 2950.0,
+        "weight": 2.0,
+        "id": "D070"
+      },
+      "available": true,
+      "source": "original",
+      "policy": "nominal_mpc",
+      "nominal_priority_cost": 3995.4577324388842,
+      "proof_id": "18aab30d2fc6fdc18cf2ffebdfe3bc4d045f16bf0af7b0bc4cbe817c7e23e3a8",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.786357438,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          0.56816782,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 2629.21705399503,
+          "median": 2716.2445736881705,
+          "maximum": 2806.757047833371
+        },
+        "queue_veh_h": {
+          "minimum": 241.7412355717364,
+          "median": 253.2719049534494,
+          "maximum": 265.6147259795479
+        },
+        "completed_trips": {
+          "minimum": 17795.88749956496,
+          "median": 17944.56749189074,
+          "maximum": 18094.00525281104
+        },
+        "priority_cost": {
+          "minimum": 3870.590650153064,
+          "median": 3995.6453051582293,
+          "maximum": 4126.276760491361
+        },
+        "peak_queue_vehicles": {
+          "minimum": 666.4553856753583,
+          "median": 700.0778913403137,
+          "maximum": 739.1613998996527
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 1630.2402668349412,
+          "median": 1640.2620554320793,
+          "maximum": 1651.4158952704026
+        },
+        "maximum_conservation_error_vehicles": 1.1641532182693481e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 4000.099377983728,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "nominal_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "scenario_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "full_scenario",
+          "policy": "full_scenario_mpc"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 50.0,
+        "residual_veh_h": 60.0,
+        "deadline_vehicles": 2950.0,
+        "weight": 4.0,
+        "id": "D071"
+      },
+      "available": true,
+      "source": "original",
+      "policy": "grid_repair",
+      "nominal_priority_cost": 6293.2789079065315,
+      "proof_id": "23ab8ebfd01ef2575572c8366135b9b9ea9cc334ad7b1172f4370db299d48e40",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.740151228,
+          1.0
+        ],
+        [
+          0.441121546,
+          1.0,
+          0.411267379,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 3072.812839005714,
+          "median": 3168.8475434068478,
+          "maximum": 3268.907256630391
+        },
+        "queue_veh_h": {
+          "minimum": 562.0796359467361,
+          "median": 573.78685199152,
+          "maximum": 586.3062196806881
+        },
+        "completed_trips": {
+          "minimum": 16059.11874958902,
+          "median": 16206.251150567998,
+          "maximum": 16357.302712182664
+        },
+        "priority_cost": {
+          "minimum": 6108.391305178169,
+          "median": 6293.397318094161,
+          "maximum": 6485.612083922315
+        },
+        "peak_queue_vehicles": {
+          "minimum": 1764.7584726753607,
+          "median": 1798.4718387012133,
+          "maximum": 1837.6591467478431
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 2626.611201913182,
+          "median": 2671.547026127991,
+          "maximum": 2722.9293506824374
+        },
+        "maximum_conservation_error_vehicles": 1.1459633242338896e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 6706.360894124532,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 6293.2789079065315,
+          "source": "original",
+          "policy": "grid_repair"
+        },
+        {
+          "nominal_priority_cost": 6299.951902124116,
+          "source": "full_scenario",
+          "policy": "full_scenario_repair"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 50.0,
+        "residual_veh_h": 150.0,
+        "deadline_vehicles": 2750.0,
+        "weight": 2.0,
+        "id": "D072"
+      },
+      "available": true,
+      "source": "original",
+      "policy": "nominal_mpc",
+      "nominal_priority_cost": 3995.4577324388842,
+      "proof_id": "6b8943670b60bca76f625e97ffd12f722f8d44bf782cc4f46000c871fe7d71b4",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.786357438,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          0.56816782,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 2611.381282406921,
+          "median": 2716.3687957872526,
+          "maximum": 2824.7708321268874
+        },
+        "queue_veh_h": {
+          "minimum": 225.459463038314,
+          "median": 252.66645428014556,
+          "maximum": 281.9038246329411
+        },
+        "completed_trips": {
+          "minimum": 17790.325645318237,
+          "median": 17944.596194704958,
+          "maximum": 18099.519587065453
+        },
+        "priority_cost": {
+          "minimum": 3851.645652179224,
+          "median": 3996.12931924275,
+          "maximum": 4145.542394560929
+        },
+        "peak_queue_vehicles": {
+          "minimum": 612.4654929693164,
+          "median": 695.9837294994054,
+          "maximum": 793.1547079829716
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 1630.0385670155201,
+          "median": 1640.4191325544575,
+          "maximum": 1651.6733955972104
+        },
+        "maximum_conservation_error_vehicles": 1.0913936421275139e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "nominal_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "scenario_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "full_scenario",
+          "policy": "full_scenario_mpc"
+        },
+        {
+          "nominal_priority_cost": 4000.099377983728,
+          "source": "reserve_refresh",
+          "policy": "fresh_reserve"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 50.0,
+        "residual_veh_h": 150.0,
+        "deadline_vehicles": 2750.0,
+        "weight": 4.0,
+        "id": "D073"
+      },
+      "available": true,
+      "source": "reserve_refresh",
+      "policy": "reserve_repair",
+      "nominal_priority_cost": 6368.413936651084,
+      "proof_id": "5e98d246098ae62811f3a52ca657062171882eb376994fc07dbf338f3be83619",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.717796506,
+          1.0
+        ],
+        [
+          0.562554304,
+          1.0,
+          0.46303293,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 2907.2219437222093,
+          "median": 3018.536108262121,
+          "maximum": 3132.990021146014
+        },
+        "queue_veh_h": {
+          "minimum": 440.1098634549813,
+          "median": 467.8614801716901,
+          "maximum": 497.64347599936406
+        },
+        "completed_trips": {
+          "minimum": 16672.914995917352,
+          "median": 16826.168460846304,
+          "maximum": 16981.97381935953
+        },
+        "priority_cost": {
+          "minimum": 6158.93492825036,
+          "median": 6371.25844051308,
+          "maximum": 6586.053415680371
+        },
+        "peak_queue_vehicles": {
+          "minimum": 1348.4097229693168,
+          "median": 1432.2629097355343,
+          "maximum": 1529.9488879269968
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 2243.0234661388004,
+          "median": 2273.0530809791076,
+          "maximum": 2307.5343157461207
+        },
+        "maximum_conservation_error_vehicles": 1.127773430198431e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 6706.360894124532,
+          "source": "reserve_refresh",
+          "policy": "fresh_reserve"
+        },
+        {
+          "nominal_priority_cost": 6368.413936651084,
+          "source": "reserve_refresh",
+          "policy": "reserve_repair"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 50.0,
+        "residual_veh_h": 150.0,
+        "deadline_vehicles": 2850.0,
+        "weight": 2.0,
+        "id": "D074"
+      },
+      "available": true,
+      "source": "original",
+      "policy": "nominal_mpc",
+      "nominal_priority_cost": 3995.4577324388842,
+      "proof_id": "12934e99b6a554ce1a526d93bc15c6f4908eacfb9f83a17d4627d174449a8ead",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.786357438,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          0.56816782,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 2611.381282406921,
+          "median": 2716.3687957872526,
+          "maximum": 2824.7708321268874
+        },
+        "queue_veh_h": {
+          "minimum": 225.459463038314,
+          "median": 252.66645428014556,
+          "maximum": 281.9038246329411
+        },
+        "completed_trips": {
+          "minimum": 17790.325645318237,
+          "median": 17944.596194704958,
+          "maximum": 18099.519587065453
+        },
+        "priority_cost": {
+          "minimum": 3851.645652179224,
+          "median": 3996.12931924275,
+          "maximum": 4145.542394560929
+        },
+        "peak_queue_vehicles": {
+          "minimum": 612.4654929693164,
+          "median": 695.9837294994054,
+          "maximum": 793.1547079829716
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 1630.0385670155201,
+          "median": 1640.4191325544575,
+          "maximum": 1651.6733955972104
+        },
+        "maximum_conservation_error_vehicles": 1.0913936421275139e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "nominal_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "scenario_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "full_scenario",
+          "policy": "full_scenario_mpc"
+        },
+        {
+          "nominal_priority_cost": 4000.099377983728,
+          "source": "reserve_refresh",
+          "policy": "fresh_reserve"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 50.0,
+        "residual_veh_h": 150.0,
+        "deadline_vehicles": 2850.0,
+        "weight": 4.0,
+        "id": "D075"
+      },
+      "available": true,
+      "source": "reserve_refresh",
+      "policy": "reserve_repair",
+      "nominal_priority_cost": 6343.692314466846,
+      "proof_id": "8ec34511b4a4497f866ec53595de5d12579da1592d90acb6d69f9974acb1504e",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.781032194,
+          1.0
+        ],
+        [
+          0.517832868,
+          1.0,
+          0.446996524,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 2955.516608033347,
+          "median": 3067.383740471505,
+          "maximum": 3182.9053925705557
+        },
+        "queue_veh_h": {
+          "minimum": 472.85085903831373,
+          "median": 500.0691410799874,
+          "maximum": 529.3178022326263
+        },
+        "completed_trips": {
+          "minimum": 16474.8430020318,
+          "median": 16628.21661047313,
+          "maximum": 16784.54170423285
+        },
+        "priority_cost": {
+          "minimum": 6135.61795212728,
+          "median": 6346.576845499732,
+          "maximum": 6560.108636868656
+        },
+        "peak_queue_vehicles": {
+          "minimum": 1460.6645649693132,
+          "median": 1544.1874194838429,
+          "maximum": 1641.3639380210632
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 2368.323868561487,
+          "median": 2403.3024751218286,
+          "maximum": 2443.466504501942
+        },
+        "maximum_conservation_error_vehicles": 1.0186340659856796e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 6706.360894124532,
+          "source": "reserve_refresh",
+          "policy": "fresh_reserve"
+        },
+        {
+          "nominal_priority_cost": 6343.692314466846,
+          "source": "reserve_refresh",
+          "policy": "reserve_repair"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 50.0,
+        "residual_veh_h": 150.0,
+        "deadline_vehicles": 2950.0,
+        "weight": 2.0,
+        "id": "D076"
+      },
+      "available": true,
+      "source": "original",
+      "policy": "nominal_mpc",
+      "nominal_priority_cost": 3995.4577324388842,
+      "proof_id": "c16ae085c51df92b8e12fcc284c51d922fbc87473181e2861be504a02fbab3af",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.786357438,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          0.56816782,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 2611.381282406921,
+          "median": 2716.3687957872526,
+          "maximum": 2824.7708321268874
+        },
+        "queue_veh_h": {
+          "minimum": 225.459463038314,
+          "median": 252.66645428014556,
+          "maximum": 281.9038246329411
+        },
+        "completed_trips": {
+          "minimum": 17790.325645318237,
+          "median": 17944.596194704958,
+          "maximum": 18099.519587065453
+        },
+        "priority_cost": {
+          "minimum": 3851.645652179224,
+          "median": 3996.12931924275,
+          "maximum": 4145.542394560929
+        },
+        "peak_queue_vehicles": {
+          "minimum": 612.4654929693164,
+          "median": 695.9837294994054,
+          "maximum": 793.1547079829716
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 1630.0385670155201,
+          "median": 1640.4191325544575,
+          "maximum": 1651.6733955972104
+        },
+        "maximum_conservation_error_vehicles": 1.0913936421275139e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "nominal_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "scenario_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "full_scenario",
+          "policy": "full_scenario_mpc"
+        },
+        {
+          "nominal_priority_cost": 4000.099377983728,
+          "source": "reserve_refresh",
+          "policy": "fresh_reserve"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 50.0,
+        "residual_veh_h": 150.0,
+        "deadline_vehicles": 2950.0,
+        "weight": 4.0,
+        "id": "D077"
+      },
+      "available": true,
+      "source": "reserve_refresh",
+      "policy": "reserve_repair",
+      "nominal_priority_cost": 6342.203854882617,
+      "proof_id": "6f53fa61cfb3c9628a132cfc1baabf33fba0232e711dab16668bb96b1322441c",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.782012739,
+          1.0
+        ],
+        [
+          0.503219152,
+          1.0,
+          0.446996524,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 2967.0546148165977,
+          "median": 3079.4133402485095,
+          "maximum": 3195.4659586357525
+        },
+        "queue_veh_h": {
+          "minimum": 472.85085903831373,
+          "median": 500.06692573418616,
+          "maximum": 529.3133715410239
+        },
+        "completed_trips": {
+          "minimum": 16428.396138086606,
+          "median": 16581.590629958846,
+          "maximum": 16737.8998320086
+        },
+        "priority_cost": {
+          "minimum": 6134.295915960485,
+          "median": 6345.08079482139,
+          "maximum": 6558.419156313071
+        },
+        "peak_queue_vehicles": {
+          "minimum": 1460.6645649693132,
+          "median": 1544.186502014149,
+          "maximum": 1641.3619104199522
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 2420.270558037721,
+          "median": 2457.2754429390843,
+          "maximum": 2499.7958401822384
+        },
+        "maximum_conservation_error_vehicles": 1.0186340659856796e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 6706.360894124532,
+          "source": "reserve_refresh",
+          "policy": "fresh_reserve"
+        },
+        {
+          "nominal_priority_cost": 6342.203854882617,
+          "source": "reserve_refresh",
+          "policy": "reserve_repair"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 50.0,
+        "residual_veh_h": 300.0,
+        "deadline_vehicles": 2750.0,
+        "weight": 2.0,
+        "id": "D078"
+      },
+      "available": true,
+      "source": "original",
+      "policy": "nominal_mpc",
+      "nominal_priority_cost": 3995.4577324388842,
+      "proof_id": "2fdfb43b3eff56b3f500cb8b3552f71d5b3489e3db7f62e58fd390c6626d1d70",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.786357438,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          0.56816782,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 2581.6602475542263,
+          "median": 2717.1673955532797,
+          "maximum": 2854.801395024949
+        },
+        "queue_veh_h": {
+          "minimum": 198.32317548261065,
+          "median": 251.19387255178182,
+          "maximum": 309.0542004111157
+        },
+        "completed_trips": {
+          "minimum": 17781.0526065355,
+          "median": 17944.639826277933,
+          "maximum": 18108.705000876984
+        },
+        "priority_cost": {
+          "minimum": 3820.0808751717927,
+          "median": 3997.2850986322946,
+          "maximum": 4177.665097415008
+        },
+        "peak_queue_vehicles": {
+          "minimum": 522.4823384592529,
+          "median": 689.1601264312249,
+          "maximum": 883.1445888506346
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 1629.7036669676725,
+          "median": 1640.4734649936097,
+          "maximum": 1652.1043880842892
+        },
+        "maximum_conservation_error_vehicles": 1.0913936421275139e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "nominal_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "scenario_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "full_scenario",
+          "policy": "full_scenario_mpc"
+        },
+        {
+          "nominal_priority_cost": 4000.099377983728,
+          "source": "reserve_refresh",
+          "policy": "fresh_reserve"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 50.0,
+        "residual_veh_h": 300.0,
+        "deadline_vehicles": 2750.0,
+        "weight": 4.0,
+        "id": "D079"
+      },
+      "available": true,
+      "source": "reserve_refresh",
+      "policy": "reserve_repair",
+      "nominal_priority_cost": 6699.489367761261,
+      "proof_id": "25698dc5037a5ca6833ba5fd20653e850affd4bd201d3931cbd166b8a9550b55",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.877122579,
+          1.0
+        ],
+        [
+          0.912510861,
+          1.0,
+          0.6554698,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 2558.7493364588763,
+          "median": 2680.3536698058615,
+          "maximum": 2812.5832470987775
+        },
+        "queue_veh_h": {
+          "minimum": 82.48513018903391,
+          "median": 88.02041747995038,
+          "maximum": 130.6752809773079
+        },
+        "completed_trips": {
+          "minimum": 17936.114178850723,
+          "median": 18178.332427868037,
+          "maximum": 18382.96403025709
+        },
+        "priority_cost": {
+          "minimum": 6390.471541252695,
+          "median": 6699.590681638674,
+          "maximum": 6986.960707238056
+        },
+        "peak_queue_vehicles": {
+          "minimum": 124.99999999999996,
+          "median": 174.10781134202304,
+          "maximum": 271.97491609695606
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 1763.0737272629442,
+          "median": 1798.422599202691,
+          "maximum": 1820.193299933332
+        },
+        "maximum_conservation_error_vehicles": 1.0913936421275139e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 6706.360894124532,
+          "source": "reserve_refresh",
+          "policy": "fresh_reserve"
+        },
+        {
+          "nominal_priority_cost": 6699.489367761261,
+          "source": "reserve_refresh",
+          "policy": "reserve_repair"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 50.0,
+        "residual_veh_h": 300.0,
+        "deadline_vehicles": 2850.0,
+        "weight": 2.0,
+        "id": "D080"
+      },
+      "available": true,
+      "source": "original",
+      "policy": "nominal_mpc",
+      "nominal_priority_cost": 3995.4577324388842,
+      "proof_id": "4fd6282aee49384734ea96e0ac9602b1b1a8f0721b2720f60e43f44ac3ba369c",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.786357438,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          0.56816782,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 2581.6602475542263,
+          "median": 2717.1673955532797,
+          "maximum": 2854.801395024949
+        },
+        "queue_veh_h": {
+          "minimum": 198.32317548261065,
+          "median": 251.19387255178182,
+          "maximum": 309.0542004111157
+        },
+        "completed_trips": {
+          "minimum": 17781.0526065355,
+          "median": 17944.639826277933,
+          "maximum": 18108.705000876984
+        },
+        "priority_cost": {
+          "minimum": 3820.0808751717927,
+          "median": 3997.2850986322946,
+          "maximum": 4177.665097415008
+        },
+        "peak_queue_vehicles": {
+          "minimum": 522.4823384592529,
+          "median": 689.1601264312249,
+          "maximum": 883.1445888506346
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 1629.7036669676725,
+          "median": 1640.4734649936097,
+          "maximum": 1652.1043880842892
+        },
+        "maximum_conservation_error_vehicles": 1.0913936421275139e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "nominal_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "scenario_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "full_scenario",
+          "policy": "full_scenario_mpc"
+        },
+        {
+          "nominal_priority_cost": 4000.099377983728,
+          "source": "reserve_refresh",
+          "policy": "fresh_reserve"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 50.0,
+        "residual_veh_h": 300.0,
+        "deadline_vehicles": 2850.0,
+        "weight": 4.0,
+        "id": "D081"
+      },
+      "available": true,
+      "source": "reserve_refresh",
+      "policy": "reserve_repair",
+      "nominal_priority_cost": 6699.233633932206,
+      "proof_id": "0c143cfebb496de3c7532be7dc4b2f65a92fc3770f748655eb80a7497fa612bd",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.89146874,
+          1.0
+        ],
+        [
+          0.909593663,
+          1.0,
+          0.6554698,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 2559.72617982109,
+          "median": 2681.366744177695,
+          "maximum": 2813.6306302928965
+        },
+        "queue_veh_h": {
+          "minimum": 82.48513018903391,
+          "median": 88.02041747995038,
+          "maximum": 130.6752809773079
+        },
+        "completed_trips": {
+          "minimum": 17933.117650574895,
+          "median": 18175.32849704053,
+          "maximum": 18379.949362689895
+        },
+        "priority_cost": {
+          "minimum": 6390.295730576163,
+          "median": 6699.331635237006,
+          "maximum": 6986.633609332864
+        },
+        "peak_queue_vehicles": {
+          "minimum": 124.99999999999996,
+          "median": 174.10781134202304,
+          "maximum": 271.97491609695606
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 1766.2440249225117,
+          "median": 1801.7054528786728,
+          "maximum": 1823.588569116862
+        },
+        "maximum_conservation_error_vehicles": 1.1641532182693481e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 6706.360894124532,
+          "source": "reserve_refresh",
+          "policy": "fresh_reserve"
+        },
+        {
+          "nominal_priority_cost": 6699.233633932206,
+          "source": "reserve_refresh",
+          "policy": "reserve_repair"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 50.0,
+        "residual_veh_h": 300.0,
+        "deadline_vehicles": 2950.0,
+        "weight": 2.0,
+        "id": "D082"
+      },
+      "available": true,
+      "source": "original",
+      "policy": "nominal_mpc",
+      "nominal_priority_cost": 3995.4577324388842,
+      "proof_id": "2f959cfa7caae79cd866aebb934360571b6c039fe4f16395572bf032c5474c97",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.786357438,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          0.56816782,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 2581.6602475542263,
+          "median": 2717.1673955532797,
+          "maximum": 2854.801395024949
+        },
+        "queue_veh_h": {
+          "minimum": 198.32317548261065,
+          "median": 251.19387255178182,
+          "maximum": 309.0542004111157
+        },
+        "completed_trips": {
+          "minimum": 17781.0526065355,
+          "median": 17944.639826277933,
+          "maximum": 18108.705000876984
+        },
+        "priority_cost": {
+          "minimum": 3820.0808751717927,
+          "median": 3997.2850986322946,
+          "maximum": 4177.665097415008
+        },
+        "peak_queue_vehicles": {
+          "minimum": 522.4823384592529,
+          "median": 689.1601264312249,
+          "maximum": 883.1445888506346
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 1629.7036669676725,
+          "median": 1640.4734649936097,
+          "maximum": 1652.1043880842892
+        },
+        "maximum_conservation_error_vehicles": 1.0913936421275139e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "nominal_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "original",
+          "policy": "scenario_mpc"
+        },
+        {
+          "nominal_priority_cost": 3995.4577324388842,
+          "source": "full_scenario",
+          "policy": "full_scenario_mpc"
+        },
+        {
+          "nominal_priority_cost": 4000.099377983728,
+          "source": "reserve_refresh",
+          "policy": "fresh_reserve"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "development",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 50.0,
+        "residual_veh_h": 300.0,
+        "deadline_vehicles": 2950.0,
+        "weight": 4.0,
+        "id": "D083"
+      },
+      "available": true,
+      "source": "reserve_refresh",
+      "policy": "reserve_repair",
+      "nominal_priority_cost": 6580.934293375584,
+      "proof_id": "a7484b34ea2592332bbe737f56689a8ac8099749207e218edf6e5eddf0aa50d2",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.857917253,
+          1.0
+        ],
+        [
+          0.782658379,
+          1.0,
+          0.591324177,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 2637.5050122379503,
+          "median": 2776.5084939721605,
+          "maximum": 2917.7229509104905
+        },
+        "queue_veh_h": {
+          "minimum": 151.04561327427842,
+          "median": 203.79183630656928,
+          "maximum": 261.6406975665962
+        },
+        "completed_trips": {
+          "minimum": 17641.141445596448,
+          "median": 17803.868605381685,
+          "maximum": 17967.693375753188
+        },
+        "priority_cost": {
+          "minimum": 6324.641486735291,
+          "median": 6585.70479958207,
+          "maximum": 6848.420585106952
+        },
+        "peak_queue_vehicles": {
+          "minimum": 360.38783945925627,
+          "median": 527.0433530369066,
+          "maximum": 720.9947493535892
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 1899.7036539548876,
+          "median": 1917.511396765648,
+          "maximum": 1937.0123378489889
+        },
+        "maximum_conservation_error_vehicles": 1.127773430198431e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 6706.360894124532,
+          "source": "reserve_refresh",
+          "policy": "fresh_reserve"
+        },
+        {
+          "nominal_priority_cost": 6580.934293375584,
+          "source": "reserve_refresh",
+          "policy": "reserve_repair"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "held_out",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 5.0,
+        "residual_veh_h": 100.0,
+        "deadline_vehicles": 2800.0,
+        "weight": 3.0,
+        "id": "D084"
+      },
+      "available": true,
+      "source": "full_scenario",
+      "policy": "full_scenario_mpc",
+      "nominal_priority_cost": 5149.137123033303,
+      "proof_id": "11ad3ed4e273872aa800baa093450858fcb6ebb6e61b04d1ee77caa5d2646154",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.702958682,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          0.391568718,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 2852.2509775184585,
+          "median": 2879.4839947275127,
+          "maximum": 2906.4203278922746
+        },
+        "queue_veh_h": {
+          "minimum": 595.9832161375648,
+          "median": 613.1458947048548,
+          "maximum": 632.3697826556881
+        },
+        "completed_trips": {
+          "minimum": 17145.305024079455,
+          "median": 17167.985432456488,
+          "maximum": 17187.39435235225
+        },
+        "priority_cost": {
+          "minimum": 5112.681765938472,
+          "median": 5150.644244883622,
+          "maximum": 5185.709210485155
+        },
+        "peak_queue_vehicles": {
+          "minimum": 1878.9568106248598,
+          "median": 1934.4299574882668,
+          "maximum": 1999.0017319313515
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 1490.3027527662991,
+          "median": 1491.3533189254513,
+          "maximum": 1492.3025645470111
+        },
+        "maximum_conservation_error_vehicles": 1.0186340659856796e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 5353.230136054129,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 5152.269855628648,
+          "source": "original",
+          "policy": "grid_repair"
+        },
+        {
+          "nominal_priority_cost": 5149.137123033303,
+          "source": "full_scenario",
+          "policy": "full_scenario_mpc"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "held_out",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 5.0,
+        "residual_veh_h": 100.0,
+        "deadline_vehicles": 2900.0,
+        "weight": 3.0,
+        "id": "D085"
+      },
+      "available": true,
+      "source": "full_scenario",
+      "policy": "full_scenario_mpc",
+      "nominal_priority_cost": 5149.137123033303,
+      "proof_id": "9c72976ffb530e8768d664be9f384026d649dd19d755ca029b8bbcba6c7e286a",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.702958682,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          0.391568718,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 2852.2509775184585,
+          "median": 2879.4839947275127,
+          "maximum": 2906.4203278922746
+        },
+        "queue_veh_h": {
+          "minimum": 595.9832161375648,
+          "median": 613.1458947048548,
+          "maximum": 632.3697826556881
+        },
+        "completed_trips": {
+          "minimum": 17145.305024079455,
+          "median": 17167.985432456488,
+          "maximum": 17187.39435235225
+        },
+        "priority_cost": {
+          "minimum": 5112.681765938472,
+          "median": 5150.644244883622,
+          "maximum": 5185.709210485155
+        },
+        "peak_queue_vehicles": {
+          "minimum": 1878.9568106248598,
+          "median": 1934.4299574882668,
+          "maximum": 1999.0017319313515
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 1490.3027527662991,
+          "median": 1491.3533189254513,
+          "maximum": 1492.3025645470111
+        },
+        "maximum_conservation_error_vehicles": 1.0186340659856796e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 5353.230136054129,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 5152.269855628648,
+          "source": "original",
+          "policy": "grid_repair"
+        },
+        {
+          "nominal_priority_cost": 5149.137123033303,
+          "source": "full_scenario",
+          "policy": "full_scenario_mpc"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "held_out",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 5.0,
+        "residual_veh_h": 225.0,
+        "deadline_vehicles": 2800.0,
+        "weight": 3.0,
+        "id": "D086"
+      },
+      "available": true,
+      "source": "full_scenario",
+      "policy": "full_scenario_mpc",
+      "nominal_priority_cost": 5155.291557139535,
+      "proof_id": "e7f17703e7059218c35f64695bb95f66c8fe8980f79d751d644d2d9738cfcf70",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.695225015,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          0.402280796,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 2817.1003300755788,
+          "median": 2869.3183148237367,
+          "maximum": 2920.818413586601
+        },
+        "queue_veh_h": {
+          "minimum": 551.4991505911453,
+          "median": 589.9871462568065,
+          "maximum": 633.112863035441
+        },
+        "completed_trips": {
+          "minimum": 17186.461429203027,
+          "median": 17220.64570770401,
+          "maximum": 17244.31785132788
+        },
+        "priority_cost": {
+          "minimum": 5091.047400631797,
+          "median": 5158.91011599877,
+          "maximum": 5219.739037318199
+        },
+        "peak_queue_vehicles": {
+          "minimum": 1728.9863025331435,
+          "median": 1853.7587692509678,
+          "maximum": 1999.0031480230712
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 1498.8301409605294,
+          "median": 1500.2613274709533,
+          "maximum": 1501.3527139999796
+        },
+        "maximum_conservation_error_vehicles": 9.458744898438454e-11
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 5353.230136054129,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 5160.589536889885,
+          "source": "original",
+          "policy": "grid_repair"
+        },
+        {
+          "nominal_priority_cost": 5155.291557139535,
+          "source": "full_scenario",
+          "policy": "full_scenario_mpc"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "held_out",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 5.0,
+        "residual_veh_h": 225.0,
+        "deadline_vehicles": 2900.0,
+        "weight": 3.0,
+        "id": "D087"
+      },
+      "available": true,
+      "source": "full_scenario",
+      "policy": "full_scenario_mpc",
+      "nominal_priority_cost": 5155.291557139535,
+      "proof_id": "380515527fc56ba11f9cc4973e45adc55243104999abfab6378ec13b4c2e6f49",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.695225015,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          0.402280796,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 2817.1003300755788,
+          "median": 2869.3183148237367,
+          "maximum": 2920.818413586601
+        },
+        "queue_veh_h": {
+          "minimum": 551.4991505911453,
+          "median": 589.9871462568065,
+          "maximum": 633.112863035441
+        },
+        "completed_trips": {
+          "minimum": 17186.461429203027,
+          "median": 17220.64570770401,
+          "maximum": 17244.31785132788
+        },
+        "priority_cost": {
+          "minimum": 5091.047400631797,
+          "median": 5158.91011599877,
+          "maximum": 5219.739037318199
+        },
+        "peak_queue_vehicles": {
+          "minimum": 1728.9863025331435,
+          "median": 1853.7587692509678,
+          "maximum": 1999.0031480230712
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 1498.8301409605294,
+          "median": 1500.2613274709533,
+          "maximum": 1501.3527139999796
+        },
+        "maximum_conservation_error_vehicles": 9.458744898438454e-11
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 5353.230136054129,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 5160.589536889885,
+          "source": "original",
+          "policy": "grid_repair"
+        },
+        {
+          "nominal_priority_cost": 5155.291557139535,
+          "source": "full_scenario",
+          "policy": "full_scenario_mpc"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "held_out",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 20.0,
+        "residual_veh_h": 100.0,
+        "deadline_vehicles": 2800.0,
+        "weight": 3.0,
+        "id": "D088"
+      },
+      "available": true,
+      "source": "original",
+      "policy": "scenario_mpc",
+      "nominal_priority_cost": 5149.065215328807,
+      "proof_id": "9a8c6643bfc47f25dce8344e2f3de855fbae490d88a6de80f003cbc221354772",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.724023965,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          0.391441752,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 2830.7658487574713,
+          "median": 2879.614060489761,
+          "maximum": 2928.6992244832627
+        },
+        "queue_veh_h": {
+          "minimum": 595.9351637217816,
+          "median": 613.6533258181291,
+          "maximum": 632.9362795714705
+        },
+        "completed_trips": {
+          "minimum": 17100.556548212073,
+          "median": 17165.71355056676,
+          "maximum": 17230.94737077389
+        },
+        "priority_cost": {
+          "minimum": 5070.200654583895,
+          "median": 5150.124063243108,
+          "maximum": 5229.175544127188
+        },
+        "peak_queue_vehicles": {
+          "minimum": 1879.7444996852419,
+          "median": 1935.3187194882657,
+          "maximum": 1999.9915668709655
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 1487.8601036999446,
+          "median": 1491.2975921865905,
+          "maximum": 1494.7046791870605
+        },
+        "maximum_conservation_error_vehicles": 1.0913936421275139e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 5353.230136054129,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 5152.269855628648,
+          "source": "original",
+          "policy": "grid_repair"
+        },
+        {
+          "nominal_priority_cost": 5149.065215328807,
+          "source": "original",
+          "policy": "scenario_mpc"
+        },
+        {
+          "nominal_priority_cost": 5149.146124668782,
+          "source": "full_scenario",
+          "policy": "full_scenario_mpc"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "held_out",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 20.0,
+        "residual_veh_h": 100.0,
+        "deadline_vehicles": 2900.0,
+        "weight": 3.0,
+        "id": "D089"
+      },
+      "available": true,
+      "source": "original",
+      "policy": "scenario_mpc",
+      "nominal_priority_cost": 5149.065215328807,
+      "proof_id": "2f75d956c7e74162d7a5533ef85705a0dd24119929121718d25d46d8c341bed0",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.724023965,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          0.391441752,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 2830.7658487574713,
+          "median": 2879.614060489761,
+          "maximum": 2928.6992244832627
+        },
+        "queue_veh_h": {
+          "minimum": 595.9351637217816,
+          "median": 613.6533258181291,
+          "maximum": 632.9362795714705
+        },
+        "completed_trips": {
+          "minimum": 17100.556548212073,
+          "median": 17165.71355056676,
+          "maximum": 17230.94737077389
+        },
+        "priority_cost": {
+          "minimum": 5070.200654583895,
+          "median": 5150.124063243108,
+          "maximum": 5229.175544127188
+        },
+        "peak_queue_vehicles": {
+          "minimum": 1879.7444996852419,
+          "median": 1935.3187194882657,
+          "maximum": 1999.9915668709655
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 1487.8601036999446,
+          "median": 1491.2975921865905,
+          "maximum": 1494.7046791870605
+        },
+        "maximum_conservation_error_vehicles": 1.0913936421275139e-10
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 5353.230136054129,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 5152.269855628648,
+          "source": "original",
+          "policy": "grid_repair"
+        },
+        {
+          "nominal_priority_cost": 5149.065215328807,
+          "source": "original",
+          "policy": "scenario_mpc"
+        },
+        {
+          "nominal_priority_cost": 5149.146124668782,
+          "source": "full_scenario",
+          "policy": "full_scenario_mpc"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "held_out",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 20.0,
+        "residual_veh_h": 225.0,
+        "deadline_vehicles": 2800.0,
+        "weight": 3.0,
+        "id": "D090"
+      },
+      "available": true,
+      "source": "original",
+      "policy": "scenario_mpc",
+      "nominal_priority_cost": 5155.217591619206,
+      "proof_id": "9eec62232349231b66da3fa5c04b14091c6464d96d0d38b77abc611d03ab109f",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.741724797,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          0.40215383,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 2795.5836119728,
+          "median": 2869.4471150532263,
+          "maximum": 2943.191904803582
+        },
+        "queue_veh_h": {
+          "minimum": 551.4510981753608,
+          "median": 590.2927140062038,
+          "maximum": 633.6793599512241
+        },
+        "completed_trips": {
+          "minimum": 17141.73405447393,
+          "median": 17214.769080227932,
+          "maximum": 17287.844065980436
+        },
+        "priority_cost": {
+          "minimum": 5048.485194887857,
+          "median": 5157.482343189483,
+          "maximum": 5263.450327752473
+        },
+        "peak_queue_vehicles": {
+          "minimum": 1729.773991593514,
+          "median": 1854.6475312509692,
+          "maximum": 1999.9929829626858
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 1496.3580515373733,
+          "median": 1500.111029240018,
+          "maximum": 1503.803542827428
+        },
+        "maximum_conservation_error_vehicles": 9.458744898438454e-11
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 5353.230136054129,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 5160.589536889885,
+          "source": "original",
+          "policy": "grid_repair"
+        },
+        {
+          "nominal_priority_cost": 5155.217591619206,
+          "source": "original",
+          "policy": "scenario_mpc"
+        },
+        {
+          "nominal_priority_cost": 5155.300816357724,
+          "source": "full_scenario",
+          "policy": "full_scenario_mpc"
+        }
+      ]
+    },
+    {
+      "contract": {
+        "task": "D",
+        "split": "held_out",
+        "amplitude": 0.3,
+        "duration_h": 1.0,
+        "width_vehicles": 20.0,
+        "residual_veh_h": 225.0,
+        "deadline_vehicles": 2900.0,
+        "weight": 3.0,
+        "id": "D091"
+      },
+      "available": true,
+      "source": "original",
+      "policy": "scenario_mpc",
+      "nominal_priority_cost": 5155.217591619206,
+      "proof_id": "0a11f441849f278c4be0c5239f0d78a09d60dea725af82de63334a538c4ed65c",
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.741724797,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          0.40215383,
+          1.0
+        ]
+      ],
+      "summary": {
+        "runs": 640,
+        "physical_passes": 640,
+        "service_passes": 640,
+        "tts_veh_h": {
+          "minimum": 2795.5836119728,
+          "median": 2869.4471150532263,
+          "maximum": 2943.191904803582
+        },
+        "queue_veh_h": {
+          "minimum": 551.4510981753608,
+          "median": 590.2927140062038,
+          "maximum": 633.6793599512241
+        },
+        "completed_trips": {
+          "minimum": 17141.73405447393,
+          "median": 17214.769080227932,
+          "maximum": 17287.844065980436
+        },
+        "priority_cost": {
+          "minimum": 5048.485194887857,
+          "median": 5157.482343189483,
+          "maximum": 5263.450327752473
+        },
+        "peak_queue_vehicles": {
+          "minimum": 1729.773991593514,
+          "median": 1854.6475312509692,
+          "maximum": 1999.9929829626858
+        },
+        "deadline_n1_vehicles": {
+          "minimum": 1496.3580515373733,
+          "median": 1500.111029240018,
+          "maximum": 1503.803542827428
+        },
+        "maximum_conservation_error_vehicles": 9.458744898438454e-11
+      },
+      "candidates": [
+        {
+          "nominal_priority_cost": 5353.230136054129,
+          "source": "original",
+          "policy": "continuation"
+        },
+        {
+          "nominal_priority_cost": 5160.589536889885,
+          "source": "original",
+          "policy": "grid_repair"
+        },
+        {
+          "nominal_priority_cost": 5155.217591619206,
+          "source": "original",
+          "policy": "scenario_mpc"
+        },
+        {
+          "nominal_priority_cost": 5155.300816357724,
+          "source": "full_scenario",
+          "policy": "full_scenario_mpc"
+        }
+      ]
+    }
+  ],
+  "prospective": true,
+  "replay_outcomes_not_used_in_selection": true
+}

@@ -1,0 +1,4006 @@
+{
+  "ordinary": [
+    {
+      "id": "D012",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "nominal_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D013",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "grid_repair",
+      "fixed_source": "grid_repair",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D014",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "nominal_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D015",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "grid_repair",
+      "fixed_source": "grid_repair",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D016",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "nominal_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D017",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "grid_repair",
+      "fixed_source": "grid_repair",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D018",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "nominal_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D019",
+      "split": "development",
+      "portfolio_source": "full_scenario",
+      "portfolio_policy": "full_scenario_repair",
+      "fixed_source": "grid_repair",
+      "identical_commands": false,
+      "metrics": {
+        "priority_cost": {
+          "status": "portfolio_better",
+          "median_relative_percent": -0.07999782175095843,
+          "median_difference_veh_h": -5.055314013262887
+        },
+        "tts_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 0.750866706448943,
+          "median_difference_veh_h": 23.272969821629204
+        },
+        "queue_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 0.6528131524481949,
+          "median_difference_veh_h": 3.5576235362543116
+        }
+      }
+    },
+    {
+      "id": "D020",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "nominal_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D021",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "grid_repair",
+      "fixed_source": "grid_repair",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D022",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "nominal_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D023",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "grid_repair",
+      "fixed_source": "grid_repair",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D024",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "nominal_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D025",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "grid_repair",
+      "fixed_source": "grid_repair",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D026",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "nominal_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D027",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "grid_repair",
+      "fixed_source": "grid_repair",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D028",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "nominal_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D029",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "grid_repair",
+      "fixed_source": "grid_repair",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D030",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "nominal_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D031",
+      "split": "development",
+      "portfolio_source": "full_scenario",
+      "portfolio_policy": "full_scenario_repair",
+      "fixed_source": "grid_repair",
+      "identical_commands": false,
+      "metrics": {
+        "priority_cost": {
+          "status": "portfolio_better",
+          "median_relative_percent": -0.20367760830458628,
+          "median_difference_veh_h": -12.80006131632399
+        },
+        "tts_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 1.0229110231356904,
+          "median_difference_veh_h": 32.067935820970206
+        },
+        "queue_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 3.214253192510488,
+          "median_difference_veh_h": 18.605647310147447
+        }
+      }
+    },
+    {
+      "id": "D032",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "nominal_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D033",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "grid_repair",
+      "fixed_source": "grid_repair",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D034",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "nominal_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D035",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "grid_repair",
+      "fixed_source": "grid_repair",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D036",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "nominal_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D037",
+      "split": "development",
+      "portfolio_source": "full_scenario",
+      "portfolio_policy": "full_scenario_repair",
+      "fixed_source": "grid_repair",
+      "identical_commands": false,
+      "metrics": {
+        "priority_cost": {
+          "status": "portfolio_better",
+          "median_relative_percent": -0.07757688710152483,
+          "median_difference_veh_h": -4.896738226650541
+        },
+        "tts_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 0.7061909958306417,
+          "median_difference_veh_h": 21.869492489826143
+        },
+        "queue_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 0.6800933851377613,
+          "median_difference_veh_h": 3.7020466370676672
+        }
+      }
+    },
+    {
+      "id": "D038",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "nominal_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D039",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "grid_repair",
+      "fixed_source": "grid_repair",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D040",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "nominal_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D041",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "grid_repair",
+      "fixed_source": "grid_repair",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D042",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "nominal_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D043",
+      "split": "development",
+      "portfolio_source": "full_scenario",
+      "portfolio_policy": "full_scenario_repair",
+      "fixed_source": "grid_repair",
+      "identical_commands": false,
+      "metrics": {
+        "priority_cost": {
+          "status": "portfolio_better",
+          "median_relative_percent": -0.9932404437134068,
+          "median_difference_veh_h": -64.21091454812313
+        },
+        "tts_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 3.448103348248516,
+          "median_difference_veh_h": 98.95626191706151
+        },
+        "queue_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 22.23598224854441,
+          "median_difference_veh_h": 75.88853366665154
+        }
+      }
+    },
+    {
+      "id": "D044",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "nominal_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D045",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "grid_repair",
+      "fixed_source": "grid_repair",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D046",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "nominal_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D047",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "grid_repair",
+      "fixed_source": "grid_repair",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D048",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "nominal_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D049",
+      "split": "development",
+      "portfolio_source": "full_scenario",
+      "portfolio_policy": "full_scenario_repair",
+      "fixed_source": "grid_repair",
+      "identical_commands": false,
+      "metrics": {
+        "priority_cost": {
+          "status": "portfolio_better",
+          "median_relative_percent": -0.4920047050720945,
+          "median_difference_veh_h": -31.018112908801413
+        },
+        "tts_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 2.121668559335003,
+          "median_difference_veh_h": 65.83884354408269
+        },
+        "queue_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 8.003122682849952,
+          "median_difference_veh_h": 43.95293226361167
+        }
+      }
+    },
+    {
+      "id": "D050",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "nominal_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D051",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "grid_repair",
+      "fixed_source": "grid_repair",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D052",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "nominal_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D053",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "grid_repair",
+      "fixed_source": "grid_repair",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D054",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "nominal_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D055",
+      "split": "development",
+      "portfolio_source": "full_scenario",
+      "portfolio_policy": "full_scenario_repair",
+      "fixed_source": "grid_repair",
+      "identical_commands": false,
+      "metrics": {
+        "priority_cost": {
+          "status": "portfolio_better",
+          "median_relative_percent": -0.40574327222600326,
+          "median_difference_veh_h": -25.613950164913604
+        },
+        "tts_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 1.7916036320322875,
+          "median_difference_veh_h": 54.205384676342874
+        },
+        "queue_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 6.876132863426529,
+          "median_difference_veh_h": 33.56821088584792
+        }
+      }
+    },
+    {
+      "id": "D056",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "nominal_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D057",
+      "split": "development",
+      "portfolio_source": "full_scenario",
+      "portfolio_policy": "full_scenario_repair",
+      "fixed_source": "grid_repair",
+      "identical_commands": false,
+      "metrics": {
+        "priority_cost": {
+          "status": "portfolio_better",
+          "median_relative_percent": -0.08127212383527009,
+          "median_difference_veh_h": -5.142061527158148
+        },
+        "tts_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 0.7002254296481524,
+          "median_difference_veh_h": 21.794725917971164
+        },
+        "queue_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 0.9333172742460687,
+          "median_difference_veh_h": 5.076073419317652
+        }
+      }
+    },
+    {
+      "id": "D058",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "nominal_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D059",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "grid_repair",
+      "fixed_source": "grid_repair",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D060",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "nominal_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D061",
+      "split": "development",
+      "portfolio_source": "full_scenario",
+      "portfolio_policy": "full_scenario_repair",
+      "fixed_source": "grid_repair",
+      "identical_commands": false,
+      "metrics": {
+        "priority_cost": {
+          "status": "portfolio_better",
+          "median_relative_percent": -4.160747147585726,
+          "median_difference_veh_h": -279.225442532585
+        },
+        "tts_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 10.464451000164562,
+          "median_difference_veh_h": 278.656404266226
+        },
+        "queue_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 321.82213004256016,
+          "median_difference_veh_h": 300.17007618104924
+        }
+      }
+    },
+    {
+      "id": "D062",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "nominal_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D063",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "grid_repair",
+      "fixed_source": "grid_repair",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D064",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "nominal_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D065",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "grid_repair",
+      "fixed_source": "grid_repair",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D066",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "nominal_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D067",
+      "split": "development",
+      "portfolio_source": "full_scenario",
+      "portfolio_policy": "full_scenario_repair",
+      "fixed_source": "grid_repair",
+      "identical_commands": false,
+      "metrics": {
+        "priority_cost": {
+          "status": "portfolio_better",
+          "median_relative_percent": -1.7865139452006007,
+          "median_difference_veh_h": -114.65197671721262
+        },
+        "tts_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 6.398393547279337,
+          "median_difference_veh_h": 188.12311948888782
+        },
+        "queue_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 37.426247949987555,
+          "median_difference_veh_h": 153.624022847971
+        }
+      }
+    },
+    {
+      "id": "D068",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "nominal_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D069",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "grid_repair",
+      "fixed_source": "grid_repair",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D070",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "nominal_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D071",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "grid_repair",
+      "fixed_source": "grid_repair",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D072",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "nominal_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D073",
+      "split": "development",
+      "portfolio_source": "reserve_refresh",
+      "portfolio_policy": "reserve_repair",
+      "fixed_source": "reserve_repair",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D074",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "nominal_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D075",
+      "split": "development",
+      "portfolio_source": "reserve_refresh",
+      "portfolio_policy": "reserve_repair",
+      "fixed_source": "reserve_repair",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D076",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "nominal_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D077",
+      "split": "development",
+      "portfolio_source": "reserve_refresh",
+      "portfolio_policy": "reserve_repair",
+      "fixed_source": "reserve_repair",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D078",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "nominal_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D079",
+      "split": "development",
+      "portfolio_source": "reserve_refresh",
+      "portfolio_policy": "reserve_repair",
+      "fixed_source": "reserve_repair",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D080",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "nominal_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D081",
+      "split": "development",
+      "portfolio_source": "reserve_refresh",
+      "portfolio_policy": "reserve_repair",
+      "fixed_source": "reserve_repair",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D082",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "nominal_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D083",
+      "split": "development",
+      "portfolio_source": "reserve_refresh",
+      "portfolio_policy": "reserve_repair",
+      "fixed_source": "reserve_repair",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D084",
+      "split": "held_out",
+      "portfolio_source": "full_scenario",
+      "portfolio_policy": "full_scenario_mpc",
+      "fixed_source": "grid_repair",
+      "identical_commands": false,
+      "metrics": {
+        "priority_cost": {
+          "status": "portfolio_better",
+          "median_relative_percent": -0.06087184313170048,
+          "median_difference_veh_h": -3.137189958781164
+        },
+        "tts_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 0.18551131392848924,
+          "median_difference_veh_h": 5.332195336997302
+        },
+        "queue_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 1.8622588839083396,
+          "median_difference_veh_h": 11.209611583334038
+        }
+      }
+    },
+    {
+      "id": "D085",
+      "split": "held_out",
+      "portfolio_source": "full_scenario",
+      "portfolio_policy": "full_scenario_mpc",
+      "fixed_source": "grid_repair",
+      "identical_commands": false,
+      "metrics": {
+        "priority_cost": {
+          "status": "portfolio_better",
+          "median_relative_percent": -0.06087184313170048,
+          "median_difference_veh_h": -3.137189958781164
+        },
+        "tts_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 0.18551131392848924,
+          "median_difference_veh_h": 5.332195336997302
+        },
+        "queue_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 1.8622588839083396,
+          "median_difference_veh_h": 11.209611583334038
+        }
+      }
+    },
+    {
+      "id": "D086",
+      "split": "held_out",
+      "portfolio_source": "full_scenario",
+      "portfolio_policy": "full_scenario_mpc",
+      "fixed_source": "grid_repair",
+      "identical_commands": false,
+      "metrics": {
+        "priority_cost": {
+          "status": "portfolio_better",
+          "median_relative_percent": -0.10289116261168837,
+          "median_difference_veh_h": -5.3124621892611685
+        },
+        "tts_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 0.30294601681420075,
+          "median_difference_veh_h": 8.667525414223746
+        },
+        "queue_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 3.2096463393507433,
+          "median_difference_veh_h": 18.3476069583333
+        }
+      }
+    },
+    {
+      "id": "D087",
+      "split": "held_out",
+      "portfolio_source": "full_scenario",
+      "portfolio_policy": "full_scenario_mpc",
+      "fixed_source": "grid_repair",
+      "identical_commands": false,
+      "metrics": {
+        "priority_cost": {
+          "status": "portfolio_better",
+          "median_relative_percent": -0.10289116261168837,
+          "median_difference_veh_h": -5.3124621892611685
+        },
+        "tts_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 0.30294601681420075,
+          "median_difference_veh_h": 8.667525414223746
+        },
+        "queue_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 3.2096463393507433,
+          "median_difference_veh_h": 18.3476069583333
+        }
+      }
+    },
+    {
+      "id": "D088",
+      "split": "held_out",
+      "portfolio_source": "original",
+      "portfolio_policy": "scenario_mpc",
+      "fixed_source": "grid_repair",
+      "identical_commands": false,
+      "metrics": {
+        "priority_cost": {
+          "status": "portfolio_better",
+          "median_relative_percent": -0.06226751146687933,
+          "median_difference_veh_h": -3.2091864749704655
+        },
+        "tts_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 0.1897262866863031,
+          "median_difference_veh_h": 5.451529285505558
+        },
+        "queue_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 1.9026334062230266,
+          "median_difference_veh_h": 11.462203459496209
+        }
+      }
+    },
+    {
+      "id": "D089",
+      "split": "held_out",
+      "portfolio_source": "original",
+      "portfolio_policy": "scenario_mpc",
+      "fixed_source": "grid_repair",
+      "identical_commands": false,
+      "metrics": {
+        "priority_cost": {
+          "status": "portfolio_better",
+          "median_relative_percent": -0.06226751146687933,
+          "median_difference_veh_h": -3.2091864749704655
+        },
+        "tts_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 0.1897262866863031,
+          "median_difference_veh_h": 5.451529285505558
+        },
+        "queue_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 1.9026334062230266,
+          "median_difference_veh_h": 11.462203459496209
+        }
+      }
+    },
+    {
+      "id": "D090",
+      "split": "held_out",
+      "portfolio_source": "original",
+      "portfolio_policy": "scenario_mpc",
+      "fixed_source": "grid_repair",
+      "identical_commands": false,
+      "metrics": {
+        "priority_cost": {
+          "status": "portfolio_better",
+          "median_relative_percent": -0.104375546714953,
+          "median_difference_veh_h": -5.392561590276273
+        },
+        "tts_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 0.30694648221224485,
+          "median_difference_veh_h": 8.783969257520994
+        },
+        "queue_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 3.250075606795662,
+          "median_difference_veh_h": 18.59989035546272
+        }
+      }
+    },
+    {
+      "id": "D091",
+      "split": "held_out",
+      "portfolio_source": "original",
+      "portfolio_policy": "scenario_mpc",
+      "fixed_source": "grid_repair",
+      "identical_commands": false,
+      "metrics": {
+        "priority_cost": {
+          "status": "portfolio_better",
+          "median_relative_percent": -0.104375546714953,
+          "median_difference_veh_h": -5.392561590276273
+        },
+        "tts_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 0.30694648221224485,
+          "median_difference_veh_h": 8.783969257520994
+        },
+        "queue_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 3.250075606795662,
+          "median_difference_veh_h": 18.59989035546272
+        }
+      }
+    }
+  ],
+  "stronger": [
+    {
+      "id": "D012",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "full_scenario_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D013",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "grid_repair",
+      "fixed_source": "full_scenario_repair",
+      "identical_commands": false,
+      "metrics": {
+        "priority_cost": {
+          "status": "portfolio_better",
+          "median_relative_percent": -0.09326395424799765,
+          "median_difference_veh_h": -5.861594979219717
+        },
+        "tts_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 0.2107886929838506,
+          "median_difference_veh_h": 6.684032623813891
+        },
+        "queue_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 1.7699464672603726,
+          "median_difference_veh_h": 10.47979125193558
+        }
+      }
+    },
+    {
+      "id": "D014",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "full_scenario_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D015",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "grid_repair",
+      "fixed_source": "full_scenario_repair",
+      "identical_commands": false,
+      "metrics": {
+        "priority_cost": {
+          "status": "portfolio_better",
+          "median_relative_percent": -0.09167694202107658,
+          "median_difference_veh_h": -5.759710939262277
+        },
+        "tts_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 0.2057743077378804,
+          "median_difference_veh_h": 6.562060974253654
+        },
+        "queue_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 1.731488561206379,
+          "median_difference_veh_h": 10.252082166666241
+        }
+      }
+    },
+    {
+      "id": "D016",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "full_scenario_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D017",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "grid_repair",
+      "fixed_source": "full_scenario_repair",
+      "identical_commands": false,
+      "metrics": {
+        "priority_cost": {
+          "status": "portfolio_better",
+          "median_relative_percent": -0.09085728941925902,
+          "median_difference_veh_h": -5.706578786523551
+        },
+        "tts_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 0.20500136959325738,
+          "median_difference_veh_h": 6.573475674169913
+        },
+        "queue_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 1.731488561206379,
+          "median_difference_veh_h": 10.252082166666241
+        }
+      }
+    },
+    {
+      "id": "D018",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "full_scenario_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D019",
+      "split": "development",
+      "portfolio_source": "full_scenario",
+      "portfolio_policy": "full_scenario_repair",
+      "fixed_source": "full_scenario_repair",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D020",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "full_scenario_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D021",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "grid_repair",
+      "fixed_source": "full_scenario_repair",
+      "identical_commands": false,
+      "metrics": {
+        "priority_cost": {
+          "status": "portfolio_better",
+          "median_relative_percent": -0.22103244715814224,
+          "median_difference_veh_h": -13.952122529552526
+        },
+        "tts_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 0.46077974695442725,
+          "median_difference_veh_h": 14.461392155508292
+        },
+        "queue_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 4.354305000611628,
+          "median_difference_veh_h": 23.88457837500073
+        }
+      }
+    },
+    {
+      "id": "D022",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "full_scenario_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D023",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "grid_repair",
+      "fixed_source": "full_scenario_repair",
+      "identical_commands": false,
+      "metrics": {
+        "priority_cost": {
+          "status": "portfolio_better",
+          "median_relative_percent": -0.2192469370425696,
+          "median_difference_veh_h": -13.835509094314602
+        },
+        "tts_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 0.45888023310167986,
+          "median_difference_veh_h": 14.47310590672214
+        },
+        "queue_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 4.354305000611628,
+          "median_difference_veh_h": 23.88457837500073
+        }
+      }
+    },
+    {
+      "id": "D024",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "full_scenario_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D025",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "grid_repair",
+      "fixed_source": "full_scenario_repair",
+      "identical_commands": false,
+      "metrics": {
+        "priority_cost": {
+          "status": "portfolio_better",
+          "median_relative_percent": -0.06816694272328236,
+          "median_difference_veh_h": -4.369529997811242
+        },
+        "tts_veh_h": {
+          "status": "portfolio_better",
+          "median_relative_percent": -0.32621405208194554,
+          "median_difference_veh_h": -9.695756404967142
+        },
+        "queue_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 2.836219752915392,
+          "median_difference_veh_h": 11.852128954173935
+        }
+      }
+    },
+    {
+      "id": "D026",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "full_scenario_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D027",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "grid_repair",
+      "fixed_source": "full_scenario_repair",
+      "identical_commands": false,
+      "metrics": {
+        "priority_cost": {
+          "status": "portfolio_better",
+          "median_relative_percent": -0.40409939394625327,
+          "median_difference_veh_h": -25.815943537492785
+        },
+        "tts_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 0.7411313149389728,
+          "median_difference_veh_h": 22.34453575548264
+        },
+        "queue_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 8.910954907467437,
+          "median_difference_veh_h": 39.58726129166649
+        }
+      }
+    },
+    {
+      "id": "D028",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "full_scenario_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D029",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "grid_repair",
+      "fixed_source": "full_scenario_repair",
+      "identical_commands": false,
+      "metrics": {
+        "priority_cost": {
+          "status": "portfolio_better",
+          "median_relative_percent": -0.4017630829752392,
+          "median_difference_veh_h": -25.660788766424048
+        },
+        "tts_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 0.7382087600299104,
+          "median_difference_veh_h": 22.33411745035619
+        },
+        "queue_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 8.910954907467437,
+          "median_difference_veh_h": 39.58726129166649
+        }
+      }
+    },
+    {
+      "id": "D030",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "full_scenario_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D031",
+      "split": "development",
+      "portfolio_source": "full_scenario",
+      "portfolio_policy": "full_scenario_repair",
+      "fixed_source": "full_scenario_repair",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D032",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "full_scenario_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D033",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "grid_repair",
+      "fixed_source": "full_scenario_repair",
+      "identical_commands": false,
+      "metrics": {
+        "priority_cost": {
+          "status": "portfolio_better",
+          "median_relative_percent": -0.09472094300294814,
+          "median_difference_veh_h": -5.951799074993232
+        },
+        "tts_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 0.26164645978309475,
+          "median_difference_veh_h": 8.339550069257484
+        },
+        "queue_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 1.7343499356264926,
+          "median_difference_veh_h": 10.270575583331322
+        }
+      }
+    },
+    {
+      "id": "D034",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "full_scenario_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D035",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "grid_repair",
+      "fixed_source": "full_scenario_repair",
+      "identical_commands": false,
+      "metrics": {
+        "priority_cost": {
+          "status": "portfolio_better",
+          "median_relative_percent": -0.09406859564449219,
+          "median_difference_veh_h": -5.909381347264571
+        },
+        "tts_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 0.2633808368160586,
+          "median_difference_veh_h": 8.440756497966959
+        },
+        "queue_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 1.7343499356264926,
+          "median_difference_veh_h": 10.270575583331322
+        }
+      }
+    },
+    {
+      "id": "D036",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "full_scenario_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D037",
+      "split": "development",
+      "portfolio_source": "full_scenario",
+      "portfolio_policy": "full_scenario_repair",
+      "fixed_source": "full_scenario_repair",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D038",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "full_scenario_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D039",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "grid_repair",
+      "fixed_source": "full_scenario_repair",
+      "identical_commands": false,
+      "metrics": {
+        "priority_cost": {
+          "status": "portfolio_better",
+          "median_relative_percent": -0.22393569020452178,
+          "median_difference_veh_h": -14.140376848706182
+        },
+        "tts_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 0.5112145989339794,
+          "median_difference_veh_h": 16.039462192421524
+        },
+        "queue_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 4.357638701592865,
+          "median_difference_veh_h": 23.90209791666655
+        }
+      }
+    },
+    {
+      "id": "D040",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "full_scenario_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D041",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "grid_repair",
+      "fixed_source": "full_scenario_repair",
+      "identical_commands": false,
+      "metrics": {
+        "priority_cost": {
+          "status": "portfolio_better",
+          "median_relative_percent": -0.22232850037896593,
+          "median_difference_veh_h": -14.03513171195982
+        },
+        "tts_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 0.5115101997838785,
+          "median_difference_veh_h": 16.127765144813793
+        },
+        "queue_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 4.357638701592865,
+          "median_difference_veh_h": 23.90209791666655
+        }
+      }
+    },
+    {
+      "id": "D042",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "full_scenario_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D043",
+      "split": "development",
+      "portfolio_source": "full_scenario",
+      "portfolio_policy": "full_scenario_repair",
+      "fixed_source": "full_scenario_repair",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D044",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "full_scenario_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D045",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "grid_repair",
+      "fixed_source": "full_scenario_repair",
+      "identical_commands": false,
+      "metrics": {
+        "priority_cost": {
+          "status": "portfolio_better",
+          "median_relative_percent": -0.4063390790441399,
+          "median_difference_veh_h": -25.90548724481596
+        },
+        "tts_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 0.777131012496491,
+          "median_difference_veh_h": 23.42656377359731
+        },
+        "queue_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 8.914536151178085,
+          "median_difference_veh_h": 39.6018612500003
+        }
+      }
+    },
+    {
+      "id": "D046",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "full_scenario_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D047",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "grid_repair",
+      "fixed_source": "full_scenario_repair",
+      "identical_commands": false,
+      "metrics": {
+        "priority_cost": {
+          "status": "portfolio_better",
+          "median_relative_percent": -0.40414975627990357,
+          "median_difference_veh_h": -25.76008802782644
+        },
+        "tts_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 0.7755898694768273,
+          "median_difference_veh_h": 23.461311396834162
+        },
+        "queue_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 8.914536151178085,
+          "median_difference_veh_h": 39.6018612500003
+        }
+      }
+    },
+    {
+      "id": "D048",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "full_scenario_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D049",
+      "split": "development",
+      "portfolio_source": "full_scenario",
+      "portfolio_policy": "full_scenario_repair",
+      "fixed_source": "full_scenario_repair",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D050",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "full_scenario_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D051",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "grid_repair",
+      "fixed_source": "full_scenario_repair",
+      "identical_commands": false,
+      "metrics": {
+        "priority_cost": {
+          "status": "portfolio_better",
+          "median_relative_percent": -0.09987642551080958,
+          "median_difference_veh_h": -6.276720264947926
+        },
+        "tts_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 0.3563850877765727,
+          "median_difference_veh_h": 11.34794464956758
+        },
+        "queue_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 1.7393625573679907,
+          "median_difference_veh_h": 10.301538209164391
+        }
+      }
+    },
+    {
+      "id": "D052",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "full_scenario_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D053",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "grid_repair",
+      "fixed_source": "full_scenario_repair",
+      "identical_commands": false,
+      "metrics": {
+        "priority_cost": {
+          "status": "portfolio_better",
+          "median_relative_percent": -0.09952011465598828,
+          "median_difference_veh_h": -6.252528368902404
+        },
+        "tts_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 0.3623351117593349,
+          "median_difference_veh_h": 11.600317210305548
+        },
+        "queue_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 1.7393513731726045,
+          "median_difference_veh_h": 10.30147195785355
+        }
+      }
+    },
+    {
+      "id": "D054",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "full_scenario_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D055",
+      "split": "development",
+      "portfolio_source": "full_scenario",
+      "portfolio_policy": "full_scenario_repair",
+      "fixed_source": "full_scenario_repair",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D056",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "full_scenario_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D057",
+      "split": "development",
+      "portfolio_source": "full_scenario",
+      "portfolio_policy": "full_scenario_repair",
+      "fixed_source": "full_scenario_repair",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D058",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "full_scenario_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D059",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "grid_repair",
+      "fixed_source": "full_scenario_repair",
+      "identical_commands": false,
+      "metrics": {
+        "priority_cost": {
+          "status": "portfolio_better",
+          "median_relative_percent": -0.22765922723926335,
+          "median_difference_veh_h": -14.370675075934287
+        },
+        "tts_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 0.6006730442488034,
+          "median_difference_veh_h": 18.92146886790033
+        },
+        "queue_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 4.3610439201085685,
+          "median_difference_veh_h": 23.931297833332962
+        }
+      }
+    },
+    {
+      "id": "D060",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "full_scenario_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D061",
+      "split": "development",
+      "portfolio_source": "full_scenario",
+      "portfolio_policy": "full_scenario_repair",
+      "fixed_source": "full_scenario_repair",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D062",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "full_scenario_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D063",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "grid_repair",
+      "fixed_source": "full_scenario_repair",
+      "identical_commands": false,
+      "metrics": {
+        "priority_cost": {
+          "status": "portfolio_better",
+          "median_relative_percent": -0.39373821208455884,
+          "median_difference_veh_h": -25.25114536742558
+        },
+        "tts_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 0.7723057252611082,
+          "median_difference_veh_h": 23.009501983557584
+        },
+        "queue_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 8.852116030242644,
+          "median_difference_veh_h": 36.98728996844116
+        }
+      }
+    },
+    {
+      "id": "D064",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "full_scenario_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D065",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "grid_repair",
+      "fixed_source": "full_scenario_repair",
+      "identical_commands": false,
+      "metrics": {
+        "priority_cost": {
+          "status": "portfolio_better",
+          "median_relative_percent": -0.3920970782199317,
+          "median_difference_veh_h": -25.140213523749026
+        },
+        "tts_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 0.7727572697394308,
+          "median_difference_veh_h": 23.094784067103774
+        },
+        "queue_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 8.852812631523758,
+          "median_difference_veh_h": 36.989383731624145
+        }
+      }
+    },
+    {
+      "id": "D066",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "full_scenario_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D067",
+      "split": "development",
+      "portfolio_source": "full_scenario",
+      "portfolio_policy": "full_scenario_repair",
+      "fixed_source": "full_scenario_repair",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D068",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "full_scenario_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D069",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "grid_repair",
+      "fixed_source": "full_scenario_repair",
+      "identical_commands": false,
+      "metrics": {
+        "priority_cost": {
+          "status": "portfolio_better",
+          "median_relative_percent": -0.10681489544706961,
+          "median_difference_veh_h": -6.718341021493416
+        },
+        "tts_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 0.47846625584830715,
+          "median_difference_veh_h": 15.023430216391034
+        },
+        "queue_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 1.781110934819953,
+          "median_difference_veh_h": 10.018878095628622
+        }
+      }
+    },
+    {
+      "id": "D070",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "full_scenario_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D071",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "grid_repair",
+      "fixed_source": "full_scenario_repair",
+      "identical_commands": false,
+      "metrics": {
+        "priority_cost": {
+          "status": "portfolio_better",
+          "median_relative_percent": -0.10713488717055933,
+          "median_difference_veh_h": -6.736056002724581
+        },
+        "tts_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 0.4896371723526278,
+          "median_difference_veh_h": 15.453167537996023
+        },
+        "queue_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 1.7799282888586225,
+          "median_difference_veh_h": 10.013331110784748
+        }
+      }
+    },
+    {
+      "id": "D072",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "full_scenario_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D073",
+      "split": "development",
+      "portfolio_source": "reserve_refresh",
+      "portfolio_policy": "reserve_repair",
+      "fixed_source": "reserve_repair",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D074",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "full_scenario_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D075",
+      "split": "development",
+      "portfolio_source": "reserve_refresh",
+      "portfolio_policy": "reserve_repair",
+      "fixed_source": "reserve_repair",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D076",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "full_scenario_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D077",
+      "split": "development",
+      "portfolio_source": "reserve_refresh",
+      "portfolio_policy": "reserve_repair",
+      "fixed_source": "reserve_repair",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D078",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "full_scenario_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D079",
+      "split": "development",
+      "portfolio_source": "reserve_refresh",
+      "portfolio_policy": "reserve_repair",
+      "fixed_source": "reserve_repair",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D080",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "full_scenario_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D081",
+      "split": "development",
+      "portfolio_source": "reserve_refresh",
+      "portfolio_policy": "reserve_repair",
+      "fixed_source": "reserve_repair",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D082",
+      "split": "development",
+      "portfolio_source": "original",
+      "portfolio_policy": "nominal_mpc",
+      "fixed_source": "full_scenario_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D083",
+      "split": "development",
+      "portfolio_source": "reserve_refresh",
+      "portfolio_policy": "reserve_repair",
+      "fixed_source": "reserve_repair",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D084",
+      "split": "held_out",
+      "portfolio_source": "full_scenario",
+      "portfolio_policy": "full_scenario_mpc",
+      "fixed_source": "full_scenario_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D085",
+      "split": "held_out",
+      "portfolio_source": "full_scenario",
+      "portfolio_policy": "full_scenario_mpc",
+      "fixed_source": "full_scenario_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D086",
+      "split": "held_out",
+      "portfolio_source": "full_scenario",
+      "portfolio_policy": "full_scenario_mpc",
+      "fixed_source": "full_scenario_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D087",
+      "split": "held_out",
+      "portfolio_source": "full_scenario",
+      "portfolio_policy": "full_scenario_mpc",
+      "fixed_source": "full_scenario_mpc",
+      "identical_commands": true,
+      "metrics": {
+        "priority_cost": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "tts_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        },
+        "queue_veh_h": {
+          "status": "tie",
+          "median_relative_percent": 0.0,
+          "median_difference_veh_h": 0.0
+        }
+      }
+    },
+    {
+      "id": "D088",
+      "split": "held_out",
+      "portfolio_source": "original",
+      "portfolio_policy": "scenario_mpc",
+      "fixed_source": "full_scenario_mpc",
+      "identical_commands": false,
+      "metrics": {
+        "priority_cost": {
+          "status": "portfolio_better",
+          "median_relative_percent": -0.0015729986243365169,
+          "median_difference_veh_h": -0.081024075251662
+        },
+        "tts_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 0.004825416251995833,
+          "median_difference_veh_h": 0.13895547943275233
+        },
+        "queue_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 0.04755210742765428,
+          "median_difference_veh_h": 0.29166637499986336
+        }
+      }
+    },
+    {
+      "id": "D089",
+      "split": "held_out",
+      "portfolio_source": "original",
+      "portfolio_policy": "scenario_mpc",
+      "fixed_source": "full_scenario_mpc",
+      "identical_commands": false,
+      "metrics": {
+        "priority_cost": {
+          "status": "portfolio_better",
+          "median_relative_percent": -0.0015729986243365169,
+          "median_difference_veh_h": -0.081024075251662
+        },
+        "tts_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 0.004825416251995833,
+          "median_difference_veh_h": 0.13895547943275233
+        },
+        "queue_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 0.04755210742765428,
+          "median_difference_veh_h": 0.29166637499986336
+        }
+      }
+    },
+    {
+      "id": "D090",
+      "split": "held_out",
+      "portfolio_source": "original",
+      "portfolio_policy": "scenario_mpc",
+      "fixed_source": "full_scenario_mpc",
+      "identical_commands": false,
+      "metrics": {
+        "priority_cost": {
+          "status": "portfolio_better",
+          "median_relative_percent": -0.0016187171981184366,
+          "median_difference_veh_h": -0.08354334099203697
+        },
+        "tts_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 0.004813305854759305,
+          "median_difference_veh_h": 0.1381207694571458
+        },
+        "queue_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 0.0494349097840518,
+          "median_difference_veh_h": 0.2916663750000339
+        }
+      }
+    },
+    {
+      "id": "D091",
+      "split": "held_out",
+      "portfolio_source": "original",
+      "portfolio_policy": "scenario_mpc",
+      "fixed_source": "full_scenario_mpc",
+      "identical_commands": false,
+      "metrics": {
+        "priority_cost": {
+          "status": "portfolio_better",
+          "median_relative_percent": -0.0016187171981184366,
+          "median_difference_veh_h": -0.08354334099203697
+        },
+        "tts_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 0.004813305854759305,
+          "median_difference_veh_h": 0.1381207694571458
+        },
+        "queue_veh_h": {
+          "status": "fixed_tool_better",
+          "median_relative_percent": 0.0494349097840518,
+          "median_difference_veh_h": 0.2916663750000339
+        }
+      }
+    }
+  ]
+}

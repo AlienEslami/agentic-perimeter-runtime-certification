@@ -1,0 +1,947 @@
+{
+  "budget_usd": 10.0,
+  "model": "gpt-5.4-mini",
+  "price_source": "https://developers.openai.com/api/docs/models/gpt-5.4-mini",
+  "input_per_million": 0.75,
+  "output_per_million": 4.5,
+  "calls": [
+    {
+      "call_id": "c0_direct_a0_history_only_r0",
+      "reserved_usd": 0.00651825,
+      "status": "completed",
+      "charged_usd": 0.00066,
+      "input_tokens": 478,
+      "output_tokens": 67
+    },
+    {
+      "call_id": "c0_direct_a0_history_only_r1",
+      "reserved_usd": 0.00651825,
+      "status": "completed",
+      "charged_usd": 0.00066,
+      "input_tokens": 478,
+      "output_tokens": 67
+    },
+    {
+      "call_id": "c0_direct_a0_structured_task_record_r0",
+      "reserved_usd": 0.006666750000000001,
+      "status": "completed",
+      "charged_usd": 0.0007185,
+      "input_tokens": 526,
+      "output_tokens": 72
+    },
+    {
+      "call_id": "c0_direct_a0_structured_task_record_r1",
+      "reserved_usd": 0.006666750000000001,
+      "status": "completed",
+      "charged_usd": 0.0007095000000000001,
+      "input_tokens": 526,
+      "output_tokens": 70
+    },
+    {
+      "call_id": "c0_direct_a1_history_only_r0",
+      "reserved_usd": 0.00669525,
+      "status": "completed",
+      "charged_usd": 0.0007185,
+      "input_tokens": 532,
+      "output_tokens": 71
+    },
+    {
+      "call_id": "c0_direct_a1_history_only_r1",
+      "reserved_usd": 0.00669525,
+      "status": "completed",
+      "charged_usd": 0.0008175000000000001,
+      "input_tokens": 532,
+      "output_tokens": 93
+    },
+    {
+      "call_id": "c0_direct_a1_structured_task_record_r0",
+      "reserved_usd": 0.006843750000000001,
+      "status": "completed",
+      "charged_usd": 0.000732,
+      "input_tokens": 580,
+      "output_tokens": 66
+    },
+    {
+      "call_id": "c0_direct_a1_structured_task_record_r1",
+      "reserved_usd": 0.006843750000000001,
+      "status": "completed",
+      "charged_usd": 0.0008535000000000001,
+      "input_tokens": 580,
+      "output_tokens": 93
+    },
+    {
+      "call_id": "c0_resume_a0_history_only_r0",
+      "reserved_usd": 0.006628500000000001,
+      "status": "completed",
+      "charged_usd": 0.000777,
+      "input_tokens": 514,
+      "output_tokens": 87
+    },
+    {
+      "call_id": "c0_resume_a0_history_only_r1",
+      "reserved_usd": 0.006628500000000001,
+      "status": "completed",
+      "charged_usd": 0.0007815000000000001,
+      "input_tokens": 514,
+      "output_tokens": 88
+    },
+    {
+      "call_id": "c0_resume_a0_structured_task_record_r0",
+      "reserved_usd": 0.006777,
+      "status": "completed",
+      "charged_usd": 0.000696,
+      "input_tokens": 562,
+      "output_tokens": 61
+    },
+    {
+      "call_id": "c0_resume_a0_structured_task_record_r1",
+      "reserved_usd": 0.006777,
+      "status": "completed",
+      "charged_usd": 0.000723,
+      "input_tokens": 562,
+      "output_tokens": 67
+    },
+    {
+      "call_id": "c0_resume_a1_history_only_r0",
+      "reserved_usd": 0.006805500000000001,
+      "status": "completed",
+      "charged_usd": 0.0007995000000000001,
+      "input_tokens": 568,
+      "output_tokens": 83
+    },
+    {
+      "call_id": "c0_resume_a1_history_only_r1",
+      "reserved_usd": 0.006805500000000001,
+      "status": "completed",
+      "charged_usd": 0.000777,
+      "input_tokens": 568,
+      "output_tokens": 78
+    },
+    {
+      "call_id": "c0_resume_a1_structured_task_record_r0",
+      "reserved_usd": 0.006954,
+      "status": "completed",
+      "charged_usd": 0.000777,
+      "input_tokens": 616,
+      "output_tokens": 70
+    },
+    {
+      "call_id": "c0_resume_a1_structured_task_record_r1",
+      "reserved_usd": 0.006954,
+      "status": "completed",
+      "charged_usd": 0.0007905,
+      "input_tokens": 616,
+      "output_tokens": 73
+    },
+    {
+      "call_id": "c0_nested_resume_a0_history_only_r0",
+      "reserved_usd": 0.0067335,
+      "status": "completed",
+      "charged_usd": 0.00069675,
+      "input_tokens": 551,
+      "output_tokens": 63
+    },
+    {
+      "call_id": "c0_nested_resume_a0_history_only_r1",
+      "reserved_usd": 0.0067335,
+      "status": "completed",
+      "charged_usd": 0.00082275,
+      "input_tokens": 551,
+      "output_tokens": 91
+    },
+    {
+      "call_id": "c0_nested_resume_a0_structured_task_record_r0",
+      "reserved_usd": 0.006887249999999999,
+      "status": "completed",
+      "charged_usd": 0.0007559999999999999,
+      "input_tokens": 600,
+      "output_tokens": 68
+    },
+    {
+      "call_id": "c0_nested_resume_a0_structured_task_record_r1",
+      "reserved_usd": 0.006887249999999999,
+      "status": "completed",
+      "charged_usd": 0.0007155,
+      "input_tokens": 600,
+      "output_tokens": 59
+    },
+    {
+      "call_id": "c0_nested_resume_a1_history_only_r0",
+      "reserved_usd": 0.0069105,
+      "status": "completed",
+      "charged_usd": 0.00074625,
+      "input_tokens": 605,
+      "output_tokens": 65
+    },
+    {
+      "call_id": "c0_nested_resume_a1_history_only_r1",
+      "reserved_usd": 0.0069105,
+      "status": "completed",
+      "charged_usd": 0.00081825,
+      "input_tokens": 605,
+      "output_tokens": 81
+    },
+    {
+      "call_id": "c0_nested_resume_a1_structured_task_record_r0",
+      "reserved_usd": 0.007064249999999999,
+      "status": "completed",
+      "charged_usd": 0.0008505000000000001,
+      "input_tokens": 654,
+      "output_tokens": 80
+    },
+    {
+      "call_id": "c0_nested_resume_a1_structured_task_record_r1",
+      "reserved_usd": 0.007064249999999999,
+      "status": "completed",
+      "charged_usd": 0.000747,
+      "input_tokens": 654,
+      "output_tokens": 57
+    },
+    {
+      "call_id": "c0_expiry_boundary_a0_history_only_r0",
+      "reserved_usd": 0.0066300000000000005,
+      "status": "completed",
+      "charged_usd": 0.0006622500000000001,
+      "input_tokens": 517,
+      "output_tokens": 61
+    },
+    {
+      "call_id": "c0_expiry_boundary_a0_history_only_r1",
+      "reserved_usd": 0.0066300000000000005,
+      "status": "completed",
+      "charged_usd": 0.00070275,
+      "input_tokens": 517,
+      "output_tokens": 70
+    },
+    {
+      "call_id": "c0_expiry_boundary_a0_structured_task_record_r0",
+      "reserved_usd": 0.0067785,
+      "status": "completed",
+      "charged_usd": 0.00068475,
+      "input_tokens": 565,
+      "output_tokens": 58
+    },
+    {
+      "call_id": "c0_expiry_boundary_a0_structured_task_record_r1",
+      "reserved_usd": 0.0067785,
+      "status": "completed",
+      "charged_usd": 0.00075675,
+      "input_tokens": 565,
+      "output_tokens": 74
+    },
+    {
+      "call_id": "c0_expiry_boundary_a1_history_only_r0",
+      "reserved_usd": 0.0068070000000000006,
+      "status": "completed",
+      "charged_usd": 0.0007702500000000001,
+      "input_tokens": 571,
+      "output_tokens": 76
+    },
+    {
+      "call_id": "c0_expiry_boundary_a1_history_only_r1",
+      "reserved_usd": 0.0068070000000000006,
+      "status": "completed",
+      "charged_usd": 0.00074325,
+      "input_tokens": 571,
+      "output_tokens": 70
+    },
+    {
+      "call_id": "c0_expiry_boundary_a1_structured_task_record_r0",
+      "reserved_usd": 0.0069555,
+      "status": "completed",
+      "charged_usd": 0.00074775,
+      "input_tokens": 619,
+      "output_tokens": 63
+    },
+    {
+      "call_id": "c0_expiry_boundary_a1_structured_task_record_r1",
+      "reserved_usd": 0.0069555,
+      "status": "completed",
+      "charged_usd": 0.00072525,
+      "input_tokens": 619,
+      "output_tokens": 58
+    },
+    {
+      "call_id": "c1_direct_a0_history_only_r0",
+      "reserved_usd": 0.0065205,
+      "status": "completed",
+      "charged_usd": 0.0007717500000000001,
+      "input_tokens": 483,
+      "output_tokens": 91
+    },
+    {
+      "call_id": "c1_direct_a0_history_only_r1",
+      "reserved_usd": 0.0065205,
+      "status": "completed",
+      "charged_usd": 0.00075825,
+      "input_tokens": 483,
+      "output_tokens": 88
+    },
+    {
+      "call_id": "c1_direct_a0_structured_task_record_r0",
+      "reserved_usd": 0.006669,
+      "status": "completed",
+      "charged_usd": 0.000714,
+      "input_tokens": 532,
+      "output_tokens": 70
+    },
+    {
+      "call_id": "c1_direct_a0_structured_task_record_r1",
+      "reserved_usd": 0.006669,
+      "status": "completed",
+      "charged_usd": 0.0006825,
+      "input_tokens": 532,
+      "output_tokens": 63
+    },
+    {
+      "call_id": "c1_direct_a1_history_only_r0",
+      "reserved_usd": 0.0066975,
+      "status": "completed",
+      "charged_usd": 0.00082125,
+      "input_tokens": 537,
+      "output_tokens": 93
+    },
+    {
+      "call_id": "c1_direct_a1_history_only_r1",
+      "reserved_usd": 0.0066975,
+      "status": "completed",
+      "charged_usd": 0.00074925,
+      "input_tokens": 537,
+      "output_tokens": 77
+    },
+    {
+      "call_id": "c1_direct_a1_structured_task_record_r0",
+      "reserved_usd": 0.006846,
+      "status": "completed",
+      "charged_usd": 0.0008805,
+      "input_tokens": 586,
+      "output_tokens": 98
+    },
+    {
+      "call_id": "c1_direct_a1_structured_task_record_r1",
+      "reserved_usd": 0.006846,
+      "status": "completed",
+      "charged_usd": 0.00084,
+      "input_tokens": 586,
+      "output_tokens": 89
+    },
+    {
+      "call_id": "c1_resume_a0_history_only_r0",
+      "reserved_usd": 0.0066307499999999995,
+      "status": "completed",
+      "charged_usd": 0.00069075,
+      "input_tokens": 519,
+      "output_tokens": 67
+    },
+    {
+      "call_id": "c1_resume_a0_history_only_r1",
+      "reserved_usd": 0.0066307499999999995,
+      "status": "completed",
+      "charged_usd": 0.00072675,
+      "input_tokens": 519,
+      "output_tokens": 75
+    },
+    {
+      "call_id": "c1_resume_a0_structured_task_record_r0",
+      "reserved_usd": 0.0067792500000000006,
+      "status": "completed",
+      "charged_usd": 0.000732,
+      "input_tokens": 568,
+      "output_tokens": 68
+    },
+    {
+      "call_id": "c1_resume_a0_structured_task_record_r1",
+      "reserved_usd": 0.0067792500000000006,
+      "status": "completed",
+      "charged_usd": 0.00075,
+      "input_tokens": 568,
+      "output_tokens": 72
+    },
+    {
+      "call_id": "c1_resume_a1_history_only_r0",
+      "reserved_usd": 0.0068077499999999996,
+      "status": "completed",
+      "charged_usd": 0.0008257500000000001,
+      "input_tokens": 573,
+      "output_tokens": 88
+    },
+    {
+      "call_id": "c1_resume_a1_history_only_r1",
+      "reserved_usd": 0.0068077499999999996,
+      "status": "completed",
+      "charged_usd": 0.00082125,
+      "input_tokens": 573,
+      "output_tokens": 87
+    },
+    {
+      "call_id": "c1_resume_a1_structured_task_record_r0",
+      "reserved_usd": 0.006956250000000001,
+      "status": "completed",
+      "charged_usd": 0.000831,
+      "input_tokens": 622,
+      "output_tokens": 81
+    },
+    {
+      "call_id": "c1_resume_a1_structured_task_record_r1",
+      "reserved_usd": 0.006956250000000001,
+      "status": "completed",
+      "charged_usd": 0.000813,
+      "input_tokens": 622,
+      "output_tokens": 77
+    },
+    {
+      "call_id": "c1_nested_resume_a0_history_only_r0",
+      "reserved_usd": 0.00673575,
+      "status": "completed",
+      "charged_usd": 0.0007635000000000001,
+      "input_tokens": 556,
+      "output_tokens": 77
+    },
+    {
+      "call_id": "c1_nested_resume_a0_history_only_r1",
+      "reserved_usd": 0.00673575,
+      "status": "completed",
+      "charged_usd": 0.000894,
+      "input_tokens": 556,
+      "output_tokens": 106
+    },
+    {
+      "call_id": "c1_nested_resume_a0_structured_task_record_r0",
+      "reserved_usd": 0.0068895,
+      "status": "completed",
+      "charged_usd": 0.0007695,
+      "input_tokens": 606,
+      "output_tokens": 70
+    },
+    {
+      "call_id": "c1_nested_resume_a0_structured_task_record_r1",
+      "reserved_usd": 0.0068895,
+      "status": "completed",
+      "charged_usd": 0.0007559999999999999,
+      "input_tokens": 606,
+      "output_tokens": 67
+    },
+    {
+      "call_id": "c1_nested_resume_a1_history_only_r0",
+      "reserved_usd": 0.0069127500000000005,
+      "status": "completed",
+      "charged_usd": 0.0009795,
+      "input_tokens": 610,
+      "output_tokens": 116
+    },
+    {
+      "call_id": "c1_nested_resume_a1_history_only_r1",
+      "reserved_usd": 0.0069127500000000005,
+      "status": "completed",
+      "charged_usd": 0.000795,
+      "input_tokens": 610,
+      "output_tokens": 75
+    },
+    {
+      "call_id": "c1_nested_resume_a1_structured_task_record_r0",
+      "reserved_usd": 0.0070665,
+      "status": "completed",
+      "charged_usd": 0.00081,
+      "input_tokens": 660,
+      "output_tokens": 70
+    },
+    {
+      "call_id": "c1_nested_resume_a1_structured_task_record_r1",
+      "reserved_usd": 0.0070665,
+      "status": "completed",
+      "charged_usd": 0.0008370000000000001,
+      "input_tokens": 660,
+      "output_tokens": 76
+    },
+    {
+      "call_id": "c1_expiry_boundary_a0_history_only_r0",
+      "reserved_usd": 0.006632249999999999,
+      "status": "completed",
+      "charged_usd": 0.0007425000000000001,
+      "input_tokens": 522,
+      "output_tokens": 78
+    },
+    {
+      "call_id": "c1_expiry_boundary_a0_history_only_r1",
+      "reserved_usd": 0.006632249999999999,
+      "status": "completed",
+      "charged_usd": 0.0007245000000000001,
+      "input_tokens": 522,
+      "output_tokens": 74
+    },
+    {
+      "call_id": "c1_expiry_boundary_a0_structured_task_record_r0",
+      "reserved_usd": 0.00678075,
+      "status": "completed",
+      "charged_usd": 0.00076575,
+      "input_tokens": 571,
+      "output_tokens": 75
+    },
+    {
+      "call_id": "c1_expiry_boundary_a0_structured_task_record_r1",
+      "reserved_usd": 0.00678075,
+      "status": "completed",
+      "charged_usd": 0.0006982500000000001,
+      "input_tokens": 571,
+      "output_tokens": 60
+    },
+    {
+      "call_id": "c1_expiry_boundary_a1_history_only_r0",
+      "reserved_usd": 0.006809249999999999,
+      "status": "completed",
+      "charged_usd": 0.0007965,
+      "input_tokens": 576,
+      "output_tokens": 81
+    },
+    {
+      "call_id": "c1_expiry_boundary_a1_history_only_r1",
+      "reserved_usd": 0.006809249999999999,
+      "status": "completed",
+      "charged_usd": 0.0007965,
+      "input_tokens": 576,
+      "output_tokens": 81
+    },
+    {
+      "call_id": "c1_expiry_boundary_a1_structured_task_record_r0",
+      "reserved_usd": 0.00695775,
+      "status": "completed",
+      "charged_usd": 0.0008242500000000001,
+      "input_tokens": 625,
+      "output_tokens": 79
+    },
+    {
+      "call_id": "c1_expiry_boundary_a1_structured_task_record_r1",
+      "reserved_usd": 0.00695775,
+      "status": "completed",
+      "charged_usd": 0.00083325,
+      "input_tokens": 625,
+      "output_tokens": 81
+    },
+    {
+      "call_id": "c2_direct_a0_history_only_r0",
+      "reserved_usd": 0.0065205,
+      "status": "completed",
+      "charged_usd": 0.0007357500000000001,
+      "input_tokens": 483,
+      "output_tokens": 83
+    },
+    {
+      "call_id": "c2_direct_a0_history_only_r1",
+      "reserved_usd": 0.0065205,
+      "status": "completed",
+      "charged_usd": 0.00071325,
+      "input_tokens": 483,
+      "output_tokens": 78
+    },
+    {
+      "call_id": "c2_direct_a0_structured_task_record_r0",
+      "reserved_usd": 0.006669,
+      "status": "completed",
+      "charged_usd": 0.0006555,
+      "input_tokens": 532,
+      "output_tokens": 57
+    },
+    {
+      "call_id": "c2_direct_a0_structured_task_record_r1",
+      "reserved_usd": 0.006669,
+      "status": "completed",
+      "charged_usd": 0.0006915000000000001,
+      "input_tokens": 532,
+      "output_tokens": 65
+    },
+    {
+      "call_id": "c2_direct_a1_history_only_r0",
+      "reserved_usd": 0.0066975,
+      "status": "completed",
+      "charged_usd": 0.0008257500000000001,
+      "input_tokens": 537,
+      "output_tokens": 94
+    },
+    {
+      "call_id": "c2_direct_a1_history_only_r1",
+      "reserved_usd": 0.0066975,
+      "status": "completed",
+      "charged_usd": 0.00083475,
+      "input_tokens": 537,
+      "output_tokens": 96
+    },
+    {
+      "call_id": "c2_direct_a1_structured_task_record_r0",
+      "reserved_usd": 0.006846,
+      "status": "completed",
+      "charged_usd": 0.0007815000000000001,
+      "input_tokens": 586,
+      "output_tokens": 76
+    },
+    {
+      "call_id": "c2_direct_a1_structured_task_record_r1",
+      "reserved_usd": 0.006846,
+      "status": "completed",
+      "charged_usd": 0.00075,
+      "input_tokens": 586,
+      "output_tokens": 69
+    },
+    {
+      "call_id": "c2_resume_a0_history_only_r0",
+      "reserved_usd": 0.0066307499999999995,
+      "status": "completed",
+      "charged_usd": 0.0008077500000000001,
+      "input_tokens": 519,
+      "output_tokens": 93
+    },
+    {
+      "call_id": "c2_resume_a0_history_only_r1",
+      "reserved_usd": 0.0066307499999999995,
+      "status": "completed",
+      "charged_usd": 0.00081675,
+      "input_tokens": 519,
+      "output_tokens": 95
+    },
+    {
+      "call_id": "c2_resume_a0_structured_task_record_r0",
+      "reserved_usd": 0.0067792500000000006,
+      "status": "completed",
+      "charged_usd": 0.000741,
+      "input_tokens": 568,
+      "output_tokens": 70
+    },
+    {
+      "call_id": "c2_resume_a0_structured_task_record_r1",
+      "reserved_usd": 0.0067792500000000006,
+      "status": "completed",
+      "charged_usd": 0.0007995000000000001,
+      "input_tokens": 568,
+      "output_tokens": 83
+    },
+    {
+      "call_id": "c2_resume_a1_history_only_r0",
+      "reserved_usd": 0.0068077499999999996,
+      "status": "completed",
+      "charged_usd": 0.00093375,
+      "input_tokens": 573,
+      "output_tokens": 112
+    },
+    {
+      "call_id": "c2_resume_a1_history_only_r1",
+      "reserved_usd": 0.0068077499999999996,
+      "status": "completed",
+      "charged_usd": 0.00089325,
+      "input_tokens": 573,
+      "output_tokens": 103
+    },
+    {
+      "call_id": "c2_resume_a1_structured_task_record_r0",
+      "reserved_usd": 0.006956250000000001,
+      "status": "completed",
+      "charged_usd": 0.000795,
+      "input_tokens": 622,
+      "output_tokens": 73
+    },
+    {
+      "call_id": "c2_resume_a1_structured_task_record_r1",
+      "reserved_usd": 0.006956250000000001,
+      "status": "completed",
+      "charged_usd": 0.0008535000000000001,
+      "input_tokens": 622,
+      "output_tokens": 86
+    },
+    {
+      "call_id": "c2_nested_resume_a0_history_only_r0",
+      "reserved_usd": 0.00673575,
+      "status": "completed",
+      "charged_usd": 0.0008489999999999999,
+      "input_tokens": 556,
+      "output_tokens": 96
+    },
+    {
+      "call_id": "c2_nested_resume_a0_history_only_r1",
+      "reserved_usd": 0.00673575,
+      "status": "completed",
+      "charged_usd": 0.0007095000000000001,
+      "input_tokens": 556,
+      "output_tokens": 65
+    },
+    {
+      "call_id": "c2_nested_resume_a0_structured_task_record_r0",
+      "reserved_usd": 0.0068895,
+      "status": "completed",
+      "charged_usd": 0.0007605,
+      "input_tokens": 606,
+      "output_tokens": 68
+    },
+    {
+      "call_id": "c2_nested_resume_a0_structured_task_record_r1",
+      "reserved_usd": 0.0068895,
+      "status": "completed",
+      "charged_usd": 0.0008190000000000001,
+      "input_tokens": 606,
+      "output_tokens": 81
+    },
+    {
+      "call_id": "c2_nested_resume_a1_history_only_r0",
+      "reserved_usd": 0.0069127500000000005,
+      "status": "completed",
+      "charged_usd": 0.001137,
+      "input_tokens": 610,
+      "output_tokens": 151
+    },
+    {
+      "call_id": "c2_nested_resume_a1_history_only_r1",
+      "reserved_usd": 0.0069127500000000005,
+      "status": "completed",
+      "charged_usd": 0.0009209999999999999,
+      "input_tokens": 610,
+      "output_tokens": 103
+    },
+    {
+      "call_id": "c2_nested_resume_a1_structured_task_record_r0",
+      "reserved_usd": 0.0070665,
+      "status": "completed",
+      "charged_usd": 0.0008235,
+      "input_tokens": 660,
+      "output_tokens": 73
+    },
+    {
+      "call_id": "c2_nested_resume_a1_structured_task_record_r1",
+      "reserved_usd": 0.0070665,
+      "status": "completed",
+      "charged_usd": 0.0008190000000000001,
+      "input_tokens": 660,
+      "output_tokens": 72
+    },
+    {
+      "call_id": "c2_expiry_boundary_a0_history_only_r0",
+      "reserved_usd": 0.006632249999999999,
+      "status": "completed",
+      "charged_usd": 0.0007155,
+      "input_tokens": 522,
+      "output_tokens": 72
+    },
+    {
+      "call_id": "c2_expiry_boundary_a0_history_only_r1",
+      "reserved_usd": 0.006632249999999999,
+      "status": "completed",
+      "charged_usd": 0.0007515,
+      "input_tokens": 522,
+      "output_tokens": 80
+    },
+    {
+      "call_id": "c2_expiry_boundary_a0_structured_task_record_r0",
+      "reserved_usd": 0.00678075,
+      "status": "completed",
+      "charged_usd": 0.00077925,
+      "input_tokens": 571,
+      "output_tokens": 78
+    },
+    {
+      "call_id": "c2_expiry_boundary_a0_structured_task_record_r1",
+      "reserved_usd": 0.00678075,
+      "status": "completed",
+      "charged_usd": 0.00077475,
+      "input_tokens": 571,
+      "output_tokens": 77
+    },
+    {
+      "call_id": "c2_expiry_boundary_a1_history_only_r0",
+      "reserved_usd": 0.006809249999999999,
+      "status": "completed",
+      "charged_usd": 0.0008505,
+      "input_tokens": 576,
+      "output_tokens": 93
+    },
+    {
+      "call_id": "c2_expiry_boundary_a1_history_only_r1",
+      "reserved_usd": 0.006809249999999999,
+      "status": "completed",
+      "charged_usd": 0.0008955,
+      "input_tokens": 576,
+      "output_tokens": 103
+    },
+    {
+      "call_id": "c2_expiry_boundary_a1_structured_task_record_r0",
+      "reserved_usd": 0.00695775,
+      "status": "completed",
+      "charged_usd": 0.0008467500000000001,
+      "input_tokens": 625,
+      "output_tokens": 84
+    },
+    {
+      "call_id": "c2_expiry_boundary_a1_structured_task_record_r1",
+      "reserved_usd": 0.00695775,
+      "status": "completed",
+      "charged_usd": 0.0008287500000000001,
+      "input_tokens": 625,
+      "output_tokens": 80
+    },
+    {
+      "call_id": "live_direct_history_only_propose",
+      "status": "completed",
+      "reserved_usd": 0.00632925,
+      "charged_usd": 0.00068625,
+      "input_tokens": 435,
+      "output_tokens": 80
+    },
+    {
+      "call_id": "live_direct_history_only_after_rejection",
+      "status": "completed",
+      "reserved_usd": 0.006592499999999999,
+      "charged_usd": 0.0007192500000000001,
+      "input_tokens": 515,
+      "output_tokens": 74
+    },
+    {
+      "call_id": "live_direct_structured_task_record_propose",
+      "status": "completed",
+      "reserved_usd": 0.006432,
+      "charged_usd": 0.000585,
+      "input_tokens": 468,
+      "output_tokens": 52
+    },
+    {
+      "call_id": "live_resume_history_only_propose",
+      "status": "completed",
+      "reserved_usd": 0.006439500000000001,
+      "charged_usd": 0.00071325,
+      "input_tokens": 471,
+      "output_tokens": 80
+    },
+    {
+      "call_id": "live_resume_history_only_after_rejection",
+      "status": "completed",
+      "reserved_usd": 0.00670275,
+      "charged_usd": 0.00069675,
+      "input_tokens": 551,
+      "output_tokens": 63
+    },
+    {
+      "call_id": "live_resume_structured_task_record_propose",
+      "status": "completed",
+      "reserved_usd": 0.0065422499999999995,
+      "charged_usd": 0.0007065000000000001,
+      "input_tokens": 504,
+      "output_tokens": 73
+    },
+    {
+      "call_id": "live_resume_structured_task_record_after_rejection",
+      "status": "completed",
+      "reserved_usd": 0.006805500000000001,
+      "charged_usd": 0.000771,
+      "input_tokens": 584,
+      "output_tokens": 74
+    },
+    {
+      "call_id": "live_nested_resume_history_only_propose",
+      "status": "completed",
+      "reserved_usd": 0.0065445,
+      "charged_usd": 0.0008849999999999999,
+      "input_tokens": 508,
+      "output_tokens": 112
+    },
+    {
+      "call_id": "operational_direct_history_only_propose",
+      "status": "completed",
+      "reserved_usd": 0.00632925,
+      "charged_usd": 0.0006187499999999999,
+      "input_tokens": 435,
+      "output_tokens": 65
+    },
+    {
+      "call_id": "operational_direct_history_only_after_rejection",
+      "status": "completed",
+      "reserved_usd": 0.006592499999999999,
+      "charged_usd": 0.00082725,
+      "input_tokens": 515,
+      "output_tokens": 98
+    },
+    {
+      "call_id": "operational_direct_structured_task_record_propose",
+      "status": "completed",
+      "reserved_usd": 0.006432,
+      "charged_usd": 0.000603,
+      "input_tokens": 468,
+      "output_tokens": 56
+    },
+    {
+      "call_id": "operational_direct_structured_task_record_after_rejection",
+      "status": "completed",
+      "reserved_usd": 0.00669525,
+      "charged_usd": 0.000735,
+      "input_tokens": 548,
+      "output_tokens": 72
+    },
+    {
+      "call_id": "operational_resume_history_only_propose",
+      "status": "completed",
+      "reserved_usd": 0.006439500000000001,
+      "charged_usd": 0.00070875,
+      "input_tokens": 471,
+      "output_tokens": 79
+    },
+    {
+      "call_id": "operational_resume_structured_task_record_propose",
+      "status": "completed",
+      "reserved_usd": 0.0065422499999999995,
+      "charged_usd": 0.000675,
+      "input_tokens": 504,
+      "output_tokens": 66
+    },
+    {
+      "call_id": "operational_resume_structured_task_record_after_rejection",
+      "status": "completed",
+      "reserved_usd": 0.006805500000000001,
+      "charged_usd": 0.000699,
+      "input_tokens": 584,
+      "output_tokens": 58
+    },
+    {
+      "call_id": "operational_nested_resume_history_only_propose",
+      "status": "completed",
+      "reserved_usd": 0.0065445,
+      "charged_usd": 0.0007275000000000001,
+      "input_tokens": 508,
+      "output_tokens": 77
+    },
+    {
+      "call_id": "operational_nested_resume_structured_task_record_propose",
+      "status": "completed",
+      "reserved_usd": 0.00664725,
+      "charged_usd": 0.00065775,
+      "input_tokens": 541,
+      "output_tokens": 56
+    },
+    {
+      "call_id": "operational_nested_resume_structured_task_record_after_rejection",
+      "status": "completed",
+      "reserved_usd": 0.0069105,
+      "charged_usd": 0.00074475,
+      "input_tokens": 621,
+      "output_tokens": 62
+    },
+    {
+      "call_id": "operational_expiry_boundary_history_only_propose",
+      "status": "completed",
+      "reserved_usd": 0.0064410000000000005,
+      "charged_usd": 0.0007605000000000001,
+      "input_tokens": 474,
+      "output_tokens": 90
+    },
+    {
+      "call_id": "operational_expiry_boundary_structured_task_record_propose",
+      "status": "completed",
+      "reserved_usd": 0.006543749999999999,
+      "charged_usd": 0.00060525,
+      "input_tokens": 507,
+      "output_tokens": 50
+    },
+    {
+      "call_id": "operational_expiry_boundary_structured_task_record_after_rejection",
+      "status": "completed",
+      "reserved_usd": 0.0068070000000000006,
+      "charged_usd": 0.00085425,
+      "input_tokens": 587,
+      "output_tokens": 92
+    }
+  ],
+  "accounted_usd": 0.09002025000000002,
+  "known_usage_usd": 0.09002024999999998
+}

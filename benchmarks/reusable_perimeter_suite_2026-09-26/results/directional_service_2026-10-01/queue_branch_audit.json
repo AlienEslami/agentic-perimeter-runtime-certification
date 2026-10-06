@@ -1,0 +1,302 @@
+{
+  "summary": {
+    "case_count": 36,
+    "first_supply_all_cases": true,
+    "second_gate_all_cases": true,
+    "minimum_first_supply_margin_queue_units": 0.004099126579769185,
+    "minimum_second_gate_margin_queue_units": 0.42905947930154936,
+    "minimum_second_queue_growth_units_per_h": 25.949314079999947,
+    "consequence": "Regional trajectories from minute 5 to deadline are independent of arrival residual after minute 5; the queue trajectory is not.",
+    "service_certified_by_this_audit": false
+  },
+  "cases": [
+    {
+      "id": "D013",
+      "first_supply_margin_queue_units": 0.03908712199999841,
+      "second_gate_margin_queue_units": 0.5133297574511378,
+      "second_queue_growth_lower_units_per_h": 30.823606199999947,
+      "first_supply_all_inputs": true,
+      "second_gate_all_inputs": true
+    },
+    {
+      "id": "D015",
+      "first_supply_margin_queue_units": 0.18410343599999843,
+      "second_gate_margin_queue_units": 0.5133297574511378,
+      "second_queue_growth_lower_units_per_h": 30.823606199999947,
+      "first_supply_all_inputs": true,
+      "second_gate_all_inputs": true
+    },
+    {
+      "id": "D017",
+      "first_supply_margin_queue_units": 0.18655479999999833,
+      "second_gate_margin_queue_units": 0.5133297574511378,
+      "second_queue_growth_lower_units_per_h": 30.823606199999947,
+      "first_supply_all_inputs": true,
+      "second_gate_all_inputs": true
+    },
+    {
+      "id": "D019",
+      "first_supply_margin_queue_units": 0.1633013619999983,
+      "second_gate_margin_queue_units": 0.4830054326561241,
+      "second_queue_growth_lower_units_per_h": 28.998082559999947,
+      "first_supply_all_inputs": true,
+      "second_gate_all_inputs": true
+    },
+    {
+      "id": "D021",
+      "first_supply_margin_queue_units": 0.15520731999999834,
+      "second_gate_margin_queue_units": 0.4830054326561241,
+      "second_queue_growth_lower_units_per_h": 28.998082559999947,
+      "first_supply_all_inputs": true,
+      "second_gate_all_inputs": true
+    },
+    {
+      "id": "D023",
+      "first_supply_margin_queue_units": 0.1715547999999982,
+      "second_gate_margin_queue_units": 0.4830054326561241,
+      "second_queue_growth_lower_units_per_h": 28.998082559999947,
+      "first_supply_all_inputs": true,
+      "second_gate_all_inputs": true
+    },
+    {
+      "id": "D025",
+      "first_supply_margin_queue_units": 0.12191831199999824,
+      "second_gate_margin_queue_units": 0.43246489333110133,
+      "second_queue_growth_lower_units_per_h": 25.955543279999947,
+      "first_supply_all_inputs": true,
+      "second_gate_all_inputs": true
+    },
+    {
+      "id": "D027",
+      "first_supply_margin_queue_units": 0.1156488399999984,
+      "second_gate_margin_queue_units": 0.43246489333110133,
+      "second_queue_growth_lower_units_per_h": 25.955543279999947,
+      "first_supply_all_inputs": true,
+      "second_gate_all_inputs": true
+    },
+    {
+      "id": "D029",
+      "first_supply_margin_queue_units": 0.10653910999999837,
+      "second_gate_margin_queue_units": 0.43246489333110133,
+      "second_queue_growth_lower_units_per_h": 25.955543279999947,
+      "first_supply_all_inputs": true,
+      "second_gate_all_inputs": true
+    },
+    {
+      "id": "D031",
+      "first_supply_margin_queue_units": 0.14636550057976902,
+      "second_gate_margin_queue_units": 0.5127042722212202,
+      "second_queue_growth_lower_units_per_h": 30.82246199999995,
+      "first_supply_all_inputs": true,
+      "second_gate_all_inputs": true
+    },
+    {
+      "id": "D033",
+      "first_supply_margin_queue_units": 0.15302532257976906,
+      "second_gate_margin_queue_units": 0.5127042722212202,
+      "second_queue_growth_lower_units_per_h": 30.82246199999995,
+      "first_supply_all_inputs": true,
+      "second_gate_all_inputs": true
+    },
+    {
+      "id": "D035",
+      "first_supply_margin_queue_units": 0.15547668657976896,
+      "second_gate_margin_queue_units": 0.5127042722212202,
+      "second_queue_growth_lower_units_per_h": 30.82246199999995,
+      "first_supply_all_inputs": true,
+      "second_gate_all_inputs": true
+    },
+    {
+      "id": "D037",
+      "first_supply_margin_queue_units": 0.1529161825797691,
+      "second_gate_margin_queue_units": 0.4823799494262065,
+      "second_queue_growth_lower_units_per_h": 28.99693847999995,
+      "first_supply_all_inputs": true,
+      "second_gate_all_inputs": true
+    },
+    {
+      "id": "D039",
+      "first_supply_margin_queue_units": 0.13028889057976897,
+      "second_gate_margin_queue_units": 0.4823799494262065,
+      "second_queue_growth_lower_units_per_h": 28.99693847999995,
+      "first_supply_all_inputs": true,
+      "second_gate_all_inputs": true
+    },
+    {
+      "id": "D041",
+      "first_supply_margin_queue_units": 0.15547668657976896,
+      "second_gate_margin_queue_units": 0.4823799494262065,
+      "second_queue_growth_lower_units_per_h": 28.99693847999995,
+      "first_supply_all_inputs": true,
+      "second_gate_all_inputs": true
+    },
+    {
+      "id": "D043",
+      "first_supply_margin_queue_units": 0.11021850399999832,
+      "second_gate_margin_queue_units": 0.43183940810118365,
+      "second_queue_growth_lower_units_per_h": 25.95439907999995,
+      "first_supply_all_inputs": true,
+      "second_gate_all_inputs": true
+    },
+    {
+      "id": "D045",
+      "first_supply_margin_queue_units": 0.10573610599999837,
+      "second_gate_margin_queue_units": 0.43183940810118365,
+      "second_queue_growth_lower_units_per_h": 25.95439907999995,
+      "first_supply_all_inputs": true,
+      "second_gate_all_inputs": true
+    },
+    {
+      "id": "D047",
+      "first_supply_margin_queue_units": 0.09958007999999839,
+      "second_gate_margin_queue_units": 0.43183940810118365,
+      "second_queue_growth_lower_units_per_h": 25.95439907999995,
+      "first_supply_all_inputs": true,
+      "second_gate_all_inputs": true
+    },
+    {
+      "id": "D049",
+      "first_supply_margin_queue_units": 0.508921886579769,
+      "second_gate_margin_queue_units": 0.5116618001713573,
+      "second_queue_growth_lower_units_per_h": 30.820555199999955,
+      "first_supply_all_inputs": true,
+      "second_gate_all_inputs": true
+    },
+    {
+      "id": "D051",
+      "first_supply_margin_queue_units": 0.4812993185797691,
+      "second_gate_margin_queue_units": 0.5116618001713573,
+      "second_queue_growth_lower_units_per_h": 30.820555199999955,
+      "first_supply_all_inputs": true,
+      "second_gate_all_inputs": true
+    },
+    {
+      "id": "D053",
+      "first_supply_margin_queue_units": 0.01343145057976902,
+      "second_gate_margin_queue_units": 0.5116618001713573,
+      "second_queue_growth_lower_units_per_h": 30.820555199999955,
+      "first_supply_all_inputs": true,
+      "second_gate_all_inputs": true
+    },
+    {
+      "id": "D055",
+      "first_supply_margin_queue_units": 0.006246912579769059,
+      "second_gate_margin_queue_units": 0.4813374753763436,
+      "second_queue_growth_lower_units_per_h": 28.995031559999948,
+      "first_supply_all_inputs": true,
+      "second_gate_all_inputs": true
+    },
+    {
+      "id": "D057",
+      "first_supply_margin_queue_units": 0.01631233857976921,
+      "second_gate_margin_queue_units": 0.4813374753763436,
+      "second_queue_growth_lower_units_per_h": 28.995031559999948,
+      "first_supply_all_inputs": true,
+      "second_gate_all_inputs": true
+    },
+    {
+      "id": "D059",
+      "first_supply_margin_queue_units": 0.005476686579769074,
+      "second_gate_margin_queue_units": 0.4813374753763436,
+      "second_queue_growth_lower_units_per_h": 28.995031559999948,
+      "first_supply_all_inputs": true,
+      "second_gate_all_inputs": true
+    },
+    {
+      "id": "D061",
+      "first_supply_margin_queue_units": 0.20307636857976916,
+      "second_gate_margin_queue_units": 0.4307969360513207,
+      "second_queue_growth_lower_units_per_h": 25.95249227999994,
+      "first_supply_all_inputs": true,
+      "second_gate_all_inputs": true
+    },
+    {
+      "id": "D063",
+      "first_supply_margin_queue_units": 0.022714502579769032,
+      "second_gate_margin_queue_units": 0.4307969360513207,
+      "second_queue_growth_lower_units_per_h": 25.95249227999994,
+      "first_supply_all_inputs": true,
+      "second_gate_all_inputs": true
+    },
+    {
+      "id": "D065",
+      "first_supply_margin_queue_units": 0.206187620579769,
+      "second_gate_margin_queue_units": 0.4307969360513207,
+      "second_queue_growth_lower_units_per_h": 25.95249227999994,
+      "first_supply_all_inputs": true,
+      "second_gate_all_inputs": true
+    },
+    {
+      "id": "D067",
+      "first_supply_margin_queue_units": 0.008205070579769156,
+      "second_gate_margin_queue_units": 0.5099243434215859,
+      "second_queue_growth_lower_units_per_h": 30.817376999999954,
+      "first_supply_all_inputs": true,
+      "second_gate_all_inputs": true
+    },
+    {
+      "id": "D069",
+      "first_supply_margin_queue_units": 0.004099126579769185,
+      "second_gate_margin_queue_units": 0.5099243434215859,
+      "second_queue_growth_lower_units_per_h": 30.817376999999954,
+      "first_supply_all_inputs": true,
+      "second_gate_all_inputs": true
+    },
+    {
+      "id": "D071",
+      "first_supply_margin_queue_units": 0.027592014579769005,
+      "second_gate_margin_queue_units": 0.5099243434215859,
+      "second_queue_growth_lower_units_per_h": 30.817376999999954,
+      "first_supply_all_inputs": true,
+      "second_gate_all_inputs": true
+    },
+    {
+      "id": "D073",
+      "first_supply_margin_queue_units": 0.25892188657976906,
+      "second_gate_margin_queue_units": 0.47960001862657214,
+      "second_queue_growth_lower_units_per_h": 28.991853359999947,
+      "first_supply_all_inputs": true,
+      "second_gate_all_inputs": true
+    },
+    {
+      "id": "D075",
+      "first_supply_margin_queue_units": 0.09476523857976903,
+      "second_gate_margin_queue_units": 0.47960001862657214,
+      "second_queue_growth_lower_units_per_h": 28.991853359999947,
+      "first_supply_all_inputs": true,
+      "second_gate_all_inputs": true
+    },
+    {
+      "id": "D077",
+      "first_supply_margin_queue_units": 0.09324175857976912,
+      "second_gate_margin_queue_units": 0.47960001862657214,
+      "second_queue_growth_lower_units_per_h": 28.991853359999947,
+      "first_supply_all_inputs": true,
+      "second_gate_all_inputs": true
+    },
+    {
+      "id": "D079",
+      "first_supply_margin_queue_units": 0.25892188657976906,
+      "second_gate_margin_queue_units": 0.42905947930154936,
+      "second_queue_growth_lower_units_per_h": 25.949314079999947,
+      "first_supply_all_inputs": true,
+      "second_gate_all_inputs": true
+    },
+    {
+      "id": "D081",
+      "first_supply_margin_queue_units": 0.13226551057976918,
+      "second_gate_margin_queue_units": 0.42905947930154936,
+      "second_queue_growth_lower_units_per_h": 25.949314079999947,
+      "first_supply_all_inputs": true,
+      "second_gate_all_inputs": true
+    },
+    {
+      "id": "D083",
+      "first_supply_margin_queue_units": 0.25892188657976906,
+      "second_gate_margin_queue_units": 0.42905947930154936,
+      "second_queue_growth_lower_units_per_h": 25.949314079999947,
+      "first_supply_all_inputs": true,
+      "second_gate_all_inputs": true
+    }
+  ]
+}

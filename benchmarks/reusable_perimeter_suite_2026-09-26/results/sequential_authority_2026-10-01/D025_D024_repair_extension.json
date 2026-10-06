@@ -1,0 +1,29 @@
+{
+  "pair": [
+    "D025",
+    "D024"
+  ],
+  "active_command": [
+    1.0,
+    1.0,
+    0.56816782,
+    1.0
+  ],
+  "rejected_command": [
+    0.416739072,
+    1.0,
+    0.382850901,
+    1.0
+  ],
+  "attempts": [],
+  "fresh_endpoint": {
+    "accepted": false,
+    "proof_id": "b8598f9ea18a8992f2f4daad05b44bc6a4a0227b0838debcf130a50ada1f6671",
+    "failure_kind": "signed_generator_self_inclusion_failed",
+    "constraint": null,
+    "service_checks": [],
+    "wall_seconds": 6.992998000001535
+  },
+  "outcome": "retain_original_correlated_proof; no new-box grid completeness",
+  "total_seconds": 7.3794260998256505
+}
