@@ -27,37 +27,37 @@
 \input{supplement_references.tex}
 
 \begin{document}
-\title{Structure-Preserving Runtime Certification for Agentic Urban Perimeter Control}
+\title{Formal Guarantees for Trustworthy Agent-Mediated Urban Perimeter Control}
 \author{Ali Eslami and Jiangbo Yu\thanks{The authors are with the Department of Civil Engineering,
 McGill University, Montreal, Quebec, Canada (e-mail: ali.eslami@mcgill.ca;
 jiangbo.yu@mcgill.ca).}}
 \maketitle
 \begin{abstract}
 Urban perimeter control must manage regional congestion and boundary queues
-while fulfilling time-specific service obligations as operating priorities
-change. Agent-mediated planning adds successive requests whose execution
-inherits the vehicles, uncertainty and outstanding deadlines left by earlier
-plans. We formulate this execution-authority problem and develop a
-transportation-specific runtime certificate. Destination conservation combines
-waiting vehicles with their receiving classes; positivity, queue comparison
-and signed uncertainty propagation preserve physical information in the
-continuous enclosure. Certified replacement and retention connect the
-enclosure to executed traffic, while a checked finite-grid repair tool
-modifies rejected plans toward an authorized continuation. Terminal landing
-provides sufficient conditions for continuation beyond finite-plan expiry.
-A reusable benchmark separates regional regulation, queue-inclusive planning
-and deadline-constrained replanning. Certification preserves acceptable MPC
-commands and their traffic performance. Across 80 deadline contracts, checked
-repair and freshly certified reserves supply admissible finite-plan outputs,
-with regional-priority benefits and their delay costs measured separately.
-In a sequential incident, the checker admits one planning-tool change and
-retains its verified continuation when a later request would overflow boundary
-storage under unchecked execution.
-Future-dated certification accounts for traffic evolution during computation.
-Live agent-to-planner traces exercise contextual interpretation, optimization,
-repair and execution under the same physical and service limits. The framework
-gives a traffic operator explicit conditions for adopting a new priority,
-retaining a verified schedule and preparing its next authorized plan.
+while satisfying time-specific service obligations. AI agents can support
+traffic operators by interpreting evolving network conditions, incidents,
+and service priorities and translating them into adaptive control and
+replanning requests. However, each new agent-proposed plan must remain
+compatible with the evolving traffic state, uncertainty, and outstanding
+service obligations. We therefore formulate a runtime certification problem
+for agent-proposed perimeter-control plans and develop a
+transportation-specific framework that provides formal guarantees of
+physical and service feasibility before execution. The framework checks
+whether a proposed plan respects vehicle conservation, nonnegative traffic
+states, boundary-storage limits, and service deadlines under uncertainty. It
+then decides whether the plan can be executed as proposed, should be
+modified to restore feasibility, or should be rejected while the previously
+accepted plan remains in use, and, when the terminal conditions are
+certified, ensures that accepted plans end in a state from which feasible
+operation can continue. Numerical studies show that the certificate leaves
+feasible plans unchanged, traffic-specific structure reduces conservatism,
+and checked repair recovers feasible alternatives. Further experiments show
+that the framework can accept beneficial changes while rejecting requests
+that would violate boundary-storage or service constraints, including under
+computation delays and agent-context errors. Overall, the framework advances
+trustworthy AI for transportation systems by providing formal guarantees
+that connect adaptive agent decisions to physically and operationally
+feasible traffic control.
 \end{abstract}
 \begin{IEEEkeywords}Agentic AI, Macroscopic fundamental diagram, Perimeter control, Runtime certification, Model predictive control\end{IEEEkeywords}
 

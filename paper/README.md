@@ -1,4 +1,8 @@
-# Submission preparation revision - 5 October 2026
+# Submission preparation revision - 6 October 2026
+
+The title is **Formal Guarantees for Trustworthy Agent-Mediated Urban Perimeter Control**. The 6 October update adopts the
+author's abstract with the agreed terminal-condition qualification and
+collective experimental wording.
 
 This revision updates the 1 October sequential-handover manuscript with
 consistent physical and normalized uncertainty notation, clearer system

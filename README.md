@@ -1,4 +1,4 @@
-# Structure-Preserving Runtime Certification for Agentic Urban Perimeter Control
+# Formal Guarantees for Trustworthy Agent-Mediated Urban Perimeter Control
 
 This private preparation repository contains the manuscript and numerical research material for the paper. The manuscript includes the [repository link](https://github.com/AlienEslami/agentic-perimeter-runtime-certification). The repository is private during manuscript preparation and will be made public before submission.
 
