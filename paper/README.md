@@ -1,63 +1,38 @@
-# Submission preparation revision - 6 October 2026
+# Standalone paper — 7 October 2026
 
-The title is **Formal Guarantees for Trustworthy Agent-Mediated Urban Perimeter Control**. The 6 October update adopts the
-author's abstract with the agreed terminal-condition qualification and
-collective experimental wording.
-The introduction now uses the author's proposed draft with a clearer literature
-sequence, affirmative wording, scoped continuation and experiment claims, and
-a shorter transition to the contribution list. The contributions, conclusion,
-and future-work paragraph now use the author-approved simpler language, with
-finite-set repair and conditional continuation guarantees stated explicitly.
-The concluding findings are condensed to one paragraph; the separate future-work
-paragraph is preserved.
+**Formal Guarantees for Trustworthy Agent-Mediated Urban Perimeter Control**
 
-This revision updates the 1 October sequential-handover manuscript with
-consistent physical and normalized uncertainty notation, clearer system
-definitions, affirmative wording, separated timing and interpretation
-subsections, and author-supplied submission declarations. Numerical model
-parameters, experiment records and numerical table values are preserved.
-The original 1 October source archive remains unchanged.
+`main.tex` is the primary Elsevier single-column manuscript. Its abstract and
+introduction are preserved exactly from the author-approved version.
+The argument, mathematical proofs and essential experimental specifications
+are contained in one document. Existing proof appendices A–F are followed by:
 
-`submission_declarations.tex` contains the funding, competing-interest,
-CRediT, data/code availability and AI-assistance statements. The data/code
-availability statement includes the repository link. The repository is private
-during manuscript preparation and will be made public before submission:
-https://github.com/AlienEslami/agentic-perimeter-runtime-certification
+- G: experimental protocols and validation;
+- H: certification comparisons and service margins;
+- I: connected-network experiment;
+- J: agent experiment protocol.
 
-`highlights.txt` supplies the five submission highlights.
-`SUBMISSION_ITEMS_TO_CONFIRM.txt` records the remaining author approval,
-historical AI-use and journal upload checks. `REVISION_QA_2026-10-05.json`
-records source consistency and PDF checks.
+`main_ieee.tex` contains the same content in an alternative two-column reading
+layout. Use `main.tex` for the non-IEEE paper. A separate supplement is no longer
+required. The preceding supplement and historical studies are preserved in the
+private repository's `archive/` directory. Full current numerical records,
+certificates and recorded agent calls remain in its `benchmarks/` directories.
 
-## Original sequential-handover revision
+Repository: https://github.com/AlienEslami/agentic-perimeter-runtime-certification
+The repository remains private during preparation, with public release planned
+before submission.
 
-This package preserves the 27 September concise manuscript and adds the
-sequential planning-tool experiment. The prior package and archive remain
-unchanged.
+For compilation, use pdfLaTeX, BibTeX and two further pdfLaTeX passes. The source
+package contains both layouts, the bibliography and generated bibliography
+files, declarations, and the figure assets used by the integrated paper.
+Select `main.tex` when opening the package in Overleaf.
 
-- `main.tex`: Transportation Research Part B / Elsevier one-column paper.
-- `main_ieee.tex`: content-matched IEEE two-column reading layout.
-- `supplement.tex`: companion methods and complete sequential results.
-- `FOUNDATION_REFERENCES.bib`, the cross-reference files and `figures/` are
-  included for independent compilation.
+`STANDALONE_MATERIALS_MAP.md` maps the integrated and archived material.
+`STANDALONE_QA_2026-10-07.json` records preservation, reference and PDF checks.
+`submission_declarations.tex` contains the author-supplied declarations;
+`highlights.txt` contains submission highlights. Remaining author and release
+checks are in `SUBMISSION_ITEMS_TO_CONFIRM.txt`.
 
-Compile each document with pdfLaTeX, BibTeX, then pdfLaTeX twice, or use
-`latexmk -pdf -bibtex main.tex` (substitute the desired document name).
-Select the appropriate main document when uploading the folder to Overleaf.
-
-The new article subsection reports all three preselected sequential cases
-and the first case found in a complete matched-pair discovery scan. Supplement
-S1.7 reports all three discovered queue-overflow cases, the six matched
-schedule comparisons and the no-new-measurement proof protocol. The experiment
-uses deterministic stored planner requests; the separate live-agent evidence
-remains in the preceding manuscript sections. The benchmark scripts, proofs,
-matched trajectories and independent adaptive witnesses are in
-`benchmarks/reusable_perimeter_suite_2026-09-26/results/sequential_authority_2026-10-01/`
-in the workspace.
-
-The exact-activation sequential simulation and the timed-preparation study
-are distinct experiments. The manuscript's claim concerns certification of
-the inherited traffic state and retention of the existing proof at each
-scheduled plan change. The associated traffic-performance numbers refer to
-the stated benchmark cases; the experiment does not compare against a robust
-MPC that reoptimizes at both later decision times.
+Numerical models, reported values and stored experimental evidence are
+preserved. This revision reorganizes the manuscript and introduces no new
+optimization runs or live model calls.

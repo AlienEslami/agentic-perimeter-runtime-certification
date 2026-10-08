@@ -1,5 +1,5 @@
 Submission facts to complete before upload
-Prepared 5 October 2026 for Transportation Research Part B: Methodological
+Updated 7 October 2026 for Transportation Research Part B: Methodological
 
 AUTHOR FACTS SUPPLIED
 1. Funding: the user confirmed that the study received no specific funding.
@@ -17,7 +17,7 @@ REMAINING AUTHOR CHECKS
    Confirm any earlier AI assistance with research code, analysis or figures;
    describe research uses in Methods and explanatory-image uses in captions
    where applicable. The live-agent experiments are a separate research use
-   already described in the supplement.
+   described in Appendix J.
 
 DATA AND CODE AVAILABILITY
 6. The user authorized a private GitHub repository and requested its actual
@@ -33,8 +33,8 @@ DATA AND CODE AVAILABILITY
    C:/Users/alien/Documents/Mathematical foundation/benchmarks/reusable_perimeter_suite_2026-09-26/
    The sequential experiment is in:
    C:/Users/alien/Documents/Mathematical foundation/benchmarks/reusable_perimeter_suite_2026-09-26/results/sequential_authority_2026-10-01/
-   PERIMETER_SUBMISSION_REVISION_2026-10-05_SOURCE.zip contains
-   manuscript LaTeX, bibliography, cross-reference inputs and figure assets;
+   PERIMETER_STANDALONE_2026-10-07_SOURCE.zip contains
+   the integrated manuscript LaTeX, bibliography, declarations and figure assets;
    it is a manuscript source package. The private repository additionally contains the benchmark code and
    supporting results; its reproduction manifest records the included material
    and any limitations on replaying earlier studies.

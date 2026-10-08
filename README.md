@@ -4,7 +4,8 @@ This private preparation repository contains the manuscript and numerical resear
 
 ## Contents
 
-- `paper/`: submission sources, figures, declarations, and compiled reading copies.
+- `paper/`: the standalone manuscript, essential appendices, figures, declarations, compiled reading copies and materials map.
+- `archive/`: the preceding companion manuscript and losslessly preserved historical studies, with preservation hashes.
 - `benchmarks/reusable_perimeter_suite_2026-09-26/`: the portable two-region suite, unchanged model/checker sources in `vendor/`, protocols, exact plans, certificates, trajectories, and recorded live-agent responses.
 - `benchmarks/mfd_uncertainty/`: earlier uncertainty-frontier sources, inputs, source snapshots, and results.
 - `benchmarks/connected_network_2026-09-11/`: the complete sixteen-attempt ring study, unchanged source dependencies and snapshots, and independent audit. Large proof records are losslessly compressed as `.json.gz`.
@@ -61,8 +62,8 @@ Some archived `vendor/` scripts expect older author layouts. `prepare_anchor.py`
 
 The unchanged `scripts/finalize_benchmark_handover_2026_09_26.py` validates delayed-handover records and emits a historical table fragment. Create its local output directory, `output/package/PERIMETER_BENCHMARK_REVISION_2026-09-26/`, before running it. Current submission text is maintained separately in `paper/`.
 
-This repository does not include every earlier author archive or every historical live-agent pilot cited by the manuscript. Before public release, complete a manuscript-to-artifact map and add any remaining cited records. Duplicate output trees, credentials, temporary files, and Python caches are omitted.
+The 7 October consolidation adds the cited historical local-agent, routing, fixed-controller/repair, eight-event MPC and complete online comparison records in `archive/historical_studies/`. The preceding complete source package and supplement are preserved in `archive/companion_manuscript_2026_10_06/`. See `paper/STANDALONE_MATERIALS_MAP.md` and `archive/README.md` for scope and historical-layout requirements. Duplicate output trees, credentials, temporary files and Python caches are omitted.
 
 ## Revision and release
 
-Copied numerical algorithms and recorded values are preserved. The 5 October 2026 manuscript revision clarifies uncertainty units, continuous inventories and gate commands, prose flow, and submission declarations. Public availability, license choice, and remaining author/journal checks are tracked in `PUBLIC_RELEASE_CHECKLIST.md`.
+Copied numerical algorithms and recorded values are preserved. The 7 October 2026 manuscript is a single paper containing the mathematical argument and essential experimental details. Its abstract and introduction are unchanged from the approved version. Additional historical material is archived with preservation hashes. Public availability, license choice and remaining author/journal checks are tracked in `PUBLIC_RELEASE_CHECKLIST.md`.
