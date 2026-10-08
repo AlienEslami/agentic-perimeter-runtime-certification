@@ -1,0 +1,384 @@
+{
+  "source_checks": {
+    "main": {
+      "protected_sections": {
+        "abstract": {
+          "exact_bytes_and_line_endings_preserved": true,
+          "bytes": 1860,
+          "sha256": "43d695d28bdd9d37779aad7b7a4bef914b2b6d071b90673a9366be8b1c722d2d"
+        },
+        "introduction": {
+          "exact_bytes_and_line_endings_preserved": true,
+          "bytes": 12175,
+          "sha256": "0afab1faa7477b1729d4a228ccf967737cad692b641a245270d2c294771e3b15"
+        }
+      },
+      "original_main_table_prefix_preserved": true,
+      "original_main_table_count": 8,
+      "total_table_count": 16,
+      "retained_structure_and_network_table_data": {
+        "tab:new-coordinate-ablation": true,
+        "tab:structure-online": true,
+        "tab:new-incident-primary": true,
+        "tab:network-transfer-complete": true
+      },
+      "citations_and_internal_references_resolved": true,
+      "unique_labels": true,
+      "no_external_reference_macros_or_helpers": true,
+      "consistent_uncertainty_units": true,
+      "compile_and_float_checks_passed": true
+    },
+    "main_ieee": {
+      "protected_sections": {
+        "abstract": {
+          "exact_bytes_and_line_endings_preserved": true,
+          "bytes": 1832,
+          "sha256": "1c565f23581ec9ec6ff52769f2b48f9a8a90c60283057dfb32fdc3e13009bafd"
+        },
+        "introduction": {
+          "exact_bytes_and_line_endings_preserved": true,
+          "bytes": 12177,
+          "sha256": "7ce97b145c84c701cd633547384dbaf686998dcdcfe67f8aa657b3de0c23d367"
+        }
+      },
+      "original_main_table_prefix_preserved": true,
+      "original_main_table_count": 8,
+      "total_table_count": 16,
+      "retained_structure_and_network_table_data": {
+        "tab:new-coordinate-ablation": true,
+        "tab:structure-online": true,
+        "tab:new-incident-primary": true,
+        "tab:network-transfer-complete": true
+      },
+      "citations_and_internal_references_resolved": true,
+      "unique_labels": true,
+      "no_external_reference_macros_or_helpers": true,
+      "consistent_uncertainty_units": true,
+      "compile_and_float_checks_passed": true
+    }
+  },
+  "matching_reading_layouts": true,
+  "documents": {
+    "main": {
+      "pages": 77,
+      "all_pages_rendered": true,
+      "text_outside_page": [],
+      "contact_sheets": [
+        "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\standalone_revision_2026_10_07\\main_contact_1.png",
+        "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\standalone_revision_2026_10_07\\main_contact_2.png",
+        "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\standalone_revision_2026_10_07\\main_contact_3.png",
+        "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\standalone_revision_2026_10_07\\main_contact_4.png"
+      ],
+      "detailed_page_numbers": [
+        1,
+        35,
+        38,
+        39,
+        53,
+        54,
+        55,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        65,
+        66,
+        67,
+        68,
+        69,
+        71,
+        72
+      ],
+      "detailed_page_keywords": {
+        "1": [
+          "Formal Guarantees for Trustworthy"
+        ],
+        "35": [
+          "Agent Experiment Protocol"
+        ],
+        "38": [
+          "Conclusions"
+        ],
+        "39": [
+          "Data and code availability"
+        ],
+        "53": [
+          "Planned-time handover"
+        ],
+        "54": [
+          "Data and code availability"
+        ],
+        "55": [
+          "Experimental Protocols and Validation"
+        ],
+        "58": [
+          "Matched realizations and independent validation"
+        ],
+        "59": [
+          "Preparation for a future handover"
+        ],
+        "60": [
+          "Planned-time handover"
+        ],
+        "61": [
+          "Sequential Task D outcomes"
+        ],
+        "62": [
+          "Matched sequential traffic outcomes"
+        ],
+        "63": [
+          "Certification Comparisons and Service Margins",
+          "Coordinate comparison for one held feedback plan",
+          "Service margins and successive plan changes"
+        ],
+        "65": [
+          "Online missions"
+        ],
+        "66": [
+          "Binding-service online comparison"
+        ],
+        "67": [
+          "MPC compatibility"
+        ],
+        "68": [
+          "Connected-Network Experiment",
+          "Allocation changes and admission coupling"
+        ],
+        "69": [
+          "Complete connected-ring certificate sweep"
+        ],
+        "71": [
+          "Agent Experiment Protocol",
+          "Current Agent Experiments"
+        ],
+        "72": [
+          "Actual agent-to-planner traces"
+        ]
+      },
+      "detailed_pages": [
+        "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\standalone_revision_2026_10_07\\main\\detail-1-01.png",
+        "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\standalone_revision_2026_10_07\\main\\detail-35-35.png",
+        "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\standalone_revision_2026_10_07\\main\\detail-38-38.png",
+        "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\standalone_revision_2026_10_07\\main\\detail-39-39.png",
+        "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\standalone_revision_2026_10_07\\main\\detail-53-53.png",
+        "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\standalone_revision_2026_10_07\\main\\detail-54-54.png",
+        "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\standalone_revision_2026_10_07\\main\\detail-55-55.png",
+        "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\standalone_revision_2026_10_07\\main\\detail-58-58.png",
+        "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\standalone_revision_2026_10_07\\main\\detail-59-59.png",
+        "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\standalone_revision_2026_10_07\\main\\detail-60-60.png",
+        "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\standalone_revision_2026_10_07\\main\\detail-61-61.png",
+        "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\standalone_revision_2026_10_07\\main\\detail-62-62.png",
+        "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\standalone_revision_2026_10_07\\main\\detail-63-63.png",
+        "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\standalone_revision_2026_10_07\\main\\detail-65-65.png",
+        "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\standalone_revision_2026_10_07\\main\\detail-66-66.png",
+        "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\standalone_revision_2026_10_07\\main\\detail-67-67.png",
+        "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\standalone_revision_2026_10_07\\main\\detail-68-68.png",
+        "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\standalone_revision_2026_10_07\\main\\detail-69-69.png",
+        "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\standalone_revision_2026_10_07\\main\\detail-71-71.png",
+        "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\standalone_revision_2026_10_07\\main\\detail-72-72.png"
+      ],
+      "sha256": "5a6a23019175e8f4ac6b2cda4b87420001bd7f6e443e3440a34f9d9a16bccf91"
+    },
+    "main_ieee": {
+      "pages": 32,
+      "all_pages_rendered": true,
+      "text_outside_page": [],
+      "contact_sheets": [
+        "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\standalone_revision_2026_10_07\\main_ieee_contact_1.png",
+        "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\standalone_revision_2026_10_07\\main_ieee_contact_2.png"
+      ],
+      "detailed_page_numbers": [
+        1,
+        14,
+        16,
+        21,
+        22,
+        23,
+        24,
+        25,
+        27,
+        28,
+        29,
+        30
+      ],
+      "detailed_page_keywords": {
+        "1": [
+          "Formal Guarantees for Trustworthy"
+        ],
+        "14": [
+          "Agent Experiment Protocol"
+        ],
+        "16": [
+          "Conclusions",
+          "Data and code availability"
+        ],
+        "21": [
+          "Planned-time handover"
+        ],
+        "22": [
+          "Data and code availability"
+        ],
+        "23": [
+          "Matched realizations and independent validation"
+        ],
+        "24": [
+          "Preparation for a future handover",
+          "Planned-time handover"
+        ],
+        "25": [
+          "Matched sequential traffic outcomes",
+          "Coordinate comparison for one held feedback plan",
+          "Service margins and successive plan changes"
+        ],
+        "27": [
+          "Online missions",
+          "Binding-service online comparison"
+        ],
+        "28": [
+          "Allocation changes and admission coupling"
+        ],
+        "29": [
+          "Complete connected-ring certificate sweep",
+          "Current Agent Experiments"
+        ],
+        "30": [
+          "Actual agent-to-planner traces"
+        ]
+      },
+      "detailed_pages": [
+        "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\standalone_revision_2026_10_07\\main_ieee\\detail-1-01.png",
+        "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\standalone_revision_2026_10_07\\main_ieee\\detail-14-14.png",
+        "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\standalone_revision_2026_10_07\\main_ieee\\detail-16-16.png",
+        "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\standalone_revision_2026_10_07\\main_ieee\\detail-21-21.png",
+        "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\standalone_revision_2026_10_07\\main_ieee\\detail-22-22.png",
+        "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\standalone_revision_2026_10_07\\main_ieee\\detail-23-23.png",
+        "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\standalone_revision_2026_10_07\\main_ieee\\detail-24-24.png",
+        "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\standalone_revision_2026_10_07\\main_ieee\\detail-25-25.png",
+        "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\standalone_revision_2026_10_07\\main_ieee\\detail-27-27.png",
+        "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\standalone_revision_2026_10_07\\main_ieee\\detail-28-28.png",
+        "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\standalone_revision_2026_10_07\\main_ieee\\detail-29-29.png",
+        "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\standalone_revision_2026_10_07\\main_ieee\\detail-30-30.png"
+      ],
+      "sha256": "807c537eb5da72a355e51e2168576ab4a32319948aa3bb97caaed56fc239ee65"
+    }
+  },
+  "visual_inspection": {
+    "completed": true,
+    "main_all_contact_sheets_reviewed": true,
+    "main_appendix_tables_figure_and_agent_protocol_pages_reviewed": [
+      55,
+      60,
+      61,
+      62,
+      63,
+      65,
+      66,
+      67,
+      69,
+      71,
+      72
+    ],
+    "main_updated_bibliography_contact_sheet_reviewed": true,
+    "ieee_independent_review": {
+      "layout": "main_ieee",
+      "pages": 32,
+      "pdf_sha256": "807c537eb5da72a355e51e2168576ab4a32319948aa3bb97caaed56fc239ee65",
+      "reviewed_images": [
+        {
+          "path": "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\standalone_revision_2026_10_07\\main_ieee_contact_1.png",
+          "sha256": "1d53f002e5599647dd8ad29209ed7682c350c84eae7694054bb8bdf84808c891"
+        },
+        {
+          "path": "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\standalone_revision_2026_10_07\\main_ieee_contact_2.png",
+          "sha256": "4198cc4d6396538cf0567c438e8672c23996abee02e2d76eec2254b7741a8969"
+        },
+        {
+          "path": "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\standalone_revision_2026_10_07\\main_ieee\\detail-1-01.png",
+          "sha256": "abda82e75b271552e68c2fdd17e37f3a1103633fe1a5c87324b21db3e0023134"
+        },
+        {
+          "path": "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\standalone_revision_2026_10_07\\main_ieee\\detail-14-14.png",
+          "sha256": "6516e6557e491ebd4741752d9614b44fe93e0137708cca81c45dc1de736fa691"
+        },
+        {
+          "path": "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\standalone_revision_2026_10_07\\main_ieee\\detail-16-16.png",
+          "sha256": "5c6f3acbc77d09831108b7d21c660f4e49659d4265a82a8150a2f6a4674f0d6e"
+        },
+        {
+          "path": "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\standalone_revision_2026_10_07\\main_ieee\\detail-21-21.png",
+          "sha256": "b79a1b611e0d67c415e127659ab39a059a59fe66e0ced61b417bd49af5d3a8e9"
+        },
+        {
+          "path": "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\standalone_revision_2026_10_07\\main_ieee\\detail-22-22.png",
+          "sha256": "7eba4cf8e46faad0bf54097f4dbd60f18e7e94ebadbca8dd66d1f0a791a6b0ce"
+        },
+        {
+          "path": "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\standalone_revision_2026_10_07\\main_ieee\\detail-23-23.png",
+          "sha256": "2fc1963be4d3b34b860f10d9958f6aff16f9a59b1a568a3e35946667e40128e2"
+        },
+        {
+          "path": "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\standalone_revision_2026_10_07\\main_ieee\\detail-24-24.png",
+          "sha256": "a44bee94f7b99ea6943cc76945495843a96140d65831b35079cfd59efcdbceb4"
+        },
+        {
+          "path": "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\standalone_revision_2026_10_07\\main_ieee\\detail-25-25.png",
+          "sha256": "038929a541d64a332b7ff1cc8c90e05d08c2de3eb39c5a591dcf6c4ba761d7f6"
+        },
+        {
+          "path": "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\standalone_revision_2026_10_07\\main_ieee\\detail-27-27.png",
+          "sha256": "2caeb64ab440e9ec0fffa065f6d20bcb9f5cf82708eba48d0d7320db818af801"
+        },
+        {
+          "path": "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\standalone_revision_2026_10_07\\main_ieee\\detail-28-28.png",
+          "sha256": "827411d8142e9829fc2cd65afe0b2f75d54204b70acea123e07630a1d35b2fba"
+        },
+        {
+          "path": "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\standalone_revision_2026_10_07\\main_ieee\\detail-29-29.png",
+          "sha256": "23e5106a4a4458ea832d7a2f388a2cbcaea2b68c2b933d1697e8f664a6b36334"
+        },
+        {
+          "path": "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\standalone_revision_2026_10_07\\main_ieee\\detail-30-30.png",
+          "sha256": "96f74aaa5476f03d1cbcb0addc7d2b672851570250a0898a7008418e0f68c384"
+        },
+        {
+          "path": "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\standalone_revision_2026_10_07\\main_ieee\\page-31.png",
+          "sha256": "3fdc880dc2f69ecc0fbc6073f404e2a63e6a727e9506eb2ad91784b57b656149"
+        },
+        {
+          "path": "C:\\Users\\alien\\Documents\\Mathematical foundation\\tmp\\pdfs\\standalone_revision_2026_10_07\\main_ieee\\page-32.png",
+          "sha256": "2979b4cfc94e4dde166a985a1cf0bafd22d558809b869a780bbd31058466be58"
+        }
+      ],
+      "findings": [],
+      "checks": {
+        "clipping": "No clipping found in either contact sheet or any reviewed detailed page.",
+        "overlap": "No overlapping text, equations, tables, captions or figure elements found.",
+        "table_readability": "Sequential comparison tables, the coordinate table, all three full-width comparison tables and the complete connected-ring table are readable.",
+        "figure_readability": "The full-width service-margin figure, legends, axes, notes and caption are readable.",
+        "orphan_headings": "No orphan appendix, subsection or paragraph headings found.",
+        "bibliography": "References on pages 30-32 are readable and within page boundaries.",
+        "resolved_layout_observation": "IEEE page 28 now uses normal spacing around its appendix heading, subsection heading and equations; the previous large vertical gaps are resolved."
+      },
+      "status": "Final render visually reviewed; no blocking layout findings."
+    },
+    "clipping_overlap_or_unreadable_content_found": false
+  },
+  "repository_checks": {
+    "existing_research_audit_passed": true,
+    "original_manifest_files_verified": 749,
+    "python_sources_parsed": 186,
+    "certificate_records_verified": 994,
+    "certificate_source_bindings_verified": 14,
+    "additional_historical_files_preserved_and_hashed": 744,
+    "online_study_source_bindings_verified": 20,
+    "online_study_case_run_hashes_verified": 17,
+    "new_archive_credential_signature_matches": 0,
+    "visibility": "PRIVATE"
+  },
+  "compiler": {
+    "verified_pdf_build": "Installed MiKTeX pdfLaTeX and BibTeX",
+    "built_in_editor_compile": "Unavailable: Unable to find standard directories for platform"
+  }
+}

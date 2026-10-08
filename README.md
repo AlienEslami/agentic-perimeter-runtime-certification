@@ -4,7 +4,7 @@ This private preparation repository contains the manuscript and numerical resear
 
 ## Contents
 
-- `paper/`: the standalone manuscript, essential appendices, figures, declarations, compiled reading copies and materials map.
+- `paper/`: the long manuscript (non-IEEE and IEEE reading layouts), a separate reduced version, essential appendices, figures, declarations, compiled PDFs and reduction notes.
 - `archive/`: the preceding companion manuscript and losslessly preserved historical studies, with preservation hashes.
 - `benchmarks/reusable_perimeter_suite_2026-09-26/`: the portable two-region suite, unchanged model/checker sources in `vendor/`, protocols, exact plans, certificates, trajectories, and recorded live-agent responses.
 - `benchmarks/mfd_uncertainty/`: earlier uncertainty-frontier sources, inputs, source snapshots, and results.
@@ -66,4 +66,4 @@ The 7 October consolidation adds the cited historical local-agent, routing, fixe
 
 ## Revision and release
 
-Copied numerical algorithms and recorded values are preserved. The 7 October 2026 manuscript is a single paper containing the mathematical argument and essential experimental details. Its abstract and introduction are unchanged from the approved version. Additional historical material is archived with preservation hashes. Public availability, license choice and remaining author/journal checks are tracked in `PUBLIC_RELEASE_CHECKLIST.md`.
+Copied numerical algorithms and recorded values are preserved. The 8 October 2026 long and reduced manuscripts retain the complete formal argument and essential experimental protocols. Result headings are plain with brief preceding goal explanations. The reduced version is 69 pages, compared with 77 in the same layout for the long version, and refers to it for extended experimental reporting. All statements, proofs and distinct displayed mathematics remain; the abstract and introduction are unchanged from the approved version. Additional historical material is archived with preservation hashes. Public availability, license choice and remaining author/journal checks are tracked in `PUBLIC_RELEASE_CHECKLIST.md`.

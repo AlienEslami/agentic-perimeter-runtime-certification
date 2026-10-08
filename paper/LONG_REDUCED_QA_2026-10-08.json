@@ -1,0 +1,75 @@
+{
+  "date": "2026-10-08",
+  "scope": "Editorial heading changes and a separate reduced manuscript; no numerical runs or live API calls.",
+  "checks": {
+    "abstract_and_introduction_byte_preserved_all_layouts": true,
+    "long_layouts_only_six_heading_removals_and_six_leadins": true,
+    "formal_statements_and_proofs_exact_after_whitespace_normalization": {
+      "theorem": 4,
+      "proposition": 6,
+      "corollary": 1,
+      "proof": 11
+    },
+    "distinct_displayed_math_preserved": {
+      "long_blocks": 89,
+      "reduced_blocks": 87,
+      "distinct_blocks": 87,
+      "two_duplicate_allocation_displays_retained_once_in_appendix_D": true
+    },
+    "retained_table_data_preserved": [
+      "tab:benchmark-conflict",
+      "tab:benchmark-deadlines",
+      "tab:benchmark-regulation-queue",
+      "tab:delayed-handover",
+      "tab:network-transfer-complete",
+      "tab:new-coordinate-ablation",
+      "tab:nomenclature",
+      "tab:sequential-handover",
+      "tab:structure-frontier",
+      "tab:structure-online",
+      "tab:supp-sequential-coverage",
+      "tab:task-state-operations"
+    ],
+    "omitted_extended_or_duplicate_tables": [
+      "supp:detail:tab:delayed-handover",
+      "tab:new-incident-primary",
+      "tab:supp-sequential-traffic"
+    ],
+    "no_heading_titles_missing_references_duplicate_labels_or_compile_errors": true,
+    "visual_review": {
+      "long_non_ieee": "77 rendered pages; all contact sheets and detailed changed result pages reviewed",
+      "long_ieee": "32 rendered pages; all contact sheets and all result pages reviewed independently",
+      "reduced": "69 rendered pages; all contact sheets, result pages, version note and experimental appendices reviewed",
+      "result": "No clipping, overlap or broken tables found"
+    }
+  },
+  "versions": {
+    "main": {
+      "pages": 77,
+      "source_whitespace_words": 21555,
+      "source_sha256": "7592d2741fa3102863902f157462a7c976333487dd5549c58a4439af55d6a8d8",
+      "pdf_sha256": "6e6bc3fc925b620290bd2210f37de83435258eeaebb7c04857a7be18ce27e670"
+    },
+    "main_ieee": {
+      "pages": 32,
+      "source_whitespace_words": 21542,
+      "source_sha256": "6cb89c242afc095a85d813bfabd338a4558bd865cbf1a2549754fa8ea2ef9746",
+      "pdf_sha256": "8ea87e0212213e1bff6b1b6fabd7f7083c6c57d29331e300d4fe7a98ee5aec9e"
+    },
+    "main_reduced": {
+      "pages": 69,
+      "source_whitespace_words": 18416,
+      "source_sha256": "adb059be5c3c5881fef8f2387c392c7737249d26956f507727ee7bb5f3194ba9",
+      "pdf_sha256": "721191172c23c0e5271d29f065ac3113298b100f14c348762e2d69a8cae05afd"
+    }
+  },
+  "reduction": {
+    "pages_saved": 8,
+    "percent": 10.4,
+    "typography_unchanged": true
+  },
+  "compiler": {
+    "native_editor": "Unavailable: Unable to find standard directories for platform",
+    "verified_compilation": "Installed pdfLaTeX and BibTeX; final references resolved"
+  }
+}

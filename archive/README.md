@@ -4,6 +4,8 @@ This directory preserves material moved out of the standalone manuscript on 7 Oc
 
 ## Contents
 
+- `standalone_manuscript_2026_10_07/` preserves the complete preceding source package, README, materials map and audit with preservation hashes, before the separate long/reduced revision.
+
 - `companion_manuscript_2026_10_06/` preserves the preceding supplement source, compiled PDF, references, figures and complete manuscript source ZIP. Its S5–S7 contain the earlier local-agent, routing and fixed-controller/repair narratives and tables.
 - `historical_studies/local_task_state_2026_09_11.zip` preserves local-agent requests, responses and execution feedback, the commissioning grid, matched runtime episodes, and the task-state protocols from `FOUNDATION_MFD_PARTB_REVIEWED_2026-09-11_TASK-NETWORK`. It contains eight development responses and forty later responses, including the memory intervention.
 - `historical_studies/LIVE_OPENAI_CERTIFIED_ROUTING_DATA.zip` preserves the original earlier OpenAI routing package, including literal calls, protocol, source and audit.

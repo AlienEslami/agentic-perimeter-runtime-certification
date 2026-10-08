@@ -749,6 +749,8 @@ the resulting center $\widehat x(T_r)$ and radius $r(T_r)$ give the test
  \label{eq:new-service-support}
 \end{equation}
 
+The following theorem connects these checks to physical and service feasibility for every trajectory allowed by the stated uncertainty bounds.
+
 \begin{theorem}
 \label{thm:new-plan-enclosure}
 Consider the MFD field \eqref{eq:new-plant} with admission
@@ -963,7 +965,9 @@ available, a sound outer set propagated through the incumbent's executed
 prefix supplies the replacement information set, as in
 Proposition~\ref{prop:planned-handover}.
 
-\begin{theorem}[Verified plan replacement]
+The following theorem shows how certification guarantees carry through successive plan replacements and retention after rejection.
+
+\begin{theorem}
 \label{thm:new-plan-closure}
 Suppose an initially verified plan satisfies the physical constraints and
 covers all scheduled service deadlines. At each decision time, install a
@@ -1059,7 +1063,9 @@ condition below uses a proof covering the \emph{same} snapshot. For an
 enlarged observation box, the backup endpoint receives a fresh certificate
 from that box, as in the numerical path audit.
 
-\begin{theorem}[Finite-grid availability and minimum intervention]
+The following theorem establishes finite search termination and the smallest change among certified candidates on the tested grid.
+
+\begin{theorem}
 \label{thm:repair-grid}
 Suppose $\mathsf C_t(P^B\mid\mathcal S_t)=1$, $1\in\Theta$, and each
 grid evaluation terminates. Ordered exhaustive search returns a certified
@@ -1086,7 +1092,9 @@ the certificate predicate. Section~\ref{sec:repair-results} uses ordered
 exhaustive search. Earlier single-contract studies and their exhaustive-grid
 search audits are preserved in the repository historical-study archive.
 
-\begin{proposition}[Sound repair and timeout retention]
+The following proposition shows that certified repair and retention on timeout preserve physical and service guarantees through the certified expiry.
+
+\begin{proposition}
 \label{prop:repair-execution}
 Assume sound certificates, a current valid backup, and exact execution
 binding. A repair installed only after a passing certificate for its actual
@@ -1109,7 +1117,9 @@ certificate from its activation state set, and implemented grid points are
 ordered by their stored Euclidean command distances. \appref{app:repair-cost}
 gives the complete timing and numerical-ordering conditions.
 
-\begin{corollary}[Conditional recursive repair availability]
+The next result gives conditions under which repair preserves certified operation beyond a finite plan's expiry.
+
+\begin{corollary}
 \label{cor:repair-recursive}
 Strengthen $\mathsf C_t$ to require the terminal certification of
 \appref{sec:terminal-backup}. Suppose the backup endpoint passes this
@@ -1148,7 +1158,7 @@ $\mathcal I_s^+\supseteq\mathcal R_B(s\mid\mathcal I_t)$, with commands
 scheduled from $s$ and every remaining service time kept absolute.
 Computation leaves the incumbent in force until this activation slot.
 
-\begin{proposition}[Planned-time certified handover]
+\begin{proposition}
 \label{prop:planned-handover}
 Suppose the incumbent has a valid certificate on $[t,E_B]$ and the
 actual state at $t$ belongs to both $\mathcal I_t$ and its certified
@@ -2538,7 +2548,9 @@ $|\ell(x,u)-\ell(y,v)|\le L_{\ell x}\|x-y\|+
 L_{\ell u}\|u-v\|$ and $|g(x)-g(y)|\le L_g\|x-y\|$.
 Let $J(P)=\int_t^{t+H}\ell(x_P,u_P)\,ds+g(x_P(t+H))$.
 
-\begin{proposition}[Plan-cost sensitivity]
+The following proposition bounds the possible change in traffic cost caused by repairing a plan.
+
+\begin{proposition}
 \label{prop:repair-cost}
 Under these assumptions, for the Euclidean norm on the stacked fixed-block
 command vector,

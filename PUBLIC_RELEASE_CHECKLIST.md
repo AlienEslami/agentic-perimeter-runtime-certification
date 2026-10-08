@@ -2,7 +2,7 @@
 
 Current visibility: **private**. [Repository URL](https://github.com/AlienEslami/agentic-perimeter-runtime-certification) is included in the manuscript; public release is planned before submission.
 
-- [ ] Confirm final standalone manuscript and appendices, authors, affiliations, and corresponding-author details.
+- [ ] Choose the final long or reduced manuscript, confirm its appendices and long-version links, authors, affiliations, and corresponding-author details.
 - [ ] Confirm author contributions and final author approval.
 - [ ] Reconfirm funding and competing-interest declarations.
 - [ ] Confirm the AI-assistance disclosure and the target journal's current policy.

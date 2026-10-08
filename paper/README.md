@@ -1,38 +1,42 @@
-# Standalone paper — 7 October 2026
+# Long and reduced manuscripts - 8 October 2026
 
 **Formal Guarantees for Trustworthy Agent-Mediated Urban Perimeter Control**
 
-`main.tex` is the primary Elsevier single-column manuscript. Its abstract and
-introduction are preserved exactly from the author-approved version.
-The argument, mathematical proofs and essential experimental specifications
-are contained in one document. Existing proof appendices A–F are followed by:
+`main.tex` and `main.pdf` are the primary non-IEEE long paper (77 pages).
+`main_ieee.tex` and `main_ieee.pdf` contain the same long paper in a two-column
+reading layout (32 pages). The explanatory parenthetical titles have been
+removed from theorem, proposition and corollary headings. Brief goal sentences
+precede the results where an explanation was needed.
 
-- G: experimental protocols and validation;
-- H: certification comparisons and service margins;
-- I: connected-network experiment;
-- J: agent experiment protocol.
+`main_reduced.tex` and `main_reduced.pdf` are the separate reduced version
+(69 pages). It retains every formal statement, proof and distinct displayed
+mathematical relation. Repeated appendix explanations, two duplicate allocation
+displays, three extended or duplicate tables and one reporting figure have been
+consolidated. The reduced appendices refer to the long paper for the full
+experimental explanations and additional reporting. Its essential mathematical
+argument and experimental protocols remain within the document.
 
-`main_ieee.tex` contains the same content in an alternative two-column reading
-layout. Use `main.tex` for the non-IEEE paper. A separate supplement is no longer
-required. The preceding supplement and historical studies are preserved in the
-private repository's `archive/` directory. Full current numerical records,
-certificates and recorded agent calls remain in its `benchmarks/` directories.
+The abstract and introduction are preserved exactly in all versions. The
+conclusion and future-work paragraph are also unchanged. Neither font size
+nor page layout was changed to shorten the paper. No numerical study or live
+model call was rerun.
+
+Select `main.tex` for the long paper or `main_reduced.tex` for the reduced
+paper in Overleaf. Compile with pdfLaTeX, BibTeX and two further pdfLaTeX passes.
+The source package includes all three sources, compiled PDFs, generated
+bibliographies, declarations and the two figure assets used by the long paper.
+The reduced paper's long-version links target `paper/main.pdf` in the repository.
 
 Repository: https://github.com/AlienEslami/agentic-perimeter-runtime-certification
-The repository remains private during preparation, with public release planned
-before submission.
+It remains private during preparation; public access is planned before submission.
 
-For compilation, use pdfLaTeX, BibTeX and two further pdfLaTeX passes. The source
-package contains both layouts, the bibliography and generated bibliography
-files, declarations, and the figure assets used by the integrated paper.
-Select `main.tex` when opening the package in Overleaf.
+`REDUCTION_NOTES_2026-10-08.md` explains the cuts.
+`LONG_REDUCED_QA_2026-10-08.json` records source, reference and compilation
+checks. `STANDALONE_MATERIALS_MAP.md` records the 7 October integration and
+historical research archives, which still applies to the long version.
+`STANDALONE_QA_2026-10-07.json`, where present, is the preceding revision's audit.
+The previous complete manuscript package is preserved in the repository's
+`archive/standalone_manuscript_2026_10_07/` directory.
 
-`STANDALONE_MATERIALS_MAP.md` maps the integrated and archived material.
-`STANDALONE_QA_2026-10-07.json` records preservation, reference and PDF checks.
-`submission_declarations.tex` contains the author-supplied declarations;
-`highlights.txt` contains submission highlights. Remaining author and release
-checks are in `SUBMISSION_ITEMS_TO_CONFIRM.txt`.
-
-Numerical models, reported values and stored experimental evidence are
-preserved. This revision reorganizes the manuscript and introduces no new
-optimization runs or live model calls.
+Author and release checks remain in `SUBMISSION_ITEMS_TO_CONFIRM.txt` and
+the repository's `PUBLIC_RELEASE_CHECKLIST.md`.
