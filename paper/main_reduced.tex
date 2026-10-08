@@ -498,8 +498,10 @@ The transitions are given in Table~\ref{tab:task-state-operations}.
 
 \begin{table}[t]
 \centering\small
-\caption{Task-record transitions at time $t$. Every saved task retains its
-absolute expiry.}
+\caption{Task-record transitions at current time $t$. Expiry is a
+priority's absolute end time. The stack stores interrupted priorities,
+most recent first, with original expiries. Network operation uses the
+default network objective.}
 \label{tab:task-state-operations}
 \begin{tabular}{@{}p{0.16\linewidth}p{0.76\linewidth}@{}}
 \toprule
@@ -537,7 +539,8 @@ state gives an agent without stored interaction history.
 
 A finite plan specifies affine command blocks $u=k_b+K_bx$ on absolute
 intervals. Target-centered feedback has $k_b=u_b^\star-K_bx_b^\star$;
-constant MPC commands have $K_b=0$. MPC, feedback-rollout and repair tools
+constant model predictive control (MPC) commands have $K_b=0$.
+MPC, feedback-rollout and repair tools
 all submit their plans to the same checker (Figure~\ref{fig:new-architecture}).
 The optional repair interface is
 \begin{equation}
@@ -555,11 +558,13 @@ gives conditions for continued operation beyond expiry.
 \begin{figure}[t]
 \centering
 \includegraphics[width=0.98\textwidth]{figures/mfd_tool_architecture.pdf}
-\caption{Planning and execution. Numerical tools submit candidates to a
-common certifier. Execution uses an accepted plan or the still-valid
-continuation, with a certified terminal policy at expiry when available.
-Memory affects requests; the physical information and obligations determine
-plan acceptance.}
+\caption{Planning and execution. AI means artificial intelligence, MPC
+means model predictive control, and MFD means macroscopic fundamental
+diagram. Numerical planning tools submit candidate plans to a common
+certifier. The execution authority installs an accepted plan or continues
+the still-valid plan; a certified terminal policy takes over at expiry
+when available. Arrows show requests, candidate plans, acceptance or
+rejection decisions, executed commands and traffic feedback.}
 \label{fig:new-architecture}
 \end{figure}
 
@@ -1513,13 +1518,14 @@ Full reproduction instructions and extended comparisons are in the
 \label{sec:network-transfer-results}
 
 Task Q compares economic MPC with the queue/exit extension of the
-almost-smooth CLF controller \cite{geroliminis2013mpc,zhong2018robust}.
+almost-smooth control-Lyapunov-function (CLF) controller \cite{geroliminis2013mpc,zhong2018robust}.
 Its twelve contracts combine 20, 30, 40 and 50\% arrival increases with
 30-, 45- and 60-minute durations, one-vehicle state half-widths and a
 300-vehicle/h residual bound. All twelve MPC plans pass certification and
-execute unchanged. Over 960 matched feasible realizations, MPC reduces
-TTS by a median 24\% (range 23--25\%) relative to the specified CLF
-extension. Certification therefore preserves the benefit of these plans
+execute unchanged. Across 960 matched feasible comparisons
+($12$ contracts, $16$ initial-state corners and $5$ residual profiles),
+the median paired percentage reduction in TTS is 24\% (range 23--25\%)
+relative to the specified CLF extension. Certification therefore preserves the benefit of these plans
 while adding the stated uncertainty coverage and expiry. Additional
 regulation and eight-event compatibility results are provided in
 \reproductiondetails{the controller comparisons}.
@@ -1532,21 +1538,29 @@ unresolved. Table~\ref{tab:structure-frontier} compares three enclosures
 for a fixed two-block MPC plan. Regional/class half-width is $d$ vehicles
 and queue half-width is $\min(d,10)$. Signed correlations extend the
 largest tested certifiable regional width from 10 to 50 vehicles at a
-60-vehicle/h residual. Positive/queue bounds perform better for the
+60-vehicle/h residual. Positivity/queue bounds perform better for the
 one-vehicle box with the larger residual, so the refinements complement
 each other. Acceptance requires every physical and service constraint
 to pass its certified bound check.
 
 \begin{table}[t]
 \centering\small
-\caption{Unchanged MPC plan: certified Region-1 deadline upper bounds
-(vehicles), rounded upward. The service limit is 2850 vehicles. A dash
-denotes an unresolved sufficient full-plan enclosure.}
+\caption{Certified Region-1 inventory bounds at minute 60 for a fixed
+model predictive control (MPC) plan over minutes 0--60. Entries are rounded
+upward in vehicles; the service limit is 2850. Here $d$ is the sensing
+half-width of the first six state coordinates in \eqref{eq:new-plant}
+(vehicles), the queue half-width is
+$\min(d,10)$ vehicles, and $\bar w_{\rm veh}$ bounds the exterior-arrival
+forecast residual in vehicles per hour (veh/h). Base interval uses the
+componentwise enclosure in conservation coordinates; Positivity/queue adds
+independently proved nonnegativity and scalar queue bounds; Signed also retains
+shared initial-state dependence through signed generators and a bounded
+remainder. A dash means the complete-plan certificate is unresolved.}
 \label{tab:structure-frontier}
 \setlength{\tabcolsep}{5pt}
 \begin{tabular}{@{}rrrrr@{}}
 \toprule
-$d$ (veh) & $\bar w_{\rm veh}$ (veh/h) & Original & Positive/queue & Signed\\
+$d$ (veh) & $\bar w_{\rm veh}$ (veh/h) & Base interval & Positivity/queue & Signed\\
 \midrule
 1 & 60 & 1780 & 1729 & 1722\\
 10 & 60 & 1845 & 1777 & 1725\\
@@ -1559,11 +1573,13 @@ $d$ (veh) & $\bar w_{\rm veh}$ (veh/h) & Original & Positive/queue & Signed\\
 \end{table}
 
 For a 1700-vehicle service limit under one-vehicle sensing half-widths
-and a 60-vehicle/h residual bound, the original and positive/queue
+and a 60-vehicle/h residual bound, the base interval and positivity/queue
 methods first certify a nominal target of 1600 vehicles on the six-target
 menu. Signed generators also certify 1625, with a deadline bound below
 1689. The required margin falls from 100 to 75 vehicles and nominal TTS
-falls by 0.90\% (41 veh-h). The extended online comparison, target menu
+falls by 0.90\% (41 vehicle-hours) over minutes 0--60. The margin is
+the difference between the authorized service limit and the target imposed
+on the nominal forecast trajectory. The extended online comparison, target menu
 and adverse realization are in \reproductiondetails{the service-margin study}.
 
 The network construction also certifies fixed plans on connected two- and
@@ -1592,9 +1608,19 @@ center forecast with one-vehicle prediction clearance.
 
 \begin{table}[t]
 \centering\small
-\caption{Task D: 72 development and 8 held-out contracts. Sample passes
-require physical and service satisfaction in all 640 replays. Family passes
-require the continuous enclosure certificate under the same contract.}
+\caption{Deadline-constrained Task D: 72 development and eight held-out
+contracts over minutes 20--60. Entries count passing contracts out of 80.
+Sample passes satisfy physical and service limits in all 640 replays
+(128 initial-state corners times five arrival-residual profiles).
+Family passes certify continuous physical limits and the minute-60 service
+bound for every allowed initial state and residual. MPC means model predictive control.
+Nominal MPC plans from the state-set center with zero residual;
+Five-scenario MPC adds the all-low/all-high states with both constant
+residual extremes; Full-scenario MPC uses all 640 combinations plus the
+center forecast. All minimize center-forecast priority cost. Checked-repair
+entries count all certified outputs: unchanged proposals and checked
+interpolations toward a backup. Reserve refresh constructs a new certified
+backup for nominal-plan repair when the old continuation fails its check.}
 \label{tab:benchmark-deadlines}
 \begin{tabular}{@{}lrr@{}}
 \toprule
@@ -1603,7 +1629,7 @@ Planning/execution option & Sample passes & Family passes\\
 Nominal MPC & 36/80 & 36/80\\
 Five-scenario MPC & 40/80 & 40/80\\
 Full-scenario MPC & 80/80 & 44/80\\
-Original MPC with checked repair & 74/80 & 74/80\\
+Nominal MPC with checked repair & 74/80 & 74/80\\
 Full-scenario MPC with checked repair & 74/80 & 74/80\\
 Repair with checked reserve refresh & 80/80 & 80/80\\
 \bottomrule
@@ -1617,33 +1643,43 @@ continuation in 68/80; ordered repair produces certified plans in 74/80.
 New reserves certify in all twelve contracts where the old continuation
 fails its check and enable repair in the remaining six. This tests the
 same-contract backup premise of Theorem~\ref{thm:repair-grid}.
-The physical CBF-QP separately satisfies physical constraints in 80/80
+The physical control-barrier-function quadratic program (CBF-QP)
+separately satisfies physical constraints in 80/80
 adverse runs and the deadline in 44/80, with one adverse realization per
 contract. Its scheduled-service performance is evaluated separately from the
 instantaneous physical barriers.
 
 Table~\ref{tab:benchmark-conflict} uses the common
-$(d,\bar w_{\rm veh},\eta,p)=(1,300,2850,4)$ contract at the all-high corner
-with constant positive residual. Nominal MPC violates storage and service;
+$(d,\bar w_{\rm veh},\eta,p)=(1,300,2850,4)$ contract at the all-high
+corner, where every initial state component is at its upper sensing bound,
+with the arrival residual held at its positive upper bound. Nominal MPC violates storage and service;
 the physical CBF protects storage but misses the deadline. Retention and
 checked repair satisfy both. Full-scenario MPC passes this realization,
 while its sufficient family certificate remains unresolved.
 
 \begin{table}[t]
 \centering\footnotesize
-\caption{Matched adverse realization, minutes 20--60. Costs are veh-h;
-queue and deadline inventories are vehicles. P/F denotes realized
-physical/service pass or failure; Cert. denotes full-family certification.}
+\caption{Matched adverse realization, minutes 20--60. TTS is total
+time spent in the regions and exterior queue; $J_D$ weights Region~2 by
+$p=4$. Both use vehicle-hours (veh-h). Costs and counts are rounded to whole
+units. Peak queue is the maximum exterior count $100z$; $100n_1(E)$ is the
+Region-1 count at deadline $E=60$ minutes. Their limits are 2000 and 2850
+vehicles. P/S lists physical/service outcomes: P=pass, F=fail. Cert.
+reports full-family certification: Yes=certified, No=unresolved,
+dash=not assessed by that checker.
+MPC means model predictive control; CBF means control barrier function.
+Retained continuation follows the previous certified plan; Nominal-plan
+and Full-scenario repair interpolate their MPC proposals toward it.}
 \label{tab:benchmark-conflict}
 \setlength{\tabcolsep}{3pt}
 \begin{tabular}{@{}lrrrrcc@{}}
 \toprule
-Policy & TTS & $J_D$ & Peak queue & Deadline $n_1$ & P/S & Cert.\\
+Policy & TTS & $J_D$ & Peak queue & $100n_1(E)$ & P/S & Cert.\\
 \midrule
 Nominal MPC & 3300 & 6328 & 2180 & 2852 & F/F & No\\
 Physical CBF & 3295 & 6376 & 1844 & 2917 & P/F & ---\\
 Retained continuation & 2695 & 6814 & 194 & 1727 & P/P & Yes\\
-Original-plan repair & 3097 & 6427 & 1683 & 2310 & P/P & Yes\\
+Nominal-plan repair & 3097 & 6427 & 1683 & 2310 & P/P & Yes\\
 Full-scenario MPC & 3267 & 6357 & 1999 & 2848 & P/P & No\\
 Full-scenario repair & 3075 & 6453 & 1547 & 2314 & P/P & Yes\\
 \bottomrule
@@ -1661,6 +1697,9 @@ B_r&=\frac{J_D(P^B;r)-J_D(P^R;r)}{J_D(P^B;r)-J_D(P^0;r)}.
 \end{aligned}
 \label{eq:benchmark-repair-metrics}
 \end{equation}
+Positive $I_r$ means a reduction in priority cost relative to retention;
+positive $C_r$ means an increase in queue-inclusive delay. The recovered
+benefit is reported as $100B_r$ percent.
 Across 24,320 matched realizations from 38 original-continuation repair
 contracts, every benefit denominator is positive. Median priority
 improvement is 5.7\%, delay increase 16.1\%, and recovered benefit 91.7\%.
@@ -1681,12 +1720,20 @@ retains its schedule, correlated proof and original expiry.
 
 \begin{table}[t]
 \centering\small
-\caption{Sequential Task D plan changes. A and R mean admission and
-retention at minutes 25/30. Feasible counts satisfy both physical limits
-and the minute-60 service row in 640 matched replays. TTS entries are
-fixed initial plan / unchecked changes / certified execution, in veh-h.
-D015, D027 and D071 were preselected; D025 is the first physical-violation
-case in the subsequent complete matched-pair scan.}
+\caption{Successive changes in deadline-constrained Task D. Case entries
+are stored contract identifiers. The 25/30 column gives the decisions at
+minutes 25 and 30: A=accept the replacement, R=retain the current plan.
+Unchecked feasible and Certified feasible count replays satisfying both
+physical limits and the minute-60 service requirement out of 640 matched
+initial-state/arrival realizations. TTS means total time spent, including
+the exterior queue, over minutes 20--60, in vehicle-hours (veh-h).
+Median TTS F/U/C gives three medians in order: F=retain the fixed initial
+certified plan, including its scheduled command changes; U=execute both
+requested replacements without checking; C=execute only certified
+replacements and retain the current plan after rejection. Medians use all
+640 replays, including infeasible unchecked runs. D015, D027 and D071 were
+preselected; D025 is the first storage-violation case found in the complete
+matched-pair scan.}
 \label{tab:sequential-handover}
 \setlength{\tabcolsep}{4pt}
 \begin{tabular}{@{}lcccc@{}}
@@ -1701,7 +1748,10 @@ D025 & A/R & 512/640 & 640/640 & 2963/3070/2719\\
 \end{tabular}
 \end{table}
 
-Table~\ref{tab:sequential-handover} shows acceptance of both changes,
+For D015, D027, D071 and D025, the contract triples
+$(d,\bar w_{\rm veh},\eta)$ are $(1,60,2850)$, $(1,300,2850)$,
+$(50,60,2950)$ and $(1,300,2750)$, respectively, in vehicles, vehicles/h
+and vehicles. Table~\ref{tab:sequential-handover} shows acceptance of both changes,
 acceptance followed by retention, and retention of the initial plan.
 D027's second request fails the sufficient service enclosure although
 the sampled unchecked schedule passes; D071's propagated boxes include
@@ -1715,7 +1765,7 @@ the minute-30 request fails the queue check. Unchecked execution reaches
 2005.59 vehicles against the 2000-vehicle limit, confirmed by independent
 adaptive integration. Retaining the accepted suffix gives 640/640
 physically and service-feasible replays, with median TTS 8.2\% below
-retaining the initial plan. Its changing-priority cost is 5.2\% above
+retaining the initial plan. Its median changing-priority cost is 5.2\% above
 unchecked switching. These tests assume installation at the specified
 times; the following study includes computation delay. The other overflow
 cases and complete records are in \reproductiondetails{successive requests}.
@@ -1739,10 +1789,21 @@ box-based proof can fail after class correlations are discarded.
 
 \begin{table}[t]
 \centering\small
-\caption{Execution evidence with explicit denominators. Handover uses
-17 contracts per slot; the interpretation pilot has 24 calls per cell;
-actual planning uses four traces per interface. Feasible trajectories meet
-both physical and scheduled service rows.}
+\caption{Delayed activation and agent decisions. Top: Handover slot is
+preparation time after minute 20. Replacements and Retentions count timely
+certified installations and continued execution of the prior plan,
+respectively (17 contracts per slot). Each row has
+$17\times640=10{,}880$ replays through minute 60.
+Middle: the interpretation pilot has 24 calls per interface/memory pair.
+History only supplies observations and interaction memory; Task record
+also supplies the active priority and its expiry. Clean memory is
+unaltered; Poisoned memory contains misleading instructions. Objective
+correct means agreement with the active priority; Tool correct means
+agreement with the saved certified-tool selection rule. Bottom: each
+interface has four traces and $4\times640=2560$ replays. Objective correct
+assesses initial requests; Repairs executed counts traces installing a
+certified grid repair. Feasible trajectories satisfy physical and service
+constraints.}
 \label{tab:delayed-handover}
 \label{tab:benchmark-api-pilot}
 \label{tab:benchmark-api-execution}
@@ -1762,7 +1823,7 @@ History only & Poisoned & 15/24 & 24/24\\
 Task record & Clean & 24/24 & 24/24\\
 Task record & Poisoned & 24/24 & 24/24\\
 \midrule
-Actual planning & Objective correct & Checked repairs & Feasible trajectories\\
+Actual planning & Objective correct & Repairs executed & Feasible trajectories\\
 \midrule
 History only & 1/4 & 1/4 & 2560/2560\\
 Task record & 4/4 & 4/4 & 2560/2560\\
@@ -1784,7 +1845,10 @@ interruption status. Corrupted memory requests a changed priority,
 increased storage limit or unchecked execution. Table~\ref{tab:delayed-handover}
 reports objective/tool correctness separately from traffic feasibility.
 The task record improves objective selection in these small paired
-examples; certification enforces the original physical and service limits
+examples. In three history-only traces, an accepted MPC plan satisfies the
+physical and service constraints but uses the wrong regional objective;
+only one trace executes a checked repair. Certification enforces the
+original physical and service limits
 on every accepted plan. The pilot and actual-planning traces are separate
 stages, evaluated through the accepted plans' finite validity intervals. Essential histories,
 hard limits and scoring are summarized in \appref{sec:supp-execution};
@@ -1886,11 +1950,13 @@ Tasks Q and D start at minute 20 with the state center, in the order of
 &1.2410781134202304).
 \end{aligned}
 \]
-The original continuation uses $(1,1,0.667015677,1)$ in five- and
+The original continuation uses $(1,1,0.667015677,1)$ in command order
+$(u_{12},u_{21},u_{02},u_{20})$, in five- and
 35-minute blocks ending at minute 60. Changed requirements trigger fresh
 checking. If necessary, reserve construction tries network TTS followed
 by moderate Region-2 priority; a repair endpoint must pass the same
-contract. Repair tests $\Theta=\{j/20:0\le j\le20\}$ in order. Plans are
+contract. Repair tests $\Theta=\{j/20:0\le j\le20\}$ in order,
+from the proposal at weight zero to the checked backup at weight one. Plans are
 compiled and checked against exact actuator constraints; state/service
 proof intervals are 15 seconds.
 
@@ -1900,11 +1966,14 @@ five-minute alternating and ten-minute sinusoidal, within each contract's
 bound. Constant plans use all 128 initial-box corners. The CLF extension
 uses sixteen corners, every eighth entry of the lexicographic
 $\{-1,+1\}^7$ list, with the same profiles; performance comparisons match
-corner and residual labels. Ten-second RK4 replay is supplemented by
-independent adaptive DOP853 and conservation checks. The CLF extension
-uses a regional-error correction with LQR admission/exit feedback, reference
+corner and residual labels. Replays use fourth-order Runge--Kutta
+(RK4) integration with ten-second steps, supplemented by independent
+adaptive eighth-order Runge--Kutta (DOP853) integration and conservation
+checks. The CLF extension uses a regional-error correction with
+linear-quadratic regulator (LQR) admission/exit feedback, reference
 totals $(2700,3200)$ vehicles, state weights $(4,1,0.1,0.1,0.1,0.1,2)$
-and input weight $3000I_4$. The physical CBF-QP minimizes deviation from
+and input weight $3000I_4$, where $I_4$ is the four-by-four identity
+matrix. The physical CBF-QP minimizes deviation from
 MPC subject to instantaneous physical barriers with gain $6$ h$^{-1}$
 and the worst queue-arrival residual \cite{ames2017}; its service deadline
 is an evaluation criterion. Solver details and validation records are in
@@ -1925,9 +1994,10 @@ mismatched result retains the existing schedule through its original expiry.
 
 \paragraph{Connected rings}
 \label{app:network-transfer}
-The ring model has classes $c_{ij}$ and one queue per region, with
-$N_i=\sum_jc_{ij}$, local completion $c_{ii}v(N_i)$, nonlocal transfer
-$u_i c_{ij}v(N_i)$ and admission $a_i=\min\{60z_i,120g_i\}$. Nonlocal
+The ring model has $R=2$ or $3$ regions, classes $c_{ij}$ and one
+queue per region. Regional and gate indices start at zero. The regional
+total is $N_i=\sum_jc_{ij}$; local completion is $c_{ii}v(N_i)$, nonlocal
+transfer is $u_i c_{ij}v(N_i)$, and admission is $a_i=\min\{60z_i,120g_i\}$. Nonlocal
 vehicles move one edge and retain their destination. Half the admitted
 traffic is local; the rest is equally divided among other destinations.
 Initial regional/queue totals are 3000/200 vehicles, with half the regional

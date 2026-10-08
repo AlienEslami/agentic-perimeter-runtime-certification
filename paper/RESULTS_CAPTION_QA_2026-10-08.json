@@ -1,0 +1,83 @@
+{
+  "date": "2026-10-08",
+  "scope": "Reduced manuscript captions and terminology; unchanged numerical results.",
+  "pages": 45,
+  "source_sha256": "d16790f1ca583fa9183f0676299683ee3f90ea8d66b6d3e602d6ccbd349daf97",
+  "pdf_sha256": "99db108ed4c2d36abec84b49d2c57267fdd072d7c4b75acc498af93c2bc7427b",
+  "explicit_changes": 29,
+  "checks": {
+    "unchanged_files": {
+      "main.tex": "02f4bd980c885e68f101ef65db3a49769e26d8195e4dadd02731ef8ed396bc30",
+      "main.pdf": "6b17e0d57edaed7277159ae1d4fe6a56d5387cfd67d5de81db11bc952507fc98",
+      "main_ieee.tex": "79235d4b6347cfc6ffc92f8236752229606c6eb51667f526eb9d077c1de243dd",
+      "main_ieee.pdf": "07ee3b960aadff224dcddf87e3a30aa0291a19964e7c64d4bb95c080c597af8f",
+      "submission_declarations.tex": "c685b910a98509c98eb890d69a94c4e213ef8abc2696d0626899c1ee4a879730",
+      "FOUNDATION_REFERENCES.bib": "157982c7379c79a64880caaae92b8f2bf8b04236506d40a28edb58c7b0251002",
+      "main_reduced.bbl": "a49f79ed27b80f0819fdfd20881f0a574565a6295bca832ed79ff961511c5f8a",
+      "submission_declarations_reduced.tex": "a010bbfae7ec71f9292eabed64f2061c7b483bebe9c74657702c25854dcd982f"
+    },
+    "abstract_introduction_conclusions_future_work_unchanged": true,
+    "formal_statements_proofs_display_equations_unchanged": true,
+    "table_values_unchanged": true,
+    "font_size_and_page_dimensions_unchanged": true,
+    "corresponding_author": "Jiangbo Yu",
+    "notation_page": 6,
+    "page_5_continues_section_2": true,
+    "float_barrier_lines": [
+      1858,
+      1931
+    ],
+    "results_table_pages": {
+      "3": 31,
+      "4": 32,
+      "5": 33,
+      "6": 34,
+      "7": 35
+    },
+    "research_model_page": 35,
+    "trafficgpt_reference_page": 43,
+    "no_manuscript_ai_assistance_declaration_or_openai_codex_claude": true,
+    "references_resolved_and_no_overfull_boxes": true,
+    "compiler": "Installed pdfLaTeX; native compiler unavailable on this platform.",
+    "independent_semantic_review": "All five results captions checked against saved protocols, code and result records; case tuples and deadline timing checked.",
+    "visual_review": "All pages rendered; full-document contact sheets and tables/appendix reviewed. No clipping, overlap or table overflow.",
+    "experiments_rerun": false
+  },
+  "caption_changes": [
+    {
+      "kind": "caption",
+      "label": "tab:structure-frontier",
+      "after": "Certified Region-1 inventory bounds at minute 60 for a fixed\nmodel predictive control (MPC) plan over minutes 0--60. Entries are rounded\nupward in vehicles; the service limit is 2850. Here $d$ is the sensing\nhalf-width of the first six state coordinates in \\eqref{eq:new-plant}\n(vehicles), the queue half-width is\n$\\min(d,10)$ vehicles, and $\\bar w_{\\rm veh}$ bounds the exterior-arrival\nforecast residual in vehicles per hour (veh/h). Base interval uses the\ncomponentwise enclosure in conservation coordinates; Positivity/queue adds\nindependently proved nonnegativity and scalar queue bounds; Signed also retains\nshared initial-state dependence through signed generators and a bounded\nremainder. A dash means the complete-plan certificate is unresolved."
+    },
+    {
+      "kind": "caption",
+      "label": "tab:benchmark-deadlines",
+      "after": "Deadline-constrained Task D: 72 development and eight held-out\ncontracts over minutes 20--60. Entries count passing contracts out of 80.\nSample passes satisfy physical and service limits in all 640 replays\n(128 initial-state corners times five arrival-residual profiles).\nFamily passes certify continuous physical limits and the minute-60 service\nbound for every allowed initial state and residual. MPC means model predictive control.\nNominal MPC plans from the state-set center with zero residual;\nFive-scenario MPC adds the all-low/all-high states with both constant\nresidual extremes; Full-scenario MPC uses all 640 combinations plus the\ncenter forecast. All minimize center-forecast priority cost. Checked-repair\nentries count all certified outputs: unchanged proposals and checked\ninterpolations toward a backup. Reserve refresh constructs a new certified\nbackup for nominal-plan repair when the old continuation fails its check."
+    },
+    {
+      "kind": "caption",
+      "label": "tab:benchmark-conflict",
+      "after": "Matched adverse realization, minutes 20--60. TTS is total\ntime spent in the regions and exterior queue; $J_D$ weights Region~2 by\n$p=4$. Both use vehicle-hours (veh-h). Costs and counts are rounded to whole\nunits. Peak queue is the maximum exterior count $100z$; $100n_1(E)$ is the\nRegion-1 count at deadline $E=60$ minutes. Their limits are 2000 and 2850\nvehicles. P/S lists physical/service outcomes: P=pass, F=fail. Cert.\nreports full-family certification: Yes=certified, No=unresolved,\ndash=not assessed by that checker.\nMPC means model predictive control; CBF means control barrier function.\nRetained continuation follows the previous certified plan; Nominal-plan\nand Full-scenario repair interpolate their MPC proposals toward it."
+    },
+    {
+      "kind": "caption",
+      "label": "tab:sequential-handover",
+      "after": "Successive changes in deadline-constrained Task D. Case entries\nare stored contract identifiers. The 25/30 column gives the decisions at\nminutes 25 and 30: A=accept the replacement, R=retain the current plan.\nUnchecked feasible and Certified feasible count replays satisfying both\nphysical limits and the minute-60 service requirement out of 640 matched\ninitial-state/arrival realizations. TTS means total time spent, including\nthe exterior queue, over minutes 20--60, in vehicle-hours (veh-h).\nMedian TTS F/U/C gives three medians in order: F=retain the fixed initial\ncertified plan, including its scheduled command changes; U=execute both\nrequested replacements without checking; C=execute only certified\nreplacements and retain the current plan after rejection. Medians use all\n640 replays, including infeasible unchecked runs. D015, D027 and D071 were\npreselected; D025 is the first storage-violation case found in the complete\nmatched-pair scan."
+    },
+    {
+      "kind": "caption",
+      "label": "tab:delayed-handover",
+      "after": "Delayed activation and agent decisions. Top: Handover slot is\npreparation time after minute 20. Replacements and Retentions count timely\ncertified installations and continued execution of the prior plan,\nrespectively (17 contracts per slot). Each row has\n$17\\times640=10{,}880$ replays through minute 60.\nMiddle: the interpretation pilot has 24 calls per interface/memory pair.\nHistory only supplies observations and interaction memory; Task record\nalso supplies the active priority and its expiry. Clean memory is\nunaltered; Poisoned memory contains misleading instructions. Objective\ncorrect means agreement with the active priority; Tool correct means\nagreement with the saved certified-tool selection rule. Bottom: each\ninterface has four traces and $4\\times640=2560$ replays. Objective correct\nassesses initial requests; Repairs executed counts traces installing a\ncertified grid repair. Feasible trajectories satisfy physical and service\nconstraints."
+    },
+    {
+      "kind": "caption",
+      "label": "tab:task-state-operations",
+      "after": "Task-record transitions at current time $t$. Expiry is a\npriority's absolute end time. The stack stores interrupted priorities,\nmost recent first, with original expiries. Network operation uses the\ndefault network objective."
+    },
+    {
+      "kind": "caption",
+      "label": "fig:new-architecture",
+      "after": "Planning and execution. AI means artificial intelligence, MPC\nmeans model predictive control, and MFD means macroscopic fundamental\ndiagram. Numerical planning tools submit candidate plans to a common\ncertifier. The execution authority installs an accepted plan or continues\nthe still-valid plan; a certified terminal policy takes over at expiry\nwhen available. Arrows show requests, candidate plans, acceptance or\nrejection decisions, executed commands and traffic feedback."
+    }
+  ]
+}

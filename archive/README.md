@@ -4,6 +4,8 @@ This directory preserves material moved out of the standalone manuscript on 7 Oc
 
 ## Contents
 
+- `reduced_manuscript_2026_10_08_before_caption_revision/` preserves the exact 43-page reduced-paper packages before results-caption and terminology clarification.
+
 - `reduced_manuscript_2026_10_08_before_author_float_revision/` preserves the exact 44-page reduced-paper packages before the corresponding-author, declaration and float-layout revision.
 
 - `reduced_manuscript_2026_10_08_before_substantial_reduction/` preserves the exact package with the preceding 70-page reduced manuscript, before consolidation to 44 pages. The long paper remains unchanged.

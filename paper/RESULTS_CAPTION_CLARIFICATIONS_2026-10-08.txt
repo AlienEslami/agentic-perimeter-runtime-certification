@@ -1,0 +1,46 @@
+RESULTS CAPTION AND TERMINOLOGY CLARIFICATIONS
+8 October 2026
+
+The reduced manuscript is now 45 pages, including references (previously 43).
+The added space contains definitions of labels, units, counts and methods.
+The long and IEEE manuscripts, abstract, introduction, formal statements,
+proofs, displayed equations, conclusion and future work are unchanged.
+All numerical table entries and the existing simulation records are unchanged.
+
+Table 3 (page 31): defines d, the queue sensing width, the arrival-residual
+bound and veh/h; explains the Base interval, Positivity/queue and Signed
+methods, the service limit, upward rounding and unresolved dash entries.
+
+Table 4 (page 32): defines sample versus full-family passes, the 80-contract
+denominator, the 640 replays, the three MPC scenario choices, checked repair
+and reserve refresh. Coverage counts include unchanged certified proposals.
+Physical limits apply continuously; the service bound is at minute 60.
+
+Table 5 (page 33): defines TTS, weighted cost J_D, veh-h, peak queue,
+the deadline count 100 n_1(E), limits and rounding. P/S means physical/service;
+P is pass and F is fail. Cert. means full-family certification: Yes certified,
+No unresolved and dash not assessed by that checker. MPC and CBF are expanded.
+
+Table 6 (page 34): defines A/R, the 25/30 decision times, feasibility counts
+and Median TTS F/U/C. F retains the initial plan including scheduled command
+changes; U executes replacements unchecked; C uses certified replacements
+and retains the active plan after rejection. Medians use all 640 replays,
+including infeasible unchecked runs. Nearby prose maps each case ID to its
+state half-width, arrival-residual bound and deadline limit.
+
+Table 7 (page 35): defines preparation slots, replacements, retentions,
+interfaces, memory conditions, objective/tool correctness and replay counts.
+The old heading Checked repairs is now Repairs executed, accurately naming
+the count of traces that installed a certified grid repair. The prose also
+explains the feasible plans with the wrong objective in history-only traces.
+
+Other clarifications: the task-record table and architecture caption now
+explain their shorthand; MPC, CLF, CBF-QP, RK4, DOP853 and LQR are expanded.
+The results specify the adverse initial state, margin and evaluation period,
+paired comparison count and signs of repair metrics. Appendix A identifies
+command ordering, interpolation endpoints, I_4 and connected-ring indexing.
+
+Validation: two-pass pdfLaTeX compilation with resolved references and no
+overfull boxes; numerical values and protected text compared with the exact
+preceding source; independent evidence review; rendered PDF inspected.
+No numerical simulation, optimization sweep or live API call was rerun.
