@@ -49,5 +49,6 @@
   "compiler": {
     "native_editor": "Unavailable: Unable to find standard directories for platform",
     "verified_compilation": "Installed pdfLaTeX; final references resolved"
-  }
+  },
+  "historical_revision_notice": "This audit records its preceding source version; current file hashes and checks are in PLAIN_LANGUAGE_QA_2026-10-08.json."
 }

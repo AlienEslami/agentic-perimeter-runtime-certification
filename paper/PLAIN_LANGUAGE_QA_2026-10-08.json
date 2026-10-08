@@ -1,0 +1,1396 @@
+{
+  "date": "2026-10-08",
+  "scope": "Author-approved plain-language revision. Mathematical claims, equations and numerical results preserved; no experiments rerun.",
+  "checks": {
+    "declarations_and_bibliography_unchanged": true,
+    "protected_blocks_byte_identical": [
+      "abstract",
+      "introduction",
+      "conclusion",
+      "future work"
+    ],
+    "all_displayed_mathematics_and_table_data_unchanged": true,
+    "formal_results_and_proofs_consistent_across_versions": {
+      "theorem": 4,
+      "proposition": 6,
+      "corollary": 1,
+      "proof": 11
+    },
+    "no_missing_references_duplicate_labels_result_heading_titles_or_compile_errors": true,
+    "reviewed_phrases_removed": true,
+    "visual_review": {
+      "long": "All 79 pages rendered and reviewed on contacts; changed numerical, discussion, proof and appendix pages inspected at full-page size.",
+      "reduced": "All 70 pages rendered and reviewed on contacts; changed result, proof, appendix-transition and table pages inspected at full-page size.",
+      "ieee": "All 33 pages rendered and reviewed on contacts; changed certificate, handover and proof pages checked at full-page size.",
+      "result": "No overlap, clipping, broken tables or isolated result headings found."
+    },
+    "independent_semantic_review": "Formal assumptions, repair scope, terminal conditions, state-set coverage and experimental claims reviewed independently; final precision refinements incorporated."
+  },
+  "versions": {
+    "main": {
+      "pages": 79,
+      "source_whitespace_words": 22195,
+      "source_sha256": "02f4bd980c885e68f101ef65db3a49769e26d8195e4dadd02731ef8ed396bc30",
+      "pdf_sha256": "6b17e0d57edaed7277159ae1d4fe6a56d5387cfd67d5de81db11bc952507fc98"
+    },
+    "main_ieee": {
+      "pages": 33,
+      "source_whitespace_words": 22182,
+      "source_sha256": "79235d4b6347cfc6ffc92f8236752229606c6eb51667f526eb9d077c1de243dd",
+      "pdf_sha256": "07ee3b960aadff224dcddf87e3a30aa0291a19964e7c64d4bb95c080c597af8f"
+    },
+    "main_reduced": {
+      "pages": 70,
+      "source_whitespace_words": 19050,
+      "source_sha256": "dcaf9a6c57b6a1014e814b8b06414c44841ec1c45756687cdfd2b3cb5105a290",
+      "pdf_sha256": "17943529bce1b12fb4c9bda72ac47f645e8f14a93790384b182f7e6a30a75394"
+    }
+  },
+  "revision": {
+    "date": "2026-10-08",
+    "scope": "Author-approved plain-language revisions; no mathematical or numerical changes.",
+    "replacement_count": 71,
+    "applied": [
+      {
+        "id": "foundation-waiting-cost",
+        "file": "main",
+        "original_line": 408,
+        "occurrences": 1,
+        "note": "Names the measured cost directly."
+      },
+      {
+        "id": "foundation-waiting-cost",
+        "file": "main_reduced",
+        "original_line": 410,
+        "occurrences": 1,
+        "note": "Names the measured cost directly."
+      },
+      {
+        "id": "foundation-waiting-cost",
+        "file": "main_ieee",
+        "original_line": 400,
+        "occurrences": 1,
+        "note": "Names the measured cost directly."
+      },
+      {
+        "id": "foundation-certifiable-subset",
+        "file": "main",
+        "original_line": 499,
+        "occurrences": 1,
+        "note": "Explains the universal guarantee and subset relation."
+      },
+      {
+        "id": "foundation-certifiable-subset",
+        "file": "main_reduced",
+        "original_line": 501,
+        "occurrences": 1,
+        "note": "Explains the universal guarantee and subset relation."
+      },
+      {
+        "id": "foundation-certifiable-subset",
+        "file": "main_ieee",
+        "original_line": 491,
+        "occurrences": 1,
+        "note": "Explains the universal guarantee and subset relation."
+      },
+      {
+        "id": "foundation-checker-coverage",
+        "file": "main",
+        "original_line": 519,
+        "occurrences": 1,
+        "note": "Replaces compressed description with the actual certified property."
+      },
+      {
+        "id": "foundation-checker-coverage",
+        "file": "main_reduced",
+        "original_line": 521,
+        "occurrences": 1,
+        "note": "Replaces compressed description with the actual certified property."
+      },
+      {
+        "id": "foundation-checker-coverage",
+        "file": "main_ieee",
+        "original_line": 511,
+        "occurrences": 1,
+        "note": "Replaces compressed description with the actual certified property."
+      },
+      {
+        "id": "foundation-request-correctness",
+        "file": "main",
+        "original_line": 578,
+        "occurrences": 1,
+        "note": "Identifies what is compared."
+      },
+      {
+        "id": "foundation-request-correctness",
+        "file": "main_reduced",
+        "original_line": 580,
+        "occurrences": 1,
+        "note": "Identifies what is compared."
+      },
+      {
+        "id": "foundation-request-correctness",
+        "file": "main_ieee",
+        "original_line": 570,
+        "occurrences": 1,
+        "note": "Identifies what is compared."
+      },
+      {
+        "id": "foundation-memoryless",
+        "file": "main",
+        "original_line": 582,
+        "occurrences": 1,
+        "note": "Does not imply the supplied task record is independent of past instructions."
+      },
+      {
+        "id": "foundation-memoryless",
+        "file": "main_reduced",
+        "original_line": 584,
+        "occurrences": 1,
+        "note": "Does not imply the supplied task record is independent of past instructions."
+      },
+      {
+        "id": "foundation-memoryless",
+        "file": "main_ieee",
+        "original_line": 574,
+        "occurrences": 1,
+        "note": "Does not imply the supplied task record is independent of past instructions."
+      },
+      {
+        "id": "foundation-plan-acceptance-caption",
+        "file": "main",
+        "original_line": 606,
+        "occurrences": 1,
+        "note": "Avoids confusing plan acceptance with vehicle admission."
+      },
+      {
+        "id": "foundation-plan-acceptance-caption",
+        "file": "main_reduced",
+        "original_line": 608,
+        "occurrences": 1,
+        "note": "Avoids confusing plan acceptance with vehicle admission."
+      },
+      {
+        "id": "foundation-plan-acceptance-caption",
+        "file": "main_ieee",
+        "original_line": 598,
+        "occurrences": 1,
+        "note": "Avoids confusing plan acceptance with vehicle admission."
+      },
+      {
+        "id": "foundation-locally-finite",
+        "file": "main",
+        "original_line": 619,
+        "occurrences": 1,
+        "note": "Explains local finiteness without imposing a uniform minimum dwell time."
+      },
+      {
+        "id": "foundation-locally-finite",
+        "file": "main_reduced",
+        "original_line": 621,
+        "occurrences": 1,
+        "note": "Explains local finiteness without imposing a uniform minimum dwell time."
+      },
+      {
+        "id": "foundation-locally-finite",
+        "file": "main_ieee",
+        "original_line": 611,
+        "occurrences": 1,
+        "note": "Explains local finiteness without imposing a uniform minimum dwell time."
+      },
+      {
+        "id": "appendix-numerical-bounds-heading",
+        "file": "main",
+        "original_line": 2007,
+        "occurrences": 1,
+        "note": "Names what numerical verification establishes."
+      },
+      {
+        "id": "appendix-numerical-bounds-heading",
+        "file": "main_reduced",
+        "original_line": 1985,
+        "occurrences": 1,
+        "note": "Names what numerical verification establishes."
+      },
+      {
+        "id": "appendix-numerical-bounds-heading",
+        "file": "main_ieee",
+        "original_line": 1999,
+        "occurrences": 1,
+        "note": "Names what numerical verification establishes."
+      },
+      {
+        "id": "s4_constraint_rows",
+        "file": "main",
+        "original_line": 669,
+        "occurrences": 1,
+        "note": "Defines affine constraint rows without changing the finite constraint set or its equation."
+      },
+      {
+        "id": "s4_constraint_rows",
+        "file": "main_reduced",
+        "original_line": 671,
+        "occurrences": 1,
+        "note": "Defines affine constraint rows without changing the finite constraint set or its equation."
+      },
+      {
+        "id": "s4_constraint_rows",
+        "file": "main_ieee",
+        "original_line": 661,
+        "occurrences": 1,
+        "note": "Defines affine constraint rows without changing the finite constraint set or its equation."
+      },
+      {
+        "id": "s4_trial_region",
+        "file": "main",
+        "original_line": 713,
+        "occurrences": 1,
+        "note": "Defines the trial region; its validity remains conditional on the subsequent strict self-inclusion test."
+      },
+      {
+        "id": "s4_trial_region",
+        "file": "main_reduced",
+        "original_line": 715,
+        "occurrences": 1,
+        "note": "Defines the trial region; its validity remains conditional on the subsequent strict self-inclusion test."
+      },
+      {
+        "id": "s4_trial_region",
+        "file": "main_ieee",
+        "original_line": 705,
+        "occurrences": 1,
+        "note": "Defines the trial region; its validity remains conditional on the subsequent strict self-inclusion test."
+      },
+      {
+        "id": "s4_constraint_support_definition",
+        "file": "main",
+        "original_line": 746,
+        "occurrences": 1,
+        "note": "Explains support at its first displayed use; the support inequality remains unchanged."
+      },
+      {
+        "id": "s4_constraint_support_definition",
+        "file": "main_reduced",
+        "original_line": 748,
+        "occurrences": 1,
+        "note": "Explains support at its first displayed use; the support inequality remains unchanged."
+      },
+      {
+        "id": "s4_constraint_support_definition",
+        "file": "main_ieee",
+        "original_line": 738,
+        "occurrences": 1,
+        "note": "Explains support at its first displayed use; the support inequality remains unchanged."
+      },
+      {
+        "id": "s4_forecast_design_difference",
+        "file": "main",
+        "original_line": 812,
+        "occurrences": 1,
+        "note": "Clarifies that the mismatch concerns forecast arrivals and controller-design arrivals, rather than unspecified model error."
+      },
+      {
+        "id": "s4_forecast_design_difference",
+        "file": "main_reduced",
+        "original_line": 814,
+        "occurrences": 1,
+        "note": "Clarifies that the mismatch concerns forecast arrivals and controller-design arrivals, rather than unspecified model error."
+      },
+      {
+        "id": "s4_forecast_design_difference",
+        "file": "main_ieee",
+        "original_line": 804,
+        "occurrences": 1,
+        "note": "Clarifies that the mismatch concerns forecast arrivals and controller-design arrivals, rather than unspecified model error."
+      },
+      {
+        "id": "s4_metzler_definition",
+        "file": "main",
+        "original_line": 877,
+        "occurrences": 1,
+        "note": "Retains and explains the Metzler comparison and signed-diagonal versus magnitude-bound distinction."
+      },
+      {
+        "id": "s4_metzler_definition",
+        "file": "main_reduced",
+        "original_line": 879,
+        "occurrences": 1,
+        "note": "Retains and explains the Metzler comparison and signed-diagonal versus magnitude-bound distinction."
+      },
+      {
+        "id": "s4_metzler_definition",
+        "file": "main_ieee",
+        "original_line": 869,
+        "occurrences": 1,
+        "note": "Retains and explains the Metzler comparison and signed-diagonal versus magnitude-bound distinction."
+      },
+      {
+        "id": "s4_signed_support_evaluation",
+        "file": "main",
+        "original_line": 880,
+        "occurrences": 1,
+        "note": "Explains the signed-generator evaluation order without altering support or remainder formulas."
+      },
+      {
+        "id": "s4_signed_support_evaluation",
+        "file": "main_reduced",
+        "original_line": 882,
+        "occurrences": 1,
+        "note": "Explains the signed-generator evaluation order without altering support or remainder formulas."
+      },
+      {
+        "id": "s4_signed_support_evaluation",
+        "file": "main_ieee",
+        "original_line": 872,
+        "occurrences": 1,
+        "note": "Explains the signed-generator evaluation order without altering support or remainder formulas."
+      },
+      {
+        "id": "s4_jacobian_region",
+        "file": "main",
+        "original_line": 921,
+        "occurrences": 1,
+        "note": "Explains the complete predictor-to-state segment requirement; retains the following generator/remainder cancellation warning."
+      },
+      {
+        "id": "s4_jacobian_region",
+        "file": "main_reduced",
+        "original_line": 923,
+        "occurrences": 1,
+        "note": "Explains the complete predictor-to-state segment requirement; retains the following generator/remainder cancellation warning."
+      },
+      {
+        "id": "s4_jacobian_region",
+        "file": "main_ieee",
+        "original_line": 913,
+        "occurrences": 1,
+        "note": "Explains the complete predictor-to-state segment requirement; retains the following generator/remainder cancellation warning."
+      },
+      {
+        "id": "s4_decision_record",
+        "file": "main",
+        "original_line": 1034,
+        "occurrences": 1,
+        "note": "Uses Consider and states fixed comparison information without implying traffic is frozen during computation."
+      },
+      {
+        "id": "s4_decision_record",
+        "file": "main_reduced",
+        "original_line": 1027,
+        "occurrences": 1,
+        "note": "Uses Consider and states fixed comparison information without implying traffic is frozen during computation."
+      },
+      {
+        "id": "s4_decision_record",
+        "file": "main_ieee",
+        "original_line": 1026,
+        "occurrences": 1,
+        "note": "Uses Consider and states fixed comparison information without implying traffic is frozen during computation."
+      },
+      {
+        "id": "s4_minimum_scope",
+        "file": "main",
+        "original_line": 1107,
+        "occurrences": 1,
+        "note": "Preserves the specified interpolation path, tested finite grid and sufficient checker; makes no global or continuous-search optimality claim."
+      },
+      {
+        "id": "s4_minimum_scope",
+        "file": "main_reduced",
+        "original_line": 1100,
+        "occurrences": 1,
+        "note": "Preserves the specified interpolation path, tested finite grid and sufficient checker; makes no global or continuous-search optimality claim."
+      },
+      {
+        "id": "s4_minimum_scope",
+        "file": "main_ieee",
+        "original_line": 1099,
+        "occurrences": 1,
+        "note": "Preserves the specified interpolation path, tested finite grid and sufficient checker; makes no global or continuous-search optimality claim."
+      },
+      {
+        "id": "s4_prop2_assumptions",
+        "file": "main",
+        "original_line": 1119,
+        "occurrences": 1,
+        "note": "Expands universal certificate guarantees, backup validity and exact execution binding. Subsequent conclusions, expiry limits and proof remain unchanged."
+      },
+      {
+        "id": "s4_prop2_assumptions",
+        "file": "main_reduced",
+        "original_line": 1112,
+        "occurrences": 1,
+        "note": "Expands universal certificate guarantees, backup validity and exact execution binding. Subsequent conclusions, expiry limits and proof remain unchanged."
+      },
+      {
+        "id": "s4_prop2_assumptions",
+        "file": "main_ieee",
+        "original_line": 1111,
+        "occurrences": 1,
+        "note": "Expands universal certificate guarantees, backup validity and exact execution binding. Subsequent conclusions, expiry limits and proof remain unchanged."
+      },
+      {
+        "id": "s4_corollary1_conditions",
+        "file": "main",
+        "original_line": 1147,
+        "occurrences": 1,
+        "note": "Distinguishes the repair-family endpoint from plan expiry and explains locally finite replacement times; all remaining assumptions and conclusions are preserved."
+      },
+      {
+        "id": "s4_corollary1_conditions",
+        "file": "main_reduced",
+        "original_line": 1140,
+        "occurrences": 1,
+        "note": "Distinguishes the repair-family endpoint from plan expiry and explains locally finite replacement times; all remaining assumptions and conclusions are preserved."
+      },
+      {
+        "id": "s4_corollary1_conditions",
+        "file": "main_ieee",
+        "original_line": 1139,
+        "occurrences": 1,
+        "note": "Distinguishes the repair-family endpoint from plan expiry and explains locally finite replacement times; all remaining assumptions and conclusions are preserved."
+      },
+      {
+        "id": "s4_terminal_continuation",
+        "file": "main",
+        "original_line": 1231,
+        "occurrences": 1,
+        "note": "States the conditional terminal regime, full terminal-set inclusion and robust invariance explicitly; retains retention, replacement and the appendix reference."
+      },
+      {
+        "id": "s4_terminal_continuation",
+        "file": "main_reduced",
+        "original_line": 1224,
+        "occurrences": 1,
+        "note": "States the conditional terminal regime, full terminal-set inclusion and robust invariance explicitly; retains retention, replacement and the appendix reference."
+      },
+      {
+        "id": "s4_terminal_continuation",
+        "file": "main_ieee",
+        "original_line": 1223,
+        "occurrences": 1,
+        "note": "States the conditional terminal regime, full terminal-set inclusion and robust invariance explicitly; retains retention, replacement and the appendix reference."
+      },
+      {
+        "id": "s4_reduced_admission_cancellation",
+        "file": "main_reduced",
+        "original_line": 1261,
+        "occurrences": 1,
+        "note": "Corrects ambiguous localization language: explicit admission terms cancel, while arrival uncertainty remains in the combined coordinates."
+      },
+      {
+        "id": "s4_local_bound_validity",
+        "file": "main",
+        "original_line": 770,
+        "occurrences": 1,
+        "note": "Clarifies sound bounds as valid upper bounds throughout the candidate region; preserves the theorem assumptions and conclusion."
+      },
+      {
+        "id": "s4_local_bound_validity",
+        "file": "main_reduced",
+        "original_line": 772,
+        "occurrences": 1,
+        "note": "Clarifies sound bounds as valid upper bounds throughout the candidate region; preserves the theorem assumptions and conclusion."
+      },
+      {
+        "id": "s4_local_bound_validity",
+        "file": "main_ieee",
+        "original_line": 762,
+        "occurrences": 1,
+        "note": "Clarifies sound bounds as valid upper bounds throughout the candidate region; preserves the theorem assumptions and conclusion."
+      },
+      {
+        "id": "s4_replacement_state_containment",
+        "file": "main",
+        "original_line": 980,
+        "occurrences": 1,
+        "note": "Replaces sound outer set with explicit state containment under the active certificate and uncertainty bounds."
+      },
+      {
+        "id": "s4_replacement_state_containment",
+        "file": "main_reduced",
+        "original_line": 973,
+        "occurrences": 1,
+        "note": "Replaces sound outer set with explicit state containment under the active certificate and uncertainty bounds."
+      },
+      {
+        "id": "s4_replacement_state_containment",
+        "file": "main_ieee",
+        "original_line": 972,
+        "occurrences": 1,
+        "note": "Replaces sound outer set with explicit state containment under the active certificate and uncertainty bounds."
+      },
+      {
+        "id": "s4_acceptance_predicate_guarantee",
+        "file": "main",
+        "original_line": 1066,
+        "occurrences": 1,
+        "note": "Defines certification universally over the decision record rather than leaving sound checker as an unexplained label."
+      },
+      {
+        "id": "s4_acceptance_predicate_guarantee",
+        "file": "main_reduced",
+        "original_line": 1059,
+        "occurrences": 1,
+        "note": "Defines certification universally over the decision record rather than leaving sound checker as an unexplained label."
+      },
+      {
+        "id": "s4_acceptance_predicate_guarantee",
+        "file": "main_ieee",
+        "original_line": 1058,
+        "occurrences": 1,
+        "note": "Defines certification universally over the decision record rather than leaving sound checker as an unexplained label."
+      },
+      {
+        "id": "s4_handover_reachable_set",
+        "file": "main",
+        "original_line": 1180,
+        "occurrences": 1,
+        "note": "Preserves a containing outer reachable set for every admissible state/uncertainty case and the incumbent absolute schedule."
+      },
+      {
+        "id": "s4_handover_reachable_set",
+        "file": "main_reduced",
+        "original_line": 1173,
+        "occurrences": 1,
+        "note": "Preserves a containing outer reachable set for every admissible state/uncertainty case and the incumbent absolute schedule."
+      },
+      {
+        "id": "s4_handover_reachable_set",
+        "file": "main_ieee",
+        "original_line": 1172,
+        "occurrences": 1,
+        "note": "Preserves a containing outer reachable set for every admissible state/uncertainty case and the incumbent absolute schedule."
+      },
+      {
+        "id": "s4_handover_proof_containment",
+        "file": "main",
+        "original_line": 1210,
+        "occurrences": 1,
+        "note": "Explains the existing sound-propagation step in the proof; preserves both inclusions and all surrounding arguments."
+      },
+      {
+        "id": "s4_handover_proof_containment",
+        "file": "main_reduced",
+        "original_line": 1203,
+        "occurrences": 1,
+        "note": "Explains the existing sound-propagation step in the proof; preserves both inclusions and all surrounding arguments."
+      },
+      {
+        "id": "s4_handover_proof_containment",
+        "file": "main_ieee",
+        "original_line": 1202,
+        "occurrences": 1,
+        "note": "Explains the existing sound-propagation step in the proof; preserves both inclusions and all surrounding arguments."
+      },
+      {
+        "id": "s4_measurement_intersection",
+        "file": "main",
+        "original_line": 1223,
+        "occurrences": 1,
+        "note": "Explains valid measurement intersection through state containment under the stated error bounds; retains the following original correlated-proof rule."
+      },
+      {
+        "id": "s4_measurement_intersection",
+        "file": "main_reduced",
+        "original_line": 1216,
+        "occurrences": 1,
+        "note": "Explains valid measurement intersection through state containment under the stated error bounds; retains the following original correlated-proof rule."
+      },
+      {
+        "id": "s4_measurement_intersection",
+        "file": "main_ieee",
+        "original_line": 1215,
+        "occurrences": 1,
+        "note": "Explains valid measurement intersection through state containment under the stated error bounds; retains the following original correlated-proof rule."
+      },
+      {
+        "id": "experiments_constraint_bounds",
+        "file": "main",
+        "original_line": 1461,
+        "occurrences": 1,
+        "note": "Section 5.2: replaces compressed row/close wording with the acceptance condition; no mathematical change."
+      },
+      {
+        "id": "experiments_constraint_bounds",
+        "file": "main_reduced",
+        "original_line": 1456,
+        "occurrences": 1,
+        "note": "Section 5.2: replaces compressed row/close wording with the acceptance condition; no mathematical change."
+      },
+      {
+        "id": "experiments_constraint_bounds",
+        "file": "main_ieee",
+        "original_line": 1453,
+        "occurrences": 1,
+        "note": "Section 5.2: replaces compressed row/close wording with the acceptance condition; no mathematical change."
+      },
+      {
+        "id": "experiments_binding_service_margin",
+        "file": "main",
+        "original_line": 1485,
+        "occurrences": 1,
+        "note": "Section 5.2: identifies the concrete effect of the tighter bound; all limits and uncertainty values are unchanged."
+      },
+      {
+        "id": "experiments_binding_service_margin",
+        "file": "main_reduced",
+        "original_line": 1480,
+        "occurrences": 1,
+        "note": "Section 5.2: identifies the concrete effect of the tighter bound; all limits and uncertainty values are unchanged."
+      },
+      {
+        "id": "experiments_binding_service_margin",
+        "file": "main_ieee",
+        "original_line": 1477,
+        "occurrences": 1,
+        "note": "Section 5.2: identifies the concrete effect of the tighter bound; all limits and uncertainty values are unchanged."
+      },
+      {
+        "id": "experiments_continuation_contract_counts",
+        "file": "main",
+        "original_line": 1546,
+        "occurrences": 1,
+        "note": "Section 5.3: retains the 68/80, 74/80, twelve-reserve and six-remaining counts; a failed sufficient check is not asserted to imply physical infeasibility."
+      },
+      {
+        "id": "experiments_continuation_contract_counts",
+        "file": "main_reduced",
+        "original_line": 1541,
+        "occurrences": 1,
+        "note": "Section 5.3: retains the 68/80, 74/80, twelve-reserve and six-remaining counts; a failed sufficient check is not asserted to imply physical infeasibility."
+      },
+      {
+        "id": "experiments_continuation_contract_counts",
+        "file": "main_ieee",
+        "original_line": 1538,
+        "occurrences": 1,
+        "note": "Section 5.3: retains the 68/80, 74/80, twelve-reserve and six-remaining counts; a failed sufficient check is not asserted to imply physical infeasibility."
+      },
+      {
+        "id": "experiments_instantaneous_activation",
+        "file": "main",
+        "original_line": 1671,
+        "occurrences": 1,
+        "note": "Section 5.4: makes the activation assumption explicit; no timing outcome is altered."
+      },
+      {
+        "id": "experiments_instantaneous_activation",
+        "file": "main_reduced",
+        "original_line": 1666,
+        "occurrences": 1,
+        "note": "Section 5.4: makes the activation assumption explicit; no timing outcome is altered."
+      },
+      {
+        "id": "experiments_instantaneous_activation",
+        "file": "main_ieee",
+        "original_line": 1663,
+        "occurrences": 1,
+        "note": "Section 5.4: makes the activation assumption explicit; no timing outcome is altered."
+      },
+      {
+        "id": "experiments_box_correlation_loss",
+        "file": "main",
+        "original_line": 1695,
+        "occurrences": 1,
+        "note": "Section 5.5: attributes lost dependencies to the coordinate-box enclosure, not to changing physical traffic; earlier correlated certificate remains in force."
+      },
+      {
+        "id": "experiments_box_correlation_loss",
+        "file": "main_reduced",
+        "original_line": 1690,
+        "occurrences": 1,
+        "note": "Section 5.5: attributes lost dependencies to the coordinate-box enclosure, not to changing physical traffic; earlier correlated certificate remains in force."
+      },
+      {
+        "id": "experiments_box_correlation_loss",
+        "file": "main_ieee",
+        "original_line": 1687,
+        "occurrences": 1,
+        "note": "Section 5.5: attributes lost dependencies to the coordinate-box enclosure, not to changing physical traffic; earlier correlated certificate remains in force."
+      },
+      {
+        "id": "experiments_task_record_objective",
+        "file": "main",
+        "original_line": 1744,
+        "occurrences": 1,
+        "note": "Section 5.5: identifies objective correctness as the measured outcome; the existing table retains all pilot and actual-planning denominators and the claim remains limited to the paired experiments."
+      },
+      {
+        "id": "experiments_task_record_objective",
+        "file": "main_reduced",
+        "original_line": 1739,
+        "occurrences": 1,
+        "note": "Section 5.5: identifies objective correctness as the measured outcome; the existing table retains all pilot and actual-planning denominators and the claim remains limited to the paired experiments."
+      },
+      {
+        "id": "experiments_task_record_objective",
+        "file": "main_ieee",
+        "original_line": 1736,
+        "occurrences": 1,
+        "note": "Section 5.5: identifies objective correctness as the measured outcome; the existing table retains all pilot and actual-planning denominators and the claim remains limited to the paired experiments."
+      },
+      {
+        "id": "experiments_objective_score",
+        "file": "main",
+        "original_line": 1746,
+        "occurrences": 1,
+        "note": "Section 5.5: explains the scored object and preserves the distinction between interpretation accuracy and certified plan feasibility."
+      },
+      {
+        "id": "experiments_objective_score",
+        "file": "main_reduced",
+        "original_line": 1741,
+        "occurrences": 1,
+        "note": "Section 5.5: explains the scored object and preserves the distinction between interpretation accuracy and certified plan feasibility."
+      },
+      {
+        "id": "experiments_objective_score",
+        "file": "main_ieee",
+        "original_line": 1738,
+        "occurrences": 1,
+        "note": "Section 5.5: explains the scored object and preserves the distinction between interpretation accuracy and certified plan feasibility."
+      },
+      {
+        "id": "experiments_long_acceptance_contract",
+        "file": "main",
+        "original_line": 1763,
+        "occurrences": 1,
+        "note": "Long Section 6.1: unchanged commands follow from acceptance; the realized-performance comparison is explicitly limited to the matched experiments, not stated as a general guarantee."
+      },
+      {
+        "id": "experiments_long_acceptance_contract",
+        "file": "main_ieee",
+        "original_line": 1755,
+        "occurrences": 1,
+        "note": "Long Section 6.1: unchanged commands follow from acceptance; the realized-performance comparison is explicitly limited to the matched experiments, not stated as a general guarantee."
+      },
+      {
+        "id": "experiments_storage_check_long",
+        "file": "main",
+        "original_line": 1769,
+        "occurrences": 1,
+        "note": "Long Section 6.1: names the failed check rather than using a pressure metaphor; does not imply that every rejected request necessarily causes overflow."
+      },
+      {
+        "id": "experiments_storage_check_long",
+        "file": "main_ieee",
+        "original_line": 1761,
+        "occurrences": 1,
+        "note": "Long Section 6.1: names the failed check rather than using a pressure metaphor; does not imply that every rejected request necessarily causes overflow."
+      },
+      {
+        "id": "experiments_storage_check_reduced",
+        "file": "main_reduced",
+        "original_line": 1758,
+        "occurrences": 1,
+        "note": "Reduced Section 6.1: same revision as the long version with its distinct source wrapping."
+      },
+      {
+        "id": "experiments_cost_scope",
+        "file": "main",
+        "original_line": 1796,
+        "occurrences": 1,
+        "note": "Section 6.2: preserves the model/information/tuning limitation in concrete language."
+      },
+      {
+        "id": "experiments_cost_scope",
+        "file": "main_reduced",
+        "original_line": 1776,
+        "occurrences": 1,
+        "note": "Section 6.2: preserves the model/information/tuning limitation in concrete language."
+      },
+      {
+        "id": "experiments_cost_scope",
+        "file": "main_ieee",
+        "original_line": 1788,
+        "occurrences": 1,
+        "note": "Section 6.2: preserves the model/information/tuning limitation in concrete language."
+      },
+      {
+        "id": "experiments_sample_and_family_roles",
+        "file": "main",
+        "original_line": 1812,
+        "occurrences": 1,
+        "note": "Section 6.2: states the scope of finite replay versus the continuous certificate; specified model and uncertainty assumptions remain in the surrounding paragraph."
+      },
+      {
+        "id": "experiments_sample_and_family_roles",
+        "file": "main_reduced",
+        "original_line": 1792,
+        "occurrences": 1,
+        "note": "Section 6.2: states the scope of finite replay versus the continuous certificate; specified model and uncertainty assumptions remain in the surrounding paragraph."
+      },
+      {
+        "id": "experiments_sample_and_family_roles",
+        "file": "main_ieee",
+        "original_line": 1804,
+        "occurrences": 1,
+        "note": "Section 6.2: states the scope of finite replay versus the continuous certificate; specified model and uncertainty assumptions remain in the surrounding paragraph."
+      },
+      {
+        "id": "experiments_long_planner_comparison",
+        "file": "main",
+        "original_line": 3219,
+        "occurrences": 1,
+        "note": "Long Appendix H.3: names the compared planners and TTS outcome and limits the performance evidence to the eight tested events; existing percentages and table data remain unchanged."
+      },
+      {
+        "id": "experiments_long_planner_comparison",
+        "file": "main_ieee",
+        "original_line": 3211,
+        "occurrences": 1,
+        "note": "Long Appendix H.3: names the compared planners and TTS outcome and limits the performance evidence to the eight tested events; existing percentages and table data remain unchanged."
+      },
+      {
+        "id": "experiments_long_adaptive_validation",
+        "file": "main",
+        "original_line": 2838,
+        "occurrences": 1,
+        "note": "Long Appendix G.5: names what passes and which checks are meant; retains the 138-replay count and does not replace interval coverage with replay evidence."
+      },
+      {
+        "id": "experiments_long_adaptive_validation",
+        "file": "main_ieee",
+        "original_line": 2830,
+        "occurrences": 1,
+        "note": "Long Appendix G.5: names what passes and which checks are meant; retains the 138-replay count and does not replace interval coverage with replay evidence."
+      },
+      {
+        "id": "experiments_reduced_observation_box",
+        "file": "main_reduced",
+        "original_line": 2879,
+        "occurrences": 1,
+        "note": "Reduced Appendix H.2: expands the compressed phrase and makes the containing-set assumption explicit."
+      },
+      {
+        "id": "experiments_reduced_destination_class",
+        "file": "main_reduced",
+        "original_line": 2945,
+        "occurrences": 1,
+        "note": "Reduced Appendix I.2: clarifies the existing i/j interpretation and the destination-preserving transfer; formulas and routing assumptions are unchanged."
+      },
+      {
+        "id": "experiments_long_arrival_change_times",
+        "file": "main",
+        "original_line": 3305,
+        "occurrences": 1,
+        "note": "Long Appendix I.2: states the numerical time partition directly; the minute-15/minute-45 pulse times remain unchanged."
+      },
+      {
+        "id": "experiments_long_arrival_change_times",
+        "file": "main_ieee",
+        "original_line": 3297,
+        "occurrences": 1,
+        "note": "Long Appendix I.2: states the numerical time partition directly; the minute-15/minute-45 pulse times remain unchanged."
+      },
+      {
+        "id": "experiments_reduced_arrival_change_times",
+        "file": "main_reduced",
+        "original_line": 2953,
+        "occurrences": 1,
+        "note": "Reduced Appendix I.2: same clarification as the long version; no change to the arrival profile."
+      },
+      {
+        "id": "experiments_long_network_jacobian_branches",
+        "file": "main",
+        "original_line": 3276,
+        "occurrences": 1,
+        "note": "Long Appendix I.1: preserves fixed-command/independent-queue assumptions, 2^r branch bound, and the distinction between diagonal comparison bounds and branch enumeration for the defect. Root may mirror the approved Appendix-D wording for consistency."
+      },
+      {
+        "id": "experiments_long_network_jacobian_branches",
+        "file": "main_ieee",
+        "original_line": 3268,
+        "occurrences": 1,
+        "note": "Long Appendix I.1: preserves fixed-command/independent-queue assumptions, 2^r branch bound, and the distinction between diagonal comparison bounds and branch enumeration for the defect. Root may mirror the approved Appendix-D wording for consistency."
+      },
+      {
+        "id": "experiments_long_queue_jacobian_region",
+        "file": "main",
+        "original_line": 3358,
+        "occurrences": 1,
+        "note": "Long Appendix I.2: explains the queue-only mean-value corridor restriction; does not claim that generator or remainder widths are clipped. Root may mirror the approved Appendix-C wording."
+      },
+      {
+        "id": "experiments_long_queue_jacobian_region",
+        "file": "main_ieee",
+        "original_line": 3350,
+        "occurrences": 1,
+        "note": "Long Appendix I.2: explains the queue-only mean-value corridor restriction; does not claim that generator or remainder widths are clipped. Root may mirror the approved Appendix-C wording."
+      },
+      {
+        "id": "experiments_long_network_check_passes",
+        "file": "main",
+        "original_line": 3360,
+        "occurrences": 1,
+        "note": "Long Appendix I.2: replaces supports and closes with the actual checks; all enclosure self-inclusion and constraint conditions remain required."
+      },
+      {
+        "id": "experiments_long_network_check_passes",
+        "file": "main_ieee",
+        "original_line": 3352,
+        "occurrences": 1,
+        "note": "Long Appendix I.2: replaces supports and closes with the actual checks; all enclosure self-inclusion and constraint conditions remain required."
+      },
+      {
+        "id": "experiments_reduced_queue_jacobian_region",
+        "file": "main_reduced",
+        "original_line": 2998,
+        "occurrences": 1,
+        "note": "Reduced Appendix I.2: same queue-only corridor interpretation as the long version, with no generator/remainder clipping or altered constraints; root may mirror Appendix-C wording."
+      },
+      {
+        "id": "experiments_setup_information_sets",
+        "file": "main",
+        "original_line": 1832,
+        "occurrences": 1,
+        "note": "Section 6.3: makes set-containment assumptions explicit without claiming they are established by the simulations; model and service assumptions remain unchanged."
+      },
+      {
+        "id": "experiments_setup_information_sets",
+        "file": "main_reduced",
+        "original_line": 1812,
+        "occurrences": 1,
+        "note": "Section 6.3: makes set-containment assumptions explicit without claiming they are established by the simulations; model and service assumptions remain unchanged."
+      },
+      {
+        "id": "experiments_setup_information_sets",
+        "file": "main_ieee",
+        "original_line": 1824,
+        "occurrences": 1,
+        "note": "Section 6.3: makes set-containment assumptions explicit without claiming they are established by the simulations; model and service assumptions remain unchanged."
+      },
+      {
+        "id": "experiments_setup_late_result_antecedent",
+        "file": "main",
+        "original_line": 1837,
+        "occurrences": 1,
+        "note": "Section 6.3: resolves the pronoun antecedent to the active plan; does not extend execution authority beyond the existing expiry."
+      },
+      {
+        "id": "experiments_setup_late_result_antecedent",
+        "file": "main_reduced",
+        "original_line": 1817,
+        "occurrences": 1,
+        "note": "Section 6.3: resolves the pronoun antecedent to the active plan; does not extend execution authority beyond the existing expiry."
+      },
+      {
+        "id": "experiments_setup_late_result_antecedent",
+        "file": "main_ieee",
+        "original_line": 1829,
+        "occurrences": 1,
+        "note": "Section 6.3: resolves the pronoun antecedent to the active plan; does not extend execution authority beyond the existing expiry."
+      },
+      {
+        "id": "appendix_a_model_units",
+        "file": "main",
+        "original_line": 1884,
+        "occurrences": 1,
+        "note": "Clarifies the model and normalization. The demand ordering and all coefficients remain unchanged."
+      },
+      {
+        "id": "appendix_a_model_units",
+        "file": "main_reduced",
+        "original_line": 1864,
+        "occurrences": 1,
+        "note": "Clarifies the model and normalization. The demand ordering and all coefficients remain unchanged."
+      },
+      {
+        "id": "appendix_a_model_units",
+        "file": "main_ieee",
+        "original_line": 1876,
+        "occurrences": 1,
+        "note": "Clarifies the model and normalization. The demand ordering and all coefficients remain unchanged."
+      },
+      {
+        "id": "appendix_a_forecast_and_residual",
+        "file": "main",
+        "original_line": 1927,
+        "occurrences": 1,
+        "note": "Preserves the forecast-design mismatch and the full stored-coefficient equilibrium residual, without changing the reference or field."
+      },
+      {
+        "id": "appendix_a_forecast_and_residual",
+        "file": "main_reduced",
+        "original_line": 1907,
+        "occurrences": 1,
+        "note": "Preserves the forecast-design mismatch and the full stored-coefficient equilibrium residual, without changing the reference or field."
+      },
+      {
+        "id": "appendix_a_forecast_and_residual",
+        "file": "main_ieee",
+        "original_line": 1919,
+        "occurrences": 1,
+        "note": "Preserves the forecast-design mismatch and the full stored-coefficient equilibrium residual, without changing the reference or field."
+      },
+      {
+        "id": "appendix_b_interval_boundaries_and_acceptance",
+        "file": "main",
+        "original_line": 2049,
+        "occurrences": 1,
+        "note": "Retains exact boundary times and distinguishes plan acceptance from the physical vehicle-admission flow. The outward-rounded enclosure and constraint inequalities remain mandatory."
+      },
+      {
+        "id": "appendix_b_interval_boundaries_and_acceptance",
+        "file": "main_reduced",
+        "original_line": 2029,
+        "occurrences": 1,
+        "note": "Retains exact boundary times and distinguishes plan acceptance from the physical vehicle-admission flow. The outward-rounded enclosure and constraint inequalities remain mandatory."
+      },
+      {
+        "id": "appendix_b_interval_boundaries_and_acceptance",
+        "file": "main_ieee",
+        "original_line": 2041,
+        "occurrences": 1,
+        "note": "Retains exact boundary times and distinguishes plan acceptance from the physical vehicle-admission flow. The outward-rounded enclosure and constraint inequalities remain mandatory."
+      },
+      {
+        "id": "appendix_b_expm1_precision",
+        "file": "main",
+        "original_line": 2061,
+        "occurrences": 1,
+        "note": "Explains the numerical precision issue. The displayed comparison-integral formula and its exact zero-rate case remain unchanged."
+      },
+      {
+        "id": "appendix_b_expm1_precision",
+        "file": "main_reduced",
+        "original_line": 2041,
+        "occurrences": 1,
+        "note": "Explains the numerical precision issue. The displayed comparison-integral formula and its exact zero-rate case remain unchanged."
+      },
+      {
+        "id": "appendix_b_expm1_precision",
+        "file": "main_ieee",
+        "original_line": 2053,
+        "occurrences": 1,
+        "note": "Explains the numerical precision issue. The displayed comparison-integral formula and its exact zero-rate case remain unchanged."
+      },
+      {
+        "id": "appendix_b_original_expiry",
+        "file": "main",
+        "original_line": 2106,
+        "occurrences": 1,
+        "note": "Makes the finite-horizon limit explicit. The immediately preceding requirements that the active proof's model, uncertainty, and execution assumptions remain valid are preserved. This wording does not extend the guarantee beyond expiry."
+      },
+      {
+        "id": "appendix_b_original_expiry",
+        "file": "main_reduced",
+        "original_line": 2084,
+        "occurrences": 1,
+        "note": "Makes the finite-horizon limit explicit. The immediately preceding requirements that the active proof's model, uncertainty, and execution assumptions remain valid are preserved. This wording does not extend the guarantee beyond expiry."
+      },
+      {
+        "id": "appendix_b_original_expiry",
+        "file": "main_ieee",
+        "original_line": 2098,
+        "occurrences": 1,
+        "note": "Makes the finite-horizon limit explicit. The immediately preceding requirements that the active proof's model, uncertainty, and execution assumptions remain valid are preserved. This wording does not extend the guarantee beyond expiry."
+      },
+      {
+        "id": "appendix_c_jacobian_segment_range",
+        "file": "main",
+        "original_line": 2179,
+        "occurrences": 1,
+        "note": "Preserves full predictor-to-state segment inclusion, the convex hull, intersection with the existing trial enclosure, and independent continuous queue bounds. Endpoint-only bounds are not substituted for within-step bounds."
+      },
+      {
+        "id": "appendix_c_jacobian_segment_range",
+        "file": "main_reduced",
+        "original_line": 2157,
+        "occurrences": 1,
+        "note": "Preserves full predictor-to-state segment inclusion, the convex hull, intersection with the existing trial enclosure, and independent continuous queue bounds. Endpoint-only bounds are not substituted for within-step bounds."
+      },
+      {
+        "id": "appendix_c_jacobian_segment_range",
+        "file": "main_ieee",
+        "original_line": 2171,
+        "occurrences": 1,
+        "note": "Preserves full predictor-to-state segment inclusion, the convex hull, intersection with the existing trial enclosure, and independent continuous queue bounds. Endpoint-only bounds are not substituted for within-step bounds."
+      },
+      {
+        "id": "appendix_c_first_exit_logic",
+        "file": "main",
+        "original_line": 2235,
+        "occurrences": 1,
+        "note": "Preserves strict self-inclusion and the conditional validity of Jacobian bounds before a hypothetical exit. It states why independent positivity and queue comparisons make the proof valid, rather than replacing the first-exit argument with a sampled check."
+      },
+      {
+        "id": "appendix_c_first_exit_logic",
+        "file": "main_reduced",
+        "original_line": 2213,
+        "occurrences": 1,
+        "note": "Preserves strict self-inclusion and the conditional validity of Jacobian bounds before a hypothetical exit. It states why independent positivity and queue comparisons make the proof valid, rather than replacing the first-exit argument with a sampled check."
+      },
+      {
+        "id": "appendix_c_first_exit_logic",
+        "file": "main_ieee",
+        "original_line": 2227,
+        "occurrences": 1,
+        "note": "Preserves strict self-inclusion and the conditional validity of Jacobian bounds before a hypothetical exit. It states why independent positivity and queue comparisons make the proof valid, rather than replacing the first-exit argument with a sampled check."
+      },
+      {
+        "id": "appendix_c_retained_history_long",
+        "file": "main",
+        "original_line": 2289,
+        "occurrences": 1,
+        "note": "Preserves continued validity of the existing correlated proof after rejection. Explicitly allows a new proof to start from either correlated information or a containing box, while requiring certification of the entire chosen initial set. The checkpoint-box formula, original schedule/expiry, measurement assumptions, and all pending service checks are retained."
+      },
+      {
+        "id": "appendix_c_retained_history_long",
+        "file": "main_ieee",
+        "original_line": 2281,
+        "occurrences": 1,
+        "note": "Preserves continued validity of the existing correlated proof after rejection. Explicitly allows a new proof to start from either correlated information or a containing box, while requiring certification of the entire chosen initial set. The checkpoint-box formula, original schedule/expiry, measurement assumptions, and all pending service checks are retained."
+      },
+      {
+        "id": "appendix_c_retained_history_reduced",
+        "file": "main_reduced",
+        "original_line": 2267,
+        "occurrences": 1,
+        "note": "Uses the same precise distinction as the long version: retain the existing correlated proof, or construct a new proof from a valid correlated set or containing box. It does not imply that a containing checkpoint box is invalid as a new initial set."
+      },
+      {
+        "id": "appendix_d_independent_queue_bounds",
+        "file": "main",
+        "original_line": 2326,
+        "occurrences": 1,
+        "note": "Preserves the fixed-command and independent-queue assumptions, distinction between Jacobian and defect calculations, 2^r bound, and need for coupled derivatives in the more general models. This exact excerpt is unique to Appendix D; the differently referenced repeat in Appendix I is left for the root's experimental-appendix revision."
+      },
+      {
+        "id": "appendix_d_independent_queue_bounds",
+        "file": "main_reduced",
+        "original_line": 2303,
+        "occurrences": 1,
+        "note": "Preserves the fixed-command and independent-queue assumptions, distinction between Jacobian and defect calculations, 2^r bound, and need for coupled derivatives in the more general models. This exact excerpt is unique to Appendix D; the differently referenced repeat in Appendix I is left for the root's experimental-appendix revision."
+      },
+      {
+        "id": "appendix_d_independent_queue_bounds",
+        "file": "main_ieee",
+        "original_line": 2318,
+        "occurrences": 1,
+        "note": "Preserves the fixed-command and independent-queue assumptions, distinction between Jacobian and defect calculations, 2^r bound, and need for coupled derivatives in the more general models. This exact excerpt is unique to Appendix D; the differently referenced repeat in Appendix I is left for the root's experimental-appendix revision."
+      },
+      {
+        "id": "appendix_e_requested_and_executed_plans",
+        "file": "main",
+        "original_line": 2381,
+        "occurrences": 1,
+        "note": "Keeps task-schema validation and physical-plan certification distinct. The surrounding text still preserves independence from evaluation labels, rejected invalid operations, and unchanged hard storage, gate, and service requirements."
+      },
+      {
+        "id": "appendix_e_requested_and_executed_plans",
+        "file": "main_reduced",
+        "original_line": 2358,
+        "occurrences": 1,
+        "note": "Keeps task-schema validation and physical-plan certification distinct. The surrounding text still preserves independence from evaluation labels, rejected invalid operations, and unchanged hard storage, gate, and service requirements."
+      },
+      {
+        "id": "appendix_e_requested_and_executed_plans",
+        "file": "main_ieee",
+        "original_line": 2373,
+        "occurrences": 1,
+        "note": "Keeps task-schema validation and physical-plan certification distinct. The surrounding text still preserves independence from evaluation labels, rejected invalid operations, and unchanged hard storage, gate, and service requirements."
+      },
+      {
+        "id": "appendix_f_stored_command_ordering",
+        "file": "main",
+        "original_line": 2577,
+        "occurrences": 1,
+        "note": "Retains the exact-arithmetic distance identity and the separate ordering requirement for actual stored command vectors. It does not presume that finite-precision interpolation automatically preserves grid order or authorize a rounded command through a certificate for different coefficients."
+      },
+      {
+        "id": "appendix_f_stored_command_ordering",
+        "file": "main_reduced",
+        "original_line": 2542,
+        "occurrences": 1,
+        "note": "Retains the exact-arithmetic distance identity and the separate ordering requirement for actual stored command vectors. It does not presume that finite-precision interpolation automatically preserves grid order or authorize a rounded command through a certificate for different coefficients."
+      },
+      {
+        "id": "appendix_f_stored_command_ordering",
+        "file": "main_ieee",
+        "original_line": 2569,
+        "occurrences": 1,
+        "note": "Retains the exact-arithmetic distance identity and the separate ordering requirement for actual stored command vectors. It does not presume that finite-precision interpolation automatically preserves grid order or authorize a rounded command through a certificate for different coefficients."
+      },
+      {
+        "id": "appendix_f_valid_cost_bound_constants",
+        "file": "main",
+        "original_line": 2635,
+        "occurrences": 1,
+        "note": "Clarifies that a numerical guarantee requires valid uniform constants, rather than empirical fitting. Explicitly retains coverage of both trajectories and any infeasible portion of the rejected reference. The existing preceding compact-domain, fixed-plan/common-cost-model, and uniform-uncertainty conditions remain unchanged."
+      },
+      {
+        "id": "appendix_f_valid_cost_bound_constants",
+        "file": "main_reduced",
+        "original_line": 2600,
+        "occurrences": 1,
+        "note": "Clarifies that a numerical guarantee requires valid uniform constants, rather than empirical fitting. Explicitly retains coverage of both trajectories and any infeasible portion of the rejected reference. The existing preceding compact-domain, fixed-plan/common-cost-model, and uniform-uncertainty conditions remain unchanged."
+      },
+      {
+        "id": "appendix_f_valid_cost_bound_constants",
+        "file": "main_ieee",
+        "original_line": 2627,
+        "occurrences": 1,
+        "note": "Clarifies that a numerical guarantee requires valid uniform constants, rather than empirical fitting. Explicitly retains coverage of both trajectories and any infeasible portion of the rejected reference. The existing preceding compact-domain, fixed-plan/common-cost-model, and uniform-uncertainty conditions remain unchanged."
+      },
+      {
+        "id": "appendix_b_consider_predictor_interval",
+        "file": "main",
+        "original_line": 1981,
+        "occurrences": 1,
+        "note": "Changes the exposition verb without altering the interval, notation, or proof assumptions."
+      },
+      {
+        "id": "appendix_b_consider_predictor_interval",
+        "file": "main_reduced",
+        "original_line": 1961,
+        "occurrences": 1,
+        "note": "Changes the exposition verb without altering the interval, notation, or proof assumptions."
+      },
+      {
+        "id": "appendix_b_consider_predictor_interval",
+        "file": "main_ieee",
+        "original_line": 1973,
+        "occurrences": 1,
+        "note": "Changes the exposition verb without altering the interval, notation, or proof assumptions."
+      },
+      {
+        "id": "appendix_c_consider_interval",
+        "file": "main",
+        "original_line": 2189,
+        "occurrences": 1,
+        "note": "Changes the exposition verb without changing retained branch Jacobians or their domain."
+      },
+      {
+        "id": "appendix_c_consider_interval",
+        "file": "main_reduced",
+        "original_line": 2167,
+        "occurrences": 1,
+        "note": "Changes the exposition verb without changing retained branch Jacobians or their domain."
+      },
+      {
+        "id": "appendix_c_consider_interval",
+        "file": "main_ieee",
+        "original_line": 2181,
+        "occurrences": 1,
+        "note": "Changes the exposition verb without changing retained branch Jacobians or their domain."
+      },
+      {
+        "id": "appendix_b_initial_box_containment",
+        "file": "main",
+        "original_line": 2031,
+        "occurrences": 1,
+        "note": "Replaces soundly with the actual containment property; the same componentwise initialization inequality remains unchanged."
+      },
+      {
+        "id": "appendix_b_initial_box_containment",
+        "file": "main_reduced",
+        "original_line": 2011,
+        "occurrences": 1,
+        "note": "Replaces soundly with the actual containment property; the same componentwise initialization inequality remains unchanged."
+      },
+      {
+        "id": "appendix_b_initial_box_containment",
+        "file": "main_ieee",
+        "original_line": 2023,
+        "occurrences": 1,
+        "note": "Replaces soundly with the actual containment property; the same componentwise initialization inequality remains unchanged."
+      },
+      {
+        "id": "appendix_b_installation_set_containment",
+        "file": "main",
+        "original_line": 2104,
+        "occurrences": 1,
+        "note": "States the required containment property for both sets. It retains the active plan's stated model and uncertainty assumptions, propagation during computation, and the valid intersection operation. This replacement is disjoint from the following original-expiry sentence."
+      },
+      {
+        "id": "appendix_b_installation_set_containment",
+        "file": "main_reduced",
+        "original_line": 2082,
+        "occurrences": 1,
+        "note": "States the required containment property for both sets. It retains the active plan's stated model and uncertainty assumptions, propagation during computation, and the valid intersection operation. This replacement is disjoint from the following original-expiry sentence."
+      },
+      {
+        "id": "appendix_b_installation_set_containment",
+        "file": "main_ieee",
+        "original_line": 2096,
+        "occurrences": 1,
+        "note": "States the required containment property for both sets. It retains the active plan's stated model and uncertainty assumptions, propagation during computation, and the valid intersection operation. This replacement is disjoint from the following original-expiry sentence."
+      },
+      {
+        "id": "appendix_c_tighter_valid_row_bound",
+        "file": "main",
+        "original_line": 2251,
+        "occurrences": 1,
+        "note": "Keeps the requirement that both bounds be valid and apply to the same constraint row."
+      },
+      {
+        "id": "appendix_c_tighter_valid_row_bound",
+        "file": "main_reduced",
+        "original_line": 2229,
+        "occurrences": 1,
+        "note": "Keeps the requirement that both bounds be valid and apply to the same constraint row."
+      },
+      {
+        "id": "appendix_c_tighter_valid_row_bound",
+        "file": "main_ieee",
+        "original_line": 2243,
+        "occurrences": 1,
+        "note": "Keeps the requirement that both bounds be valid and apply to the same constraint row."
+      },
+      {
+        "id": "appendix_c_valid_remainder_update",
+        "file": "main",
+        "original_line": 2256,
+        "occurrences": 1,
+        "note": "Uses valid in its rigorous bounding sense. The update formula still includes generator conversion, propagated remainder, forcing, and recentering error, and no mathematical term is dropped."
+      },
+      {
+        "id": "appendix_c_valid_remainder_update",
+        "file": "main_reduced",
+        "original_line": 2234,
+        "occurrences": 1,
+        "note": "Uses valid in its rigorous bounding sense. The update formula still includes generator conversion, propagated remainder, forcing, and recentering error, and no mathematical term is dropped."
+      },
+      {
+        "id": "appendix_c_valid_remainder_update",
+        "file": "main_ieee",
+        "original_line": 2248,
+        "occurrences": 1,
+        "note": "Uses valid in its rigorous bounding sense. The update formula still includes generator conversion, propagated remainder, forcing, and recentering error, and no mathematical term is dropped."
+      },
+      {
+        "id": "appendix_f_reduced_framework_scope",
+        "file": "main_reduced",
+        "original_line": 2378,
+        "occurrences": 1,
+        "note": "Qualifies the terminal-backup construction as a requirement of this framework, without changing its mathematical conditions."
+      }
+    ],
+    "protected_text": "Abstract, introduction, conclusion and future-work paragraph are byte-identical.",
+    "sources": {
+      "main": {
+        "before_sha256": "7592d2741fa3102863902f157462a7c976333487dd5549c58a4439af55d6a8d8",
+        "after_sha256": "02f4bd980c885e68f101ef65db3a49769e26d8195e4dadd02731ef8ed396bc30"
+      },
+      "main_ieee": {
+        "before_sha256": "6cb89c242afc095a85d813bfabd338a4558bd865cbf1a2549754fa8ea2ef9746",
+        "after_sha256": "79235d4b6347cfc6ffc92f8236752229606c6eb51667f526eb9d077c1de243dd"
+      },
+      "main_reduced": {
+        "before_sha256": "fd28af4c15cbcf9f565e392d247fd1e8d3a6f1efee46fdfd1b56c08db0799ed7",
+        "after_sha256": "dcaf9a6c57b6a1014e814b8b06414c44841ec1c45756687cdfd2b3cb5105a290"
+      }
+    }
+  },
+  "reduction": {
+    "pages_saved": 9,
+    "percent": 11.4,
+    "typography_unchanged": true
+  },
+  "compiler": {
+    "native_editor": "Unavailable: Unable to find standard directories for platform",
+    "verified_compilation": "Installed pdfLaTeX; final references resolved"
+  }
+}

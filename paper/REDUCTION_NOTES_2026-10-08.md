@@ -1,17 +1,18 @@
 # Reduction notes - 8 October 2026
 
-The primary long manuscript is 77 pages. The reduced manuscript is 68 pages:
-9 pages fewer, an 11.7% reduction with the same typography and page layout.
+The current long manuscript is 79 pages. The reduced manuscript is 70 pages:
+9 pages fewer, an 11.4% reduction with the same typography and page layout.
 Source whitespace counts, which include LaTeX and table entries, fall from
-21,555 to 18,374 (14.8%). These are editorial size comparisons.
+22,195 to 19,050 (14.2%). These are editorial size comparisons.
 
 ## Mathematical and author-approved content
 
 - Abstract and complete introduction: exact bytes preserved.
 - Conclusion and future-work paragraph: unchanged.
 - Four theorems, six propositions, one corollary and all eleven proofs:
-  exact contents retained (excluding the removed optional heading explanations
-  in the prior long version and whitespace in the reduced source).
+  the same mathematical statements, assumptions, conclusions and proofs are
+  retained. Their wording includes the later author-approved clarifications;
+  the corresponding formal blocks match across the current versions.
 - All 87 distinct displayed mathematical relations: retained. The long paper
   contains 89 displayed blocks because two allocation balances also appear
   in Appendix I; the reduced version retains those balances once in Appendix D
@@ -54,8 +55,9 @@ visual review, with detailed checks of result headings, changed pages and
 experimental tables. The built-in compiler was unavailable on this platform;
 the installed pdfLaTeX/BibTeX tools compiled the final manuscripts successfully.
 
-The long source differs from the preceding version only by six removed
-optional result titles and six preceding goal sentences. Numerical algorithms,
+At creation, the long source differed from its preceding version only by
+six removed optional result titles and six preceding goal sentences. The
+later declaration and plain-language revisions are recorded separately. Numerical algorithms,
 stored values and research records are unchanged. The repository stays private.
 
 The later author-approved cleanup removes the funding declaration, updates
@@ -63,3 +65,10 @@ the writing/editing contributions, shortens the AI disclosure heading and
 removes two editorial preparation notes. The change reduces the shortened
 manuscript from 69 to 68 pages. The long sources and all mathematical content
 are unchanged. Historical source packages retain their original declarations.
+
+The subsequent approved plain-language revision replaces compressed prose
+with definitions and explicit scopes for the guarantees and experiments.
+Both reading versions gain two pages, leaving the reduction at nine pages.
+The typography, all displayed mathematics, numerical tables and protected
+abstract/introduction/conclusion/future-work text remain unchanged. The
+latest audit is `PLAIN_LANGUAGE_QA_2026-10-08.json`.

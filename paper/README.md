@@ -2,15 +2,15 @@
 
 **Formal Guarantees for Trustworthy Agent-Mediated Urban Perimeter Control**
 
-`main.tex` and `main.pdf` are the primary non-IEEE long paper (77 pages).
+`main.tex` and `main.pdf` are the primary non-IEEE long paper (79 pages).
 `main_ieee.tex` and `main_ieee.pdf` contain the same long paper in a two-column
-reading layout (32 pages). The explanatory parenthetical titles have been
+reading layout (33 pages). The explanatory parenthetical titles have been
 removed from theorem, proposition and corollary headings. Brief goal sentences
 precede the results where an explanation was needed.
 
 `main_reduced.tex` and `main_reduced.pdf` are the separate reduced version
-(68 pages). It retains every formal statement, proof and distinct displayed
-mathematical relation. Repeated appendix explanations, two duplicate allocation
+(70 pages). It retains the same mathematical statements, proofs and distinct displayed
+mathematical relations, with the approved language clarifications applied to both versions. Repeated appendix explanations, two duplicate allocation
 displays, three extended or duplicate tables and one reporting figure have been
 consolidated. The reduced appendices refer to the long paper for the full
 experimental explanations and additional reporting. Its essential mathematical
@@ -46,3 +46,13 @@ The latest author-approved cleanup removes the Funding section, combines Ali
 Eslami's writing roles as Writing and editing, adds Review and editing for
 Jiangbo Yu, and removes the repository preparation-status sentence and reduced
 editorial preface. The repository URL and AI-assistance disclosure remain.
+
+The latest approved language revision explains certificate guarantees,
+constraint bounds, repair comparisons and terminal continuation in direct
+language. All displayed equations and numerical table data are unchanged.
+The abstract, introduction, conclusion and future-work paragraph are
+byte-identical to the preceding version. See
+`PLAIN_LANGUAGE_REVISION_NOTES_2026-10-08.md` and
+`PLAIN_LANGUAGE_QA_2026-10-08.json` for this revision. Earlier audits record
+their own historical source versions and are superseded by this audit for
+current page counts and file hashes.

@@ -4,6 +4,8 @@ This directory preserves material moved out of the standalone manuscript on 7 Oc
 
 ## Contents
 
+- `long_reduced_2026_10_08_before_language_revision/` preserves the exact source package after declaration cleanup and before the approved plain-language changes.
+
 - `long_reduced_2026_10_08_initial/` preserves the exact long/reduced package before the subsequent author-approved declaration and editorial-status cleanup.
 
 - `standalone_manuscript_2026_10_07/` preserves the complete preceding source package, README, materials map and audit with preservation hashes, before the separate long/reduced revision.

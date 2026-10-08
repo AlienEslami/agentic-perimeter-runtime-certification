@@ -1,0 +1,1 @@
+This is the exact long/reduced source package after the author-contribution and manuscript-status cleanup, before the author-approved plain-language revision on 8 October 2026. Current sources and PDFs are in paper/.
