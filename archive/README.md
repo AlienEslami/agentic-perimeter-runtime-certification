@@ -4,6 +4,8 @@ This directory preserves material moved out of the standalone manuscript on 7 Oc
 
 ## Contents
 
+- `long_reduced_2026_10_08_initial/` preserves the exact long/reduced package before the subsequent author-approved declaration and editorial-status cleanup.
+
 - `standalone_manuscript_2026_10_07/` preserves the complete preceding source package, README, materials map and audit with preservation hashes, before the separate long/reduced revision.
 
 - `companion_manuscript_2026_10_06/` preserves the preceding supplement source, compiled PDF, references, figures and complete manuscript source ZIP. Its S5–S7 contain the earlier local-agent, routing and fixed-controller/repair narratives and tables.

@@ -1,6 +1,6 @@
 {
   "date": "2026-10-08",
-  "scope": "Editorial heading changes and a separate reduced manuscript; no numerical runs or live API calls.",
+  "scope": "Editorial heading changes, separate reduced manuscript and subsequent author-approved declaration/status cleanup; no numerical runs or live API calls.",
   "checks": {
     "abstract_and_introduction_byte_preserved_all_layouts": true,
     "long_layouts_only_six_heading_removals_and_six_leadins": true,
@@ -37,39 +37,41 @@
     ],
     "no_heading_titles_missing_references_duplicate_labels_or_compile_errors": true,
     "visual_review": {
-      "long_non_ieee": "77 rendered pages; all contact sheets and detailed changed result pages reviewed",
-      "long_ieee": "32 rendered pages; all contact sheets and all result pages reviewed independently",
-      "reduced": "69 rendered pages; all contact sheets, result pages, version note and experimental appendices reviewed",
-      "result": "No clipping, overlap or broken tables found"
-    }
+      "long_non_ieee": "77 pages rendered; updated declaration page and affected appendix transitions visually checked",
+      "long_ieee": "32 pages rendered and reviewed independently; declaration page 16 checked in detail",
+      "reduced": "68 pages rendered; all contact sheets and changed declaration/first introduction pages reviewed",
+      "result": "No overlap, clipping or broken tables found"
+    },
+    "shared_declarations_sha256": "c685b910a98509c98eb890d69a94c4e213ef8abc2696d0626899c1ee4a879730",
+    "latest_author_cleanup_audit": "SUBMISSION_LANGUAGE_QA_2026-10-08.json"
   },
   "versions": {
     "main": {
       "pages": 77,
       "source_whitespace_words": 21555,
       "source_sha256": "7592d2741fa3102863902f157462a7c976333487dd5549c58a4439af55d6a8d8",
-      "pdf_sha256": "6e6bc3fc925b620290bd2210f37de83435258eeaebb7c04857a7be18ce27e670"
+      "pdf_sha256": "35d07f26ea82957c9d827b25f5e0b64b81e25ae2a5290fefef937f6bc3c8e131"
     },
     "main_ieee": {
       "pages": 32,
       "source_whitespace_words": 21542,
       "source_sha256": "6cb89c242afc095a85d813bfabd338a4558bd865cbf1a2549754fa8ea2ef9746",
-      "pdf_sha256": "8ea87e0212213e1bff6b1b6fabd7f7083c6c57d29331e300d4fe7a98ee5aec9e"
+      "pdf_sha256": "d4da60c22471490f864c25999ea01e0cb3700806b279940a83cf0e15be14c0ec"
     },
     "main_reduced": {
-      "pages": 69,
-      "source_whitespace_words": 18416,
-      "source_sha256": "adb059be5c3c5881fef8f2387c392c7737249d26956f507727ee7bb5f3194ba9",
-      "pdf_sha256": "721191172c23c0e5271d29f065ac3113298b100f14c348762e2d69a8cae05afd"
+      "pages": 68,
+      "source_whitespace_words": 18374,
+      "source_sha256": "fd28af4c15cbcf9f565e392d247fd1e8d3a6f1efee46fdfd1b56c08db0799ed7",
+      "pdf_sha256": "ff91d1e1616e416dfaa1e88eecb0dd4edab38266f8434905606618bb3b32d78c"
     }
   },
   "reduction": {
-    "pages_saved": 8,
-    "percent": 10.4,
+    "pages_saved": 9,
+    "percent": 11.7,
     "typography_unchanged": true
   },
   "compiler": {
     "native_editor": "Unavailable: Unable to find standard directories for platform",
-    "verified_compilation": "Installed pdfLaTeX and BibTeX; final references resolved"
+    "verified_compilation": "Installed pdfLaTeX; final references resolved"
   }
 }

@@ -2,10 +2,13 @@ Submission facts to complete before upload
 Updated 8 October 2026 for Transportation Research Part B: Methodological
 
 AUTHOR FACTS SUPPLIED
-1. Funding: the user confirmed that the study received no specific funding.
+1. Funding: the author requested removal of the Funding section from the manuscript.
+   The earlier no-specific-funding statement is retained only as an internal author fact.
 2. Competing interests: the user confirmed that there are no competing interests.
 3. Author contributions: the user confirmed that Ali Eslami conducted the
    research and writing, and Jiangbo Yu provided supervision and guidance.
+   The author also requested Review and editing for Jiangbo Yu, and a single
+   Writing and editing role for Ali Eslami.
    These facts support the manuscript's CRediT contribution statement.
 
 REMAINING AUTHOR CHECKS

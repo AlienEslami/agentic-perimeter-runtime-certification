@@ -1,9 +1,9 @@
 # Reduction notes - 8 October 2026
 
-The primary long manuscript is 77 pages. The reduced manuscript is 69 pages:
-8 pages fewer, a 10.4% reduction with the same typography and page layout.
+The primary long manuscript is 77 pages. The reduced manuscript is 68 pages:
+9 pages fewer, an 11.7% reduction with the same typography and page layout.
 Source whitespace counts, which include LaTeX and table entries, fall from
-21,555 to 18,416 (14.6%). These are editorial size comparisons.
+21,555 to 18,374 (14.8%). These are editorial size comparisons.
 
 ## Mathematical and author-approved content
 
@@ -57,3 +57,9 @@ the installed pdfLaTeX/BibTeX tools compiled the final manuscripts successfully.
 The long source differs from the preceding version only by six removed
 optional result titles and six preceding goal sentences. Numerical algorithms,
 stored values and research records are unchanged. The repository stays private.
+
+The later author-approved cleanup removes the funding declaration, updates
+the writing/editing contributions, shortens the AI disclosure heading and
+removes two editorial preparation notes. The change reduces the shortened
+manuscript from 69 to 68 pages. The long sources and all mathematical content
+are unchanged. Historical source packages retain their original declarations.

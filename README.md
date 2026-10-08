@@ -66,4 +66,9 @@ The 7 October consolidation adds the cited historical local-agent, routing, fixe
 
 ## Revision and release
 
-Copied numerical algorithms and recorded values are preserved. The 8 October 2026 long and reduced manuscripts retain the complete formal argument and essential experimental protocols. Result headings are plain with brief preceding goal explanations. The reduced version is 69 pages, compared with 77 in the same layout for the long version, and refers to it for extended experimental reporting. All statements, proofs and distinct displayed mathematics remain; the abstract and introduction are unchanged from the approved version. Additional historical material is archived with preservation hashes. Public availability, license choice and remaining author/journal checks are tracked in `PUBLIC_RELEASE_CHECKLIST.md`.
+Copied numerical algorithms and recorded values are preserved. The 8 October 2026 long and reduced manuscripts retain the complete formal argument and essential experimental protocols. Result headings are plain with brief preceding goal explanations. The reduced version is 68 pages, compared with 77 in the same layout for the long version, and refers to it for extended experimental reporting. All statements, proofs and distinct displayed mathematics remain; the abstract and introduction are unchanged from the approved version. Additional historical material is archived with preservation hashes. Public availability, license choice and remaining author/journal checks are tracked in `PUBLIC_RELEASE_CHECKLIST.md`.
+
+The subsequent 8 October author-approved cleanup removes the funding section,
+consolidates Ali Eslami's writing roles, adds Jiangbo Yu's review/editing role,
+and removes editorial manuscript-preparation notes. Repository visibility
+remains private; the manuscript retains its neutral repository link.

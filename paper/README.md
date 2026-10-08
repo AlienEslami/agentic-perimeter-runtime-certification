@@ -9,7 +9,7 @@ removed from theorem, proposition and corollary headings. Brief goal sentences
 precede the results where an explanation was needed.
 
 `main_reduced.tex` and `main_reduced.pdf` are the separate reduced version
-(69 pages). It retains every formal statement, proof and distinct displayed
+(68 pages). It retains every formal statement, proof and distinct displayed
 mathematical relation. Repeated appendix explanations, two duplicate allocation
 displays, three extended or duplicate tables and one reporting figure have been
 consolidated. The reduced appendices refer to the long paper for the full
@@ -32,7 +32,8 @@ It remains private during preparation; public access is planned before submissio
 
 `REDUCTION_NOTES_2026-10-08.md` explains the cuts.
 `LONG_REDUCED_QA_2026-10-08.json` records source, reference and compilation
-checks. `STANDALONE_MATERIALS_MAP.md` records the 7 October integration and
+checks. `SUBMISSION_LANGUAGE_QA_2026-10-08.json` records the subsequent
+author-contribution and manuscript-status cleanup. `STANDALONE_MATERIALS_MAP.md` records the 7 October integration and
 historical research archives, which still applies to the long version.
 `STANDALONE_QA_2026-10-07.json`, where present, is the preceding revision's audit.
 The previous complete manuscript package is preserved in the repository's
@@ -40,3 +41,8 @@ The previous complete manuscript package is preserved in the repository's
 
 Author and release checks remain in `SUBMISSION_ITEMS_TO_CONFIRM.txt` and
 the repository's `PUBLIC_RELEASE_CHECKLIST.md`.
+
+The latest author-approved cleanup removes the Funding section, combines Ali
+Eslami's writing roles as Writing and editing, adds Review and editing for
+Jiangbo Yu, and removes the repository preparation-status sentence and reduced
+editorial preface. The repository URL and AI-assistance disclosure remain.
