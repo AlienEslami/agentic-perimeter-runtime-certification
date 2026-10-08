@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-08",
+  "scope": "Substantial reduction of reduced manuscript only; no numerical study or live API calls rerun.",
+  "checks": {
+    "long_versions_and_shared_inputs_unchanged": {
+      "main.tex": "02f4bd980c885e68f101ef65db3a49769e26d8195e4dadd02731ef8ed396bc30",
+      "main_ieee.tex": "79235d4b6347cfc6ffc92f8236752229606c6eb51667f526eb9d077c1de243dd",
+      "main.pdf": "6b17e0d57edaed7277159ae1d4fe6a56d5387cfd67d5de81db11bc952507fc98",
+      "main_ieee.pdf": "07ee3b960aadff224dcddf87e3a30aa0291a19964e7c64d4bb95c080c597af8f",
+      "main.bbl": "a49f79ed27b80f0819fdfd20881f0a574565a6295bca832ed79ff961511c5f8a",
+      "main_ieee.bbl": "4e6be9594828b1e34a5580d8fe71b38fd07aa8bd9bcaf121dabad9e7709767b1",
+      "submission_declarations.tex": "c685b910a98509c98eb890d69a94c4e213ef8abc2696d0626899c1ee4a879730",
+      "FOUNDATION_REFERENCES.bib": "157982c7379c79a64880caaae92b8f2bf8b04236506d40a28edb58c7b0251002"
+    },
+    "protected_text": "Abstract, conclusion and future work byte-identical; introduction differs only by the explicitly approved roadmap sentence.",
+    "formal_result_counts": {
+      "theorem": 4,
+      "proposition": 6,
+      "corollary": 1
+    },
+    "formal_statement_location_updates_only": [
+      "prop:structure-plan",
+      "cor:repair-recursive"
+    ],
+    "independent_proof_review": "All eleven complete proofs independently reviewed against the preceding main text and proof appendices; no lost essential assumption, strengthened claim or missing proof dependency found.",
+    "all_eleven_results_and_complete_proof_blocks_in_main_text": true,
+    "five_retained_numerical_tables_identical": [
+      "tab:structure-frontier",
+      "tab:benchmark-deadlines",
+      "tab:benchmark-conflict",
+      "tab:sequential-handover",
+      "tab:delayed-handover"
+    ],
+    "cross_references": "No undefined source references or duplicate labels.",
+    "compilation": "Final pdfLaTeX pass has resolved references/citations and no overfull boxes.",
+    "visual_review": {
+      "scope": "All 44 pages rendered and inspected on contact sheets; model, architecture, proof and result pages inspected at full-page resolution. Numerical tables and final experimental appendix independently reviewed.",
+      "result": "No clipping, overlap, broken mathematical displays, unresolved references or broken tables found."
+    }
+  },
+  "versions": {
+    "long_pages": 79,
+    "ieee_pages": 33,
+    "prior_reduced_pages": 70,
+    "reduced_pages": 44,
+    "reduced_source_sha256": "d81f2eaedf0ad68d7d1b591192c1b381398db81cfeac434716dd52ee81a7d34b",
+    "reduced_pdf_sha256": "d6b1fdeb6a39df067ac6b0f1ab4cce5bf97495cba8e09df1b43ba265f599dc2a"
+  },
+  "reduction": {
+    "pages_saved_from_prior_reduced": 26,
+    "percent_from_prior_reduced": 37.1,
+    "pages_saved_from_long": 35,
+    "percent_from_long": 44.3,
+    "font_size_and_page_layout_unchanged": true
+  },
+  "compiler": {
+    "native_editor": "Unavailable: Unable to find standard directories for platform",
+    "verified_compilation": "Existing pdfLaTeX installation; BibTeX and final reference passes completed."
+  },
+  "archive": {
+    "path": "archive/reduced_manuscript_2026_10_08_before_substantial_reduction/",
+    "preceding_bundle_sha256": "8a8a73c9afe9f5848dadaf72c04790966e5665e946c1c8e0a1616d6807773842"
+  }
+}

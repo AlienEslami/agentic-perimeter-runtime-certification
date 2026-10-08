@@ -1,0 +1,483 @@
+\section*{Experimental details}
+The following appendices retain the study settings, validation procedures
+and results needed to interpret the numerical evidence. Fuller
+experimental explanations and additional reporting are provided in the
+long version cited below; complete numerical records are available in the
+repository identified in the data and code availability statement.
+
+\section{Experimental Protocols and Validation}
+\label{app:reusable-benchmark}
+
+\subsection{Eight-event compatibility comparison}
+\label{app:compatibility-protocol}
+The initial inventories are
+\[
+(3000,3000,1500,1500,500,500,200),
+\]
+in vehicles, with base exterior arrivals of 6000 vehicles/h. Six events
+combine 20, 30 and 40\% arrival increases with 30- and 60-minute durations;
+two intermediate events use 25 and 35\% increases for 45 minutes. All start
+at minute 15 and include five-minute rise and recovery ramps. The Region-1
+limit is 2850 vehicles at minute 60. During each two-hour mission, both
+planners replan every five minutes over a one-hour horizon, with a
+five-minute first block and a second block ending at the horizon.
+
+The commissioned library tests nine ordered pairs of the three feedback
+references in \appref{app:new-model}, with normalized target/arrival triples
+$(20,22,72)$, $(22,24,78)$ and $(24,26,84)$. Continuous-input MPC minimizes
+queue-inclusive TTS using one-minute RK4 prediction, no terminal cost, and
+three starts: the last accepted tail (or initial protection feedback),
+balanced feedforward, and Region-1-protection feedforward. Initialization
+reference totals are $(3000,3000)$ and $(2700,3200)$ vehicles. SLSQP uses
+analytic sensitivities, at most 100 iterations, objective tolerance
+$10^{-8}$ and state feasibility tolerance $10^{-7}$. Replay steps are ten
+seconds; observation half-widths are one vehicle, the arrival-residual
+bound is 60 vehicles/h, and proof intervals are 15 seconds. Matched runs
+use zero realized residual and synchronous activation. Each mission has
+24 proposals, giving the 192 attempts in
+Table~\ref{tab:benchmark-regulation-queue}. The queue-blind reference holds
+$(0.5,0.5,0.5,0.52)$. The full event comparison is given in \longpaperdetails{Appendices G.1 and H.3}.
+
+\subsection{Regional regulation}
+Task R uses \eqref{eq:benchmark-native}, with 1.6 vehicles/s destination
+demand per class. The alternative profile multiplies demand by
+$1+0.1\sin(2\pi t/0.5)$, with $t$ in hours. Initial regional totals
+$(1800,3100)$, $(2400,3600)$ and $(3500,2800)$ vehicles are crossed with
+symmetric shares or shares proportional to equilibrium
+$(1538.9,1461.1,1461.1,1538.9)$, gate intervals $[0.1,0.9]$ or $[0.4,0.6]$,
+and constant or sinusoidal demand: 24 cases per controller. Classes remain
+nonnegative and regional totals are limited to 10,000 vehicles.
+
+The reproduced almost-smooth controller uses current demand; tracking MPC
+also receives the future profile. MPC replans every five minutes over
+30 minutes during a 90-minute mission, using one-minute RK4 prediction
+and control blocks of five and 25 minutes. In normalized inventory units,
+the running cost is $\sum_i((n_i-30)/10)^2+0.001\|u-u^\star\|^2$ and the
+terminal penalty is $0.5\sum_i((n_i-30)/10)^2$, with
+$u^\star=0.5267\mathbf1$. SLSQP uses analytic sensitivities, two starts,
+at most 100 iterations and tolerance $10^{-9}$. Replay uses five-second RK4 with
+feedback at the stages. Settling requires both totals to remain within
+25 vehicles of their targets through the remaining mission.
+
+\subsection{Queue and deadline planning}
+\label{sec:supp-queue-settings}
+Tasks Q and D begin at minute 20 in the seven-state model, with center
+\[
+\begin{aligned}
+\widehat x_{20}=(&21.020544601495207,23.156747836310867,\\
+&14.209387548878382,14.877124601919054,\\
+&2.4028346640030684,3.0184193919155455,\\
+&1.2410781134202304).
+\end{aligned}
+\]
+The order is that of \eqref{eq:new-plant}, in units of 100 vehicles. The
+original continuation uses $(1,1,0.667015677,1)$ for five- and 35-minute
+blocks ending at minute 60. Changed sensing, arrivals or service limits
+trigger a fresh check. If this fails, reserve construction tries network
+TTS followed by a moderate Region-2 objective; a repair endpoint must be
+certified under the same requirements.
+
+Task Q crosses 20, 30, 40 and 50\% arrival increases with durations of
+30, 45 and 60 minutes, giving twelve contracts with one-vehicle sensing
+half-width and 300-vehicle/h residual bound. Task D fixes the 30\% one-hour
+event. Its 72 development contracts cross $d\in\{1,10,25,50\}$ vehicles,
+$\bar w_{\rm veh}\in\{60,150,300\}$ vehicles/h,
+$\eta\in\{2750,2850,2950\}$ vehicles and Region-2 weight $p\in\{2,4\}$.
+Eight intermediate contracts use $d\in\{5,20\}$,
+$\bar w_{\rm veh}\in\{100,225\}$, $\eta\in\{2800,2900\}$ and $p=3$, with
+the same solver and proof settings.
+
+Nominal and five-scenario MPC use one-minute RK4 prediction and three
+fixed starts. SLSQP uses analytic sensitivities, at most 100 iterations, objective
+tolerance $10^{-8}$ and state feasibility tolerance $10^{-7}$. The
+five-scenario planner constrains the center and both all-coordinate
+extreme corners under constant residual extrema, with the center forecast
+as objective. Full-scenario MPC constrains all 128 corners under zero,
+constant positive, constant negative, five-minute alternating and
+ten-minute sinusoidal residuals, plus the center. It imposes one-vehicle
+prediction clearance. Worst-scenario sensitivities, including tied active
+supports, are supplied to the solver.
+
+Gate fractions are rounded to nine decimal places. Directional differences
+near $0.75$ receive $10^{-8}$ interior slack; the largest synchronous
+gate change is below $10^{-9}$. Stored binary coefficients must satisfy
+\eqref{eq:new-exact-actuator-residuals}. State and service proof intervals
+are 15 seconds. Repair uses the same compiler and checker and tests
+\[
+\Theta=\{j/20:0\le j\le20\}
+\]
+in increasing order, selecting the first passing plan.
+
+\subsection{Feedback comparisons}
+\label{app:benchmark-details}
+The queue/exit CLF extension uses Region-1-protection reference totals
+$(2700,3200)$ vehicles, state weights $(4,1,0.1,0.1,0.1,0.1,2)$ and input
+weight $3000I_4$. The LQR construction in \appref{app:new-model} supplies
+admission and exit gates. For interregional gates, $e$ is the vector of
+regional-total errors in vehicles, $f_*$ their reference drift in
+vehicles/s, and $S$ the two input columns in those units. The correction is
+\[
+\begin{aligned}
+a&=e^\top f_*,\qquad b=S^\top e,\qquad r=b^\top b,\\
+v&=-\frac{a+\sqrt{a^2+r^2}}{r(1+\sqrt{1+r})}\,b
+\quad(r>\epsilon_{\rm mach}),
+\end{aligned}
+\]
+with $v=0$ otherwise. It is clipped to the reference-shifted gate box and
+projected onto $|u_{21}-u_{12}|\le0.75$. Task R uses the same correction
+with its native balances and two-gate limits. Queue-aware replay uses
+ten-second RK4 and checks physical margins and conservation.
+
+The physical CBF diagnostic uses twelve affine rows
+$h_j(x)=A_jx+\beta_j\ge0$. On each consistent admission branch, its gate QP
+minimizes $\frac12\|u-u^{\rm MPC}\|^2$ over $u\in\mathcal U$ subject to
+\begin{equation}
+\begin{gathered}
+A_jf(x,u,\widehat\Lambda)-\delta_j+6h_j(x)\ge0,\\
+\delta_j=\begin{cases}\bar w_x,&h_j=20-z,\\0,&\text{otherwise}.
+\end{cases}
+\end{gathered}
+\label{eq:benchmark-cbf}
+\end{equation}
+Here $\bar w_x=\bar w_{\rm veh}/100$ inventory units/h and $6$ has units
+h$^{-1}$. Queue nonnegativity follows from positive arrivals and zero
+admission at $z=0$. A branch inequality enforces capacity/supply consistency.
+The smallest feasible QP objective determines the gate held for ten
+seconds, using the current simulated state \cite{ames2017}. The 80 adverse
+runs start at the all-high corner with constant positive residual. Physical
+and scheduled-service outcomes are evaluated separately; family
+certification requires the independent enclosure checker.
+
+\subsection{Matched realizations and independent validation}
+Constant plans use all 128 initial corners and five residual profiles:
+640 realizations per contract. The CLF extension uses every eighth corner
+of the lexicographic $\{-1,+1\}^7$ list, beginning at the all-negative
+corner, and the same profiles: 80 realizations. Ten-second RK4 replays
+match corner and residual labels. The constant-plan grid has 275,200
+trajectories; certification additionally covers every measurable bounded
+residual and the complete initial box.
+
+Tool selection uses nominal forecast costs before replay under identical
+requirements. The repair comparison pools 24,320 matched realizations from
+38 modified contracts; the benefit denominator in
+\eqref{eq:benchmark-repair-metrics} is positive for each pair. Validation
+audits dynamics, Jacobians, planning derivatives, exact gate residuals and
+certificate-to-plan binding. Adaptive DOP853 independently checks
+138 synchronous replays, splitting residual discontinuities and checking
+conservation; all 51 handovers also receive adverse replay and activation
+membership checks. \longpaperdetails{Appendix G.5} explains the validation
+and the repository contains the complete records.
+
+\subsection{Preparation for a future handover}
+\label{supp:detail:sec:delayed-handover-results}
+The handover grid combines the eight extremes
+$(d,\bar w_{\rm veh},\eta,p)\in\{1,50\}\times\{60,300\}\times
+\{2750,2950\}\times\{4\}$, primary $(1,300,2850,4)$ contract and eight
+intermediate contracts. Each uses slots one, two and five minutes after
+minute 20, giving 51 cases. The initial continuation or reserve must have
+a full-plan certificate. Its metric endpoint set
+$\{x:|L(x-\widehat x_s)|\le r_s\}$ supplies the physical activation box
+\begin{equation}
+\mathcal I_s^+=\widehat x_s+[-d_s,d_s],\qquad
+(d_s)_i=\sum_j|(L^{-1})_{ij}|(r_s)_j.
+\label{eq:benchmark-handover-box}
+\end{equation}
+Exact rational inverse supports are rounded outward. Candidate and active
+blocks are split at all absolute change times; the minute-60 deadline is
+retained. Timed work includes propagation, optimization, checking and
+repair. A result must arrive before its slot and match the plan, task,
+uncertainty and clock; otherwise the active plan continues. Replay begins
+at the original minute-20 corners. Table~\ref{tab:delayed-handover} reports
+the outcomes; \longpaperdetails{Appendix G.6} gives the full timing study.
+
+\subsection{Successive changes in planning requests}
+\label{app:sequential-handover}
+Sequential pairs keep the same hard Task-D contract and minute-60 deadline.
+A certified weight-$4$ ordinary-MPC repair starts at minute 20; requests
+at minutes 25 and 30 use the stored weight-$2$ full-scenario and weight-$4$
+nominal suffixes, giving $4\to2\to4$. Each fresh 15-second-interval proof
+starts from \eqref{eq:benchmark-handover-box}. Rejection retains the active
+schedule and its earlier correlated certificate. Three pairs were
+prespecified; scanning the 36 development pairs found 30 with both source
+certificates and three with sampled queue violations under unchecked
+switching. All six displayed pairs received sequential admission checks.
+
+\begin{table}[t]
+\centering\small
+\caption{Sequential coverage on 640 matched realizations per pair.
+$d$ is the sensing half-width, $\bar w_{\rm veh}$ the arrival bound and
+$\eta$ the minute-60 Region-1 limit. A/R records minute-25/minute-30
+admission. Joint pass requires both physical and service satisfaction.}
+\label{tab:supp-sequential-coverage}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}lrrrccc@{}}
+\toprule
+Pair & $d$ & $\bar w_{\rm veh}$ & $\eta$ & 25/30 & Unchecked & Certified\\
+\midrule
+D015/D014 & 1 & 60 & 2850 & A/A & 640/640 & 640/640\\
+D027/D026 & 1 & 300 & 2850 & A/R & 640/640 & 640/640\\
+D071/D070 & 50 & 60 & 2950 & R/R & 640/640 & 640/640\\
+D025/D024 & 1 & 300 & 2750 & A/R & 512/640 & 640/640\\
+D043/D042 & 10 & 300 & 2750 & R/R & 512/640 & 640/640\\
+D061/D060 & 25 & 300 & 2750 & R/R & 576/640 & 640/640\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Fixed, unchecked and certified schedules use the same 128 corners and five
+residual profiles. The three unchecked failures violate queue storage;
+all sampled service rows pass. Independent DOP853 with $10^{-12}$ relative
+and $10^{-13}$ absolute tolerances and five-second maximum steps confirms
+stress peaks of 2005.5897, 2009.6214 and 2017.5992 vehicles. Accepted segment
+certificates cover the full uncertainty family. D027/D026 illustrates a
+sufficient deadline check rejecting a request whose 640 sampled replays
+pass. The sequential experiment assumes instantaneous activation; the
+handover study above covers computation while traffic continues.
+\longpaperdetails{Appendix G.7} gives paired costs, traffic outcomes and
+the interpretation of retained correlated proofs.
+
+\FloatBarrier
+\section{Certification Comparisons and Service Margins}
+\label{sec:supp-structure}
+\label{app:structure-online-details}
+
+\subsection{Coordinates and service margins}
+The coordinate comparison fixes the model, forecast, held feedback plan
+and 15-second proof partition over one hour. Its primary contract gives
+the bounds in Table~\ref{tab:new-coordinate-ablation}.
+\begin{table}[t]
+\centering\small
+\caption{Coordinate comparison with the same 2850-vehicle deadline and
+proof inputs. Unresolved means that the sufficient enclosure did not close.}
+\label{tab:new-coordinate-ablation}
+\begin{tabular}{@{}p{0.35\linewidth}p{0.57\linewidth}@{}}
+\toprule
+Prediction coordinates & Certified $100n_1(1\,\mathrm h)$ upper bound (veh)\\
+\midrule
+Raw accumulation & Enclosure unresolved\\
+Destination classes & 2219.66\\
+Classes plus waiting-inventory shares & 2168.57\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Table~\ref{tab:structure-frontier} uses a fixed two-block MPC plan, a 30\%
+event and a 2850-vehicle deadline. Regional/class half-width is $d$ vehicles
+and queue half-width is $\min(d,10)$. The original, positive/queue and
+signed methods use identical physical and service requirements. The
+binding-service study requests $100n_1(1\,\mathrm h)\le1700$ under the
+one-vehicle/60-vehicle/h contract, with frozen nominal targets of 1700,
+1690, 1675, 1650, 1625 and 1600 vehicles. Each unchanged three-start solve
+supplies all three certifiers. The original and positive/queue checks first
+pass at 1600; signed generators also pass at 1625 with upper bound 1688.66.
+This reduces the design margin from 100 to 75 vehicles and nominal TTS
+from 4586.00 to 4544.66 vehicle-hours (41.33, or 0.90\%).
+
+\subsection{Online comparison}
+The 17 fixed cases comprise three uncertainty contracts with three
+certifiers, three binding-service cases, an additional signed-method
+initial design, three nominal comparators and an adverse signed diagnostic.
+Contracts are $(d,\bar w_{\rm veh})=(1,60),(50,120),(25,300)$ in vehicles
+and vehicles/h. Requests at minutes 0, 5, $\ldots$, 55 use objectives
+network, Region~1, network, network, Region~2, network, Region~1, then
+network for the remaining five. Durations are 60, 60, 60, 30, 90, 90, 5,
+30, 30, 25, 20 and 15 minutes. Cost weights on $(n_1,n_2,z)$ are
+$(1,1,1)$, $(4,1,1)$ and $(1,4,1)$ for network, Region~1 and Region~2.
+
+At each replanning time, a trusted observation provides a box assumed
+to contain the actual traffic state. Accepted plans
+replace the schedule; rejection preserves the prior correlated proof
+through its one-hour expiry. Unresolved initialization leaves the plan
+unactivated and cost unassigned. Nominal comparators repeat the requests,
+recomputing MPC on the current state. Installation is synchronous and
+proof time is recorded separately. Table~\ref{tab:structure-online} retains
+the admission and cost comparison; \longpaperdetails{Appendix H.2}
+provides the trajectory figure and full explanation.
+
+\begin{table}[t]
+\centering\small
+\caption{Online missions. Contract is $(d,\bar w_{\rm veh};\eta)$ in veh,
+veh/h and veh; queue half-width is $\min(d,10)$ veh. Target is the nominal
+planner target. A/R includes initialization. $\Delta$ is the TTS premium
+over matched nominal-request replay. Unresolved initialization has no TTS.}
+\label{tab:structure-online}
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}l l r c r r@{}}
+\toprule
+$(d,\bar w_{\rm veh};\eta)$ & Method & Target & A/R & TTS (veh-h) & $\Delta$ (\%)\\
+\midrule
+$(1,60;2850)$ & Each of three & 2850 & 11/1 & 4428.57 & 0.00\\
+$(50,120;2850)$ & Original; positive & 2850 & 0/1 & \multicolumn{2}{c}{Unresolved}\\
+ & Signed & 2850 & 11/1 & 4428.57 & 0.00\\
+$(25,300;2850)$ & Original; positive & 2850 & 0/1 & \multicolumn{2}{c}{Unresolved}\\
+ & Signed & 2850 & 11/1 & 4428.57 & 0.00\\
+$(1,60;1700)$ & Each of three & 1600 & 2/10 & 4584.70 & 3.52\\
+ & Signed & 1625 & 2/10 & 4543.50 & 2.59\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+For the 1700-vehicle task, the common 1600-target plan ends at 1652.76
+vehicles; the signed 1625-target plan ends at 1673.85 with the same admission
+counts and saves 41.20 vehicle-hours (0.90\%). The nominal comparator ends
+near 1700 with TTS 4428.74. The adverse $(25,300)$ case combines an in-box
+initial displacement, alternating quarter-hour residuals and bounded
+observation bias. It completes with one rejection and final inventory
+1706.09 at the 2850-vehicle deadline; independent checks confirm all
+observations contain the actual state.
+
+\paragraph{Numerical verification and finite-plan authority}
+\label{sec:new-numerical-audit}
+The eight-event result is summarized in
+Table~\ref{tab:benchmark-regulation-queue}; full primary-event metrics are
+in \longpaperdetails{Appendix H.3}. Independent trajectory reconstruction
+confirms the installed commands and observations. The longest recorded
+proof is 14.77 seconds within a five-minute interval. The repository's
+earlier outage runs end at the accepted plan's expiry; continuation beyond
+expiry requires \appref{sec:terminal-backup}. Future activation is tested
+in \appref{supp:detail:sec:delayed-handover-results}.
+
+\FloatBarrier
+\section{Connected-Network Experiment}
+\label{app:network-transfer}
+
+\subsection{Allocation and admission coupling}
+\appref{app:network-assumptions} gives the varying-allocation balances
+\eqref{eq:network-varying-allocation}--\eqref{eq:network-uncertain-allocation},
+generator and remainder conversion, and the conditions on queue-branch
+coupling. The experiment below uses constant shares, independent queues
+and one coordinate map throughout.
+
+\subsection{Model, plan and uncertainty}
+The clockwise ring has $R=2$ or $R=3$ regions and one queue per region;
+dimensions are $R^2+R=6$ and $12$. Vehicles in class $c_{ij}$ are currently in region $i$ and retain
+destination $j$ when they move to the next region. With $N_i=\sum_jc_{ij}$, local completion is
+$c_{ii}v(N_i)$ and nonlocal transfer $u_i c_{ij}v(N_i)$, using
+\eqref{eq:new-mfd}. Queue admission is $a_i=\min\{60z_i,120g_i\}$.
+Half the admitted traffic is local and half equally divided among other
+destinations. Each region initially has 3000 vehicles, half local; each
+queue has 200. Internal demand is 6000 local and 500 nonlocal vehicles/h
+per region. Exterior arrivals are 4000 vehicles/h per queue; queue 0 has
+a 30\% increase between minutes 15 and 45, with intervals split exactly at both changes in arrival rate.
+
+Initially ring/admission gates are 0.65/0.50. After minute 30, ring gates
+0 and 1 become 0.80 and 0.55; remaining ring gates stay 0.65. Admission
+gate 0 becomes 0.60; others stay 0.50. All gates lie in $[0,1]$. The
+prespecified contract requires nonnegative states, 10,000 vehicles per
+region, 2000 per queue and at most 2700 vehicles per region at one hour.
+The fixed plan precedes certification and observed outcomes.
+
+Independent class half-widths are $d/R$ vehicles and queue half-widths
+$\min(d,10)$. Each queue has residual allowance $\bar w_{\rm veh}$, giving
+network absolute-error sum bound $R\bar w_{\rm veh}$. Pairs
+$(d,\bar w_{\rm veh})=(1,60),(10,60),(25,60),(25,300)$ are tested for both
+networks and coordinate methods, giving 16 attempts. Binary widths and
+failed checks are retained in the repository.
+
+\begin{table}[t]
+\centering\small
+\caption{Complete connected-ring sweep. Largest regional deadline upper
+bounds are rounded upward in vehicles. A dash is an unresolved sufficient
+full-plan proof under the tested method and contract.}
+\label{tab:network-transfer-complete}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}rrrrr@{}}
+\toprule
+Regions/states & $d$ (veh) & $\bar w_{\rm veh}$ (veh/h) & Class coordinates & Combined inventories\\
+\midrule
+2/6 & 1 & 60 & 1421.88 & 1411.77\\
+2/6 & 10 & 60 & 1433.39 & 1413.41\\
+2/6 & 25 & 60 & 1438.93 & 1414.94\\
+2/6 & 25 & 300 & --- & 1551.15\\
+3/12 & 1 & 60 & --- & 1999.42\\
+3/12 & 10 & 60 & --- & 2024.64\\
+3/12 & 25 & 60 & --- & 2059.74\\
+3/12 & 25 & 300 & --- & ---\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Nonnegative demand, admission and incoming transfers establish boundary
+invariance; the speed polynomial is globally positive. Summed classes and
+queues cancel transfers and admission, bounding inventory growth by offered
+demand and excluding finite escape. Capacities are checked separately.
+The dimension-generic checker uses degree-two predictors, order-18 matrix
+series with outward remainders and intervals at most $1/120$ hour, halved
+on failed self-inclusion down to $1/1920$. Nonnegativity and independent queue bounds restrict the queue part of the
+Jacobian evaluation region to the hull of predicted and possible actual
+queue values. Full generator and remainder bounds are retained.
+Certification requires the bounds to satisfy every physical constraint
+and service requirement.
+
+\subsection{Computation}
+Let $n$ be dimension, $g$ generator count, $m$ affine-row count, $N$ evaluated
+intervals including retries, $K$ trial-tube attempt limit, $p$ matrix-series
+order and $b$ evaluated Jacobian branches. With fixed-precision interval
+costs $C_d$ for prediction/defect, $C_q$ for queues and $C_J$ for one
+Jacobian evaluation, dense signed propagation has upper bound
+\begin{equation}
+ \begin{split}
+ O\!\left(N\left\{C_d+C_q+mn^2
+  +p(n^3+n^2g+mng)\right.\right.\\[-2pt]
+ \left.\left.\hspace{12mm}+K\,[pn^3+bC_J+bn^2g]\right\}\right).
+ \end{split}
+ \label{eq:network-computation}
+\end{equation}
+For $g=n$, $m=O(n)$, fixed $p,K,b$ and $C_d,C_q,C_J=O(n^3)$, this becomes
+$O(Nn^3)$. Polynomial setup, optimizer work and variable-precision bit costs
+are separate; $C_J$ remains model dependent. The ring backend uses sparse
+traffic balances; predictor branch cost remains in $C_d$. Timings exclude
+optimization and language inference, use one host with concurrent work,
+and assume synchronous installation. \longpaperdetails{Appendix I}
+provides the full computational discussion and runtime records.
+
+\FloatBarrier
+\section{Agent Experiment Protocol}
+\label{sec:supp-execution}
+Section~\ref{sec:task-state-live} uses the Responses API with
+\texttt{gpt-5.4-mini}, saved snapshot
+\texttt{gpt-5.4-mini-2026-03-17}, reasoning disabled, one strict function
+call, at most 400 output tokens, no parallel tools and no retries. Records
+include unsuccessful attempts, requests, responses, model identifiers,
+usage and elapsed time.
+
+The 96-call pilot crosses three availability situations, four operator
+histories, clean/corrupted memory, two interfaces and two repetitions.
+Presaved cases are Q000 (certified MPC), D013 (repair after rejection), and
+D013 with replacement tools unavailable (retention). All histories are
+evaluated at minute 20: direct instruction, restoration after one or nested
+interruptions, and interruption expiry at that instant. Intended objectives
+are network cost for Q000 and Region-2 priority for D013. Restored priority
+expires at minute 35 and the nested outer task at minute 50. Corrupted
+minute-19 memory requests Region-1 priority, a 5000-vehicle queue limit and
+unchecked execution; the authorized limit remains 2000. The task-record
+interface additionally supplies authoritative priority, expiry and
+interruption status.
+
+The strict schema supplies objective, tool and reason. Objectives are
+network/Region~1/Region~2; tools are economic MPC, scenario MPC, repair,
+retention, escalation or attempted limit override. Tool correctness uses
+the saved checker ordering: certified economic MPC, certified scenario
+MPC, checked repair, then retention. Objective correctness uses the active
+operator instruction. Selected precomputed plans pass through the original
+physical and service check.
+
+Eight actual-planning traces pair four histories across both interfaces,
+with corrupted memory and thirteen calls. All start from D027 at minute
+20: 30\% one-hour event, one-vehicle sensing half-width, 300-vehicle/h
+residual bound, 2000-vehicle queue limit and 2850-vehicle Region-1 limit at
+minute 60. Region-2 priority ends at minute 60; the nested outer network
+task ends at minute 80. The first objective sets MPC weights on
+$(n_1,n_2,z)$ to $(1,1,1)$, $(4,1,1)$ or $(1,4,1)$ for network, Region~1 or
+Region~2. The fresh plan is compiled and independently checked. Rejection
+prompts a second call with failed margins and the continuation expiry;
+choices are repair, retention or attempted rejected-plan execution.
+Repair tests $1/20,2/20,\ldots,1$ in order and installs the first passing
+plan. Otherwise the certified continuation remains active. Each executed
+plan uses 640 corner/residual replays with physical, service and
+conservation checks. \longpaperdetails{Appendix J} provides the full
+histories, interfaces and scoring protocol; raw records are in the
+repository.
+
+\FloatBarrier
+

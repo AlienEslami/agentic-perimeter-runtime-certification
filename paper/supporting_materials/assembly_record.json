@@ -1,0 +1,323 @@
+{
+  "approved_introduction_change": {
+    "before": "Detailed proofs and numerical specifications appear in the appendices and supplement.",
+    "after": "Complete proofs accompany the results in Section~\\ref{sec:new-certification}; essential experimental settings appear in the appendix, and detailed reproduction material is available in the repository."
+  },
+  "root_changes": [
+    "Condensed model and task exposition; essential two-region equations retained.",
+    "Integrated exact demand record into Section 2.",
+    "Integrated task transitions and complete temporal-consistency argument into Section 3.",
+    "Moved secondary native-regulation specification to repository support.",
+    "Condensed operational discussion without changing conclusion or future work."
+  ],
+  "theory_migration.json": {
+    "source": "tmp/substantial_reduction_2026_10_08/original/main_reduced.tex",
+    "source_sha256": "dcaf9a6c57b6a1014e814b8b06414c44841ec1c45756687cdfd2b3cb5105a290",
+    "fragment": "tmp/substantial_reduction_2026_10_08/theory_section.tex",
+    "scope": "Replace reduced Section 4 only; remove former proof appendices B, C and F after rebasing their surviving labels and cross-references. Long and IEEE manuscripts remain untouched.",
+    "formal_results": [
+      "thm:new-plan-enclosure",
+      "prop:structure-plan",
+      "thm:new-plan-closure",
+      "thm:repair-grid",
+      "prop:repair-execution",
+      "prop:planned-handover",
+      "prop:network-localization",
+      "prop:backup-lyapunov",
+      "thm:backup-recursive-availability",
+      "cor:repair-recursive",
+      "prop:repair-cost"
+    ],
+    "formal_statement_changes": [
+      {
+        "label": "prop:structure-plan",
+        "change": "Only the location phrase in the assumption changes from Appendix C to this subsection; all mathematical hypotheses and conclusions are copied unchanged."
+      },
+      {
+        "label": "cor:repair-recursive",
+        "change": "Only Appendix F cross-reference becomes the main-section reference. The corollary moves after the terminal theorem; its number remains 1."
+      }
+    ],
+    "legacy_label_aliases": {
+      "app:new-enclosure-proof": "Main subsection Certification of one plan; replace appref with Section~ref.",
+      "app:structure-proof": "Main subsection Traffic structure and tighter bounds; replace appref with Section~ref.",
+      "app:repair-cost": "Alias for all of main Section 4. Prefer the specific terminal, handover, or cost result when context permits; replace appref with Section~ref.",
+      "sec:terminal-backup": "Main subsection Continuation beyond plan expiry; replace appref with Section~ref.",
+      "sec:terminal-backup-main": "Same main terminal subsection, retained for existing references."
+    },
+    "retained_labels": [
+      "app:new-enclosure-proof",
+      "app:repair-cost",
+      "app:structure-proof",
+      "cor:repair-recursive",
+      "eq:backup-computable-landing",
+      "eq:backup-terminal-landing",
+      "eq:network-class-queue",
+      "eq:network-jacobian",
+      "eq:network-transform",
+      "eq:network-transformed-flow",
+      "eq:new-affine-support",
+      "eq:new-component-comparison",
+      "eq:new-conservation-coordinates",
+      "eq:new-conservation-incidence",
+      "eq:new-error-comparison-proof",
+      "eq:new-error-dynamics",
+      "eq:new-inverse-coordinates",
+      "eq:new-local-bounds",
+      "eq:new-physical-rows",
+      "eq:new-plan-data",
+      "eq:new-recentering-bound",
+      "eq:new-self-inclusion",
+      "eq:new-service-rows",
+      "eq:new-service-support",
+      "eq:repair-cost-bound",
+      "eq:repair-family",
+      "eq:repair-selection",
+      "eq:structure-affine-set",
+      "eq:structure-continuous-radii",
+      "eq:structure-derived-classes",
+      "eq:structure-endpoint-update",
+      "eq:structure-matrix-tails",
+      "eq:structure-metzler",
+      "eq:structure-positive-factor",
+      "eq:structure-queue-flows",
+      "eq:structure-remainder-bound",
+      "eq:structure-remainder-identity",
+      "eq:structure-scalar-queue",
+      "eq:structure-signed-output",
+      "prop:backup-lyapunov",
+      "prop:network-localization",
+      "prop:planned-handover",
+      "prop:repair-cost",
+      "prop:repair-execution",
+      "prop:structure-plan",
+      "sec:network-extension",
+      "sec:new-certification",
+      "sec:new-execution",
+      "sec:planned-handover",
+      "sec:predictive-repair",
+      "sec:structure-certificate",
+      "sec:terminal-backup",
+      "sec:terminal-backup-main",
+      "thm:backup-recursive-availability",
+      "thm:new-plan-closure",
+      "thm:new-plan-enclosure",
+      "thm:repair-grid"
+    ],
+    "new_labels": [
+      "sec:repair-cost-bound"
+    ],
+    "moved_to_repository": [
+      {
+        "label": "eq:new-coordinate-transfer",
+        "reason": "Alternate coordinate-map transfer is outside the fixed-L two-region construction and fixed-allocation network result. All essential same-L recentering is retained in eq:new-recentering-bound and eq:structure-endpoint-update."
+      },
+      {
+        "label": "eq:new-stable-comparison",
+        "reason": "Equivalent expm1 evaluation shortcut and its near-zero regression record; the exact mathematical comparison integral and zero-rate definition remain in eq:new-component-comparison."
+      },
+      {
+        "label": "eq:new-exact-actuator-residuals",
+        "reason": "Repeated listing of constant gate residuals already specified by gate constraints; main text keeps exact-rational stored-command evaluation and closed-boundary zero handling."
+      }
+    ],
+    "removed_redundant_arguments": [
+      "Combined short main enclosure proof and full Appendix B first-exit proof into one complete proof beside Theorem 1.",
+      "Combined main signed-generator outline and Appendix C independent-bound/remainder/recentering derivations into one construction and complete proof beside Proposition 1.",
+      "Removed repeated forecast-reference explanation, rejection record descriptions, and duplicate service-coverage explanations after presenting the full execution record once.",
+      "Replaced brief terminal summary plus Appendix F repetition with the terminal definition, Lyapunov proposition, terminal theorem, corollary and their complete proofs in main text.",
+      "Removed duplicated unlabeled network flow differentiation displays while retaining cancellation, inverse mapping, rank argument and conservation argument.",
+      "Moved implementation regression inventories, series order 18, defect-polynomial degree, separate transformed-tail evaluation shortcut, and alternate-coordinate details to the long/repository implementation."
+    ],
+    "essential_proof_coverage": {
+      "nonsmooth_mean_value": "Local Lipschitz existence, generalized branch Jacobian hull and complete predictor-to-state mean-value argument retained.",
+      "first_exit": "Initial transformed-box containment, signed diagonal comparison, monotone scalar maximum, strict first-exit contradiction, continuation and recentering retained.",
+      "positivity_and_queue": "Zero-face invariance, negative-part comparison, conservation/global extension, ordered scalar queue comparison, branch crossing and branch-proved affine endpoint formulas retained.",
+      "signed_remainder": "Fixed initial xi, dependent remainder, complete segment corridor, Metzler matrix, nonnegative exponential, full-time inherited remainder, signed row supports and conversion/recentering retained.",
+      "numerics": "Outward arithmetic, exact constant command coefficients, matrix series tail inequalities and short derivation retained.",
+      "replacement_and_handover": "Actual state containment, full-set certification, all pending deadlines, original expiry, valid incumbent assumptions during preparation, future activation and exact executed schedule retained.",
+      "terminal": "Nonempty compact invariant backup set, all allowed uncertainty, implementable policy/initialization, entire terminal reachable-set inclusion, admitted service coverage, locally finite decisions and expiry transition retained.",
+      "cost": "Two fixed plans, common cost, paired initial state/disturbance, common compact domain including infeasible rejected reference, uniform constants and finite-horizon Gronwall proof retained.",
+      "network": "Fixed nonnegative column-stochastic allocation, independent admission queues, nonsmooth branch bounds, rank/minimum coordinate count and total inventory conservation retained."
+    },
+    "word_counts_approx": {
+      "old_section4_plus_B_C_F": 7939,
+      "fragment": 4930
+    },
+    "assembly_cautions": [
+      "Remove original appendices B, C and F so surviving equation labels and formal result labels occur only once.",
+      "Rebase outside appref calls to former proof-appendix labels as main Section references; all such labels retained as aliases.",
+      "No mandatory proof or hypothesis depends on the repository. Only implementation variants and reproduction details are external.",
+      "Network allocation corrections in former Appendix D are outside the fixed-allocation proposition. If D is removed, rebase its old references to the repository or use the explicit scope statement in Section 4.",
+      "Theorem/proposition numbering remains 1-4/1-6. Corollary 1 appears after Theorem 4 rather than before planned handover.",
+      "Main Section 4 uses the same formatting size as the manuscript; no font or spacing reduction is included."
+    ]
+  },
+  "numerical_migration.json": {
+    "source": "tmp/substantial_reduction_2026_10_08/original/main_reduced.tex",
+    "source_sha256": "dcaf9a6c57b6a1014e814b8b06414c44841ec1c45756687cdfd2b3cb5105a290",
+    "generated_files": [
+      "numerical_section.tex",
+      "experimental_notes.tex"
+    ],
+    "scope": "Replace the complete Numerical Evaluation section; replace old G-J with one Essential Experimental Settings appendix. Do not edit long or IEEE sources.",
+    "macro_requirements": {
+      "reproductiondetails": "Define \\reproductiondetails{study name} as a readable link to the new GitHub reproduction guide."
+    },
+    "required_core_labels": [
+      "app:new-model",
+      "eq:new-plant",
+      "prop:planned-handover",
+      "sec:benchmark-formulation",
+      "thm:repair-grid"
+    ],
+    "retained_defined_labels": [
+      "app:benchmark-details",
+      "app:experimental-settings",
+      "app:network-transfer",
+      "app:reusable-benchmark",
+      "app:sequential-handover",
+      "eq:benchmark-repair-metrics",
+      "sec:controller-benchmarks",
+      "sec:delayed-handover-results",
+      "sec:network-transfer-results",
+      "sec:new-evidence",
+      "sec:new-incident-protocol",
+      "sec:new-mpc-results",
+      "sec:primary-memory-pressure",
+      "sec:queue-live-pilot",
+      "sec:repair-results",
+      "sec:sequential-handover-results",
+      "sec:structure-online",
+      "sec:structure-results",
+      "sec:supp-execution",
+      "sec:supp-queue-settings",
+      "sec:task-state-live",
+      "supp:detail:sec:delayed-handover-results",
+      "tab:benchmark-api-execution",
+      "tab:benchmark-api-pilot",
+      "tab:benchmark-conflict",
+      "tab:benchmark-deadlines",
+      "tab:delayed-handover",
+      "tab:sequential-handover",
+      "tab:structure-frontier"
+    ],
+    "removed_defined_labels": [
+      "app:compatibility-protocol",
+      "app:structure-online-details",
+      "eq:benchmark-cbf",
+      "eq:benchmark-handover-box",
+      "eq:network-computation",
+      "sec:new-numerical-audit",
+      "sec:supp-structure",
+      "tab:benchmark-regulation-queue",
+      "tab:eight-event-compatibility-summary",
+      "tab:network-transfer-complete",
+      "tab:new-coordinate-ablation",
+      "tab:structure-online",
+      "tab:supp-sequential-coverage"
+    ],
+    "remaining_references_to_removed_labels_outside_owned_blocks": [],
+    "preserved_tables": [
+      {
+        "label": "tab:structure-frontier",
+        "preserved_exactly": true,
+        "sha256": "7fb753b1aa237800ce4ebb6dd9ae15b9cffce371e15ebe7f4f67e5add8f09c3a",
+        "fragment_matches_original": true,
+        "assembled_matches_original": true
+      },
+      {
+        "label": "tab:benchmark-deadlines",
+        "preserved_exactly": true,
+        "sha256": "62301986420f395fffe39a61714fa54826f39efebba9870ac98a2831c5139a1e",
+        "fragment_matches_original": true,
+        "assembled_matches_original": true
+      },
+      {
+        "label": "tab:benchmark-conflict",
+        "preserved_exactly": true,
+        "sha256": "7cb3cc68309eb58630c1e5df14713717e7f9706d9b341354ba30b0a6eb6d2ca0",
+        "fragment_matches_original": true,
+        "assembled_matches_original": true
+      },
+      {
+        "label": "tab:sequential-handover",
+        "preserved_exactly": true,
+        "sha256": "40fdc249533a0bd788715a8f34c525ec4f8e0e96c3090662cb57969e9de9f3cd",
+        "fragment_matches_original": true,
+        "assembled_matches_original": true
+      },
+      {
+        "label": "tab:delayed-handover",
+        "preserved_exactly": true,
+        "sha256": "54719dc8c5eaab4b0cd7538de786a3e7fa5482afcff220228033022487189dec",
+        "fragment_matches_original": true,
+        "assembled_matches_original": true
+      }
+    ],
+    "repair_metric_equations_preserved": true,
+    "source_word_counts": {
+      "old_numerical_section": 2499,
+      "new_numerical_section": 1925,
+      "new_essential_notes": 564
+    },
+    "studies_preserved": [
+      "Task Q: 12 contracts, 12/12 unchanged certified plans, 960 matched feasible comparisons, median/range TTS reduction.",
+      "Coordinate/uncertainty comparison, six-row structure frontier, and binding-service target/margin/TTS result.",
+      "Connected-network demonstration at d=25, exact residual contracts and deadline bounds; essential ring model and settings.",
+      "Task D: all 72 development and eight held-out combinations; 640 realizations per constant plan; sample/family counts; reserve refresh.",
+      "Six-policy matched conflict and the repair improvement/delay/recovered-benefit metrics across 24,320 realizations and 38 contracts.",
+      "Successive changes: three prespecified cases, full 36-pair/30-eligible scan, three overflow cases, D025 overflow and matched cost comparison.",
+      "51 future-handover cases, 30 replacements, 21 retentions, three late one-minute results and 32,640 feasible trajectories.",
+      "Separate 96-call routing pilot and eight actual-planning traces/thirteen calls, with exact per-interface objective/tool/repair/traffic counts."
+    ],
+    "studies_or_detail_moved_to_github": [
+      {
+        "material": "24-case Task-R pure controller comparison and its detailed four-state protocol",
+        "original_location": "long Section 5.1 / Appendix G.2",
+        "repository": "benchmarks/reusable_perimeter_suite_2026-09-26/results/regulation/; PROTOCOL.md; run_regulation.py"
+      },
+      {
+        "material": "Eight-event, 192-attempt compatibility reporting and full primary-event metric table",
+        "original_location": "long Section 5.1 / Appendices G.1 and H.3",
+        "repository": "archive/historical_studies/mpc_compatibility_2026_09_10.zip; paper/reproduction/experimental_details.tex"
+      },
+      {
+        "material": "17-case online comparison, complete target menu, figure/table, adverse observation realization",
+        "original_location": "long Appendix H.2",
+        "repository": "archive/historical_studies/online_structure_2026_09_10.zip; restored output/package/FOUNDATION_MFD_PARTB_REVIEWED_2026-09-10_ONLINE-STRUCTURE/ with STRUCTURE_ONLINE_RUNTIME_PROTOCOL.md, ONLINE_STRUCTURE_REVISION_REPORT.md, reproducibility/results/mfd_structure_online_runtime_results.json and reproducibility/results/sor/"
+      },
+      {
+        "material": "Full sequential six-case coverage/traffic tables and independent integration details",
+        "original_location": "long Appendix G.7",
+        "repository": "benchmarks/reusable_perimeter_suite_2026-09-26/SEQUENTIAL_AUTHORITY_PROTOCOL.md; benchmarks/reusable_perimeter_suite_2026-09-26/results/sequential_authority_2026-10-01/"
+      },
+      {
+        "material": "Full sixteen-attempt ring table, matrix-series/step-halving implementation and dense complexity bound",
+        "original_location": "long Appendix I",
+        "repository": "benchmarks/connected_network_2026-09-11/MULTIREGION_TRANSFER_PROTOCOL.md; reproducibility/results/mfd_multiregion_transfer_results.json and compressed proofs within the same study folder"
+      },
+      {
+        "material": "Solver tolerances/starts, controller correction implementation, compiler rounding, validation logs and detailed API histories",
+        "original_location": "long Appendices G-J",
+        "repository": "paper/reproduction/implementation_details.tex; paper/reproduction/experimental_details.tex; benchmarks/reusable_perimeter_suite_2026-09-26/ and linked saved study records"
+      }
+    ],
+    "root_followup_text_checks": [
+      "Core network section currently says app:network-transfer states allocation corrections and dimension-dependent costs. The new notes supply only the ring setup; point allocation corrections to the retained network-assumptions material and implementation complexity to the reproduction guide.",
+      "Existing Section 6.2 mentions queue-capped structure versus all-state deadline sweeps; both distinctions are retained in the replacement.",
+      "All tab:benchmark-regulation-queue, tab:eight-event-compatibility-summary, tab:new-coordinate-ablation and extended-online/network-table references inside removed blocks are eliminated. Use the migration list if any external metadata still references them.",
+      "The app:sequential-handover and sec:supp-execution aliases now identify essential experimental settings; full historical or detailed outcome references should point to the reproduction guide.",
+      "The body retains finite validity/expiry statements. It does not claim indefinite simulated operation or identify sampled passes with full-family guarantees."
+    ],
+    "notes": "Table blocks and repair formulas were verified against tmp/substantial_reduction_2026_10_08/original/main_reduced.tex, the immutable pre-assembly backup. Essential notes retain the exact Q/D center and original continuation, residual profiles, ordered repair grid, handover conversion, ring setup, agent objectives and scoring. No new experiments or live calls were performed.",
+    "source_sha256_normalized_lf": "8cb7d13b60dbafddbc572a5083ccc52a9bec941be029b8735ed74a33cec23be8",
+    "verification": {
+      "comparison": "Exact complete table environments after universal newline normalization only; original backup compared with both the authored fragment and assembled reduced source.",
+      "assembled_source": "output/package/PERIMETER_SEQUENTIAL_HANDOVER_2026-10-01/main_reduced.tex",
+      "reproduction_guide": "paper/reproduction/REPRODUCING_THE_REDUCED_PAPER.md",
+      "numerical_reruns": false
+    },
+    "repair_metric_verification": "Original, fragment and assembled equation contents match after whitespace normalization."
+  }
+}

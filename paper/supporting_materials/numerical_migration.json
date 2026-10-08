@@ -1,0 +1,167 @@
+{
+  "source": "tmp/substantial_reduction_2026_10_08/original/main_reduced.tex",
+  "source_sha256": "dcaf9a6c57b6a1014e814b8b06414c44841ec1c45756687cdfd2b3cb5105a290",
+  "generated_files": [
+    "numerical_section.tex",
+    "experimental_notes.tex"
+  ],
+  "scope": "Replace the complete Numerical Evaluation section; replace old G-J with one Essential Experimental Settings appendix. Do not edit long or IEEE sources.",
+  "macro_requirements": {
+    "reproductiondetails": "Define \\reproductiondetails{study name} as a readable link to the new GitHub reproduction guide."
+  },
+  "required_core_labels": [
+    "app:new-model",
+    "eq:new-plant",
+    "prop:planned-handover",
+    "sec:benchmark-formulation",
+    "thm:repair-grid"
+  ],
+  "retained_defined_labels": [
+    "app:benchmark-details",
+    "app:experimental-settings",
+    "app:network-transfer",
+    "app:reusable-benchmark",
+    "app:sequential-handover",
+    "eq:benchmark-repair-metrics",
+    "sec:controller-benchmarks",
+    "sec:delayed-handover-results",
+    "sec:network-transfer-results",
+    "sec:new-evidence",
+    "sec:new-incident-protocol",
+    "sec:new-mpc-results",
+    "sec:primary-memory-pressure",
+    "sec:queue-live-pilot",
+    "sec:repair-results",
+    "sec:sequential-handover-results",
+    "sec:structure-online",
+    "sec:structure-results",
+    "sec:supp-execution",
+    "sec:supp-queue-settings",
+    "sec:task-state-live",
+    "supp:detail:sec:delayed-handover-results",
+    "tab:benchmark-api-execution",
+    "tab:benchmark-api-pilot",
+    "tab:benchmark-conflict",
+    "tab:benchmark-deadlines",
+    "tab:delayed-handover",
+    "tab:sequential-handover",
+    "tab:structure-frontier"
+  ],
+  "removed_defined_labels": [
+    "app:compatibility-protocol",
+    "app:structure-online-details",
+    "eq:benchmark-cbf",
+    "eq:benchmark-handover-box",
+    "eq:network-computation",
+    "sec:new-numerical-audit",
+    "sec:supp-structure",
+    "tab:benchmark-regulation-queue",
+    "tab:eight-event-compatibility-summary",
+    "tab:network-transfer-complete",
+    "tab:new-coordinate-ablation",
+    "tab:structure-online",
+    "tab:supp-sequential-coverage"
+  ],
+  "remaining_references_to_removed_labels_outside_owned_blocks": [],
+  "preserved_tables": [
+    {
+      "label": "tab:structure-frontier",
+      "preserved_exactly": true,
+      "sha256": "7fb753b1aa237800ce4ebb6dd9ae15b9cffce371e15ebe7f4f67e5add8f09c3a",
+      "fragment_matches_original": true,
+      "assembled_matches_original": true
+    },
+    {
+      "label": "tab:benchmark-deadlines",
+      "preserved_exactly": true,
+      "sha256": "62301986420f395fffe39a61714fa54826f39efebba9870ac98a2831c5139a1e",
+      "fragment_matches_original": true,
+      "assembled_matches_original": true
+    },
+    {
+      "label": "tab:benchmark-conflict",
+      "preserved_exactly": true,
+      "sha256": "7cb3cc68309eb58630c1e5df14713717e7f9706d9b341354ba30b0a6eb6d2ca0",
+      "fragment_matches_original": true,
+      "assembled_matches_original": true
+    },
+    {
+      "label": "tab:sequential-handover",
+      "preserved_exactly": true,
+      "sha256": "40fdc249533a0bd788715a8f34c525ec4f8e0e96c3090662cb57969e9de9f3cd",
+      "fragment_matches_original": true,
+      "assembled_matches_original": true
+    },
+    {
+      "label": "tab:delayed-handover",
+      "preserved_exactly": true,
+      "sha256": "54719dc8c5eaab4b0cd7538de786a3e7fa5482afcff220228033022487189dec",
+      "fragment_matches_original": true,
+      "assembled_matches_original": true
+    }
+  ],
+  "repair_metric_equations_preserved": true,
+  "source_word_counts": {
+    "old_numerical_section": 2499,
+    "new_numerical_section": 1925,
+    "new_essential_notes": 564
+  },
+  "studies_preserved": [
+    "Task Q: 12 contracts, 12/12 unchanged certified plans, 960 matched feasible comparisons, median/range TTS reduction.",
+    "Coordinate/uncertainty comparison, six-row structure frontier, and binding-service target/margin/TTS result.",
+    "Connected-network demonstration at d=25, exact residual contracts and deadline bounds; essential ring model and settings.",
+    "Task D: all 72 development and eight held-out combinations; 640 realizations per constant plan; sample/family counts; reserve refresh.",
+    "Six-policy matched conflict and the repair improvement/delay/recovered-benefit metrics across 24,320 realizations and 38 contracts.",
+    "Successive changes: three prespecified cases, full 36-pair/30-eligible scan, three overflow cases, D025 overflow and matched cost comparison.",
+    "51 future-handover cases, 30 replacements, 21 retentions, three late one-minute results and 32,640 feasible trajectories.",
+    "Separate 96-call routing pilot and eight actual-planning traces/thirteen calls, with exact per-interface objective/tool/repair/traffic counts."
+  ],
+  "studies_or_detail_moved_to_github": [
+    {
+      "material": "24-case Task-R pure controller comparison and its detailed four-state protocol",
+      "original_location": "long Section 5.1 / Appendix G.2",
+      "repository": "benchmarks/reusable_perimeter_suite_2026-09-26/results/regulation/; PROTOCOL.md; run_regulation.py"
+    },
+    {
+      "material": "Eight-event, 192-attempt compatibility reporting and full primary-event metric table",
+      "original_location": "long Section 5.1 / Appendices G.1 and H.3",
+      "repository": "archive/historical_studies/mpc_compatibility_2026_09_10.zip; paper/reproduction/experimental_details.tex"
+    },
+    {
+      "material": "17-case online comparison, complete target menu, figure/table, adverse observation realization",
+      "original_location": "long Appendix H.2",
+      "repository": "archive/historical_studies/online_structure_2026_09_10.zip; restored output/package/FOUNDATION_MFD_PARTB_REVIEWED_2026-09-10_ONLINE-STRUCTURE/ with STRUCTURE_ONLINE_RUNTIME_PROTOCOL.md, ONLINE_STRUCTURE_REVISION_REPORT.md, reproducibility/results/mfd_structure_online_runtime_results.json and reproducibility/results/sor/"
+    },
+    {
+      "material": "Full sequential six-case coverage/traffic tables and independent integration details",
+      "original_location": "long Appendix G.7",
+      "repository": "benchmarks/reusable_perimeter_suite_2026-09-26/SEQUENTIAL_AUTHORITY_PROTOCOL.md; benchmarks/reusable_perimeter_suite_2026-09-26/results/sequential_authority_2026-10-01/"
+    },
+    {
+      "material": "Full sixteen-attempt ring table, matrix-series/step-halving implementation and dense complexity bound",
+      "original_location": "long Appendix I",
+      "repository": "benchmarks/connected_network_2026-09-11/MULTIREGION_TRANSFER_PROTOCOL.md; reproducibility/results/mfd_multiregion_transfer_results.json and compressed proofs within the same study folder"
+    },
+    {
+      "material": "Solver tolerances/starts, controller correction implementation, compiler rounding, validation logs and detailed API histories",
+      "original_location": "long Appendices G-J",
+      "repository": "paper/reproduction/implementation_details.tex; paper/reproduction/experimental_details.tex; benchmarks/reusable_perimeter_suite_2026-09-26/ and linked saved study records"
+    }
+  ],
+  "root_followup_text_checks": [
+    "Core network section currently says app:network-transfer states allocation corrections and dimension-dependent costs. The new notes supply only the ring setup; point allocation corrections to the retained network-assumptions material and implementation complexity to the reproduction guide.",
+    "Existing Section 6.2 mentions queue-capped structure versus all-state deadline sweeps; both distinctions are retained in the replacement.",
+    "All tab:benchmark-regulation-queue, tab:eight-event-compatibility-summary, tab:new-coordinate-ablation and extended-online/network-table references inside removed blocks are eliminated. Use the migration list if any external metadata still references them.",
+    "The app:sequential-handover and sec:supp-execution aliases now identify essential experimental settings; full historical or detailed outcome references should point to the reproduction guide.",
+    "The body retains finite validity/expiry statements. It does not claim indefinite simulated operation or identify sampled passes with full-family guarantees."
+  ],
+  "notes": "Table blocks and repair formulas were verified against tmp/substantial_reduction_2026_10_08/original/main_reduced.tex, the immutable pre-assembly backup. Essential notes retain the exact Q/D center and original continuation, residual profiles, ordered repair grid, handover conversion, ring setup, agent objectives and scoring. No new experiments or live calls were performed.",
+  "source_sha256_normalized_lf": "8cb7d13b60dbafddbc572a5083ccc52a9bec941be029b8735ed74a33cec23be8",
+  "verification": {
+    "comparison": "Exact complete table environments after universal newline normalization only; original backup compared with both the authored fragment and assembled reduced source.",
+    "assembled_source": "output/package/PERIMETER_SEQUENTIAL_HANDOVER_2026-10-01/main_reduced.tex",
+    "reproduction_guide": "paper/reproduction/REPRODUCING_THE_REDUCED_PAPER.md",
+    "numerical_reruns": false
+  },
+  "repair_metric_verification": "Original, fragment and assembled equation contents match after whitespace normalization."
+}

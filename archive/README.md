@@ -4,6 +4,8 @@ This directory preserves material moved out of the standalone manuscript on 7 Oc
 
 ## Contents
 
+- `reduced_manuscript_2026_10_08_before_substantial_reduction/` preserves the exact package with the preceding 70-page reduced manuscript, before consolidation to 44 pages. The long paper remains unchanged.
+
 - `long_reduced_2026_10_08_before_language_revision/` preserves the exact source package after declaration cleanup and before the approved plain-language changes.
 
 - `long_reduced_2026_10_08_initial/` preserves the exact long/reduced package before the subsequent author-approved declaration and editorial-status cleanup.

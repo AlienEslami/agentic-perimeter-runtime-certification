@@ -1,0 +1,1 @@
+This archive preserves the exact source package after the 8 October plain-language revision and before the substantial reduction of the reduced manuscript. It contains the 79-page long paper, its 33-page IEEE reading layout, and the preceding 70-page reduced paper. Current files are in paper/. The long manuscript and IEEE layout are unchanged by the substantial reduction.

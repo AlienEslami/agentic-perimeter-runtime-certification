@@ -64,18 +64,12 @@ The unchanged `scripts/finalize_benchmark_handover_2026_09_26.py` validates dela
 
 The 7 October consolidation adds the cited historical local-agent, routing, fixed-controller/repair, eight-event MPC and complete online comparison records in `archive/historical_studies/`. The preceding complete source package and supplement are preserved in `archive/companion_manuscript_2026_10_06/`. See `paper/STANDALONE_MATERIALS_MAP.md` and `archive/README.md` for scope and historical-layout requirements. Duplicate output trees, credentials, temporary files and Python caches are omitted.
 
-## Revision and release
+## Current manuscripts and reproduction guide
 
-Copied numerical algorithms and recorded values are preserved. The 8 October 2026 long and reduced manuscripts retain the complete formal argument and essential experimental protocols. Result headings are plain with brief preceding goal explanations. The reduced version is 70 pages, compared with 79 in the same layout for the long version, and refers to it for extended experimental reporting. All statements, proofs and distinct displayed mathematics remain; the abstract and introduction are unchanged from the approved version. Additional historical material is archived with preservation hashes. Public availability, license choice and remaining author/journal checks are tracked in `PUBLIC_RELEASE_CHECKLIST.md`.
+The reduced manuscript is now **44 pages**, down from 70 (26 pages, 37.1%). The **79-page long paper** and its **33-page IEEE reading layout** are unchanged. All eleven formal results and their complete proofs remain in the reduced paper's main text. The essential experimental settings remain in one short appendix. Detailed implementation, reproduction procedures and secondary reporting are mapped in [the reproduction guide](paper/supporting_materials/REPRODUCING_THE_REDUCED_PAPER.md).
 
-The subsequent 8 October author-approved cleanup removes the funding section,
-consolidates Ali Eslami's writing roles, adds Jiangbo Yu's review/editing role,
-and removes editorial manuscript-preparation notes. Repository visibility
-remains private; the manuscript retains its neutral repository link.
+The abstract is unchanged; the introduction changes only its final roadmap sentence, explicitly approved to identify the new proof locations. The conclusion, future work and author declarations are unchanged. Typography and numerical records are preserved. No new simulations or live calls were made for the reduction.
 
-The latest 8 October plain-language revision clarifies certificate
-guarantees, repair information, terminal continuation and experimental
-scope in both versions. Displayed mathematics and numerical data are
-unchanged. The latest checks and source hashes are in
-`paper/PLAIN_LANGUAGE_QA_2026-10-08.json`. The exact preceding source package
-is archived in `archive/long_reduced_2026_10_08_before_language_revision/`.
+Current checks and hashes are in [SUBSTANTIAL_REDUCTION_QA_2026-10-08.json](paper/SUBSTANTIAL_REDUCTION_QA_2026-10-08.json), and the [reduction notes](paper/SUBSTANTIAL_REDUCTION_NOTES_2026-10-08.md) describe the changes. The [exact preceding package](archive/reduced_manuscript_2026_10_08_before_substantial_reduction/) is preserved with a checksum. Earlier audits describe their historical revisions.
+
+Public availability, license choice and remaining author/journal checks are tracked in `PUBLIC_RELEASE_CHECKLIST.md`. Repository visibility remains private.

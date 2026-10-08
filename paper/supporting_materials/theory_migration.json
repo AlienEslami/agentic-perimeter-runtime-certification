@@ -1,0 +1,143 @@
+{
+  "source": "tmp/substantial_reduction_2026_10_08/original/main_reduced.tex",
+  "source_sha256": "dcaf9a6c57b6a1014e814b8b06414c44841ec1c45756687cdfd2b3cb5105a290",
+  "fragment": "tmp/substantial_reduction_2026_10_08/theory_section.tex",
+  "scope": "Replace reduced Section 4 only; remove former proof appendices B, C and F after rebasing their surviving labels and cross-references. Long and IEEE manuscripts remain untouched.",
+  "formal_results": [
+    "thm:new-plan-enclosure",
+    "prop:structure-plan",
+    "thm:new-plan-closure",
+    "thm:repair-grid",
+    "prop:repair-execution",
+    "prop:planned-handover",
+    "prop:network-localization",
+    "prop:backup-lyapunov",
+    "thm:backup-recursive-availability",
+    "cor:repair-recursive",
+    "prop:repair-cost"
+  ],
+  "formal_statement_changes": [
+    {
+      "label": "prop:structure-plan",
+      "change": "Only the location phrase in the assumption changes from Appendix C to this subsection; all mathematical hypotheses and conclusions are copied unchanged."
+    },
+    {
+      "label": "cor:repair-recursive",
+      "change": "Only Appendix F cross-reference becomes the main-section reference. The corollary moves after the terminal theorem; its number remains 1."
+    }
+  ],
+  "legacy_label_aliases": {
+    "app:new-enclosure-proof": "Main subsection Certification of one plan; replace appref with Section~ref.",
+    "app:structure-proof": "Main subsection Traffic structure and tighter bounds; replace appref with Section~ref.",
+    "app:repair-cost": "Alias for all of main Section 4. Prefer the specific terminal, handover, or cost result when context permits; replace appref with Section~ref.",
+    "sec:terminal-backup": "Main subsection Continuation beyond plan expiry; replace appref with Section~ref.",
+    "sec:terminal-backup-main": "Same main terminal subsection, retained for existing references."
+  },
+  "retained_labels": [
+    "app:new-enclosure-proof",
+    "app:repair-cost",
+    "app:structure-proof",
+    "cor:repair-recursive",
+    "eq:backup-computable-landing",
+    "eq:backup-terminal-landing",
+    "eq:network-class-queue",
+    "eq:network-jacobian",
+    "eq:network-transform",
+    "eq:network-transformed-flow",
+    "eq:new-affine-support",
+    "eq:new-component-comparison",
+    "eq:new-conservation-coordinates",
+    "eq:new-conservation-incidence",
+    "eq:new-error-comparison-proof",
+    "eq:new-error-dynamics",
+    "eq:new-inverse-coordinates",
+    "eq:new-local-bounds",
+    "eq:new-physical-rows",
+    "eq:new-plan-data",
+    "eq:new-recentering-bound",
+    "eq:new-self-inclusion",
+    "eq:new-service-rows",
+    "eq:new-service-support",
+    "eq:repair-cost-bound",
+    "eq:repair-family",
+    "eq:repair-selection",
+    "eq:structure-affine-set",
+    "eq:structure-continuous-radii",
+    "eq:structure-derived-classes",
+    "eq:structure-endpoint-update",
+    "eq:structure-matrix-tails",
+    "eq:structure-metzler",
+    "eq:structure-positive-factor",
+    "eq:structure-queue-flows",
+    "eq:structure-remainder-bound",
+    "eq:structure-remainder-identity",
+    "eq:structure-scalar-queue",
+    "eq:structure-signed-output",
+    "prop:backup-lyapunov",
+    "prop:network-localization",
+    "prop:planned-handover",
+    "prop:repair-cost",
+    "prop:repair-execution",
+    "prop:structure-plan",
+    "sec:network-extension",
+    "sec:new-certification",
+    "sec:new-execution",
+    "sec:planned-handover",
+    "sec:predictive-repair",
+    "sec:structure-certificate",
+    "sec:terminal-backup",
+    "sec:terminal-backup-main",
+    "thm:backup-recursive-availability",
+    "thm:new-plan-closure",
+    "thm:new-plan-enclosure",
+    "thm:repair-grid"
+  ],
+  "new_labels": [
+    "sec:repair-cost-bound"
+  ],
+  "moved_to_repository": [
+    {
+      "label": "eq:new-coordinate-transfer",
+      "reason": "Alternate coordinate-map transfer is outside the fixed-L two-region construction and fixed-allocation network result. All essential same-L recentering is retained in eq:new-recentering-bound and eq:structure-endpoint-update."
+    },
+    {
+      "label": "eq:new-stable-comparison",
+      "reason": "Equivalent expm1 evaluation shortcut and its near-zero regression record; the exact mathematical comparison integral and zero-rate definition remain in eq:new-component-comparison."
+    },
+    {
+      "label": "eq:new-exact-actuator-residuals",
+      "reason": "Repeated listing of constant gate residuals already specified by gate constraints; main text keeps exact-rational stored-command evaluation and closed-boundary zero handling."
+    }
+  ],
+  "removed_redundant_arguments": [
+    "Combined short main enclosure proof and full Appendix B first-exit proof into one complete proof beside Theorem 1.",
+    "Combined main signed-generator outline and Appendix C independent-bound/remainder/recentering derivations into one construction and complete proof beside Proposition 1.",
+    "Removed repeated forecast-reference explanation, rejection record descriptions, and duplicate service-coverage explanations after presenting the full execution record once.",
+    "Replaced brief terminal summary plus Appendix F repetition with the terminal definition, Lyapunov proposition, terminal theorem, corollary and their complete proofs in main text.",
+    "Removed duplicated unlabeled network flow differentiation displays while retaining cancellation, inverse mapping, rank argument and conservation argument.",
+    "Moved implementation regression inventories, series order 18, defect-polynomial degree, separate transformed-tail evaluation shortcut, and alternate-coordinate details to the long/repository implementation."
+  ],
+  "essential_proof_coverage": {
+    "nonsmooth_mean_value": "Local Lipschitz existence, generalized branch Jacobian hull and complete predictor-to-state mean-value argument retained.",
+    "first_exit": "Initial transformed-box containment, signed diagonal comparison, monotone scalar maximum, strict first-exit contradiction, continuation and recentering retained.",
+    "positivity_and_queue": "Zero-face invariance, negative-part comparison, conservation/global extension, ordered scalar queue comparison, branch crossing and branch-proved affine endpoint formulas retained.",
+    "signed_remainder": "Fixed initial xi, dependent remainder, complete segment corridor, Metzler matrix, nonnegative exponential, full-time inherited remainder, signed row supports and conversion/recentering retained.",
+    "numerics": "Outward arithmetic, exact constant command coefficients, matrix series tail inequalities and short derivation retained.",
+    "replacement_and_handover": "Actual state containment, full-set certification, all pending deadlines, original expiry, valid incumbent assumptions during preparation, future activation and exact executed schedule retained.",
+    "terminal": "Nonempty compact invariant backup set, all allowed uncertainty, implementable policy/initialization, entire terminal reachable-set inclusion, admitted service coverage, locally finite decisions and expiry transition retained.",
+    "cost": "Two fixed plans, common cost, paired initial state/disturbance, common compact domain including infeasible rejected reference, uniform constants and finite-horizon Gronwall proof retained.",
+    "network": "Fixed nonnegative column-stochastic allocation, independent admission queues, nonsmooth branch bounds, rank/minimum coordinate count and total inventory conservation retained."
+  },
+  "word_counts_approx": {
+    "old_section4_plus_B_C_F": 7939,
+    "fragment": 4930
+  },
+  "assembly_cautions": [
+    "Remove original appendices B, C and F so surviving equation labels and formal result labels occur only once.",
+    "Rebase outside appref calls to former proof-appendix labels as main Section references; all such labels retained as aliases.",
+    "No mandatory proof or hypothesis depends on the repository. Only implementation variants and reproduction details are external.",
+    "Network allocation corrections in former Appendix D are outside the fixed-allocation proposition. If D is removed, rebase its old references to the repository or use the explicit scope statement in Section 4.",
+    "Theorem/proposition numbering remains 1-4/1-6. Corollary 1 appears after Theorem 4 rather than before planned handover.",
+    "Main Section 4 uses the same formatting size as the manuscript; no font or spacing reduction is included."
+  ]
+}

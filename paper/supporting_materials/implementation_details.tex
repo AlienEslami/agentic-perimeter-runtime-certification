@@ -1,0 +1,748 @@
+\section{Initial-Plan Data and Certificate Construction}
+\label{app:new-model}
+
+\subsection{Queue-aware model and reference controllers}
+
+The seven-state model in \eqref{eq:new-plant} uses vehicle counts normalized
+by 100 vehicles and time measured in hours. In the primitive-demand order
+$(11,12,10,22,21,20)$, the fixed internal demands are
+\begin{equation}
+\begin{aligned}
+\boldsymbol d=(&74.85630,37.42815,18.714075,\\
+              &44.85630,7.42815,0.748563).
+\end{aligned}
+\label{eq:new-incident-demands}
+\end{equation}
+The displayed decimals are rounded; the exact stored binary coefficients
+define the implemented field and are included in every proof. With base
+exterior admission 60 and $u^\star=(0.5,0.5,0.5,0.52)$, the regional
+state $(30,30,15,15,5,5)$ is an equilibrium and the exterior queue is 2.
+The total base offered input is 244.031538 normalized units/hour, of which
+the exterior stream supplies 24.587\%. These demands are reconstructed from
+the specified equilibrium and then remain fixed across all events and
+reference choices. The separate stationary record is retained in the earlier-study research package.
+
+To construct a feedback reference with regional totals $(N_1,N_2)$ and
+reference exterior arrival $A$, let $v_i=v(N_i)$, set
+$u_{20}^\star=0.52$, $z^\star=2$ and $\pi=1/2$. Steady class balances give
+\begin{equation}
+\begin{aligned}
+q_{11}^\star&=d_{11}+d_{21}+\pi A,&
+q_{22}^\star&=d_{22}+d_{12}+(1-\pi)A,\\
+n_{11}^\star&=q_{11}^\star/v_1,&
+n_{22}^\star&=q_{22}^\star/v_2,\\
+u_{12}^\star&=\frac{d_{12}+d_{10}}{G(N_1)-q_{11}^\star},&
+n_{10}^\star&=\frac{d_{10}}{u_{12}^\star v_1},\\
+n_{20}^\star&=\frac{d_{10}+d_{20}}{0.52v_2},&
+n_{21}^\star&=N_2-n_{22}^\star-n_{20}^\star,\\
+u_{21}^\star&=\frac{d_{21}+\pi A}{v_2n_{21}^\star},&
+u_{02}^\star&=A/120.
+\end{aligned}
+\label{eq:new-targets}
+\end{equation}
+Linearization uses the strict capacity branch at the reference. The
+continuous-time LQR weights are
+$Q=\operatorname{diag}(1,1,0.1,0.1,0.1,0.1,2)$ and $R=3000I_4$.
+The installed negative feedback gains give
+$u=u^\star+K(x-x^\star)$ for reference triples
+$(N_1,N_2,A)=(20,22,72),(22,24,78),(24,26,84)$.
+Certification uses the actual event forecast, accounts for its difference
+from the controller-design arrival $A$, and includes the full equilibrium
+residual computed with the stored coefficients.
+
+The controller-design search also includes $(18,20)$, reference arrivals
+$60,72,78,84$, and input penalties $3000,30000,300000,3000000$.
+All 64 outcomes are retained. The three controllers are the lowest-cost candidates for three
+distinct target pairs on the selection grid. Two additional 45-minute
+events broaden the validation set.
+
+\section{Enclosure Proof and Verified Implementation}
+\label{app:new-enclosure-proof}
+
+\subsection{Conservation coordinates and nonsmooth flow}
+
+The model equations and destination definitions are specified in
+Section~\ref{sec:new-problem}; \appref{app:new-model} supplies the controller-design
+parameters. For admission fraction $\pi$, its physical incidence is
+$b_a=(0,1,0,1-\pi,0,0,-1)^\top$. The transformation
+\eqref{eq:new-conservation-coordinates} has inverse
+\begin{equation}
+ \begin{aligned}
+ n_1&=y_1+y_2+y_3,&
+ n_2&=y_4+y_5+y_6-y_7,\\
+ n_{11}&=y_1,&n_{22}&=y_4-(1-\pi)y_7,\\
+ n_{10}&=y_3,&n_{20}&=y_6,\qquad z=y_7.
+ \end{aligned}
+ \label{eq:new-inverse-coordinates}
+\end{equation}
+Direct multiplication gives \eqref{eq:new-conservation-incidence}. Adding
+each receiving-class equation to its share of $\dot z=\Lambda-a$ cancels
+admission, while $n_1+n_2+z=\sum_{i=1}^{6}y_i$. These identities use a fixed
+destination fraction and explicit conservation of waiting vehicles.
+
+The class production $q_{ij}=n_{ij}G(n_i)/n_i$ is evaluated through the
+polynomial speed $G(n_i)/n_i$, extended continuously at zero. Under affine
+feedback the two admission branches are affine in the physical state, and
+their minimum is continuous and locally Lipschitz. Consequently the
+closed-loop field is locally Lipschitz in state and measurable in time.
+Bounded measurable residuals give unique absolutely continuous solutions
+locally; the compact enclosures below continue them throughout each verified
+finite plan.
+
+At a branch surface, the generalized Jacobian is contained in the convex hull
+of the smooth branch Jacobians. This follows from the definition as limits
+of classical Jacobians at differentiability points and their convex hull.
+Both branches must be bounded on any outer predictor set intersecting that
+surface. Outward bounds that establish a strict branch gap can instead
+restrict evaluation to the feasible branch. The inequalities
+\eqref{eq:new-local-bounds} remain valid for every convex combination of the
+retained Jacobians.
+
+\subsection{Componentwise first-exit argument}
+
+Consider one predictor interval and omit its index $l$. Let
+$z_e=L(x-p)$ denote the transformed prediction error, distinct from the
+physical queue $z$. Before an exit from $|z_e|<R$, the line segment from
+$p(t)$ to $x(t)$ lies in the verified outer set. The Lipschitz mean-value
+relation along this segment yields, almost everywhere,
+\begin{equation}
+ \dot z_e=A(t)z_e+\epsilon(t)+(Le_7)w(t),
+ \label{eq:new-error-dynamics}
+\end{equation}
+where $A(t)$ belongs to the convex hull of transformed generalized Jacobians
+on the segment, and
+$\epsilon=L f_b(p,t)-L\dot p$ has $|\epsilon_i|\le\delta_i$.
+For $v_i=|(z_e)_i|$, the diagonal contribution is bounded by $a_iv_i$;
+the remaining terms are bounded by
+$\sum_{j\ne i}b_{ij}R_j+\delta_i+|(Le_7)_i|\bar w_x=c_i(R)$.
+Absolute continuity therefore gives the scalar differential inequality
+\begin{equation}
+ \dot v_i\le a_iv_i+c_i(R)
+ \quad\text{almost everywhere before exit}.
+ \label{eq:new-error-comparison-proof}
+\end{equation}
+At a zero error component the corresponding upper derivative has the same
+cross-component and forcing bound. The integrating-factor comparison gives
+$v_i(t_l+s)\le\phi_i(s)$ from
+\eqref{eq:new-component-comparison}. Since
+$\phi_i'(s)=e^{a_is}(a_ir_i+c_i(R))$, its derivative has constant sign.
+Its maximum on $[0,h]$ is thus $\max\{r_i,\phi_i(h)\}$.
+The strict inequality \eqref{eq:new-self-inclusion} contradicts a first
+exit by continuity. Every component remains enclosed throughout the interval.
+
+At the right endpoint the error around the old center is bounded by
+$\phi(h)$. Replacing that center by $p_{l+1}(t_{l+1})$ adds
+\begin{equation}
+ \omega_l\ge
+ |L(p_l(t_{l+1})-p_{l+1}(t_{l+1}))|.
+ \label{eq:new-recentering-bound}
+\end{equation}
+The triangle inequality gives the propagated radius stated in the main
+text. A controller or target change preserves the physical state $x$.
+With the common transform $L$, the additional radius comes from predictor
+recentering. If a verified implementation
+uses distinct invertible transforms before and after a boundary, the valid
+transfer is
+\begin{equation}
+ r_{\rm next}\ge
+ |L_{\rm next}L_{\rm old}^{-1}|\phi(h)
+ +|L_{\rm next}(p_{\rm old}-p_{\rm next})|.
+ \label{eq:new-coordinate-transfer}
+\end{equation}
+All centers in this expression are evaluated at the same boundary time.
+An initial physical box centered at $p(t_0)$ with radius $d_x$ is enclosed
+in the transformed coordinates by $r_0\ge|L|d_x$.
+
+For an affine physical or command row, write
+$x=p+L^{-1}z_e$. Its largest value over $|z_e|\le R$ is
+$h^\top p+|h^\top L^{-1}|R$. Maximizing the predictor term in time proves
+\eqref{eq:new-affine-support}. At a service checkpoint the endpoint radius
+is available, giving \eqref{eq:new-service-support}. Finite induction over
+all intervals, branch changes, and command boundaries completes the proof
+of Theorem~\ref{thm:new-plan-enclosure}.
+
+\subsection{Verified numerical bounds and exact constant commands}
+
+The implemented piecewise quartic field and quadratic predictor produce a
+defect polynomial of degree at most eight on each affine-forecast interval.
+The verifier collects coefficients in the conservation coordinates before
+interval evaluation. Outward arithmetic bounds the polynomial ranges,
+Jacobian entries, inverses where needed, and scalar comparison functions.
+Propagation intervals are split at the exact times of forecast knots,
+command-block boundaries, and service deadlines. Predictors and trial radii
+may be generated numerically; plan acceptance requires the outward-rounded
+trajectory bounds and constraint checks to pass.
+
+For $a\ne0$, the comparison integral can be evaluated as
+\begin{equation}
+ \chi(a,h)=\frac{\operatorname{expm1}(ah)}{a},
+ \qquad \chi(0,h)=h.
+ \label{eq:new-stable-comparison}
+\end{equation}
+This is the same integral as \eqref{eq:new-component-comparison}.
+The \texttt{expm1} evaluation avoids cancellation when the bound on a
+queue-Jacobian diagonal entry is close to zero, including when its exact
+value is zero. Regression checks compare positive, negative, zero,
+near-zero, and subnormal rates with high-precision evaluation.
+
+For $K_b=0$, actuator rows are constants. The installed binary command
+coefficients are interpreted as exact binary rationals, and the gate
+residuals are evaluated exactly:
+\begin{equation}
+ \begin{gathered}
+ u_i,\quad 1-u_i\quad(i=1,\ldots,4),\\
+ \tfrac34\pm(u_{21}-u_{12}),\qquad
+ \tfrac34\pm(u_{20}-u_{02}).
+ \end{gathered}
+ \label{eq:new-exact-actuator-residuals}
+\end{equation}
+A nonnegative exact residual satisfies its original closed inequality;
+an outward lower floating-point representation preserves this conclusion,
+including exact zero. The verifier applies this rule only after checking
+that the gain is identically zero. The twelve state, class, regional, and
+storage support calculations remain unchanged. Regression checks
+include exact boundary commands and one-unit-in-the-last-place violations
+of box and paired-gate rows. The proof identifier includes both the command
+coefficients and this exact support rule.
+
+\subsection{Proof records, retained portions, and task coverage}
+
+Each plan record binds the initial set, model and constraints, commands,
+forecast and residual bounds, absolute times, service rows, checkpoint sets
+and expiry. Checkpoints identify their parent proof. After rejection,
+execution follows the corresponding remainder of that record; restricting
+its universally verified trajectory family preserves containment and
+pending service checks, as required by Theorem~\ref{thm:new-plan-closure}.
+
+For clarity, a replacement accepted before a task's last deadline must
+include every pending service time, even when it uses a different nominal
+forecast or prediction horizon. Its actual disturbance must belong to that
+replacement's specified family. Until replacement, the current proof's own
+assumptions must remain valid. A forecast update, sensing error outside the
+certified bound, or a changed receiving-supply model is part of a new
+certification record; the execution theorem is applied with a valid record
+at each activation. An installation set containing the actual state can be obtained by
+propagating the active plan's bounds during computation and intersecting
+that enclosure with a measurement set that also contains the actual state. Without an accepted replacement, the finite-horizon guarantee remains
+valid through the active plan's original certified expiry.
+
+\section{Structure-Preserving Reachable Sets}
+\label{app:structure-proof}
+
+\subsection{Independent positivity and queue information}
+
+Recall $v(n)=G(n)/n$, extended polynomially at zero. The stored and derived
+class balances in \eqref{eq:new-plant} give
+\begin{equation}
+ \begin{aligned}
+ \dot n_{12}&=d_{12}-u_{12}v(n_1)n_{12},\\
+ \dot n_{21}&=d_{21}+\pi a-u_{21}v(n_2)n_{21}.
+ \end{aligned}
+ \label{eq:structure-derived-classes}
+\end{equation}
+Together with the four stored-class equations and queue equation, each
+zero-class face has nonnegative inflow whenever commands, primitive demands
+and offered arrivals are nonnegative and $v\ge0$. For the installed
+binary coefficients $(a,b,c)=(0.0014877,-0.29815,15.0912)$, exact arithmetic gives
+$a>0$ and $4ac-b^2>0$. Completing the square proves
+\begin{equation}
+ v(n)=a\left(n+\frac{b}{2a}\right)^2+
+                    \frac{4ac-b^2}{4a}>0.
+ \label{eq:structure-positive-factor}
+\end{equation}
+The minimum is approximately $0.15314$ h$^{-1}$. This algebraic continuation
+establishes positivity independently of the requested jam and storage bounds.
+For a local solution, the sum of negative class parts has upper derivative
+at most a local Lipschitz constant times that sum. Its zero initial value
+therefore remains zero. Equation~\eqref{eq:new-conservation} then gives
+$0\le M(t)\le M(t_0)+\int_{t_0}^t(d_1+d_2+\Lambda(s))\,ds$;
+bounded arrivals exclude finite-time escape. The nine lower-state/class
+rows follow from this independent positive-cone argument. Its conclusion
+is boundary invariance; full-vector monotonicity is a separate property.
+
+For constant gates the scalar queue comparison is order-preserving in its
+initial value and arrival input. With constant extremal arrival $\lambda$
+and $C=120u_{02}$, its branch solutions are
+\begin{equation}
+ \begin{aligned}
+ z(s)&=\lambda/60+(z_0-\lambda/60)e^{-60s}
+                    &&(60z\le C),\\
+ z(s)&=z_0+(\lambda-C)s &&(60z\ge C).
+ \end{aligned}
+ \label{eq:structure-queue-flows}
+\end{equation}
+Interval exponential/logarithmic evaluation encloses branch crossings.
+Affine forecast intervals use their outward extremal arrivals when the common
+branch remains unresolved; exact forecast and command cutpoints are retained.
+This supplies endpoint and continuous bounds for all measurable allowed
+residuals. The queue-storage requirement is tested against their upper bound.
+If this continuous enclosure proves a common branch and the forecast is
+$\ell_0+\ell_1s$, sharper endpoint comparisons use
+\begin{equation}
+\begin{aligned}
+ z(h)&=e^{-60h}z_0+(\ell_0\pm\bar w_x)\varphi_1+\ell_1\varphi_2
+       &&\text{(supply)},\\
+ z(h)&=z_0+(\ell_0\pm\bar w_x-C)h+\ell_1h^2/2
+       &&\text{(gate)},\\
+ \varphi_1&=(1-e^{-60h})/60,\qquad
+ \varphi_2=(h-\varphi_1)/60.
+\end{aligned}
+\end{equation}
+The minus and plus signs give the lower and upper solutions. Only the
+endpoint interval is intersected with these bounds; the independently
+established continuous enclosure remains in force.
+
+An initial physical box must itself satisfy class/queue nonnegativity; this
+is checked by exact supports of the class map. Subsequent verified boxes may
+be intersected with independently established positivity and queue intervals,
+then enclosed outward. This operation preserves the reachable family and
+includes recentering error. The Jacobian bounds within a step must cover the entire segment between
+the predictor and the true state. For the queue coordinate, use the convex
+hull of the predictor queue range and the independently bounded continuous
+true queue range, intersected with the original trial enclosure. This
+restricted enclosure is the Jacobian corridor used below. Admission branches
+can be excluded when this enclosure rules them out, including when the
+predictor lies outside the true queue range.
+
+\subsection{Signed propagation and robust variational remainder}
+
+Consider one interval, omit $l$, and let $\mathcal J_b$ bound each retained
+transformed branch Jacobian on that corridor. In
+\eqref{eq:structure-affine-set}, $\xi$ is constant across the plan;
+the boxed remainder may depend on it. Choose any fixed matrix $A^0$ and
+differentiate the decomposition to obtain
+\eqref{eq:structure-remainder-identity} exactly. For a fresh physical box
+$x(t_0)\in\widehat x+[-d_x,d_x]$, initialize $p(t_0)=\widehat x$,
+$\Gamma(0)=L\operatorname{diag}(d_x)$ and $\rho=0$ before numerical
+conversion; generator conversion error is absorbed outward into $\rho$.
+Precisely, the mean-value matrix satisfies
+$L[f_b(x,t)-f_b(p,t)]=B(s)L(x-p)$, with $B(s)$ in the convex hull of
+the retained transformed branch Jacobians along the predictor-to-state
+segment. The corridor condition applies to the full physical error; the
+remainder $\zeta$ enters through its algebraic decomposition.
+Define a Metzler matrix
+$\mathcal M$ and nonnegative forcing bound $b_\zeta$ by
+\begin{equation}
+ \begin{aligned}
+ \mathcal M_{ii}&=\max_b\sup(\mathcal J_b)_{ii},\\
+ \mathcal M_{ij}&=\max_b\sup|(\mathcal J_b)_{ij}|\quad(i\ne j),\\
+ (b_\zeta)_i&\ge\max_b\sup_{J\in\mathcal J_b,\,F\in\mathcal F}
+                  \sum_j|[(J-A^0)F]_{ij}|\\
+             &\hspace{1em}+\delta_i+|(Le_7)_i|\bar w_x,
+ \end{aligned}
+ \label{eq:structure-metzler}
+\end{equation}
+where $\mathcal F$ contains $e^{A^0s}\Gamma(0)$ for all $s\in[0,h]$,
+and $\delta_i\ge\sup_s|\epsilon_i(s)|$. Convexification over branches
+preserves these bounds. Applying absolute-value comparison to the remainder
+identity gives
+\begin{equation}
+ |\zeta(s)|\le e^{\mathcal Ms}\rho+Q(s)b_\zeta,
+ \qquad Q(s)=\int_0^s e^{\mathcal Mv}\,dv.
+ \label{eq:structure-remainder-bound}
+\end{equation}
+The exponential is nonnegative, and $Q(s)$ is componentwise increasing.
+The exponential itself can decrease in some entries; its old-remainder
+contribution is bounded over the entire interval. With outward vectors
+\begin{equation}
+ \begin{aligned}
+ f_i&\ge\sup_{s\in[0,h]}\sum_j|(e^{A^0s}\Gamma(0))_{ij}|,\\
+ r_i^\zeta&\ge\sup_{s\in[0,h]}(e^{\mathcal Ms}\rho)_i
+                            +(Q(h)b_\zeta)_i,
+ \end{aligned}
+ \label{eq:structure-continuous-radii}
+\end{equation}
+the test $f+r^\zeta<R$ keeps every error component strictly inside the
+trial enclosure. The Jacobian bounds are valid until a hypothetical first
+exit, and the strict inequality rules out that exit. The positivity and
+scalar queue bounds used here are established independently of this
+containment test.
+
+For any affine row $a_x^\top x\le b_x$, its continuous support is bounded by
+\begin{equation}
+ \sup_s a_x^\top p(s)+
+ \sup_s\|a_x^\top L^{-1}e^{A^0s}\Gamma(0)\|_1+
+ |a_x^\top L^{-1}|r^\zeta.
+ \label{eq:structure-signed-output}
+\end{equation}
+At a scheduled endpoint, use the endpoint generator and remainder.
+Exact constant-command rows and the independently
+proved positivity/queue supports can establish their corresponding constraints
+directly. Each row can use the tighter of its two valid bounds.
+
+Let $\widehat\Gamma$ be the stored binary generator at the next endpoint,
+and let $d_\Gamma$ enclose the row sums of
+$|e^{A^0h}\Gamma(0)-\widehat\Gamma|$. With recentering bound $\omega$ from
+\eqref{eq:new-recentering-bound}, a valid update for the remainder bound is
+\begin{equation}
+ \rho^+\ge d_\Gamma+e^{\mathcal Mh}\rho+Q(h)b_\zeta+\omega.
+ \label{eq:structure-endpoint-update}
+\end{equation}
+It retains the same $\xi$ and includes all numerical conversion errors.
+The scalar queue bound constrains the total physical queue error; its
+generator and remainder summands can cancel, so neither is separately
+contracted by that total-error bound. Finite induction proves
+Proposition~\ref{prop:structure-plan}.
+
+\subsection{Validated matrix functions and execution records}
+
+For any matrix $A$, $\alpha\ge\|A\|_\infty$, $z=\alpha h$ and series order
+$p$, the exponential and integral tails obey
+\begin{equation}
+ \begin{aligned}
+ \left\|e^{Ah}-\sum_{k=0}^p\frac{A^kh^k}{k!}\right\|_\infty
+       &\le e^z\frac{z^{p+1}}{(p+1)!},\\
+ \left\|\int_0^h e^{As}\,ds-
+          \sum_{k=0}^p\frac{A^kh^{k+1}}{(k+1)!}\right\|_\infty
+       &\le he^z\frac{z^{p+1}}{(p+2)!}.
+ \end{aligned}
+ \label{eq:structure-matrix-tails}
+\end{equation}
+The second inequality follows by integrating the first pointwise tail and
+using $e^{\alpha s}\le e^{\alpha h}$. The implementation uses $p=18$.
+Signed coefficients $a_x^\top L^{-1}(A^0)^k\Gamma(0)$ are formed before
+interval time evaluation. For a row $C_i$ and generator column $\Gamma_j$,
+the transformed tail is bounded by
+$\|C_i\|_1\,e^z z^{p+1}/(p+1)!\,\|\Gamma_j\|_\infty$.
+Outward rounding covers every retained coefficient, tail, product and sum.
+
+Rejection preserves the accepted plan's generator and remainder history,
+structural bounds, command schedule and expiry. Its checkpoint box
+$|L(x-p)|\le |\Gamma|\mathbf1+\rho$ contains the reachable states but
+omits the correlations in that history. Continuing the existing proof uses
+the history; a fresh proof can use the correlated set or a containing box,
+provided it verifies the full chosen set. A timestamped observation box
+contains the actual state under its measurement assumptions. The replacement
+certificate covers that entire set and every pending deadline. These
+continuation and replacement cases establish the induction in
+Theorem~\ref{thm:new-plan-closure}.
+
+\section{Network Allocation Conditions}
+\label{app:network-assumptions}
+
+\subsection{Allocation changes and branch structure}
+
+Proposition~\ref{prop:network-localization} uses constant allocation shares.
+For a known differentiable $P_a(t)$, differentiating $y_c=c+P_a(t)z$ gives
+\begin{equation}
+ \dot y_c=F(c,u,t)+P_a(t)\Lambda+\dot P_a(t)z.
+ \label{eq:network-varying-allocation}
+\end{equation}
+With fixed reference coordinates $y_c=c+P_0z$ and actual shares $P_a(t)$,
+the corresponding expression is
+\begin{equation}
+ \dot y_c=F(c,u,t)+P_0\Lambda+(P_a(t)-P_0)a.
+ \label{eq:network-uncertain-allocation}
+\end{equation}
+The extra terms enter the predictor and uncertainty enclosure. At a specified
+piecewise-constant share change, physical inventories remain continuous but
+coordinates change. Propagate the same initial uncertainty symbol through
+$\Gamma^+=L_a^+(L_a^-)^{-1}\Gamma^-$, and bound the remainder by
+$|L_a^+(L_a^-)^{-1}|\rho^-$ plus outward conversion and predictor-recentering
+error. The implemented
+transfer study uses constant shares and retains one coordinate map throughout.
+
+For fixed commands and independent queues, bounding each queue's diagonal
+Jacobian entry separately gives valid comparison bounds for
+\eqref{eq:network-jacobian}, independently of simultaneous admission-branch
+combinations. The predictor-defect calculation enumerates combinations of
+branches that the local tests have not excluded, with at most $2^r$
+combinations. Shared receiving capacities, regional-state-dependent
+admission, and feedback gates require Jacobian bounds that include their
+actual couplings.
+
+\section{Task-State Transitions and Temporal Consistency}
+\label{app:task-state-compiler}
+
+\subsection{State, operations and temporal consistency}
+
+The canonical record $\theta_i$ contains an active regional priority and a
+last-in, first-out stack of suspended priorities, each with region, label and
+absolute expiry. Network operation is the default. Before a proposal at $t_i$,
+$\mathsf{Age}_{t_i}$ removes an expired active task and pops expired predecessors until
+an unexpired task is restored or the stack is empty. For a parsed operation
+$r_i^A$,
+\begin{equation}
+ \theta_i^+=C(\mathsf{Age}_{t_i}\theta_i,r_i^A),\qquad
+ (j_i,\Delta_i)=Q(\theta_i^+,t_i),
+ \label{eq:task-state-compiler}
+\end{equation}
+where $j_i$ selects the soft objective. A regional task expiring at $e_i$
+has $\Delta_i=e_i-t_i>0$; network operation has $\Delta_i=0$.
+The same expiry rule applies between proposals.
+
+\begin{table}[t]
+\centering\small
+\caption{Compiler transitions. Only the listed fields accompany the operation
+name. Durations/extensions are integer minutes in $[1,120]$; nonempty labels
+contain at most 80 characters.}
+\label{tab:task-state-operations}
+\begin{tabular}{@{}p{0.14\textwidth}p{0.22\textwidth}p{0.56\textwidth}@{}}
+\toprule
+Operation & Additional fields & Transition at time $t$\\
+\midrule
+Set & Region, duration, label & Clear the stack; install a task expiring at
+$t+$ duration.\\
+Interrupt & Region, duration, label & Save the active task with its original
+expiry; install a temporary task expiring at $t+$ duration.\\
+Continue & None & Preserve the surviving task and expiry.\\
+Extend & Minutes & Add the stated time to the active task's expiry.\\
+Resume & None & Restore the latest unexpired saved task; if none survives,
+clear the interruption. With no stack or interruption, keep the current task.\\
+Cancel; network & None & Clear active and suspended tasks; use network operation.\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The compiler rejects extra fields, extension of an absent task and
+interruption depth above four. Invalid operations create no new planning
+request. The canonical record derives from schema-valid model operations,
+independently of evaluation labels and physical-plan admission. A valid operation may update the requested objective while the earlier
+certified plan continues. The task record describes the requested objective;
+the execution record identifies the plan currently in use. Installing a new
+plan requires its own passing certificate.
+The hard storage, gate and service requirements remain in the trusted contract.
+
+\emph{Temporal invariant.} Each stored expiry equals creation time plus the
+specified duration and explicit extensions. Set and interrupt establish this
+identity; extend adds exactly its argument; continue, suspension and restoration
+preserve it. Deletion removes a task without changing another expiry.
+Induction over the operation table, combined with $\mathsf{Age}_t$, therefore leaves either
+network operation or a task with positive remaining time. Agreement with the
+operator's language is scored separately at the compiled-request output.
+
+\section{Continuation, Repair Timing and Cost Guarantees}
+\label{app:repair-cost}
+
+\subsection{Certified continuation beyond plan expiry}
+\label{sec:terminal-backup}
+
+In this framework, continuation beyond finite-plan expiry requires a
+certified terminal backup: every admitted plan must end in a set from which that backup
+preserves the physical constraints indefinitely.
+
+A terminal backup consists of a nonempty set $\mathcal K$ and an implementable
+state-feedback policy $\mu_B$ for which a stored certificate establishes that
+$\mathcal K$ is robustly invariant. Specifically, for every activation state
+$x(s)\in\mathcal K$ and every uncertainty realization within the specified
+bounds, the backup trajectory exists for all $t\ge s$ and satisfies the
+authorized physical state and command constraints. Any initialization required by $\mu_B$ is included in the certified
+implementation.
+
+The following proposition gives a sufficient condition for constructing such
+a backup.
+
+\begin{proposition}
+\label{prop:backup-lyapunov}
+Suppose the implemented backup has closed-loop dynamics
+\[
+\dot x=g_B(x,\eta),\qquad \eta(t)\in\mathcal E,
+\]
+where $\mathcal E$ is compact, $\eta(\cdot)$ is measurable, and $g_B$ is
+continuous and locally Lipschitz in $x$, uniformly over
+$\eta\in\mathcal E$, on an open domain $O$. Let
+$V_B:O\rightarrow\mathbb R_{\ge0}$ be continuously differentiable and define
+\[
+\mathcal K=\{x\in O:V_B(x)\le\ell_B\},
+\]
+where $\mathcal K$ is nonempty and compact. If, on a neighborhood of
+$\mathcal K$,
+\[
+\nabla V_B(x)^\top g_B(x,\eta)
+\le -\lambda_B V_B(x)+\bar d_B
+\]
+for all $\eta\in\mathcal E$, with
+$\lambda_B>0$ and
+$0\le\bar d_B\le\lambda_B\ell_B$, and if every state and command generated
+on $\mathcal K$ satisfies the authorized physical constraints, then
+$\mathcal K$ is robustly invariant under $\mu_B$.
+\end{proposition}
+
+\begin{proof}
+Along every admissible backup trajectory,
+\[
+\frac{d}{dt}V_B(x(t))
+\le -\lambda_B V_B(x(t))+\bar d_B
+\]
+almost everywhere while the trajectory remains in the stated neighborhood.
+Scalar comparison gives
+\[
+V_B(x(t))
+\le
+e^{-\lambda_B(t-s)}V_B(x(s))
++
+\frac{\bar d_B}{\lambda_B}
+\bigl(1-e^{-\lambda_B(t-s)}\bigr).
+\]
+If $x(s)\in\mathcal K$, then
+$V_B(x(s))\le\ell_B$ and
+$\bar d_B/\lambda_B\le\ell_B$, so
+$V_B(x(t))\le\ell_B$. The trajectory therefore cannot leave
+$\mathcal K$. Because $\mathcal K$ is compact and contained in the domain of
+the closed-loop dynamics, the solution extends for all future times. The
+assumed state and command constraints then remain satisfied under the backup.
+\end{proof}
+
+When continuation beyond the finite horizon is required, a candidate plan may
+additionally be required to terminate in the certified backup set. Let a plan
+installed at time $t_i$ have expiry $E_i>t_i$, and let
+$\mathcal R_i(t)$ denote its certified reachable-state enclosure. We call the
+plan \emph{terminally certified} if it satisfies the usual physical and
+service checks over $[t_i,E_i]$, every service requirement that remains pending at installation has its
+deadline in $[t_i,E_i]$ and is certified at that deadline, and
+\begin{equation}
+\mathcal R_i(E_i)\subseteq\mathcal K.
+\label{eq:backup-terminal-landing}
+\end{equation}
+The certificate also specifies an implementable transition from the finite
+plan to $\mu_B$ at $E_i$, including any required controller initialization.
+
+For the Lyapunov certificate of
+Proposition~\ref{prop:backup-lyapunov}, a sufficient terminal test is
+\begin{equation}
+\sup_{x\in\mathcal R_i(E_i)}V_B(x)\le\ell_B.
+\label{eq:backup-computable-landing}
+\end{equation}
+The planner may impose this terminal condition, and the checker verifies
+the entire terminal reachable set. The following theorem shows that
+terminal certification provides a continuation when no acceptable finite
+replacement is available.
+
+\begin{theorem}
+\label{thm:backup-recursive-availability}
+Suppose a certified terminal backup $(\mathcal K,\mu_B)$ is available and an
+initial terminally certified plan is installed. At each decision time, a
+replacement is installed only if it is terminally certified; otherwise, the
+current verified plan continues, and its backup policy is activated at expiry
+if no replacement has been installed. If the realized uncertainty remains
+within the certified bounds, execution conforms to the active certificate, and
+replacement times are locally finite, then a certified continuation exists
+for all future time, the physical constraints remain satisfied, and every
+authorized service requirement is satisfied at its scheduled deadline. These
+guarantees hold even if all subsequent replacement proposals are rejected.
+\end{theorem}
+
+\begin{proof}
+Consider first a terminally certified plan installed at time $t_i$. Its
+finite-plan certificate guarantees the physical constraints and all pending
+service requirements through its expiry $E_i$. By
+\eqref{eq:backup-terminal-landing},
+\[
+x(E_i)\in\mathcal R_i(E_i)\subseteq\mathcal K.
+\]
+The terminal-backup certificate therefore provides an admissible continuation
+from $E_i$ onward. Hence, the finite plan together with its backup provides a
+certified continuation beyond the finite plan's expiry.
+
+Now consider a decision time before expiry. If a proposed replacement is
+rejected, the remaining portion of the current verified plan continues under
+the same certificate, including its terminal connection to $\mathcal K$. If a
+replacement is accepted, its own terminal certificate contains the actual
+installation state, verifies the applicable physical and service requirements,
+and establishes a new terminal connection to $\mathcal K$. Thus, either
+decision leaves an active certified continuation.
+
+Applying this argument successively over the locally finite sequence of
+decision times preserves the certification property. If no further finite
+replacement is obtained, the active plan eventually reaches its expiry in
+$\mathcal K$, where the certified backup takes over.
+
+Finally, every accepted replacement is required to preserve all still-pending
+service requirements, while rejection preserves the corresponding checks of
+the existing certificate. Hence each authorized service requirement remains
+verified at its scheduled deadline.
+\end{proof}
+
+Continuation follows an accepted plan, the incumbent remainder, or the
+terminal backup. A service requirement introduced during backup operation
+receives execution authority only after a new certificate covers that
+requirement and a valid terminal continuation.
+
+The indefinite backup guarantee also requires an uncertainty description
+under which sustained operation is physically possible. In particular, a
+finite exterior queue cannot remain bounded if the admissible arrival class
+permits persistent inflow above every achievable discharge rate. The existence
+of a nonempty robustly invariant set $\mathcal K$ therefore requires arrival
+and control bounds compatible with sustained operation. Any diversion,
+upstream holding, or demand-management mechanism used to satisfy this
+condition must be represented in the certified model.
+
+The numerical studies in Section~\ref{sec:new-evidence} evaluate
+finite-horizon certification through the recorded plan expiries. The result
+above characterizes continuation beyond expiry when the specified system
+includes a certified backup set and policy.
+
+\subsection{Installation timing and implemented-grid ordering}
+
+A search conducted during incumbent execution must certify installation
+at $s>t$ from the reachable information at $s$, using the remaining absolute
+schedule. Minimum intervention applies to the grid for that activation
+record. The synchronous experiments record computation separately;
+Section~\ref{sec:delayed-handover-results} tests preparation during
+incumbent execution.
+
+The checker certifies the command coefficients that will actually be
+executed. Equation~\eqref{eq:repair-family} gives the interpolation-distance
+formula in exact arithmetic. For stored finite-precision commands, the
+implementation orders grid plans by the Euclidean distance of their
+coefficient vectors from the original proposal, or verifies that the stored
+grid already follows that order. The tested grid passes this ordering check,
+and every installed plan has a certificate for its stored coefficients.
+
+\subsection{A conditional finite-horizon performance bound}
+Consider the same initial state and disturbance realization for two fixed
+command plans on $[t,t+H]$. Suppose their solutions remain in a common
+compact domain on which, uniformly in admissible uncertainty,
+\[
+\|f(x,u,w)-f(y,v,w)\|
+\le L_x\|x-y\|+L_u\|u-v\|.
+\]
+For a fixed running cost $\ell$ and terminal cost $g$, assume
+$|\ell(x,u)-\ell(y,v)|\le L_{\ell x}\|x-y\|+
+L_{\ell u}\|u-v\|$ and $|g(x)-g(y)|\le L_g\|x-y\|$.
+Let $J(P)=\int_t^{t+H}\ell(x_P,u_P)\,ds+g(x_P(t+H))$.
+
+The following proposition bounds the possible change in traffic cost caused by repairing a plan.
+
+\begin{proposition}
+\label{prop:repair-cost}
+Under these assumptions, for the Euclidean norm on the stacked fixed-block
+command vector,
+\begin{equation}
+|J(P(\vartheta))-J(P^0)|
+\le L_J\vartheta\|P^B-P^0\|_2,
+\label{eq:repair-cost-bound}
+\end{equation}
+where
+\begin{align*}
+L_J&=L_{\ell x}L_u B_H+L_{\ell u}H+L_gL_u A_H,\\
+A_H&=\begin{cases}(e^{L_xH}-1)/L_x,&L_x>0,\\H,&L_x=0,\end{cases}\\
+B_H&=\begin{cases}(e^{L_xH}-1-L_xH)/L_x^2,&L_x>0,\\H^2/2,&L_x=0.\end{cases}
+\end{align*}
+\end{proposition}
+\begin{proof}
+The maximum instantaneous command difference is at most
+$\delta=\vartheta\|P^B-P^0\|_2$. Gronwall's inequality gives
+$\|x_{P(\vartheta)}(t+s)-x_{P^0}(t+s)\|\le L_u\delta A_s$.
+Integrating the running-cost bound and adding the terminal bound yields
+\eqref{eq:repair-cost-bound}, since $\int_0^H A_s\,ds=B_H$.
+\end{proof}
+
+The queue-aware MFD has locally Lipschitz polynomial class flows on the
+specified model domain and a minimum of Lipschitz admission branches.
+Bounded controls, a finite horizon and a compact common trajectory domain
+therefore provide finite $L_x,L_u$; the linear TTS and fixed-priority rows
+have finite cost constants. The domain must contain both trajectories,
+including the rejected reference plan if it leaves the physical constraint
+set. This condition is additional to certification of the repaired plan.
+The bound is uniform over paired initial states and residuals if the same
+constants cover them all; it also bounds their worst-case costs by the
+standard inequality $|\sup J_1-\sup J_0|\le\sup|J_1-J_0|$.
+The proposition applies to fixed plans with a common continuous cost model.
+The ensemble reports realized costs for the specified policies and
+priority weights. A numerical $L_J$ requires valid bounds on the model and
+cost constants over a common domain containing both the repaired trajectory
+and the rejected reference trajectory, including any part outside the
+physical constraint set.
+
+\FloatBarrier

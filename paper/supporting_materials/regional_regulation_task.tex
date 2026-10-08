@@ -1,0 +1,26 @@
+\paragraph{R: regional regulation}
+The native two-gate formulation of \cite{zhong2018robust} uses four
+destination classes $x^R=(n_{11},n_{12},n_{21},n_{22})^\top$ and regional
+totals $n_1=n_{11}+n_{12}$, $n_2=n_{21}+n_{22}$. With the class flows in
+\eqref{eq:new-mfd}, its balances are
+\begin{equation}
+\begin{aligned}
+\dot n_{11}&=d_{11}-q_{11}+u_{21}q_{21},\\
+\dot n_{12}&=d_{12}-u_{12}q_{12},\\
+\dot n_{21}&=d_{21}-u_{21}q_{21},\\
+\dot n_{22}&=d_{22}-q_{22}+u_{12}q_{12}.
+\end{aligned}
+\label{eq:benchmark-native}
+\end{equation}
+The task regulates both totals to $n_i^\star=30$ while maintaining
+nonnegative classes, regional storage and the specified two-gate intervals.
+We evaluate
+\begin{equation}
+J_R=10^4\int_0^{3/2}\bigl[(n_1-30)^2+(n_2-30)^2\bigr]\,dt.
+\label{eq:benchmark-regulation-cost}
+\end{equation}
+Its units are veh$^2$-h. This native regulation task supplies a direct
+comparison with the reproduced almost-smooth CLF law. The queue-aware tasks
+below additionally require the admission and exit channels of
+\eqref{eq:new-plant}.
+
