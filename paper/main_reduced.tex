@@ -29,9 +29,9 @@
 \begin{document}
 \begin{frontmatter}
 \title{Formal Guarantees for Trustworthy Agent-Mediated Urban Perimeter Control}
-\author[mcgill]{Ali Eslami\corref{cor1}}
+\author[mcgill]{Ali Eslami}
 \ead{ali.eslami@mcgill.ca}
-\author[mcgill]{Jiangbo Yu}
+\author[mcgill]{Jiangbo Yu\corref{cor1}}
 \ead{jiangbo.yu@mcgill.ca}
 \cortext[cor1]{Corresponding author.}
 \affiliation[mcgill]{organization={Department of Civil Engineering, McGill University},
@@ -222,7 +222,7 @@ agent.
 
 Section~\ref{sec:new-problem} formulates the traffic-control problem. Section~\ref{sec:new-agent} defines the agent and planning interface, and Section~\ref{sec:new-certification} develops plan certification and execution. Section~\ref{sec:new-evidence} evaluates the method; Section~\ref{sec:new-discussion} discusses operational implications. Complete proofs accompany the results in Section~\ref{sec:new-certification}; essential experimental settings appear in the appendix, and detailed reproduction material is available in the repository.
 
-\begin{table}[!t]
+\begin{table}[!tp]
 \centering\small
 \caption{Principal notation. Traffic inventories are expressed in units of
 100 vehicles unless a table states physical vehicles.}
@@ -260,7 +260,6 @@ $\mathrm{TTS}$ & Total time spent, including vehicles waiting outside\\
 \end{tabular}
 \end{table}
 
-\FloatBarrier
 \section{Two-Region MFD Perimeter-Control Problem}
 \label{sec:new-problem}
 
@@ -1866,7 +1865,7 @@ remaining service deadlines. These developments will support evaluation of
 the framework in operational traffic networks.
 
 \FloatBarrier
-\input{submission_declarations.tex}
+\input{submission_declarations_reduced.tex}
 
 \appendix
 \numberwithin{equation}{section}

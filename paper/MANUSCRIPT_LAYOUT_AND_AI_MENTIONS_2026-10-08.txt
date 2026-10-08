@@ -1,0 +1,132 @@
+MANUSCRIPT CHANGES, FLOAT BARRIERS AND AI MENTIONS
+8 October 2026
+
+Scope: current reduced paper, main_reduced.tex / main_reduced.pdf (43 pages).
+The long non-IEEE paper (79 pages) and IEEE reading layout (33 pages) are unchanged.
+Source directory: output/package/PERIMETER_SEQUENTIAL_HANDOVER_2026-10-01/
+Line numbers below refer to the files delivered with this revision.
+
+1. CORRESPONDING AUTHOR
+
+Jiangbo Yu is now the corresponding author in the reduced paper.
+The corresponding-author marker is attached to his name at main_reduced.tex:34.
+His existing email, jiangbo.yu@mcgill.ca, is retained at line 35.
+Ali Eslami remains first author. The author order and both email addresses are unchanged.
+The asterisk beside Jiangbo Yu and its footnote are visible on PDF page 1.
+
+2. FLOAT BARRIERS AND THE PAGE-5 GAP
+
+\FloatBarrier tells LaTeX to place all earlier pending figures and tables
+before continuing past that point. A large pending table can therefore
+leave an unfinished text page.
+
+The preceding reduced source had three barriers:
+
+  OLD line 263: immediately after the notation table and before Section 2.
+    This caused the large blank area on page 5: the notation table needed
+    its own page, and the barrier stopped Section 2 from filling the space.
+    REMOVED in the revised reduced source.
+
+  OLD line 1795 -> CURRENT line 1794: end of Section 5, Numerical Evaluation,
+    immediately before Section 6, Operational Insights and Implementation.
+    RETAINED to keep experimental tables ahead of the discussion.
+
+  OLD line 1868 -> CURRENT line 1867: after the conclusion and future work,
+    immediately before the author declarations.
+    RETAINED to keep any remaining figures/tables out of the declarations
+    and appendix. It does not force a page break when no float is pending.
+
+There are now TWO \FloatBarrier commands in main_reduced.tex.
+
+At main_reduced.tex:225, the notation table's placement changed from [!t]
+to [!tp]. The added p permits a float-only page. This matters because simply
+removing the barrier could let the large table drift far beyond the introduction.
+The final layout has Section 2 continuing on page 5 and the notation table
+on page 6. The large page-5 gap is filled without changing font size, margins,
+the notation entries, equations or introduction wording. The PDF is 43 pages,
+down from 44 before these author/declaration/layout changes.
+
+For reference, barriers in the UNCHANGED long sources are at:
+  main.tex: 260, 1874, 2641, 3026, 3263, 3412, 3414, 3499.
+  main_ieee.tex: 252, 1866, 2633, 3018, 3255, 3404, 3406, 3491.
+
+3. AI-ASSISTANCE DECLARATION REMOVED FROM THE REDUCED PAPER
+
+The removed section was titled:
+  Declaration of generative AI and AI-assisted technologies
+
+Its text said:
+  OpenAI Codex and Claude were used to assist with manuscript review,
+  organization, and language editing. The authors are responsible for the
+  scientific content and final manuscript. The language-model experiments
+  forming part of the research are described in the paper and its appendices.
+
+That declaration was on page 38 of the preceding 44-page reduced PDF.
+It is absent from the current reduced PDF and its active declaration source.
+
+The reduced paper now imports submission_declarations_reduced.tex at
+main_reduced.tex:1868. This file retains the authorship, competing-interest,
+and data/code-availability statements and omits the AI-assistance section.
+
+The original submission_declarations.tex remains unchanged because the long
+and IEEE manuscripts still use it. Its lines 19-23 retain the declaration;
+it appears on long-paper page 40 and IEEE page 17. The reduced-only source ZIP
+contains the new reduced declaration file instead of this unused shared file.
+The combined ZIP and archived older versions still contain the long version.
+
+4. WHAT REMAINS ABOUT OPENAI, CODEX AND AI MODELS
+
+CURRENT REDUCED PAPER
+
+  - No literal OpenAI, Codex, Claude, ChatGPT or manuscript-assistance
+    declaration remains in the compiled reduced paper or its Appendix A.
+
+  - Section 5.4, PDF page 34; main_reduced.tex:1773:
+      The agent study uses gpt-5.4-mini-2026-03-17 ...
+    This identifies the model used in the research experiments. It describes
+    experimental methodology, not assistance with writing the manuscript.
+    It has been retained.
+
+  - Reference [31], PDF page 42, cites TrafficGPT as related work.
+    This is an external research title, not a claim that TrafficGPT wrote
+    this manuscript. It has been retained.
+
+UNCHANGED LONG AND IEEE PAPERS
+
+  - Writing assistance: the shared declaration quoted above still appears
+    on long page 40 and IEEE page 17.
+
+  - Research model: gpt-5.4-mini-2026-03-17 in the main numerical section:
+    main.tex:1701 (long page 36) and main_ieee.tex:1693 (IEEE page 15).
+
+  - Research API and model: Appendix J explicitly identifies the OpenAI
+    Responses API, gpt-5.4-mini and snapshot gpt-5.4-mini-2026-03-17:
+    main.tex:3419-3420 (long page 72), and
+    main_ieee.tex:3411-3412 (IEEE page 30).
+
+  - TrafficGPT related-work reference [31]: long page 77, IEEE page 32.
+
+EXTERNAL SUPPORTING MATERIAL
+
+  - supporting_materials/experimental_details.tex:438-439 identifies the
+    research GPT model and snapshot in the archived experiment protocol.
+  - supporting_materials/REPRODUCING_THE_REDUCED_PAPER.md:178 identifies
+    that research snapshot; line 180 names OPENAI_API_KEY variables used
+    by the optional live-experiment programs.
+  - These are experimental/reproduction records. They are not compiled
+    into the reduced paper, and they contain no additional statement
+    that Codex was used to write the manuscript.
+
+BIBLIOGRAPHY FALSE POSITIVES
+
+  FOUNDATION_REFERENCES.bib:87 and :115 contain the researchers' names
+  Claude Henry and Claude Iung. These are people, not references to the
+  Claude AI model. The TrafficGPT entry is at lines 172-175.
+
+5. CHECKS
+
+The abstract, introduction wording, mathematical argument, proofs, numerical
+tables and experimental descriptions are unchanged. Both long sources and
+PDFs are unchanged. The revised reduced PDF compiles with resolved references
+and no overflowing text boxes. The author marker, pages 5-7, declarations
+and full-document page layout were visually checked. No experiments were rerun.

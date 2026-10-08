@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-08",
+  "scope": "Corresponding author, reduced AI-assistance declaration removal, and float layout only.",
+  "pages": 43,
+  "checks": {
+    "source_changes_exactly_requested": true,
+    "mathematical_and_experimental_text_unchanged": true,
+    "long_versions_and_shared_declarations_unchanged": {
+      "main.tex": "02f4bd980c885e68f101ef65db3a49769e26d8195e4dadd02731ef8ed396bc30",
+      "main.pdf": "6b17e0d57edaed7277159ae1d4fe6a56d5387cfd67d5de81db11bc952507fc98",
+      "main_ieee.tex": "79235d4b6347cfc6ffc92f8236752229606c6eb51667f526eb9d077c1de243dd",
+      "main_ieee.pdf": "07ee3b960aadff224dcddf87e3a30aa0291a19964e7c64d4bb95c080c597af8f",
+      "submission_declarations.tex": "c685b910a98509c98eb890d69a94c4e213ef8abc2696d0626899c1ee4a879730",
+      "FOUNDATION_REFERENCES.bib": "157982c7379c79a64880caaae92b8f2bf8b04236506d40a28edb58c7b0251002",
+      "main_reduced.bbl": "a49f79ed27b80f0819fdfd20881f0a574565a6295bca832ed79ff961511c5f8a"
+    },
+    "corresponding_author": "Jiangbo Yu",
+    "float_barrier_removed_before_section_2": true,
+    "notation_table_float_page_enabled": true,
+    "page_5_filled_by_section_2": true,
+    "notation_table_page": 6,
+    "reduced_declaration_removed": true,
+    "retained_research_model_page": 34,
+    "no_openai_codex_or_claude_in_reduced_pdf": true,
+    "references_resolved_and_no_overfull_boxes": true,
+    "visual_review": "All 43 pages rendered and reviewed on contact sheets; author marker, pages 5-7 and declaration/appendix transition inspected at full-page size.",
+    "independent_ai_mention_audit": "Reduced, long, IEEE, shared declarations, bibliography and external supporting source checked; locations documented in the text report."
+  },
+  "source_sha256": "26487f4f10785a322bbb479abdc5d372cab973f395bae961f23dcf7238e9d5cc",
+  "pdf_sha256": "617e3a531ffe75165d3c421d6fd3dcd1174fe4ff1fa33aea19fd4ad12fbe9a1f",
+  "declarations_sha256": "a010bbfae7ec71f9292eabed64f2061c7b483bebe9c74657702c25854dcd982f"
+}

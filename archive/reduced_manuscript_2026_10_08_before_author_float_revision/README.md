@@ -1,0 +1,1 @@
+Exact preceding 44-page reduced-paper packages, before corresponding-author reassignment, AI-assistance declaration removal in the reduced paper, and page-5 float-layout correction. Current files are in paper/. The long manuscripts are unchanged.
