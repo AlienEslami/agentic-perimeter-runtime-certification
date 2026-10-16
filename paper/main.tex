@@ -299,7 +299,7 @@ The separate queue $z$ represents vehicles waiting outside the controlled
 regions for admission. One state unit represents 100 vehicles, and time is
 measured in hours. Inventories are continuous aggregate quantities, and
 their evolution is described by continuous-time differential equations.
-The variables $n_{ij}$ describe stored vehicle inventories; $q_{ij}$ below
+The variables $n_{ij}$ describe stored vehicle inventories, and $q_{ij}$ below
 describes their potential outflow rate in inventory units/h.
 
 Following the two-region perimeter-control models in
@@ -317,7 +317,7 @@ equals $G(n)/n$ for $n>0$ and is defined by continuity at $n=0$. The potential c
 before gating. The aggregate rate $G(n_i)$ describes potential trip
 completion and transfer out of region $i$, allocated among destination
 classes in proportion to their inventories. This MFD has a critical accumulation of 3391.93 vehicles
-and a peak potential outflow of 22,691 veh/h. We impose an operational upper bound of 10,000 vehicles per region; this bound is a model constraint at which the fitted MFD retains positive production. Class flows assume comparable within-region trip
+and a peak potential outflow of 22,691 veh/h. We impose an operational upper bound of 10,000 vehicles per region. This bound is a model constraint at which the fitted MFD retains positive production. Class flows assume comparable within-region trip
 lengths, destination-proportional mixing, and adequate receiving supply
 throughout the verified domain.
 
@@ -331,11 +331,11 @@ a(z,u_{02})=\min\{60z,120u_{02}\},\qquad
 \end{equation}
 These branches represent a one-minute staging release time and commanded
 admission capacity. The queue explicitly accounts for boundary storage
-\cite{haddad2017queues}; its limit measures aggregate overflow. Spatial
+\cite{haddad2017queues}. Its limit measures aggregate overflow. Spatial
 spillback requires a receiving-supply extension.
 
 The gate commands are dimensionless fractions. Interregional and exit
-commands multiply the corresponding potential class flows; $u_{ij}=1$
+commands multiply the corresponding potential class flows. Thus $u_{ij}=1$
 permits the full potential flow and $u_{ij}=0$ blocks it. Exterior
 admission instead follows \eqref{eq:new-admission}, with $u_{02}$ scaling
 the admission capacity. Commands may vary over time or be held on finite
@@ -361,7 +361,7 @@ $d^{\rm int}_1=d^{\rm int}_{11}+d^{\rm int}_{12}+d^{\rm int}_{10}$, $d^{\rm int}
 \end{equation}
 A transfer preserves a vehicle's destination while changing its current
 region. For example, a vehicle transferred from class $n_{21}$ enters
-$n_{11}$, which is already included in $n_1$; its trip subsequently
+$n_{11}$, which is already included in $n_1$. Its trip subsequently
 completes at the local outflow rate $q_{11}$. Command changes preserve
 physical inventories, which remain continuous across planning blocks.
 The gate fractions satisfy
@@ -496,7 +496,7 @@ $x_P(s;x_0,w)$ for their traffic trajectories. The robust feasible set is
 Here $\mathcal W$ contains all measurable residuals satisfying the stated
 bound, and each service time $T_r$ lies in $[t_0,E]$. Membership also
 requires a well-defined trajectory throughout that interval. Task Q has
-an empty service-row collection; Task D includes the minute-60 regional
+an empty service-row collection. Task D includes the minute-60 regional
 row. The checker identifies a computable subset of plans that satisfy these
 requirements for every allowed initial state and arrival residual:
 \begin{equation}
@@ -509,22 +509,22 @@ The containment follows from the enclosure and execution results in
 Section~\ref{sec:new-certification}.
 
 The costs in \eqref{eq:benchmark-queue-cost} and
-\eqref{eq:benchmark-priority-cost} depend on the initial state and residual;
-we write these arguments explicitly as $J_Q(P;x_0,w)$ or $J_D(P;x_0,w)$
+\eqref{eq:benchmark-priority-cost} depend on the initial state and residual.
+We write these arguments explicitly as $J_Q(P;x_0,w)$ or $J_D(P;x_0,w)$
 when comparing realizations. In the experiments, a planner minimizes a
 center-forecast cost subject to its nominal or finite-scenario constraints.
 Execution then selects a certified output for the same contract, using
 the center-forecast cost to compare available certified tools. This
 distinguishes the numerical planning objective from the robust feasibility
 requirement. The local optimizers supply candidates and reported objective
-values; the checker verifies feasibility for all allowed initial states and arrival
+values. The checker verifies feasibility for all allowed initial states and arrival
 residuals throughout the continuous execution interval.
 
 An incumbent already certified for this task continues until a replacement
 passes its activation-time check. A reserve synthesized for a changed
 uncertainty contract receives a fresh certificate before becoming an
 authorized endpoint for repair. Passing a finite realization set records
-performance on that set; an exhibited violation identifies an infeasible
+performance on that set. An exhibited violation identifies an infeasible
 member of the uncertainty family. Acceptance by the checker establishes
 the physical and scheduled-service properties for the entire family.
 
@@ -562,8 +562,8 @@ h_i,\iota_i,r_i^A,u_i^{\rm exec},\ell_i,o_{i+1}).
 \end{aligned}
 \label{eq:new-agent-state}
 \end{equation}
-An invalid request returns $q_i^A=\bot$ and an empty proposal; the execution layer retains its valid incumbent.
-A history-only view supplies the observation and memory; a task-record view
+An invalid request returns $q_i^A=\bot$ and an empty proposal. The execution layer then retains its valid incumbent.
+A history-only view supplies the observation and memory. A task-record view
 also supplies the active priority and its absolute expiry. The trained model
 $\Pi_\phi$ proposes an operation, and the compiler checks its fields and
 transition before forming $q_i^A$. The record stores active and suspended
@@ -594,7 +594,7 @@ optional predictive repair tool supplies a modification or a no-result status:
 The decision record $\mathcal S_{t_i}$ contains physical information,
 absolute time, model and constraint versions, authorized obligations and the
 active verified continuation. Every tool output passes the same checker.
-An accepted plan replaces that continuation; rejection retains its original
+An accepted plan replaces that continuation. Rejection retains its original
 schedule and expiry. Section~\ref{sec:predictive-repair} supplies the repair
 and installation rules, including preparation for a future activation slot.
 
@@ -603,8 +603,8 @@ and installation rules, including preparation for a future activation slot.
 \includegraphics[width=0.98\textwidth]{figures/mfd_tool_architecture.pdf}
 \caption{Agent interpretation, numerical planning and execution authority.
 MPC, feedback rollout and predictive repair submit candidates to the same
-certifier. Execution uses an accepted plan or the still-valid continuation;
-the certified terminal policy supplies the expiry transition when available.
+certifier. Execution uses an accepted plan or the still-valid continuation.
+The certified terminal policy supplies the expiry transition when available.
 Memory and retrieved context affect requests, while the physical state,
 obligations and uncertainty bounds determine whether a plan is accepted.}
 \label{fig:new-architecture}
@@ -613,7 +613,7 @@ obligations and uncertainty bounds determine whether a plan is accepted.}
 \subsection{Executable plans and validity intervals}
 
 A finite plan specifies command blocks $u=k_b+K_bx$ on absolute intervals.
-Target-centered feedback has $k_b=u_b^\star-K_bx_b^\star$; constant MPC
+Target-centered feedback has $k_b=u_b^\star-K_bx_b^\star$. Constant MPC
 commands use $K_b=0$. An accepted replacement begins at its certified
 installation time. Rejection preserves the unexecuted schedule, including
 already authorized command changes, through its original expiry.
@@ -666,7 +666,7 @@ On block $b$, write
 In the primary two-region construction, the forecast $\widehat\Lambda$ is
 continuous and piecewise affine, and $w$ is any measurable signal satisfying
 the bound. Target feedback uses
-$k_b=u_b^\star-K_bx_b^\star$; constant MPC commands use $K_b=0$.
+$k_b=u_b^\star-K_bx_b^\star$. Constant MPC commands use $K_b=0$.
 Furthermore, command changes preserve physical inventories.
 
 The trusted physical limits are written as a finite set of affine
@@ -691,7 +691,7 @@ Write $e_i$ for the $i$th standard coordinate vector. The Region~1 incident
 deadline uses $g_r=100e_1$ and $\eta_r=2850$ vehicles
 in the normalized state coordinates. A two-sided regional imbalance band is
 represented by two rows. The operator fixes these rows, deadlines, and their
-task version; they remain unchanged by the agent's memory or proposals.
+task version. They remain unchanged by the agent's memory or proposals.
 
 \subsection{A computable enclosure that retains conservation structure}
 
@@ -729,7 +729,7 @@ the following bounds for every state and time in that region:
 At an admission-branch boundary the Jacobian bounds include the convex hull
 of both branch Jacobians. Verified exclusion of a branch throughout the
 outer tube permits its removal from the bound. The diagonal bound $a_{il}$
-retains its sign; cross-component effects enter through magnitudes.
+retains its sign, while cross-component effects enter through magnitudes.
 
 Define the nonnegative forcing and its scalar comparison solution by
 \begin{align}
@@ -924,8 +924,8 @@ validated arithmetic are given in \appref{app:structure-proof}.
 
 The independent queue bound can tighten the region used to bound the
 mean-value Jacobian. Its queue range must include every value between the
-predictor queue and every queue state allowed by the true-state enclosure;
-both ends of this range must be retained. Generator and remainder bounds
+predictor queue and every queue state allowed by the true-state enclosure.
+Both ends of this range must be retained. Generator and remainder bounds
 are propagated separately, preserving their possible cancellation within the
 total queue error. The two refinements supply complementary certificates
 for the same physical contract. Their row supports determine the initial
@@ -997,7 +997,7 @@ triples $(T_r,g_r,\eta_r)$. Theorems and propositions on one-plan
 certification establish the physical rows and these service rows for every
 member of $\mathcal X_P$. Retention restricts this same family to the
 remaining interval, keeping its correlated history. A new hard requirement
-is admitted only when the plan retained or installed covers it; a soft
+is admitted only when the plan retained or installed covers it. A soft
 priority request alone does not change the hard contract.
 
 The following theorem carries these one-plan guarantees through successive
@@ -1059,7 +1059,7 @@ Induction over $i=0,\ldots,N$ proves the physical inequalities on each
 segment. States are continuous at switches, and successor command rows are
 checked at installation. Every admitted service row remains covered until
 its deadline by $\mathcal O_{t_i}\subseteq\mathcal O_i$ and
-$t_{i+1}\le E_i$; applying its covering certificate at $T_r$ gives the
+$t_{i+1}\le E_i$. Applying its covering certificate at $T_r$ gives the
 second inequality in \eqref{eq:execution-physical-service}.
 \end{proof}
 
@@ -1071,7 +1071,7 @@ Retention preserves the obligation but may abandon a useful part of the
 requested priority. We therefore add a certification-aware predictive filter, related
 to the predictive safety-filter architecture of \cite{wabersich2021}, that
 generates further proposals for the existing certifier. Its search variable
-changes the entire finite command plan; its certificate covers physical rows
+changes the entire finite command plan. Its certificate covers physical rows
 and absolute service deadlines.
 
 Consider the following decision record:
@@ -1166,7 +1166,7 @@ $E_R>t_a$ and a completed-certificate time $t_{\rm ready}$, with
 $t_{\rm ready}=\infty$ if no result is obtained. Assume the incumbent's
 contract remains valid through preparation and installed records match the
 actual time, model and coefficients. A repair installation requires
-$x(t_a)\in\mathcal I_{t_a}$; all pending admitted service rows must be
+$x(t_a)\in\mathcal I_{t_a}$. All pending admitted service rows must be
 covered by the selected record. Use
 \begin{equation}
 P^{\rm exec}=\begin{cases}
@@ -1185,7 +1185,7 @@ Retention uses $E_{\rm exec}=E_B$ and the incumbent's original proof.
 \begin{proof}
 The incumbent certificate covers the prefix $[t,t_a]$. In the first
 case of \eqref{eq:repair-installation-rule}, the certificate contains the
-actual installation state and covers $[t_a,E_R]$; concatenation gives
+actual installation state and covers $[t_a,E_R]$. Concatenation gives
 \eqref{eq:execution-physical-service} through $E_R$. In the second case,
 the executed suffix remains a restriction of a trajectory in
 $\mathcal X_{P^B}$, including its stored uncertainty dependence.
@@ -1285,7 +1285,7 @@ trajectory and every remaining admitted service row on $[t_a,E_R]$.
 Concatenating these two certified intervals gives the installed-plan
 claim. If preparation is late or unsuccessful, the unchanged incumbent
 continues the same previously certified trajectory under the incumbent
-contract; its reachable-set proof and expiry remain valid. This is the retention case of
+contract. Its reachable-set proof and expiry remain valid. This is the retention case of
 Theorem~\ref{thm:new-plan-closure}.
 \end{proof}
 
@@ -1303,14 +1303,20 @@ preparation requires a new matching certificate before replacement.
 \subsubsection{Continuation at plan expiry}
 \label{sec:terminal-backup-main}
 
-To guarantee operation beyond finite-plan expiry, require terminal
-certification of every accepted plan. Its entire set of possible states at
+A finite-plan certificate covers execution through its expiry $E$, which
+is preserved after rejection. Coverage beyond $E$ requires a replacement
+installed by $E$ with a later certified expiry or a certified terminal
+backup activated at $E$. If neither is available, the finite-plan result
+establishes feasibility only through $E$.
+
+The terminal-backup approach requires terminal certification of every
+accepted plan. Its entire set of possible states at
 expiry must lie in a robustly invariant set $\mathcal K$. From every state
 in this set, the certified feedback policy $\mu_B$ keeps the state within this set and satisfies the physical
 constraints for all future time under the stated uncertainty bounds. The finite-plan certificate must
 also cover every service obligation pending at installation.
 Rejection preserves the incumbent's certified terminal condition and
-transition to this policy; an accepted replacement must establish its own
+transition to this policy. An accepted replacement must establish its own
 finite-horizon and terminal certification. Thus a certified continuation
 is available at each decision time and at expiry, even if all later
 proposals are rejected. \appref{sec:terminal-backup} states the invariant-set
@@ -1418,7 +1424,7 @@ admissible admission derivatives. The transformed Jacobian is
  \label{eq:network-jacobian}
 \end{equation}
 The queue branches affect only diagonal entries. Cross-region coupling
-remains in $J_c$ and $-J_cP_a$; arrival residuals enter through $[P_a^\top,I]^\top w$.
+remains in $J_c$ and $-J_cP_a$. Arrival residuals enter through $[P_a^\top,I]^\top w$.
 These matrices supply the comparison, generator and output-support calculations
 in the preceding construction in dimension $q+n_q$. The first-exit and
 replacement arguments use the same inequalities. The network allocation
@@ -1428,13 +1434,13 @@ Section~\ref{sec:network-transfer-results} evaluates this extension on
 identical physical plans in two coordinate systems.
 
 The network construction also permits specified forecast jumps at partition
-boundaries. Each comparison interval uses its own affine forecast segment;
-physical-state continuity supplies the inherited set at a jump. The
+boundaries. Each comparison interval uses its own affine forecast segment.
+Physical-state continuity supplies the inherited set at a jump. The
 intervalwise comparison and support arguments therefore apply to the
 piecewise-affine arrival profile in the transfer study.
 
 Fixed allocation and independent admission are explicit modeling conditions.
-Changing shares introduce additional terms; receiving-supply coupling changes
+Changing shares introduce additional terms, and receiving-supply coupling changes
 the Jacobian blocks. \appref{app:network-transfer} states these corrections,
 the transfer model and the dimension-dependent computation costs.
 
@@ -1443,11 +1449,11 @@ the transfer model and the dimension-dependent computation costs.
 \section{Numerical Evaluation}
 \label{sec:new-evidence}
 
-Five questions organize the evidence: does certification preserve a useful
-controller's performance; what does transportation structure add to the proof;
-how much priority can be recovered after a rejection; can successive tool
-requests preserve the inherited traffic contract; and can execution continue
-during computation or corrupted context? The comparisons below use the tasks
+The experiments address five questions. Does certification preserve a
+useful controller's performance? What does transportation structure add to
+the proof? How much priority can be recovered after a rejection? Can
+successive tool requests preserve the inherited traffic contract? Can
+execution continue during computation or under corrupted context? The comparisons below use the tasks
 R, Q and D of Section~\ref{sec:benchmark-formulation}.
 
 \subsection{Shared design and controller performance}
@@ -1457,7 +1463,7 @@ R, Q and D of Section~\ref{sec:benchmark-formulation}.
 The queue-aware studies use the literature MFD, synthetic internal demands,
 6000~veh/h base exterior arrivals and 2000-vehicle boundary storage of
 \appref{app:new-model}. Arrival events increase the known mean by 20--50\%
-for 30--60 minutes; five-minute loading and recovery ramps are included in
+for 30--60 minutes. Five-minute loading and recovery ramps are included in
 the event duration. Each certificate encloses the specified initial-state
 set and every measurable arrival residual within its bound. Matched replays
 measure traffic cost on common initial states and residuals.
@@ -1466,7 +1472,7 @@ Task R compares the reproduced almost-smooth two-gate CLF of
 \cite{zhong2018robust} with a local tracking MPC on the native four-state
 plant. Twenty-four cases combine three initial regional-total pairs, two
 destination splits, two gate intervals and constant or sinusoidal demand.
-Both laws receive current demand; MPC also receives the known future profile.
+Both laws receive current demand, and MPC also receives the known future profile.
 Task Q compares economic MPC following the predictive structure of
 \cite{geroliminis2013mpc} with the specified queue/exit extension of that CLF.
 Its twelve contracts combine four incident amplitudes with three durations,
@@ -1487,7 +1493,7 @@ in \appref{app:reusable-benchmark}.
 \centering\small
 \caption{Controller performance and unchanged-plan certification. Controller
 reductions use the stated CLF implementation as denominator. Q uses 960
-matched feasible realizations; the compatibility grid uses nominal replay.}
+matched feasible realizations. The compatibility grid uses nominal replay.}
 \label{tab:benchmark-regulation-queue}
 \label{tab:eight-event-compatibility-summary}
 \begin{tabular}{@{}p{0.19\textwidth}p{0.29\textwidth}p{0.43\textwidth}@{}}
@@ -1515,12 +1521,12 @@ continuous uncertainty coverage and an explicit expiry.
 These comparisons hold the physical plan, forecast and 15-second proof
 partition fixed. For a held feedback plan and 2850-vehicle deadline, raw
 accumulation coordinates leave the enclosure unresolved. Destination classes
-give a Region-1 upper bound of 2220 vehicles; adding waiting-inventory shares
+give a Region-1 upper bound of 2220 vehicles. Adding waiting-inventory shares
 reduces it to 2169, a 51-vehicle improvement. The complete coordinate
 comparison is in Table~\ref{tab:new-coordinate-ablation}.
 
 For the fixed two-block MPC plan, the regional/class half-width is $d$
-vehicles and the queue half-width is $\min(d,10)$; $\bar w_{\rm veh}$ bounds the
+vehicles and the queue half-width is $\min(d,10)$. $\bar w_{\rm veh}$ bounds the
 exterior-arrival residual. Table~\ref{tab:structure-frontier} compares the
 base interval enclosure, independent positivity/queue bounds and signed generators
 of Proposition~\ref{prop:structure-plan}. Signed correlations extend the
@@ -1534,13 +1540,13 @@ constraint and service requirement.
 \centering\small
 \caption{Certified Region-1 inventory bounds at minute 60 for a fixed
 model predictive control (MPC) plan over minutes 0--60. Entries are rounded
-upward in vehicles; the service limit is 2850. Here $d$ is the sensing
+upward in vehicles. The service limit is 2850. Here $d$ is the sensing
 half-width of the first six state coordinates in \eqref{eq:new-plant}
 (vehicles), the queue half-width is
 $\min(d,10)$ vehicles, and $\bar w_{\rm veh}$ bounds the exterior-arrival
 forecast residual in vehicles per hour (veh/h). Base interval uses the
-componentwise enclosure in conservation coordinates; Positivity/queue adds
-independently proved nonnegativity and scalar queue bounds; Signed also retains
+componentwise enclosure in conservation coordinates. Positivity/queue adds
+independently proved nonnegativity and scalar queue bounds. Signed also retains
 shared initial-state dependence through signed generators and a bounded
 remainder. A dash means the complete-plan certificate is unresolved.}
 \label{tab:structure-frontier}
@@ -1562,11 +1568,11 @@ $d$ (veh) & $\bar w_{\rm veh}$ (veh/h) & Base interval & Positivity/queue & Sign
 For the 1700-vehicle service limit, tighter certified bounds reduce the
 required planning margin under the same one-vehicle sensing half-widths
 and 60~veh/h residual bound. On the same six-target menu, the base interval and
-positivity/queue methods first certify a 1600-vehicle nominal target; signed
+positivity/queue methods first certify a 1600-vehicle nominal target. Signed
 generators also certify 1625, with a deadline bound below 1689 vehicles.
 The clearance margin falls from 100 to 75 vehicles and nominal TTS by
 0.90\% (41 veh-h). In repeated replacement, both certified initial targets
-produce two admissions and ten rejections; the signed 1625-target plan
+produce two admissions and ten rejections. The signed 1625-target plan
 retains the 0.90\% TTS benefit and meets the hard deadline. The improvement
 comes from the initial certified margin. \appref{app:structure-online-details}
 reports the full target menu, adverse trajectory and eight-event comparison.
@@ -1576,8 +1582,8 @@ two- and three-region rings (six and twelve states). At the widest tested
 regional-total half-width of 25 vehicles, the combined coordinates certify
 the two-region plan with a 300~veh/h residual per queue and the
 three-region plan with a 60~veh/h residual. Their largest regional
-deadline bounds are 1552 and 2060 vehicles against a 2700-vehicle limit;
-ordinary class coordinates leave both proofs unresolved. Class half-widths
+deadline bounds are 1552 and 2060 vehicles against a 2700-vehicle limit.
+Ordinary class coordinates leave both proofs unresolved. Class half-widths
 are $d/R$ and queue half-widths $\min(d,10)$ for $R$ regions. Successful
 twelve-state proofs take 5.20--5.28 seconds for 120 intervals.
 \appref{app:network-transfer} gives the complete sixteen-attempt sweep,
@@ -1607,9 +1613,9 @@ Sample passes satisfy physical and service limits in all 640 replays
 (128 initial-state corners times five arrival-residual profiles).
 Family passes certify continuous physical limits and the minute-60 service
 bound for every allowed initial state and residual. MPC means model predictive control.
-Nominal MPC plans from the state-set center with zero residual;
+Nominal MPC plans from the state-set center with zero residual.
 Five-scenario MPC adds the all-low/all-high states with both constant
-residual extremes; Full-scenario MPC uses all 640 combinations plus the
+residual extremes. Full-scenario MPC uses all 640 combinations plus the
 center forecast. All minimize center-forecast priority cost. Checked-repair
 entries count all certified outputs: unchanged proposals and checked
 interpolations toward a backup. Reserve refresh constructs a new certified
@@ -1636,30 +1642,30 @@ reserves pass certification in all twelve contracts where the original
 continuation fails its check, enabling repair in the remaining six. This tests
 the same-contract certified-endpoint premise of
 Theorem~\ref{thm:repair-grid}. The physical CBF-QP separately passes physical
-rows in 80/80 matched adverse runs and service in 44/80; its denominator is
+rows in 80/80 matched adverse runs and service in 44/80. Its denominator is
 one adverse trajectory per contract. Its instantaneous barriers protect
 storage and gates, while service remains a scheduled evaluation row.
 
 The common conflict $(d,\bar w_{\rm veh},\eta,p)=(1,300,2850,4)$, at the all-high
 corner and constant positive residual, makes these distinctions concrete
 (Table~\ref{tab:benchmark-conflict}). Nominal MPC violates storage and the
-deadline; the physical CBF protects storage but misses the deadline.
+deadline. The physical CBF protects storage but misses the deadline.
 Retention and checked repair satisfy both. Full-scenario MPC passes this
-trajectory but its sufficient family proof remains unresolved; checked
+trajectory but its sufficient family proof remains unresolved. Checked
 repair supplies that stronger execution certificate.
 
 \begin{table}[t]
 \centering\footnotesize
 \caption{Matched adverse realization, minutes 20--60. TTS is total
-time spent in the regions and exterior queue; $J_D$ weights Region~2 by
+time spent in the regions and exterior queue. $J_D$ weights Region~2 by
 $p=4$. Both use veh-h. Costs and counts are rounded to whole
-units. Peak queue is the maximum exterior count $100z$; $100n_1(E)$ is the
+units. Peak queue is the maximum exterior count $100z$. $100n_1(E)$ is the
 Region-1 count at deadline $E=60$ minutes. Their limits are 2000 and 2850
 vehicles. P/S lists physical/service outcomes: P=pass, F=fail. Cert.
 reports full-family certification: Yes=certified, No=unresolved,
 dash=not assessed by that checker.
-MPC means model predictive control; CBF means control barrier function.
-Retained continuation follows the previous certified plan; Nominal-plan
+MPC means model predictive control, and CBF means control barrier function.
+Retained continuation follows the previous certified plan. Nominal-plan
 and Full-scenario repair interpolate their MPC proposals toward it.}
 \label{tab:benchmark-conflict}
 \setlength{\tabcolsep}{3pt}
@@ -1689,7 +1695,7 @@ B_\omega&=\frac{J_D(P^B;\omega)-J_D(P^R;\omega)}{J_D(P^B;\omega)-J_D(P^0;\omega)
 \label{eq:benchmark-repair-metrics}
 \end{equation}
 Positive $\Delta J_\omega$ means a reduction in priority cost relative
-to retention; positive $\Delta D_\omega$ means an increase in
+to retention. Positive $\Delta D_\omega$ means an increase in
 queue-inclusive delay. Both changes are percentages. The recovered
 benefit is reported as $100B_\omega$ percent.
 Across 24,320 paired realizations from the 38 original-continuation repair
@@ -1710,7 +1716,7 @@ earlier single-contract results are preserved in the repository.
 Task D also tests successive planning requests within one incident. A
 certified weight-$p=4$ ordinary-MPC repair is active at minute 20. At
 minute 25 the agent requests the remaining constant command from the
-previously computed $p=2$ full-scenario MPC; at minute 30 it requests the
+previously computed $p=2$ full-scenario MPC. At minute 30 it requests the
 remaining command from the $p=4$ nominal MPC. The hard physical limits and
 absolute minute-60 Region-1 deadline stay fixed. The requested Region-2
 weight follows $4\to2\to4$ across the three execution intervals. Each
@@ -1737,7 +1743,7 @@ certified plan, including its scheduled command changes; U=execute both
 requested replacements without checking; C=execute only certified
 replacements and retain the current plan after rejection. Medians use all
 640 replays, including infeasible unchecked runs. D015, D027 and D071 were
-preselected; D025 is the first storage-violation case found in the complete
+preselected. D025 is the first storage-violation case found in the complete
 matched-pair scan.}
 \label{tab:sequential-handover}
 \setlength{\tabcolsep}{4pt}
@@ -1761,12 +1767,12 @@ service enclosure, although the sampled unchecked path remains feasible.
 D071 retains the initial plan at both requests when the propagated outer
 boxes include inadmissible physical states.
 
-The complete development grid contains 36 matched weight pairs; 30 have
+The complete development grid contains 36 matched weight pairs. 30 have
 the archived certified source plans required for this sequence. Unchecked
 switching overfills exterior storage in three of these 30 cases. All three
 were passed through the full sequential checker. In the first case by
 numeric ID, D025, the minute-25 scenario-MPC command is certified from
-the inherited state set; the minute-30 nominal command fails the queue
+the inherited state set. The minute-30 nominal command fails the queue
 storage check. Unchecked execution reaches 2005.59 vehicles against the
 2000-vehicle queue limit on a constant-high residual realization,
 confirmed by independent adaptive integration. Retaining the accepted
@@ -1799,7 +1805,7 @@ Table~\ref{tab:delayed-handover} records 30 timely replacements and 21
 retentions across 51 preparation cases, with all 32,640 trajectories
 feasible. Three one-minute results are late. Longer slots provide more
 computation time but also widen the propagated box and shorten the remaining
-service horizon; conversion to a physical box discards class correlations, which can
+service horizon. Conversion to a physical box discards class correlations, which can
 prevent certification of a replacement.
 The incumbent remains covered by its original certificate in those cases.
 
@@ -1809,11 +1815,11 @@ The agent studies use \texttt{gpt-5.4-mini-2026-03-17}, reasoning disabled,
 and strict tool schemas. A 96-call pilot combines three plan-availability
 situations, four temporal histories, two memory conditions, two interfaces
 and two repetitions. Histories include interruptions, nested restoration and
-exact expiry; poisoned tool memory attempts to change priorities or bypass
+exact expiry. Poisoned tool memory attempts to change priorities or bypass
 admission. Pilot choices route precomputed plans. Eight subsequent paired,
 poisoned-memory traces instead use the model's objective in a fresh MPC
 solve, followed by its repair or retention request after rejection. Thirteen
-live calls complete these traces; each authorized plan has 640 replays.
+live calls complete these traces. Each authorized plan has 640 replays.
 
 \begin{table}[t]
 \centering\small
@@ -1823,13 +1829,13 @@ certified installations and continued execution of the prior plan,
 respectively (17 contracts per slot). Each row has
 $17\times640=10{,}880$ replays through minute 60.
 Middle: the interpretation pilot has 24 calls per interface/memory pair.
-History only supplies observations and interaction memory; Task record
+History only supplies observations and interaction memory. Task record
 also supplies the active priority and its expiry. Clean memory is
-unaltered; Poisoned memory contains misleading instructions. Objective
-correct means agreement with the active priority; Tool correct means
+unaltered. Poisoned memory contains misleading instructions. Objective
+correct means agreement with the active priority. Tool correct means
 agreement with the saved certified-tool selection rule. Bottom: each
 interface has four traces and $4\times640=2560$ replays. Objective correct
-assesses initial requests; Repairs executed counts traces installing a
+assesses initial requests. Repairs executed counts traces installing a
 certified grid repair. Feasible trajectories satisfy physical and service
 constraints.}
 \label{tab:delayed-handover}
@@ -1860,7 +1866,7 @@ Task record & 4/4 & 4/4 & 2560/2560\\
 \end{table}
 
 Providing the authoritative task record improves identification of the
-active operator objective in these small paired examples; numerical certification enforces the unchanged physical and service
+active operator objective in these small paired examples. Numerical certification enforces the unchanged physical and service
 requirements on every authorized plan. We score whether the compiled planning objective matches the active
 operator instruction separately from whether the executed plan is feasible. Literal
 prompts, responses, model identifiers and tool parameters support replay.
@@ -1875,8 +1881,8 @@ denominators.
 \subsection{The operator's decision}
 
 The benchmark separates controller selection from permission to execute its
-next plan. Regional regulation tests recovery to an accumulation target;
-queue-inclusive planning accounts for waiting outside the network; deadline
+next plan. Regional regulation tests recovery to an accumulation target.
+Queue-inclusive planning accounts for waiting outside the network. Deadline
 replacement tests whether a new preference can inherit an existing service
 obligation. Acceptance records the sensing and forecast bounds and the plan's expiry,
 while leaving its commands unchanged. In the matched comparisons, MPC plans accepted without repair produce
@@ -1910,7 +1916,7 @@ transportation decision.
 The experiments use a literature MFD and synthetic demands constructed from
 a nominal operating record. Planners receive the event mean. Certificates
 treat production, destination fractions, internal demand, release rate and
-gate capacity as fixed parameters; they enclose the specified sensing and
+gate capacity as fixed parameters. They enclose the specified sensing and
 exterior-arrival uncertainty. The reported traffic costs apply to these model assumptions, available
 information and controller settings. The native CLF reproduction, queue/exit
 extension, local MPC and physical CBF are specified implementations with
@@ -1918,8 +1924,8 @@ their objective, information and constraint coverage stated explicitly.
 
 Destination-class observability is a substantive deployment requirement.
 The initial one-vehicle box and wider tested boxes are assumed information
-contracts. Regional totals can correspond to several destination mixtures;
-an estimator must deliver a joint set containing the actual class inventories
+contracts. Regional totals can correspond to several destination mixtures.
+An estimator must therefore deliver a joint set containing the actual class inventories
 and queue, accounting for bias, calibration and observation timestamps.
 The queue-capped structure sweep and all-state deadline sweep use distinct
 sets. MFD, routing and release uncertainty affect the vector field and its
@@ -1927,21 +1933,21 @@ derivatives through additional channels that require validated bounds on
 every proof interval. Allocation corrections are given in
 \appref{app:network-assumptions}.
 
-Trajectory replay checks the selected initial states and arrival profiles;
-the continuous certificate covers the full specified uncertainty set. Their gap in the full-scenario experiment identifies where tighter
+Trajectory replay checks the selected initial states and arrival profiles.
+The continuous certificate covers the full specified uncertainty set. Their gap in the full-scenario experiment identifies where tighter
 nonlinear dependency propagation or planning margins could enlarge admission.
 Recorded violations distinguish a physically unsuccessful plan from one
 whose sufficient certificate remains unresolved. The live-model study is a
-small, version-specific demonstration of interpretation and tool execution;
-released requests and responses permit decision replay. Hardware and load
+small, version-specific demonstration of interpretation and tool execution.
+Released requests and responses permit decision replay. Hardware and load
 likewise condition the reported preparation times. The connected-network
 study tests transfer and proof cost under its own routing and uncertainty
 contracts.
 
 The numerical experiments evaluate finite plans through their recorded
-expiries. Certified continuation beyond expiry additionally requires the
-invariant backup, terminal landing and obligation coverage of
-\appref{sec:terminal-backup}; sustained arrivals must be compatible with
+expiries. Indefinite continuation through the terminal backup additionally
+requires the invariant backup, terminal landing and obligation coverage of
+\appref{sec:terminal-backup}. Sustained arrivals must be compatible with
 finite storage and achievable discharge.
 
 \subsection{Operational setup and reuse}
@@ -2010,7 +2016,7 @@ $(11,12,10,22,21,20)$, the fixed internal demands are
 \end{aligned}
 \label{eq:new-incident-demands}
 \end{equation}
-The displayed decimals are rounded; the exact stored binary coefficients
+The displayed decimals are rounded. The exact stored binary coefficients
 define the implemented field and are included in every proof. With base
 exterior admission 60 and $u^\star=(0.5,0.5,0.5,0.52)$, the regional
 state $(30,30,15,15,5,5)$ is an equilibrium and the exterior queue is 2.
@@ -2059,7 +2065,7 @@ events broaden the validation set.
 \subsection{Conservation coordinates and nonsmooth flow}
 
 The model equations and destination definitions are specified in
-Section~\ref{sec:new-problem}; \appref{app:new-model} supplies the controller-design
+Section~\ref{sec:new-problem}. \appref{app:new-model} supplies the controller-design
 parameters. For admission fraction $\pi$, its physical incidence is
 $b_a=(0,1,0,1-\pi,0,0,-1)^\top$. The transformation
 \eqref{eq:new-conservation-coordinates} has inverse
@@ -2083,7 +2089,7 @@ feedback the two admission branches are affine in the physical state, and
 their minimum is continuous and locally Lipschitz. Consequently the
 closed-loop field is locally Lipschitz in state and measurable in time.
 Bounded measurable residuals give unique absolutely continuous solutions
-locally; the compact enclosures below continue them throughout each verified
+locally. The compact enclosures below continue them throughout each verified
 finite plan.
 
 At a branch surface, the generalized Jacobian is contained in the convex hull
@@ -2109,8 +2115,8 @@ relation along this segment yields, almost everywhere,
 where $A(t)$ belongs to the convex hull of transformed generalized Jacobians
 on the segment, and
 $\epsilon=L f_b(p,t)-L\dot p$ has $|\epsilon_i|\le\delta_i$.
-For $v_i=|(z_e)_i|$, the diagonal contribution is bounded by $a_iv_i$;
-the remaining terms are bounded by
+For $v_i=|(z_e)_i|$, the diagonal contribution is bounded by $a_iv_i$.
+The remaining terms are bounded by
 $\sum_{j\ne i}b_{ij}R_j+\delta_i+|(Le_7)_i|\bar w_x=c_i(R)$.
 Absolute continuity therefore gives the scalar differential inequality
 \begin{equation}
@@ -2167,7 +2173,7 @@ interval evaluation. Outward arithmetic bounds the polynomial ranges,
 Jacobian entries, inverses where needed, and scalar comparison functions.
 Propagation intervals are split at the exact times of forecast knots,
 command-block boundaries, and service deadlines. Predictors and trial radii
-may be generated numerically; plan acceptance requires the outward-rounded
+may be generated numerically. Plan acceptance requires the outward-rounded
 trajectory bounds and constraint checks to pass.
 
 For $a\ne0$, the comparison integral can be evaluated as
@@ -2193,8 +2199,8 @@ residuals are evaluated exactly:
  \end{gathered}
  \label{eq:new-exact-actuator-residuals}
 \end{equation}
-A nonnegative exact residual satisfies its original closed inequality;
-an outward lower floating-point representation preserves this conclusion,
+A nonnegative exact residual satisfies its original closed inequality.
+An outward lower floating-point representation preserves this conclusion,
 including exact zero. The verifier applies this rule only after checking
 that the gain is identically zero. The twelve state, class, regional, and
 storage support calculations remain unchanged. Regression checks
@@ -2219,7 +2225,7 @@ forecast or prediction horizon. Its actual disturbance must belong to that
 replacement's specified family. Until replacement, the current proof's own
 assumptions must remain valid. A forecast update, sensing error outside the
 certified bound, or a changed receiving-supply model is part of a new
-certification record; the execution theorem is applied with a valid record
+certification record. The execution theorem is applied with a valid record
 at each activation. An installation set containing the actual state can be obtained by
 propagating the active plan's bounds during computation and intersecting
 that enclosure with a measurement set that also contains the actual state. Without an accepted replacement, the finite-horizon guarantee remains
@@ -2254,10 +2260,10 @@ establishes positivity independently of the requested jam and storage bounds.
 For a local solution, the sum of negative class parts has upper derivative
 at most a local Lipschitz constant times that sum. Its zero initial value
 therefore remains zero. Equation~\eqref{eq:new-conservation} then gives
-$0\le M(t)\le M(t_0)+\int_{t_0}^t(d^{\rm int}_1+d^{\rm int}_2+\Lambda(s))\,ds$;
-bounded arrivals exclude finite-time escape. The nine lower-state/class
+$0\le M(t)\le M(t_0)+\int_{t_0}^t(d^{\rm int}_1+d^{\rm int}_2+\Lambda(s))\,ds$.
+Bounded arrivals exclude finite-time escape. The nine lower-state/class
 rows follow from this independent positive-cone argument. Its conclusion
-is boundary invariance; full-vector monotonicity is a separate property.
+is boundary invariance. Full-vector monotonicity is a separate property.
 
 For constant gates the scalar queue comparison is order-preserving in its
 initial value and arrival input. With constant extremal arrival $\lambda$
@@ -2272,7 +2278,7 @@ and $\kappa=120u_{02}$, its branch solutions are
 \end{equation}
 Interval exponential/logarithmic evaluation encloses branch crossings.
 Affine forecast intervals use their outward extremal arrivals when the common
-branch remains unresolved; exact forecast and command cutpoints are retained.
+branch remains unresolved. Exact forecast and command cutpoints are retained.
 This supplies endpoint and continuous bounds for all measurable allowed
 residuals. The queue-storage requirement is tested against their upper bound.
 If this continuous enclosure proves a common branch and the forecast is
@@ -2288,10 +2294,10 @@ $\ell_0+\ell_1s$, sharper endpoint comparisons use
 \end{aligned}
 \end{equation}
 The minus and plus signs give the lower and upper solutions. Only the
-endpoint interval is intersected with these bounds; the independently
+endpoint interval is intersected with these bounds. The independently
 established continuous enclosure remains in force.
 
-An initial physical box must itself satisfy class/queue nonnegativity; this
+An initial physical box must itself satisfy class/queue nonnegativity. This
 is checked by exact supports of the class map. Subsequent verified boxes may
 be intersected with independently established positivity and queue intervals,
 then enclosed outward. This operation preserves the reachable family and
@@ -2307,17 +2313,17 @@ predictor lies outside the true queue range.
 
 Consider one interval, omit $l$, and let $\mathcal J_\varpi$ bound each retained
 transformed branch Jacobian on that corridor. In
-\eqref{eq:structure-affine-set}, $\xi$ is constant across the plan;
-the boxed remainder may depend on it. Choose any fixed matrix $A^0$ and
+\eqref{eq:structure-affine-set}, $\xi$ is constant across the plan.
+The boxed remainder may depend on it. Choose any fixed matrix $A^0$ and
 differentiate the decomposition to obtain
 \eqref{eq:structure-remainder-identity} exactly. For a fresh physical box
 $x(t_0)\in\widehat x+[-d_x,d_x]$, initialize $p(t_0)=\widehat x$,
 $\Gamma(0)=L\operatorname{diag}(d_x)$ and $\rho=0$ before numerical
-conversion; generator conversion error is absorbed outward into $\rho$.
+conversion. Generator conversion error is absorbed outward into $\rho$.
 Precisely, the mean-value matrix satisfies
 $L[f_b(x,t)-f_b(p,t)]=B(s)L(x-p)$, with $B(s)$ in the convex hull of
 the retained transformed branch Jacobians along the predictor-to-state
-segment. The corridor condition applies to the full physical error; the
+segment. The corridor condition applies to the full physical error. The
 remainder $\zeta$ enters through its algebraic decomposition.
 Define a Metzler matrix
 $\overline{M}$ and nonnegative forcing bound $b_\zeta$ by
@@ -2341,7 +2347,7 @@ identity gives
  \label{eq:structure-remainder-bound}
 \end{equation}
 The exponential is nonnegative, and $\Psi(s)$ is componentwise increasing.
-The exponential itself can decrease in some entries; its old-remainder
+The exponential itself can decrease in some entries, so its old-remainder
 contribution is bounded over the entire interval. With outward vectors
 \begin{equation}
  \begin{aligned}
@@ -2378,7 +2384,7 @@ $|e^{A^0h}\Gamma(0)-\widehat\Gamma|$. With recentering bound $\delta^{\rm rec}$ 
  \label{eq:structure-endpoint-update}
 \end{equation}
 It retains the same $\xi$ and includes all numerical conversion errors.
-The scalar queue bound constrains the total physical queue error; its
+The scalar queue bound constrains the total physical queue error. Its
 generator and remainder summands can cancel, so neither is separately
 contracted by that total-error bound. Finite induction proves
 Proposition~\ref{prop:structure-plan}.
@@ -2492,28 +2498,28 @@ Here $\mathsf{UpdateTask}$ updates the parsed task record and
 $\mathsf{SelectTask}$ selects its objective and remaining duration.
 The compiler $\mathsf{Comp}$ also forms the numerical planning request.
 The index $j_i$ selects the soft objective. A regional task expiring at $\tau_i^{\mathrm{exp}}$
-has $\Delta_i=\tau_i^{\mathrm{exp}}-t_i>0$; network operation has $\Delta_i=0$.
+has $\Delta_i=\tau_i^{\mathrm{exp}}-t_i>0$. Network operation has $\Delta_i=0$.
 The same expiry rule applies between proposals.
 
 \begin{table}[t]
 \centering\small
 \caption{Compiler transitions. Only the listed fields accompany the operation
-name. Durations/extensions are integer minutes in $[1,120]$; nonempty labels
+name. Durations/extensions are integer minutes in $[1,120]$. Nonempty labels
 contain at most 80 characters.}
 \label{tab:task-state-operations}
 \begin{tabular}{@{}p{0.14\textwidth}p{0.22\textwidth}p{0.56\textwidth}@{}}
 \toprule
 Operation & Additional fields & Transition at time $t$\\
 \midrule
-Set & Region, duration, label & Clear the stack; install a task expiring at
+Set & Region, duration, label & Clear the stack and install a task expiring at
 $t+D/60$, for duration $D$ minutes.\\
 Interrupt & Region, duration, label & Save the active task with its original
-expiry; install a temporary task expiring at $t+D/60$, for duration $D$ minutes.\\
+expiry and install a temporary task expiring at $t+D/60$, for duration $D$ minutes.\\
 Continue & None & Preserve the surviving task and expiry.\\
 Extend & Minutes & Add $D/60$ hours to the active task's expiry, for extension $D$ minutes.\\
-Resume & None & Restore the latest unexpired saved task; if none survives,
+Resume & None & Restore the latest unexpired saved task. If none survives,
 clear the interruption. With no stack or interruption, keep the current task.\\
-Cancel; network & None & Clear active and suspended tasks; use network operation.\\
+Cancel; network & None & Clear active and suspended tasks and use network operation.\\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -2522,8 +2528,8 @@ The compiler rejects extra fields, extension of an absent task and
 interruption depth above four. Invalid operations create no new planning
 request. The canonical record derives from schema-valid model operations,
 independently of evaluation labels and physical-plan admission. A valid operation may update the requested objective while the earlier
-certified plan continues. The task record describes the requested objective;
-the execution record identifies the plan currently in use. Installing a new
+certified plan continues. The task record describes the requested objective.
+The execution record identifies the plan currently in use. Installing a new
 plan requires its own passing certificate.
 The hard storage, gate and service requirements remain in the trusted contract.
 
@@ -2536,15 +2542,15 @@ has
  +\frac{D+\sum_{m=1}^{n^{\rm ext}}D_m^{\rm ext}}{60}.
 \label{eq:task-expiry-invariant}
 \end{equation}
-Set and interrupt establish this equality; extend adds its stated positive
+Set and interrupt establish this equality, and extend adds its stated positive
 increment. Continue, suspension and restoration leave it unchanged.
 Aging removes only expired entries. These observations prove the invariant
 by induction over the transition table. Positive durations and selection
-of unexpired predecessors give $\Delta_i>0$ for a regional task; network
+of unexpired predecessors give $\Delta_i>0$ for a regional task. Network
 operation has $\Delta_i=0$. Invalid operations leave the aged record
 unchanged and return $q_i^A=\bot$, so no planner is called. The stored
 implementation uses the equivalent minute clock $60t$. These operations
-change soft priorities; admitted hard service requirements remain in
+change soft priorities while admitted hard service requirements remain in
 $\mathcal T_i$.
 
 \section{Continuation, Repair Timing and Cost Guarantees}
@@ -2655,7 +2661,7 @@ checks, pending-service coverage, an implementable transition, and
 \mathcal R_P(E_P)\subseteq\mathcal K.
 \label{eq:terminal-checker}
 \end{equation}
-Here $\mathcal R_P$ is the certified reachable-state enclosure; its
+Here $\mathcal R_P$ is the certified reachable-state enclosure. Its
 terminal inclusion covers every trajectory in $\mathcal X_P$.
 
 The terminal condition provides a certified continuation whenever the
@@ -2709,22 +2715,22 @@ x(t)\in\mathcal K\quad(E_k\le t<t_{k+1}^{\rm ins}).
 The implication follows from the backup's robust invariance and certified
 initialization. Its state and command limits hold throughout this interval.
 If no next installation exists, take $t_{k+1}^{\rm ins}=\infty$.
-Every accepted plan starts a new certified finite segment; a rejected
+Every accepted plan starts a new certified finite segment. A rejected
 request preserves the current segment and terminal connection. On each
 bounded time interval there are finitely many installations, hence finitely
 many such concatenations. Each finite plan exists through its certified
 horizon, and each backup segment exists indefinitely. These compatible
 solutions therefore define a trajectory for all future time. Every
-admitted service deadline is retained in a covering finite certificate;
-at expiry no such deadline remains uncovered. Applying the covering
+admitted service deadline is retained in a covering finite certificate.
+At expiry no such deadline remains uncovered. Applying the covering
 certificate at that deadline proves the second part of
 \eqref{eq:terminal-global-guarantee}.
 \end{proof}
 
 The certified continuation can be a newly accepted finite plan, the remainder
 of the incumbent plan, or the terminal backup. A certified replacement
-establishes a new finite horizon and terminal connection to $\mathcal K$;
-retention preserves the current connection and activates the backup policy at
+establishes a new finite horizon and terminal connection to $\mathcal K$.
+Retention preserves the current connection and activates the backup policy at
 expiry. A new service
 requirement introduced while the system is operating under the backup obtains
 execution authority only after a new certificate has been established that
@@ -2805,12 +2811,12 @@ Integrating the running-cost bound and adding the terminal bound yields
 The queue-aware MFD has locally Lipschitz polynomial class flows on the
 specified model domain and a minimum of Lipschitz admission branches.
 Bounded controls, a finite horizon and a compact common trajectory domain
-therefore provide finite $L_x,L_u$; the linear TTS and fixed-priority rows
+therefore provide finite $L_x,L_u$. The linear TTS and fixed-priority rows
 have finite cost constants. The domain must contain both trajectories,
 including the rejected reference plan if it leaves the physical constraint
 set. This condition is additional to certification of the repaired plan.
 The bound is uniform over paired initial states and residuals if the same
-constants cover them all; it also bounds their worst-case costs by the
+constants cover them all. It also bounds their worst-case costs by the
 standard inequality $|\sup J_1-\sup J_0|\le\sup|J_1-J_0|$.
 The proposition applies to fixed plans with a common continuous cost model.
 The ensemble reports realized costs for the specified policies and
@@ -2839,7 +2845,7 @@ The earlier eight-event comparison starts from the vehicle inventories
 with base exterior arrivals
 of 6000 veh/h and the same model and physical limits as the current
 queue-aware tasks. The six development events combine arrival increases
-of 20, 30 and 40\% with durations of 30 and 60 minutes; the two
+of 20, 30 and 40\% with durations of 30 and 60 minutes. The two
 intermediate events use 25 and 35\% increases for 45 minutes. Every event
 starts at minute 15. Five-minute loading and recovery ramps are included
 in its duration. The regional service requirement is 2850 vehicles in
@@ -2925,7 +2931,7 @@ the same planning and proof settings.
 
 Nominal and five-scenario MPC use one-minute RK4 prediction and three
 fixed optimizer starts. SLSQP uses at most 100 iterations and objective
-tolerance $10^{-8}$; numerical feasibility tolerance is $10^{-7}$ in state
+tolerance $10^{-8}$. Numerical feasibility tolerance is $10^{-7}$ in state
 units. The five-scenario tool constrains the center and the two
 all-coordinate extreme corners under the two constant residual extrema.
 Its objective uses the center forecast. Full-scenario MPC constrains all
@@ -2933,14 +2939,14 @@ Its objective uses the center forecast. Full-scenario MPC constrains all
 alternating and ten-minute sinusoidal residuals, together with the nominal
 center. It imposes a one-vehicle clearance on physical and deadline
 prediction rows. Analytic sensitivities supply the derivative of the
-selected worst scenario; tied scenarios supply nonsmooth active supports
+selected worst scenario. Tied scenarios supply nonsmooth active supports
 to the local solver. The three starts and algorithm settings remain fixed
 across development and intermediate contracts.
 
 Every numerical plan is compiled by rounding gate fractions to nine
 decimal places inside the gate box. A directional difference close to
 $0.75$ is adjusted with fixed $10^{-8}$ interior gate slack. The change is
-recorded; the largest change in the synchronous sweep is below $10^{-9}$
+recorded. The largest change in the synchronous sweep is below $10^{-9}$
 in a gate fraction. Exact actuator checks in
 \eqref{eq:new-exact-actuator-residuals} apply to the resulting stored
 binary coefficients. The unchanged outward enclosure uses 15-second proof
@@ -2958,7 +2964,7 @@ requirements.
 The queue/exit CLF extension uses the Region-1-protection LQR reference
 totals $(2700,3200)$ vehicles, state weights
 $(4,1,0.1,0.1,0.1,0.1,2)$ and input weight $3000I_4$. The reference and LQR
-feedback are constructed as in \appref{app:new-model}; this feedback
+feedback are constructed as in \appref{app:new-model}. This feedback
 supplies the admission and exit gates. For the interregional gates, let
 $e$ contain the regional-total errors in vehicles, and let
 $\widehat f_{1:2}(x,u,t)$ denote the first two right-hand sides of
@@ -3017,7 +3023,7 @@ Constant-plan and queue-aware feedback replay use ten-second RK4 steps.
 Performance comparisons match corner and residual labels. The complete
 constant-plan grid contains 275,200 trajectories, in addition to the
 native, feedback and live-tool studies. The finite-scenario planner shares
-scenarios with these replays; the certificate covers the complete initial
+scenarios with these replays. The certificate covers the complete initial
 box and every measurable bounded residual throughout the plan interval.
 
 Both the five-scenario and full-scenario grids are retained. Selection
@@ -3037,7 +3043,7 @@ adaptive DOP853, splitting alternating-residual discontinuities and
 checking conservation balances. All 138 selected replays pass the independent adaptive-integration and
 conservation checks. All 51 handover cases also receive an adverse replay and an
 activation-set membership check. These independent replays check the
-implementation and reported performance; continuous physical and service
+implementation and reported performance. Continuous physical and service
 coverage follows from the interval certificate.
 
 \subsection{Preparation for a future handover}
@@ -3106,7 +3112,7 @@ those cases.
 Each matched pair fixes one Task D incident and the absolute minute-60
 Region-1 deadline. A certified ordinary-MPC repair with Region-2 weight
 $4$ is active at minute 20. At minute 25 the request is the remaining
-constant control of the stored weight-$2$ full-scenario MPC; at minute 30
+constant control of the stored weight-$2$ full-scenario MPC. At minute 30
 it is the remaining constant control of the weight-$4$ nominal MPC. The
 sensing box, arrival-residual bound, storage limit and service deadline
 remain identical within each pair. The requested weight changes as
@@ -3126,7 +3132,7 @@ weight-$4$/weight-$2$ pairs. Thirty had both required archived source-plan
 certificates. Unchecked switching caused sampled physical violations in
 three pairs: D025/D024, D043/D042 and D061/D060. All three received full
 sequential admission checks. The eight intermediate Task D contracts
-use weight $3$ and varying hard requirements; the sequential comparison
+use weight $3$ and varying hard requirements. The sequential comparison
 uses matched weight-$4$/weight-$2$ contracts with identical hard fields.
 
 \begin{table}[t]
@@ -3157,14 +3163,14 @@ ten-second RK4 replay. The fixed comparator executes the minute-20 plan
 through minute 60, the unchecked comparator installs both later requests,
 and the certified comparator follows the recorded acceptances and
 retentions. All face the same changing soft weights and hard requirements.
-All unchecked schedules meet the sampled service row; the three stress
+All unchecked schedules meet the sampled service row. The three stress
 cases fail exterior queue storage.
 
 \begin{table}[t]
 \centering\small
 \caption{Matched sequential traffic outcomes. Queue columns give the
-largest queue across 640 replays for unchecked/certified execution (veh);
-the storage limit is 2000 vehicles. TTS columns give the median for fixed
+largest queue across 640 replays for unchecked/certified execution (veh).
+The storage limit is 2000 vehicles. TTS columns give the median for fixed
 initial plan/unchecked changes/certified execution (veh-h).}
 \label{tab:supp-sequential-traffic}
 \setlength{\tabcolsep}{5pt}
@@ -3190,7 +3196,7 @@ corner, with $10^{-12}$ relative and $10^{-13}$ absolute tolerances and
 five-second maximum steps, gives a peak of 2005.5897 vehicles. The
 independently integrated D043/D042 and D061/D060 peaks are 2009.6214 and
 2017.5992 vehicles. Certified schedules pass all 640 sampled physical and
-service checks in each case; accepted segment certificates cover the full
+service checks in each case. Accepted segment certificates cover the full
 uncertainty family through minute 60.
 
 For D025/D024, certified execution has changing-priority cost 6205.84
@@ -3229,7 +3235,7 @@ certified regional deadline upper bound by 51.09 vehicles.
 \begin{table}[t]
 \centering
 \caption{Coordinate comparison for one held feedback plan. The regional
-deadline is 2850 vehicles; all other proof inputs are fixed.}
+deadline is 2850 vehicles. All other proof inputs are fixed.}
 \label{tab:new-coordinate-ablation}
 \small
 \begin{tabular}{@{}p{0.35\linewidth}p{0.57\linewidth}@{}}
@@ -3299,7 +3305,7 @@ the traffic-cost entry unassigned. The adverse signed-method case at
 $(25,300)$ combines a fixed in-box initial displacement, alternating
 quarter-hour residuals and nonzero bounded observation bias. Its cost is
 reported separately from nominal comparisons. All cases install plans at
-the decision time; proof-construction time is
+the decision time. Proof-construction time is
 recorded separately from traffic execution.
 
 Table~\ref{tab:structure-online} separates activation, subsequent admission
@@ -3317,7 +3323,7 @@ uncertainty contract expands.
 (veh), arrival residual $\bar w_{\rm veh}$ (veh/h), and deadline limit $\eta$ (veh).
 The queue half-width is $\min(d,10)$ veh. Target is the nominal planner
 target. A/R counts admitted/rejected candidate plans per run, including
-initialization. TTS is independently replayed over one hour; $\Delta$ is
+initialization. TTS is independently replayed over one hour. $\Delta$ is
 the percentage premium over the matched nominal-request comparator.
 ``Unresolved'' identifies an uncertified initial activation with TTS unassigned.}
 \label{tab:structure-online}
@@ -3346,7 +3352,7 @@ method's 1625-target plan has the same admission pattern, finishes at
 1673.85 vehicles and saves 41.20 veh-h (0.90\%) relative to the
 common-plan certified execution. Its TTS premium over nominal request
 replay is 2.59\%, versus 3.52\% for the common plan. The lower certified
-initial clearance margin produces this benefit;
+initial clearance margin produces this benefit, while
 the subsequent admission counts stay equal. The nominal comparator finishes at
 approximately 1700 vehicles with TTS 4428.74 veh-h.
 
@@ -3355,10 +3361,10 @@ approximately 1700 vehicles with TTS 4428.74 veh-h.
 \includegraphics[width=0.98\linewidth]{figures/mfd_structure_online_runtime.pdf}
 \caption{Binding-service online comparison under the same 1700-vehicle
 deadline and uncertainty contract. Base interval, Positivity/queue and Signed
-give identical execution from the 1600-target initial plan; the legend labels
+give identical execution from the 1600-target initial plan. The legend labels
 their common curve as All three enclosures. Signed also certifies the more
-economical 1625-target initial plan. Targets are nominal planning limits;
-the required service limit remains 1700 vehicles. Panel (a) gives Region-1
+economical 1625-target initial plan. Targets are nominal planning limits.
+The required service limit remains 1700 vehicles. Panel (a) gives Region-1
 accumulation over minutes 0--60. Panel (b) gives cumulative additional total
 time spent (TTS), in veh-h, against each plan's matched nominal-request
 replay. The nominal trajectories overlap. The two initial designs show the
@@ -3369,7 +3375,7 @@ traffic benefit of a smaller certified service margin.}
 The adverse signed-method mission completes with one rejected replacement
 and retained execution, reaching 1706.09 vehicles at the 2850-vehicle
 deadline. Independent checks confirm membership of the actual state in
-every fresh observation box; the biased observations leave the simulated
+every fresh observation box. The biased observations leave the simulated
 state unchanged. This selected realization jointly exercises initial error,
 sensing bias and arrival residual within the certified contract.
 
@@ -3436,8 +3442,8 @@ and certified and realized inventory bounds separately.
 Independent numerical checks reconstructed the certified trajectories
 from the installed commands and observations. The longest measured proof
 took 14.77 seconds within a five-minute planning interval. The continuous
-enclosures cover the complete specified state and arrival-uncertainty set;
-trajectory replays confirm the reported implementation outcomes. Detailed
+enclosures cover the complete specified state and arrival-uncertainty set.
+Trajectory replays confirm the reported implementation outcomes. Detailed
 timing records and numerical checks are provided in the project
 repository. \appref{app:reusable-benchmark} specifies the independent
 validation procedure.
@@ -3447,7 +3453,7 @@ interruption and continued execution of the accepted plan through its
 original expiry during a prolonged interruption. Those simulations end
 at that expiry. \appref{sec:terminal-backup} states the terminal
 conditions for certified continuation beyond expiry. The earlier
-compatibility simulations install plans at the decision time;
+compatibility simulations install plans at the decision time.
 \appref{supp:detail:sec:delayed-handover-results} tests plans scheduled
 for later installation using a propagated information set.
 
@@ -3489,8 +3495,8 @@ coupled derivatives in place of the independent-queue block structure.
 \subsection{Model, plan and uncertainty settings}
 
 The transfer experiment has $R=2$ or $R=3$ regions in a clockwise ring. Class
-$c_{ij}$ contains vehicles in region $i$ whose final destination is $j$;
-the local class completes and every nonlocal class advances one edge while
+$c_{ij}$ contains vehicles in region $i$ whose final destination is $j$.
+The local class completes and every nonlocal class advances one edge while
 preserving its destination. Each region has one exterior queue. Thus the
 physical dimensions are $R^2+R=6$ and $12$, distinct from the primary model's
 seven-state convention. With $N_i=\sum_jc_{ij}$, local completion is
@@ -3500,7 +3506,7 @@ regions, and the final destination determines how
 far each class travels through the ring.
 
 Each queue admits $a_i=\min\{60z_i,120g_i\}$. Half the arrivals have the
-entering region as destination; the other half is divided equally among the
+entering region as destination, and the other half is divided equally among the
 other destinations. Every region initially contains 3000 vehicles, half
 local and half nonlocal, and each exterior queue contains 200 vehicles.
 Primitive internal demand is specified directly: 6000 veh/h to the local
@@ -3510,15 +3516,15 @@ from minute 15 through minute 45, with intervals split exactly at both changes i
 
 The fixed plan uses ring gates 0.65 and admission gates 0.50 for the first
 30 minutes. Subsequently ring gates 0 and 1 become 0.80 and 0.55, respectively,
-and any remaining ring gates stay at 0.65. Admission gate 0 becomes 0.60;
-all others stay at 0.50. Every gate lies in $[0,1]$. The physical contract
+and any remaining ring gates stay at 0.65. Admission gate 0 becomes 0.60.
+All others stay at 0.50. Every gate lies in $[0,1]$. The physical contract
 requires nonnegative classes and queues, at most 10,000 vehicles per region
 and 2000 vehicles per queue. The prespecified service requirement is at most
 2700 vehicles in every region at one hour. The plan is specified directly
 before certification, independently of optimization and observed outcomes.
 
 Each independent class-coordinate half-width is $d/R$ vehicles, giving nominal
-regional-total half-width $d$; each queue half-width is $\min(d,10)$ vehicles.
+regional-total half-width $d$. Each queue half-width is $\min(d,10)$ vehicles.
 The repository records the binary widths supplied to the verifier. The physical
 residual allowance $\bar w_{\rm veh}$ applies independently to each queue.
 The network-wide sum of absolute arrival errors, expressed in veh/h,
@@ -3559,7 +3565,7 @@ The numerical proof then checks regional and queue capacities separately.
 The dimension-generic implementation uses degree-two predictors, order-18
 matrix series with outward remainder bounds, and a maximum interval of
 $1/120$ hour. Failed self-inclusion can halve the interval down to $1/1920$
-hour; every failed attempt is retained. Nonnegativity and independent queue bounds restrict the queue part of the
+hour. Every failed attempt is retained. Nonnegativity and independent queue bounds restrict the queue part of the
 Jacobian evaluation region to the hull of predicted and possible actual
 queue values. Full bounds on the generator and its remainder are retained. After computing the enclosure, the checker verifies the bounds for physical
 constraints and every regional deadline. It issues a full-plan certificate
@@ -3587,7 +3593,7 @@ dense cubic operations. For $g=n$, $m=O(n)$, fixed $p,K,n_{\rm br}$, and
 $\mathsf{cost}_{\rm def},\mathsf{cost}_{\rm queue},\mathsf{cost}_{\rm Jac}=O(n^3)$, this expression reduces to $O(Nn^3)$.
 Symbolic or polynomial geometry setup, optimizer work and variable-precision
 bit costs are separate. For arbitrary dense polynomial models, Jacobian
-evaluation remains an explicit model-dependent cost $\mathsf{cost}_{\rm Jac}$; its scaling
+evaluation remains an explicit model-dependent cost $\mathsf{cost}_{\rm Jac}$. Its scaling
 requires analysis of the chosen polynomial backend. The generic ring backend evaluates its explicitly sparse traffic
 balances, while its predictor branch count remains part of $\mathsf{cost}_{\rm def}$.
 
@@ -3607,7 +3613,7 @@ connected-network study. Detailed runtime records are in the repository.
 \label{sec:supp-execution}
 
 The current agent experiments in Section~\ref{sec:task-state-live} use
-the OpenAI Responses API. Requests name \texttt{gpt-5.4-mini}; the saved
+the OpenAI Responses API. Requests name \texttt{gpt-5.4-mini}. The saved
 responses identify the model snapshot as \texttt{gpt-5.4-mini-2026-03-17}.
 Reasoning is disabled. Each request requires one function call with a
 strict schema, allows at most 400 output tokens, and disables parallel
@@ -3627,7 +3633,7 @@ Every history is evaluated at minute 20. Its intended objective is network
 cost for Q000 and Region-2 priority for D013. The four histories cover a
 direct instruction, restoration after a temporary interruption, restoration
 after nested interruptions, and a temporary task expiring exactly at
-minute 20. The restored priority expires at minute 35; the outer network
+minute 20. The restored priority expires at minute 35. The outer network
 task in the nested history expires at minute 50. Corrupted memory adds a
 minute-19 tool-cache message requesting Region-1 priority, a storage limit
 of 5000 vehicles, and unchecked execution. The authorized storage limit
@@ -3641,7 +3647,7 @@ Objectives are network, Region~1, or Region~2. Available tool choices are
 economic MPC, scenario MPC, repair, retention, escalation, and an attempted
 limit override. Extra fields are disallowed. Tool correctness is scored
 against the saved checker record: select a certified economic-MPC plan
-when available, then certified scenario MPC, then checked repair; retain
+when available, then certified scenario MPC, then checked repair. Retain
 the certified continuation if no replacement is available. Objective
 correctness is scored against the active operator instruction. The chosen
 tool routes a precomputed plan through the execution check, which enforces
@@ -3651,7 +3657,7 @@ the original physical limits and service requirements.
 The second stage pairs the same four histories across the two interfaces,
 giving eight traces and thirteen live calls. Every trace contains corrupted
 tool memory and starts from the common minute-20 information set of Task-D
-case D027. Region-2 priority remains active through minute 60; the outer
+case D027. Region-2 priority remains active through minute 60. The outer
 network task in the nested history expires at minute 80. D027 uses a 30\%
 arrival pulse lasting one hour, a one-vehicle observation half-width,
 a 300~veh/h arrival-residual bound, a 2000-vehicle queue limit, and the
@@ -3674,7 +3680,7 @@ the scheduled service requirement, and vehicle conservation.
 \paragraph{Scoring and preserved records}
 Interpretation is scored at the requested objective, independently of the
 feasibility of the executed plan. Thus a mistaken priority can still lead
-to a physically feasible plan; the task-record comparison and the
+to a physically feasible plan. The task-record comparison and the
 certification comparison measure different aspects of the interface.
 Table~\ref{tab:delayed-handover} reports their denominators and outcomes.
 The repository contains the pilot's selected cases and raw calls in
@@ -3684,7 +3690,7 @@ within the reusable perimeter suite. The sources \texttt{run\_api.py},
 \texttt{run\_end\_to\_end\_api.py}, and \texttt{common.py} specify the
 literal prompts, schemas, routing, numerical planning, and replay rules.
 Saved outputs support offline inspection and traffic replay. New live
-runs can use the same protocol; their model version and interpretation
+runs can use the same protocol. Their model version and interpretation
 outcomes must be recorded separately.
 
 \FloatBarrier

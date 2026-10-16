@@ -1,0 +1,77 @@
+PROSE AND PLAN-EXPIRY CLARIFICATION - 16 OCTOBER 2026
+
+The reduced paper remains 47 pages. The complete paper remains 81 pages.
+
+PLAN EXPIRY
+
+The finite-plan limitation remains in both manuscripts. Certification of
+one plan establishes feasibility through its recorded expiry E. Rejection
+preserves that expiry. Coverage afterward requires either a replacement
+installed by E with a later certified expiry, or a terminal backup
+certified for the state reached at E and activated at that time.
+Without either continuation, the finite-plan result gives no guarantee
+after E. Traffic continues to evolve physically after a certificate expires.
+
+Theorem 4 addresses indefinite continuation under its additional terminal
+conditions. It requires a certified invariant set and backup policy,
+terminal-set inclusion, implementable transitions, service coverage,
+the stated uncertainty/execution assumptions and locally finite
+installations. These conditions remain in the statement and proof.
+
+The reported simulations cover finite plans through their recorded
+expiries. The longer manuscript also retains the historical outage account
+stating explicitly that those simulations end at expiry. The revision adds
+a clear scope paragraph before the terminal-backup discussion in each
+main text. The discussion now specifically identifies the conditions for
+indefinite continuation through the backup.
+
+SEMICOLONS AND FLOW
+
+Body and appendix prose, including captions and task-transition wording,
+was reviewed. Distinct claims use separate sentences. Connected proof steps
+and operations use suitable connecting words. In the reduced paper, prose
+semicolons outside the protected text and notation table fell from 100 to
+3. In the complete paper, they fell from 148 to 10. The remaining examples
+separate compact operation names, F/U/C caption definitions, workflow steps
+or table entries. Semicolons inside mathematics and LaTeX spacing commands
+are unchanged.
+
+The sentence identified by the author now separates two steps: multiplying
+the generator conversion error by xi gives an error bounded by d_Gamma;
+adding that bound to the propagated remainder and recentering error yields
+the existing endpoint-update equation. The displayed equation is unchanged.
+
+PRESERVATION AND CHECKS
+
+The abstract, introduction, conclusion and future work are unchanged.
+All prior mathematical expressions and every displayed equation are
+preserved. Result types, numbers, labels, assumptions and guarantees are
+retained. Numerical table values, figures, bibliography and declarations
+are unchanged. There is no manuscript-preparation AI declaration.
+Jiangbo Yu remains the corresponding author in both versions.
+
+Both manuscripts compile with resolved references, no overfull boxes and
+no oversized floats. All pages were rendered and visually reviewed.
+No simulations, optimization runs or live model calls were performed.
+Earlier source packages and PDFs are preserved in the private repository
+under archive/manuscripts_2026_10_16_before_prose_expiry_revision/.
+
+CURRENT LOCATIONS (printed page numbers)
+
+Reduced version:
+  sec:terminal-backup-main: 4.7, page 27
+  sec:terminal-backup: 4.7, page 27
+  eq:structure-endpoint-update: 45, page 19
+  thm:new-plan-closure: 2, page 22
+  prop:repair-execution: 2, page 24
+  thm:backup-recursive-availability: 4, page 29
+  cor:repair-recursive: 1, page 30
+
+Complete version:
+  sec:terminal-backup-main: 4.4.3, page 28
+  sec:terminal-backup: Appendix~F.1, page 53
+  eq:structure-endpoint-update: C.9, page 50
+  thm:new-plan-closure: 2, page 22
+  prop:repair-execution: 2, page 25
+  thm:backup-recursive-availability: 4, page 55
+  cor:repair-recursive: 1, page 26

@@ -1,0 +1,124 @@
+{
+  "date": "2026-10-16",
+  "scope": "Prose punctuation and explicit finite-plan expiry scope in both current non-IEEE manuscripts",
+  "versions": {
+    "main_reduced": {
+      "pages": 47,
+      "source_sha256": "14aa2ba9c51f1cb4d11694da4fbc70e53f0f2c93acd3078445b9a633979acd30",
+      "pdf_sha256": "f9eabacbdc72ac53d65c5e7e9ed0f64f87a4758c12146986b402195f53e4f5a0",
+      "semicolon_counts": {
+        "before": {
+          "math spacing": 1,
+          "mathematics": 18,
+          "prose": 100,
+          "protected text or notation table": 22
+        },
+        "after": {
+          "math spacing": 1,
+          "mathematics": 18,
+          "prose": 3,
+          "protected text or notation table": 22
+        }
+      },
+      "locations": {
+        "sec:terminal-backup-main": {
+          "number": "4.7",
+          "page": "27"
+        },
+        "sec:terminal-backup": {
+          "number": "4.7",
+          "page": "27"
+        },
+        "eq:structure-endpoint-update": {
+          "number": "45",
+          "page": "19"
+        },
+        "thm:new-plan-closure": {
+          "number": "2",
+          "page": "22"
+        },
+        "prop:repair-execution": {
+          "number": "2",
+          "page": "24"
+        },
+        "thm:backup-recursive-availability": {
+          "number": "4",
+          "page": "29"
+        },
+        "cor:repair-recursive": {
+          "number": "1",
+          "page": "30"
+        }
+      },
+      "checks": {
+        "all_existing_math_expressions_preserved": true,
+        "all_displayed_equations_identical": true,
+        "formal_result_types_counts_and_labels_preserved": true,
+        "abstract_introduction_conclusion_future_work_unchanged": true,
+        "numerical_table_values_unchanged": true,
+        "references_resolved_no_overfull_or_oversized_floats": true,
+        "ai_declaration_absent": true
+      }
+    },
+    "main": {
+      "pages": 81,
+      "source_sha256": "4315147be9a74d9ceeb7f46ae01d53694f643c9f3e25e811f3ead260a4945fd2",
+      "pdf_sha256": "938d93c0a9babedbf325877a7285ab8b3a710c507cf4782d09fb612a4f6a9c06",
+      "semicolon_counts": {
+        "before": {
+          "math spacing": 1,
+          "mathematics": 23,
+          "prose": 148,
+          "protected text or notation table": 21
+        },
+        "after": {
+          "math spacing": 1,
+          "mathematics": 23,
+          "prose": 10,
+          "protected text or notation table": 21
+        }
+      },
+      "locations": {
+        "sec:terminal-backup-main": {
+          "number": "4.4.3",
+          "page": "28"
+        },
+        "sec:terminal-backup": {
+          "number": "Appendix~F.1",
+          "page": "53"
+        },
+        "eq:structure-endpoint-update": {
+          "number": "C.9",
+          "page": "50"
+        },
+        "thm:new-plan-closure": {
+          "number": "2",
+          "page": "22"
+        },
+        "prop:repair-execution": {
+          "number": "2",
+          "page": "25"
+        },
+        "thm:backup-recursive-availability": {
+          "number": "4",
+          "page": "55"
+        },
+        "cor:repair-recursive": {
+          "number": "1",
+          "page": "26"
+        }
+      },
+      "checks": {
+        "all_existing_math_expressions_preserved": true,
+        "all_displayed_equations_identical": true,
+        "formal_result_types_counts_and_labels_preserved": true,
+        "abstract_introduction_conclusion_future_work_unchanged": true,
+        "numerical_table_values_unchanged": true,
+        "references_resolved_no_overfull_or_oversized_floats": true,
+        "ai_declaration_absent": true
+      }
+    }
+  },
+  "unchanged_dependencies": "Bibliography, declarations and figures unchanged. No simulations or API calls.",
+  "visual_review": "All 128 pages rendered and reviewed on contact sheets. Revised proof wording, expiry clarification and dense table/caption pages inspected at full-page resolution."
+}
