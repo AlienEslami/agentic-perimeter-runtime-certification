@@ -227,6 +227,7 @@ Section~\ref{sec:new-problem} formulates the traffic-control problem. Section~\r
 \caption{Principal notation. Traffic inventories are expressed in units of
 100 vehicles unless a table states physical vehicles.}
 \label{tab:nomenclature}
+\renewcommand{\arraystretch}{0.98}
 \begin{tabular}{@{}p{0.20\linewidth}p{0.72\linewidth}@{}}
 \toprule
 Symbol & Meaning\\
@@ -234,15 +235,15 @@ Symbol & Meaning\\
 $n_i$, $n_{ij}$ & Regional accumulation; vehicles in region $i$ destined for $j$\\
 $z$, $x$, $M$ & Exterior waiting inventory; physical state; total vehicle inventory\\
 $u_{ij}$, $a$ & Fractional gate command; realized exterior admission flow\\
-$\Lambda$, $d_{ij}$ & Exterior arrivals; destination-specific internal demand\\
-$d$, $\bar w_{\rm veh}$ & Sensing half-width (vehicles); physical arrival-residual bound (vehicles/h)\\
+$\Lambda$, $d^{\rm int}_{ij}$ & Exterior arrivals; destination-specific internal demand\\
+$d$, $\bar w_{\rm veh}$ & Sensing half-width (vehicles); physical arrival-residual bound (veh/h)\\
 $\bar w_x$ & Normalized arrival-residual bound $\bar w_{\rm veh}/100$ (inventory units/h)\\
 $\mathcal S_t$ & Decision record: state set, uncertainty, task, active plan, time and versions\\
 $P$, $P^B$, $\mu_B$ & Proposed plan; verified continuation; terminal backup policy\\
 $P_a$, $c$ & Destination-allocation matrix; network destination-class vector\\
 $t_f$, $\eta$ & Example service deadline and inventory limit\\
 $T_r$, $g_r$, $\eta_r$ & General service time, row vector and threshold\\
-$\theta_i$, $\vartheta$ & Agent task record; predictive-repair interpolation weight\\
+$\theta_i$, $\lambda_{\rm rep}$ & Agent task record; predictive-repair interpolation weight\\
 $K_b$, $K$, $\mathcal K$ & Feedback gain; local block count; terminal invariant set\\
 $\beta_j^{\rm phys}$, $b_a$ & Physical constraint-row limit; admission-incidence vector\\
 $y$, $L$ & Conservation-coordinate state and its invertible transform\\
@@ -254,8 +255,8 @@ $J_R$, $J_Q$, $J_D$ & Native regulation, queue-economic and weighted-priority ob
 $p$, $E$, $x^R$ & Regional-priority weight; finite-plan endpoint; native four-state vector\\
 $\mathcal C$, $\mathcal F_{\mathcal C}$, $\widehat{\mathcal F}_{\mathcal C}$ & Planning contract; robust feasible and checker-certified plan sets\\
 $X_i^A$, $h_i$, $\iota_i$ & Agent interface state, memory and supplied contextual view\\
-$J_2$, $\varrho_r$ & Earlier Region-2 priority cost and retained-benefit fraction\\
-$\mathrm{TTS}$ & Total time spent, including vehicles waiting outside\\
+$B_\omega$ & Fraction of requested priority benefit recovered by repair\\
+$\mathrm{TTS}$ & Total time spent, including exterior waiting; vehicle-hours (veh-h)\\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -300,7 +301,7 @@ to zero. Thus $n_{ij}$ is an inventory and $q_{ij}$ is a potential flow
 before gating, in inventory units/h. The MFD allocates potential trip
 completion and regional transfer among destination classes in proportion
 to their inventories. Its critical accumulation is 3391.93 vehicles and
-peak outflow is 6.303 vehicles/s. The operational cap of 10,000 vehicles per
+peak outflow is 22,691 veh/h. The operational cap of 10,000 vehicles per
 region lies within the fitted MFD's positive-production range. The model
 assumes comparable within-region trip lengths, destination-proportional
 mixing and adequate receiving supply on the verified domain.
@@ -322,17 +323,17 @@ instead scales the admission capacity. Commands vary over time or are held
 on finite blocks. For a class flow $q$ and gate $u_g$, the number transferred
 over $[t_a,t_b]$ is $100\int_{t_a}^{t_b}u_g(t)q(t)\,dt$.
 
-Let $d_1=d_{11}+d_{12}+d_{10}$ and $d_2=d_{22}+d_{21}+d_{20}$ be fixed
+Let $d^{\rm int}_1=d^{\rm int}_{11}+d^{\rm int}_{12}+d^{\rm int}_{10}$ and $d^{\rm int}_2=d^{\rm int}_{22}+d^{\rm int}_{21}+d^{\rm int}_{20}$ be fixed
 internal demands. Vehicle conservation gives
 \begin{equation}
 \begin{aligned}
-\dot n_1&=-q_{11}-(q_{12}+q_{10})u_{12}+q_{21}u_{21}+d_1,\\
+\dot n_1&=-q_{11}-(q_{12}+q_{10})u_{12}+q_{21}u_{21}+d^{\rm int}_1,\\
 \dot n_2&=-q_{22}+(q_{12}+q_{10})u_{12}-q_{21}u_{21}
-                 +a-q_{20}u_{20}+d_2,\\
-\dot n_{11}&=-q_{11}+q_{21}u_{21}+d_{11},\\
-\dot n_{22}&=-q_{22}+q_{12}u_{12}+(1-\pi)a+d_{22},\\
-\dot n_{10}&=-q_{10}u_{12}+d_{10},\\
-\dot n_{20}&=-q_{20}u_{20}+q_{10}u_{12}+d_{20},\\
+                 +a-q_{20}u_{20}+d^{\rm int}_2,\\
+\dot n_{11}&=-q_{11}+q_{21}u_{21}+d^{\rm int}_{11},\\
+\dot n_{22}&=-q_{22}+q_{12}u_{12}+(1-\pi)a+d^{\rm int}_{22},\\
+\dot n_{10}&=-q_{10}u_{12}+d^{\rm int}_{10},\\
+\dot n_{20}&=-q_{20}u_{20}+q_{10}u_{12}+d^{\rm int}_{20},\\
 \dot z&=\widehat\Lambda+w-a.
 \end{aligned}
 \label{eq:new-plant}
@@ -349,10 +350,10 @@ Nonnegative classes, $0\le n_1,n_2\le100$, $0\le z\le20$ and
 \eqref{eq:new-gates} give 24 affine state--command inequalities.
 
 The initial state is $(30,30,15,15,5,5,2)$ and base exterior arrivals are
-6000 vehicles/h. In the order $(11,12,10,22,21,20)$, fixed internal demands are
+6000 veh/h. In the order $(11,12,10,22,21,20)$, fixed internal demands are
 \begin{equation}
 \begin{aligned}
-\boldsymbol d=(&74.85630,37.42815,18.714075,\\
+\boldsymbol d^{\rm int}=(&74.85630,37.42815,18.714075,\\
               &44.85630,7.42815,0.748563).
 \end{aligned}
 \label{eq:new-incident-demands}
@@ -379,7 +380,7 @@ Adding the regional and queue balances gives
 \begin{equation}
 \begin{aligned}
 M&=n_1+n_2+z,\\
-\dot M&=d_1+d_2+\Lambda-F_{\rm out},\\
+\dot M&=d^{\rm int}_1+d^{\rm int}_2+\Lambda-F_{\rm out},\\
 F_{\rm out}&=q_{11}+q_{22}+q_{20}u_{20},\\
 \mathrm{TTS}&=100\int_0^{T_{\rm eval}} M(t)\,dt.
 \end{aligned}
@@ -402,7 +403,7 @@ J_D(P)=100\int_{t_0}^{E}(n_1+p n_2+z)\,dt.
 \label{eq:benchmark-priority-cost}
 \end{equation}
 For sensing half-width $d$ vehicles and arrival-residual bound
-$\bar w_{\rm veh}$ vehicles/h, let $\bar w_x=\bar w_{\rm veh}/100$ and use
+$\bar w_{\rm veh}$ veh/h, let $\bar w_x=\bar w_{\rm veh}/100$ and use
 \begin{equation}
 \begin{aligned}
 \mathcal I_{t_0}&=\widehat x_{t_0}+[-d/100,d/100]^7,\\
@@ -435,7 +436,7 @@ all service times lie in this interval. Task Q has no service rows;
 Task D includes the minute-60 row. The checker returns a computable subset
 \begin{equation}
 \widehat{\mathcal F}_{\mathcal C}
-=\{P:\mathsf C_{t_0}(P\mid\mathcal C)=1\}
+=\{P:\mathsf{Cert}_{t_0}(P\mid\mathcal C)=1\}
 \subseteq\mathcal F_{\mathcal C}.
 \label{eq:benchmark-certifiable-set}
 \end{equation}
@@ -464,11 +465,11 @@ and instruction $o_i$ form the interface state:
 X_i^A&=(h_i,\theta_i,o_i),\\
 \iota_i&=\mathsf{View}(o_i,\theta_i),\\
 r_i^A&\sim\Pi_\phi(\cdot\mid h_i,\iota_i),\\
-(\theta_i^+,q_i^A)&=\mathsf{Compile}_{t_i}(\theta_i,r_i^A),\\
+(\theta_i^+,q_i^A)&=\mathsf{Comp}_{t_i}(\theta_i,r_i^A),\\
 \mathcal P_i^{\rm prop}
 &=\mathsf{Planner}(q_i^A,\mathcal I_i,\mathcal T_i),\\
 (u_i^{\rm exec},\ell_i)
-&=\mathsf{CertifyExecute}(\mathcal P_i^{\rm prop},s_i),\\
+&=\mathsf{CertifyExecute}(\mathcal P_i^{\rm prop},\mathcal S_{t_i}),\\
 \theta_{i+1}&=\mathsf{Age}_{t_{i+1}}(\theta_i^+),\\
 h_{i+1}&\sim\mathsf U_\phi(\cdot\mid
 h_i,\iota_i,r_i^A,u_i^{\rm exec},\ell_i,o_{i+1}).
@@ -488,12 +489,15 @@ between proposals, $\mathsf{Age}_t$ removes an expired active task and then
 discards expired predecessors until an unexpired task is restored or the
 stack is empty. For a parsed operation,
 \begin{equation}
-\theta_i^+=C(\mathsf{Age}_{t_i}\theta_i,r_i^A),\qquad
-(j_i,\Delta_i)=Q(\theta_i^+,t_i).
+\theta_i^+=\mathsf{UpdateTask}(\mathsf{Age}_{t_i}\theta_i,r_i^A),\qquad
+(j_i,\Delta_i)=\mathsf{SelectTask}(\theta_i^+,t_i).
 \label{eq:task-state-compiler}
 \end{equation}
-Here $j_i$ selects the objective; a task expiring at $e_i$ has remaining
-duration $\Delta_i=e_i-t_i>0$, while network operation has $\Delta_i=0$.
+Here $\mathsf{UpdateTask}$ updates the parsed task record and
+$\mathsf{SelectTask}$ selects its objective and remaining duration.
+The compiler $\mathsf{Comp}$ also forms the numerical planning request.
+The index $j_i$ selects the objective; a task expiring at $\tau_i^{\mathrm{exp}}$ has remaining
+duration $\Delta_i=\tau_i^{\mathrm{exp}}-t_i>0$, while network operation has $\Delta_i=0$.
 The transitions are given in Table~\ref{tab:task-state-operations}.
 
 \begin{table}[t]
@@ -544,10 +548,10 @@ MPC, feedback-rollout and repair tools
 all submit their plans to the same checker (Figure~\ref{fig:new-architecture}).
 The optional repair interface is
 \begin{equation}
-\widehat P_i^R=\mathsf{RepairTool}(P_i^0,P_i^B,s_i,\Theta).
+\widehat P_i^R=\mathsf{RepairTool}(P_i^0,P_i^B,\mathcal S_{t_i},\mathcal G_{\rm rep}).
 \label{eq:repair-tool-interface}
 \end{equation}
-The decision record $s_i:=\mathcal S_{t_i}$ contains the physical information,
+The decision record $\mathcal S_{t_i}$ contains the physical information,
 absolute time, model and constraint versions, obligations and verified
 continuation. An accepted replacement starts at its certified installation
 time. Rejection preserves the current plan's unexecuted commands and original
@@ -691,11 +695,11 @@ Containment and continuous physical feasibility pass when
 \end{align}
 Absolute values are componentwise. At a boundary, bound predictor recentering by
 \begin{equation}
- \omega_l\ge
+ \delta^{\rm rec}_l\ge
  |L(p_l(t_{l+1})-p_{l+1}(t_{l+1}))|,
  \label{eq:new-recentering-bound}
 \end{equation}
-and propagate $r_{i,l+1}=\phi_{il}(h_l)+\omega_{il}$. At a service
+and propagate $r_{i,l+1}=\phi_{il}(h_l)+\delta^{\rm rec}_{il}$. At a service
 checkpoint the center $\widehat x(T_r)$ and radius $r(T_r)$ give
 \begin{equation}
  g_r^\top\widehat x(T_r)+|g_r^\top L^{-1}|r(T_r)\le\eta_r.
@@ -778,17 +782,17 @@ initial uncertainty provide tighter certificates for the same constraints.
 For constant commands, the derived class balances are
 \begin{equation}
  \begin{aligned}
- \dot n_{12}&=d_{12}-u_{12}v(n_1)n_{12},\\
- \dot n_{21}&=d_{21}+\pi a-u_{21}v(n_2)n_{21}.
+ \dot n_{12}&=d^{\rm int}_{12}-u_{12}v(n_1)n_{12},\\
+ \dot n_{21}&=d^{\rm int}_{21}+\pi a-u_{21}v(n_2)n_{21}.
  \end{aligned}
  \label{eq:structure-derived-classes}
 \end{equation}
-For the installed polynomial coefficients $a=0.0014877$, $b=-0.29815$,
-and $c=15.0912$, exact arithmetic gives
-$a>0$ and $4ac-b^2>0$, hence
+For the installed polynomial coefficients $\alpha_2=0.0014877$,
+$\alpha_1=-0.29815$ and $\alpha_0=15.0912$, exact arithmetic gives
+$\alpha_2>0$ and $4\alpha_2\alpha_0-\alpha_1^2>0$, hence
 \begin{equation}
- v(n)=a\left(n+\frac{b}{2a}\right)^2+
-                    \frac{4ac-b^2}{4a}>0.
+ v(n)=\alpha_2\left(n+\frac{\alpha_1}{2\alpha_2}\right)^2+
+                    \frac{4\alpha_2\alpha_0-\alpha_1^2}{4\alpha_2}>0.
  \label{eq:structure-positive-factor}
 \end{equation}
 This continuation of the polynomial establishes positivity independently
@@ -801,15 +805,15 @@ The queue satisfies the independent scalar equation
 \end{equation}
 Extreme initial queues and arrival bounds define lower and upper
 comparison solutions. For constant arrival $\lambda$ and
-$C=120u_{02}$, each branch has the solution
+$\kappa=120u_{02}$, each branch has the solution
 \begin{equation}
  \begin{aligned}
- z(s)&=\lambda/60+(z_0-\lambda/60)e^{-60s}&&(60z\le C),\\
- z(s)&=z_0+(\lambda-C)s&&(60z\ge C).
+ z(s)&=\lambda/60+(z_0-\lambda/60)e^{-60s}&&(60z\le \kappa),\\
+ z(s)&=z_0+(\lambda-\kappa)s&&(60z\ge \kappa).
  \end{aligned}
  \label{eq:structure-queue-flows}
 \end{equation}
-The branches join at $z=C/60$; verified exponential and logarithmic
+The branches join at $z=\kappa/60$; verified exponential and logarithmic
 evaluation bounds their crossing times. If a forecast interval has an
 unresolved common branch, its extremal offered arrivals give continuous
 queue bounds. When those bounds establish one branch throughout the
@@ -818,7 +822,7 @@ interval and the forecast is $\ell_0+\ell_1s$, sharper endpoints are
 \begin{aligned}
  z(h)&=e^{-60h}z_0+(\ell_0\pm\bar w_x)\varphi_1+\ell_1\varphi_2
        &&\text{(supply)},\\
- z(h)&=z_0+(\ell_0\pm\bar w_x-C)h+\ell_1h^2/2
+ z(h)&=z_0+(\ell_0\pm\bar w_x-\kappa)h+\ell_1h^2/2
        &&\text{(gate)},\\
  \varphi_1&=(1-e^{-60h})/60,\qquad
  \varphi_2=(h-\varphi_1)/60.
@@ -860,14 +864,14 @@ bounds. This retains the segment even when the predictor lies outside the
 true queue range. A branch may be excluded only throughout this restricted
 enclosure.
 
-Omit $l$, and let $\mathcal J_b$ contain the retained transformed branch
+Omit $l$, and let $\mathcal J_\varpi$ contain the retained transformed branch
 Jacobians. A matrix with nonnegative off-diagonal entries (a Metzler
 matrix) and a forcing bound are
 \begin{equation}
  \begin{aligned}
- \mathcal M_{ii}&=\max_b\sup(\mathcal J_b)_{ii},\\
- \mathcal M_{ij}&=\max_b\sup|(\mathcal J_b)_{ij}|\quad(i\ne j),\\
- (b_\zeta)_i&\ge\max_b\sup_{J\in\mathcal J_b,\,F\in\mathcal F}
+ \overline{M}_{ii}&=\max_\varpi\sup(\mathcal J_\varpi)_{ii},\\
+ \overline{M}_{ij}&=\max_\varpi\sup|(\mathcal J_\varpi)_{ij}|\quad(i\ne j),\\
+ (b_\zeta)_i&\ge\max_\varpi\sup_{J\in\mathcal J_\varpi,\,F\in\mathcal F}
                   \sum_j|[(J-A^0)F]_{ij}|\\
              &\hspace{1em}+\delta_i+|(Le_7)_i|\bar w_x,
  \end{aligned}
@@ -876,18 +880,18 @@ matrix) and a forcing bound are
 where $\mathcal F$ contains every $e^{A^0s}\Gamma(0)$ on $[0,h]$ and
 $\delta_i\ge\sup_s|\epsilon_i(s)|$. The remainder comparison is
 \begin{equation}
- |\zeta(s)|\le e^{\mathcal Ms}\rho+Q(s)b_\zeta,
- \qquad Q(s)=\int_0^s e^{\mathcal Mv}\,dv.
+ |\zeta(s)|\le e^{\overline{M}s}\rho+\Psi(s)b_\zeta,
+ \qquad \Psi(s)=\int_0^s e^{\overline{M}v}\,dv.
  \label{eq:structure-remainder-bound}
 \end{equation}
-The exponential is nonnegative and $Q$ is componentwise increasing.
+The exponential is nonnegative and $\Psi$ is componentwise increasing.
 Individual entries of the exponential may decrease, so the inherited
 remainder must be bounded over the full interval. Use outward bounds
 \begin{equation}
  \begin{aligned}
  f_i&\ge\sup_{s\in[0,h]}\sum_j|(e^{A^0s}\Gamma(0))_{ij}|,\\
- r_i^\zeta&\ge\sup_{s\in[0,h]}(e^{\mathcal Ms}\rho)_i
-                            +(Q(h)b_\zeta)_i.
+ r_i^\zeta&\ge\sup_{s\in[0,h]}(e^{\overline{M}s}\rho)_i
+                            +(\Psi(h)b_\zeta)_i.
  \end{aligned}
  \label{eq:structure-continuous-radii}
 \end{equation}
@@ -909,7 +913,7 @@ Let $\widehat\Gamma$ be the stored endpoint generator and let $d_\Gamma$
 bound the row sums of $|e^{A^0h}\Gamma(0)-\widehat\Gamma|$. Recenter using
 \eqref{eq:new-recentering-bound} and update
 \begin{equation}
- \rho^+\ge d_\Gamma+e^{\mathcal Mh}\rho+Q(h)b_\zeta+\omega.
+ \rho^+\ge d_\Gamma+e^{\overline{M}h}\rho+\Psi(h)b_\zeta+\delta^{\rm rec}.
  \label{eq:structure-endpoint-update}
 \end{equation}
 The same $\xi$ is retained. The total queue error combines generator and
@@ -943,7 +947,7 @@ is nonnegative. For a local solution, the sum of negative class and queue
 parts has upper derivative bounded by a local Lipschitz constant times
 that sum. Its zero initial value remains zero by scalar comparison.
 All classes and the queue are therefore nonnegative. Conservation gives
-$0\le M(t)\le M(t_0)+\int_{t_0}^t(d_1+d_2+\Lambda(s))\,ds$;
+$0\le M(t)\le M(t_0)+\int_{t_0}^t(d^{\rm int}_1+d^{\rm int}_2+\Lambda(s))\,ds$;
 bounded arrivals prevent finite-time escape. These facts establish the
 lower-state and class rows independently of upper storage constraints.
 
@@ -960,9 +964,9 @@ coordinate lies in the convex hull of the two endpoint ranges.
 Differentiating \eqref{eq:structure-affine-set}, using the mean-value
 relation from Theorem~\ref{thm:new-plan-enclosure}, gives
 \eqref{eq:structure-remainder-identity}. Its componentwise absolute
-derivative satisfies $\frac{d}{ds}|\zeta|\le\mathcal M|\zeta|+b_\zeta$
+derivative satisfies $\frac{d}{ds}|\zeta|\le\overline{M}|\zeta|+b_\zeta$
 almost everywhere. The bounds hold also for convex combinations of retained
-branch Jacobians. Since $\mathcal M$ is Metzler, its exponential is
+branch Jacobians. Since $\overline{M}$ is Metzler, its exponential is
 nonnegative; variation of constants proves
 \eqref{eq:structure-remainder-bound}. Before a hypothetical exit from the
 trial enclosure, \eqref{eq:structure-continuous-radii} bounds the complete
@@ -980,14 +984,14 @@ proves containment and every physical and service row over the plan.
 \end{proof}
 
 Numerical evaluation of the matrix functions also needs verified error
-bounds. For $\alpha\ge\|A\|_\infty$, $z=\alpha h$, and series order $p$,
+bounds. For $\alpha\ge\|A\|_\infty$, $\sigma=\alpha h$, and series order $p$,
 \begin{equation}
  \begin{aligned}
  \left\|e^{Ah}-\sum_{k=0}^p\frac{A^kh^k}{k!}\right\|_\infty
-       &\le e^z\frac{z^{p+1}}{(p+1)!},\\
+       &\le e^\sigma\frac{\sigma^{p+1}}{(p+1)!},\\
  \left\|\int_0^h e^{As}\,ds-
           \sum_{k=0}^p\frac{A^kh^{k+1}}{(k+1)!}\right\|_\infty
-       &\le he^z\frac{z^{p+1}}{(p+2)!}.
+       &\le he^\sigma\frac{\sigma^{p+1}}{(p+2)!}.
  \end{aligned}
  \label{eq:structure-matrix-tails}
 \end{equation}
@@ -1072,21 +1076,22 @@ $P^0=(u_k^0)_{k=0}^{K-1}$ and $P^B=(u_k^B)_{k=0}^{K-1}$ on
 $t=\tau_0<\cdots<\tau_K=E_B$, subdividing blocks if needed, and set
 \begin{equation}
 \begin{aligned}
-P(\vartheta)&=(1-\vartheta)P^0+\vartheta P^B,\\
-\Theta&=\{0=\vartheta_0<\cdots<\vartheta_M=1\}.
+P(\lambda_{\rm rep})&=(1-\lambda_{\rm rep})P^0+\lambda_{\rm rep} P^B,\\
+\mathcal G_{\rm rep}&=\{0=\lambda_{{\rm rep},0}<\cdots<\lambda_{{\rm rep},N_{\rm rep}}=1\}.
 \end{aligned}
 \label{eq:repair-family}
 \end{equation}
-The weight $\vartheta$ differs from the task record $\theta_i$.
+The grid has $N_{\rm rep}+1$ weights, ordered from the proposal at zero
+to the backup at one.
 Convex command constraints hold for interpolations of admissible endpoints;
 state, queue, and deadline constraints require certification.
-Let $\mathsf C_t(P\mid\mathcal S_t)=1$ mean that the exact plan is certified
+Let $\mathsf{Cert}_t(P\mid\mathcal S_t)=1$ mean that the exact plan is certified
 for every specified initial state and uncertainty realization, continuously
 for physical rows and at every pending service deadline over $[t,E_B]$.
 Then
 \begin{equation}
-\vartheta^*=\min\{\vartheta\in\Theta:
-                  \mathsf C_t(P(\vartheta)\mid\mathcal S_t)=1\}.
+\lambda_{\rm rep}^*=\min\{\lambda_{\rm rep}\in\mathcal G_{\rm rep}:
+                  \mathsf{Cert}_t(P(\lambda_{\rm rep})\mid\mathcal S_t)=1\}.
 \label{eq:repair-selection}
 \end{equation}
 Test the proposal first, then every earlier grid point before selecting
@@ -1101,22 +1106,22 @@ change among certified candidates on the tested grid.
 
 \begin{theorem}
 \label{thm:repair-grid}
-Suppose $\mathsf C_t(P^B\mid\mathcal S_t)=1$, $1\in\Theta$, and each
+Suppose $\mathsf{Cert}_t(P^B\mid\mathcal S_t)=1$, $1\in\mathcal G_{\rm rep}$, and each
 grid evaluation terminates. Ordered exhaustive search returns a certified
-plan after at most $M+1$ evaluations. For any norm on the stacked command
+plan after at most $N_{\rm rep}+1$ evaluations. For any norm on the stacked command
 vector, the first certified grid point minimizes
-$d(P,P^0)=\|P-P^0\|$ over the certified points of this grid.
+$\operatorname{dist}(P,P^0)=\|P-P^0\|$ over the certified points of this grid.
 \end{theorem}
 
 \begin{proof}
 Since $P(1)=P^B$, the certified grid set is nonempty. Finite ordered search
-therefore terminates at its least element $\vartheta^*$, and positive
+therefore terminates at its least element $\lambda_{\rm rep}^*$, and positive
 homogeneity gives
 \[
-d(P(\vartheta),P^0)=\vartheta\|P^B-P^0\|.
+\operatorname{dist}(P(\lambda_{\rm rep}),P^0)=\lambda_{\rm rep}\|P^B-P^0\|.
 \]
 Every smaller grid point has been tested and rejected. The displayed
-distance is nondecreasing in $\vartheta$, including the case $P^B=P^0$,
+distance is nondecreasing in $\lambda_{\rm rep}$, including the case $P^B=P^0$,
 which proves the stated minimum. The argument permits arbitrary certificate
 patterns between successive grid points.
 \end{proof}
@@ -1152,12 +1157,12 @@ the trajectory guarantee and validity interval; the search orders candidates.
 \subsection{Certification during computation}
 \label{sec:planned-handover}
 
-Choose a future activation $s\in(t,E_B)$. Let
-$\mathcal R_B(s\mid\mathcal I_t)$ contain every state reachable from
+Choose a future activation $t_a\in(t,E_B)$. Let
+$\mathcal R_B(t_a\mid\mathcal I_t)$ contain every state reachable from
 $\mathcal I_t$ by the incumbent's original absolute schedule under its
 allowed uncertainty. Certify a replacement from
-$\mathcal I_s^+\supseteq\mathcal R_B(s\mid\mathcal I_t)$, with commands
-starting at $s$ and remaining deadlines kept absolute. The incumbent
+$\mathcal I_{t_a}^+\supseteq\mathcal R_B(t_a\mid\mathcal I_t)$, with commands
+starting at $t_a$ and remaining deadlines kept absolute. The incumbent
 continues while this proof is prepared.
 
 The following proposition covers an on-time handover and retention after
@@ -1167,16 +1172,16 @@ an unavailable or late replacement certificate.
 \label{prop:planned-handover}
 Suppose the incumbent has a valid certificate on $[t,E_B]$ and the
 actual state at $t$ belongs to both $\mathcal I_t$ and its certified
-reachable set. A replacement is certified from $\mathcal I_s^+$ on
-$[s,E_R]$, where $E_R>s$, with
-$\mathcal R_B(s\mid\mathcal I_t)\subseteq\mathcal I_s^+$.
-Every service obligation pending at $s$ has its deadline in $[s,E_R]$
+reachable set. A replacement is certified from $\mathcal I_{t_a}^+$ on
+$[t_a,E_R]$, where $E_R>t_a$, with
+$\mathcal R_B(t_a\mid\mathcal I_t)\subseteq\mathcal I_{t_a}^+$.
+Every service obligation pending at $t_a$ has its deadline in $[t_a,E_R]$
 and is included in the replacement certificate. Assume that the model,
 uncertainty, obligations and incumbent schedule used in propagation
-remain valid through $s$, and that the executed model and uncertainty
+remain valid through $t_a$, and that the executed model and uncertainty
 satisfy the replacement contract through $E_R$.
 If the replacement certificate is ready by
-$s$ and the authority installs exactly its future-dated schedule at $s$,
+$t_a$ and the authority installs exactly its future-dated schedule at $t_a$,
 physical constraints and admitted service rows hold through $E_R$.
 If the certificate is unavailable or late and the incumbent contract
 remains valid through $E_B$, retaining its original schedule preserves
@@ -1184,13 +1189,13 @@ its guarantees through $E_B$.
 \end{proposition}
 
 \begin{proof}
-The incumbent certificate covers the executed prefix $[t,s]$ and every
+The incumbent certificate covers the executed prefix $[t,t_a]$ and every
 service row due on that prefix. Because propagation encloses every state reachable from the current
 information set under the incumbent's schedule and uncertainty bounds,
 the actual activation state lies in
-$\mathcal R_B(s\mid\mathcal I_t)$ and hence in $\mathcal I_s^+$. The replacement-contract assumptions and exact
+$\mathcal R_B(t_a\mid\mathcal I_t)$ and hence in $\mathcal I_{t_a}^+$. The replacement-contract assumptions and exact
 future-dated commands allow the new certificate to cover the replacement
-trajectory and every remaining admitted service row on $[s,E_R]$.
+trajectory and every remaining admitted service row on $[t_a,E_R]$.
 Concatenating these two certified intervals gives the installed-plan
 claim. If preparation is late or unsuccessful, the unchanged incumbent
 continues the same previously certified trajectory under the incumbent
@@ -1216,9 +1221,9 @@ coefficients and that installation time.
 \subsection{Networks with several entry queues}
 \label{sec:network-extension}
 
-Let $c\in\R^q$ contain destination-class inventories, $z\in\R^r$ exterior
-queues, and $a\in\R^r$ admitted flows. For fixed allocation shares
-$P_a\ge0$ with $\mathbf1_q^\top P_a=\mathbf1_r^\top$,
+Let $c\in\R^q$ contain destination-class inventories, $z\in\R^{n_q}$ exterior
+queues, and $a\in\R^{n_q}$ admitted flows. For fixed allocation shares
+$P_a\ge0$ with $\mathbf1_q^\top P_a=\mathbf1_{n_q}^\top$,
 \begin{equation}
  \dot c=F(c,u,t)+P_a a,\qquad \dot z=\Lambda-a,
  \label{eq:network-class-queue}
@@ -1244,10 +1249,10 @@ gives
  \dot z=\Lambda-a.
  \label{eq:network-transformed-flow}
 \end{equation}
-Thus explicit admission terms occupy only the $r$ queue coordinates. No
-invertible linear transformation can confine these $r$ independent channels
-to fewer than $r$ scalar coordinates. Moreover,
-$\mathbf1_q^\top y_c=\mathbf1_q^\top c+\mathbf1_r^\top z$, so the combined
+Thus explicit admission terms occupy only the $n_q$ queue coordinates. No
+invertible linear transformation can confine these $n_q$ independent channels
+to fewer than $n_q$ scalar coordinates. Moreover,
+$\mathbf1_q^\top y_c=\mathbf1_q^\top c+\mathbf1_{n_q}^\top z$, so the combined
 inventories count all internal and waiting vehicles exactly once.
 \end{proposition}
 
@@ -1256,16 +1261,16 @@ Differentiate $y_c=c+P_a z$ with fixed $P_a$:
 $\dot y_c=F(c,u,t)+P_a a+P_a(\Lambda-a)=F(c,u,t)+P_a\Lambda$.
 Substituting $c=y_c-P_a z$ proves
 \eqref{eq:network-transformed-flow}. The original admission incidence
-$[P_a^\top,-I]^\top$ has rank $r$ because its lower block is $-I$.
-Invertible coordinate changes preserve rank, so fewer than $r$ coordinates
+$[P_a^\top,-I]^\top$ has rank $n_q$ because its lower block is $-I$.
+Invertible coordinate changes preserve rank, so fewer than $n_q$ coordinates
 cannot carry these independent channels. Finally,
 $\mathbf1_q^\top y_c=\mathbf1_q^\top c+\mathbf1_q^\top P_a z
-=\mathbf1_q^\top c+\mathbf1_r^\top z$ by the column-sum condition.
+=\mathbf1_q^\top c+\mathbf1_{n_q}^\top z$ by the column-sum condition.
 Thus the transformed inventories count every vehicle once.
 \end{proof}
 
 For independent queues and fixed block commands,
-$a_i=\min\{k_i z_i,C_i g_i\}$ with $k_i,C_i\ge0$. With
+$a_i=\min\{k_i z_i,\kappa_i g_i\}$ with $k_i,\kappa_i\ge0$. With
 $J_c=D_cF$ and diagonal admission derivative $D_a$,
 \begin{equation}
  J_y=\begin{bmatrix}J_c&-J_cP_a\\0&-D_a\end{bmatrix},
@@ -1275,7 +1280,7 @@ $J_c=D_cF$ and diagonal admission derivative $D_a$,
 Queue branches affect only the diagonal entries; regional coupling remains
 in $J_c$ and $-J_cP_a$. Arrival residuals enter through
 $[P_a^\top,I]^\top w$. The same Jacobian, generator, remainder, support,
-and first-exit arguments apply in dimension $q+r$, with componentwise
+and first-exit arguments apply in dimension $q+n_q$, with componentwise
 residual bounds and the corresponding transformed disturbance incidence.
 Separate queue-diagonal bounds are valid independently of simultaneous
 branch combinations. The predictor defect still includes all branch
@@ -1306,11 +1311,11 @@ The following proposition gives sufficient conditions for such a backup.
 \label{prop:backup-lyapunov}
 Suppose the implemented backup has closed-loop dynamics
 \[
-\dot x=g_B(x,\eta),\qquad \eta(t)\in\mathcal E,
+\dot x=g_B(x,w_B),\qquad w_B(t)\in\mathcal W_B,
 \]
-where $\mathcal E$ is compact, $\eta(\cdot)$ is measurable, and $g_B$ is
+where $\mathcal W_B$ is compact, $w_B(\cdot)$ is measurable, and $g_B$ is
 continuous and locally Lipschitz in $x$, uniformly over
-$\eta\in\mathcal E$, on an open domain $O$. Let
+$w_B\in\mathcal W_B$, on an open domain $O$. Let
 $V_B:O\rightarrow\mathbb R_{\ge0}$ be continuously differentiable and define
 \[
 \mathcal K=\{x\in O:V_B(x)\le\ell_B\},
@@ -1318,10 +1323,10 @@ $V_B:O\rightarrow\mathbb R_{\ge0}$ be continuously differentiable and define
 where $\mathcal K$ is nonempty and compact. If, on a neighborhood of
 $\mathcal K$,
 \[
-\nabla V_B(x)^\top g_B(x,\eta)
+\nabla V_B(x)^\top g_B(x,w_B)
 \le -\lambda_B V_B(x)+\bar d_B
 \]
-for all $\eta\in\mathcal E$, with
+for all $w_B\in\mathcal W_B$, with
 $\lambda_B>0$ and
 $0\le\bar d_B\le\lambda_B\ell_B$, and if every state and command generated
 on $\mathcal K$ satisfies the authorized physical constraints, then
@@ -1329,7 +1334,7 @@ $\mathcal K$ is robustly invariant under $\mu_B$.
 \end{proposition}
 
 \begin{proof}
-Along every admissible backup trajectory,
+Along every admissible backup trajectory activated at time $t_a$,
 \[
 \frac{d}{dt}V_B(x(t))
 \le -\lambda_B V_B(x(t))+\bar d_B
@@ -1339,13 +1344,13 @@ Scalar comparison gives
 \[
 V_B(x(t))
 \le
-e^{-\lambda_B(t-s)}V_B(x(s))
+e^{-\lambda_B(t-t_a)}V_B(x(t_a))
 +
 \frac{\bar d_B}{\lambda_B}
-\bigl(1-e^{-\lambda_B(t-s)}\bigr).
+\bigl(1-e^{-\lambda_B(t-t_a)}\bigr).
 \]
-If $x(s)\in\mathcal K$, then
-$V_B(x(s))\le\ell_B$ and
+If $x(t_a)\in\mathcal K$, then
+$V_B(x(t_a))\le\ell_B$ and
 $\bar d_B/\lambda_B\le\ell_B$, so
 $V_B(x(t))\le\ell_B$. The trajectory therefore cannot leave
 $\mathcal K$. Because $\mathcal K$ is compact and contained in the domain of
@@ -1415,9 +1420,9 @@ The next corollary combines terminal continuation with ordered repair.
 
 \begin{corollary}
 \label{cor:repair-recursive}
-Require $\mathsf C_t$ to include terminal certification as defined in
+Require $\mathsf{Cert}_t$ to include terminal certification as defined in
 Section~\ref{sec:terminal-backup}. Suppose the backup plan at repair weight
-$\vartheta=1$ passes this test, an initial terminally certified plan is
+$\lambda_{\rm rep}=1$ passes this test, an initial terminally certified plan is
 active, only finitely many replacements occur in each bounded time
 interval, and the certified terminal transition is activated by expiry
 when no replacement is installed. Under the
@@ -1460,8 +1465,8 @@ toward the certified backup.
 Under these assumptions, for the Euclidean norm on the stacked fixed-block
 command vector,
 \begin{equation}
-|J(P(\vartheta))-J(P^0)|
-\le L_J\vartheta\|P^B-P^0\|_2,
+|J(P(\lambda_{\rm rep}))-J(P^0)|
+\le L_J\lambda_{\rm rep}\|P^B-P^0\|_2,
 \label{eq:repair-cost-bound}
 \end{equation}
 where
@@ -1474,8 +1479,8 @@ B_H&=\begin{cases}(e^{L_xH}-1-L_xH)/L_x^2,&L_x>0,\\H^2/2,&L_x=0.\end{cases}
 
 \begin{proof}
 The maximum instantaneous command difference is at most
-$\delta=\vartheta\|P^B-P^0\|_2$. Gronwall's inequality gives
-$\|x_{P(\vartheta)}(t+s)-x_{P^0}(t+s)\|\le L_u\delta A_s$.
+$\delta=\lambda_{\rm rep}\|P^B-P^0\|_2$. Gronwall's inequality gives
+$\|x_{P(\lambda_{\rm rep})}(t+s)-x_{P^0}(t+s)\|\le L_u\delta A_s$.
 Integrating the running-cost bound and adding the terminal bound yields
 \eqref{eq:repair-cost-bound}, since $\int_0^H A_s\,ds=B_H$.
 \end{proof}
@@ -1499,7 +1504,7 @@ traffic structure improves the bounds, and whether repair and retention
 support successive requests, computation delays and agent errors.
 The primary model, objectives and constraints are defined in
 Section~\ref{sec:benchmark-formulation} and Section~\ref{app:new-model}.
-The seven-state experiments use 6000-vehicle/h base exterior arrivals,
+The seven-state experiments use 6000~veh/h base exterior arrivals,
 10,000-vehicle regional limits and 2000-vehicle boundary storage. Arrival
 events increase the known mean by 20--50\% for 30--60 minutes, including
 five-minute rise and recovery ramps. Certificates cover the complete
@@ -1521,7 +1526,7 @@ Task Q compares economic MPC with the queue/exit extension of the
 almost-smooth control-Lyapunov-function (CLF) controller \cite{geroliminis2013mpc,zhong2018robust}.
 Its twelve contracts combine 20, 30, 40 and 50\% arrival increases with
 30-, 45- and 60-minute durations, one-vehicle state half-widths and a
-300-vehicle/h residual bound. All twelve MPC plans pass certification and
+300~veh/h residual bound. All twelve MPC plans pass certification and
 execute unchanged. Across 960 matched feasible comparisons
 ($12$ contracts, $16$ initial-state corners and $5$ residual profiles),
 the median paired percentage reduction in TTS is 24\% (range 23--25\%)
@@ -1538,7 +1543,7 @@ unresolved. Table~\ref{tab:structure-frontier} compares three enclosures
 for a fixed two-block MPC plan. Regional/class half-width is $d$ vehicles
 and queue half-width is $\min(d,10)$. Signed correlations extend the
 largest tested certifiable regional width from 10 to 50 vehicles at a
-60-vehicle/h residual. Positivity/queue bounds perform better for the
+60~veh/h residual. Positivity/queue bounds perform better for the
 one-vehicle box with the larger residual, so the refinements complement
 each other. Acceptance requires every physical and service constraint
 to pass its certified bound check.
@@ -1573,11 +1578,11 @@ $d$ (veh) & $\bar w_{\rm veh}$ (veh/h) & Base interval & Positivity/queue & Sign
 \end{table}
 
 For a 1700-vehicle service limit under one-vehicle sensing half-widths
-and a 60-vehicle/h residual bound, the base interval and positivity/queue
+and a 60~veh/h residual bound, the base interval and positivity/queue
 methods first certify a nominal target of 1600 vehicles on the six-target
 menu. Signed generators also certify 1625, with a deadline bound below
 1689. The required margin falls from 100 to 75 vehicles and nominal TTS
-falls by 0.90\% (41 vehicle-hours) over minutes 0--60. The margin is
+falls by 0.90\% (41 veh-h) over minutes 0--60. The margin is
 the difference between the authorized service limit and the target imposed
 on the nominal forecast trajectory. The extended online comparison, target menu
 and adverse realization are in \reproductiondetails{the service-margin study}.
@@ -1585,8 +1590,8 @@ and adverse realization are in \reproductiondetails{the service-margin study}.
 The network construction also certifies fixed plans on connected two- and
 three-region rings with six and twelve states. At regional half-width
 $d=25$ vehicles, combined inventories certify the two-region plan with a
-300-vehicle/h residual per queue and the three-region plan with a
-60-vehicle/h residual. Their largest regional deadline bounds are 1552
+300~veh/h residual per queue and the three-region plan with a
+60~veh/h residual. Their largest regional deadline bounds are 1552
 and 2060 vehicles against a 2700-vehicle limit; class coordinates leave
 both sufficient proofs unresolved. Successful twelve-state proofs take
 5.20--5.28 seconds for 120 intervals. The essential ring setup is in
@@ -1598,7 +1603,7 @@ records are in \reproductiondetails{the connected-network study}.
 
 Task D fixes the 30\% one-hour event and minute-20 traffic state. The
 72 development contracts cross state half-widths $d\in\{1,10,25,50\}$
-vehicles, residual bounds $\bar w_{\rm veh}\in\{60,150,300\}$ vehicles/h,
+vehicles, residual bounds $\bar w_{\rm veh}\in\{60,150,300\}$ veh/h,
 deadline limits $\eta\in\{2750,2850,2950\}$ vehicles and Region-2 weights
 $p\in\{2,4\}$. Eight held-out contracts use $d\in\{5,20\}$,
 $\bar w_{\rm veh}\in\{100,225\}$, $\eta\in\{2800,2900\}$ and $p=3$.
@@ -1661,7 +1666,7 @@ while its sufficient family certificate remains unresolved.
 \centering\footnotesize
 \caption{Matched adverse realization, minutes 20--60. TTS is total
 time spent in the regions and exterior queue; $J_D$ weights Region~2 by
-$p=4$. Both use vehicle-hours (veh-h). Costs and counts are rounded to whole
+$p=4$. Both use veh-h. Costs and counts are rounded to whole
 units. Peak queue is the maximum exterior count $100z$; $100n_1(E)$ is the
 Region-1 count at deadline $E=60$ minutes. Their limits are 2000 and 2850
 vehicles. P/S lists physical/service outcomes: P=pass, F=fail. Cert.
@@ -1687,19 +1692,19 @@ Full-scenario repair & 3075 & 6453 & 1547 & 2314 & P/P & Yes\\
 \end{table}
 
 For nominal, retained and repaired plans $P^0,P^B,P^R$ on a common
-realization $r$, priority improvement $I_r$, delay change $C_r$ and
-recovered requested benefit $B_r$ are
+realization $\omega$, percentage reduction in priority cost $\Delta J_\omega$, percentage change in queue-inclusive delay $\Delta D_\omega$ and
+recovered requested benefit $B_\omega$ are
 \begin{equation}
 \begin{aligned}
-I_r&=100\frac{J_D(P^B;r)-J_D(P^R;r)}{J_D(P^B;r)},\\
-C_r&=100\frac{J_Q(P^R;r)-J_Q(P^B;r)}{J_Q(P^B;r)},\\
-B_r&=\frac{J_D(P^B;r)-J_D(P^R;r)}{J_D(P^B;r)-J_D(P^0;r)}.
+\Delta J_\omega&=100\frac{J_D(P^B;\omega)-J_D(P^R;\omega)}{J_D(P^B;\omega)},\\
+\Delta D_\omega&=100\frac{J_Q(P^R;\omega)-J_Q(P^B;\omega)}{J_Q(P^B;\omega)},\\
+B_\omega&=\frac{J_D(P^B;\omega)-J_D(P^R;\omega)}{J_D(P^B;\omega)-J_D(P^0;\omega)}.
 \end{aligned}
 \label{eq:benchmark-repair-metrics}
 \end{equation}
-Positive $I_r$ means a reduction in priority cost relative to retention;
-positive $C_r$ means an increase in queue-inclusive delay. The recovered
-benefit is reported as $100B_r$ percent.
+Positive $\Delta J_\omega$ means a reduction in priority cost relative to retention;
+positive $\Delta D_\omega$ means an increase in queue-inclusive delay. Both changes are percentages. The recovered
+benefit is reported as $100B_\omega$ percent.
 Across 24,320 matched realizations from 38 original-continuation repair
 contracts, every benefit denominator is positive. Median priority
 improvement is 5.7\%, delay increase 16.1\%, and recovered benefit 91.7\%.
@@ -1726,7 +1731,7 @@ minutes 25 and 30: A=accept the replacement, R=retain the current plan.
 Unchecked feasible and Certified feasible count replays satisfying both
 physical limits and the minute-60 service requirement out of 640 matched
 initial-state/arrival realizations. TTS means total time spent, including
-the exterior queue, over minutes 20--60, in vehicle-hours (veh-h).
+the exterior queue, over minutes 20--60, in veh-h.
 Median TTS F/U/C gives three medians in order: F=retain the fixed initial
 certified plan, including its scheduled command changes; U=execute both
 requested replacements without checking; C=execute only certified
@@ -1750,7 +1755,7 @@ D025 & A/R & 512/640 & 640/640 & 2963/3070/2719\\
 
 For D015, D027, D071 and D025, the contract triples
 $(d,\bar w_{\rm veh},\eta)$ are $(1,60,2850)$, $(1,300,2850)$,
-$(50,60,2950)$ and $(1,300,2750)$, respectively, in vehicles, vehicles/h
+$(50,60,2950)$ and $(1,300,2750)$, respectively, in vehicles, veh/h
 and vehicles. Table~\ref{tab:sequential-handover} shows acceptance of both changes,
 acceptance followed by retention, and retention of the initial plan.
 D027's second request fails the sufficient service enclosure although
@@ -1932,7 +1937,8 @@ the framework in operational traffic networks.
 \input{submission_declarations_reduced.tex}
 
 \appendix
-\numberwithin{equation}{section}
+% Use appendix letters for equations while retaining full appendix section titles.
+\renewcommand{\theequation}{\Alph{section}.\arabic{equation}}
 \section{Essential Experimental Settings}
 \label{app:experimental-settings}
 \label{app:reusable-benchmark}
@@ -1955,7 +1961,7 @@ $(u_{12},u_{21},u_{02},u_{20})$, in five- and
 35-minute blocks ending at minute 60. Changed requirements trigger fresh
 checking. If necessary, reserve construction tries network TTS followed
 by moderate Region-2 priority; a repair endpoint must pass the same
-contract. Repair tests $\Theta=\{j/20:0\le j\le20\}$ in order,
+contract. Repair tests $\mathcal G_{\rm rep}=\{j/20:0\le j\le20\}$ in order,
 from the proposal at weight zero to the checked backup at weight one. Plans are
 compiled and checked against exact actuator constraints; state/service
 proof intervals are 15 seconds.
@@ -1986,8 +1992,8 @@ The seventeen handover contracts comprise the eight extremes
 $(d,\bar w_{\rm veh},\eta,p)\in\{1,50\}\times\{60,300\}\times
 \{2750,2950\}\times\{4\}$, primary $(1,300,2850,4)$ contract and eight
 held-out contracts. The active plan supplies the activation box
-$\mathcal I_s^+=\widehat x_s+[-d_s,d_s]$, where
-$(d_s)_i=\sum_j|(L^{-1})_{ij}|(r_s)_j$, by outward conversion of its
+$\mathcal I_{t_a}^+=\widehat x_{t_a}+[-d_{t_a},d_{t_a}]$, where
+$(d_{t_a})_i=\sum_j|(L^{-1})_{ij}|(r_{t_a})_j$, by outward conversion of its
 correlated endpoint bound. No new observation is used. Timed preparation
 includes propagation, optimization, checking and repair; a late or
 mismatched result retains the existing schedule through its original expiry.
@@ -2002,7 +2008,7 @@ vehicles move one edge and retain their destination. Half the admitted
 traffic is local; the rest is equally divided among other destinations.
 Initial regional/queue totals are 3000/200 vehicles, with half the regional
 traffic local. Per region, internal demand is 6000 local and 500 nonlocal
-vehicles/h; exterior arrivals are 4000 vehicles/h. Queue 0 has a 30\%
+veh/h; exterior arrivals are 4000 veh/h. Queue 0 has a 30\%
 increase from minute 15 to 45. Ring/admission gates start at 0.65/0.50;
 after minute 30, ring gates 0/1 become 0.80/0.55 and admission gate 0
 becomes 0.60, with other gates unchanged. Class/queue half-widths are
@@ -2018,7 +2024,7 @@ The four histories cover direct instruction, restoration after one or
 nested interruptions, and interruption expiry at minute 20. The pilot's
 presaved cases are Q000 (certified MPC), D013 (repair), and D013 with
 replacement tools unavailable (retention). Actual planning starts from
-D027, with one-vehicle sensing half-width, 300-vehicle/h residual bound,
+D027, with one-vehicle sensing half-width, 300~veh/h residual bound,
 2000-vehicle storage and the 2850-vehicle Region-1 limit at minute 60.
 Objectives set weights on $(n_1,n_2,z)$ to $(1,1,1)$, $(4,1,1)$ or
 $(1,4,1)$ for network, Region~1 or Region~2. Objective correctness uses

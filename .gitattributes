@@ -1,2 +1,5 @@
 # Preserve archived sources and results exactly across platforms.
 * -text
+*.pdf binary
+*.zip binary
+*.png binary

@@ -1,21 +1,18 @@
-# Long and reduced manuscripts — 8 October 2026
+# Current manuscripts — 16 October 2026
 
 **Formal Guarantees for Trustworthy Agent-Mediated Urban Perimeter Control**
 
-- `main_reduced.tex` / `main_reduced.pdf`: the substantially reduced, standalone paper, **45 pages** including references.
-- `main.tex` / `main.pdf`: the unchanged long paper, **79 pages**.
-- `main_ieee.tex` / `main_ieee.pdf`: the unchanged long paper in its **33-page** IEEE reading layout.
+- `main_reduced.tex` / `main_reduced.pdf`: current reduced standalone paper, **45 pages**.
+- `main.tex` / `main.pdf`: current complete paper, **79 pages**.
 
-The reduced version is 25 pages shorter than its preceding 70-page version (35.7%). All four theorems, six propositions and the corollary retain their mathematical statements and have complete proofs in the main text. Repeated derivations and explanations were consolidated. Essential model, task and experimental settings remain in the paper; detailed reproduction instructions, implementation variants and secondary comparisons are in `supporting_materials/` and the research folders identified by the guide.
+Both versions now share corresponding author Jiangbo Yu, consistent method names, units, repair counts and disambiguated mathematical symbols. Appendix equations use `(B.1)` while subsection references retain `Appendix B.1`. The AI manuscript-preparation declaration is omitted from both at the author's explicit final instruction. The abstract, introduction, conclusion and future work retain their previous wording. Scientific results and all eleven formal claims are preserved.
 
-The abstract is unchanged. The introduction differs only in its final roadmap sentence, explicitly approved to identify the new proof locations. The conclusion, future-work paragraph and bibliography database are unchanged. The preceding reduced-only revision made Jiangbo Yu corresponding author, removed the AI-assistance declaration and fixed the page-5 float gap. The latest revision explains results-table labels, units, methods and counts in the captions, and clarifies experimental terminology. Numerical values are unchanged. The long manuscripts retain their prior author details and declarations. Font size and page dimensions are unchanged. No numerical experiments or live model calls were rerun.
+The reduced paper contains complete proofs in its main text and one essential-settings appendix. Additional experimental/reproduction material remains mapped in `supporting_materials/REPRODUCING_THE_REDUCED_PAPER.md`.
 
-For Overleaf, select `main_reduced.tex` as the main document. Compile with pdfLaTeX, BibTeX and two further pdfLaTeX passes. The reduced-only source ZIP includes the bibliography, declarations and architecture figure. `PERIMETER_LONG_AND_REDUCED_2026-10-08_SOURCE.zip` additionally includes the unchanged long versions.
+See `MANUSCRIPT_CONSISTENCY_REVIEW_2026-10-16.txt` for the assessment and symbol mapping, and `NOTATION_CONSISTENCY_QA_2026-10-16.json` for checks and hashes. Earlier dated reviews and `main_ieee.*` describe historical snapshots; the archived 8 October source bundle preserves their matching dependencies.
 
-See `RESULTS_CAPTION_CLARIFICATIONS_2026-10-08.txt` and `RESULTS_CAPTION_QA_2026-10-08.json` for the current changes, checks and hashes. `MANUSCRIPT_LAYOUT_AND_AI_MENTIONS_2026-10-08.txt` contains updated locations; `AUTHOR_FLOAT_QA_2026-10-08.json` records the preceding 43-page revision. `SUBSTANTIAL_REDUCTION_NOTES_2026-10-08.md` and its audit describe the preceding 44-page revision. Earlier audit files describe their own historical revisions. `STANDALONE_MATERIALS_MAP.md` records the earlier integration retained by the long paper.
+For Overleaf, select `main_reduced.tex` or `main.tex` as main document. Use pdfLaTeX and BibTeX. The 16 October ZIPs contain current sources, figures, bibliography, prebuilt bibliography files and this review; no old manuscript or historical IEEE layout is included. The complete bundle also includes the frozen arrays and portable generator for the Figure H.2 label correction.
 
-The exact preceding package, including the 70-page reduced paper, is preserved at `archive/reduced_manuscript_2026_10_08_before_substantial_reduction/` in the repository. Supporting `.tex` extracts preserve the old appendix and native-regulation details; they are reference fragments, not separate compilable manuscripts.
+No simulations or live model calls were rerun. Font sizes and page dimensions are unchanged. Both PDFs compiled cleanly and were visually reviewed.
 
 Repository: https://github.com/AlienEslami/agentic-perimeter-runtime-certification
-
-The repository remains private. Author and release checks are tracked separately in `SUBMISSION_ITEMS_TO_CONFIRM.txt` and the repository's `PUBLIC_RELEASE_CHECKLIST.md`.

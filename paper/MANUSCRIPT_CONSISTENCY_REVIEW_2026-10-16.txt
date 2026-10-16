@@ -1,0 +1,113 @@
+MANUSCRIPT CONSISTENCY AND NOTATION REVIEW
+16 October 2026
+
+Current versions: reduced 45 pages; complete 79 pages, non-IEEE layouts.
+This round retains the requested notation and consistency corrections.
+The manuscript-preparation AI declaration is omitted from BOTH versions,
+as explicitly clarified by the author after the initial review.
+
+ASSESSMENT
+
+I agree with the corresponding-author, method-name, repair-column and
+appendix-equation inconsistencies. Several notation overlaps were real;
+others were already distinguished by font, subscript or local scope.
+The changes below prioritize symbols that readers repeatedly encounter.
+
+Both versions name Jiangbo Yu as corresponding author. Names, author order,
+email addresses and contributions otherwise retain the approved wording.
+
+Both versions use Base interval, Positivity/queue and Signed; Nominal-plan
+repair; and Repairs executed. Chronological uses of original, such as an
+original expiry or previously certified continuation, retain that meaning.
+Five shared results-table captions now use consistent method definitions,
+units, replay denominators, pass/fail meanings and executed-repair counts.
+The complete paper's Figure H.2 legend now says All three enclosures and
+Signed. Its caption identifies the common target-1600 execution and the
+separate target-1625 initial design. Saved arrays, curves and axes are
+unchanged. A portable plotting script and frozen data accompany the source.
+
+UNITS
+
+Physical hourly flows use veh/h; accumulated traffic time uses veh-h,
+defined as vehicle-hours in the notation table. Inventory remains measured
+in 100-vehicle units where specified. Different dimensions are intentional:
+veh/h is a flow rate; veh-h measures time accumulated across vehicles.
+
+The reported MFD peak 6.303 veh/s is expressed as 22,691 veh/h (rounded).
+The reference Task-R demand 1.6 veh/s per class is expressed as 5760 veh/h,
+equivalently 57.6 normalized inventory units/h. The reference CLF controller
+retains its native veh/s scaling, now explicitly obtained by multiplying
+the normalized hourly field and input columns by 100/3600. Its nonlinear
+law would change if its rate scale were changed without this conversion.
+Seconds used for integration steps and computation times remain appropriate.
+
+NOTATION CHANGES IN BOTH PAPERS, INCLUDING THE COMPLETE APPENDICES
+
+  Total inventory M is retained; the Metzler comparison matrix is overline M.
+  Repair weight vartheta becomes lambda_rep; grid Theta becomes G_rep;
+    its number of intervals is N_rep and the search takes at most N_rep+1
+    checks. Task record theta_i is retained. G_rep avoids reusing the
+    exterior-arrival symbol Lambda.
+  The contract remains calligraphic C, already distinct from ordinary C.
+    The checker is Cert_t; the request compiler is Comp. UpdateTask names
+    the parsed task transition, and SelectTask returns the active objective
+    and remaining duration. These functions have different signatures.
+  Scalar and network admission capacities C and C_i become kappa and kappa_i.
+  Delay change C_r becomes Delta D_omega, and priority improvement I_r
+    becomes Delta J_omega. Both are percentage changes; their signs and
+    denominators are unchanged. Recovered benefit is B_omega. An obsolete
+    J_2/varrho entry was replaced by the actually defined B_omega.
+  Computational C_d,C_q,C_J become cost_def,cost_queue,cost_Jac.
+    The transformed constraint row C_i is written directly as a_x^T L^{-1}.
+  The matrix-exponential integral Q becomes Psi. Task Q is retained.
+  Primitive internal demands use d^int, including destination components
+    and the demand vector; sensing widths retain d. Plan distance is dist.
+  Quadratic coefficients a,b,c become alpha_2,alpha_1,alpha_0.
+  The admission-branch index becomes varpi. Command block b remains b.
+    The computational branch count becomes n_br. Varpi avoids colliding
+    with the existing scalar comparison function chi(a,s).
+  The matrix-tail scalar z=alpha*h becomes sigma=alpha*h; queue z remains z.
+  Terminal uncertainty eta in calligraphic E becomes w_B in W_B, avoiding
+    service threshold eta and distinguishing general backup uncertainty
+    from the finite-plan arrival residual w.
+  Task expiry e_i becomes tau_i^exp; coordinate vector e_i is retained.
+  Simulation realization r becomes omega; queue count r becomes n_q.
+    Recentring error omega becomes delta^rec to free omega for realizations.
+    Service-row index r and radius r_l retain their established meanings.
+  Absolute activation time s becomes t_a. Local integration time s remains
+    s. The decision record is written directly as calligraphic S_{t_i},
+    avoiding the unnecessary plain-letter alias s_i.
+  Requirements T_i and information I_i were already calligraphic T_i and
+    I_i. Their distinct typography is retained rather than renamed again.
+
+APPENDIX EQUATIONS
+
+Equations now display (A.1), (B.1), (F.1), etc., while appendix sections and
+subsections retain Appendix B, Appendix B.1, etc. Equation counters still
+restart by appendix, and equation/section hyperlinks remain distinct.
+
+PRESERVATION AND VALIDATION
+
+The abstract, introduction, conclusion and future-work wording are unchanged
+in each version. All theorem/proposition/corollary statements and proofs
+retain their claims, assumptions and logical content under the symbol map.
+Numerical table entries, scientific arrays, experimental records and the
+bibliography are unchanged. No simulation or live agent call was rerun.
+Font sizes and page dimensions are unchanged. The notation table uses a
+2 percent smaller row strut to fit the clarified symbols on one page.
+
+Both manuscripts compile with resolved references, no overfull boxes and
+no oversized floats. All 124 pages were rendered and reviewed; affected
+mathematical, table, figure and declaration pages were checked in detail.
+Independent source reviews checked the symbol substitutions and native CLF
+conversion against the saved controller implementation.
+
+This review applies to the two current non-IEEE manuscripts. The earlier
+IEEE layout and audits are historical snapshots; use the archived source
+package for a consistent build of that older version.
+
+POLICY SOURCE REVIEWED
+
+https://www.elsevier.com/en-gb/about/policies-and-standards/generative-ai-policies-for-journals
+The current manuscripts follow the author's explicit final instruction
+to omit the manuscript-preparation AI declaration.

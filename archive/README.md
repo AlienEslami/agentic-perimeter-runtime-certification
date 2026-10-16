@@ -4,6 +4,8 @@ This directory preserves material moved out of the standalone manuscript on 7 Oc
 
 ## Contents
 
+- `manuscripts_2026_10_16_before_notation_revision/` preserves the exact prior source packages before the notation and consistency corrections.
+
 - `reduced_manuscript_2026_10_08_before_caption_revision/` preserves the exact 43-page reduced-paper packages before results-caption and terminology clarification.
 
 - `reduced_manuscript_2026_10_08_before_author_float_revision/` preserves the exact 44-page reduced-paper packages before the corresponding-author, declaration and float-layout revision.

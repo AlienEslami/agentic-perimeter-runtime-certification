@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-16",
+  "scope": "Latest non-IEEE complete and reduced manuscripts; notation, metadata and reporting consistency.",
+  "ai_declaration": "Omitted from both versions at the user's explicit final instruction.",
+  "scientific_changes": "Notation and reporting only; no new simulations, live calls, optimizer runs, results or theorem claims.",
+  "versions": {
+    "complete": {
+      "pages": 79,
+      "source_sha256": "06eca74e76d6534c9582c0493247920cbb1121150a73df7de6d93a0aff58a70b",
+      "pdf_sha256": "46fdbdab4aa7c667985b51de6f7a0bb95b2fffa2f83517c4a4d77260c72c10ed",
+      "checks": {
+        "numerical_table_values_unchanged": true,
+        "abstract_introduction_conclusion_future_work_unchanged": true,
+        "result_equation_proof_counts_and_labels_unchanged": true,
+        "semantic_review_passed": true,
+        "corresponding_author": "Jiangbo Yu",
+        "ai_declaration_absent": true,
+        "references_resolved_no_overfull_or_oversized_floats": true,
+        "visual_review": "All pages checked on contact sheets; affected mathematical, declaration and figure pages checked at full resolution."
+      },
+      "appendix_equation_examples": [
+        [
+          "eq:new-inverse-coordinates",
+          "B.1"
+        ],
+        [
+          "eq:backup-terminal-landing",
+          "F.1"
+        ]
+      ],
+      "output": "C:\\Users\\alien\\Documents\\Mathematical foundation\\output\\pdf\\perimeter_paper_complete_2026-10-16.pdf"
+    },
+    "reduced": {
+      "pages": 45,
+      "source_sha256": "52b2b79c8af58f4063b96584ba3b866d76d90b67a10e274cb1560cf0115fe406",
+      "pdf_sha256": "29759ae183cb8730474cfd4e45af6bd29ed6ea4d95f184b178ee9f8b98a49d8a",
+      "checks": {
+        "numerical_table_values_unchanged": true,
+        "abstract_introduction_conclusion_future_work_unchanged": true,
+        "result_equation_proof_counts_and_labels_unchanged": true,
+        "semantic_review_passed": true,
+        "corresponding_author": "Jiangbo Yu",
+        "ai_declaration_absent": true,
+        "references_resolved_no_overfull_or_oversized_floats": true,
+        "visual_review": "All pages checked on contact sheets; affected mathematical, declaration and figure pages checked at full resolution."
+      },
+      "appendix_equation_examples": [],
+      "output": "C:\\Users\\alien\\Documents\\Mathematical foundation\\output\\pdf\\perimeter_paper_reduced_2026-10-16.pdf"
+    }
+  },
+  "figure_revision": {
+    "operation": "Display-name revision from frozen figure data only",
+    "input": "output/package/FOUNDATION_MFD_PARTB_CONSISTENCY_REVISION_2026-09-25/figures/mfd_structure_online_runtime_figuredata.json",
+    "input_sha256": "58ca8c31ad1d11e8f9b750a21f2470c60030728b225335c0807b63feb77052c0",
+    "scientific_arrays_sha256": "896700e4a97526792af0fcf07f421d6c7c60568ffd80085d7b999fca7915c249",
+    "scientific_arrays_unchanged": true,
+    "axes_limits_ticks_styles_unchanged": true,
+    "simulation_or_API_calls": false,
+    "display_labels": {
+      "binding1600_original": "All three enclosures: target 1600",
+      "binding1625_affine_v3": "Signed: target 1625",
+      "nominal_1700_c1600": "Matched nominal replays (overlap)"
+    },
+    "outputs": {
+      "mfd_structure_online_runtime.pdf": "0d38c7f7d097a039487f95603abd67053990d320cbb74ab51341cc6230e45396",
+      "mfd_structure_online_runtime.png": "30f18be11b86d97937827bef3bf57feb555c636a41fc6f6645eab80cec8ff8aa"
+    }
+  },
+  "declarations_sha256": "a010bbfae7ec71f9292eabed64f2061c7b483bebe9c74657702c25854dcd982f",
+  "bibliography_unchanged": true,
+  "compiler": "Two resolved passes with existing pdfLaTeX; no TeX installation performed.",
+  "reviewed_helpers": [
+    "notation_math_changes_2026_10_16.py",
+    "notation_context_changes_2026_10_16.py",
+    "notation_presentation_changes_2026_10_16.py"
+  ]
+}
