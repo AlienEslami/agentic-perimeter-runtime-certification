@@ -552,7 +552,8 @@ X_i^A&=(h_i,\theta_i,o_i),\\
 r_i^A&\sim\Pi_\phi(\cdot\mid h_i,\iota_i),\\
 (\theta_i^+,q_i^A)&=\mathsf{Comp}_{t_i}(\theta_i,r_i^A),\\
 \mathcal P_i^{\rm prop}
-&=\mathsf{Planner}(q_i^A,\mathcal I_i,\mathcal T_i),\\
+&=\begin{cases}\mathsf{Planner}(q_i^A,\mathcal I_i,\mathcal T_i),&q_i^A\ne\bot,\\
+\varnothing,&q_i^A=\bot,\end{cases}\\
 (u_i^{\rm exec},\ell_i)
 &=\mathsf{CertifyExecute}(\mathcal P_i^{\rm prop},\mathcal S_{t_i}),\\
 \theta_{i+1}&=\mathsf{Age}_{t_{i+1}}(\theta_i^+),\\
@@ -561,6 +562,7 @@ h_i,\iota_i,r_i^A,u_i^{\rm exec},\ell_i,o_{i+1}).
 \end{aligned}
 \label{eq:new-agent-state}
 \end{equation}
+An invalid request returns $q_i^A=\bot$ and an empty proposal; the execution layer retains its valid incumbent.
 A history-only view supplies the observation and memory; a task-record view
 also supplies the active priority and its absolute expiry. The trained model
 $\Pi_\phi$ proposes an operation, and the compiler checks its fields and
@@ -983,44 +985,82 @@ incumbent's certificate and uncertainty bounds after its executed prefix
 supplies the replacement information set, as in
 Proposition~\ref{prop:planned-handover}.
 
-The following theorem shows how certification guarantees carry through successive plan replacements and retention after rejection.
+For a certified plan $P$, let $\tau_P$ be its installation time and
+let $\mathcal X_P$ be the trajectory family covered by its stored record:
+\begin{equation}
+\mathcal X_P=\{x_P(\cdot;x_0,w):
+ x_0\in\mathcal I_{\tau_P},\ w\in\mathcal W_P\}.
+\label{eq:execution-covered-family}
+\end{equation}
+Its expiry is $E_P$, and $\mathcal O_P$ contains its certified service
+triples $(T_r,g_r,\eta_r)$. Theorems and propositions on one-plan
+certification establish the physical rows and these service rows for every
+member of $\mathcal X_P$. Retention restricts this same family to the
+remaining interval, keeping its correlated history. A new hard requirement
+is admitted only when the plan retained or installed covers it; a soft
+priority request alone does not change the hard contract.
+
+The following theorem carries these one-plan guarantees through successive
+replacement or retention decisions.
 
 \begin{theorem}
 \label{thm:new-plan-closure}
-Suppose an initially verified plan satisfies the physical constraints and
-covers all scheduled service deadlines. At each decision time, install a
-proposed replacement only if it is certified from the current information set
-and covers every pending service requirement; otherwise, continue the
-remaining portion of the current verified plan. If the realized uncertainty
-remains within the bounds assumed by the active certificate and execution
-follows the certified command schedule, then the physical constraints hold
-throughout execution and every service requirement is satisfied at its
-scheduled deadline. These guarantees hold through the expiry of the active
-verified plan.
+Consider $t_0<\cdots<t_N<t_{N+1}=T$, including every plan-admission
+decision and admission of a new service requirement on this finite
+interval. Let $\mathcal X_0$ be the initial certified family, whose initial
+set contains the actual state. For a proposal $\widehat P_i$, write
+$\widehat{\mathcal X}_i=\mathcal X_{\widehat P_i}$. At $t_i$, accept it only when
+$\mathsf{Cert}_{t_i}(\widehat P_i\mid\mathcal S_{t_i})=1$, its initial
+set contains $x(t_i)$, and it covers all pending admitted requirements.
+The selected trajectory family is
+\begin{equation}
+\mathcal X_i=\begin{cases}
+\widehat{\mathcal X}_i,&\text{if the replacement is accepted},\\
+\mathcal X_{i-1},&\text{otherwise},
+\end{cases}\qquad i=1,\ldots,N.
+\label{eq:execution-family-update}
+\end{equation}
+Let $P_i,E_i,\mathcal O_i$ be the plan, expiry and service rows stored
+with this family. Assume the executed model, uncertainty and commands
+satisfy its certificate, and
+\[
+t_{i+1}\le E_i,\qquad \mathcal O_{t_i}\subseteq\mathcal O_i,
+\qquad i=0,\ldots,N,
+\]
+where $\mathcal O_{t_i}$ contains the pending admitted requirements.
+Then
+\begin{equation}
+\begin{aligned}
+H_jx(t)+J_ju^{\rm exec}(t)&\le\beta_j^{\rm phys},
+ &&t\in[t_0,T],\\
+g_r^\top x(T_r)&\le\eta_r,
+ &&\text{admitted rows with }t_0\le T_r\le T.
+\end{aligned}
+\label{eq:execution-physical-service}
+\end{equation}
+Rows and uncertainty bounds refer to the applicable active certificate.
+The finite guarantee extends to its expiry when no later plan is installed.
 \end{theorem}
 
 \begin{proof}
-The initial verified plan contains the actual initial state and guarantees the
-physical constraints and scheduled service requirements over its certified
-horizon. By Theorem~\ref{thm:new-plan-enclosure} or
-Proposition~\ref{prop:structure-plan}, every state reached while this plan is
-executed remains within its certified reachable set.
-
-At a decision time, there are two cases. If the proposed replacement is
-rejected, the remaining portion of the current verified plan continues.
-Because this portion belongs to the same previously certified plan, its
-reachable-set and service guarantees remain valid up to the original expiry.
-
-If the proposed replacement is accepted, its certificate contains the current
-state information and covers every still-pending service requirement. The
-replacement therefore establishes the same physical and service guarantees
-from its installation time onward.
-
-Applying these two cases successively over the finite decision sequence shows
-that an active verified plan always covers the executed trajectory and all
-pending service requirements. Hence, the physical constraints hold
-continuously and each service requirement is satisfied at its scheduled
-deadline, up to the expiry of the active verified plan.
+The initial certificate and realized uncertainty place the executed
+trajectory in $\mathcal X_0$ until the first decision. Suppose this holds
+through $t_i$. Rejection preserves the same trajectory family, assumptions,
+command schedule and original expiry. Its stored guarantee therefore
+covers the next executed segment. Acceptance gives
+$x(t_i)\in\mathcal I_{t_i}$ and a certificate for every allowed future
+uncertainty realization, so the new segment belongs to the replacement
+family. In either case,
+\[
+x|_{[t_i,t_{i+1}]}\in
+\{\widetilde x|_{[t_i,t_{i+1}]}:\widetilde x\in\mathcal X_i\}.
+\]
+Induction over $i=0,\ldots,N$ proves the physical inequalities on each
+segment. States are continuous at switches, and successor command rows are
+checked at installation. Every admitted service row remains covered until
+its deadline by $\mathcal O_{t_i}\subseteq\mathcal O_i$ and
+$t_{i+1}\le E_i$; applying its covering certificate at $T_r$ gives the
+second inequality in \eqref{eq:execution-physical-service}.
 \end{proof}
 
 
@@ -1120,22 +1160,39 @@ The following proposition shows that certified repair and retention on timeout p
 
 \begin{proposition}
 \label{prop:repair-execution}
-Assume that each accepted certificate guarantees its stated physical and
-scheduled service constraints for every initial state and uncertainty
-realization it covers, that the active backup certificate remains valid,
-and that the installed commands, installation state information and time,
-model, uncertainty bounds, and service requirements match the certificate. A repair installed only after a passing certificate for its actual
-installation information and time preserves every physical and scheduled
-service row in that certificate through its expiry. If no such repair is
-ready by the decision deadline, continuing the active backup preserves its
-guarantees through its original expiry $E_B$.
+Let $P^B$ be a valid incumbent on $[t,E_B]$, and consider an
+installation time $t_a\in[t,E_B)$. A tested repair $P^R$ has expiry
+$E_R>t_a$ and a completed-certificate time $t_{\rm ready}$, with
+$t_{\rm ready}=\infty$ if no result is obtained. Assume the incumbent's
+contract remains valid through preparation and installed records match the
+actual time, model and coefficients. A repair installation requires
+$x(t_a)\in\mathcal I_{t_a}$; all pending admitted service rows must be
+covered by the selected record. Use
+\begin{equation}
+P^{\rm exec}=\begin{cases}
+P^R,&t_{\rm ready}\le t_a\ \text{and}\quad
+ \mathsf{Cert}_{t_a}(P^R\mid\mathcal S_{t_a})=1,\\
+P^B,&\text{otherwise}.
+\end{cases}
+\label{eq:repair-installation-rule}
+\end{equation}
+The incumbent executes before $t_a$. Let $E_{\rm exec}$ be the selected
+record's expiry. Then every physical row holds on $[t,E_{\rm exec}]$,
+and every admitted service row in that record holds at its deadline.
+Retention uses $E_{\rm exec}=E_B$ and the incumbent's original proof.
 \end{proposition}
+
 \begin{proof}
-A certified repair is an accepted replacement in
-Theorem~\ref{thm:new-plan-closure}, irrespective of its proposal generator.
-Timeout leaves the backup's commands, proof, execution history and expiry
-unchanged, so the retention case of that theorem applies. The checker binds
-the trajectory guarantee and validity interval; the search orders candidates.
+The incumbent certificate covers the prefix $[t,t_a]$. In the first
+case of \eqref{eq:repair-installation-rule}, the certificate contains the
+actual installation state and covers $[t_a,E_R]$; concatenation gives
+\eqref{eq:execution-physical-service} through $E_R$. In the second case,
+the executed suffix remains a restriction of a trajectory in
+$\mathcal X_{P^B}$, including its stored uncertainty dependence.
+Its physical and service checks therefore remain valid through $E_B$.
+The readiness condition prevents a late verdict from changing the command
+already executed at $t_a$. A certificate prepared earlier is usable only
+when it certifies this actual installation record.
 \end{proof}
 
 Deployment also binds the certificate to the actual installation time and
@@ -1148,25 +1205,36 @@ The next result gives conditions under which repair preserves certified operatio
 
 \begin{corollary}
 \label{cor:repair-recursive}
-Require $\mathsf{Cert}_t$ to include terminal certification as defined in
-\appref{sec:terminal-backup}. Suppose the backup plan at repair weight
-$\lambda_{\rm rep}=1$ passes this test, an initial terminally certified plan is
-active, only finitely many replacements occur in each bounded time
-interval, and the certified terminal transition is activated by expiry
-when no replacement is installed. Under the
-uncertainty and execution assumptions of
-Theorem~\ref{thm:backup-recursive-availability}, adding ordered repair
-preserves indefinite certified continuation and all admitted service
-obligations.
+Use the terminal checker in \eqref{eq:terminal-checker} for repair
+at the actual installation record. Suppose
+$\mathsf{Cert}^{\mathcal K}_t(P^B\mid\mathcal S_t)=1$ and
+$1\in\mathcal G_{\rm rep}$. Then the terminally certified grid set
+\begin{equation}
+\mathcal G_{\rm rep}^{\mathcal K}(t)=
+\{\lambda_{\rm rep}\in\mathcal G_{\rm rep}:
+\mathsf{Cert}^{\mathcal K}_t(P(\lambda_{\rm rep})\mid\mathcal S_t)=1\}
+\label{eq:repair-terminal-grid}
+\end{equation}
+is nonempty. Under the initialization, uncertainty, installation and
+local-finiteness assumptions of
+Theorem~\ref{thm:backup-recursive-availability}, installing only members
+of this set and retaining the incumbent on timeout preserves
+\eqref{eq:terminal-global-guarantee}.
 \end{corollary}
+
 \begin{proof}
-The endpoint provides a nonempty terminally certified search set. Each
-installed repair has the terminal landing and service coverage required by
-Theorem~\ref{thm:backup-recursive-availability}; rejection or timeout preserves
-the incumbent and its terminal transition. Induction over the locally finite
-replacement sequence, followed by the terminal policy whenever necessary,
-gives the result. Newly requested obligations receive execution authority
-through the same covering-certificate admission check.
+The interpolation endpoint is $P(1)=P^B$, so
+$1\in\mathcal G_{\rm rep}^{\mathcal K}(t)$. Every selected member
+has the finite service coverage and terminal inclusion
+\[
+\mathcal R_{P(\lambda_{\rm rep})}(E_B)\subseteq\mathcal K.
+\]
+An exhaustive terminating search selects its least certified weight by
+Theorem~\ref{thm:repair-grid}. If computation is stopped, retention
+preserves the incumbent's terminal certificate and original expiry.
+Both cases satisfy the installation rule of
+Theorem~\ref{thm:backup-recursive-availability}, which gives the claimed
+continuation and service guarantees.
 \end{proof}
 
 Proposition~\ref{prop:repair-execution} covers the recorded finite-plan
@@ -2392,7 +2460,28 @@ The canonical record $\theta_i$ contains an active regional priority and a
 last-in, first-out stack of suspended priorities, each with region, label and
 absolute expiry. Network operation is the default. Before a proposal at $t_i$,
 $\mathsf{Age}_{t_i}$ removes an expired active task and pops expired predecessors until
-an unexpired task is restored or the stack is empty. For a parsed operation
+an unexpired task is restored or the stack is empty. Aging compares absolute expiries with the current time. Enumerate the
+active task and then the suspended tasks from most recent to oldest, with
+expiries $\tau_1^{\mathrm{exp}},\ldots,\tau_m^{\mathrm{exp}}$. The first
+surviving entry is
+\begin{equation}
+k_t=\min\{k\in\{1,\ldots,m\}:\tau_k^{\mathrm{exp}}>t\}.
+\label{eq:task-age-survivor}
+\end{equation}
+If this set is empty, aging returns network operation. Otherwise entry
+$k_t$ becomes active, its older predecessors remain suspended, and all
+original expiries are preserved. On the active task and suspension stack,
+\begin{equation}
+\mathsf{Age}_t(\mathsf{Age}_s\theta)=\mathsf{Age}_t\theta,
+\qquad t\ge s.
+\label{eq:task-age-composition}
+\end{equation}
+Indeed, entries removed at $s$ have expiry at most $s\le t$ and cannot
+become the first surviving entry at $t$. Setting $s=t$ proves idempotence,
+so aging both between proposals and before compilation is consistent.
+Audit-history timestamps are separate from this task-state identity.
+
+For a parsed operation
 $r_i^A$,
 \begin{equation}
  \theta_i^+=\mathsf{UpdateTask}(\mathsf{Age}_{t_i}\theta_i,r_i^A),\qquad
@@ -2417,11 +2506,11 @@ contain at most 80 characters.}
 Operation & Additional fields & Transition at time $t$\\
 \midrule
 Set & Region, duration, label & Clear the stack; install a task expiring at
-$t+$ duration.\\
+$t+D/60$, for duration $D$ minutes.\\
 Interrupt & Region, duration, label & Save the active task with its original
-expiry; install a temporary task expiring at $t+$ duration.\\
+expiry; install a temporary task expiring at $t+D/60$, for duration $D$ minutes.\\
 Continue & None & Preserve the surviving task and expiry.\\
-Extend & Minutes & Add the stated time to the active task's expiry.\\
+Extend & Minutes & Add $D/60$ hours to the active task's expiry, for extension $D$ minutes.\\
 Resume & None & Restore the latest unexpired saved task; if none survives,
 clear the interruption. With no stack or interruption, keep the current task.\\
 Cancel; network & None & Clear active and suspended tasks; use network operation.\\
@@ -2438,13 +2527,25 @@ the execution record identifies the plan currently in use. Installing a new
 plan requires its own passing certificate.
 The hard storage, gate and service requirements remain in the trusted contract.
 
-\emph{Temporal invariant.} Each stored expiry equals creation time plus the
-specified duration and explicit extensions. Set and interrupt establish this
-identity; extend adds exactly its argument; continue, suspension and restoration
-preserve it. Deletion removes a task without changing another expiry.
-Induction over the operation table, combined with $\mathsf{Age}_t$, therefore leaves either
-network operation or a task with positive remaining time. Agreement with the
-operator's language is scored separately at the compiled-request output.
+\emph{Temporal consistency.} The traffic clock $t$ is in hours.
+An instruction duration $D$ or extension $D_m^{\rm ext}$ supplied in
+minutes is divided by 60 before updating an expiry. Thus every stored task
+has
+\begin{equation}
+\tau^{\rm exp}=t^{\rm create}
+ +\frac{D+\sum_{m=1}^{n^{\rm ext}}D_m^{\rm ext}}{60}.
+\label{eq:task-expiry-invariant}
+\end{equation}
+Set and interrupt establish this equality; extend adds its stated positive
+increment. Continue, suspension and restoration leave it unchanged.
+Aging removes only expired entries. These observations prove the invariant
+by induction over the transition table. Positive durations and selection
+of unexpired predecessors give $\Delta_i>0$ for a regional task; network
+operation has $\Delta_i=0$. Invalid operations leave the aged record
+unchanged and return $q_i^A=\bot$, so no planner is called. The stored
+implementation uses the equivalent minute clock $60t$. These operations
+change soft priorities; admitted hard service requirements remain in
+$\mathcal T_i$.
 
 \section{Continuation, Repair Timing and Cost Guarantees}
 \label{app:repair-cost}
@@ -2546,52 +2647,78 @@ constructing a candidate plan. The certification layer verifies inclusion of
 the entire terminal reachable set in $\mathcal K$. This condition can narrow
 the set of certifiable plans relative to the finite-horizon formulation.
 
+Write $\mathsf{Cert}^{\mathcal K}_t$ for the checker with these
+terminal requirements. It returns one only after verifying finite-plan
+checks, pending-service coverage, an implementable transition, and
+\begin{equation}
+\mathsf{Cert}_t(P\mid\mathcal S_t)=1,\qquad
+\mathcal R_P(E_P)\subseteq\mathcal K.
+\label{eq:terminal-checker}
+\end{equation}
+Here $\mathcal R_P$ is the certified reachable-state enclosure; its
+terminal inclusion covers every trajectory in $\mathcal X_P$.
+
 The terminal condition provides a certified continuation whenever the
 numerical planner returns no acceptable finite replacement.
 
 \begin{theorem}
 \label{thm:backup-recursive-availability}
-Suppose a certified terminal backup $(\mathcal K,\mu_B)$ is available and an
-initial terminally certified plan is installed. At each decision time, a
-replacement is installed only if it is terminally certified; otherwise, the
-current verified plan continues, and its backup policy is activated at expiry
-if no replacement has been installed. If the realized uncertainty remains
-within the certified bounds, execution conforms to the active certificate, and
-replacement times are locally finite, then a certified continuation exists
-for all future time, the physical constraints remain satisfied, and every
-authorized service requirement is satisfied at its scheduled deadline. These
-guarantees hold even if all subsequent replacement proposals are rejected.
+Let $(\mathcal K,\mu_B)$ be a certified terminal backup. Enumerate
+actual plan installations as $t_0^{\rm ins}=t_0<t_1^{\rm ins}<\cdots$,
+with plans $P_k$ and expiries $E_k$. Require
+\[
+\mathsf{Cert}^{\mathcal K}_{t_k^{\rm ins}}
+ (P_k\mid\mathcal S_{t_k^{\rm ins}})=1,\qquad
+x(t_k^{\rm ins})\in\mathcal I_{t_k^{\rm ins}},
+\]
+and preservation of all pending admitted service rows.
+Assume $\#\{k:t_k^{\rm ins}\le T\}<\infty$ for every finite $T$, and
+that execution and uncertainty satisfy the active certificate. Define
+$k(t)=\max\{k:t_k^{\rm ins}\le t\}$ and execute
+\begin{equation}
+u^{\rm exec}(t)=\begin{cases}
+u_{P_{k(t)}}(t,x(t)),&t<E_{k(t)},\\
+\mu_B(x(t)),&t\ge E_{k(t)}.
+\end{cases}
+\label{eq:terminal-execution-policy}
+\end{equation}
+Use the certified controller initialization at expiry, and admit any new
+service request during backup operation only through a covering terminally
+certified plan. Then the trajectory exists for every $t\ge t_0$, and
+\begin{equation}
+\begin{aligned}
+H_jx(t)+J_ju^{\rm exec}(t)&\le\beta_j^{\rm phys},
+ &&t\ge t_0,\\
+g_r^\top x(T_r)&\le\eta_r,
+ &&\text{admitted rows with }T_r\ge t_0.
+\end{aligned}
+\label{eq:terminal-global-guarantee}
+\end{equation}
+Rejection preserves the active plan and its terminal transition.
 \end{theorem}
 
 \begin{proof}
-Consider first a terminally certified plan installed at time $t_i$. Its
-finite-plan certificate guarantees the physical constraints and all pending
-service requirements through its expiry $E_i$. By
-\eqref{eq:backup-terminal-landing},
+Until a plan's expiry or replacement, Theorem~\ref{thm:new-plan-closure}
+gives its finite physical and service guarantees. If
+$E_k<t_{k+1}^{\rm ins}$, no replacement occurs before expiry, so
 \[
-x(E_i)\in\mathcal R_i(E_i)\subseteq\mathcal K.
+x(E_k)\in\mathcal R_{P_k}(E_k)\subseteq\mathcal K
+\quad\Longrightarrow\quad
+x(t)\in\mathcal K\quad(E_k\le t<t_{k+1}^{\rm ins}).
 \]
-The terminal-backup certificate therefore provides an admissible continuation
-from $E_i$ onward. Hence, the finite plan together with its backup provides a
-certified continuation beyond the finite plan's expiry.
-
-Now consider a decision time before expiry. If a proposed replacement is
-rejected, the remaining portion of the current verified plan continues under
-the same certificate, including its terminal connection to $\mathcal K$. If a
-replacement is accepted, its own terminal certificate contains the actual
-installation state, verifies the applicable physical and service requirements,
-and establishes a new terminal connection to $\mathcal K$. Thus, either
-decision leaves an active certified continuation.
-
-Applying this argument successively over the locally finite sequence of
-decision times preserves the certification property. If no further finite
-replacement is obtained, the active plan eventually reaches its expiry in
-$\mathcal K$, where the certified backup takes over.
-
-Finally, every accepted replacement is required to preserve all still-pending
-service requirements, while rejection preserves the corresponding checks of
-the existing certificate. Hence each authorized service requirement remains
-verified at its scheduled deadline.
+The implication follows from the backup's robust invariance and certified
+initialization. Its state and command limits hold throughout this interval.
+If no next installation exists, take $t_{k+1}^{\rm ins}=\infty$.
+Every accepted plan starts a new certified finite segment; a rejected
+request preserves the current segment and terminal connection. On each
+bounded time interval there are finitely many installations, hence finitely
+many such concatenations. Each finite plan exists through its certified
+horizon, and each backup segment exists indefinitely. These compatible
+solutions therefore define a trajectory for all future time. Every
+admitted service deadline is retained in a covering finite certificate;
+at expiry no such deadline remains uncovered. Applying the covering
+certificate at that deadline proves the second part of
+\eqref{eq:terminal-global-guarantee}.
 \end{proof}
 
 The certified continuation can be a newly accepted finite plan, the remainder

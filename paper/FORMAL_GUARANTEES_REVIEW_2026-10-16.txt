@@ -1,0 +1,141 @@
+MATHEMATICAL REVIEW AND FORMAL-STATEMENT REVISION - 16 OCTOBER 2026
+
+Current reduced paper: 47 pages (previously 45).
+Current complete paper: 81 pages (previously 79).
+
+ASSESSMENT
+
+The Age operator was present before the notation revision. It advances the
+active priority and suspended-task stack against stored absolute expiries.
+It does not measure vehicle age or add a new traffic-state variable.
+
+The notation review found no algebraic error caused by the symbol changes.
+One units issue needed an explicit convention: task instructions use
+integer minutes, whereas the traffic equations use hours. Task creation
+and extension now divide their minute durations by 60 in both papers.
+The saved implementation uses the equivalent integer-minute clock.
+
+A mathematical result can be stated in words. Its classification depends
+on its logical role and significance. Theorem 2 and Theorem 4 state the
+sequential-execution and continuation guarantees; Proposition 2 supplies
+the repair-installation guarantee; Corollary 1 combines ordered repair
+with the terminal result. Their types and numbers are retained. Their
+statements and proofs now show the mathematical objects and conditions
+used to reach those guarantees.
+
+WHAT WAS ADDED
+
+1. Task aging and expiry
+
+   The first unexpired task is selected from the active task followed by
+   the suspended tasks in restoration order. An empty survivor set gives
+   network operation. The text proves
+
+       Age_t(Age_s(theta)) = Age_t(theta),  t >= s,
+
+   on the active task and suspension stack. The case s=t gives
+   idempotence. Audit-history timestamps are excluded from this identity.
+   Original expiries are preserved when tasks are suspended or restored.
+
+   A second invariant gives expiry as creation time plus the original
+   duration and all extensions, with minutes converted to hours. An
+   induction over task operations proves the invariant. The planner
+   interface also specifies the invalid-request case: no proposal is
+   generated and the execution layer retains a valid incumbent.
+
+2. Theorem 2 - successive replacement or retention
+
+   A trajectory family is attached to each stored certificate. A displayed
+   update rule selects the replacement family on acceptance and retains
+   the incumbent family on rejection. Retention keeps the original
+   correlated uncertainty history rather than restarting its proof.
+
+   Explicit premises require the actual installation state to lie in the
+   certified initial set, the next decision to occur before expiry, and
+   every pending admitted service row to remain covered. The proof gives
+   an induction invariant for each executed trajectory segment and then
+   derives the physical inequalities and deadline inequalities.
+
+   Rejection preserves guarantees while the incumbent contract remains
+   valid. A newly imposed hard obligation must be covered by the retained
+   or installed certificate before admission. Changing a soft objective
+   does not alter the admitted hard obligations.
+
+3. Proposition 2 - repair installation and computation timeout
+
+   A piecewise rule selects a repair only when its certificate is ready
+   by the actual installation time and passes for that installation
+   record. Otherwise the incumbent continues. The installed repair's
+   initial set must contain the actual state. Pending service rows must
+   be covered by the selected record, and time/model/command coefficients
+   must match its certificate.
+
+   The proof concatenates the certified incumbent prefix with the repair
+   suffix, or retains the same incumbent trajectory family. A late result
+   cannot change a command already executed. Retention preserves the
+   original expiry.
+
+4. Theorem 4 - continuation after finite-plan expiry
+
+   A terminal checker combines the finite physical/service checks,
+   pending-service coverage, implementable controller transition and
+   terminal reachable-set inclusion in the certified invariant set K.
+   The theorem gives the execution policy explicitly: use the active
+   finite plan before expiry and the backup policy afterward.
+
+   The proof shows that a plan reaching expiry lands in K, that robust
+   invariance covers the following backup interval, and that locally
+   finite installations allow these certified segments to concatenate
+   for all future time. The displayed conclusion includes the physical
+   constraints at every future time and every admitted service deadline.
+   Requests during backup require a new covering terminal certificate.
+   These are conditional guarantees; the simulations remain finite-plan
+   studies and were not changed to claim an indefinite-operation test.
+
+5. Corollary 1 - terminally certified repair grid
+
+   The certified subset of the repair grid is defined explicitly. The
+   endpoint P(1)=P^B belongs to it under the stated incumbent terminal
+   certificate, so the set is nonempty. Selected repairs land in K;
+   retaining the incumbent on timeout preserves its terminal connection.
+   Theorem 4 then yields continued physical and service feasibility.
+
+WHERE TO FIND THE CHANGES (printed PDF page numbers)
+
+                              Reduced       Complete
+   Task aging and expiry      10-12         51-53 (Appendix E)
+   Theorem 2 and proof         22-23         22-23
+   Proposition 2 and proof     24-25         25-26
+   Theorem 4 and proof         29-30         55-56 (Appendix F)
+   Corollary 1 and proof       30            26-27
+
+VERIFICATION AND PRESERVATION
+
+The task-state methods were isolated from the saved compiler without
+loading its API dependencies. A 5,460-case finite cross-check covered
+restoration order, preservation of expiries, monotonic-time composition
+and idempotence for valid stacks up to the implemented depth. Exact
+arithmetic also checked the minute/hour conversion. These checks support
+the implementation comparison; the general mathematical arguments are
+given in the paper.
+
+The four revised statement/proof pairs are identical across the versions.
+All eleven result types, numbers and labels remain. Every previous named
+model/enclosure equation is unchanged, except the planner interface's
+explicit invalid-request case. Results tables and captions are identical
+to the preceding revision. Figures and the bibliography are unchanged.
+
+The abstract, introduction, conclusion and future-work wording are
+unchanged. Jiangbo Yu remains corresponding author in both versions.
+Declarations are unchanged and contain no manuscript-preparation AI
+declaration, as instructed. Font sizes and page dimensions are unchanged.
+No traffic simulation, optimizer or live model call was rerun.
+
+Both papers compile with resolved references, no overfull boxes and no
+oversized floats. All 128 pages were rendered and reviewed; the changed
+mathematical pages were also checked at full-page resolution.
+
+The JSON QA record provides hashes and exact equation/result locations.
+The preceding notation report and QA record describe the earlier 45/79
+page snapshot. The private repository preserves the matching earlier
+source packages and PDFs in its dated archive.

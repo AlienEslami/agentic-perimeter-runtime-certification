@@ -1,0 +1,1 @@
+Exact 45-page reduced and 79-page complete PDFs and source packages after the notation revision, before the mathematical-statement and task-aging revision of 16 October 2026. Current manuscripts are in paper/.

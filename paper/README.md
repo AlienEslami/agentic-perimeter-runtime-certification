@@ -1,18 +1,16 @@
-# Current manuscripts — 16 October 2026
+# Current manuscripts - 16 October 2026
 
 **Formal Guarantees for Trustworthy Agent-Mediated Urban Perimeter Control**
 
-- `main_reduced.tex` / `main_reduced.pdf`: current reduced standalone paper, **45 pages**.
-- `main.tex` / `main.pdf`: current complete paper, **79 pages**.
+- `main_reduced.tex` / `main_reduced.pdf`: reduced standalone paper, **47 pages**.
+- `main.tex` / `main.pdf`: complete paper, **81 pages**.
 
-Both versions now share corresponding author Jiangbo Yu, consistent method names, units, repair counts and disambiguated mathematical symbols. Appendix equations use `(B.1)` while subsection references retain `Appendix B.1`. The AI manuscript-preparation declaration is omitted from both at the author's explicit final instruction. The abstract, introduction, conclusion and future work retain their previous wording. Scientific results and all eleven formal claims are preserved.
+This revision defines task aging and proves its timing invariants, makes the minute/hour conversion explicit, and adds mathematical premises, execution rules and proof steps to Theorem 2, Proposition 2, Theorem 4 and Corollary 1. Result types and numbers are retained. The reduced paper keeps all eleven formal results and complete main-text proofs. The complete paper keeps its existing main-text/appendix structure.
 
-The reduced paper contains complete proofs in its main text and one essential-settings appendix. Additional experimental/reproduction material remains mapped in `supporting_materials/REPRODUCING_THE_REDUCED_PAPER.md`.
+See `FORMAL_GUARANTEES_REVIEW_2026-10-16.txt` for the assessment, assumptions and locations, and `FORMAL_GUARANTEES_QA_2026-10-16.json` for checks and hashes. Both versions retain the preceding notation/consistency corrections and corresponding author Jiangbo Yu. The manuscript-preparation AI declaration remains omitted as instructed. The abstract, introduction, conclusion, future work, numerical results, tables, figures and bibliography are unchanged in this revision.
 
-See `MANUSCRIPT_CONSISTENCY_REVIEW_2026-10-16.txt` for the assessment and symbol mapping, and `NOTATION_CONSISTENCY_QA_2026-10-16.json` for checks and hashes. Earlier dated reviews and `main_ieee.*` describe historical snapshots; the archived 8 October source bundle preserves their matching dependencies.
+For Overleaf, select `main_reduced.tex` or `main.tex` as main document. Use pdfLaTeX and BibTeX. The bundles contain sources, figures, bibliography and prebuilt bibliography files. The complete bundle also includes frozen data and the portable generator for the preceding Figure H.2 label correction. No old manuscript or historical IEEE layout is included.
 
-For Overleaf, select `main_reduced.tex` or `main.tex` as main document. Use pdfLaTeX and BibTeX. The 16 October ZIPs contain current sources, figures, bibliography, prebuilt bibliography files and this review; no old manuscript or historical IEEE layout is included. The complete bundle also includes the frozen arrays and portable generator for the Figure H.2 label correction.
+Additional reproduction material remains mapped in the repository's `paper/supporting_materials/REPRODUCING_THE_REDUCED_PAPER.md`. Earlier reports and IEEE layouts are historical snapshots. Exact preceding 45/79-page PDFs and source bundles are preserved in `archive/manuscripts_2026_10_16_before_formal_guarantees_revision/`.
 
-No simulations or live model calls were rerun. Font sizes and page dimensions are unchanged. Both PDFs compiled cleanly and were visually reviewed.
-
-Repository: https://github.com/AlienEslami/agentic-perimeter-runtime-certification
+No simulations or live model calls were rerun. Both PDFs compiled cleanly and were visually reviewed. Repository: https://github.com/AlienEslami/agentic-perimeter-runtime-certification

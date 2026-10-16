@@ -1,0 +1,153 @@
+{
+  "date": "2026-10-16",
+  "scope": "Task aging and mathematical statements/proofs in both current non-IEEE manuscripts",
+  "task_compiler_check": {
+    "source_sha256": "2da14337e94c2524fdc1d5d006fedb7e20c5f82faf4d1d60c5d9af089690b96b",
+    "cases": 5460,
+    "checks": [
+      "First unexpired entry and unchanged stored expiries",
+      "Aging composition for monotonic times",
+      "Idempotence",
+      "Exact minute/hour conversion"
+    ],
+    "scope_limit": "Finite implementation cross-check, supplementary to the general proof; excludes audit-history timestamps. No model calls or simulations."
+  },
+  "versions": {
+    "main_reduced": {
+      "pages": 47,
+      "source_sha256": "c94e7624363f5486169995dfd2827e48d5e9c6a17d6e82b7b9715ba6bfc594cb",
+      "pdf_sha256": "3ec8376c815206bc2ea572b7c3b75e8779eadee8b52e5015c569f2aa26fd64a9",
+      "checks": {
+        "abstract_introduction_conclusion_future_work_unchanged": true,
+        "results_tables_and_captions_identical": true,
+        "existing_named_equations_identical_except_agent_invalid_request_case": 51,
+        "formal_result_counts_and_labels_preserved": {
+          "theorem": 4,
+          "proposition": 6,
+          "corollary": 1,
+          "proof": 11
+        },
+        "revised_formal_statements_and_proofs_match_other_version": true,
+        "resolved_references_no_overfull_or_oversized_floats": true,
+        "ai_declaration_absent": true,
+        "visual_review": "All pages rendered and reviewed on contact sheets; revised aging, theorem, proposition, corollary and proof pages also inspected at full-page resolution. No new clipping or overlapping equations."
+      },
+      "added_equation_labels": [
+        "eq:execution-covered-family",
+        "eq:execution-family-update",
+        "eq:execution-physical-service",
+        "eq:repair-installation-rule",
+        "eq:repair-terminal-grid",
+        "eq:task-age-composition",
+        "eq:task-age-survivor",
+        "eq:task-expiry-invariant",
+        "eq:terminal-checker",
+        "eq:terminal-execution-policy",
+        "eq:terminal-global-guarantee"
+      ],
+      "locations": {
+        "thm:new-plan-closure": {
+          "number": "2",
+          "page": "22"
+        },
+        "prop:repair-execution": {
+          "number": "2",
+          "page": "24"
+        },
+        "thm:backup-recursive-availability": {
+          "number": "4",
+          "page": "29"
+        },
+        "cor:repair-recursive": {
+          "number": "1",
+          "page": "30"
+        },
+        "eq:task-age-survivor": {
+          "number": "15",
+          "page": "10"
+        },
+        "eq:task-age-composition": {
+          "number": "16",
+          "page": "11"
+        },
+        "eq:task-expiry-invariant": {
+          "number": "18",
+          "page": "12"
+        }
+      },
+      "output": "C:\\Users\\alien\\Documents\\Mathematical foundation\\output\\pdf\\perimeter_paper_reduced_2026-10-16.pdf"
+    },
+    "main": {
+      "pages": 81,
+      "source_sha256": "575e935613a1c98f85c3d3c687a93bf076f18a092cece802955f031d51adcdd0",
+      "pdf_sha256": "07bb93171c1c52fd9fbfbae7bc0b877d2875b4f40fc979dccb2834e244693523",
+      "checks": {
+        "abstract_introduction_conclusion_future_work_unchanged": true,
+        "results_tables_and_captions_identical": true,
+        "existing_named_equations_identical_except_agent_invalid_request_case": 64,
+        "formal_result_counts_and_labels_preserved": {
+          "theorem": 4,
+          "proposition": 6,
+          "corollary": 1,
+          "proof": 11
+        },
+        "revised_formal_statements_and_proofs_match_other_version": true,
+        "resolved_references_no_overfull_or_oversized_floats": true,
+        "ai_declaration_absent": true,
+        "visual_review": "All pages rendered and reviewed on contact sheets; revised aging, theorem, proposition, corollary and proof pages also inspected at full-page resolution. No new clipping or overlapping equations."
+      },
+      "added_equation_labels": [
+        "eq:execution-covered-family",
+        "eq:execution-family-update",
+        "eq:execution-physical-service",
+        "eq:repair-installation-rule",
+        "eq:repair-terminal-grid",
+        "eq:task-age-composition",
+        "eq:task-age-survivor",
+        "eq:task-expiry-invariant",
+        "eq:terminal-checker",
+        "eq:terminal-execution-policy",
+        "eq:terminal-global-guarantee"
+      ],
+      "locations": {
+        "thm:new-plan-closure": {
+          "number": "2",
+          "page": "22"
+        },
+        "prop:repair-execution": {
+          "number": "2",
+          "page": "25"
+        },
+        "thm:backup-recursive-availability": {
+          "number": "4",
+          "page": "55"
+        },
+        "cor:repair-recursive": {
+          "number": "1",
+          "page": "26"
+        },
+        "eq:task-age-survivor": {
+          "number": "E.1",
+          "page": "51"
+        },
+        "eq:task-age-composition": {
+          "number": "E.2",
+          "page": "52"
+        },
+        "eq:task-expiry-invariant": {
+          "number": "E.4",
+          "page": "53"
+        }
+      },
+      "output": "C:\\Users\\alien\\Documents\\Mathematical foundation\\output\\pdf\\perimeter_paper_complete_2026-10-16.pdf"
+    }
+  },
+  "declarations_and_bibliography_unchanged": true,
+  "compiler": "Existing pdfLaTeX, two resolved passes per document; no TeX installation or experimental reruns.",
+  "figures_unchanged": {
+    "figures/mfd_tool_architecture.pdf": "1bdd6ba2788456f9e1e471d3eafa5824054a00d8c0d2e680a71ddaaaeaddb3fc",
+    "figures/mfd_structure_online_runtime.pdf": "0d38c7f7d097a039487f95603abd67053990d320cbb74ab51341cc6230e45396"
+  },
+  "scope_of_mathematical_review": "Analytic review of notation substitutions, aging invariants, finite-plan replacement, repair installation, terminal continuation and their proofs. The implementation cross-check is supplementary, not a machine proof of the full framework.",
+  "experiments": "No traffic simulations, optimizer runs, numerical results or live API calls were rerun or changed."
+}
