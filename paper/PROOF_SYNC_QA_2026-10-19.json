@@ -1,0 +1,87 @@
+{
+  "date": "2026-10-19",
+  "uploaded_reduced": "C:\\Users\\alien\\Downloads\\main_reduced.tex",
+  "uploaded_sha256": "a54b61ddde02d3d7702387444a0f78e687873178637c3793dee4df13afc22ddb",
+  "updated_long_sha256": "8b2cdcfebb2312fc33686809a5dc9166af3f9331a01440eb8136abaec0079357",
+  "backup": "C:\\Users\\alien\\Documents\\Mathematical foundation\\archive\\manuscripts_2026_10_19_before_proof_sync",
+  "proofs_carried_over": [
+    "thm:new-plan-enclosure",
+    "prop:structure-plan",
+    "thm:new-plan-closure",
+    "thm:repair-grid",
+    "prop:repair-execution",
+    "prop:planned-handover",
+    "prop:network-localization",
+    "prop:backup-lyapunov",
+    "thm:backup-recursive-availability",
+    "cor:repair-recursive",
+    "prop:repair-cost"
+  ],
+  "full_proofs_retained_in_existing_appendix_locations": [
+    "Theorem 1",
+    "Proposition 1"
+  ],
+  "other_nine_proofs_match_uploaded_reduced_exactly": true,
+  "all_formal_statements_preserved": true,
+  "all_equation_labels_preserved_in_original_order": true,
+  "abstract_and_introduction_prose_preserved": true,
+  "numerical_results_conclusion_future_work_declarations_preserved": true,
+  "notation_caption_matched_to_uploaded_reduced": true,
+  "uploaded_reduced_copied_without_changes": true,
+  "compilation": [
+    {
+      "source": "main.tex",
+      "passes": 2,
+      "compile_success": true,
+      "undefined_references_or_citations": [],
+      "duplicate_labels": [],
+      "original_equation_and_result_numbers_preserved": true,
+      "overfull_or_oversize_warnings": [],
+      "page_summary": "Output written on main.pdf (87 pages, 1031767 bytes).",
+      "elapsed_seconds": 2.08
+    },
+    {
+      "source": "main_reduced.tex",
+      "passes": 2,
+      "compile_success": true,
+      "undefined_references_or_citations": [],
+      "duplicate_labels": [],
+      "original_equation_and_result_numbers_preserved": true,
+      "overfull_or_oversize_warnings": [],
+      "page_summary": "Output written on main_reduced.pdf (53 pages, 815192 bytes).",
+      "elapsed_seconds": 1.8
+    }
+  ],
+  "reduced_source_exactly_matches_uploaded_bytes": true,
+  "pdftex_unicode_setup_guarded_for_editor_compiler": true,
+  "built_in_long_compiler_success": true,
+  "final_pages": {
+    "complete": 87,
+    "reduced": 53
+  },
+  "visual_review": {
+    "all_pages_contact_sheets_checked": true,
+    "detailed_long_pages_checked": [
+      47,
+      52,
+      63
+    ],
+    "final_changed_page_52_rechecked": true,
+    "new_clipping_or_overlap_observed": false
+  },
+  "final_long_sha256": "8b2cdcfebb2312fc33686809a5dc9166af3f9331a01440eb8136abaec0079357",
+  "fresh_zip_validation": [
+    {
+      "source": "main.tex",
+      "fresh_extracted_zip_compiles": true,
+      "bibliography_regenerated_identically": true,
+      "equation_result_numbers_preserved": true
+    },
+    {
+      "source": "main_reduced.tex",
+      "fresh_extracted_zip_compiles": true,
+      "bibliography_regenerated_identically": true,
+      "equation_result_numbers_preserved": true
+    }
+  ]
+}

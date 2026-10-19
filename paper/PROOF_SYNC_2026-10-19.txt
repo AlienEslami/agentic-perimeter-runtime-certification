@@ -1,0 +1,30 @@
+PROOF SYNCHRONIZATION - 19 OCTOBER 2026
+
+The user-supplied reduced manuscript is preserved byte for byte.
+Its eleven revised proofs and notation-table caption are now reflected
+in the complete paper. Nine full proof environments match the uploaded
+reduced version exactly. Theorem 1 and Proposition 1 retain the complete
+paper's existing arrangement: readable main-text proofs with full
+arguments in Appendices B and C. Theorem 1's full revised argument is in
+Appendix B, including its numbered recentering bound and coordinate-map
+extension. Appendix C now explains nonnegativity, queue ordering, the
+remainder comparison integral, constraint bounds, and generator rounding.
+Its defining equations and implementation details are retained.
+
+The formal statements, equation/result numbers, abstract, introduction
+prose, numerical results, conclusion, future work, and declarations are
+preserved. The notation-table caption follows the uploaded file.
+A conditional guard around PDF-specific Unicode primitives allows the
+long source to compile in the desktop editor as well as pdfLaTeX.
+
+Both manuscripts compile with resolved references/citations, no duplicate
+labels, no overfull boxes, and no oversized floats. Their PDFs were
+rendered for layout review. The complete paper is 87 pages and
+the uploaded reduced paper is 53 pages. No numerical experiments
+or external model calls were rerun.
+
+The six-file Overleaf ZIP contains main.tex, main_reduced.tex,
+FOUNDATION_REFERENCES.bib, two required figures, and README.txt.
+The previous sources, PDFs, and preceding combined package are preserved
+in archive/manuscripts_2026_10_19_before_proof_sync/.
+Detailed checks: PROOF_SYNC_QA_2026-10-19.json.

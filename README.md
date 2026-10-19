@@ -66,6 +66,23 @@ The 7 October consolidation adds the cited historical local-agent, routing, fixe
 
 ## Current manuscripts and reproduction guide
 
-The 19 October sources embed the declarations directly in `paper/main.tex` and `paper/main_reduced.tex`. The declaration wording and all other manuscript content are unchanged. The latest [combined LaTeX package](paper/PERIMETER_CONTROL_BOTH_VERSIONS_LATEX_2026-10-19.zip) contains just six files: both main sources, the shared bibliography, two required figures and a README. Select either main source in Overleaf and use pdfLaTeX.
+The 19 October proof revision carries the user-supplied reduced paper's
+clearer proofs into the complete manuscript. The complete PDF is 87 pages
+and the reduced PDF is 53 pages. The reduced source is preserved exactly
+as supplied. Theorem 1 and Proposition 1 retain detailed arguments in the
+complete paper's appendices. Formal statements, equation numbers, and
+numerical results are preserved. Declarations remain embedded in both
+main sources.
 
-The current PDFs remain the 81-page complete and 47-page reduced papers from the 16 October prose/expiry revision. [The inlining note](paper/DECLARATIONS_INLINED_2026-10-19.txt) and [QA record](paper/INLINE_DECLARATIONS_QA_2026-10-19.json) document the packaging change. Earlier sources and the previous delivered ZIP are preserved in [the archive](archive/manuscripts_2026_10_19_before_inline_declarations/). Additional reproduction material remains in [the guide](paper/supporting_materials/REPRODUCING_THE_REDUCED_PAPER.md). Repository visibility remains private.
+The latest [combined LaTeX package](paper/PERIMETER_CONTROL_BOTH_VERSIONS_PROOF_CLARITY_2026-10-19.zip)
+contains six files: both main sources, the shared bibliography, two required
+figures and a README. Select either main source in Overleaf and use pdfLaTeX.
+
+The [revision note](paper/PROOF_SYNC_2026-10-19.txt) and
+[QA record](paper/PROOF_SYNC_QA_2026-10-19.json) document the update,
+compilation checks, and independent source-package validation.
+The preceding 81-page complete and 47-page reduced papers are preserved
+in [the archive](archive/manuscripts_2026_10_19_before_proof_sync/).
+Additional reproduction material remains in
+[the guide](paper/supporting_materials/REPRODUCING_THE_REDUCED_PAPER.md).
+Repository visibility remains private.

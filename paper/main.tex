@@ -1,7 +1,9 @@
 \documentclass[preprint,12pt]{elsarticle}
 \usepackage{lmodern}
-\input{glyphtounicode}
-\pdfgentounicode=1
+\ifdefined\pdfgentounicode
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\fi
 \usepackage{amsmath,amssymb,amsfonts,mathtools,amsthm,bm}
 \usepackage{booktabs,graphicx,array,tabularx,placeins,float,url}
 \usepackage[hidelinks]{hyperref}
@@ -221,7 +223,7 @@ Section~\ref{sec:new-problem} formulates the traffic-control problem. Section~\r
 
 \begin{table}[!t]
 \centering\small
-\caption{Principal notation. Traffic inventories are expressed in units of
+\caption{Notations used throughout the paper. Traffic inventories are expressed in units of
 100 vehicles unless a table states physical vehicles.}
 \label{tab:nomenclature}
 \renewcommand{\arraystretch}{0.98}
@@ -782,35 +784,35 @@ is propagated and the successor command rows are checked on that box.
 \end{theorem}
 
 \begin{proof}
-Before a first hypothetical exit from an outer box, the transformed error
-magnitude in component $i$ satisfies the scalar differential inequality
+On each predictor interval, let $z_e=L(x-p_l)$ be the transformed
+prediction error and $v_i=|(z_e)_i|$ its componentwise magnitude.
+Before any first contact with the
+boundary of the trial region, the Jacobian and residual bounds give
 \[
-\dot v_i\le a_{il}v_i+c_{il}(R_l)
+ \dot v_i\le a_{il}v_i+c_{il}(R_l)
+ \quad\text{almost everywhere}.
 \]
-almost everywhere. Its comparison solution is given by
-\eqref{eq:new-component-comparison}. Since this solution is monotone over the
-interval, the self-inclusion condition
-\eqref{eq:new-self-inclusion} rules out a first exit. Hence, every admissible
-trajectory remains inside the enclosure throughout the interval.
+Multiplying by an exponential integrating factor and integrating gives
+$v_i(t_l+s)\le\phi_{il}(s)$. The derivative
+$\phi_{il}'(s)=e^{a_{il}s}(a_{il}r_{il}+c_{il}(R_l))$ does not change sign,
+so its largest value occurs at an interval endpoint.
+Condition \eqref{eq:new-self-inclusion} keeps both endpoint bounds
+strictly below $R_{il}$. Continuity therefore rules out a first boundary
+contact, and the trajectory stays inside the trial region.
 
-At the interval endpoint, the error relative to the current predictor is
-bounded by $\phi_{il}(h_l)$. If the predictor is recentered for the next
-interval, the center shift is bounded by $\delta^{\rm rec}_{il}$. Because the physical
-state is continuous across command or target changes, the same state is
-inherited by the next interval. The triangle inequality therefore gives
+At the next interval, the physical state is unchanged by a command or
+target switch. The triangle inequality adds the predictor-center shift
+to the propagated endpoint error, giving
 \[
-r_{i,l+1}=\phi_{il}(h_l)+\delta^{\rm rec}_{il},
+ r_{i,l+1}=\phi_{il}(h_l)+\delta^{\rm rec}_{il}.
 \]
-which ensures that the successor box also contains every admissible inherited
-state.
-
-Applying this argument inductively over the finite partition yields
-containment over the full plan horizon. The affine support conditions
-\eqref{eq:new-affine-support} and \eqref{eq:new-service-support} then imply
-that the physical constraints hold continuously and that the scheduled
-service requirements are satisfied at their respective deadlines. The
-complete nonsmooth argument and numerical verification rules are given in
-\appref{app:new-enclosure-proof}.
+Repeating this argument over the finite partition proves containment
+throughout the plan. Substituting $x=p_l+L^{-1}z_e$ into each constraint
+then gives \eqref{eq:new-affine-support}; the endpoint box gives
+\eqref{eq:new-service-support}. The constraints associated with a new
+command are checked on the inherited state set at installation.
+The complete derivation, including the admission-branch derivatives and
+the comparison integral, is given in \appref{app:new-enclosure-proof}.
 \end{proof}
 
 The enclosure checks the plan using the forecast and its allowed arrival
@@ -906,20 +908,37 @@ retained.
 \end{proposition}
 
 \begin{proof}
-Positivity and scalar queue comparison provide independent bounds on the
-destination classes and exterior queue. For the remaining uncertainty,
-\eqref{eq:structure-remainder-identity} and the Metzler comparison bound the
-remainder, while the propagated signed generators preserve the dependence on
-the initial uncertainty. Strict self-inclusion then prevents the reachable
-set from leaving the verified enclosure.
+When a destination-class inventory is zero, its outflow is zero and its
+inflow is nonnegative under the stated sign assumptions. At an empty
+queue, admission is zero and offered arrivals are nonnegative. The
+detailed comparison in \appref{app:structure-proof} therefore establishes
+nonnegative inventories independently of the upper storage limits.
+The scalar queue equation also gives independent bounds by using the
+smallest and largest initial queues with lower and upper arrival inputs.
 
-The resulting signed and independent bounds establish the physical and
-scheduled service constraints on each interval. At an interval boundary, the
-remainder update includes recentering and generator-rounding error while
-retaining the same initial-uncertainty variables, so the resulting set is a
-valid starting set for the next interval. Induction over the finite plan
-therefore gives the stated plan-wide guarantees. Complete inequalities and
-validated arithmetic are given in \appref{app:structure-proof}.
+For the remaining prediction error, the decomposition
+$L(x-p)=\Gamma\xi+\zeta$ retains the same initial-uncertainty vector
+$\xi$ throughout the plan. The generator $\Gamma$ propagates its signed
+coefficients, while $\zeta$ collects the remaining error. The comparison
+matrix has nonnegative off-diagonal entries, which allows a componentwise
+bound
+\[
+ |\zeta(s)|\le e^{\overline M s}\rho+\Psi(s)b_\zeta.
+\]
+Together with the generator bound, this gives
+$|L(x-p)|\le f+r^\zeta<R$, where $f$ bounds the generator contribution
+and $r^\zeta$ bounds the remainder throughout the interval.
+Continuity rules out a first contact with the
+trial-region boundary. Substitution into each physical or service
+constraint then bounds its largest possible left-hand side. Combining
+the signed generator coefficients before taking absolute values preserves
+their cancellations.
+
+At each interval boundary, the remainder update includes both the
+generator-rounding error and the change in predictor center, while the
+same $\xi$ remains in use. Repeating these steps over the finite
+partition proves the plan-wide guarantees. The complete inequalities
+and their derivations are given in \appref{app:structure-proof}.
 \end{proof}
 
 The independent queue bound can tighten the region used to bound the
@@ -1043,24 +1062,39 @@ The finite guarantee extends to its expiry when no later plan is installed.
 \end{theorem}
 
 \begin{proof}
-The initial certificate and realized uncertainty place the executed
-trajectory in $\mathcal X_0$ until the first decision. Suppose this holds
-through $t_i$. Rejection preserves the same trajectory family, assumptions,
-command schedule and original expiry. Its stored guarantee therefore
-covers the next executed segment. Acceptance gives
-$x(t_i)\in\mathcal I_{t_i}$ and a certificate for every allowed future
-uncertainty realization, so the new segment belongs to the replacement
+We show that each executed segment is covered by the certificate of the
+plan selected for that segment. The initial certificate covers the actual
+initial state and uncertainty, so it establishes the claim up to the first
+decision.
+
+At a decision time $t_i$, there are two cases. If the replacement is
+rejected, the current plan keeps its original command schedule,
+uncertainty assumptions, reachable-state history, and expiry. The actual
+trajectory therefore continues as a member of the same certified family.
+If the replacement is accepted, its initial set contains $x(t_i)$ and its
+certificate covers every allowed future uncertainty realization. The
+actual trajectory from $t_i$ onward is therefore covered by the new
 family. In either case,
 \[
-x|_{[t_i,t_{i+1}]}\in
-\{\widetilde x|_{[t_i,t_{i+1}]}:\widetilde x\in\mathcal X_i\}.
+ x|_{[t_i,t_{i+1}]}\in
+ \{\widetilde x|_{[t_i,t_{i+1}]}:
+          \widetilde x\in\mathcal X_i\}.
 \]
-Induction over $i=0,\ldots,N$ proves the physical inequalities on each
-segment. States are continuous at switches, and successor command rows are
-checked at installation. Every admitted service row remains covered until
-its deadline by $\mathcal O_{t_i}\subseteq\mathcal O_i$ and
-$t_{i+1}\le E_i$. Applying its covering certificate at $T_r$ gives the
-second inequality in \eqref{eq:execution-physical-service}.
+This means that the executed segment agrees with a segment of a trajectory
+covered by the selected certificate. The condition $t_{i+1}\le E_i$
+ensures that this certificate remains valid until the next decision.
+
+Repeating the argument at every decision proves the physical constraints
+on all segments. At a switch, the physical state is continuous and the
+constraints involving the new command are checked at installation, so the
+constraints also hold at the switching time.
+
+Every pending admitted service requirement is included in the selected
+record by $\mathcal O_{t_i}\subseteq\mathcal O_i$. Thus each replacement
+preserves its coverage, and each rejection preserves its existing proof.
+At the deadline $T_r$, the covering certificate gives
+$g_r^\top x(T_r)\le\eta_r$. This proves both parts of
+\eqref{eq:execution-physical-service}.
 \end{proof}
 
 
@@ -1136,16 +1170,33 @@ vector, the first certified grid point minimizes
 $\operatorname{dist}(P,P^0)=\|P-P^0\|$ over the certified points of this grid.
 \end{theorem}
 \begin{proof}
-Since $P(1)=P^B$, the certified grid set is nonempty. Finite ordered search
-therefore terminates at its least element $\lambda_{\rm rep}^*$, and positive
-homogeneity gives
+At the last grid weight, the interpolation equals the certified backup:
 \[
-\operatorname{dist}(P(\lambda_{\rm rep}),P^0)=\lambda_{\rm rep}\|P^B-P^0\|.
+ P(1)=P^B,
+ \qquad \mathsf{Cert}_t(P^B\mid\mathcal S_t)=1.
 \]
-Every smaller grid point has been tested and rejected. The displayed
-distance is nondecreasing in $\lambda_{\rm rep}$, including the case $P^B=P^0$,
-which proves the stated minimum. The argument permits arbitrary certificate
-patterns between successive grid points.
+Hence at least one grid point passes. There are $N_{\rm rep}+1$ points,
+and each evaluation terminates, so ordered search reaches a passing point
+after at most $N_{\rm rep}+1$ evaluations. Because every earlier point has
+already been tested, the returned weight $\lambda_{\rm rep}^*$ is the
+smallest certified weight on the grid.
+
+To relate this ordering to the command change, observe that
+\[
+ P(\lambda_{\rm rep})-P^0
+ =\lambda_{\rm rep}(P^B-P^0).
+\]
+Multiplying a vector by a nonnegative scalar multiplies its norm by the
+same scalar. Therefore,
+\[
+ \operatorname{dist}(P(\lambda_{\rm rep}),P^0)
+ =\lambda_{\rm rep}\|P^B-P^0\|.
+\]
+This distance is nondecreasing in the grid weight, so the smallest
+certified weight gives the smallest command change among certified grid
+points. If $P^B=P^0$, every distance is zero and the conclusion still holds.
+The proof uses the actual verdict at each tested point and allows passing
+and failing verdicts in any order along the grid.
 \end{proof}
 
 The selected plan minimizes the change in command values among the tested
@@ -1183,16 +1234,29 @@ Retention uses $E_{\rm exec}=E_B$ and the incumbent's original proof.
 \end{proposition}
 
 \begin{proof}
-The incumbent certificate covers the prefix $[t,t_a]$. In the first
-case of \eqref{eq:repair-installation-rule}, the certificate contains the
-actual installation state and covers $[t_a,E_R]$. Concatenation gives
-\eqref{eq:execution-physical-service} through $E_R$. In the second case,
-the executed suffix remains a restriction of a trajectory in
-$\mathcal X_{P^B}$, including its stored uncertainty dependence.
-Its physical and service checks therefore remain valid through $E_B$.
-The readiness condition prevents a late verdict from changing the command
-already executed at $t_a$. A certificate prepared earlier is usable only
-when it certifies this actual installation record.
+The currently accepted plan $P^B$ executes while the repair is prepared.
+Its certificate therefore establishes the physical constraints and any
+service requirements due before installation on $[t,t_a]$.
+
+If the first case of \eqref{eq:repair-installation-rule} applies, the
+repair certificate is ready by $t_a$, matches the actual installation
+record, and covers the actual state because
+$x(t_a)\in\mathcal I_{t_a}$. It therefore establishes the physical
+constraints on $[t_a,E_R]$ and all remaining admitted service requirements
+in its record. The state is continuous at installation, and the new
+command constraints are checked there. Joining the certified intervals
+$[t,t_a]$ and $[t_a,E_R]$ proves the claim with $E_{\rm exec}=E_R$.
+
+Otherwise, $P^B$ continues with its original schedule and proof. Its
+remaining trajectory is part of the family $\mathcal X_{P^B}$ already
+covered by that proof, including the stored dependence on uncertainty.
+Thus its physical and service guarantees remain valid through its
+original expiry, giving $E_{\rm exec}=E_B$.
+
+The condition $t_{\rm ready}\le t_a$ ensures that only a completed
+certificate can authorize installation at $t_a$. An earlier computation
+is usable at that time only when its certificate covers the actual
+installation record, as required in the assumptions.
 \end{proof}
 
 Deployment also binds the certificate to the actual installation time and
@@ -1223,18 +1287,31 @@ of this set and retaining the incumbent on timeout preserves
 \end{corollary}
 
 \begin{proof}
-The interpolation endpoint is $P(1)=P^B$, so
-$1\in\mathcal G_{\rm rep}^{\mathcal K}(t)$. Every selected member
-has the finite service coverage and terminal inclusion
+At weight one the interpolation equals the backup, $P(1)=P^B$.
+The assumed terminal certificate for $P^B$ therefore gives
 \[
-\mathcal R_{P(\lambda_{\rm rep})}(E_B)\subseteq\mathcal K.
+ 1\in\mathcal G_{\rm rep}^{\mathcal K}(t).
 \]
-An exhaustive terminating search selects its least certified weight by
-Theorem~\ref{thm:repair-grid}. If computation is stopped, retention
-preserves the incumbent's terminal certificate and original expiry.
-Both cases satisfy the installation rule of
-Theorem~\ref{thm:backup-recursive-availability}, which gives the claimed
-continuation and service guarantees.
+Thus the terminally certified grid contains at least one candidate.
+
+Every candidate selected from this grid has a certificate for its finite
+physical constraints, all pending admitted service requirements, and its
+transition to the terminal backup. In particular,
+\[
+ \mathcal R_{P(\lambda_{\rm rep})}(E_B)\subseteq\mathcal K.
+\]
+If each grid evaluation terminates, ordered search also selects the least
+certified weight by Theorem~\ref{thm:repair-grid}. The continuation claim
+holds for every selected member of the terminally certified grid.
+
+If computation times out, the current plan keeps its original terminal
+certificate, command schedule, and expiry. Therefore, successful repair
+provides a new certified transition to the backup, while retention
+preserves the existing transition. Under the stated initialization,
+uncertainty, installation, and finite-installation assumptions, both cases
+satisfy Theorem~\ref{thm:backup-recursive-availability}. That theorem gives
+the physical and service guarantees in
+\eqref{eq:terminal-global-guarantee}.
 \end{proof}
 
 Proposition~\ref{prop:repair-execution} covers the recorded finite-plan
@@ -1275,18 +1352,32 @@ remains valid through $E_B$, retaining its original schedule preserves
 its guarantees through $E_B$.
 \end{proposition}
 \begin{proof}
-The incumbent certificate covers the executed prefix $[t,t_a]$ and every
-service row due on that prefix. Because propagation encloses every state reachable from the current
-information set under the incumbent's schedule and uncertainty bounds,
-the actual activation state lies in
-$\mathcal R_B(t_a\mid\mathcal I_t)$ and hence in $\mathcal I_{t_a}^+$. The replacement-contract assumptions and exact
-future-dated commands allow the new certificate to cover the replacement
-trajectory and every remaining admitted service row on $[t_a,E_R]$.
-Concatenating these two certified intervals gives the installed-plan
-claim. If preparation is late or unsuccessful, the unchanged incumbent
-continues the same previously certified trajectory under the incumbent
-contract. Its reachable-set proof and expiry remain valid. This is the retention case of
-Theorem~\ref{thm:new-plan-closure}.
+The current plan executes throughout preparation. Its certificate
+therefore covers $[t,t_a]$, including every service requirement due in
+that interval.
+
+By definition, $\mathcal R_B(t_a\mid\mathcal I_t)$ contains every state
+that can be reached at $t_a$ from the current information set under the
+current plan and its allowed uncertainty. Since the actual state starts
+in that set and the propagation assumptions remain valid,
+\[
+ x(t_a)\in\mathcal R_B(t_a\mid\mathcal I_t)
+          \subseteq\mathcal I_{t_a}^+.
+\]
+Thus the replacement certificate covers the actual state at activation,
+even though that state was unknown when computation began.
+
+If the certificate is ready by $t_a$ and its specified schedule is
+installed at exactly that time, its assumptions match the executed
+replacement. It establishes the physical constraints and every remaining
+admitted service requirement on $[t_a,E_R]$. Joining this interval to the
+certified preparation interval gives the claim through $E_R$, including
+the checked new-command constraints at activation.
+
+If the certificate is unavailable or late, the current plan keeps its
+original schedule, proof, and expiry. Under its continuing contract, the
+executed trajectory remains covered through $E_B$. This is the retention
+case of Theorem~\ref{thm:new-plan-closure}.
 \end{proof}
 
 The activation set can be a propagated outer box, optionally intersected
@@ -1373,45 +1464,43 @@ inventories count all internal and waiting vehicles exactly once.
 \end{proposition}
 
 \begin{proof}
-From
-$y_c=c+P_a z$,
-differentiation together with \eqref{eq:network-class-queue} gives
+Because $P_a$ is fixed, differentiating $y_c=c+P_a z$ gives
 \[
 \begin{aligned}
-\dot y_c
-&=\dot c+P_a\dot z\\
-&=F(c,u,t)+P_a a+P_a(\Lambda-a)\\
-&=F(c,u,t)+P_a\Lambda.
+ \dot y_c
+ &=F(c,u,t)+P_a a+P_a(\Lambda-a)\\
+ &=F(c,u,t)+P_a\Lambda.
 \end{aligned}
 \]
-Since $c=y_c-P_a z$, this becomes
+The admitted flow added to the regional classes cancels the same flow
+removed from the queues. Substituting $c=y_c-P_a z$ gives
+\eqref{eq:network-transformed-flow}. In matrix form, this cancellation is
 \[
-\dot y_c=F(y_c-P_a z,u,t)+P_a\Lambda,
+ L_a\begin{bmatrix}P_a\\-I\end{bmatrix}
+ =\begin{bmatrix}0\\-I\end{bmatrix}.
 \]
-while $\dot z=\Lambda-a$, which proves
-\eqref{eq:network-transformed-flow}. Thus, the admission flow $a$ cancels
-from the combined internal coordinates and appears explicitly only in the
-queue dynamics.
+Thus the explicit admission terms appear only in the $n_q$ queue
+coordinates.
 
-The admission incidence matrix in the original coordinates is
-\[
-\begin{bmatrix}P_a\\-I\end{bmatrix},
-\]
-which has rank $n_q$ because its lower block is the $n_q\times n_q$ identity.
-Since multiplication by an invertible coordinate transformation preserves
-rank, the $n_q$ independent admission channels cannot be represented using
-fewer than $n_q$ transformed coordinates.
+To prove that fewer coordinates cannot suffice, consider the admission
+matrix $\begin{bmatrix}P_a\\-I\end{bmatrix}$. Its columns are linearly
+independent because its lower block is $-I$, so its rank is $n_q$.
+Multiplication by an invertible coordinate map preserves this rank.
+A matrix with nonzero entries in fewer than $n_q$ rows has rank smaller
+than $n_q$. Consequently, an invertible transformation must retain at
+least $n_q$ coordinates for these independent admission effects.
 
-Finally, the conservation condition
-$\mathbf1_q^\top P_a=\mathbf1_{n_q}^\top$ states that the allocation fractions
-associated with each exterior queue sum to one. Therefore,
+Finally, the allocation shares in each column of $P_a$ sum to one.
+Therefore,
 \[
-\mathbf1_q^\top y_c
-=\mathbf1_q^\top(c+P_a z)
-=\mathbf1_q^\top c+\mathbf1_{n_q}^\top z.
+\begin{aligned}
+ \mathbf1_q^\top y_c
+ &=\mathbf1_q^\top c+\mathbf1_q^\top P_a z\\
+ &=\mathbf1_q^\top c+\mathbf1_{n_q}^\top z.
+\end{aligned}
 \]
-Hence, the combined inventories count every vehicle inside the network and
-every vehicle waiting in an exterior queue exactly once.
+Each waiting vehicle contributes a total share of one to the combined
+inventories, so their sum counts every internal and waiting vehicle once.
 \end{proof}
 
 For independent queues with fixed block commands,
@@ -2120,47 +2209,125 @@ retained Jacobians.
 
 \subsection{Componentwise first-exit argument}
 
-Consider one predictor interval and omit its index $l$. Let
-$z_e=L(x-p)$ denote the transformed prediction error, distinct from the
-physical queue $z$. Before an exit from $|z_e|<R$, the line segment from
-$p(t)$ to $x(t)$ lies in the verified outer set. The Lipschitz mean-value
-relation along this segment yields, almost everywhere,
+Consider one interval $[t_l,t_l+h]$, and omit its index from the
+bounds. We first show that the true state stays inside the trial
+region around the predictor. Define the transformed prediction error
+by
+\[
+ z_e(t)=L\bigl(x(t)-p(t)\bigr).
+\]
+Initially, $|z_e(t_l)|\le r<R$. Suppose that some component of
+$|z_e|$ reaches its trial bound $R_i$ for the first time during
+the interval. Before this first boundary contact, the segment
+joining $p(t)$ to $x(t)$ lies entirely inside the trial region.
+
+The difference between the true and predicted dynamics satisfies
 \begin{equation}
  \dot z_e=A(t)z_e+\epsilon(t)+(Le_7)w(t),
  \label{eq:new-error-dynamics}
 \end{equation}
-where $A(t)$ belongs to the convex hull of transformed generalized Jacobians
-on the segment, and
-$\epsilon=L f_b(p,t)-L\dot p$ has $|\epsilon_i|\le\delta_i$.
-For $v_i=|(z_e)_i|$, the diagonal contribution is bounded by $a_iv_i$.
-The remaining terms are bounded by
-$\sum_{j\ne i}b_{ij}R_j+\delta_i+|(Le_7)_i|\bar w_x=c_i(R)$.
-Absolute continuity therefore gives the scalar differential inequality
+where
+\[
+ \epsilon(t)=Lf_b(p(t),t)-L\dot p(t),
+ \qquad |\epsilon_i(t)|\le\delta_i.
+\]
+Equation \eqref{eq:new-error-dynamics} holds almost everywhere:
+any exceptional times form a set of measure zero and do not affect
+the integration below.
+
+The matrix $A(t)$ represents the change in the nominal dynamics
+between the predictor and the true state. More precisely, it lies
+in the convex hull of the transformed generalized Jacobians along
+the segment. These matrices account for the derivatives of all
+relevant admission branches, including points where the active
+branch changes. Taking their convex hull allows weighted averages
+with nonnegative weights summing to one. Since every included
+matrix satisfies \eqref{eq:new-local-bounds}, these averages satisfy
+\[
+ A_{ii}(t)\le a_i,
+ \qquad |A_{ij}(t)|\le b_{ij}\quad(j\ne i).
+\]
+
+For $v_i(t)=|(z_e(t))_i|$, the other components satisfy
+$v_j(t)\le R_j$ before boundary contact. Consequently,
 \begin{equation}
- \dot v_i\le a_iv_i+c_i(R)
- \quad\text{almost everywhere before exit}.
+ \dot v_i\le a_i v_i+c_i(R)
+ \quad\text{almost everywhere before boundary contact}.
  \label{eq:new-error-comparison-proof}
 \end{equation}
-At a zero error component the corresponding upper derivative has the same
-cross-component and forcing bound. The integrating-factor comparison gives
-$v_i(t_l+s)\le\phi_i(s)$ from
-\eqref{eq:new-component-comparison}. Since
-$\phi_i'(s)=e^{a_is}(a_ir_i+c_i(R))$, its derivative has constant sign.
-Its maximum on $[0,h]$ is thus $\max\{r_i,\phi_i(h)\}$.
-The strict inequality \eqref{eq:new-self-inclusion} contradicts a first
-exit by continuity. Every component remains enclosed throughout the interval.
+Here $c_i(R)$ bounds the combined effect of the other error
+components, the predictor residual, and the arrival uncertainty.
+The inequality also holds almost everywhere when $v_i=0$.
 
-At the right endpoint the error around the old center is bounded by
-$\phi(h)$. Replacing that center by $p_{l+1}(t_{l+1})$ adds
+Multiplying by $e^{-a_i(t-t_l)}$ and integrating yields
+\[
+\begin{aligned}
+ v_i(t_l+s)
+ &\le e^{a_i s}v_i(t_l)
+      +\int_0^s e^{a_i(s-\tau)}c_i(R)\,d\tau\\
+ &\le e^{a_i s}r_i+\chi(a_i,s)c_i(R)
+  =\phi_i(s).
+\end{aligned}
+\]
+Since
+\[
+ \phi_i'(s)=e^{a_i s}\bigl(a_i r_i+c_i(R)\bigr),
+\]
+its derivative does not change sign. Thus its largest value on
+$[0,h]$ occurs at an endpoint. Condition
+\eqref{eq:new-self-inclusion} gives
+\[
+ \phi_i(s)\le\max\{r_i,\phi_i(h)\}<R_i.
+\]
+By continuity, this bound also holds at any proposed first
+boundary contact, contradicting $v_i=R_i$. Therefore, the
+trajectory remains inside the trial region throughout the interval.
+The bounded enclosure and the stated regularity assumptions also
+ensure that the solution exists through the interval endpoint.
+
+At $t_{l+1}=t_l+h$, the error relative to the current predictor is
+bounded by $\phi(h)$. The physical state remains continuous across
+a command change. If the next predictor uses a different center,
+the predictor-center shift is bounded by
 \begin{equation}
  \delta^{\rm rec}_l\ge
  |L(p_l(t_{l+1})-p_{l+1}(t_{l+1}))|.
  \label{eq:new-recentering-bound}
 \end{equation}
-The triangle inequality gives the propagated radius stated in the main
-text. A controller or target change preserves the physical state $x$.
-With the common transform $L$, the additional radius comes from predictor
-recentering. If a verified implementation
+The triangle inequality therefore gives
+\[
+\begin{aligned}
+ |L(x(t_{l+1})-p_{l+1}(t_{l+1}))|
+ &\le \phi(h)+\delta_l^{\rm rec}\\
+ &=r_{l+1}.
+\end{aligned}
+\]
+This supplies the initial error bound for the next interval.
+Repeating the argument over the finite partition proves
+containment throughout the plan.
+
+It remains to verify the constraints. For a physical constraint
+$h_{jb}^{\top}x\le\beta_{jb}$, write $x=p+L^{-1}z_e$. At each time,
+\[
+ h_{jb}^{\top}x
+ \le h_{jb}^{\top}p(t)+|h_{jb}^{\top}L^{-1}|R.
+\]
+Condition \eqref{eq:new-affine-support} bounds the right-hand side
+by $\beta_{jb}$ throughout the interval. At a service deadline,
+the propagated endpoint box similarly gives
+\[
+ g_r^{\top}x(T_r)
+ \le g_r^{\top}\widehat x(T_r)
+      +|g_r^{\top}L^{-1}|r(T_r)
+ \le\eta_r,
+\]
+where the final inequality is
+\eqref{eq:new-service-support}. At command changes, the inherited
+box is also checked against the constraints associated with the
+new command. Hence all physical constraints hold continuously,
+and every included service requirement holds at its deadline.
+
+If a verified implementation
 uses distinct invertible transforms before and after a boundary, the valid
 transfer is
 \begin{equation}
@@ -2172,14 +2339,6 @@ transfer is
 All centers in this expression are evaluated at the same boundary time.
 An initial physical box centered at $p(t_0)$ with radius $d_x$ is enclosed
 in the transformed coordinates by $r_0\ge|L|d_x$.
-
-For an affine physical or command row, write
-$x=p+L^{-1}z_e$. Its largest value over $|z_e|\le R$ is
-$h^\top p+|h^\top L^{-1}|R$. Maximizing the predictor term in time proves
-\eqref{eq:new-affine-support}. At a service checkpoint the endpoint radius
-is available, giving \eqref{eq:new-service-support}. Finite induction over
-all intervals, branch changes, and command boundaries completes the proof
-of Theorem~\ref{thm:new-plan-enclosure}.
 
 \subsection{Verified numerical bounds and exact constant commands}
 
@@ -2262,9 +2421,11 @@ class balances in \eqref{eq:new-plant} give
  \end{aligned}
  \label{eq:structure-derived-classes}
 \end{equation}
-Together with the four stored-class equations and queue equation, each
-zero-class face has nonnegative inflow whenever commands, primitive demands
-and offered arrivals are nonnegative and $v\ge0$. For the installed
+Together with the four stored-class equations and queue equation, these
+balances show that a zero destination-class inventory has nonnegative
+inflow and zero outflow whenever the other inventories, commands, primitive
+demands, and offered arrivals are nonnegative and $v\ge0$. At $z=0$,
+admission is zero and offered arrivals are nonnegative. For the installed
 binary coefficients $(\alpha_2,\alpha_1,\alpha_0)=(0.0014877,-0.29815,15.0912)$, exact arithmetic gives
 $\alpha_2>0$ and $4\alpha_2\alpha_0-\alpha_1^2>0$. Completing the square proves
 \begin{equation}
@@ -2274,17 +2435,33 @@ $\alpha_2>0$ and $4\alpha_2\alpha_0-\alpha_1^2>0$. Completing the square proves
 \end{equation}
 The minimum is approximately $0.15314$ h$^{-1}$. This algebraic continuation
 establishes positivity independently of the requested jam and storage bounds.
-For a local solution, the sum of negative class parts has upper derivative
-at most a local Lipschitz constant times that sum. Its zero initial value
-therefore remains zero. Equation~\eqref{eq:new-conservation} then gives
-$0\le M(t)\le M(t_0)+\int_{t_0}^t(d^{\rm int}_1+d^{\rm int}_2+\Lambda(s))\,ds$.
-Bounded arrivals exclude finite-time escape. The nine lower-state/class
-rows follow from this independent positive-cone argument. Its conclusion
-is boundary invariance. Full-vector monotonicity is a separate property.
+To make this argument precise, let $N_-(t)$ be the
+sum of the magnitudes of all negative class inventories and the negative
+queue part. Local Lipschitz continuity gives, locally,
+\[
+ \dot N_-(t)\le L_-N_-(t)
+ \quad\text{almost everywhere}
+\]
+for a finite constant $L_-$. Since $N_-(t_0)=0$, integration gives
+$N_-(t)\le e^{L_-(t-t_0)}N_-(t_0)=0$. All classes and the queue therefore
+remain nonnegative. Conservation also gives
+\[
+ 0\le M(t)\le M(t_0)+
+ \int_{t_0}^t
+ \bigl(d^{\rm int}_1+d^{\rm int}_2+\Lambda(s)\bigr)\,ds.
+\]
+Bounded arrivals keep this total finite on each finite interval, so the
+solution can be continued throughout the plan. These arguments establish
+the lower inventory limits independently of the upper storage limits.
+The nine lower state and class constraints follow from these independent
+nonnegativity bounds.
 
-For constant gates the scalar queue comparison is order-preserving in its
-initial value and arrival input. With constant extremal arrival $\lambda$
-and $\kappa=120u_{02}$, its branch solutions are
+For constant gates, the scalar queue equation preserves the order of
+solutions when their initial queues and arrival inputs are ordered. The
+smallest initial queue with the lower arrival input bounds every allowed
+trajectory from below; the largest initial queue with the upper input
+bounds it from above. With constant extremal arrival $\lambda$ and
+$\kappa=120u_{02}$, its branch solutions are
 \begin{equation}
  \begin{aligned}
  z(s)&=\lambda/60+(z_0-\lambda/60)e^{-60s}
@@ -2322,16 +2499,19 @@ includes recentering error. The Jacobian bounds within a step must cover the ent
 the predictor and the true state. For the queue coordinate, use the convex
 hull of the predictor queue range and the independently bounded continuous
 true queue range, intersected with the original trial enclosure. This
-restricted enclosure is the Jacobian corridor used below. Admission branches
+restricted enclosure contains every required predictor-to-state segment
+and is used below to bound the Jacobians. Admission branches
 can be excluded when this enclosure rules them out, including when the
 predictor lies outside the true queue range.
 
 \subsection{Signed propagation and robust variational remainder}
 
 Consider one interval, omit $l$, and let $\mathcal J_\varpi$ bound each retained
-transformed branch Jacobian on that corridor. In
-\eqref{eq:structure-affine-set}, $\xi$ is constant across the plan.
-The boxed remainder may depend on it. Choose any fixed matrix $A^0$ and
+transformed branch Jacobian on that region. In
+\eqref{eq:structure-affine-set}, the same vector $\xi$ represents the
+initial uncertainty throughout the plan. The generator $\Gamma$ propagates
+its signed coefficients, while $\zeta$ collects the remaining error.
+The remainder may depend on $\xi$. Choose any fixed matrix $A^0$ and
 differentiate the decomposition to obtain
 \eqref{eq:structure-remainder-identity} exactly. For a fresh physical box
 $x(t_0)\in\widehat x+[-d_x,d_x]$, initialize $p(t_0)=\widehat x$,
@@ -2340,10 +2520,12 @@ conversion. Generator conversion error is absorbed outward into $\rho$.
 Precisely, the mean-value matrix satisfies
 $L[f_b(x,t)-f_b(p,t)]=B(s)L(x-p)$, with $B(s)$ in the convex hull of
 the retained transformed branch Jacobians along the predictor-to-state
-segment. The corridor condition applies to the full physical error. The
-remainder $\zeta$ enters through its algebraic decomposition.
-Define a Metzler matrix
-$\overline{M}$ and nonnegative forcing bound $b_\zeta$ by
+segment. These Jacobian bounds cover the complete transformed error
+$L(x-p)=\Gamma\xi+\zeta$, including both its generator and remainder
+contributions.
+Define a comparison matrix $\overline{M}$ with nonnegative off-diagonal
+entries, called a Metzler matrix, and a nonnegative forcing bound
+$b_\zeta$ by
 \begin{equation}
  \begin{aligned}
  \overline{M}_{ii}&=\max_\varpi\sup(\mathcal J_\varpi)_{ii},\\
@@ -2355,17 +2537,29 @@ $\overline{M}$ and nonnegative forcing bound $b_\zeta$ by
  \label{eq:structure-metzler}
 \end{equation}
 where $\mathcal F$ contains $e^{A^0s}\Gamma(0)$ for all $s\in[0,h]$,
-and $\delta_i\ge\sup_s|\epsilon_i(s)|$. Convexification over branches
-preserves these bounds. Applying absolute-value comparison to the remainder
-identity gives
+and $\delta_i\ge\sup_s|\epsilon_i(s)|$. Weighted averages of the
+retained branch Jacobians satisfy the same bounds. Applying them to the
+remainder identity gives
+\[
+ \frac{d}{ds}|\zeta|\le\overline M|\zeta|+b_\zeta
+ \quad\text{almost everywhere}.
+\]
+Since $\overline M$ has nonnegative off-diagonal entries,
+$e^{\overline M s}$ has nonnegative entries. Componentwise comparison and
+integration therefore give
+\[
+ |\zeta(s)|\le e^{\overline M s}\rho+
+             \int_0^s e^{\overline M(s-\tau)}b_\zeta\,d\tau.
+\]
+Thus
 \begin{equation}
  |\zeta(s)|\le e^{\overline{M}s}\rho+\Psi(s)b_\zeta,
  \qquad \Psi(s)=\int_0^s e^{\overline{M}v}\,dv.
  \label{eq:structure-remainder-bound}
 \end{equation}
-The exponential is nonnegative, and $\Psi(s)$ is componentwise increasing.
-The exponential itself can decrease in some entries, so its old-remainder
-contribution is bounded over the entire interval. With outward vectors
+The integral $\Psi(s)$ is componentwise increasing. Individual entries
+of the exponential may decrease, so the contribution from the inherited
+remainder must be bounded over the full interval. With outward bounds
 \begin{equation}
  \begin{aligned}
  f_i&\ge\sup_{s\in[0,h]}\sum_j|(e^{A^0s}\Gamma(0))_{ij}|,\\
@@ -2375,27 +2569,43 @@ contribution is bounded over the entire interval. With outward vectors
  \label{eq:structure-continuous-radii}
 \end{equation}
 the test $f+r^\zeta<R$ keeps every error component strictly inside the
-trial enclosure. The Jacobian bounds are valid until a hypothetical first
-exit, and the strict inequality rules out that exit. The positivity and
+trial enclosure. If a component first reached the boundary, continuity
+would give the same strict interior bound there, a contradiction. The
+positivity and
 scalar queue bounds used here are established independently of this
 containment test.
 
-For any affine row $a_x^\top x\le b_x$, its continuous support is bounded by
+For a constraint $a_x^\top x\le b_x$, substitution of
+$x=p+L^{-1}(\Gamma\xi+\zeta)$ gives
+\[
+ a_x^\top x\le a_x^\top p+
+ \|a_x^\top L^{-1}\Gamma\|_1+
+ |a_x^\top L^{-1}|\,|\zeta|.
+\]
+Here $|\xi|\le\mathbf1$ bounds the generator contribution by the sum of the
+absolute values of its combined coefficients. Combining the signed
+coefficients first preserves their cancellations. Taking the stated time
+bounds gives the following upper bound on the constraint's left-hand
+side throughout the interval:
 \begin{equation}
  \sup_s a_x^\top p(s)+
  \sup_s\|a_x^\top L^{-1}e^{A^0s}\Gamma(0)\|_1+
  |a_x^\top L^{-1}|r^\zeta.
  \label{eq:structure-signed-output}
 \end{equation}
-At a scheduled endpoint, use the endpoint generator and remainder.
-Exact constant-command rows and the independently
-proved positivity/queue supports can establish their corresponding constraints
-directly. Each row can use the tighter of its two valid bounds.
+At a scheduled service deadline, the endpoint generator and remainder
+give the corresponding bound. Independently established positivity,
+queue, and exact constant-command bounds may also verify their
+corresponding constraints. Each constraint can use its tighter valid bound.
 
 Let $\widehat\Gamma$ be the stored binary generator at the next endpoint,
 and let $d_\Gamma$ enclose the row sums of
-$|e^{A^0h}\Gamma(0)-\widehat\Gamma|$. With recentering bound $\delta^{\rm rec}$ from
-\eqref{eq:new-recentering-bound}, a valid update for the remainder bound is
+$|e^{A^0h}\Gamma(0)-\widehat\Gamma|$. Since $|\xi|\le\mathbf1$,
+\[
+ |(e^{A^0h}\Gamma(0)-\widehat\Gamma)\xi|\le d_\Gamma.
+\]
+Adding this generator-rounding error to the endpoint remainder and the
+predictor-center shift in \eqref{eq:new-recentering-bound} gives
 \begin{equation}
  \rho^+\ge d_\Gamma+e^{\overline{M}h}\rho+\Psi(h)b_\zeta+\delta^{\rm rec}.
  \label{eq:structure-endpoint-update}
@@ -2403,7 +2613,9 @@ $|e^{A^0h}\Gamma(0)-\widehat\Gamma|$. With recentering bound $\delta^{\rm rec}$ 
 It retains the same $\xi$ and includes all numerical conversion errors.
 The scalar queue bound constrains the total physical queue error. Its
 generator and remainder summands can cancel, so neither is separately
-contracted by that total-error bound. Finite induction proves
+contracted by that total-error bound. The propagated set therefore
+provides a valid starting set for the next interval. Repeating the
+argument over the finite partition proves
 Proposition~\ref{prop:structure-plan}.
 
 \subsection{Validated matrix functions and execution records}
@@ -2621,28 +2833,43 @@ $\mathcal K$ is robustly invariant under $\mu_B$.
 \end{proposition}
 
 \begin{proof}
-Along every admissible backup trajectory activated at time $t_a$,
+We show that a backup trajectory starting in $\mathcal K$ remains there
+for every allowed uncertainty signal. Let $t_a$ be its activation time.
+While the trajectory remains in the stated neighborhood of $\mathcal K$,
+the chain rule and the assumed bound give
 \[
-\frac{d}{dt}V_B(x(t))
-\le -\lambda_B V_B(x(t))+\bar d_B
+ \frac{d}{dt}V_B(x(t))
+ \le-\lambda_B V_B(x(t))+\bar d_B
+ \quad\text{almost everywhere}.
 \]
-almost everywhere while the trajectory remains in the stated neighborhood.
-Scalar comparison gives
+Multiplying by $e^{\lambda_B(t-t_a)}$ and integrating yields
 \[
-V_B(x(t))
-\le
-e^{-\lambda_B(t-t_a)}V_B(x(t_a))
-+
-\frac{\bar d_B}{\lambda_B}
-\bigl(1-e^{-\lambda_B(t-t_a)}\bigr).
+\begin{aligned}
+ V_B(x(t))
+ &\le e^{-\lambda_B(t-t_a)}V_B(x(t_a))\\
+ &\quad+
+ \frac{\bar d_B}{\lambda_B}
+ \bigl(1-e^{-\lambda_B(t-t_a)}\bigr).
+\end{aligned}
 \]
-If $x(t_a)\in\mathcal K$, then
-$V_B(x(t_a))\le\ell_B$ and
-$\bar d_B/\lambda_B\le\ell_B$, so
-$V_B(x(t))\le\ell_B$. The trajectory therefore cannot leave
-$\mathcal K$. Because $\mathcal K$ is compact and contained in the domain of
-the closed-loop dynamics, the solution extends for all future times. The
-assumed state and command constraints then remain satisfied under the backup.
+The two coefficients on the right are nonnegative and sum to one.
+Hence the bound is a weighted average of $V_B(x(t_a))$ and
+$\bar d_B/\lambda_B$. Both are at most $\ell_B$, because
+$x(t_a)\in\mathcal K$ and $\bar d_B\le\lambda_B\ell_B$. Thus
+\[
+ V_B(x(t))\le\ell_B.
+\]
+This bound rules out leaving $\mathcal K$: throughout any proposed
+departure, the same comparison keeps the trajectory within its defining
+level bound.
+
+The set $\mathcal K$ is compact and contained in the open domain of the
+closed-loop dynamics. The stated regularity and uncertainty assumptions
+therefore allow the bounded solution to continue for all future times.
+All states and commands on $\mathcal K$ satisfy the authorized physical
+constraints by assumption. This proves robust invariance, meaning that
+the backup keeps every initial state in $\mathcal K$ inside that set under
+every allowed uncertainty signal.
 \end{proof}
 
 When continuation beyond the finite horizon is required, a candidate plan may
@@ -2721,26 +2948,47 @@ Rejection preserves the active plan and its terminal transition.
 \end{theorem}
 
 \begin{proof}
-Until a plan's expiry or replacement, Theorem~\ref{thm:new-plan-closure}
-gives its finite physical and service guarantees. If
-$E_k<t_{k+1}^{\rm ins}$, no replacement occurs before expiry, so
+Consider a plan $P_k$ installed at $t_k^{\rm ins}$. Its certificate
+covers the actual installation state and every allowed uncertainty
+realization. Theorem~\ref{thm:new-plan-closure} therefore establishes its
+physical and service guarantees until replacement or expiry.
+
+If a new plan is installed at or before $E_k$, its certificate covers the
+actual state at that installation time. The execution guarantee then
+continues under the new plan. If the next installation occurs after
+$E_k$, the current plan reaches its certified terminal set:
 \[
-x(E_k)\in\mathcal R_{P_k}(E_k)\subseteq\mathcal K
-\quad\Longrightarrow\quad
-x(t)\in\mathcal K\quad(E_k\le t<t_{k+1}^{\rm ins}).
+ x(E_k)\in\mathcal R_{P_k}(E_k)\subseteq\mathcal K.
 \]
-The implication follows from the backup's robust invariance and certified
-initialization. Its state and command limits hold throughout this interval.
-If no next installation exists, take $t_{k+1}^{\rm ins}=\infty$.
-Every accepted plan starts a new certified finite segment. A rejected
-request preserves the current segment and terminal connection. On each
-bounded time interval there are finitely many installations, hence finitely
-many such concatenations. Each finite plan exists through its certified
-horizon, and each backup segment exists indefinitely. These compatible
-solutions therefore define a trajectory for all future time. Every
-admitted service deadline is retained in a covering finite certificate.
-At expiry no such deadline remains uncovered. Applying the covering
-certificate at that deadline proves the second part of
+The certified initialization activates $\mu_B$ at $E_k$. By the backup
+certificate, every allowed trajectory starting there stays in
+$\mathcal K$ and satisfies the physical state and command constraints.
+Consequently,
+\[
+ x(t)\in\mathcal K
+ \qquad E_k\le t<t_{k+1}^{\rm ins}.
+\]
+If no further installation occurs, this interval extends indefinitely.
+A rejected request preserves both the current schedule and the specified
+transition to the backup at its original expiry.
+
+These certified plan and backup segments join at the same physical
+states. The assumption
+$\#\{k:t_k^{\rm ins}\le T\}<\infty$ means that only finitely many plans
+are installed in any finite time interval. Thus their installation times
+cannot accumulate at a finite time. Each finite plan has a solution
+through its certified horizon, and each backup segment can continue
+indefinitely. Joining these solutions therefore defines a trajectory for
+every $t\ge t_0$, with the physical constraints satisfied throughout.
+
+For service requirements, each accepted plan covers all pending admitted
+deadlines within its certified horizon. Replacements preserve that
+coverage. At a deadline, the active covering certificate gives
+$g_r^\top x(T_r)\le\eta_r$. If a finite plan reaches expiry, every
+requirement assigned to it has already been covered at its deadline.
+During backup operation, any new service request obtains authority only
+through a new terminally certified plan that covers it. Hence every
+admitted service requirement is satisfied, proving
 \eqref{eq:terminal-global-guarantee}.
 \end{proof}
 
@@ -2818,11 +3066,53 @@ B_H&=\begin{cases}(e^{L_xH}-1-L_xH)/L_x^2,&L_x>0,\\H^2/2,&L_x=0.\end{cases}
 \end{align*}
 \end{proposition}
 \begin{proof}
-The maximum instantaneous command difference is at most
-$\delta=\lambda_{\rm rep}\|P^B-P^0\|_2$. Gronwall's inequality gives
-$\|x_{P(\lambda_{\rm rep})}(t+s)-x_{P^0}(t+s)\|\le L_u\delta A_s$.
-Integrating the running-cost bound and adding the terminal bound yields
-\eqref{eq:repair-cost-bound}, since $\int_0^H A_s\,ds=B_H$.
+Write $u_\lambda$ and $u_0$ for the command schedules of
+$P(\lambda_{\rm rep})$ and $P^0$. Each command block is part of the
+stacked command vector, so its Euclidean difference is at most the norm
+of the whole vector. Hence, throughout the horizon,
+\[
+ \|u_\lambda-u_0\|_2
+ \le\lambda_{\rm rep}\|P^B-P^0\|_2=:\delta.
+\]
+
+Let
+\[
+ e(s)=\|x_{P(\lambda_{\rm rep})}(t+s)-x_{P^0}(t+s)\|,
+ \qquad 0\le s\le H.
+\]
+The trajectories start from the same state and experience the same
+disturbance. Subtracting their integral dynamics and applying the assumed
+Lipschitz bound therefore gives
+\[
+ e(s)\le\int_0^s\bigl(L_xe(\tau)+L_u\delta\bigr)\,d\tau.
+\]
+The corresponding scalar comparison equation starts at zero and has
+solution $L_u\delta A_s$. Equivalently, the integral form of Gronwall's
+inequality yields
+\[
+ e(s)\le L_u\delta\int_0^s e^{L_x(s-\tau)}\,d\tau
+       =L_u\delta A_s,
+\]
+where $A_s$ is the stated formula with $H$ replaced by $s$. This expression
+also gives $A_s=s$ when $L_x=0$.
+
+Applying the running-cost and terminal-cost bounds now gives
+\[
+\begin{aligned}
+ |J(P(\lambda_{\rm rep}))-J(P^0)|
+ &\le\int_0^H
+       \bigl(L_{\ell x}e(s)+L_{\ell u}\delta\bigr)\,ds
+       +L_g e(H)\\
+ &\le\delta\left(
+       L_{\ell x}L_u\int_0^H A_s\,ds
+       +L_{\ell u}H+L_gL_uA_H\right).
+\end{aligned}
+\]
+Direct integration gives $\int_0^H A_s\,ds=B_H$, including
+$B_H=H^2/2$ when $L_x=0$. Substituting the definitions of $L_J$ and
+$\delta$ proves \eqref{eq:repair-cost-bound}. The common-domain assumption
+ensures that the same model and cost bounds apply along both trajectories
+throughout this calculation.
 \end{proof}
 
 The queue-aware MFD has locally Lipschitz polynomial class flows on the
