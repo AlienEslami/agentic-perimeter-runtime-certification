@@ -4,6 +4,8 @@ This directory preserves material moved out of the standalone manuscript on 7 Oc
 
 ## Contents
 
+- `manuscripts_2026_10_19_before_inline_declarations/` preserves the sources and delivered ZIP before declaration inlining.
+
 - `manuscripts_2026_10_16_before_prose_expiry_revision/` preserves the exact preceding PDFs and source packages before the prose-punctuation and expiry-scope clarification.
 
 - `manuscripts_2026_10_16_before_formal_guarantees_revision/` preserves the exact preceding 45/79-page PDFs and source bundles before the expanded mathematical statements and task-aging definitions.

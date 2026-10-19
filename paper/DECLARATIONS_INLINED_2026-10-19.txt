@@ -1,0 +1,21 @@
+DECLARATION INLINING - 19 OCTOBER 2026
+
+The contents of submission_declarations.tex were substituted exactly for
+its input command in main.tex. The same substitution was made in
+main_reduced.tex using submission_declarations_reduced.tex. All other
+source content is unchanged. No declaration wording was edited.
+
+The current combined LaTeX ZIP contains six files: two manuscript sources,
+one bibliography, two PDF figures and a README. Separate declaration files
+and generated bibliography files are omitted from the upload package.
+Overleaf generates the bibliography from the supplied .bib file.
+
+Earlier dated source bundles and PDFs remain historical snapshots. The
+existing PDFs remain valid because this change only replaces input commands
+with the identical declaration text. Preceding sources and the previous
+user-delivered ZIP are preserved in the private repository archive.
+
+The six-file ZIP was independently extracted and compiled in draft mode.
+Both bibliographies regenerated identically from the supplied .bib file.
+References resolved with identical equation/result numbers and page
+references, with no overfull boxes or oversized floats.

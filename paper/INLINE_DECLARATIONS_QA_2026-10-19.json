@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-19",
+  "checks": {
+    "main.tex": {
+      "previous_source_sha256": "4315147be9a74d9ceeb7f46ae01d53694f643c9f3e25e811f3ead260a4945fd2",
+      "current_source_sha256": "05459f81febbe84f8e04e32311e04c13cb1c8b88d1ba5f0ad219167358d5f783",
+      "change": "Exact declaration-file contents substituted for the input command. All other source content unchanged.",
+      "independent_zip_build": {
+        "passes": "pdfLaTeX draft pass, BibTeX, two resolved pdfLaTeX draft passes",
+        "page_count": 81,
+        "labels_and_page_references_identical": true,
+        "generated_bibliography_identical": true,
+        "references_resolved_no_overfull_or_oversized_floats": true
+      }
+    },
+    "main_reduced.tex": {
+      "previous_source_sha256": "14aa2ba9c51f1cb4d11694da4fbc70e53f0f2c93acd3078445b9a633979acd30",
+      "current_source_sha256": "d04421bde1825a55137423d29048be2453aa0f8fb718900d029e41d1bfc2c7ad",
+      "change": "Exact declaration-file contents substituted for the input command. All other source content unchanged.",
+      "independent_zip_build": {
+        "passes": "pdfLaTeX draft pass, BibTeX, two resolved pdfLaTeX draft passes",
+        "page_count": 47,
+        "labels_and_page_references_identical": true,
+        "generated_bibliography_identical": true,
+        "references_resolved_no_overfull_or_oversized_floats": true
+      }
+    }
+  },
+  "package_members": [
+    "main.tex",
+    "main_reduced.tex",
+    "FOUNDATION_REFERENCES.bib",
+    "figures/mfd_tool_architecture.pdf",
+    "figures/mfd_structure_online_runtime.pdf",
+    "README.txt"
+  ],
+  "declaration_wording_unchanged": true,
+  "all_other_source_content_unchanged": true
+}
