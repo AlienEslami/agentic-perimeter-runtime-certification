@@ -1,0 +1,60 @@
+{
+  "pages_before": 64,
+  "pages_after": 63,
+  "page_map": {
+    "1. Introduction": [
+      2
+    ],
+    "2. Two-Region": [
+      4
+    ],
+    "3.2. Control plans": [
+      11
+    ],
+    "4. Runtime": [
+      17
+    ],
+    "Corollary 1.": [
+      29,
+      47
+    ],
+    "Lemma 1.": [
+      31,
+      39,
+      41
+    ],
+    "5. Numerical Evaluation": [
+      35
+    ],
+    "7. Conclusions": [
+      48
+    ],
+    "Appendix E. Continuation": [
+      54
+    ],
+    "Appendix F. Cost": [
+      58
+    ],
+    "paper-2026-11-10": [
+      63
+    ]
+  },
+  "section5_numeric_tokens_unchanged": 536,
+  "section5_math_blocks_unchanged": 79,
+  "numerical_table_bodies_unchanged": 6,
+  "all_figure_files_unchanged": [
+    "figures/two_region_vehicle_flows_revised.png",
+    "figures/dual_agent_architecture_revised.png",
+    "figures/certified_activation_timeline.pdf",
+    "figures/supervisory_combined.pdf"
+  ],
+  "formal_results_before_and_after": 11,
+  "proofs_before_and_after": 11,
+  "labels_preserved": 155,
+  "all_references_resolved": true,
+  "corollary1_change": "Derives acceptance-state containment and coverage through Algorithm 1 and existing results. Keeps trusted-input/interface assumptions, initial certificate, finite decision sequence, and expiry coverage.",
+  "display_change": "Adds an unnumbered containment inclusion in Corollary 1 proof. Moves the service-requirement qualifier of the execution inequality into following prose for line fit. No change to the inequalities.",
+  "latex_errors_unresolved_references_overfull_boxes": false,
+  "source_sha256": "fb86e698d071dde47bc947dd446a4819d008df67c7a5a729ac216520068eb0b0",
+  "pdf_sha256": "135271accbaf5dd62335189ded2bf66259fe0a8b377027b1562c3d5865f64814"
+}

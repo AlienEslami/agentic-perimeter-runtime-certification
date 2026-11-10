@@ -1,0 +1,27 @@
+{
+  "initial_state": [
+    30.0,
+    30.0,
+    15.0,
+    15.0,
+    5.0,
+    5.0,
+    2.0
+  ],
+  "commands": [
+    [
+      0.9999999999999991,
+      1.0,
+      0.9999999999999044,
+      1.0
+    ],
+    [
+      1.0,
+      1.0,
+      0.6554140795392485,
+      0.9999999999999991
+    ]
+  ],
+  "archived_source": "output\\package\\FOUNDATION_MFD_PARTB_REVIEWED_2026-09-11_TASK-NETWORK\\reproducibility\\results\\mfd_incident_uncertainty_frontier_results.json",
+  "source_sha256": "2c268ae8b4164d58bcfb1634da821470c4b6a02a6882aee8d360e8c252317c1f"
+}

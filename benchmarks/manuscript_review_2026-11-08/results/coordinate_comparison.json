@@ -1,0 +1,275 @@
+{
+  "protocol_sha256": "fb070eb629dad4b5fc7143d471de45fbd07e7ca05719f33655efa274bf496a6b",
+  "rows": [
+    {
+      "method": "class_box",
+      "d": 1,
+      "accepted": true,
+      "deadline_bound_vehicles": 2074.2644520445174,
+      "certified_until_h": 1.0,
+      "wall_seconds": 7.86339610023424,
+      "proof_id": "6be4e0608b32cc5487c18ee1a80089ce1dc94700e7a6f660d10d1706c145582a"
+    },
+    {
+      "method": "class_box",
+      "d": 5,
+      "accepted": true,
+      "deadline_bound_vehicles": 2147.3917048063176,
+      "certified_until_h": 1.0,
+      "wall_seconds": 7.722999900113791,
+      "proof_id": "e65d040e9d85b8365f65bd4d1c474fd254511e07e893eef9ec373c8a38eecfd8"
+    },
+    {
+      "method": "class_box",
+      "d": 10,
+      "accepted": true,
+      "deadline_bound_vehicles": 2387.527571123213,
+      "certified_until_h": 1.0,
+      "wall_seconds": 7.779378799721599,
+      "proof_id": "3153cfa64e8cc1a837bbc39a8efcdb191bc611a1e19ff564ffadec53b04986a0"
+    },
+    {
+      "method": "class_box",
+      "d": 25,
+      "accepted": false,
+      "deadline_bound_vehicles": null,
+      "certified_until_h": 0.48333333333333334,
+      "wall_seconds": 3.6517496001906693,
+      "proof_id": "4a17f0982bce6a99c69e000777ab8d1c0c4cb42d1bece7876784f9eea1c8d694"
+    },
+    {
+      "method": "class_box",
+      "d": 50,
+      "accepted": false,
+      "deadline_bound_vehicles": null,
+      "certified_until_h": 0.22916666666666666,
+      "wall_seconds": 2.018975299783051,
+      "proof_id": "a6d8fd6ebad1715f8006b78e1f28da6454b15a76c258eda46889eb42dd68b11f"
+    },
+    {
+      "method": "class_box",
+      "d": 100,
+      "accepted": false,
+      "deadline_bound_vehicles": null,
+      "certified_until_h": 0.10833333333333334,
+      "wall_seconds": 1.3969779000617564,
+      "proof_id": "64815b6e8dd1a32554bfa8630d5b8fe47359803db1994e78fec760bc3e0b2153"
+    },
+    {
+      "method": "conservation_box",
+      "d": 1,
+      "accepted": true,
+      "deadline_bound_vehicles": 1779.4126715215934,
+      "certified_until_h": 1.0,
+      "wall_seconds": 7.991274100262672,
+      "proof_id": "3e32e7d7344bbc9a5f55569b7bf29b0075ab5b7ab702f46ef24a9673d46d9ab0"
+    },
+    {
+      "method": "conservation_box",
+      "d": 5,
+      "accepted": true,
+      "deadline_bound_vehicles": 1798.953113539352,
+      "certified_until_h": 1.0,
+      "wall_seconds": 7.955684000160545,
+      "proof_id": "ba5c7fcdf656f12c95845d4f44b71b2fa5fe927887d2e89bf4b807030f8c2b19"
+    },
+    {
+      "method": "conservation_box",
+      "d": 10,
+      "accepted": true,
+      "deadline_bound_vehicles": 1844.5807841831577,
+      "certified_until_h": 1.0,
+      "wall_seconds": 7.763521600048989,
+      "proof_id": "be5275d06059d5d9571945f370fed71de60b3d69d8ab30eee990ce76475a30a8"
+    },
+    {
+      "method": "conservation_box",
+      "d": 25,
+      "accepted": false,
+      "deadline_bound_vehicles": null,
+      "certified_until_h": 0.5458333333333333,
+      "wall_seconds": 4.149482500273734,
+      "proof_id": "80ff2d46ef7aaa21ae56e5aba09f09be943b2ad1fbf9cfe0374cb050852d6240"
+    },
+    {
+      "method": "conservation_box",
+      "d": 50,
+      "accepted": false,
+      "deadline_bound_vehicles": null,
+      "certified_until_h": 0.23333333333333334,
+      "wall_seconds": 2.0219397000037134,
+      "proof_id": "4dfc003c05f300d795967221b4d9e139e02ae60c7b4aa9bf049b0255af3a5c14"
+    },
+    {
+      "method": "conservation_box",
+      "d": 100,
+      "accepted": false,
+      "deadline_bound_vehicles": null,
+      "certified_until_h": 0.10833333333333334,
+      "wall_seconds": 1.4014421999454498,
+      "proof_id": "933b007b00289bb3bb1e837caadd00d69ca4af80e6d4b3ab953a67e2942e4765"
+    },
+    {
+      "method": "physical_box",
+      "d": 1,
+      "accepted": false,
+      "deadline_bound_vehicles": null,
+      "certified_until_h": 0.21666666666666667,
+      "wall_seconds": 2.0384839000180364,
+      "proof_id": "6334b26d3e549147f48645a2e0267671d96a95437ff65314c8fb62cc1b3192ad"
+    },
+    {
+      "method": "physical_box",
+      "d": 5,
+      "accepted": false,
+      "deadline_bound_vehicles": null,
+      "certified_until_h": 0.1875,
+      "wall_seconds": 1.884606999810785,
+      "proof_id": "8a15f5bfd4f11e920b93ad05ace5bf69fda9bfed8b399aed7a7ad8003d37bf70"
+    },
+    {
+      "method": "physical_box",
+      "d": 10,
+      "accepted": false,
+      "deadline_bound_vehicles": null,
+      "certified_until_h": 0.1625,
+      "wall_seconds": 1.7446985999122262,
+      "proof_id": "d6bdfd1754c3ed782301776edf03aca506cfcd20c73719ef8caca85375ac648b"
+    },
+    {
+      "method": "physical_box",
+      "d": 25,
+      "accepted": false,
+      "deadline_bound_vehicles": null,
+      "certified_until_h": 0.12916666666666668,
+      "wall_seconds": 1.4698724998161197,
+      "proof_id": "9276641519d20eb822cf7812d653846477e7ae6d57e6594750e26f0456ecdfe4"
+    },
+    {
+      "method": "physical_box",
+      "d": 50,
+      "accepted": false,
+      "deadline_bound_vehicles": null,
+      "certified_until_h": 0.09583333333333334,
+      "wall_seconds": 1.3038870999589562,
+      "proof_id": "60f6bb9fa1964088f6a6887ad01ce7e9029f7b5e5d0ff4a8201f630375120b1e"
+    },
+    {
+      "method": "physical_box",
+      "d": 100,
+      "accepted": false,
+      "deadline_bound_vehicles": null,
+      "certified_until_h": 0.0625,
+      "wall_seconds": 1.0819730996154249,
+      "proof_id": "20261d0ea903e0d435862b5969d8eac7e56017f4b1eb7c9f5ba035ff7086c3ac"
+    },
+    {
+      "method": "positive_queue",
+      "d": 1,
+      "accepted": true,
+      "deadline_bound_vehicles": 1728.6751260779035,
+      "certified_until_h": 1.0,
+      "wall_seconds": 7.894504900090396,
+      "proof_id": "90e31f6148c24e99943aed462e1fd765526de5393a799043ce2c915190691ccd"
+    },
+    {
+      "method": "positive_queue",
+      "d": 5,
+      "accepted": true,
+      "deadline_bound_vehicles": 1743.419335691034,
+      "certified_until_h": 1.0,
+      "wall_seconds": 7.889106399845332,
+      "proof_id": "c2ca18308f51019c27f434cb1a130116fa97ad5ff3a850a23552aea3f28cdc87"
+    },
+    {
+      "method": "positive_queue",
+      "d": 10,
+      "accepted": true,
+      "deadline_bound_vehicles": 1776.9089541284761,
+      "certified_until_h": 1.0,
+      "wall_seconds": 7.833476699888706,
+      "proof_id": "64fc7962bb4a65373e34d795e22ea096eb9bfc1a102ad7b3ea458d6d25303e21"
+    },
+    {
+      "method": "positive_queue",
+      "d": 25,
+      "accepted": false,
+      "deadline_bound_vehicles": null,
+      "certified_until_h": 0.7541666666666667,
+      "wall_seconds": 6.105514800176024,
+      "proof_id": "18119109f301923c53ef9cbd068c6e4ca1ced7cd0d6d35fdd3863ebc08f032ec"
+    },
+    {
+      "method": "positive_queue",
+      "d": 50,
+      "accepted": false,
+      "deadline_bound_vehicles": null,
+      "certified_until_h": 0.32916666666666666,
+      "wall_seconds": 2.682900299783796,
+      "proof_id": "c8b3b6c9ee75cbadfd5ad6675d9a1955e283a150354e2c15349b6889aef47486"
+    },
+    {
+      "method": "positive_queue",
+      "d": 100,
+      "accepted": false,
+      "deadline_bound_vehicles": null,
+      "certified_until_h": 0.1625,
+      "wall_seconds": 1.7916895002126694,
+      "proof_id": "b84783e688b3f51ee6f0031f1b6f68c43b8836b95f4c94af673e483211ad14bc"
+    },
+    {
+      "method": "signed",
+      "d": 1,
+      "accepted": true,
+      "deadline_bound_vehicles": 1721.7455402681899,
+      "certified_until_h": 1.0,
+      "wall_seconds": 12.023486599791795,
+      "proof_id": "f56e17b885cfea71ed627b6939451d452803991a26c6de873e21f73166cfb860"
+    },
+    {
+      "method": "signed",
+      "d": 5,
+      "accepted": true,
+      "deadline_bound_vehicles": 1722.6792863683588,
+      "certified_until_h": 1.0,
+      "wall_seconds": 11.970868799835443,
+      "proof_id": "c829c3812a5d43418103dfd65d6dd0c6697d6a574513c949f0c17eb44b70ef0e"
+    },
+    {
+      "method": "signed",
+      "d": 10,
+      "accepted": true,
+      "deadline_bound_vehicles": 1724.4283384926443,
+      "certified_until_h": 1.0,
+      "wall_seconds": 12.02375360019505,
+      "proof_id": "b1c772d0ecb77a94e5237f9d195023b45e9c995a036b902c2d12c7092691302f"
+    },
+    {
+      "method": "signed",
+      "d": 25,
+      "accepted": true,
+      "deadline_bound_vehicles": 1734.0496144414135,
+      "certified_until_h": 1.0,
+      "wall_seconds": 11.908912200015038,
+      "proof_id": "e51dd04d798bd1700ca95eff40eb6377cd5142a567af9c347c7f28ab92c5bcf7"
+    },
+    {
+      "method": "signed",
+      "d": 50,
+      "accepted": true,
+      "deadline_bound_vehicles": 1852.4947159230517,
+      "certified_until_h": 1.0,
+      "wall_seconds": 12.413022300228477,
+      "proof_id": "459ee5f819222037e7d901686b387fe726f577f58ed7f51d7fd2df20c532bec0"
+    },
+    {
+      "method": "signed",
+      "d": 100,
+      "accepted": false,
+      "deadline_bound_vehicles": null,
+      "certified_until_h": 0.26666666666666666,
+      "wall_seconds": 3.684105600230396,
+      "proof_id": "56b9221bb6b24edb79fa4202cbd0765b7d8c26a05bc4947bd86778abc90aaf2b"
+    }
+  ]
+}

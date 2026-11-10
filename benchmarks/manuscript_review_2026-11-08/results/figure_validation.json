@@ -1,0 +1,9 @@
+{
+  "certificate_sha256": "5efc50780fe0b71fdcce448d921ceb936852836464f626721fcfe54d82c9ab6c",
+  "intervals": 160,
+  "replays": 10,
+  "maximum_continuous_upper_vehicles": 1682.6886819571578,
+  "minimum_storage_margin_vehicles": 317.31131804284223,
+  "sampled_containment": "pass",
+  "scope": "Bounds apply at every time in each interval and to all contract-admissible measurable residuals."
+}

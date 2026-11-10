@@ -1,0 +1,186 @@
+AUTHOR AND CLAUDE COMMENTS - REVISION REPORT
+10 November 2026
+
+Revised reduced manuscript: 63 pages (previous version: 64 pages).
+The complete/long manuscript was not edited. The preceding reduced source,
+PDF and supporting files are preserved in:
+output/archive/PERIMETER_PARTB_REDUCED_2026-11-10_before_author_comments/
+
+YOUR COMMENTS
+
+1. Feasible versus stable.
+Replaced "physically and operationally feasible traffic control" in the
+abstract with "traffic control that satisfies physical limits and service
+requirements". The present results guarantee satisfaction of the stated
+constraints over the checked time interval. They do not establish convergence
+to an equilibrium, or a Lyapunov stability property, for every accepted plan.
+Calling every accepted plan stable would therefore add an unsupported claim.
+"Robustly feasible" remains in the mathematical definition in Section 2:
+there it precisely means that a plan satisfies the constraints for every
+allowed initial state and arrival error. This is different from stability.
+
+2. Expiry wording.
+Removed "through its expiry" and the technical terminal-conditions sentence
+from the abstract. The replacement says the current plan continues under its
+existing guarantee and that conditions are established for maintaining the
+guarantees beyond a plan's specified duration. The introduction uses "the
+period covered by its certificate". The conclusion follows the same wording.
+The mathematical horizon E and the terminal-policy conditions are retained.
+
+3. Tool use.
+The introduction now says agents "use tools to develop and revise control
+plans". This directly describes the intended activity.
+
+4. Feasibility over the uncertainty family.
+Replaced the abstract wording about an undecided family by an explicit
+explanation in the introduction: a plan satisfying constraints in simulated
+cases may violate them for other allowed initial states or arrival patterns.
+Passing selected simulations does not prove the universal guarantee.
+
+5. Proposals changing during execution.
+Now says "new plans proposed while the current plan is being executed".
+An executing plan is not silently altered. A new candidate is checked before
+it can replace the current plan.
+
+6. "Its supervisor".
+Removed that premature reference. The rule-based supervisory agent is first
+introduced by its role, then called the supervisor.
+
+7. Explicit research gap.
+Added a direct, scoped gap: the perimeter-control studies reviewed do not
+provide a framework jointly checking agent-proposed plans against boundary
+storage and fixed service deadlines under uncertainty while preserving the
+guarantees through replacement, rejection and delay. This describes the
+combination studied here without claiming that all previous perimeter-control
+research lacks guarantees. For example, Zhong et al. establish stability and
+robustness for their controllers:
+https://www.sciencedirect.com/science/article/pii/S0191261517307671
+The gap sentence is a synthesis of the reviewed works, not an exhaustive
+claim of priority over every publication.
+
+8. Dual-agent explanation.
+Now reads: "An AI agent uses planning tools to propose control plans, and a
+rule-based supervisory agent checks them before execution." The following
+sentence names this arrangement as the dual-agent architecture.
+
+9. Maintaining the plan and certificate.
+Removed this record-management detail from the introduction. The supervisor
+now checks whether a proposal can replace the current plan while meeting
+the physical and service requirements. The decision record in Section 3
+still stores the current plan and its original certificate because rejection
+must preserve the already established guarantee.
+
+10. Introduction example.
+Removed the Region 2 priority / Region 1 deadline example and the accompanying
+feedback sentence. The architecture description is shorter and more direct.
+
+11. Activation uncertainty.
+Yes: this means the time the proposed plan actually starts. The introduction
+now says "state-estimation errors at the time a plan starts and errors in
+arrival forecasts". The later explanation includes propagation of uncertainty
+while the current plan executes during computation.
+
+12. Why plans expire.
+Section 3.2 now explains that a plan specifies control inputs on [t0,E], and
+its certificate checks those inputs under the stated model, uncertainty and
+requirements on that same interval. E ends the checked period. It is not a
+claim that traffic becomes unsafe immediately after E. To continue the
+guarantee, a certified replacement must be ready by E, or a terminal policy
+must already have been certified for the state reached and pending service
+requirements. A finite list of control blocks alone supplies neither future
+inputs nor a proof for all future time.
+
+13. "Feasibility checks".
+Replaced this wording in the introduction and roadmap with the certification
+procedure or explicit checks of physical constraints and service requirements.
+Section 4 is now titled "Runtime Certification Using Traffic Structure".
+The formal feasible-plan set in Section 2 is unchanged.
+
+14-15. Technical approach detail in the introduction.
+Removed the admission-cancellation sentence and the detailed list of
+coordinates, nonnegativity and signed uncertainty propagation. Those details
+remain in Section 4, where their symbols and mathematical role are explained.
+
+16. Paragraph flow.
+Combined the overlapping problem, architecture and approach paragraphs.
+The progression is prior work -> practical risks -> assurance methods ->
+specific gap -> proposed architecture -> guarantee scope -> contributions.
+
+17. First contribution.
+Rewritten around bounding regional vehicle counts and boundary queues.
+It explains that conservation and relationships between uncertain traffic
+quantities tighten the checks, and mentions the extension to several queues.
+The former list of specialized mathematical terms is removed.
+
+18. Second contribution.
+Rewritten around successive replacements, computation delays, and continued
+execution after rejection, under the stated traffic and interface assumptions.
+Conditional continuation beyond the planned period remains, without an
+appendix-location announcement in the contribution itself.
+
+19. Third contribution.
+Shortened to a repair search between a proposal and a certified backup,
+minimum control-input change among the tested certified alternatives, and
+retention when no replacement is ready. It does not claim global optimality,
+guaranteed computation time, or unconditional indefinite continuation.
+The analytical repair-cost result is preserved in Appendix F.
+
+CLAUDE'S COMMENTS
+
+C1. Explicit gap: addressed as described in item 7.
+
+C2. Corollary 1: removed the separate hypothesis requiring every accepted
+replacement to contain the activation state and cover pending requirements.
+The proof now derives state containment from valid external information and
+propagation under the current plan (or a valid estimate at activation), then
+uses Theorem 1 / Proposition 1 for certification and Algorithm 1's activation
+rule for pending requirements and matching execution data. Algorithm steps 3
+and 4 now identify those constructions explicitly. The proof then invokes
+Theorem 2. Trusted inputs, interface integrity, the initial certificate,
+finitely many decisions, and coverage until the next decision or final time
+remain necessary hypotheses. An unnumbered containment inclusion is added
+to make the argument visible. This is a clearer derivation from existing
+results, not a new stability theorem or a weakened uncertainty assumption.
+
+C3. Shared uncertainty: corrected the three listed remnants and two more
+in the delayed-activation discussion and Appendix B. The revised wording
+refers to dependence between state errors or past and future states, rather
+than suggesting that a statistical correlation model is required.
+
+C4. Organization and consistency:
+- Moved the terminal-continuation and repair-cost pointers from Section 4.6
+  to the opening of Section 4.
+- Moved the finite-precision qualification immediately after Lemma 1's proof.
+- Standardized "service requirement", "certification procedure", and
+  "execution interval" in the displayed text.
+- Changed the sentence beginning with w to "The arrival error w ...".
+- Moved the descriptive service qualifier after the execution inequality
+  to prevent a line overrun. The inequality and its scope are unchanged.
+
+C5. Fixed repository reference:
+The bibliography and repository links now point to release paper-2026-11-10,
+with a neutral Reproduction Guide title. The release includes the manuscript
+and the saved November comparison evidence in addition to the existing
+reproduction sources. Repository visibility remains private.
+
+TERMINOLOGY AND SYMBOLS
+
+No mathematical symbol was renamed in this revision. All 155 source labels
+are preserved. Internal labels are stable even where the displayed wording
+has changed. The displayed terminology changes are listed in C3-C4 and
+items 1-19. "Feasible" is retained where it has the formal constraint-based
+meaning defined in Section 2, or describes a cited method's established
+property. It is not replaced indiscriminately by "stable".
+
+CHECKS
+
+- 11 formal results and 11 proofs remain.
+- All 536 numeric tokens and 79 mathematical blocks in Section 5 match the
+  preceding version, as do all six numerical table bodies.
+- All four referenced figure files are unchanged byte for byte.
+- No new simulation, optimization, or live agent experiment was run.
+- The PDF compiles with resolved citations and cross-references and no
+  overfull boxes. Changed pages were visually reviewed.
+- The abstract remains qualitative and contains no numerical study results.
+- No funding or generative-AI declaration was added.
+- The preceding reduced version is archived; the long version is unchanged.

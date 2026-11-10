@@ -1,0 +1,26 @@
+Manuscript review checks, 8 November 2026
+
+1. Reuse the fixed minute-0 two-block MPC plan from the archived uncertainty
+frontier study. Hold its state, command coefficients, 15-second proof
+partition, arrival forecast, and 2850-vehicle deadline fixed. Compare raw
+state boxes, destination-class boxes, conservation-coordinate boxes,
+positivity/queue boxes, and signed-generator propagation. Test d in
+{1,5,10,25,50,100} vehicles with a 60 veh/h arrival residual. The first six
+state half-widths are d and the queue half-width is min(d,10). Report the
+largest tested certifiable d, not an inferred continuous threshold. The
+signed and positivity/queue propagators are separate implementations.
+
+2. Recompute the existing D027 repaired-plan certificate with interval
+records retained. Plot continuous queue upper bounds and selected replays
+against the 2000-vehicle capacity. No plan optimization or retuning.
+
+3. Extract violation sizes, completed trips, and recorded timing summaries
+from the entire existing contract/sequence scans. Keep all denominators
+and unsuccessful attempts. Do not treat unresolved checks as violations.
+
+4. Time three sequential repetitions of the D027 nominal-plan check and
+ordered repair search on the current machine after the coordinate sweep
+finishes. Recheck the backup, then the proposal and every grid point before
+the first accepted repair. Exclude planning, simulation, plotting, and
+imports from reported times. Report platform and observed ranges. No claim
+of a worst-case execution-time bound.

@@ -1,0 +1,414 @@
+{
+  "per_contract": [
+    {
+      "case": "D012",
+      "queue_excess_vehicles": 0,
+      "deadline_excess_vehicles": 0
+    },
+    {
+      "case": "D013",
+      "queue_excess_vehicles": 37.40384917503593,
+      "deadline_excess_vehicles": 1.2722811417688717
+    },
+    {
+      "case": "D014",
+      "queue_excess_vehicles": 0,
+      "deadline_excess_vehicles": 0
+    },
+    {
+      "case": "D015",
+      "queue_excess_vehicles": 36.003990278102265,
+      "deadline_excess_vehicles": 1.5174262663363152
+    },
+    {
+      "case": "D016",
+      "queue_excess_vehicles": 0,
+      "deadline_excess_vehicles": 0
+    },
+    {
+      "case": "D017",
+      "queue_excess_vehicles": 36.003990278102265,
+      "deadline_excess_vehicles": 1.6164080282524083
+    },
+    {
+      "case": "D018",
+      "queue_excess_vehicles": 0,
+      "deadline_excess_vehicles": 0
+    },
+    {
+      "case": "D019",
+      "queue_excess_vehicles": 96.24589900717228,
+      "deadline_excess_vehicles": 1.3801761182094197
+    },
+    {
+      "case": "D020",
+      "queue_excess_vehicles": 0,
+      "deadline_excess_vehicles": 0
+    },
+    {
+      "case": "D021",
+      "queue_excess_vehicles": 89.99388298414397,
+      "deadline_excess_vehicles": 2.149456436075525
+    },
+    {
+      "case": "D022",
+      "queue_excess_vehicles": 0,
+      "deadline_excess_vehicles": 0
+    },
+    {
+      "case": "D023",
+      "queue_excess_vehicles": 89.99388298414397,
+      "deadline_excess_vehicles": 2.2775410085996555
+    },
+    {
+      "case": "D024",
+      "queue_excess_vehicles": 0,
+      "deadline_excess_vehicles": 0
+    },
+    {
+      "case": "D025",
+      "queue_excess_vehicles": 195.41898625465728,
+      "deadline_excess_vehicles": 1.4561660548260988
+    },
+    {
+      "case": "D026",
+      "queue_excess_vehicles": 0,
+      "deadline_excess_vehicles": 0
+    },
+    {
+      "case": "D027",
+      "queue_excess_vehicles": 179.9770374942036,
+      "deadline_excess_vehicles": 3.2057768552581365
+    },
+    {
+      "case": "D028",
+      "queue_excess_vehicles": 0,
+      "deadline_excess_vehicles": 0
+    },
+    {
+      "case": "D029",
+      "queue_excess_vehicles": 179.9770374942036,
+      "deadline_excess_vehicles": 3.3824748680031007
+    },
+    {
+      "case": "D030",
+      "queue_excess_vehicles": 0,
+      "deadline_excess_vehicles": 0
+    },
+    {
+      "case": "D031",
+      "queue_excess_vehicles": 42.740862342021046,
+      "deadline_excess_vehicles": 10.049743994307846
+    },
+    {
+      "case": "D032",
+      "queue_excess_vehicles": 0,
+      "deadline_excess_vehicles": 0
+    },
+    {
+      "case": "D033",
+      "queue_excess_vehicles": 36.06463404187207,
+      "deadline_excess_vehicles": 11.53568815795552
+    },
+    {
+      "case": "D034",
+      "queue_excess_vehicles": 0,
+      "deadline_excess_vehicles": 0
+    },
+    {
+      "case": "D035",
+      "queue_excess_vehicles": 36.06463404187207,
+      "deadline_excess_vehicles": 12.360442918308308
+    },
+    {
+      "case": "D036",
+      "queue_excess_vehicles": 0,
+      "deadline_excess_vehicles": 0
+    },
+    {
+      "case": "D037",
+      "queue_excess_vehicles": 102.74086234202468,
+      "deadline_excess_vehicles": 10.049743994307846
+    },
+    {
+      "case": "D038",
+      "queue_excess_vehicles": 0,
+      "deadline_excess_vehicles": 0
+    },
+    {
+      "case": "D039",
+      "queue_excess_vehicles": 90.05452674791377,
+      "deadline_excess_vehicles": 12.18327986689792
+    },
+    {
+      "case": "D040",
+      "queue_excess_vehicles": 0,
+      "deadline_excess_vehicles": 0
+    },
+    {
+      "case": "D041",
+      "queue_excess_vehicles": 90.05452674791377,
+      "deadline_excess_vehicles": 13.037910553354777
+    },
+    {
+      "case": "D042",
+      "queue_excess_vehicles": 0,
+      "deadline_excess_vehicles": 0
+    },
+    {
+      "case": "D043",
+      "queue_excess_vehicles": 202.74086234202014,
+      "deadline_excess_vehicles": 10.049743994307846
+    },
+    {
+      "case": "D044",
+      "queue_excess_vehicles": 0,
+      "deadline_excess_vehicles": 0
+    },
+    {
+      "case": "D045",
+      "queue_excess_vehicles": 180.03768125797342,
+      "deadline_excess_vehicles": 13.265617440093138
+    },
+    {
+      "case": "D046",
+      "queue_excess_vehicles": 0,
+      "deadline_excess_vehicles": 0
+    },
+    {
+      "case": "D047",
+      "queue_excess_vehicles": 180.03768125797342,
+      "deadline_excess_vehicles": 14.170153488645155
+    },
+    {
+      "case": "D048",
+      "queue_excess_vehicles": 0,
+      "deadline_excess_vehicles": 0
+    },
+    {
+      "case": "D049",
+      "queue_excess_vehicles": 57.74086234202059,
+      "deadline_excess_vehicles": 24.52995464230662
+    },
+    {
+      "case": "D050",
+      "queue_excess_vehicles": 0,
+      "deadline_excess_vehicles": 0
+    },
+    {
+      "case": "D051",
+      "queue_excess_vehicles": 36.16570698148894,
+      "deadline_excess_vehicles": 28.776985177977622
+    },
+    {
+      "case": "D052",
+      "queue_excess_vehicles": 0,
+      "deadline_excess_vehicles": 0
+    },
+    {
+      "case": "D053",
+      "queue_excess_vehicles": 36.16570698148894,
+      "deadline_excess_vehicles": 30.846575707659213
+    },
+    {
+      "case": "D054",
+      "queue_excess_vehicles": 0,
+      "deadline_excess_vehicles": 0
+    },
+    {
+      "case": "D055",
+      "queue_excess_vehicles": 117.74086234202468,
+      "deadline_excess_vehicles": 24.52995464230662
+    },
+    {
+      "case": "D056",
+      "queue_excess_vehicles": 0,
+      "deadline_excess_vehicles": 0
+    },
+    {
+      "case": "D057",
+      "queue_excess_vehicles": 90.15559968753041,
+      "deadline_excess_vehicles": 29.45159008456858
+    },
+    {
+      "case": "D058",
+      "queue_excess_vehicles": 0,
+      "deadline_excess_vehicles": 0
+    },
+    {
+      "case": "D059",
+      "queue_excess_vehicles": 90.15559968753041,
+      "deadline_excess_vehicles": 31.552401117297904
+    },
+    {
+      "case": "D060",
+      "queue_excess_vehicles": 0,
+      "deadline_excess_vehicles": 0
+    },
+    {
+      "case": "D061",
+      "queue_excess_vehicles": 217.74086234202014,
+      "deadline_excess_vehicles": 24.52995464230662
+    },
+    {
+      "case": "D062",
+      "queue_excess_vehicles": 0,
+      "deadline_excess_vehicles": 0
+    },
+    {
+      "case": "D063",
+      "queue_excess_vehicles": 180.13875419759006,
+      "deadline_excess_vehicles": 30.579090933763837
+    },
+    {
+      "case": "D064",
+      "queue_excess_vehicles": 0,
+      "deadline_excess_vehicles": 0
+    },
+    {
+      "case": "D065",
+      "queue_excess_vehicles": 180.13875419759006,
+      "deadline_excess_vehicles": 32.73205422393221
+    },
+    {
+      "case": "D066",
+      "queue_excess_vehicles": 0,
+      "deadline_excess_vehicles": 0
+    },
+    {
+      "case": "D067",
+      "queue_excess_vehicles": 82.74086234202059,
+      "deadline_excess_vehicles": 49.86782963610358
+    },
+    {
+      "case": "D068",
+      "queue_excess_vehicles": 0,
+      "deadline_excess_vehicles": 0
+    },
+    {
+      "case": "D069",
+      "queue_excess_vehicles": 36.518252161545206,
+      "deadline_excess_vehicles": 59.14529678359395
+    },
+    {
+      "case": "D070",
+      "queue_excess_vehicles": 0,
+      "deadline_excess_vehicles": 0
+    },
+    {
+      "case": "D071",
+      "queue_excess_vehicles": 36.51008987732325,
+      "deadline_excess_vehicles": 63.39212074326406
+    },
+    {
+      "case": "D072",
+      "queue_excess_vehicles": 0,
+      "deadline_excess_vehicles": 0
+    },
+    {
+      "case": "D073",
+      "queue_excess_vehicles": 142.74086234202468,
+      "deadline_excess_vehicles": 49.86782963610358
+    },
+    {
+      "case": "D074",
+      "queue_excess_vehicles": 0,
+      "deadline_excess_vehicles": 0
+    },
+    {
+      "case": "D075",
+      "queue_excess_vehicles": 90.53474090839745,
+      "deadline_excess_vehicles": 59.86974868018069
+    },
+    {
+      "case": "D076",
+      "queue_excess_vehicles": 0,
+      "deadline_excess_vehicles": 0
+    },
+    {
+      "case": "D077",
+      "queue_excess_vehicles": 90.52415097865924,
+      "deadline_excess_vehicles": 64.15016053959471
+    },
+    {
+      "case": "D078",
+      "queue_excess_vehicles": 0,
+      "deadline_excess_vehicles": 0
+    },
+    {
+      "case": "D079",
+      "queue_excess_vehicles": 242.74086234201968,
+      "deadline_excess_vehicles": 49.86782963610358
+    },
+    {
+      "case": "D080",
+      "queue_excess_vehicles": 0,
+      "deadline_excess_vehicles": 0
+    },
+    {
+      "case": "D081",
+      "queue_excess_vehicles": 180.5827209791405,
+      "deadline_excess_vehicles": 61.080277417901016
+    },
+    {
+      "case": "D082",
+      "queue_excess_vehicles": 0,
+      "deadline_excess_vehicles": 0
+    },
+    {
+      "case": "D083",
+      "queue_excess_vehicles": 180.56749815613193,
+      "deadline_excess_vehicles": 65.41683499441524
+    },
+    {
+      "case": "D084",
+      "queue_excess_vehicles": 60.02645093135288,
+      "deadline_excess_vehicles": 0
+    },
+    {
+      "case": "D085",
+      "queue_excess_vehicles": 60.02645093135288,
+      "deadline_excess_vehicles": 0
+    },
+    {
+      "case": "D086",
+      "queue_excess_vehicles": 135.01241302308154,
+      "deadline_excess_vehicles": 0
+    },
+    {
+      "case": "D087",
+      "queue_excess_vehicles": 135.01241302308154,
+      "deadline_excess_vehicles": 0
+    },
+    {
+      "case": "D088",
+      "queue_excess_vehicles": 60.132852598176214,
+      "deadline_excess_vehicles": 0
+    },
+    {
+      "case": "D089",
+      "queue_excess_vehicles": 60.132852598176214,
+      "deadline_excess_vehicles": 0
+    },
+    {
+      "case": "D090",
+      "queue_excess_vehicles": 135.1207874058273,
+      "deadline_excess_vehicles": 0
+    },
+    {
+      "case": "D091",
+      "queue_excess_vehicles": 135.1207874058273,
+      "deadline_excess_vehicles": 0
+    }
+  ],
+  "queue_excess_summary": [
+    36.003990278102265,
+    90.33987533309482,
+    242.74086234201968
+  ],
+  "deadline_excess_summary": [
+    1.2722811417688717,
+    19.350054065475888,
+    65.41683499441524
+  ]
+}

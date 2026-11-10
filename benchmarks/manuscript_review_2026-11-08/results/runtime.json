@@ -1,0 +1,114 @@
+{
+  "platform": "Windows-11-10.0.26300-SP0",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "processor": "Intel(R) Core(TM) Ultra 7 255H",
+  "source_sha256": "510c1d7c713271158af67fc737ae797ec71b05dd79c220f799c4dd656ac78ec8",
+  "records": [
+    {
+      "repetition": 1,
+      "backup_seconds": 10.866852900013328,
+      "nominal_seconds": 8.260248499922454,
+      "repair_candidate_seconds": 44.61536449985579,
+      "proposal_and_repair_seconds": 52.87561299977824,
+      "including_backup_seconds": 63.74246589979157,
+      "attempts": [
+        {
+          "weight": 0.05,
+          "accepted": false,
+          "seconds": 8.602685999590904
+        },
+        {
+          "weight": 0.1,
+          "accepted": false,
+          "seconds": 8.906731999944896
+        },
+        {
+          "weight": 0.15,
+          "accepted": false,
+          "seconds": 8.884509299881756
+        },
+        {
+          "weight": 0.2,
+          "accepted": false,
+          "seconds": 9.190214700065553
+        },
+        {
+          "weight": 0.25,
+          "accepted": true,
+          "seconds": 9.03067470015958
+        }
+      ]
+    },
+    {
+      "repetition": 2,
+      "backup_seconds": 10.628286899998784,
+      "nominal_seconds": 8.061733299866319,
+      "repair_candidate_seconds": 43.53491699974984,
+      "proposal_and_repair_seconds": 51.59665029961616,
+      "including_backup_seconds": 62.22493719961494,
+      "attempts": [
+        {
+          "weight": 0.05,
+          "accepted": false,
+          "seconds": 8.521276999730617
+        },
+        {
+          "weight": 0.1,
+          "accepted": false,
+          "seconds": 8.737924200017005
+        },
+        {
+          "weight": 0.15,
+          "accepted": false,
+          "seconds": 8.695391000248492
+        },
+        {
+          "weight": 0.2,
+          "accepted": false,
+          "seconds": 8.694695699959993
+        },
+        {
+          "weight": 0.25,
+          "accepted": true,
+          "seconds": 8.88507919991389
+        }
+      ]
+    },
+    {
+      "repetition": 3,
+      "backup_seconds": 10.688058899715543,
+      "nominal_seconds": 8.13435780024156,
+      "repair_candidate_seconds": 44.52888150000945,
+      "proposal_and_repair_seconds": 52.66323930025101,
+      "including_backup_seconds": 63.35129819996655,
+      "attempts": [
+        {
+          "weight": 0.05,
+          "accepted": false,
+          "seconds": 8.511717699933797
+        },
+        {
+          "weight": 0.1,
+          "accepted": false,
+          "seconds": 9.20502860005945
+        },
+        {
+          "weight": 0.15,
+          "accepted": false,
+          "seconds": 8.974342499859631
+        },
+        {
+          "weight": 0.2,
+          "accepted": false,
+          "seconds": 8.90228720009327
+        },
+        {
+          "weight": 0.25,
+          "accepted": true,
+          "seconds": 8.934924399945885
+        }
+      ]
+    }
+  ],
+  "timing_scope": "Fresh verifier per candidate; excludes imports, planning, simulations and plotting."
+}
