@@ -1,0 +1,80 @@
+SECTION 5 REDUCTION — 11 NOVEMBER 2026
+
+Outcome
+The paper is 65 pages, down from 76 after the Sections 3–4 pass and from
+84 before the reduction process. Section 5 starts on page 34 and Section 6
+on page 46, an approximate span of twelve pages rather than twenty-three.
+Fonts, margins and spacing were not reduced.
+
+New progression
+5.1 Experimental setup.
+5.2 Traffic operation under supervisory control.
+5.3 Recovery from congested conditions.
+5.4 Certification and repair across operating conditions, including a short
+    several-region example paragraph.
+5.5 Successive requests and computation delays.
+5.6 Agent interpretation and certified execution.
+
+What changed
+- Reduced Section 5 from eight figures to five and eleven tables to five.
+- Kept the intuitive vehicle snapshots, full traffic/queue trajectories,
+  congested recovery, coordinate comparison and successive-request figure.
+- Removed the diagnostic error-budget figure, repair-cost distribution figure
+  and connected-network summary figure from the submitted paper. Their main
+  findings remain in text, and all original figures are preserved separately.
+- Replaced the verifier-configuration table with a compact setup description.
+- Summarized the congestion-depth grid without its repetitive table. Retained
+  all tested starting values, passing levels, fixed-plan scope and timings.
+- Removed the coordinate-comparison table that overlapped its retained plot.
+  Preserved the principal bounds, uncertainty definition and passing ranges.
+- Combined the 80-contract baseline and portfolio tables, explicitly keeping
+  the baseline repair results separate from rechecking unchanged proposals.
+- Shortened the matched-case table by removing the secondary full-scenario
+  repair row and redundant physical/service outcome columns. Its counts and
+  limits still show violations, while the certificate column remains.
+- Summarized sequential-case and delayed-activation tables in prose. Retained
+  the distinguishing cases, delay counts, simulation denominators and timing
+  exclusions, together with the tight-deadline trajectory figure.
+- Kept the actual agent-planning results in the agent table. Summarized the
+  separate interpretation pilot and preserved its detailed breakdown outside
+  the shortened section.
+- Removed repeated narration of table values, guarantee definitions and
+  reproduction details. The essential model, initial conditions, uncertainty
+  sets, service limits, methods and evaluation metrics remain in the paper.
+
+What is unchanged
+The abstract, introduction, Sections 2–4, discussion, conclusion and appendices
+match the preceding source exactly. All formal mathematical statements,
+proofs, and numbered equation/align environments also match. Retained figures
+are the original files with their original captions. No experiment, stored
+plan, certificate or reported numerical value was changed or rerun.
+
+Checks
+- Verified scope by direct source comparison outside Section 5.
+- Checked all references and labels; no unresolved references remain.
+- Compared retained setup and congested-result tables with their originals.
+- Checked the combined table against the original baseline and portfolio
+  tables, preserving their different denominators and execution meanings.
+- Checked portfolio totals/timings and congested performance percentages
+  against the saved experiment summaries. Confirmed the eight agent traces,
+  thirteen calls and 1/4 versus 4/4 objective/repair counts from the saved
+  agent-planning summary.
+- Kept the limits needed to interpret the evidence: development-only extra
+  portfolio passes, fixed-plan congestion depth, regional conservatism,
+  measured timing scope and the small agent study.
+- Desktop and local LaTeX/BibTeX builds succeeded. There are no undefined
+  references/citations or overfull-box warnings. One harmless layout warning
+  notes a page containing only figures/tables. Selected result-table and
+  figure pages were visually checked; full layout polishing remains deferred.
+
+Preserved material
+The complete preceding 76-page paper and source are archived in
+output/archive/PERIMETER_BEFORE_SECTION5_TRIM_2026-11-11/.
+The separate supporting-materials package contains the original numerical
+section, all its figures and tables, the preceding paper PDF/source, and
+selected existing result summaries. It is prepared locally for repository
+use; this editing pass did not upload or publish it to GitHub.
+
+The supplied LaTeX manuscript package contains only main.tex, its bibliography
+and the figures used in the shortened paper. No supporting-material file is
+required to compile it.

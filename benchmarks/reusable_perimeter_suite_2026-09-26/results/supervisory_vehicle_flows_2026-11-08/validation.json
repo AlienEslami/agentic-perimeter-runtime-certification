@@ -1,0 +1,78 @@
+{
+  "case": "D027",
+  "contract": {
+    "task": "D",
+    "split": "development",
+    "amplitude": 0.3,
+    "duration_h": 1.0,
+    "width_vehicles": 1.0,
+    "residual_veh_h": 300.0,
+    "deadline_vehicles": 2850.0,
+    "weight": 4.0,
+    "id": "D027"
+  },
+  "selected_repair_weight": 0.25,
+  "source_sha256": "510c1d7c713271158af67fc737ae797ec71b05dd79c220f799c4dd656ac78ec8",
+  "initial_state_units": [
+    21.030544601495208,
+    23.16674783631087,
+    14.219387548878382,
+    14.887124601919053,
+    2.4128346640030682,
+    3.0284193919155453,
+    1.2510781134202305
+  ],
+  "residual_profile": "constant_high",
+  "integration": "DOP853; rtol=1e-12, atol=1e-13; maximum step 5 seconds; output every second",
+  "scope": "Finite-plan matched replay at minutes 20--60; certificates are separately stored in D027.json.",
+  "policies": {
+    "nominal_mpc": {
+      "peak_queue_vehicles": 2179.977039957121,
+      "deadline_n1_vehicles": 2852.167406141904,
+      "tts_veh_h": 3299.9671105016087,
+      "priority_cost": 6328.205492865285,
+      "conservation_error_vehicles": 6.139089236967266e-12,
+      "minimum_physical_margin": -1.7997703995712122,
+      "certified": false,
+      "proof_id": "b589ddba3166ab1fdadadb6acbfca14f1fa68722b591358e9d8a1e8bb468ef44",
+      "differences_from_archived_RK4": {
+        "peak_queue_vehicles": 2.462917564116651e-06,
+        "deadline_n1_vehicles": -3.2981779440888204e-07,
+        "tts_veh_h": 6.972713890718296e-07,
+        "priority_cost": -6.393947842298076e-07
+      }
+    },
+    "grid_repair": {
+      "peak_queue_vehicles": 1682.68868195712,
+      "deadline_n1_vehicles": 2310.091176977968,
+      "tts_veh_h": 3096.9475753061743,
+      "priority_cost": 6426.687945791312,
+      "conservation_error_vehicles": 7.958078640513122e-12,
+      "minimum_physical_margin": 0.0,
+      "certified": true,
+      "proof_id": "ddf61654d89b4a95d59945c22efbd923a664c76bb91cf200a4f76a5b9edce930",
+      "differences_from_archived_RK4": {
+        "peak_queue_vehicles": 2.462912334522116e-06,
+        "deadline_n1_vehicles": -2.3068378141033463e-07,
+        "tts_veh_h": 7.203361747087911e-07,
+        "priority_cost": -6.028703865013085e-07
+      }
+    },
+    "continuation": {
+      "peak_queue_vehicles": 194.3655120961557,
+      "deadline_n1_vehicles": 1727.3487647199445,
+      "tts_veh_h": 2694.858656191796,
+      "priority_cost": 6813.806642207777,
+      "conservation_error_vehicles": 3.922195901395753e-12,
+      "minimum_physical_margin": 0.0,
+      "certified": true,
+      "proof_id": "9a8786a5ea8606cb28c2360945f1abafede7bc9715b6ea28d4f7b55cf6528280",
+      "differences_from_archived_RK4": {
+        "peak_queue_vehicles": -0.0003509725906667427,
+        "deadline_n1_vehicles": 1.4244485100789461e-05,
+        "tts_veh_h": -0.00012172295237178332,
+        "priority_cost": 0.00010177753483731067
+      }
+    }
+  }
+}

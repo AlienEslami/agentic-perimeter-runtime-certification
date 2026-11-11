@@ -1,5 +1,18 @@
 # Formal Guarantees for Trustworthy Agent-Mediated Urban Perimeter Control
 
+## Latest paper - 11 November 2026
+
+- [Reduced manuscript, 65 pages](paper/reduced_2026-11-11/main.pdf)
+- [LaTeX package](paper/reduced_2026-11-11/PERIMETER_PARTB_SECTIONS345_REVIEWED_2026-11-11.zip)
+- [Reproduction guide](paper/supporting_materials/REPRODUCTION_GUIDE.md)
+- [Dated release and complete study archives](https://github.com/AlienEslami/agentic-perimeter-runtime-certification/releases/tag/paper-2026-11-11)
+- [Full numerical section and removed figures/tables](benchmarks/section5_support_2026-11-11/)
+
+The latest revision shortens Sections 3-5 and clarifies the connections between
+the planning interface, certification results and numerical evaluation.
+Earlier complete and reduced manuscripts remain preserved at their existing paths.
+The older manuscript descriptions below refer to those historical snapshots.
+
 This private preparation repository contains the manuscript and numerical research material for the paper. The manuscript includes the [repository link](https://github.com/AlienEslami/agentic-perimeter-runtime-certification). The repository is private during manuscript preparation and will be made public before submission.
 
 ## Contents
@@ -64,7 +77,7 @@ The unchanged `scripts/finalize_benchmark_handover_2026_09_26.py` validates dela
 
 The 7 October consolidation adds the cited historical local-agent, routing, fixed-controller/repair, eight-event MPC and complete online comparison records in `archive/historical_studies/`. The preceding complete source package and supplement are preserved in `archive/companion_manuscript_2026_10_06/`. See `paper/STANDALONE_MATERIALS_MAP.md` and `archive/README.md` for scope and historical-layout requirements. Duplicate output trees, credentials, temporary files and Python caches are omitted.
 
-## Current manuscripts and reproduction guide
+## Historical manuscripts and reproduction guide - 19 October 2026
 
 The 19 October proof revision carries the user-supplied reduced paper's
 clearer proofs into the complete manuscript. The complete PDF is 87 pages

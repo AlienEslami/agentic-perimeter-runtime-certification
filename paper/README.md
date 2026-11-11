@@ -1,4 +1,10 @@
-# Current manuscripts - 19 October 2026
+# Current reduced manuscript - 11 November 2026
+
+Use [reduced_2026-11-11/main.pdf](reduced_2026-11-11/main.pdf) for the latest
+65-page manuscript and [its source package](reduced_2026-11-11/PERIMETER_PARTB_SECTIONS345_REVIEWED_2026-11-11.zip) for editing.
+The complete manuscript at `main.tex` and `main.pdf` is unchanged.
+
+## Historical manuscript snapshot - 19 October 2026
 
 **Formal Guarantees for Trustworthy Agent-Mediated Urban Perimeter Control**
 

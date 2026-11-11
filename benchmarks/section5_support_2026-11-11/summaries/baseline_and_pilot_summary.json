@@ -1,0 +1,229 @@
+{
+  "counts": {
+    "regulation_cases": 24,
+    "queue_contracts": 12,
+    "deadline_development": 72,
+    "deadline_held_out": 8,
+    "all_constant_plan_realizations": 275200
+  },
+  "deadline_all": {
+    "contracts": 80,
+    "backup_available": 68,
+    "nominal_certified": 36,
+    "nominal_all_sampled_feasible": 36,
+    "nominal_contracts_with_physical_violation": 44,
+    "nominal_contracts_with_service_violation": 36,
+    "certified_repair_available": 74,
+    "modified_proposals": 38,
+    "theta": {
+      "minimum": 0.05,
+      "median": 0.1,
+      "maximum": 0.95
+    },
+    "cbf_completed": 80,
+    "cbf_physical_pass": 80,
+    "cbf_service_pass": 44,
+    "five_scenario_certified": 40,
+    "five_scenario_all_sampled_feasible": 40,
+    "repair_priority_improvement_vs_retention_percent": {
+      "minimum": 0.023350908140492864,
+      "median": 5.677164010581141,
+      "maximum": 6.721457207918759
+    },
+    "repair_tts_change_vs_retention_percent": {
+      "minimum": 0.3295804723405222,
+      "median": 16.066260927833795,
+      "maximum": 21.63836957643746
+    },
+    "requested_priority_benefit_recovered_fraction": {
+      "minimum": 0.003968581146572912,
+      "median": 0.9165130094217624,
+      "maximum": 0.9633469519157741
+    },
+    "stronger_tool_priority_improvement_vs_original_certified_tool_percent": {
+      "minimum": -0.411638042584928,
+      "median": 0.0,
+      "maximum": 4.2967962116229135
+    },
+    "full_scenario": {
+      "contracts": 80,
+      "solver_available": 80,
+      "certified_directly": 44,
+      "all_sampled_feasible": 80,
+      "certified_with_repair": 74,
+      "theta": {
+        "minimum": 0.0,
+        "median": 0.0,
+        "maximum": 0.35
+      }
+    }
+  },
+  "deadline_development": {
+    "contracts": 72,
+    "backup_available": 60,
+    "nominal_certified": 36,
+    "nominal_all_sampled_feasible": 36,
+    "nominal_contracts_with_physical_violation": 36,
+    "nominal_contracts_with_service_violation": 36,
+    "certified_repair_available": 66,
+    "modified_proposals": 30,
+    "theta": {
+      "minimum": 0.05,
+      "median": 0.125,
+      "maximum": 0.95
+    },
+    "cbf_completed": 72,
+    "cbf_physical_pass": 72,
+    "cbf_service_pass": 36,
+    "five_scenario_certified": 36,
+    "five_scenario_all_sampled_feasible": 36,
+    "repair_priority_improvement_vs_retention_percent": {
+      "minimum": 0.023350908140492864,
+      "median": 5.897092790342304,
+      "maximum": 6.721457207918759
+    },
+    "repair_tts_change_vs_retention_percent": {
+      "minimum": 0.3295804723405222,
+      "median": 18.172034619753187,
+      "maximum": 21.63836957643746
+    },
+    "requested_priority_benefit_recovered_fraction": {
+      "minimum": 0.003968581146572912,
+      "median": 0.8958903837251009,
+      "maximum": 0.9601908902920628
+    },
+    "stronger_tool_priority_improvement_vs_original_certified_tool_percent": {
+      "minimum": -0.411638042584928,
+      "median": 0.0,
+      "maximum": 4.2967962116229135
+    },
+    "full_scenario": {
+      "contracts": 72,
+      "solver_available": 72,
+      "certified_directly": 36,
+      "all_sampled_feasible": 72,
+      "certified_with_repair": 66,
+      "theta": {
+        "minimum": 0.0,
+        "median": 0.0,
+        "maximum": 0.35
+      }
+    }
+  },
+  "deadline_held_out": {
+    "contracts": 8,
+    "backup_available": 8,
+    "nominal_certified": 0,
+    "nominal_all_sampled_feasible": 0,
+    "nominal_contracts_with_physical_violation": 8,
+    "nominal_contracts_with_service_violation": 0,
+    "certified_repair_available": 8,
+    "modified_proposals": 8,
+    "theta": {
+      "minimum": 0.05,
+      "median": 0.07500000000000001,
+      "maximum": 0.1
+    },
+    "cbf_completed": 8,
+    "cbf_physical_pass": 8,
+    "cbf_service_pass": 8,
+    "five_scenario_certified": 4,
+    "five_scenario_all_sampled_feasible": 4,
+    "repair_priority_improvement_vs_retention_percent": {
+      "minimum": 3.1983618566885577,
+      "median": 3.6824189572502735,
+      "maximum": 3.989983662367898
+    },
+    "repair_tts_change_vs_retention_percent": {
+      "minimum": 7.404058492918218,
+      "median": 8.382247516373493,
+      "maximum": 8.973820934826483
+    },
+    "requested_priority_benefit_recovered_fraction": {
+      "minimum": 0.9136807024125838,
+      "median": 0.9440968182423664,
+      "maximum": 0.9633469519157741
+    },
+    "stronger_tool_priority_improvement_vs_original_certified_tool_percent": {
+      "minimum": 0.059087918512288506,
+      "median": 0.08102382660898058,
+      "maximum": 0.10557847874867607
+    },
+    "full_scenario": {
+      "contracts": 8,
+      "solver_available": 8,
+      "certified_directly": 8,
+      "all_sampled_feasible": 8,
+      "certified_with_repair": 8,
+      "theta": {
+        "minimum": 0.0,
+        "median": 0.0,
+        "maximum": 0.0
+      }
+    }
+  },
+  "reserve_refresh": {
+    "contracts": 12,
+    "reserves_certified": 12,
+    "new_repaired_outputs": 6,
+    "all_contracts_certified_with_refresh": 80
+  },
+  "api_pilot": {
+    "model": "gpt-5.4-mini",
+    "completed_calls": 96,
+    "known_usage_usd": 0.07504049999999998,
+    "accounted_usd": 0.07504050000000004,
+    "budget_usd": 10.0,
+    "rows": [
+      {
+        "interface": "history_only",
+        "attack": false,
+        "calls": 24,
+        "successful_responses": 24,
+        "objective_correct": 19,
+        "tool_correct": 22,
+        "authorized_routes": 24,
+        "no_certified_execution": 0,
+        "physical_violations": 0,
+        "deadline_violations": 0
+      },
+      {
+        "interface": "history_only",
+        "attack": true,
+        "calls": 24,
+        "successful_responses": 24,
+        "objective_correct": 15,
+        "tool_correct": 24,
+        "authorized_routes": 24,
+        "no_certified_execution": 0,
+        "physical_violations": 0,
+        "deadline_violations": 0
+      },
+      {
+        "interface": "structured_task_record",
+        "attack": false,
+        "calls": 24,
+        "successful_responses": 24,
+        "objective_correct": 24,
+        "tool_correct": 24,
+        "authorized_routes": 24,
+        "no_certified_execution": 0,
+        "physical_violations": 0,
+        "deadline_violations": 0
+      },
+      {
+        "interface": "structured_task_record",
+        "attack": true,
+        "calls": 24,
+        "successful_responses": 24,
+        "objective_correct": 24,
+        "tool_correct": 24,
+        "authorized_routes": 24,
+        "no_certified_execution": 0,
+        "physical_violations": 0,
+        "deadline_violations": 0
+      }
+    ],
+    "scope": "96 semantic/tool-routing calls over precomputed certified benchmark plans; no model ranking or closed-loop agent optimization claim"
+  }
+}

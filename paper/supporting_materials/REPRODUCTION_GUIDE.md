@@ -1,5 +1,39 @@
 # Reproduction Guide
 
+## Current shortened manuscript and November experiments
+
+The [65-page manuscript](../reduced_2026-11-11/main.pdf), its
+[LaTeX source package](../reduced_2026-11-11/PERIMETER_PARTB_SECTIONS345_REVIEWED_2026-11-11.zip), and
+[connection-review report](../reduced_2026-11-11/SECTIONS345_CONNECTION_REVIEW_2026-11-11.txt) accompany
+[release paper-2026-11-11](https://github.com/AlienEslami/agentic-perimeter-runtime-certification/releases/tag/paper-2026-11-11).
+
+The [numerical supporting materials](../../benchmarks/section5_support_2026-11-11/)
+preserve the full numerical section before shortening, all its figures and
+tables, and the preceding 76-page manuscript and source. The
+[84-page manuscript before shortening](../../archive/manuscripts_before_shortening_2026-11-11/)
+is also retained. The earlier complete manuscript remains unchanged.
+
+The release supplies three self-contained study archives:
+
+- [Fixed portfolio](https://github.com/AlienEslami/agentic-perimeter-runtime-certification/releases/download/paper-2026-11-11/PERIMETER_FIXED_PORTFOLIO_STUDY_2026-11-10.zip):
+  frozen inputs, source dependencies and complete saved results for 186 cases.
+  Read `fixed_portfolio_2026-11-10/README.txt`; `final_consistency_check.py`
+  audits stored proofs and partitions, and `reproduce.py` reruns the frozen checks.
+- [Congestion diagnostics](https://github.com/AlienEslami/agentic-perimeter-runtime-certification/releases/download/paper-2026-11-11/CONGESTED_DIAGNOSTIC_STUDY_2026-11-10.zip):
+  error budgets, coordinate/subdivision comparisons, repaired plans and saved certificates.
+  Start with `START_HERE.txt` and preserve the archive's directory structure.
+- [Initial congestion study](https://github.com/AlienEslami/agentic-perimeter-runtime-certification/releases/download/paper-2026-11-11/CONGESTED_RECOVERY_2026-11-10.zip):
+  the preceding recovery experiment and its source and records, retained separately
+  from the wider-uncertainty result in the current paper.
+
+Earlier baseline repair, successive-request, delay and agent studies remain in
+the portable suite below. The newer fixed-portfolio checks do not replace their
+recorded configurations. The shortened paper states which procedure each study uses.
+The congestion diagnostics and portfolio archives use internal 100-vehicle
+scaling in some records; the manuscript reports accumulations in vehicles.
+All numerical archives contain previously computed results. This editorial
+revision performed no new optimization, certification sweep or live agent call.
+
 This guide accompanies release **paper-2026-11-10**. The current manuscript is
 available as [LaTeX source](../reduced_2026-11-10/main.tex) and
 [PDF](../reduced_2026-11-10/main.pdf). The source package attached to the release

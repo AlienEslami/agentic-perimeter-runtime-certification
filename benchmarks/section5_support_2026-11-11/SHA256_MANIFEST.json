@@ -1,0 +1,20 @@
+{
+  "figures/certification_diagnostics.pdf": "8eb5b89387d704b655f7f962ae3466a86e821e01b7a2bf18e41ee8f232730639",
+  "figures/network_extension_results.pdf": "48214e901c6665503ae77f4e3e3bfd04ac64392559cffd215b5cd09c49993de6",
+  "figures/repair_cost_distribution.pdf": "cb3b778c5658946d7e33e7c7905a2c7c44d86cd3114d2b11e642f03b681ff835",
+  "figures/structure_certification_comparison.pdf": "b8c5b63903977fc2c8c04c73f639bec1a9f9753efdcdf1140eb0da097b33901a",
+  "figures/successive_decisions_traffic.pdf": "cf3dfd59c38b53081a3340bce2367b2d0cee492e96b855ed0d4e075ff3d0d45c",
+  "figures/supervisory_combined.pdf": "815e4750f2e23e7f638516766dfc7d22c2eb6e57dc4961fc0f3ec5737ced6bf8",
+  "figures/supervisory_snapshots.pdf": "03cb9a22d4cdbfa5bb0f33b52124b8a8c9e5d889ba9f368ffbf5a5fb7f4ff1ae",
+  "figures/wide_uncertainty_recovery.pdf": "05eee838eb487536dd1edf13b6d8dc585c3d8ee983b27836339bbab607b34356",
+  "paper_before_section5_reduction.pdf": "dd0b820fa6f197e04696ef1158f5807c039b5f593cfa21103c39877722206939",
+  "paper_before_section5_reduction_source.zip": "39ca5c026101bccd7d441cb91bdb4fe0422cb0b721459d4becc2e03e01a18b74",
+  "README.txt": "63645293199687da4c7c930b14698980628e4cda3562d7c739fc98196411efff",
+  "REDUCTION_REPORT.txt": "ffd40e94da97e96f35064b562f909eb288ecd22b2f737d4f3602145a66b5b567",
+  "section5_detailed.tex": "83c2dca0b39aac612c380ffbee5dca4159b4145d712c9e8029ad85fe6b5acedf",
+  "summaries/agent_planning_summary.json": "76a5db9c26dbb0719e892b5b90f5cceaf455dc1612fa2abf20cb0cbfaf3048a2",
+  "summaries/baseline_and_pilot_summary.json": "6f3ed4644bdb04d59c0640974affd4ce182e660ec6aa9ee5f575e9764d731177",
+  "summaries/congested_audit_and_summary.json": "d384ae4f553ca8c5ce2e96139fc19f6c69b7711434de2fe32dfc04f922fd8057",
+  "summaries/fixed_portfolio_analysis.json": "3f9af0fda0d2aa051cc02515dfdf3ff0c99240e3884ad3742e2f1a677b58c371",
+  "summaries/fixed_portfolio_summary.csv": "eec26fc96c6a631bdf136bf7acacc758933cd0034cbfd29ac68e93ca03fea4bb"
+}

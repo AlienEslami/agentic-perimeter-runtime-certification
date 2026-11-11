@@ -1,0 +1,31 @@
+{
+  "release": "paper-2026-11-11",
+  "assets": {
+    "perimeter_paper_reduced_2026-11-11_sections345_reviewed.pdf": {
+      "bytes": 1292202,
+      "sha256": "2c16dc38c587ea41f05932446556ad2bc288d7b4b3d5cb9a1dae39453207f439"
+    },
+    "PERIMETER_PARTB_SECTIONS345_REVIEWED_2026-11-11.zip": {
+      "bytes": 362317,
+      "sha256": "2b1419a7dc9eebff153f97c03badffc9a317dee19ad22198cb6f309bbb0096ca"
+    },
+    "PERIMETER_SECTION5_REPOSITORY_SUPPORT_2026-11-11.zip": {
+      "bytes": 1763331,
+      "sha256": "ba62bdcdfcb793a5bdeedfe7f69cc878f818f5d0eeb83ad5a640932d14df2526"
+    },
+    "CONGESTED_RECOVERY_2026-11-10.zip": {
+      "bytes": 12481567,
+      "sha256": "878d61f8a381e408d2fafab27651aef322f537bad32b63c41c1fb4fcec919d88"
+    },
+    "CONGESTED_DIAGNOSTIC_STUDY_2026-11-10.zip": {
+      "bytes": 64990501,
+      "sha256": "f69d39ebf4095ae0fd8a0ac73b25082e292295825990c997d3a1cf45fd63dbcd"
+    },
+    "PERIMETER_FIXED_PORTFOLIO_STUDY_2026-11-10.zip": {
+      "bytes": 19044120,
+      "sha256": "bce17f4a86091053f42868df6b2fc7191bb2fcb49f5158c3f4e8472a00f9b774"
+    }
+  },
+  "manuscript_pages": 65,
+  "scope": "Sections 3-5 coherence review and preservation of prior shortening/study material; no numerical reruns."
+}

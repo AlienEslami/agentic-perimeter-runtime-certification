@@ -1,0 +1,406 @@
+{
+  "groups": {
+    "depth_backup": {
+      "count": 10,
+      "accepted": 3,
+      "winners": {
+        "class_box_one": 2,
+        "class_box_four": 1,
+        "none": 7
+      },
+      "seconds_median": 25.042390199843794,
+      "seconds_min": 8.52370350016281,
+      "seconds_max": 82.60427329968661,
+      "cpu_seconds_median": 24.75,
+      "old_accepted": 0,
+      "new_passes": []
+    },
+    "depth_repair": {
+      "count": 10,
+      "accepted": 3,
+      "winners": {
+        "class_box_one": 2,
+        "class_box_four": 1,
+        "none": 7
+      },
+      "seconds_median": 24.43678250000812,
+      "seconds_min": 7.596814499702305,
+      "seconds_max": 82.28399879997596,
+      "cpu_seconds_median": 24.1640625,
+      "old_accepted": 0,
+      "new_passes": []
+    },
+    "full": {
+      "count": 80,
+      "accepted": 50,
+      "winners": {
+        "conservation_box_one": 44,
+        "class_box_one": 6,
+        "none": 30
+      },
+      "seconds_median": 10.66570909996517,
+      "seconds_min": 9.710870200302452,
+      "seconds_max": 72.71965260012075,
+      "cpu_seconds_median": 10.5390625,
+      "old_accepted": 44,
+      "new_passes": [
+        "full_D013",
+        "full_D015",
+        "full_D017",
+        "full_D019",
+        "full_D021",
+        "full_D023"
+      ]
+    },
+    "nominal": {
+      "count": 80,
+      "accepted": 36,
+      "winners": {
+        "conservation_box_one": 36,
+        "none": 44
+      },
+      "seconds_median": 40.128617549780756,
+      "seconds_min": 9.34959840029478,
+      "seconds_max": 89.69098660023883,
+      "cpu_seconds_median": 39.5234375,
+      "old_accepted": 36,
+      "new_passes": []
+    },
+    "structure": {
+      "count": 6,
+      "accepted": 5,
+      "winners": {
+        "conservation_box_one": 5,
+        "none": 1
+      },
+      "seconds_median": 15.30233215005137,
+      "seconds_min": 15.19558299984783,
+      "seconds_max": 22.29900209978223,
+      "cpu_seconds_median": 15.1171875,
+      "old_accepted": 0,
+      "new_passes": []
+    }
+  },
+  "depth": [
+    {
+      "id": "depth_backup_3500",
+      "initial": 3500,
+      "policy": "backup",
+      "accepted": true,
+      "winner": "class_box_one",
+      "regional_upper": [
+        1704.1188076436085,
+        1851.202533578372
+      ],
+      "recovery_certified": true,
+      "simulated_final_n1": 1690.1129761023976,
+      "simulated_final_n2": 1832.7163936868355,
+      "simulated_max_n1": 3525.0,
+      "simulated_max_n2": 3525.0,
+      "max_queue": 1330.6793289999866,
+      "seconds": 25.662690700031817
+    },
+    {
+      "id": "depth_repair_3500",
+      "initial": 3500,
+      "policy": "repair",
+      "accepted": true,
+      "winner": "class_box_one",
+      "regional_upper": [
+        1649.3173140088793,
+        1730.7888823861365
+      ],
+      "recovery_certified": true,
+      "simulated_final_n1": 1636.8177429125108,
+      "simulated_final_n2": 1714.5773774404083,
+      "simulated_max_n1": 3576.843903239117,
+      "simulated_max_n2": 3525.0,
+      "max_queue": 1967.2377479999961,
+      "seconds": 25.756590699777007
+    },
+    {
+      "id": "depth_backup_4000",
+      "initial": 4000,
+      "policy": "backup",
+      "accepted": true,
+      "winner": "class_box_one",
+      "regional_upper": [
+        1771.0624045734094,
+        1958.7572832255826
+      ],
+      "recovery_certified": true,
+      "simulated_final_n1": 1720.2736505958783,
+      "simulated_final_n2": 1888.9504587398096,
+      "simulated_max_n1": 4025.0,
+      "simulated_max_n2": 4025.0,
+      "max_queue": 1330.6793289999864,
+      "seconds": 24.42208969965577
+    },
+    {
+      "id": "depth_repair_4000",
+      "initial": 4000,
+      "policy": "repair",
+      "accepted": true,
+      "winner": "class_box_one",
+      "regional_upper": [
+        1711.86241177498,
+        1816.5621303965806
+      ],
+      "recovery_certified": true,
+      "simulated_final_n1": 1666.8803393439869,
+      "simulated_final_n2": 1757.7879107058714,
+      "simulated_max_n1": 4126.997011471136,
+      "simulated_max_n2": 4025.0,
+      "max_queue": 1967.2377479999961,
+      "seconds": 24.58356980001554
+    },
+    {
+      "id": "depth_backup_4500",
+      "initial": 4500,
+      "policy": "backup",
+      "accepted": true,
+      "winner": "class_box_four",
+      "regional_upper": [
+        2169.9774213438745,
+        2674.1005860611604
+      ],
+      "recovery_certified": true,
+      "simulated_final_n1": 1796.007295153996,
+      "simulated_final_n2": 2073.5094150262726,
+      "simulated_max_n1": 4525.0,
+      "simulated_max_n2": 4525.0,
+      "max_queue": 1330.6793289999866,
+      "seconds": 82.60427329968661
+    },
+    {
+      "id": "depth_repair_4500",
+      "initial": 4500,
+      "policy": "repair",
+      "accepted": true,
+      "winner": "class_box_four",
+      "regional_upper": [
+        2118.8623300184677,
+        2319.0845622430656
+      ],
+      "recovery_certified": true,
+      "simulated_final_n1": 1767.211132620514,
+      "simulated_final_n2": 1870.3944585097784,
+      "simulated_max_n1": 4711.616809400022,
+      "simulated_max_n2": 4525.0,
+      "max_queue": 1967.237747999996,
+      "seconds": 82.28399879997596
+    },
+    {
+      "id": "depth_backup_5000",
+      "initial": 5000,
+      "policy": "backup",
+      "accepted": false,
+      "winner": null,
+      "regional_upper": null,
+      "recovery_certified": false,
+      "simulated_final_n1": 2000.1621816018894,
+      "simulated_final_n2": 3520.19120004224,
+      "simulated_max_n1": 5025.0171731182445,
+      "simulated_max_n2": 5025.0,
+      "max_queue": 1330.6793289999866,
+      "seconds": 33.666909999679774
+    },
+    {
+      "id": "depth_repair_5000",
+      "initial": 5000,
+      "policy": "repair",
+      "accepted": false,
+      "winner": null,
+      "regional_upper": null,
+      "recovery_certified": false,
+      "simulated_final_n1": 6596.203090905932,
+      "simulated_final_n2": 1625.4184574794187,
+      "simulated_max_n1": 6596.203090905932,
+      "simulated_max_n2": 5025.0,
+      "max_queue": 1967.237747999996,
+      "seconds": 34.22434290032834
+    },
+    {
+      "id": "depth_backup_5500",
+      "initial": 5500,
+      "policy": "backup",
+      "accepted": false,
+      "winner": null,
+      "regional_upper": null,
+      "recovery_certified": false,
+      "simulated_final_n1": 12222.55790388491,
+      "simulated_final_n2": 3838.7136929284593,
+      "simulated_max_n1": 12222.55790388491,
+      "simulated_max_n2": 5704.3298063321145,
+      "max_queue": 1330.6793289999866,
+      "seconds": 30.968337600119412
+    },
+    {
+      "id": "depth_repair_5500",
+      "initial": 5500,
+      "policy": "repair",
+      "accepted": false,
+      "winner": null,
+      "regional_upper": null,
+      "recovery_certified": false,
+      "simulated_final_n1": 12833.691445594926,
+      "simulated_final_n2": 1647.4473531294007,
+      "simulated_max_n1": 12833.691445594926,
+      "simulated_max_n2": 5525.0,
+      "max_queue": 1967.237747999996,
+      "seconds": 28.860420300159603
+    },
+    {
+      "id": "depth_backup_6000",
+      "initial": 6000,
+      "policy": "backup",
+      "accepted": false,
+      "winner": null,
+      "regional_upper": null,
+      "recovery_certified": false,
+      "simulated_final_n1": 12552.876630519493,
+      "simulated_final_n2": 11604.661280193553,
+      "simulated_max_n1": 12552.876630519493,
+      "simulated_max_n2": 11604.661280193553,
+      "max_queue": 1330.6793289999866,
+      "seconds": 28.227037400007248
+    },
+    {
+      "id": "depth_repair_6000",
+      "initial": 6000,
+      "policy": "repair",
+      "accepted": false,
+      "winner": null,
+      "regional_upper": null,
+      "recovery_certified": false,
+      "simulated_final_n1": 12874.114007253997,
+      "simulated_final_n2": 1892.2882391041003,
+      "simulated_max_n1": 12904.363186609711,
+      "simulated_max_n2": 6025.0,
+      "max_queue": 1967.237747999996,
+      "seconds": 24.289995200000703
+    },
+    {
+      "id": "depth_backup_6500",
+      "initial": 6500,
+      "policy": "backup",
+      "accepted": false,
+      "winner": null,
+      "regional_upper": null,
+      "recovery_certified": false,
+      "simulated_final_n1": 12879.801640236536,
+      "simulated_final_n2": 12964.42157275656,
+      "simulated_max_n1": 12879.801640236536,
+      "simulated_max_n2": 12964.42157275656,
+      "max_queue": 1330.6793289999866,
+      "seconds": 23.345658500213176
+    },
+    {
+      "id": "depth_repair_6500",
+      "initial": 6500,
+      "policy": "repair",
+      "accepted": false,
+      "winner": null,
+      "regional_upper": null,
+      "recovery_certified": false,
+      "simulated_final_n1": 12552.520664596379,
+      "simulated_final_n2": 10972.093370562749,
+      "simulated_max_n1": 12725.170570167571,
+      "simulated_max_n2": 10972.093370562749,
+      "max_queue": 1967.2377479999961,
+      "seconds": 20.65462230006233
+    },
+    {
+      "id": "depth_backup_7000",
+      "initial": 7000,
+      "policy": "backup",
+      "accepted": false,
+      "winner": null,
+      "regional_upper": null,
+      "recovery_certified": false,
+      "simulated_final_n1": 12925.785453883782,
+      "simulated_final_n2": 13025.386261104424,
+      "simulated_max_n1": 12925.785453883782,
+      "simulated_max_n2": 13025.386261104424,
+      "max_queue": 1330.6793289999866,
+      "seconds": 19.797521700151265
+    },
+    {
+      "id": "depth_repair_7000",
+      "initial": 7000,
+      "policy": "repair",
+      "accepted": false,
+      "winner": null,
+      "regional_upper": null,
+      "recovery_certified": false,
+      "simulated_final_n1": 12884.947737015753,
+      "simulated_final_n2": 12952.601418873413,
+      "simulated_max_n1": 12884.947737015753,
+      "simulated_max_n2": 12952.601418873413,
+      "max_queue": 1967.237747999996,
+      "seconds": 18.21328639984131
+    },
+    {
+      "id": "depth_backup_8000",
+      "initial": 8000,
+      "policy": "backup",
+      "accepted": false,
+      "winner": null,
+      "regional_upper": null,
+      "recovery_certified": false,
+      "simulated_final_n1": 12932.378415672378,
+      "simulated_final_n2": 13034.793030790377,
+      "simulated_max_n1": 12939.659904136368,
+      "simulated_max_n2": 13047.80106786152,
+      "max_queue": 1330.6793289999866,
+      "seconds": 13.683232800103724
+    },
+    {
+      "id": "depth_repair_8000",
+      "initial": 8000,
+      "policy": "repair",
+      "accepted": false,
+      "winner": null,
+      "regional_upper": null,
+      "recovery_certified": false,
+      "simulated_final_n1": 12908.598136144003,
+      "simulated_final_n2": 12980.19839076327,
+      "simulated_max_n1": 12914.709633370827,
+      "simulated_max_n2": 12990.449175143245,
+      "max_queue": 1967.2377479999961,
+      "seconds": 13.191936800256371
+    },
+    {
+      "id": "depth_backup_9000",
+      "initial": 9000,
+      "policy": "backup",
+      "accepted": false,
+      "winner": null,
+      "regional_upper": null,
+      "recovery_certified": false,
+      "simulated_final_n1": 12925.112512982767,
+      "simulated_final_n2": 13027.62929311979,
+      "simulated_max_n1": 12945.285583577863,
+      "simulated_max_n2": 13059.999363227407,
+      "max_queue": 1330.6793289999866,
+      "seconds": 8.52370350016281
+    },
+    {
+      "id": "depth_repair_9000",
+      "initial": 9000,
+      "policy": "repair",
+      "accepted": false,
+      "winner": null,
+      "regional_upper": null,
+      "recovery_certified": false,
+      "simulated_final_n1": 12902.02396656534,
+      "simulated_final_n2": 12972.488503330715,
+      "simulated_max_n1": 12921.676302245487,
+      "simulated_max_n2": 13002.271307834983,
+      "max_queue": 1967.237747999996,
+      "seconds": 7.596814499702305
+    }
+  ],
+  "audit": "Every proof hash, original one-box outcome and accepted partition coverage verified.",
+  "hardware": "Intel Core Ultra 7 255H, 16 cores; six workers; sequential checks within each plan"
+}

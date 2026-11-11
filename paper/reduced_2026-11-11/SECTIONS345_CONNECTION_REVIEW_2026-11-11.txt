@@ -1,0 +1,38 @@
+SECTIONS 3-5 CONNECTION REVIEW - 11 NOVEMBER 2026
+
+Overall progression
+Section 3 defines the agents, plans, decision record and execution rules.
+Section 4 constructs the certification procedure and proves the conditions
+under which those rules preserve physical and service requirements.
+Section 5 first examines individual plans, then uncertainty and repair,
+successive replacement, delayed activation and agent interpretation.
+
+Edits
+- Algorithm 1 explicitly invokes the complete-cover portfolio rule.
+- Section 4 opens by connecting its bounds to Algorithm 1, Step 4.
+- Section 5 opens with the progression from fixed plans to online decisions.
+- The structure and network examples refer to their mathematical construction.
+- The successive-request subsection identifies the replacement and timing rules.
+- The agent subsection refers to the planning interface of Section 3.3.
+- The shared setup explicitly includes the agent study among baseline checks.
+- The congestion caption identifies the service limit at minute 60 in words.
+- The reproduction reference points to the new dated repository release.
+
+Checks
+The automatic versus agent-requested repair modes agree across Sections 3-5.
+The distinction between the current certificate and a newly checked backup
+is retained. Replacement requires coverage of the activation state and
+pending deadlines. Subdivided certificates retain all component enclosures.
+Baseline repair and fixed-portfolio proposal results remain distinguished.
+Timing exclusions, finite-plan scope and simulation/certificate distinctions
+remain explicit. No new numerical experiment or agent call was performed.
+
+The abstract, introduction, Section 2 and Sections 6 onward are unchanged.
+All theorem, proposition, lemma, corollary, proof, assumption and numbered
+equation/align environments match the pre-review source exactly. No result
+or numerical value was changed. Both compilers succeed. The PDF has 65 pages,
+with no undefined references/citations or overfull boxes; one existing
+float-only page warning remains. Section-transition pages were visually checked.
+
+This is a coherence and consistency review, not a new independent validation
+of every stored certificate or a rerun of the numerical studies.
