@@ -1,0 +1,14 @@
+{
+  "summary": {
+    "id": "structure_5",
+    "group": "structure",
+    "accepted": true,
+    "winner": "conservation_box_one",
+    "seconds": 15.19558299984783,
+    "cpu_seconds": 14.96875,
+    "attempted_checks": 1,
+    "initial_accumulation": null,
+    "old_accepted": null
+  },
+  "original_record_sha256": "74dd2b10f5a34e8a8e3efb7f9719db1970b44a2c07b9e5d0a4e191bc38c8c88c"
+}

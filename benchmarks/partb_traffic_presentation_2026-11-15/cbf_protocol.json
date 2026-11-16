@@ -1,0 +1,14 @@
+{
+  "case": "D027",
+  "source": "reusable_perimeter_suite_2026-09-26/results/contracts/D027.json",
+  "samples": "all 128 initial-box corners paired with the five existing arrival profiles",
+  "controller": "unchanged common.cbf, alpha=6 per hour, exact simulated state, robust arrival bound",
+  "control_update_seconds": 10,
+  "integrator": "unchanged RK4 at ten-second steps",
+  "planning": "unchanged stored nominal proposal; no retuning or optimization",
+  "purpose": "matched simulation comparison, not a certificate for the feedback controller",
+  "source_hashes": {
+    "common.py": "69d4a8fdb627071607d9c0e3324790f97c3c7d166cca22e3db9550677f5e76fb",
+    "D027.json": "510c1d7c713271158af67fc737ae797ec71b05dd79c220f799c4dd656ac78ec8"
+  }
+}

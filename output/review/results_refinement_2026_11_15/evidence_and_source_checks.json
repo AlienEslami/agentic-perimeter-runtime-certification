@@ -1,0 +1,100 @@
+{
+  "sources": {
+    "benchmarks\\reusable_perimeter_suite_2026-09-26\\results\\contracts\\D027.json": "510c1d7c713271158af67fc737ae797ec71b05dd79c220f799c4dd656ac78ec8",
+    "benchmarks\\reusable_perimeter_suite_2026-09-26\\results\\contracts\\D063.json": "d10130446b4101778626bcbba9a1486fba1330ff43d4cccaeb1325f41ed1771a",
+    "benchmarks\\partb_traffic_presentation_2026-11-15\\repair_traffic_statistics.json": "00c10539f8273d725d5bf82a65d0e123fa5a597223c675875836eb4b7abac713",
+    "benchmarks\\reusable_perimeter_suite_2026-09-26\\results\\contracts\\Q000.json": "1295fb17071bbe093bf6bbba2e178c23d02accc42ea4eb9a63041747d97f1d6a",
+    "benchmarks\\reusable_perimeter_suite_2026-09-26\\results\\contracts\\Q001.json": "a61773b9bad659fb11f1f38f87ddcca41096335a0572ae9d3e4e9bb8ad369b48",
+    "benchmarks\\reusable_perimeter_suite_2026-09-26\\results\\contracts\\Q002.json": "48cfcebef5af19f8b972fd75ea4ac3de53cdc47bacebdb544cbf41c4914aab3c",
+    "benchmarks\\reusable_perimeter_suite_2026-09-26\\results\\contracts\\Q003.json": "dff5c0eca2dbcdf4255c7b1dd9b307a9346d7acb3dea6ade5d0037f7346b0d07",
+    "benchmarks\\reusable_perimeter_suite_2026-09-26\\results\\contracts\\Q004.json": "4e64e578f103d5a0550209aa0733922220ee1b00fba2663113c85497ab2ded70",
+    "benchmarks\\reusable_perimeter_suite_2026-09-26\\results\\contracts\\Q005.json": "82fcfb5a687459dce0e9625ca14f2264cbc6395abac1c0b1fcf76e961bf748aa",
+    "benchmarks\\reusable_perimeter_suite_2026-09-26\\results\\contracts\\Q006.json": "97a81887164687871aa02e43e87db9502afcffcfa40aa0e519bf82c0f0e4e6b8",
+    "benchmarks\\reusable_perimeter_suite_2026-09-26\\results\\contracts\\Q007.json": "83165ff9edf04dc0b59051af99b132f5fec3dddcdbe6d5523babfdb41dbb0729",
+    "benchmarks\\reusable_perimeter_suite_2026-09-26\\results\\contracts\\Q008.json": "f2c8094254c3a87b5828c2d2a4d4adcbf3accc0ebc3841b565c60393a234936b",
+    "benchmarks\\reusable_perimeter_suite_2026-09-26\\results\\contracts\\Q009.json": "f4a8824588402db27515b202b0111e3260331eaba5f6caf97a3230523ecab59c",
+    "benchmarks\\reusable_perimeter_suite_2026-09-26\\results\\contracts\\Q010.json": "72dfeb8e6db3fd1c19f1bc9e49c52f5af3acca42626bb4d037d00a73e835e129",
+    "benchmarks\\reusable_perimeter_suite_2026-09-26\\results\\contracts\\Q011.json": "32e527add2f0856cbaa79c356914babf1984dfa430b2e7896f79fbe06d54215a"
+  },
+  "new_simulations": false,
+  "larger_uncertainty_comparison": [
+    {
+      "case": "D027",
+      "d": 1.0,
+      "weight": 0.25,
+      "certified_deadline_upper": 2813.582027891905,
+      "simulated_max_queue": 1682.6886794942077,
+      "both_met": 640,
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.727042708,
+          1.0
+        ],
+        [
+          0.547968314,
+          1.0,
+          0.453892095,
+          1.0
+        ]
+      ]
+    },
+    {
+      "case": "D063",
+      "d": 25.0,
+      "weight": 0.3,
+      "certified_deadline_upper": 2832.677416068088,
+      "simulated_max_queue": 1583.4011143932064,
+      "both_met": 640,
+      "commands": [
+        [
+          1.0,
+          1.0,
+          0.723040906,
+          1.0
+        ],
+        [
+          0.57810376,
+          1.0,
+          0.468100334,
+          1.0
+        ]
+      ]
+    }
+  ],
+  "network_efficiency_by_arrival_increase": [
+    {
+      "arrival_increase": 0.2,
+      "samples": 240,
+      "median_mpc_tts": 2568.4122777133543,
+      "median_clf_tts": 3356.8873001889915,
+      "median_paired_reduction": 23.469910129326188
+    },
+    {
+      "arrival_increase": 0.3,
+      "samples": 240,
+      "median_mpc_tts": 2644.7861406640304,
+      "median_clf_tts": 3473.815732587909,
+      "median_paired_reduction": 23.855871340799602
+    },
+    {
+      "arrival_increase": 0.4,
+      "samples": 240,
+      "median_mpc_tts": 2724.471065519445,
+      "median_clf_tts": 3593.308536072232,
+      "median_paired_reduction": 24.297011152599957
+    },
+    {
+      "arrival_increase": 0.5,
+      "samples": 240,
+      "median_mpc_tts": 2806.8901721445754,
+      "median_clf_tts": 3716.47293216657,
+      "median_paired_reduction": 24.517572459703356
+    }
+  ],
+  "source_sha256": "26fbd51fd3b109ea0e8363edcbc303b82dd221a548203ed02f7820cce899585a",
+  "all_formal_results_and_proofs_unchanged": true,
+  "front_matter_sections2_to5_unchanged": true,
+  "conclusion_future_work_unchanged": true
+}

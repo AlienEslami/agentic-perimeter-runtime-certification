@@ -1,0 +1,52 @@
+{
+  "pages": 48,
+  "preserved_environments": {
+    "abstract": 1,
+    "equation": 65,
+    "theorem": 3,
+    "lemma": 1,
+    "proposition": 5,
+    "corollary": 2,
+    "proof": 11
+  },
+  "title_unchanged": true,
+  "references_resolve": true,
+  "figure_assets": [
+    "figures/regional_traffic_overview_no_cars_2026_11_15.png",
+    "figures/two_region_vehicle_flows_journal_2026_11_15.png",
+    "figures/dual_agent_architecture_control_tools_2026_11_15.png",
+    "figures/traffic_scenarios_2026_11_15.pdf",
+    "figures/congested_traffic_controls_2026_11_15.pdf",
+    "figures/supervisory_snapshots.pdf",
+    "figures/replanning_controls_2026_11_15.pdf",
+    "figures/acceptance_map.pdf",
+    "figures/coordinate_acceptance_compact_2026_11_15.pdf",
+    "figures/structure_certification_comparison.pdf"
+  ],
+  "review_pages": {
+    "2": [
+      "Prepared with ChatGPT"
+    ],
+    "6": [
+      "Prepared with ChatGPT"
+    ],
+    "9": [
+      "A plan is called"
+    ],
+    "20": [
+      "Combining checks"
+    ],
+    "35": [
+      "Declaration of generative",
+      "Funding"
+    ],
+    "39": [
+      "fixed planner",
+      "tighter interval-power"
+    ],
+    "41": [
+      "tighter interval-power"
+    ]
+  },
+  "source_sha256": "057a94f0a550c0888af61f4d2e6553bcf37cabba25ca135f755b9598d91a69b9"
+}

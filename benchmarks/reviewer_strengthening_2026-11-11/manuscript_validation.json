@@ -1,0 +1,25 @@
+{
+  "pages": 71,
+  "formal_environments_unchanged": {
+    "theorem": 3,
+    "proposition": 5,
+    "lemma": 1,
+    "corollary": 2,
+    "proof": 11,
+    "equation": 67,
+    "definition": 3,
+    "assumption": 2
+  },
+  "used_figures": [
+    "figures/regional_traffic_overview_illustrated.png",
+    "figures/two_region_vehicle_flows_vector.pdf",
+    "figures/dual_agent_architecture_illustrated.png",
+    "figures/supervisory_snapshots.pdf",
+    "figures/supervisory_combined.pdf",
+    "figures/wide_uncertainty_recovery.pdf",
+    "figures/structure_certification_comparison.pdf",
+    "figures/successive_decisions_traffic.pdf"
+  ],
+  "pdf_sha256": "18dd5cddc47b505d6c98f716c22efdf686284306ad05615cf55367d1e735db8c",
+  "source_zip_sha256": "2bc5d02899d5a8bf3cfa67fb826149d4740d5c949684407a7b59a0b519a613bb"
+}

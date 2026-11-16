@@ -1,0 +1,72 @@
+{
+  "case": "D027",
+  "contract": {
+    "task": "D",
+    "split": "development",
+    "amplitude": 0.3,
+    "duration_h": 1.0,
+    "width_vehicles": 1.0,
+    "residual_veh_h": 300.0,
+    "deadline_vehicles": 2850.0,
+    "weight": 4.0,
+    "id": "D027"
+  },
+  "samples_per_plan": 640,
+  "rows": [
+    {
+      "plan": "Nominal MPC",
+      "median_tts": 3240.513169623849,
+      "median_priority_cost": 6264.495117855657,
+      "median_queue_waiting": 628.8835616963111,
+      "maximum_queue": 2179.9770374942036,
+      "maximum_deadline_n1": 2853.205776855258,
+      "physical_passes": 448,
+      "service_passes": 192,
+      "both_passes": 168
+    },
+    {
+      "plan": "CBF-QP",
+      "median_tts": 3238.3489082797696,
+      "median_priority_cost": 6292.871093683618,
+      "median_queue_waiting": 614.464359089817,
+      "maximum_queue": 1843.7587472858852,
+      "maximum_deadline_n1": 2918.467649629371,
+      "physical_passes": 640,
+      "service_passes": 0,
+      "both_passes": 0
+    },
+    {
+      "plan": "Current plan",
+      "median_tts": 2649.4908157073405,
+      "median_priority_cost": 6714.009758577425,
+      "median_queue_waiting": 86.76368767466312,
+      "maximum_queue": 194.36586306874636,
+      "maximum_deadline_n1": 1727.5618971409845,
+      "physical_passes": 640,
+      "service_passes": 640,
+      "both_passes": 640
+    },
+    {
+      "plan": "Nominal-plan repair",
+      "median_tts": 3037.442328896147,
+      "median_priority_cost": 6362.69739628994,
+      "median_queue_waiting": 483.8411239463111,
+      "maximum_queue": 1682.6886794942077,
+      "maximum_deadline_n1": 2310.709215279158,
+      "physical_passes": 640,
+      "service_passes": 640,
+      "both_passes": 640
+    },
+    {
+      "plan": "Full-scenario MPC",
+      "median_tts": 3207.707654997317,
+      "median_priority_cost": 6293.51812663248,
+      "median_queue_waiting": 576.1005473213111,
+      "maximum_queue": 1999.0067024941998,
+      "maximum_deadline_n1": 2848.999139759744,
+      "physical_passes": 640,
+      "service_passes": 640,
+      "both_passes": 640
+    }
+  ]
+}

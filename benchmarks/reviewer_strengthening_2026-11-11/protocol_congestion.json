@@ -1,0 +1,409 @@
+{
+  "purpose": "Refine interval evaluation and enclosure search on frozen plans; no plan tuning or revised limits.",
+  "variants": "tight12: exact even-power ranges; 1% trial padding; 12-term verified series including explicit tail; vectorized products with unchanged summation and directed rounding.",
+  "configs": [
+    [
+      "conservation_box",
+      1
+    ],
+    [
+      "class_box",
+      1
+    ],
+    [
+      "class_box",
+      2
+    ],
+    [
+      "conservation_box",
+      2
+    ]
+  ],
+  "jobs": [
+    {
+      "id": "congestion_backup_d25",
+      "group": "congestion",
+      "initial_accumulation": 4500,
+      "center": [
+        45.0,
+        45.0,
+        22.5,
+        22.5,
+        7.5,
+        7.5,
+        5
+      ],
+      "width": [
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.1
+      ],
+      "commands": [
+        [
+          1.0,
+          1.0,
+          9.999999994736442e-09,
+          0.7499999900000001
+        ],
+        [
+          1.0,
+          1.0,
+          0.614029151,
+          1.0
+        ]
+      ],
+      "durations": [
+        "1/12",
+        "11/12"
+      ],
+      "start": "0",
+      "amplitude": 0.3,
+      "event_duration": 1.0,
+      "w": 300,
+      "deadline": 3300
+    },
+    {
+      "id": "congestion_backup_d50",
+      "group": "congestion",
+      "initial_accumulation": 4500,
+      "center": [
+        45.0,
+        45.0,
+        22.5,
+        22.5,
+        7.5,
+        7.5,
+        5
+      ],
+      "width": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.1
+      ],
+      "commands": [
+        [
+          1.0,
+          1.0,
+          9.999999994736442e-09,
+          0.7499999900000001
+        ],
+        [
+          1.0,
+          1.0,
+          0.614029151,
+          1.0
+        ]
+      ],
+      "durations": [
+        "1/12",
+        "11/12"
+      ],
+      "start": "0",
+      "amplitude": 0.3,
+      "event_duration": 1.0,
+      "w": 300,
+      "deadline": 3300
+    },
+    {
+      "id": "congestion_backup_d100",
+      "group": "congestion",
+      "initial_accumulation": 4500,
+      "center": [
+        45.0,
+        45.0,
+        22.5,
+        22.5,
+        7.5,
+        7.5,
+        5
+      ],
+      "width": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.1
+      ],
+      "commands": [
+        [
+          1.0,
+          1.0,
+          9.999999994736442e-09,
+          0.7499999900000001
+        ],
+        [
+          1.0,
+          1.0,
+          0.614029151,
+          1.0
+        ]
+      ],
+      "durations": [
+        "1/12",
+        "11/12"
+      ],
+      "start": "0",
+      "amplitude": 0.3,
+      "event_duration": 1.0,
+      "w": 300,
+      "deadline": 3300
+    },
+    {
+      "id": "congestion_backup_d200",
+      "group": "congestion",
+      "initial_accumulation": 4500,
+      "center": [
+        45.0,
+        45.0,
+        22.5,
+        22.5,
+        7.5,
+        7.5,
+        5
+      ],
+      "width": [
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        0.1
+      ],
+      "commands": [
+        [
+          1.0,
+          1.0,
+          9.999999994736442e-09,
+          0.7499999900000001
+        ],
+        [
+          1.0,
+          1.0,
+          0.614029151,
+          1.0
+        ]
+      ],
+      "durations": [
+        "1/12",
+        "11/12"
+      ],
+      "start": "0",
+      "amplitude": 0.3,
+      "event_duration": 1.0,
+      "w": 300,
+      "deadline": 3300
+    },
+    {
+      "id": "congestion_repair_d25",
+      "group": "congestion",
+      "initial_accumulation": 4500,
+      "center": [
+        45.0,
+        45.0,
+        22.5,
+        22.5,
+        7.5,
+        7.5,
+        5
+      ],
+      "width": [
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.1
+      ],
+      "commands": [
+        [
+          0.652706068,
+          1.0,
+          1.9e-08,
+          0.749999999
+        ],
+        [
+          1.0,
+          1.0,
+          0.556160203,
+          1.0
+        ]
+      ],
+      "durations": [
+        "1/12",
+        "11/12"
+      ],
+      "start": "0",
+      "amplitude": 0.3,
+      "event_duration": 1.0,
+      "w": 300,
+      "deadline": 3300
+    },
+    {
+      "id": "congestion_repair_d50",
+      "group": "congestion",
+      "initial_accumulation": 4500,
+      "center": [
+        45.0,
+        45.0,
+        22.5,
+        22.5,
+        7.5,
+        7.5,
+        5
+      ],
+      "width": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.1
+      ],
+      "commands": [
+        [
+          0.652706068,
+          1.0,
+          1.9e-08,
+          0.749999999
+        ],
+        [
+          1.0,
+          1.0,
+          0.556160203,
+          1.0
+        ]
+      ],
+      "durations": [
+        "1/12",
+        "11/12"
+      ],
+      "start": "0",
+      "amplitude": 0.3,
+      "event_duration": 1.0,
+      "w": 300,
+      "deadline": 3300
+    },
+    {
+      "id": "congestion_repair_d100",
+      "group": "congestion",
+      "initial_accumulation": 4500,
+      "center": [
+        45.0,
+        45.0,
+        22.5,
+        22.5,
+        7.5,
+        7.5,
+        5
+      ],
+      "width": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.1
+      ],
+      "commands": [
+        [
+          0.652706068,
+          1.0,
+          1.9e-08,
+          0.749999999
+        ],
+        [
+          1.0,
+          1.0,
+          0.556160203,
+          1.0
+        ]
+      ],
+      "durations": [
+        "1/12",
+        "11/12"
+      ],
+      "start": "0",
+      "amplitude": 0.3,
+      "event_duration": 1.0,
+      "w": 300,
+      "deadline": 3300
+    },
+    {
+      "id": "congestion_repair_d200",
+      "group": "congestion",
+      "initial_accumulation": 4500,
+      "center": [
+        45.0,
+        45.0,
+        22.5,
+        22.5,
+        7.5,
+        7.5,
+        5
+      ],
+      "width": [
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        0.1
+      ],
+      "commands": [
+        [
+          0.652706068,
+          1.0,
+          1.9e-08,
+          0.749999999
+        ],
+        [
+          1.0,
+          1.0,
+          0.556160203,
+          1.0
+        ]
+      ],
+      "durations": [
+        "1/12",
+        "11/12"
+      ],
+      "start": "0",
+      "amplitude": 0.3,
+      "event_duration": 1.0,
+      "w": 300,
+      "deadline": 3300
+    }
+  ],
+  "workers": 2,
+  "timing": "Concurrent exploratory batch. Separate serial paired timing is required; these times are not a deadline result.",
+  "sources": {
+    "vendor/mfd_incident_affine_reachability.py": "87baeff5f3a2bb2cd1f3a2059c7c342e01a93d4f2afa2ad2b93b397ab3800e8e",
+    "vendor/mfd_incident_model.py": "ceeb25478d491deb594214ed626845a4945bb234af92dac18bbe18259828d71c",
+    "vendor/mfd_cubic_pilot.py": "e4a2cff5c97608b4cb2efd03cb5172c4e46ac7ba8c58ee8d10d16662bc14ff77",
+    "vendor/mfd_incident_verifier.py": "bc68155dad6df32128251f14397db0b0a77f16ccf1852a146c0f908862bb8468",
+    "vendor/mfd_incident_mpc_certification.py": "7497ef1091e5fcb01414701e7c06ac4c5e8bcbc87f403af880d52ea09aa86a2f",
+    "vendor/mfd_deadline_certificates.py": "91edd9f707a315848f7e0368c10eaf41b003339c5879eaf40bcaf241670ad71b",
+    "vendor/mfd_incident_positive_reachability.py": "521a0a4076ee67889c87e2347313b0d4f7bac564dcc358dbf3413b3484fdee2e",
+    "vendor/mfd_incident_queue_bounds.py": "c537b695de8b9686fe426f71486689e2c92249205021b22dbff981e395a1594e",
+    "vendor/mfd_incident_uncertainty_frontier.py": "9509be815c5a2a82d1a9677c573de8510dd82bedfd0f7f1c3099f08fe41a070c",
+    "PROTOCOL.md": "d9eb71ac1819d71c8b9883aef463c0b943a1736c0ec5e8c084fa3d78782dd5c6",
+    "common.py": "69d4a8fdb627071607d9c0e3324790f97c3c7d166cca22e3db9550677f5e76fb",
+    "anchor.json": "c143e9c29f9fb4bd5346819f66d1332dcfcacc05f8a6c3e96770558cbef1e307"
+  },
+  "driver_sha256": "922df79274da261e4a821ba88a44e13d50839892b924ef61e3ec027d0e8a2238"
+}

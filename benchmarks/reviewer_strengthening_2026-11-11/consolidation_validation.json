@@ -1,0 +1,35 @@
+{
+  "pages": 65,
+  "formal_unchanged": {
+    "theorem": 3,
+    "proposition": 5,
+    "lemma": 1,
+    "corollary": 2,
+    "proof": 11,
+    "equation": 67,
+    "definition": 3,
+    "assumption": 2
+  },
+  "protected_text_sha256": {
+    "abstract": "8a79e819520e8fef730626d640aaa99507b4ecf8d492dc7cb93d9598c32a23fe",
+    "introduction": "565f08202f30c5d6afe838d60c77ae795ca9d73e59d6e2ed4f9339f35fe474c3",
+    "section2": "ce0e685d0c21dfdf74d1546dd8f056bf64f938cd54373d81a3ad274615c0c2ac",
+    "section4": "23e4a3d313782699c0d0c27166eff42b213a8d09a0811774b4f4a3cf624da7e3"
+  },
+  "numerical_metrics": {
+    "priority_cost_reduction_percent": 3.805688240249472,
+    "tts_increase_percent": 1.1363895454398198,
+    "recovered_benefit_percent": 49.59174763699516
+  },
+  "used_figures": [
+    "figures/regional_traffic_overview_illustrated.png",
+    "figures/two_region_vehicle_flows_vector.pdf",
+    "figures/dual_agent_architecture_illustrated.png",
+    "figures/congested_recovery_w600.pdf",
+    "figures/supervisory_snapshots.pdf",
+    "figures/structure_certification_comparison.pdf",
+    "figures/successive_decisions_traffic.pdf"
+  ],
+  "pdf_sha256": "5ef52b90e6cf47dd9f48fa8a67b8cf55185dea83801e04a6e7c81fb295ab2322",
+  "source_zip_sha256": "c1c2524fc979f999944a2847faff0af58f0793065f765b4c9039ea76fe6f425f"
+}

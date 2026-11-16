@@ -1,0 +1,75 @@
+{
+  "method": "DOP853, maximum 2.5-second step, same 10-second feedback updates",
+  "checks": [
+    {
+      "corner": "++--+-+",
+      "profile": "constant_high",
+      "adaptive_minus_rk4": {
+        "tts_veh_h": 6.391010174411349e-07,
+        "priority_cost": -3.773675416596234e-07,
+        "peak_queue_vehicles": 6.63907712805667e-07,
+        "deadline_n1_vehicles": -1.748221620800905e-07
+      }
+    },
+    {
+      "corner": "--++++-",
+      "profile": "constant_low",
+      "adaptive_minus_rk4": {
+        "tts_veh_h": 5.537549441214651e-08,
+        "priority_cost": -4.1074872569879517e-07,
+        "peak_queue_vehicles": 2.0331253836047836e-07,
+        "deadline_n1_vehicles": -2.4650717023178004e-07
+      }
+    },
+    {
+      "corner": "+++++++",
+      "profile": "constant_high",
+      "adaptive_minus_rk4": {
+        "tts_veh_h": 6.40438429400092e-07,
+        "priority_cost": -3.768527676584199e-07,
+        "peak_queue_vehicles": 6.63907712805667e-07,
+        "deadline_n1_vehicles": -1.7200909496750683e-07
+      }
+    },
+    {
+      "corner": "+++++++",
+      "profile": "zero",
+      "adaptive_minus_rk4": {
+        "tts_veh_h": 2.8112754080211744e-07,
+        "priority_cost": -4.140501914662309e-07,
+        "peak_queue_vehicles": 4.0851659832696896e-07,
+        "deadline_n1_vehicles": -2.4949395083240233e-07
+      }
+    },
+    {
+      "corner": "+++++++",
+      "profile": "constant_low",
+      "adaptive_minus_rk4": {
+        "tts_veh_h": -1.0520852811168879e-07,
+        "priority_cost": -4.063967935508117e-07,
+        "peak_queue_vehicles": -1.1582187653402798e-08,
+        "deadline_n1_vehicles": -2.48157448368147e-07
+      }
+    },
+    {
+      "corner": "+++++++",
+      "profile": "alternating_5min",
+      "adaptive_minus_rk4": {
+        "tts_veh_h": 6.672748895653058e-07,
+        "priority_cost": -4.242092472850345e-07,
+        "peak_queue_vehicles": 8.542735940864077e-07,
+        "deadline_n1_vehicles": -2.1380583348218352e-07
+      }
+    },
+    {
+      "corner": "+++++++",
+      "profile": "sinusoidal_10min",
+      "adaptive_minus_rk4": {
+        "tts_veh_h": 3.12956808556919e-06,
+        "priority_cost": -5.262099875835702e-07,
+        "peak_queue_vehicles": 3.944067429983988e-06,
+        "deadline_n1_vehicles": 1.4426859706873074e-08
+      }
+    }
+  ]
+}

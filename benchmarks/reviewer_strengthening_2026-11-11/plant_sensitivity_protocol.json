@@ -1,0 +1,16 @@
+{
+  "scope": "Out-of-certificate plant perturbations: numerical sensitivity, no formal guarantee or microscopic validation.",
+  "mfd_and_internal_demand_multipliers": [
+    0.95,
+    1.0,
+    1.05
+  ],
+  "plans": [
+    "backup",
+    "repair"
+  ],
+  "initial_and_arrival_uncertainty": "Same d=(25,25,25,25,25,25,10) vehicles, wbar=300 veh/h as congested experiment",
+  "corners": 128,
+  "arrival_profiles": 5,
+  "step_seconds": 2.5
+}

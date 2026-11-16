@@ -1,0 +1,14 @@
+{
+  "summary": {
+    "id": "depth_repair_6000",
+    "group": "depth_repair",
+    "accepted": false,
+    "winner": null,
+    "seconds": 24.289995200000703,
+    "cpu_seconds": 24.078125,
+    "attempted_checks": 4,
+    "initial_accumulation": 6000,
+    "old_accepted": null
+  },
+  "original_record_sha256": "da97525fb7f75ce333bcf45a8c007d83075a5476b336561e2519cdda141cf184"
+}

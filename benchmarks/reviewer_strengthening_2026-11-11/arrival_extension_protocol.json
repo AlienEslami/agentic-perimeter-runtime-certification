@@ -1,0 +1,196 @@
+{
+  "jobs": [
+    {
+      "id": "arrival_w600_lambda1.0",
+      "group": "arrival_extension",
+      "initial_accumulation": 4500,
+      "center": [
+        45.0,
+        45.0,
+        22.5,
+        22.5,
+        7.5,
+        7.5,
+        5
+      ],
+      "width": [
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.1
+      ],
+      "commands": [
+        [
+          1.0,
+          1.0,
+          1e-08,
+          0.74999999
+        ],
+        [
+          1.0,
+          1.0,
+          0.614029151,
+          1.0
+        ]
+      ],
+      "durations": [
+        "1/12",
+        "11/12"
+      ],
+      "start": "0",
+      "amplitude": 0.3,
+      "event_duration": 1.0,
+      "w": 600,
+      "deadline": 3300,
+      "weight": 1.0
+    },
+    {
+      "id": "arrival_w600_lambda0.65",
+      "group": "arrival_extension",
+      "initial_accumulation": 4500,
+      "center": [
+        45.0,
+        45.0,
+        22.5,
+        22.5,
+        7.5,
+        7.5,
+        5
+      ],
+      "width": [
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.1
+      ],
+      "commands": [
+        [
+          0.812995575,
+          1.0,
+          1.5e-08,
+          0.749999995
+        ],
+        [
+          1.0,
+          1.0,
+          0.582868948,
+          1.0
+        ]
+      ],
+      "durations": [
+        "1/12",
+        "11/12"
+      ],
+      "start": "0",
+      "amplitude": 0.3,
+      "event_duration": 1.0,
+      "w": 600,
+      "deadline": 3300,
+      "weight": 0.65
+    },
+    {
+      "id": "arrival_w900_lambda1.0",
+      "group": "arrival_extension",
+      "initial_accumulation": 4500,
+      "center": [
+        45.0,
+        45.0,
+        22.5,
+        22.5,
+        7.5,
+        7.5,
+        5
+      ],
+      "width": [
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.1
+      ],
+      "commands": [
+        [
+          1.0,
+          1.0,
+          1e-08,
+          0.74999999
+        ],
+        [
+          1.0,
+          1.0,
+          0.614029151,
+          1.0
+        ]
+      ],
+      "durations": [
+        "1/12",
+        "11/12"
+      ],
+      "start": "0",
+      "amplitude": 0.3,
+      "event_duration": 1.0,
+      "w": 900,
+      "deadline": 3300,
+      "weight": 1.0
+    },
+    {
+      "id": "arrival_w900_lambda0.95",
+      "group": "arrival_extension",
+      "initial_accumulation": 4500,
+      "center": [
+        45.0,
+        45.0,
+        22.5,
+        22.5,
+        7.5,
+        7.5,
+        5
+      ],
+      "width": [
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.1
+      ],
+      "commands": [
+        [
+          0.973285082,
+          1.0,
+          1.1e-08,
+          0.749999991
+        ],
+        [
+          1.0,
+          1.0,
+          0.609577693,
+          1.0
+        ]
+      ],
+      "durations": [
+        "1/12",
+        "11/12"
+      ],
+      "start": "0",
+      "amplitude": 0.3,
+      "event_duration": 1.0,
+      "w": 900,
+      "deadline": 3300,
+      "weight": 0.95
+    }
+  ],
+  "choice": "First grid weight that can satisfy the necessary one-hour queue balance, plus backup; unchanged 0.05 grid and endpoints.",
+  "regional_bounds": 25,
+  "queue_bound": 10,
+  "scope": "Exploratory extension at wbar=600 and 900 veh/h; full-hour check required."
+}

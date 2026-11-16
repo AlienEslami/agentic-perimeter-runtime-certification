@@ -1,0 +1,38 @@
+[
+  {
+    "id": "arrival_w600_lambda1.0",
+    "simulation": {
+      "plan": "arrival_w600_lambda1.0",
+      "mfd_multiplier": 1.0,
+      "demand_multiplier": 1.0,
+      "step_seconds": 2.5,
+      "simulated_runs": 640,
+      "physical_passes": 640,
+      "service_passes": 640,
+      "maximum_queue_vehicles": 1630.679329000039,
+      "maximum_deadline_n1_vehicles": 1808.5026513425628,
+      "maximum_final_n2_vehicles": 2096.8987585704335,
+      "conservation_residual_vehicles": 6.892264536872972e-11
+    },
+    "intervals": 241,
+    "proof_id": "a69fffdb469c6395ce453571b10deb523c75de914a462fcb23a8d2a299f0b4a9"
+  },
+  {
+    "id": "arrival_w600_lambda0.65",
+    "simulation": {
+      "plan": "arrival_w600_lambda0.65",
+      "mfd_multiplier": 1.0,
+      "demand_multiplier": 1.0,
+      "step_seconds": 2.5,
+      "simulated_runs": 640,
+      "physical_passes": 640,
+      "service_passes": 640,
+      "maximum_queue_vehicles": 1973.4415570000617,
+      "maximum_deadline_n1_vehicles": 1790.0220643919686,
+      "maximum_final_n2_vehicles": 1956.6033196351484,
+      "conservation_residual_vehicles": 8.242295734817162e-11
+    },
+    "intervals": 241,
+    "proof_id": "a36d958dfdc0f241015c42b2a3549138400b0d727d1f1503b9c88d6cea5bb09a"
+  }
+]

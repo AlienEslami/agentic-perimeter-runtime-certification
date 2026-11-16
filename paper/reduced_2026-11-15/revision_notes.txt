@@ -1,0 +1,36 @@
+SUBMISSION CLARIFICATIONS - 15 NOVEMBER 2026
+
+The revised paper remains 48 pages. The title and abstract are unchanged.
+All 65 numbered equation environments, 3 theorems, 1 lemma, 5 propositions,
+2 corollaries and 11 proofs are unchanged. No new simulations were run.
+
+Changes:
+1. Added a concise AI declaration naming ChatGPT, Claude and Codex, reflecting
+   the tools used in the documented preparation process. Added a short
+   no-specific-funding statement, based on the author's supplied information.
+2. Added AI-assistance attribution to the three conceptual-figure captions
+   and a brief implementation/plotting disclosure in Appendix B. The image
+   interface did not expose a backend model version; the service and access
+   month are given without inventing a version identifier.
+3. Definition 3 explicitly calls a plan certified when Cert returns 1.
+4. Section 4.5 now points to Appendix B for the order of checks.
+5. Replaced unexplained 'excluded from tuning' wording with the additional
+   intermediate scenarios evaluated using the same fixed settings. Historical
+   development protocols remain preserved in the repository.
+6. Appendix B identifies the numerical evaluation descriptively and points
+   to Appendix C, replacing the unexplained first use of 'refined check'.
+7. Removed Supervisory control from the keywords. The five remaining terms
+   are Urban perimeter control; Macroscopic fundamental diagram; Constraint
+   verification; Control under uncertainty; AI agents.
+8. Updated the reproduction-guide citation and link to paper-2026-11-15.
+   The release adds the latest paper, matched-ensemble records, model-error
+   study, numerical verification sources and current evidence summaries.
+
+The author approved making the repository public in this conversation.
+No license has been assigned, and no claim of final coauthor submission
+approval is made. Public availability and journal submission are separate.
+
+The abstract remains open for discussion: its problem and principal guarantee
+are accurate. The question is whether to replace the sentence on terminal
+continuation with one describing the traffic-structure bounds underlying
+the first contribution. No abstract revision has been made.

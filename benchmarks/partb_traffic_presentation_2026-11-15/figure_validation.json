@@ -1,0 +1,10 @@
+{
+  "congestion": {
+    "certificate_sha256": "571fa0b4531a5e9f9d1f573f03773f9c0b8e2dd0d8e7ff57c12c684d2e533d58",
+    "predictor_checkpoint_error_vehicles": 0.0,
+    "envelope_matches_saved_endpoint_statistics": true,
+    "sampled_envelope_within_archived_certificate": true,
+    "samples": 640,
+    "step_seconds": 2
+  }
+}

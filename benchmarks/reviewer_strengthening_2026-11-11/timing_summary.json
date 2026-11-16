@@ -1,0 +1,74 @@
+[
+  {
+    "variant": "baseline",
+    "repetition": 1,
+    "accepted": true,
+    "winner": "class_box_4",
+    "seconds": 70.41190279999864,
+    "checks": 6,
+    "id": "depth_backup_4500"
+  },
+  {
+    "variant": "tight12",
+    "repetition": 1,
+    "accepted": true,
+    "winner": "class_box_1",
+    "seconds": 18.857103400005144,
+    "checks": 2,
+    "id": "depth_backup_4500"
+  },
+  {
+    "variant": "baseline",
+    "repetition": 1,
+    "accepted": true,
+    "winner": "class_box_4",
+    "seconds": 77.12612179999996,
+    "checks": 6,
+    "id": "depth_repair_4500"
+  },
+  {
+    "variant": "tight12",
+    "repetition": 1,
+    "accepted": true,
+    "winner": "class_box_1",
+    "seconds": 19.3729461000039,
+    "checks": 2,
+    "id": "depth_repair_4500"
+  },
+  {
+    "variant": "tight12",
+    "repetition": 2,
+    "accepted": true,
+    "winner": "class_box_1",
+    "seconds": 19.301151200001186,
+    "checks": 2,
+    "id": "depth_backup_4500"
+  },
+  {
+    "variant": "baseline",
+    "repetition": 2,
+    "accepted": true,
+    "winner": "class_box_4",
+    "seconds": 78.07197420000011,
+    "checks": 6,
+    "id": "depth_backup_4500"
+  },
+  {
+    "variant": "tight12",
+    "repetition": 2,
+    "accepted": true,
+    "winner": "class_box_1",
+    "seconds": 17.628346799996507,
+    "checks": 2,
+    "id": "depth_repair_4500"
+  },
+  {
+    "variant": "baseline",
+    "repetition": 2,
+    "accepted": true,
+    "winner": "class_box_4",
+    "seconds": 77.6555206999983,
+    "checks": 6,
+    "id": "depth_repair_4500"
+  }
+]

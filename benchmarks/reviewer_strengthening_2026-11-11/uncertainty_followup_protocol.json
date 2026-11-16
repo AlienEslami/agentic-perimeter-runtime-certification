@@ -1,0 +1,282 @@
+{
+  "jobs": [
+    {
+      "id": "congestion_backup_d30",
+      "group": "congestion",
+      "initial_accumulation": 4500,
+      "center": [
+        45.0,
+        45.0,
+        22.5,
+        22.5,
+        7.5,
+        7.5,
+        5
+      ],
+      "width": [
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.1
+      ],
+      "commands": [
+        [
+          1.0,
+          1.0,
+          9.999999994736442e-09,
+          0.7499999900000001
+        ],
+        [
+          1.0,
+          1.0,
+          0.614029151,
+          1.0
+        ]
+      ],
+      "durations": [
+        "1/12",
+        "11/12"
+      ],
+      "start": "0",
+      "amplitude": 0.3,
+      "event_duration": 1.0,
+      "w": 300,
+      "deadline": 3300
+    },
+    {
+      "id": "congestion_backup_d35",
+      "group": "congestion",
+      "initial_accumulation": 4500,
+      "center": [
+        45.0,
+        45.0,
+        22.5,
+        22.5,
+        7.5,
+        7.5,
+        5
+      ],
+      "width": [
+        0.35,
+        0.35,
+        0.35,
+        0.35,
+        0.35,
+        0.35,
+        0.1
+      ],
+      "commands": [
+        [
+          1.0,
+          1.0,
+          9.999999994736442e-09,
+          0.7499999900000001
+        ],
+        [
+          1.0,
+          1.0,
+          0.614029151,
+          1.0
+        ]
+      ],
+      "durations": [
+        "1/12",
+        "11/12"
+      ],
+      "start": "0",
+      "amplitude": 0.3,
+      "event_duration": 1.0,
+      "w": 300,
+      "deadline": 3300
+    },
+    {
+      "id": "congestion_backup_d40",
+      "group": "congestion",
+      "initial_accumulation": 4500,
+      "center": [
+        45.0,
+        45.0,
+        22.5,
+        22.5,
+        7.5,
+        7.5,
+        5
+      ],
+      "width": [
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.1
+      ],
+      "commands": [
+        [
+          1.0,
+          1.0,
+          9.999999994736442e-09,
+          0.7499999900000001
+        ],
+        [
+          1.0,
+          1.0,
+          0.614029151,
+          1.0
+        ]
+      ],
+      "durations": [
+        "1/12",
+        "11/12"
+      ],
+      "start": "0",
+      "amplitude": 0.3,
+      "event_duration": 1.0,
+      "w": 300,
+      "deadline": 3300
+    },
+    {
+      "id": "congestion_repair_d30",
+      "group": "congestion",
+      "initial_accumulation": 4500,
+      "center": [
+        45.0,
+        45.0,
+        22.5,
+        22.5,
+        7.5,
+        7.5,
+        5
+      ],
+      "width": [
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.1
+      ],
+      "commands": [
+        [
+          0.652706068,
+          1.0,
+          1.9e-08,
+          0.749999999
+        ],
+        [
+          1.0,
+          1.0,
+          0.556160203,
+          1.0
+        ]
+      ],
+      "durations": [
+        "1/12",
+        "11/12"
+      ],
+      "start": "0",
+      "amplitude": 0.3,
+      "event_duration": 1.0,
+      "w": 300,
+      "deadline": 3300
+    },
+    {
+      "id": "congestion_repair_d35",
+      "group": "congestion",
+      "initial_accumulation": 4500,
+      "center": [
+        45.0,
+        45.0,
+        22.5,
+        22.5,
+        7.5,
+        7.5,
+        5
+      ],
+      "width": [
+        0.35,
+        0.35,
+        0.35,
+        0.35,
+        0.35,
+        0.35,
+        0.1
+      ],
+      "commands": [
+        [
+          0.652706068,
+          1.0,
+          1.9e-08,
+          0.749999999
+        ],
+        [
+          1.0,
+          1.0,
+          0.556160203,
+          1.0
+        ]
+      ],
+      "durations": [
+        "1/12",
+        "11/12"
+      ],
+      "start": "0",
+      "amplitude": 0.3,
+      "event_duration": 1.0,
+      "w": 300,
+      "deadline": 3300
+    },
+    {
+      "id": "congestion_repair_d40",
+      "group": "congestion",
+      "initial_accumulation": 4500,
+      "center": [
+        45.0,
+        45.0,
+        22.5,
+        22.5,
+        7.5,
+        7.5,
+        5
+      ],
+      "width": [
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.1
+      ],
+      "commands": [
+        [
+          0.652706068,
+          1.0,
+          1.9e-08,
+          0.749999999
+        ],
+        [
+          1.0,
+          1.0,
+          0.556160203,
+          1.0
+        ]
+      ],
+      "durations": [
+        "1/12",
+        "11/12"
+      ],
+      "start": "0",
+      "amplitude": 0.3,
+      "event_duration": 1.0,
+      "w": 300,
+      "deadline": 3300
+    }
+  ],
+  "rule": "Same four configurations and refinement as frozen comparison; grid refined after 25 passes and 50 fails. Exploratory, not held-out.",
+  "sources_fixed": true
+}

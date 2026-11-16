@@ -1,0 +1,30 @@
+{
+  "arithmetic": {
+    "bit_identical_matrix_products": 400,
+    "exact_rational_power_checks": 2100,
+    "matrix_function_cases": 5
+  },
+  "records": {
+    "groups": {
+      "nominal": {
+        "total": 80,
+        "accepted": 36
+      },
+      "congestion": {
+        "total": 14,
+        "accepted": 3
+      },
+      "full": {
+        "total": 80,
+        "accepted": 50
+      },
+      "structure": {
+        "total": 6,
+        "accepted": 5
+      }
+    },
+    "added": [],
+    "lost": [],
+    "completed": 180
+  }
+}

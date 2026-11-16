@@ -1,0 +1,11 @@
+{
+  "ids": [
+    "depth_backup_4500",
+    "depth_repair_4500"
+  ],
+  "repetitions": 2,
+  "ordering": "baseline then refined in repetition 1; refined then baseline in repetition 2; serial processes",
+  "includes": "All attempted configurations and sub-box checks, setup and result assembly.",
+  "excludes": "Planning, observation, state estimation, actuation, disk serialization, Python import.",
+  "claim": "Observed local verification time only; does not update the archived delayed-activation experiment."
+}

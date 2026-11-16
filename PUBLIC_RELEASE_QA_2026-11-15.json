@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "files_scanned": 1279,
+  "historical_blobs_scanned": 1070,
+  "unique_payloads_scanned_including_archives": 2031,
+  "credential_signature_matches": 0,
+  "scope": "Credential-pattern and archive scan, file sizes, saved-record integrity and paper compilation; no new simulations.",
+  "visibility_change_authorized": true,
+  "current_results_audit": {
+    "release_files_hash_verified": 482,
+    "matched_samples_per_plan": 640,
+    "model_error_plants_per_plan": 9,
+    "acceptance_map_cases": 80
+  },
+  "historical_records_audit": {
+    "copied_files_verified": 749,
+    "certificate_records_verified": 994,
+    "certificate_sources_verified": 14
+  }
+}

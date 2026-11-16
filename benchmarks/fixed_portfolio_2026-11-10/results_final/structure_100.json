@@ -1,0 +1,14 @@
+{
+  "summary": {
+    "id": "structure_100",
+    "group": "structure",
+    "accepted": false,
+    "winner": null,
+    "seconds": 22.29900209978223,
+    "cpu_seconds": 22.1875,
+    "attempted_checks": 4,
+    "initial_accumulation": null,
+    "old_accepted": null
+  },
+  "original_record_sha256": "cc93dfb4461bd1224a8c4851bd95697ea510dca34513276449960ad0acb999d1"
+}

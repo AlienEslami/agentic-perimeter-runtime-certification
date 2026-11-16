@@ -1,19 +1,19 @@
-# Formal Guarantees for Trustworthy Agent-Mediated Urban Perimeter Control
+# A Formal Guarantee for Trustworthy Agentic Traffic Control: A Multi-region Perimeter Case
 
-## Latest paper - 11 November 2026
+## Current manuscript - 15 November 2026
 
-- [Reduced manuscript, 65 pages](paper/reduced_2026-11-11/main.pdf)
-- [LaTeX package](paper/reduced_2026-11-11/PERIMETER_PARTB_SECTIONS345_REVIEWED_2026-11-11.zip)
-- [Reproduction guide](paper/supporting_materials/REPRODUCTION_GUIDE.md)
-- [Dated release and complete study archives](https://github.com/AlienEslami/agentic-perimeter-runtime-certification/releases/tag/paper-2026-11-11)
-- [Full numerical section and removed figures/tables](benchmarks/section5_support_2026-11-11/)
+- [Reduced manuscript, 48 pages](paper/reduced_2026-11-15/main.pdf)
+- [LaTeX source package](paper/reduced_2026-11-15/PERIMETER_PARTB_SUBMISSION_CLARIFIED_2026-11-15.zip)
+- [Current results and reproduction guide](paper/supporting_materials/REPRODUCTION_GUIDE_2026-11-15.md)
+- [Dated release](https://github.com/AlienEslami/agentic-perimeter-runtime-certification/releases/tag/paper-2026-11-15)
+- [Revision notes](paper/reduced_2026-11-15/revision_notes.txt)
 
-The latest revision shortens Sections 3-5 and clarifies the connections between
-the planning interface, certification results and numerical evaluation.
-Earlier complete and reduced manuscripts remain preserved at their existing paths.
-The older manuscript descriptions below refer to those historical snapshots.
-
-This private preparation repository contains the manuscript and numerical research material for the paper. The manuscript includes the [repository link](https://github.com/AlienEslami/agentic-perimeter-runtime-certification). The repository is private during manuscript preparation and will be made public before submission.
+This research repository contains the manuscript, traffic models, planning
+and verification implementations, experimental protocols and saved results.
+The current version includes traffic trajectories and inputs, ensemble
+controller comparisons, model-error sensitivity and recorded agent studies.
+Earlier complete and reduced manuscripts are preserved at their existing
+paths. Their descriptions below refer to historical snapshots.
 
 ## Contents
 
@@ -25,7 +25,7 @@ This private preparation repository contains the manuscript and numerical resear
 - `provenance/anchor_2026-09-11/`: compressed archived run and continuation proof used to extract the portable minute-20 fixture.
 - `scripts/`: read-only repository checks, a proof unpacker, and the historical handover finalization script.
 - `REPRODUCTION_MANIFEST.json`: original/stored hashes, compression metadata, and omitted cache files.
-- `PUBLIC_RELEASE_CHECKLIST.md`: outstanding public-release decisions.
+- `PUBLIC_RELEASE_CHECKLIST.md`: release status and remaining submission decisions.
 
 ## Offline checks
 

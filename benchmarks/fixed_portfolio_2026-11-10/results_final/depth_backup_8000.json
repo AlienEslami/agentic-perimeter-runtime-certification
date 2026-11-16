@@ -1,0 +1,14 @@
+{
+  "summary": {
+    "id": "depth_backup_8000",
+    "group": "depth_backup",
+    "accepted": false,
+    "winner": null,
+    "seconds": 13.683232800103724,
+    "cpu_seconds": 13.46875,
+    "attempted_checks": 4,
+    "initial_accumulation": 8000,
+    "old_accepted": null
+  },
+  "original_record_sha256": "8f844f16e8e86933b28333805938584b0eb29fce7d55b5e171aa261978e1ca43"
+}

@@ -1,0 +1,50 @@
+{
+  "inputs": {
+    "benchmarks\\partb_traffic_presentation_2026-11-15\\matched_controller_table.json": "7d2157faf21c947c85b44ce9797f4281593715f8d0902ce3b9de21f7ecd2f5fd",
+    "benchmarks\\reusable_perimeter_suite_2026-09-26\\results\\contracts\\D027.json": "510c1d7c713271158af67fc737ae797ec71b05dd79c220f799c4dd656ac78ec8",
+    "benchmarks\\reusable_perimeter_suite_2026-09-26\\results\\contracts\\D063.json": "d10130446b4101778626bcbba9a1486fba1330ff43d4cccaeb1325f41ed1771a",
+    "benchmarks\\reusable_perimeter_suite_2026-09-26\\results\\sequential_authority_2026-10-01\\D025_D024.json": "37023e7dfadc4d4c78b4dd552d2e6ba481b8c3f9ebd996cbbc5d57b096597179",
+    "benchmarks\\reusable_perimeter_suite_2026-09-26\\results\\sequential_authority_2026-10-01\\D025_D024_counterfactuals.json": "6338ba1ac95fd84e8d68670d947852653de630106eacda1eb694c601036e4937",
+    "benchmarks\\reusable_perimeter_suite_2026-09-26\\results\\sequential_authority_2026-10-01\\D025_D024_independent_witness.json": "c6147024f7aabdae786fcd35670f52e943937564f1d3b2e91472f029a0c4616a",
+    "benchmarks\\reusable_perimeter_suite_2026-09-26\\results\\sequential_authority_2026-10-01\\D043_D042.json": "f73a7debfc4ff0cc8c2462b6983cbc940a9d7108252716ee90a3aaa4c0b378f8",
+    "benchmarks\\reusable_perimeter_suite_2026-09-26\\results\\sequential_authority_2026-10-01\\D043_D042_counterfactuals.json": "c315e6319f5ca74c413ecd4aeb5c9fa6ac3a8ac681993900d163b6a83d2ffd23",
+    "benchmarks\\reusable_perimeter_suite_2026-09-26\\results\\sequential_authority_2026-10-01\\D043_D042_independent_witness.json": "4c6dd6f299ea3e2916730cd49ee7c36c03e13ef5f06d13146446e48c47a34d49",
+    "benchmarks\\reusable_perimeter_suite_2026-09-26\\results\\sequential_authority_2026-10-01\\D061_D060.json": "fca9e25baf8e5a961ee82908fffe197963e0a338bc580941627c2351f37a8f00",
+    "benchmarks\\reusable_perimeter_suite_2026-09-26\\results\\sequential_authority_2026-10-01\\D061_D060_counterfactuals.json": "24a6f3ac486d78b07ec9c982e1a9abc4b26170c9785609cb1dbf596ee9ba6af6",
+    "benchmarks\\reusable_perimeter_suite_2026-09-26\\results\\sequential_authority_2026-10-01\\D061_D060_independent_witness.json": "3f6aaa45ee71273750f7f96346835309028743ece8ddc06a05e083fe431636d5",
+    "benchmarks\\section5_support_2026-11-11\\summaries\\baseline_and_pilot_summary.json": "6f3ed4644bdb04d59c0640974affd4ce182e660ec6aa9ee5f575e9764d731177",
+    "benchmarks\\reviewer_strengthening_2026-11-11\\timing_summary.json": "a1a8c15ed6cbd9d814a383cb0c5171ac8243e10c041808e56854cb803eacf52f",
+    "benchmarks\\reviewer_strengthening_2026-11-11\\plant_sensitivity.json": "8373175d627b292d25405b08b56d98f726f884151100552ecc3e0c8e8f856191"
+  },
+  "replanning": [
+    {
+      "case": "D025_D024",
+      "d": 1.0,
+      "peak": 2005.590069974444,
+      "decisions": [
+        "replace",
+        "retain_verified_suffix"
+      ]
+    },
+    {
+      "case": "D043_D042",
+      "d": 10.0,
+      "peak": 2009.6214263420202,
+      "decisions": [
+        "retain_verified_suffix",
+        "retain_verified_suffix"
+      ]
+    },
+    {
+      "case": "D061_D060",
+      "d": 25.0,
+      "peak": 2017.5991603420205,
+      "decisions": [
+        "retain_verified_suffix",
+        "retain_verified_suffix"
+      ]
+    }
+  ],
+  "new_experiments": false,
+  "source_sha256": "4fd480b331b1949416ff6d5825cd40743ea6701bb6249972d784b8e1f947a782"
+}
