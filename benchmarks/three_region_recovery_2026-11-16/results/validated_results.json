@@ -1,0 +1,216 @@
+{
+  "scenarios": 64,
+  "random_seed": 20261116,
+  "regional_total_error_vehicles": 25,
+  "destination_component_error_vehicles": 8.333333333333334,
+  "queue_error_vehicles": 10,
+  "arrival_error_veh_h_per_queue": 300,
+  "scenario_error_block_minutes": 5,
+  "plans": {
+    "proposal": {
+      "weight": 0,
+      "inputs": [
+        [
+          1.0,
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          0.495,
+          0.5,
+          0.5
+        ]
+      ],
+      "maximum_queues": [
+        2265.000000000007,
+        1309.999999999985,
+        1309.999999999985
+      ],
+      "final_region_maxima": [
+        2071.4347985898316,
+        2085.1345135502397,
+        2091.3020829386624
+      ],
+      "final_region_adverse": [
+        2071.4347985898316,
+        2085.1345135502397,
+        2091.3020829386624
+      ],
+      "adverse_tts": 13869.49475482875,
+      "adverse_priority": 23804.910114843125,
+      "tts_median": 13265.275169995435,
+      "priority_median": 23085.812937433988
+    },
+    "repair": {
+      "weight": 0.45,
+      "inputs": [
+        [
+          1.0,
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          0.51975,
+          0.5,
+          0.5
+        ]
+      ],
+      "maximum_queues": [
+        1992.7499999999948,
+        1309.999999999985,
+        1309.999999999985
+      ],
+      "final_region_maxima": [
+        2198.9117056621467,
+        2133.4520280098413,
+        2108.9235163694684
+      ],
+      "final_region_adverse": [
+        2198.9117056621467,
+        2133.4520280098413,
+        2108.9235163694684
+      ],
+      "adverse_tts": 13881.298193910472,
+      "adverse_priority": 24170.713745062432,
+      "tts_median": 13272.976313861782,
+      "priority_median": 23432.05992208209,
+      "certified_endpoint_upper": [
+        2435.695010227797,
+        2364.600420472821,
+        2327.2634562451017
+      ],
+      "certified_queue_upper": [
+        1992.750000000088,
+        1310.0000000000662,
+        1310.0000000000662
+      ],
+      "observed_check_seconds": 12.380162500019651,
+      "recomputed_intervals": 240
+    },
+    "backup": {
+      "weight": 1,
+      "inputs": [
+        [
+          1.0,
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          0.55,
+          0.5,
+          0.5
+        ]
+      ],
+      "maximum_queues": [
+        1735.000000000005,
+        1309.999999999985,
+        1309.999999999985
+      ],
+      "final_region_maxima": [
+        2406.0199447537484,
+        2188.9714696831584,
+        2128.127981619006
+      ],
+      "final_region_adverse": [
+        2406.0199447537484,
+        2188.9714696831584,
+        2128.127981619006
+      ],
+      "adverse_tts": 13912.299676552508,
+      "adverse_priority": 24702.766876448473,
+      "tts_median": 13297.47919213412,
+      "priority_median": 23932.626688049248,
+      "certified_endpoint_upper": [
+        2758.0117651205564,
+        2512.9320032222176,
+        2403.066390841978
+      ],
+      "certified_queue_upper": [
+        1735.0000000000641,
+        1310.0000000000662,
+        1310.0000000000662
+      ],
+      "observed_check_seconds": 12.368470399989747,
+      "recomputed_intervals": 240
+    }
+  },
+  "exact_queue_witnesses": [
+    {
+      "weight": 0.0,
+      "queue1_final_lower": 2265.0,
+      "overflow_proven": true
+    },
+    {
+      "weight": 0.05,
+      "queue1_final_lower": 2234.7499999999995,
+      "overflow_proven": true
+    },
+    {
+      "weight": 0.1,
+      "queue1_final_lower": 2204.4999999999995,
+      "overflow_proven": true
+    },
+    {
+      "weight": 0.15,
+      "queue1_final_lower": 2174.2500000000005,
+      "overflow_proven": true
+    },
+    {
+      "weight": 0.2,
+      "queue1_final_lower": 2144.0,
+      "overflow_proven": true
+    },
+    {
+      "weight": 0.25,
+      "queue1_final_lower": 2113.7499999999995,
+      "overflow_proven": true
+    },
+    {
+      "weight": 0.3,
+      "queue1_final_lower": 2083.5000000000005,
+      "overflow_proven": true
+    },
+    {
+      "weight": 0.35,
+      "queue1_final_lower": 2053.25,
+      "overflow_proven": true
+    },
+    {
+      "weight": 0.4,
+      "queue1_final_lower": 2022.9999999999998,
+      "overflow_proven": true
+    },
+    {
+      "weight": 0.45,
+      "queue1_final_lower": 1992.7499999999995,
+      "overflow_proven": false
+    }
+  ],
+  "arithmetic_checks": {
+    "sampled_interval_points": 1280,
+    "high_precision_corner_matrices": 240,
+    "independent_field_max_error": 1.4210854715202004e-13,
+    "finite_difference_max_error": 7.050884320847217e-09
+  },
+  "repair_grid_conclusion": "0.45 passes all constraints; all lower 0.05-grid weights have a queue-overflow witness.",
+  "adverse_recovered_priority_benefit_percent": 59.25813048784551,
+  "adverse_tts_increase_vs_backup_percent": -0.2228350694190806
+}

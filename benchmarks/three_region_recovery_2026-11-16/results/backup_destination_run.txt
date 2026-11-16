@@ -1,0 +1,1 @@
+{"name": "candidate_l1.00_class_d75_w300", "weight": 1.0, "method": "class", "d": 75.0, "w": 300, "accepted": false, "reached_minutes": 27.0, "failure": {"kind": "physical_constraint_not_certified", "right": "9/20", "rows": ["region_0_upper", "region_1_upper", "region_2_upper"]}, "services": [], "seconds": 9.007577300013509, "steps": 108}

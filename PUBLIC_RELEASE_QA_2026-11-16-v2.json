@@ -1,0 +1,23 @@
+{
+  "tag": "paper-2026-11-16-v2",
+  "pdf_pages": 50,
+  "reference_pages": [
+    50
+  ],
+  "package_files": 13,
+  "manuscript_changed_only_release_citation": true,
+  "proof_files_read": 13,
+  "source_bindings_verified": 170,
+  "reproduced_accepted_certificates": 2,
+  "recomputed_intervals": 480,
+  "matched_simulations": 192,
+  "reproduced_arrays_exact": 17,
+  "reproducibility_summary_exact_except_timing": true,
+  "rerun_seconds": {
+    "repair": 13.216630399983842,
+    "backup": 13.144270199991297
+  },
+  "main_numerical_figures_regenerated": 2,
+  "scanned_new_or_updated_files": 112,
+  "credential_signature_matches": 0
+}

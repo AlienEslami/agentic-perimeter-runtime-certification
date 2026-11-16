@@ -1,0 +1,23 @@
+Recovery release - 16 November 2026
+
+Release: paper-2026-11-16-v2
+URL: https://github.com/AlienEslami/agentic-perimeter-runtime-certification/releases/tag/paper-2026-11-16-v2
+
+This release contains the 50-page manuscript after the Section 6 consistency
+review, with the new three-region congested-recovery study and all three
+entry queues in Figure 5. Earlier manuscripts and release tags are preserved.
+
+Relative to the latest local paper, only the reproducibility link and its
+bibliography entry changed. The abstract, introduction, mathematical results,
+simulation results and figure assets are unchanged.
+
+The new study includes successful and inconclusive proof records, immutable
+source snapshots, 192 matched simulations and instructions for a fresh run.
+The fresh reproduction matched both successful proof records and every saved
+simulation array exactly; only measured runtimes differ. Every interval of
+both full-hour certificates was recomputed, and the independent balance,
+derivative and exact queue-overflow checks passed. Both main numerical figures
+were regenerated from the published records. No new API experiment was run.
+
+The PDF and bibliography compiled successfully. The LaTeX package contains
+only the main source, references and all referenced figure assets.

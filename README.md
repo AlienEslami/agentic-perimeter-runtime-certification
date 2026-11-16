@@ -1,19 +1,19 @@
 # A Formal Guarantee for Trustworthy Agentic Traffic Control: A Multi-region Perimeter Case
 
-## Current manuscript - 16 November 2026
+## Current manuscript - 16 November 2026, recovery update
 
-- [Reduced manuscript, 48 pages](paper/reduced_2026-11-16/main.pdf)
-- [LaTeX source package](paper/reduced_2026-11-16/PERIMETER_PARTB_ABSTRACT_SHORTENED_2026-11-16.zip)
-- [Current results and reproduction guide](paper/supporting_materials/REPRODUCTION_GUIDE_2026-11-15.md)
-- [Dated release](https://github.com/AlienEslami/agentic-perimeter-runtime-certification/releases/tag/paper-2026-11-16)
-- [Revision notes](paper/reduced_2026-11-16/revision_notes.txt)
+- [Reduced manuscript, 50 pages](paper/reduced_2026-11-16-v2/main.pdf)
+- [LaTeX source package](paper/reduced_2026-11-16-v2/PERIMETER_PARTB_RECOVERY_RELEASE_2026-11-16.zip)
+- [Current reproduction guide](paper/supporting_materials/REPRODUCTION_GUIDE_2026-11-16-v2.md)
+- [Dated release](https://github.com/AlienEslami/agentic-perimeter-runtime-certification/releases/tag/paper-2026-11-16-v2)
+- [Three-region study](benchmarks/three_region_recovery_2026-11-16/README.md)
 
-This research repository contains the manuscript, traffic models, planning
-and verification implementations, experimental protocols and saved results.
-The current version includes traffic trajectories and inputs, ensemble
-controller comparisons, model-error sensitivity and recorded agent studies.
-Earlier complete and reduced manuscripts are preserved at their existing
-paths. Their descriptions below refer to historical snapshots.
+The current manuscript includes two-region and three-region congested
+recovery, with traffic trajectories and bounds, controller comparisons,
+model-error sensitivity and recorded agent studies. The new three-region
+study includes both accepted full-hour certificates, all three entry queues,
+matched simulations and preserved inconclusive attempts. Earlier complete
+and reduced manuscripts remain at their existing paths.
 
 ## Contents
 

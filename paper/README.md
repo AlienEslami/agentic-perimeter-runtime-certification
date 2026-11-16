@@ -1,8 +1,10 @@
-# Current reduced manuscript - 11 November 2026
+# Current reduced manuscript - 16 November 2026, recovery update
 
-Use [reduced_2026-11-11/main.pdf](reduced_2026-11-11/main.pdf) for the latest
-65-page manuscript and [its source package](reduced_2026-11-11/PERIMETER_PARTB_SECTIONS345_REVIEWED_2026-11-11.zip) for editing.
-The complete manuscript at `main.tex` and `main.pdf` is unchanged.
+Use [reduced_2026-11-16-v2/main.pdf](reduced_2026-11-16-v2/main.pdf) for the
+current 50-page manuscript and [its LaTeX package](reduced_2026-11-16-v2/PERIMETER_PARTB_RECOVERY_RELEASE_2026-11-16.zip)
+for editing. The [reproduction guide](supporting_materials/REPRODUCTION_GUIDE_2026-11-16-v2.md)
+identifies the corresponding code and saved evidence. The complete manuscript
+at `main.tex` and `main.pdf`, and earlier dated reduced papers, are preserved.
 
 ## Historical manuscript snapshot - 19 October 2026
 
