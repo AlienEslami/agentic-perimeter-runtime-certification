@@ -1,12 +1,12 @@
 # A Formal Guarantee for Trustworthy Agentic Traffic Control: A Multi-region Perimeter Case
 
-## Current manuscript - 15 November 2026
+## Current manuscript - 16 November 2026
 
-- [Reduced manuscript, 48 pages](paper/reduced_2026-11-15/main.pdf)
-- [LaTeX source package](paper/reduced_2026-11-15/PERIMETER_PARTB_SUBMISSION_CLARIFIED_2026-11-15.zip)
+- [Reduced manuscript, 48 pages](paper/reduced_2026-11-16/main.pdf)
+- [LaTeX source package](paper/reduced_2026-11-16/PERIMETER_PARTB_ABSTRACT_SHORTENED_2026-11-16.zip)
 - [Current results and reproduction guide](paper/supporting_materials/REPRODUCTION_GUIDE_2026-11-15.md)
-- [Dated release](https://github.com/AlienEslami/agentic-perimeter-runtime-certification/releases/tag/paper-2026-11-15)
-- [Revision notes](paper/reduced_2026-11-15/revision_notes.txt)
+- [Dated release](https://github.com/AlienEslami/agentic-perimeter-runtime-certification/releases/tag/paper-2026-11-16)
+- [Revision notes](paper/reduced_2026-11-16/revision_notes.txt)
 
 This research repository contains the manuscript, traffic models, planning
 and verification implementations, experimental protocols and saved results.

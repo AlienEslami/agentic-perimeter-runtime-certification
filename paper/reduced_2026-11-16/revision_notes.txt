@@ -1,0 +1,5 @@
+Abstract-only revision, 16 November 2026
+
+Removed the sentence on guarantees beyond a plan's specified duration. The title, all other abstract wording, and the remainder of the manuscript are unchanged. No replacement sentence was added.
+
+Validation: exact source comparison confirms this single deletion; the built-in compiler and two local LaTeX passes succeeded. No undefined references, undefined citations, or duplicate-label warnings. The PDF has 48 pages. The numerical reproduction reference remains paper-2026-11-15 because no numerical results or code changed.

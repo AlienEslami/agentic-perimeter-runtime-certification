@@ -1,0 +1,22 @@
+{
+  "change": "Abstract sentence deletion only",
+  "pages": 48,
+  "previous_release": "paper-2026-11-15",
+  "sha256": {
+    "figures/acceptance_map.pdf": "a2f7ccba9ec1f5ca123302f882c4d0f09580ab6918c799fc4a8c6e4392f50e52",
+    "figures/congested_traffic_controls_2026_11_15.pdf": "0a9be6b7f641e531317028eaf685f71823bea6ddf3a0e479358fa8bc1a9a11b7",
+    "figures/coordinate_acceptance_compact_2026_11_15.pdf": "14e2ab1aac13a103f7786e16bd0fb6cbb1aaacf18f53704f65a9a600de682b33",
+    "figures/dual_agent_architecture_control_tools_2026_11_15.png": "3ce933f108826aff95d558b88bd3219c52dd895eced6b76acd179597a539fc48",
+    "figures/regional_traffic_overview_no_cars_2026_11_15.png": "2a6d02bb4aadb389a529a91d0abb8609e93ad40e3db5b9608ca2cd41c577d01d",
+    "figures/replanning_controls_2026_11_15.pdf": "281c9b91f337d87f23c754c9ce78ad48485fac90445f6d60d7fd5618944639be",
+    "figures/structure_certification_comparison.pdf": "165f988c70fdfe6c7c9b4e971b8a3fa5c0bbfed30d1d2e634c48f0ff9cd46ea4",
+    "figures/supervisory_snapshots.pdf": "79e6353a64a3f86969648aab63849aac06c21ba2475874ab1b80ca65fe5e1e03",
+    "figures/traffic_scenarios_2026_11_15.pdf": "ff5a4e86d0bcfc4b1b4b1673aeb70987ab474136f72be56868ae767e40a07c2f",
+    "figures/two_region_vehicle_flows_journal_2026_11_15.png": "5de325fdb52db57e21cf8f45df7c48acd15d9b2ac94e03ad1625f2c09cb2734a",
+    "FOUNDATION_REFERENCES.bib": "937e5a6c8efc11f46ef8a22306b3fe27fb9760ab89d3ee1339b8c22d218025ca",
+    "main.pdf": "2708a92cd14786b9cf706df6b7c45b890b2b6d5aa4790c92d1dc6df3bb2a0de4",
+    "main.tex": "b514f4a810bd4fb82d592c24e3c275a98d755f37153063a5c3496dc18a6f3974",
+    "PERIMETER_PARTB_ABSTRACT_SHORTENED_2026-11-16.zip": "bed12124a6a95b65567131ceeed4b37d10b2c1b0595175a1cae3922e2e04a4e0",
+    "revision_notes.txt": "30c449395425cf14bba3c0fe43e3813ce46d826681f335f9c9d980e51bfd0ddb"
+  }
+}
